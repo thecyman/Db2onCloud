@@ -7,6 +7,11 @@ Db2 on Cloud
 
 	{: .navgroup id="learn"}
 	index.md
+
+	{: .topicgroup}
+	Related links
+        [Db2 on Cloud: Features and advantages](https://ibm.biz/db2oncloud-features)
+        [IBM Knowledge Center](http://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
 	{: .navgroup-end}
 
 	{: .navgroup id="help"}
