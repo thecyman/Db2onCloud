@@ -1,0 +1,21 @@
+<!-- Markdown Navigation -->
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="Db2onCloud" audience="service" href="/docs/services/Db2onCloud/index.html"}
+Db2 on Cloud
+
+	{: .navgroup id="learn"}
+	index.md
+    [Vidéo de revue](https://www.youtube.com/watch?v=abmWJYe7Kcc)
+    [Fonctions et avantages](https://ibm.biz/db2oncloud-features)
+	{: .navgroup-end}
+
+	{: .navgroup id="reference"}
+    [IBM Knowledge Center](http://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
+	{: .navgroup-end}
+
+	{: .navgroup id="help"}
+	help.md
+	{: .navgroup-end}
+	
