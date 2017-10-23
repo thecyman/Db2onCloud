@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2017
-lastupdated: "2017-06-21"
+lastupdated: "2017-09-28"
 
 ---
 
@@ -24,6 +24,8 @@ lastupdated: "2017-06-21"
 
 {{site.data.keyword.Db2_on_Cloud_long}} est une base de données SQL mise à votre disposition dans le cloud. Vous pouvez utiliser {{site.data.keyword.Db2_on_Cloud_short}} de la même manière que vous utilisez n'importe quel logiciel de base de données, sans les frais associés à la configuration de matériel ou à l'installation et la maintenance de logiciels. 
 {: shortdesc}
+
+Vous pouvez également installer une base de données Db2 en local en utilisant la [version Db2 Developer Edition téléchargeable gratuitement ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions). Une édition prête à l'emploi de Db2 destinée aux développeurs est alors rapidement installée avec des outils au sein d'un conteneur Docker (Docker n'est pas requis ; il installera automatiquement tous les composants nécessaires). 
 
 ##Interfaces
 {: #interfaces}
@@ -47,7 +49,7 @@ La console web fournit une interface graphique pour tous les éléments dont vou
 
 <!-- Click the link to take a tour of the Db2 web console: [General tour ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-general-quick-tour){:new_window}. -->
 
-Vous pouvez accéder à la console Web {{site.data.keyword.Db2_on_Cloud_short}} de deux manières : 
+Vous pouvez accéder à la console Web {{site.data.keyword.Db2_on_Cloud_short}} de deux manières :
    * A partir de votre tableau de bord {{site.data.keyword.Bluemix_notm}} : vous pouvez ouvrir la console Web depuis la page Détails du service de votre service {{site.data.keyword.Db2_on_Cloud_long_notm}}.
    * URL directe : vous pouvez ajouter un signet associé à l'URL de la console Web pour votre service {{site.data.keyword.Db2_on_Cloud_short}}.
 

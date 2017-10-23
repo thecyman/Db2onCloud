@@ -22,7 +22,7 @@ lastupdated: "2017-06-21"
 ##Db2 on Cloud에 대한 도움 및 지원 받기
 {: #gettinghelp}
 
-{{site.data.keyword.Db2_on_Cloud_long}} 사용 시 문제점 또는 질문이 있는 경우, 정보를 검색하거나 포럼을 통해 질문하여 도움을 받을 수 있습니다. 또한 지원 티켓을 열 수도 있습니다.
+{{site.data.keyword.Db2_on_Cloud_long}} 사용 시 문제점 또는 질문이 있는 경우, 정보를 검색하거나 포럼을 통해 질문하여 도움을 받을 수 있습니다. 지원 티켓을 열 수도 있습니다.
 {: shortdesc}
 
 포럼을 사용하여 질문하는 경우, {{site.data.keyword.Bluemix}} 개발 팀에 표시되도록 질문에 태그를 지정하십시오.

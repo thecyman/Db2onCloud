@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2017
-lastupdated: "2017-06-21"
+lastupdated: "2017-09-28"
 
 ---
 
@@ -25,6 +25,8 @@ lastupdated: "2017-06-21"
 {{site.data.keyword.Db2_on_Cloud_long}} は、クラウド内でプロビジョンされた SQL データベースです。任意のデータベース・ソフトウェアを使用するのと同じように {{site.data.keyword.Db2_on_Cloud_short}} を使用できますが、ハードウェアのセットアップやソフトウェアのインストールおよび保守のためのオーバーヘッドもコストもかかりません。
 {: shortdesc}
 
+また、ローカルの Db2 データベースを [ 無料の Db2 Developer Edition （![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions) からダウンロードできます。) を使用してインストールすることもできます。 それは Docker コンテナー内のツールとともに Db2 のすぐに使用できる Developer Edition を速やかにインストールします (Docker は不要です。必要なコンポーネントは自動的にインストールされます)。 
+
 ##インターフェース
 {: #interfaces}
 
@@ -45,7 +47,7 @@ Web コンソールは、ロード機能、SQL エディター、ドライバー
 <!-- ![View of Db2 on Cloud web console dashboard page](images/console_v2.png) -->
 <!-- ![View of {{site.data.keyword.dashdbshort_notm}} web console dashboard page](images/console_v2.jpg) -->
 
-<!-- Click the link to take a tour of the Db2 web console: [General tour ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-general-quick-tour "External link icon"){:new_window}. -->
+<!-- Click the link to take a tour of the Db2 web console: [General tour ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-general-quick-tour){:new_window}. -->
 
 以下の方法で、{{site.data.keyword.Db2_on_Cloud_short}} Web コンソールにアクセスできます。
    * {{site.data.keyword.Bluemix_notm}} ダッシュボードから - {{site.data.keyword.Db2_on_Cloud_long_notm}} サービスの「サービス詳細」ページから Web コンソールを開くことができます。
@@ -63,9 +65,9 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 以下の手順を実行して、{{site.data.keyword.Db2_on_Cloud_short}} データベースに接続するようにローカル環境を構成します。
 {: shortdesc}
 
-1. {{site.data.keyword.Db2_on_Cloud_short}} Web コンソールの「接続情報 (Connection info)」ページから[ドライバー・パッケージ ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html "外部リンク・アイコン"){:new_window} をダウンロードします。
-2. アプリまたはツールが実行されているコンピューターで [ドライバー・パッケージのインストール![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html "外部リンク・アイコン"){:new_window} を行います。
-3. {{site.data.keyword.Db2_on_Cloud_short}} データベース用に[ドライバー・ファイルの構成 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html "外部リンク・アイコン"){:new_window} を行います。
+1. {{site.data.keyword.Db2_on_Cloud_short}} Web コンソールの「接続情報 (Connection info)」ページから[ドライバー・パッケージ ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} をダウンロードします。
+2. アプリまたはツールが実行されているコンピューターで [ドライバー・パッケージのインストール![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} を行います。
+3. {{site.data.keyword.Db2_on_Cloud_short}} データベース用に[ドライバー・ファイルの構成 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} を行います。
 
 ###Bluemix アプリまたはサービス用のデータ・ソースとして Db2 on Cloud を使用する
 {: #data_src}
@@ -123,12 +125,12 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 各種の言語で作成されたアプリケーションから {{site.data.keyword.Db2_on_Cloud_short}} データベースに接続する方法を示すサンプルへのリンクは次のとおりです。
 {: shortdesc}
 
-   * [.NET ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html "外部リンク・アイコン"){:new_window}
-<!-- * [JAVA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_java.html "External link icon"){:new_window} -->
-   * [JDBC ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_jdbc_applications.html "外部リンク・アイコン"){:new_window}
-<!-- * [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_nodejs.html "External link icon"){:new_window} -->
-   * [PHP ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html "外部リンク・アイコン"){:new_window}
-<!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html "External link icon"){:new_window} -->
-   * [GitHub にある {{site.data.keyword.Db2_on_Cloud_short}} サンプル![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld "外部リンク・アイコン"){:new_window}
+   * [.NET ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html){:new_window}
+<!-- * [JAVA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_java.html){:new_window} -->
+   * [JDBC ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_jdbc_applications.html){:new_window}
+<!-- * [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_nodejs.html){:new_window} -->
+   * [PHP ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
+<!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
+   * [GitHub にある {{site.data.keyword.Db2_on_Cloud_short}} サンプル![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
 
 

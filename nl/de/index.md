@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2017
-lastupdated: "2017-06-21"
+lastupdated: "2017-09-28"
 
 ---
 
@@ -25,6 +25,8 @@ lastupdated: "2017-06-21"
 Bei {{site.data.keyword.Db2_on_Cloud_long}} handelt es sich um eine SQL-Datenbank, die für Sie in der Cloud bereitgestellt wird. Sie können {{site.data.keyword.Db2_on_Cloud_short}} wie jede andere Datenbanksoftware verwenden, der Aufwand und die Kosten für die Hardwareeinrichtung sowie die Softwareinstallation und -verwaltung fallen jedoch weg. 
 {: shortdesc}
 
+Es ist ebenfalls möglich, eine lokale Db2-Datenbank mithilfe des [kostenfreien Downloads für Db2 Developer Edition ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions) zu installieren. Dabei wird ohne großen Zeitaufwand eine sofort einsatzfähige Db2 Developer Edition-Instanz mit Tools in einem Docker-Container installiert (Docker nicht erforderlich; alle erforderlichen Komponenten werden automatisch installiert). 
+
 ##Schnittstellen
 {: #interfaces}
 
@@ -45,7 +47,7 @@ Die Webkonsole bietet eine grafische Schnittstelle für alle Funktionen, die Sie
 <!-- ![View of Db2 on Cloud web console dashboard page](images/console_v2.png) -->
 <!-- ![View of {{site.data.keyword.dashdbshort_notm}} web console dashboard page](images/console_v2.jpg) -->
 
-<!-- Click the link to take a tour of the Db2 web console: [General tour ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-general-quick-tour "External link icon"){:new_window}. -->
+<!-- Click the link to take a tour of the Db2 web console: [General tour ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-general-quick-tour){:new_window}. -->
 
 Für den Zugriff auf die {{site.data.keyword.Db2_on_Cloud_short}}-Webkonsole stehen Ihnen die folgenden Möglichkeiten zur Verfügung:
    * Über das {{site.data.keyword.Bluemix_notm}}-Dashboard - Sie können die Webkonsole über die Servicedetailseite für Ihren {{site.data.keyword.Db2_on_Cloud_long_notm}}-Service öffnen.
@@ -63,9 +65,9 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 Führen Sie die folgenden Schritte aus, um die lokale Umgebung für die Verbindung zur {{site.data.keyword.Db2_on_Cloud_short}}-Datenbank zu konfigurieren:
 {: shortdesc}
 
-1. Laden Sie das [-Treiberpaket ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html "Symbol für externen Link"){:new_window} von der Verbindungsinformationsseite der {{site.data.keyword.Db2_on_Cloud_short}}-Webkonsole herunter. 
-2. [Installieren Sie das Treiberpaket ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html "Symbol für externen Link"){:new_window} auf dem Computer, auf dem Ihre Apps bzw. Tools ausgeführt werden.
-3. [Konfigurieren Sie die Treiberdateien ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html "Symbol für externen Link"){:new_window} für Ihre {{site.data.keyword.Db2_on_Cloud_short}}-Datenbank.
+1. Laden Sie das [-Treiberpaket ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} von der Verbindungsinformationsseite der {{site.data.keyword.Db2_on_Cloud_short}}-Webkonsole herunter.
+2. [Installieren Sie das Treiberpaket ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} auf dem Computer, auf dem Ihre Apps bzw. Tools ausgeführt werden.
+3. [Konfigurieren Sie die Treiberdateien ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} für Ihre {{site.data.keyword.Db2_on_Cloud_short}}-Datenbank.
 
 ###Verwenden von Db2 on Cloud als Datenquelle für Bluemix-Apps oder -Services
 {: #data_src}
@@ -123,12 +125,12 @@ Wenn Ihre Apps die {{site.data.keyword.Bluemix_notm}}-Plattform verwenden, könn
 Über die folgenden Links können Sie Beispiele aufrufen, die veranschaulichen, wie Sie eine Verbindung von Anwendungen in verschiedenen Sprachen zu Ihrer {{site.data.keyword.Db2_on_Cloud_short}}-Datenbank herstellen:
 {: shortdesc}
 
-   * [.NET ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html "Symbol für externen Link"){:new_window}
-<!-- * [JAVA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_java.html "External link icon"){:new_window} -->
-   * [JDBC ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_jdbc_applications.html "Symbol für externen Link"){:new_window}
-<!-- * [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_nodejs.html "External link icon"){:new_window} -->
-   * [PHP ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html "Symbol für externen Link"){:new_window}
-<!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html "External link icon"){:new_window} -->
-   * [{{site.data.keyword.Db2_on_Cloud_short}}-Beispiele in GitHub ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld "Symbol für externen Link"){:new_window}
+   * [.NET ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html){:new_window}
+<!-- * [JAVA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_java.html){:new_window} -->
+   * [JDBC ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_jdbc_applications.html){:new_window}
+<!-- * [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_nodejs.html){:new_window} -->
+   * [PHP ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
+<!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
+   * [{{site.data.keyword.Db2_on_Cloud_short}}-Beispiele in GitHub ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
 
 

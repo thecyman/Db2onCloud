@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2017
-lastupdated: "2017-06-21"
+lastupdated: "2017-09-28"
 
 ---
 
@@ -24,6 +24,8 @@ lastupdated: "2017-06-21"
 
 {{site.data.keyword.Db2_on_Cloud_long}}는 클라우드에서 사용자를 위해 프로비저닝된 SQL 데이터베이스입니다. 데이터베이스 소프트웨어를 사용하는 것처럼 {{site.data.keyword.Db2_on_Cloud_short}}를 사용할 수 있지만 하드웨어 설정 또는 소프트웨어 설치 및 관리에 대한 오버헤드와 비용은 발생하지 않습니다.
 {: shortdesc}
+
+[free Db2 Developer Edition download ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions)를 사용하여 로컬 Db2 데이터베이스도 설치할 수 있습니다. Docker 컨테이너 내부의 도구로 준비용 Db2 개발자 에디션을 빠르게 설치해줍니다(Docker는 필요 없음, 필요한 컴포넌트는 자동으로 생성됨). 
 
 ##인터페이스
 {: #interfaces}

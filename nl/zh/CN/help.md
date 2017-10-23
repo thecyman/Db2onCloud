@@ -27,8 +27,8 @@ lastupdated: "2017-06-21"
 
 使用论坛进行提问时，请使用适当的标记来标注您的问题，以方便 {{site.data.keyword.Bluemix}} 开发团队识别。
 
-* 有关使用 {{site.data.keyword.Db2_on_Cloud_short}} 开发或部署应用程序的技术问题，请将您的问题发布到 [Stack Overflow ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://stackoverflow.com/questions/ask/advice? "外部链接图标"){:new_window} 上，并使用“bluemix”和“db2oncloud”标记您的问题。
-* 有关服务的问题和入门指示信息，请使用 [IBM developerWorks® dW Answers ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.ibm.com/answers/questions/ask/?smartspace=bluemix "外部链接图标"){:new_window} 论坛。请包括“bluemix”和“db2oncloud”标记。
+* 有关使用 {{site.data.keyword.Db2_on_Cloud_short}} 开发或部署应用程序的技术问题，请将您的问题发布到 [Stack Overflow ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://stackoverflow.com/questions/ask/advice?){:new_window} 上，并使用“bluemix”和“db2oncloud”标记您的问题。
+* 有关服务的问题和入门指示信息，请使用 [IBM developerWorks® dW Answers ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.ibm.com/answers/questions/ask/?smartspace=bluemix){:new_window} 论坛。请包括“bluemix”和“db2oncloud”标记。
 
 有关使用论坛的更多详细信息，请参阅[获取帮助](/docs/support/index.html#getting-help){:new_window}。
 

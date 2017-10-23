@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2017
-lastupdated: "2017-06-21"
+lastupdated: "2017-09-28"
 
 ---
 
@@ -25,6 +25,8 @@ lastupdated: "2017-06-21"
 {{site.data.keyword.Db2_on_Cloud_long}} 是在雲端中為您所佈建的 SQL Database。您就像使用任何資料庫軟體一般的使用 {{site.data.keyword.Db2_on_Cloud_short}}，但沒有硬體設置或軟體安裝及維護的額外負荷與費用。
 {: shortdesc}
 
+您也可以使用[免費的 Db2 Developer Edition 下載 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions) 安裝本端 Db2 資料庫。它會快速地安裝立即可用的 Db2 開發人員版本，並且在 Docker 容器內會有工具（不需要 Docker；它會自動安裝任何必要的元件）。 
+
 ##介面
 {: #interfaces}
 
@@ -45,7 +47,7 @@ Web 主控台為您使用資料庫所需的所有項目提供一個圖形介面�
 <!-- ![View of Db2 on Cloud web console dashboard page](images/console_v2.png) -->
 <!-- ![View of {{site.data.keyword.dashdbshort_notm}} web console dashboard page](images/console_v2.jpg) -->
 
-<!-- Click the link to take a tour of the Db2 web console: [General tour ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-general-quick-tour "External link icon"){:new_window}. -->
+<!-- Click the link to take a tour of the Db2 web console: [General tour ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-general-quick-tour){:new_window}. -->
 
 您可以透過下列方式來存取 {{site.data.keyword.Db2_on_Cloud_short}} Web 主控台：
    * 從 {{site.data.keyword.Bluemix_notm}} 儀表板 - 您可以從 {{site.data.keyword.Db2_on_Cloud_long_notm}} 服務的「服務詳細資料」頁面中開啟 Web 主控台。
@@ -63,9 +65,9 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 請完成下列步驟，配置本端環境以連接至 {{site.data.keyword.Db2_on_Cloud_short}} 資料庫：
 {: shortdesc}
 
-1. 從 {{site.data.keyword.Db2_on_Cloud_short}} Web 主控台的「連線資訊」頁面，下載 [ 驅動程式套件 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html "外部鏈結圖示"){:new_window}。
-2. 在您的應用程式或工具執行所在的電腦上，[安裝驅動程式套件 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html "外部鏈結圖示"){:new_window}。
-3. 為 {{site.data.keyword.Db2_on_Cloud_short}} 資料庫，[配置驅動程式檔案 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html "外部鏈結圖示"){:new_window}。
+1. 從 {{site.data.keyword.Db2_on_Cloud_short}} Web 主控台的「連線資訊」頁面，下載 [ 驅動程式套件 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window}。
+2. 在您的應用程式或工具執行所在的電腦上，[安裝驅動程式套件 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window}。
+3. 為 {{site.data.keyword.Db2_on_Cloud_short}} 資料庫，[配置驅動程式檔案 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}。
 
 ###將 Db2 on Cloud 用作 Bluemix 應用程式或服務的資料來源
 {: #data_src}
@@ -123,12 +125,12 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 以下鏈結範例示範如何從不同語言的應用程式連接至 {{site.data.keyword.Db2_on_Cloud_short}} 資料庫：
 {: shortdesc}
 
-   * [.NET ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html "外部鏈結圖示"){:new_window}
-<!-- * [JAVA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_java.html "External link icon"){:new_window} -->
-   * [JDBC ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_jdbc_applications.html "外部鏈結圖示"){:new_window}
-<!-- * [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_nodejs.html "External link icon"){:new_window} -->
-   * [PHP ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html "外部鏈結圖示"){:new_window}
-<!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html "External link icon"){:new_window} -->
-   * [GitHub 上的 {{site.data.keyword.Db2_on_Cloud_short}} 範例 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld "外部鏈結圖示"){:new_window}
+   * [.NET ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html){:new_window}
+<!-- * [JAVA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_java.html){:new_window} -->
+   * [JDBC ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_jdbc_applications.html){:new_window}
+<!-- * [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_nodejs.html){:new_window} -->
+   * [PHP ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
+<!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
+   * [GitHub 上的 {{site.data.keyword.Db2_on_Cloud_short}} 範例 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
 
 
