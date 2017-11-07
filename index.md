@@ -36,7 +36,7 @@ You can work with your {{site.data.keyword.Db2_on_Cloud_short}} database in the 
    * {{site.data.keyword.Db2_on_Cloud_short}} web console
 <!--   * REST APIs -->
    * Connect applications or your favorite tools from your local computer
-   * Use {{site.data.keyword.Db2_on_Cloud_short}} as a data source for your Bluemix apps or services
+   * Use {{site.data.keyword.Db2_on_Cloud_short}} as a data source for your {{site.data.keyword.Bluemix_notm}} apps or services
 
 ###Db2 on Cloud web console
 {: #web_console}
@@ -69,7 +69,7 @@ Configure your local environment to connect to your {{site.data.keyword.Db2_on_C
 2. [Install the driver package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} on the computer where your apps or tools are running.
 3. [Configure the driver files ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} for your {{site.data.keyword.Db2_on_Cloud_short}} database.
 
-###Use Db2 on Cloud as a data source for your Bluemix apps or services
+###Use Db2 on Cloud as a data source for your {{site.data.keyword.Bluemix_notm}} apps or services
 {: #data_src}
 
 Apps hosted on {{site.data.keyword.Bluemix_notm}} can connect to your {{site.data.keyword.Db2_on_Cloud_short}} database exactly the same way that your local applications connect to your {{site.data.keyword.Db2_on_Cloud_short}} database.
