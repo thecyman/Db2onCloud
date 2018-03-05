@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2017-09-28"
+lastupdated: "2018-02-09"
 
 ---
 
@@ -19,13 +19,18 @@ lastupdated: "2017-09-28"
 {:tip: .tip}
 {:pre: .pre}
 
-#Db2 on Cloud（前版称为 dashDB for Transactions）
+#入门
 {: #getting_started_db2oncloud}
 
 {{site.data.keyword.Db2_on_Cloud_long}} 是在云中为您供应的 SQL 数据库。您可以使用 {{site.data.keyword.Db2_on_Cloud_short}} 就像使用任何数据库软件一样，但是却没有硬件设置或软件安装和维护所产生的开销和费用。
 {: shortdesc}
 
 您还可以使用[免费下载的 Db2 Developer Edition ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions) 来安装本地 Db2 数据库。这样会快速安装随时可用的开发者版本的 Db2 以及 Docker 容器内的工具（不需要 Docker，它将自动安装任何必要的组件）。 
+
+## 免费试用
+{: #freetrial}
+
+您可以免费试用 {{site.data.keyword.Db2_on_Cloud_short}} Precise Performance 500 (2.8.500) 套餐 7 天{{site.data.keyword.Bluemix_notm}}。[免费试用 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://console.bluemix.net/catalog/services/db2){:new_window}
 
 ##界面
 {: #interfaces}
@@ -36,7 +41,7 @@ lastupdated: "2017-09-28"
    * {{site.data.keyword.Db2_on_Cloud_short}} Web 控制台
 <!--   * REST APIs -->
    * 从本地计算机连接应用程序或喜爱的工具
-   * 使用 {{site.data.keyword.Db2_on_Cloud_short}} 作为 Bluemix 应用程序或服务的数据源
+   * 使用 {{site.data.keyword.Db2_on_Cloud_short}} 作为 {{site.data.keyword.Bluemix_notm}} 应用程序或服务的数据源
 
 ###Db2 on Cloud Web 控制台
 {: #web_console}
@@ -69,7 +74,7 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 2. 在运行应用程序和工具的计算机上[安装驱动程序包 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window}。
 3. 为 {{site.data.keyword.Db2_on_Cloud_short}} 数据库[配置驱动程序文件 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}。
 
-###使用 Db2 on Cloud 作为 Bluemix 应用程序或服务的数据源
+###使用 Db2 on Cloud 作为 {{site.data.keyword.Bluemix_notm}} 应用程序或服务的数据源
 {: #data_src}
 
 在 {{site.data.keyword.Bluemix_notm}} 上托管的应用程序可以使用与本地应用程序连接到 {{site.data.keyword.Db2_on_Cloud_short}} 数据库完全相同的方法，连接到 {{site.data.keyword.Db2_on_Cloud_short}} 数据库。
@@ -99,7 +104,7 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
                    "PWD=$password;";
 
     $conn_string = $driver . $dsn;
-
+                                   
     $conn        = db2_connect( $conn_string, "", "" );
     ?>
     ```

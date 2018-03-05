@@ -9,11 +9,13 @@ Db2 on Cloud
 	index.md
     [逐步演練視訊](https://www.youtube.com/watch?v=abmWJYe7Kcc)
     [特性及優點](https://ibm.biz/db2oncloud-features)
-	{: .navgroup-end}
-
-	{: .navgroup id="reference"}
-    [IBM Knowledge Center](http://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
-	{: .navgroup-end}
+	
+    [新增功能](https://www.ibm.com/support/docview.wss?uid=swg21961758)
+    [常見問題](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
+    [安全遵循](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
+    [載入資料](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_overview.html)
+    [連接至 Db2 資料庫](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connecting_overview.html)
+    {: .navgroup-end}
 
 	{: .navgroup id="help"}
 	help.md

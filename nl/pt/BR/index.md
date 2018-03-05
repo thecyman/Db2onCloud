@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2017-09-28"
+lastupdated: "2018-02-09"
 
 ---
 
@@ -19,13 +19,18 @@ lastupdated: "2017-09-28"
 {:tip: .tip}
 {:pre: .pre}
 
-#Introdução ao Db2 on Cloud (anteriormente dashDB for Transactions)
+#Introdução
 {: #getting_started_db2oncloud}
 
 O {{site.data.keyword.Db2_on_Cloud_long}} é um banco de dados SQL provisionado para você na nuvem. É possível usar o {{site.data.keyword.Db2_on_Cloud_short}} da mesma forma que usaria qualquer software de banco de dados, mas sem o gasto adicional e a despesa de configuração de hardware e instalação e manutenção de software. 
 {: shortdesc}
 
 Também é possível instalar um banco de dados local do Db2 usando o [download gratuito do Db2 Developer Edition ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions). Ele instala rapidamente uma edição do desenvolvedor pronta para execução do Db2 com ferramentas dentro de um contêiner do Docker (o Docker não é necessário; qualquer componente necessário será instalado automaticamente). 
+
+## Avaliação grátis
+{: #freetrial}
+
+Você pode experimentar o plano {{site.data.keyword.Db2_on_Cloud_short}} Precise Performance 500 (2.8.500) por sete dias no {{site.data.keyword.Bluemix_notm}} sem encargos. [Avaliação grátis ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://console.bluemix.net/catalog/services/db2){:new_window}
 
 ##Interfaces
 {: #interfaces}
@@ -36,7 +41,7 @@ Também é possível instalar um banco de dados local do Db2 usando o [download 
    * Console da Web do {{site.data.keyword.Db2_on_Cloud_short}}
 <!--   * REST APIs -->
    * Conecte aplicativos ou suas ferramentas favoritas por meio do seu computador local
-   * Use o {{site.data.keyword.Db2_on_Cloud_short}} como uma origem de dados para seus apps ou serviços Bluemix
+   * Use o {{site.data.keyword.Db2_on_Cloud_short}} como uma origem de dados para seus apps ou serviços {{site.data.keyword.Bluemix_notm}}
 
 ###Console da web do Db2 on Cloud
 {: #web_console}
@@ -69,7 +74,7 @@ Configure seu ambiente local para se conectar ao seu banco de dados do {{site.da
 2. [Instale o pacote de drivers ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} no computador em que seus apps ou ferramentas estão em execução.
 3. [Configure os arquivos de drivers ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} para seu banco de dados do {{site.data.keyword.Db2_on_Cloud_short}}.
 
-###Use o Db2 on Cloud como uma origem de dados para os seus apps ou serviços do Bluemix
+###Use o Db2 on Cloud como uma origem de dados para os seus apps ou serviços do {{site.data.keyword.Bluemix_notm}}
 {: #data_src}
 
 Os apps hospedados no {{site.data.keyword.Bluemix_notm}} podem conectar-se ao seu banco de dados do {{site.data.keyword.Db2_on_Cloud_short}} exatamente da mesma maneira que os seus aplicativos locais se conectam ao seu banco de dados do {{site.data.keyword.Db2_on_Cloud_short}}.

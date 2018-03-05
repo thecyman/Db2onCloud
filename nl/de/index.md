@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2017-09-28"
+lastupdated: "2018-02-09"
 
 ---
 
@@ -19,13 +19,18 @@ lastupdated: "2017-09-28"
 {:tip: .tip}
 {:pre: .pre}
 
-#Einführung in Db2 on Cloud (früher dashDB for Analytics)
+#Einführung
 {: #getting_started_db2oncloud}
 
 Bei {{site.data.keyword.Db2_on_Cloud_long}} handelt es sich um eine SQL-Datenbank, die für Sie in der Cloud bereitgestellt wird. Sie können {{site.data.keyword.Db2_on_Cloud_short}} wie jede andere Datenbanksoftware verwenden, der Aufwand und die Kosten für die Hardwareeinrichtung sowie die Softwareinstallation und -verwaltung fallen jedoch weg. 
 {: shortdesc}
 
 Es ist ebenfalls möglich, eine lokale Db2-Datenbank mithilfe des [kostenfreien Downloads für Db2 Developer Edition ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions) zu installieren. Dabei wird ohne großen Zeitaufwand eine sofort einsatzfähige Db2 Developer Edition-Instanz mit Tools in einem Docker-Container installiert (Docker nicht erforderlich; alle erforderlichen Komponenten werden automatisch installiert). 
+
+## Kostenfreier Test
+{: #freetrial}
+
+Sie können den Plan '{{site.data.keyword.Db2_on_Cloud_short}} Precise Performance 500 (2.8.500)' für einen Zeitraum von 7 Tagen kostenfrei unter {{site.data.keyword.Bluemix_notm}} testen. [Kostenfreier Test![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.bluemix.net/catalog/services/db2){:new_window}
 
 ##Schnittstellen
 {: #interfaces}
@@ -36,7 +41,7 @@ Für die Arbeit mit der {{site.data.keyword.Db2_on_Cloud_short}}-Datenbank stehe
    * {{site.data.keyword.Db2_on_Cloud_short}}-Webkonsole
 <!--   * REST APIs -->
    * Herstellen einer Verbindung für Anwendungen oder bevorzugte Tools vom lokalen Computer
-   * Verwenden von {{site.data.keyword.Db2_on_Cloud_short}} als Datenquelle für Bluemix-Apps oder -Services
+   * Verwenden von {{site.data.keyword.Db2_on_Cloud_short}} als Datenquelle für {{site.data.keyword.Bluemix_notm}}-Apps oder -Services
 
 ###Db2 on Cloud-Webkonsole
 {: #web_console}
@@ -69,7 +74,7 @@ Führen Sie die folgenden Schritte aus, um die lokale Umgebung für die Verbindu
 2. [Installieren Sie das Treiberpaket ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} auf dem Computer, auf dem Ihre Apps bzw. Tools ausgeführt werden.
 3. [Konfigurieren Sie die Treiberdateien ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} für Ihre {{site.data.keyword.Db2_on_Cloud_short}}-Datenbank.
 
-###Verwenden von Db2 on Cloud als Datenquelle für Bluemix-Apps oder -Services
+###Verwenden von Db2 on Cloud als Datenquelle für {{site.data.keyword.Bluemix_notm}}-Apps oder -Services
 {: #data_src}
 
 Für Apps, die per Hosting in {{site.data.keyword.Bluemix_notm}} bereitgestellt werden, können Verbindungen zu Ihrer {{site.data.keyword.Db2_on_Cloud_short}}-Datenbank auf dieselbe Weise hergestellt werden wie bei Verbindungen für lokalen Anwendungen zu Ihrer {{site.data.keyword.Db2_on_Cloud_short}}-Datenbank.

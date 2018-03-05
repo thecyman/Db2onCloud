@@ -9,11 +9,13 @@ Db2 on Cloud
 	index.md
     [Vídeo de demonstração](https://www.youtube.com/watch?v=abmWJYe7Kcc)
     [Recursos e vantagens](https://ibm.biz/db2oncloud-features)
-	{: .navgroup-end}
-
-	{: .navgroup id="reference"}
-    [IBM Knowledge Center](http://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
-	{: .navgroup-end}
+	
+    [O que há de novo](https://www.ibm.com/support/docview.wss?uid=swg21961758)
+    [Perguntas mais frequentes](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
+    [Conformidades de segurança](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
+    [Carregando os seus dados](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_overview.html)
+    [Conectando ao seu banco de dados do Db2](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connecting_overview.html)
+    {: .navgroup-end}
 
 	{: .navgroup id="help"}
 	help.md

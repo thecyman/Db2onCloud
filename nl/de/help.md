@@ -27,7 +27,7 @@ Sollten bei der Verwendung von {{site.data.keyword.Db2_on_Cloud_long}} Probleme 
 
 Wenn Sie in den Foren eine Frage stellen, versehen Sie Ihre Frage mit einem Tag, um die {{site.data.keyword.Bluemix}}-Entwicklungsteams auf die Frage aufmerksam zu machen.
 
-* Wenn Sie technische Fragen zur Entwicklung oder Bereitstellung einer App mit Db2 Warehouse on Cloud haben, posten Sie die Frage in [Stack Overflow ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://stackoverflow.com/questions/ask/advice?){:new_window} und kennzeichnen Sie die Frage mit den Tags "bluemix" und "db2oncloud".
+* Wenn Sie technische Fragen zur Entwicklung oder Bereitstellung einer App mit {{site.data.keyword.Db2_on_Cloud_short}} haben, posten Sie die Frage in [Stack Overflow ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://stackoverflow.com/questions/ask/advice?){:new_window} und kennzeichnen Sie die Frage mit den Tags "bluemix" und "db2oncloud".
 * Bei Fragen zum Service und zu den Anweisungen für den Einstieg verwenden Sie das Forum [IBM developerWorks® dW Answers ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://developer.ibm.com/answers/questions/ask/?smartspace=bluemix){:new_window}. Geben Sie die Tags "bluemix" und "db2oncloud" an.
 
 Weitere Details zur Nutzung der Foren finden Sie unter [Hilfe anfordern](/docs/support/index.html#getting-help){:new_window}.
