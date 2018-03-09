@@ -5,17 +5,17 @@
 {: .toc subcollection="Db2onCloud" audience="service" href="/docs/services/Db2onCloud/index.html"}
 Db2 on Cloud
 
-	{: .navgroup id="learn"}
-	index.md
+    {: .navgroup id="learn"}
+    index.md
     [Video di orientamento](https://www.youtube.com/watch?v=abmWJYe7Kcc)
     [Funzioni e vantaggi](https://ibm.biz/db2oncloud-features)
-	{: .navgroup-end}
+    {: .navgroup-end}
 
-	{: .navgroup id="reference"}
+    {: .navgroup id="reference"}
     [IBM Knowledge Center](http://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
-	{: .navgroup-end}
+    {: .navgroup-end}
 
-	{: .navgroup id="help"}
-	help.md
-	{: .navgroup-end}
+    {: .navgroup id="help"}
+    help.md
+    {: .navgroup-end}
 	

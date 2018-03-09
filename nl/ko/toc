@@ -5,8 +5,8 @@
 {: .toc subcollection="Db2onCloud" audience="service" href="/docs/services/Db2onCloud/index.html"}
 Db2 on Cloud
 
-	{: .navgroup id="learn"}
-	index.md
+    {: .navgroup id="learn"}
+    index.md
     [실습 동영상](https://www.youtube.com/watch?v=abmWJYe7Kcc)
     [기능 및 장점](https://ibm.biz/db2oncloud-features)
 	
@@ -14,10 +14,10 @@ Db2 on Cloud
     [Frequently asked questions](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
     [Security compliances](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
     [Loading your data](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_overview.html)
-    [Connecting to your Db2 database](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connecting_overview.html)
+    Connecting to your Db2 database](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connecting_overview.html)
     {: .navgroup-end}
 
-	{: .navgroup id="help"}
-	help.md
-	{: .navgroup-end}
+    {: .navgroup id="help"}
+    help.md
+    {: .navgroup-end}
 	
