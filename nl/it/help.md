@@ -28,8 +28,8 @@ puoi ottenere aiuto ricercando le informazioni o facendo delle domande in un for
 
 Quando utilizzi i forum per fare una domanda, contrassegna con una tag la tua domanda in modo che sia visualizzabile dai team di sviluppo {{site.data.keyword.Bluemix}}.
 
-* Se hai domande tecniche sullo sviluppo o la distribuzione di un'applicazione con {{site.data.keyword.Db2_on_Cloud_short}}, puoi inserire la tua domanda in [Stack Overflow ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](https://stackoverflow.com/questions/ask/advice? "Icona di link esterno"){:new_window} e contrassegnarla con le tag "bluemix" e "db2oncloud".
-* Per domande sul servizio e per le istruzioni introduttive, usa il forum [IBM developerWorks® dW Answers ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](https://developer.ibm.com/answers/questions/ask/?smartspace=bluemix "Icona di link esterno"){:new_window}. Includi le tag "bluemix" e "db2oncloud".
+* Se hai domande tecniche sullo sviluppo o la distribuzione di un'applicazione con {{site.data.keyword.Db2_on_Cloud_short}}, puoi inserire la tua domanda in [Stack Overflow ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](https://stackoverflow.com/questions/ask/advice?){:new_window} e contrassegnarla con le tag "bluemix" e "db2oncloud".
+* Per domande sul servizio e per le istruzioni introduttive, usa il forum [IBM developerWorks® dW Answers ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](https://developer.ibm.com/answers/questions/ask/?smartspace=bluemix){:new_window}. Includi le tag "bluemix" e "db2oncloud".
 
 Consulta [Come ottenere supporto](/docs/support/index.html#getting-help){:new_window} per ulteriori dettagli sull'utilizzo dei forum.
 
