@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-02-09"
+lastupdated: "2018-03-15"
 
 ---
 
@@ -27,10 +27,10 @@ lastupdated: "2018-02-09"
 
 You can also install a local Db2 database using the [free Db2 Developer Edition download ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions). It rapidly installs a ready-to-go developer edition of Db2 with tools inside a Docker container (Docker not required; it will automatically install any necessary components). 
 
-## Free trial
+<!-- ## Free trial
 {: #freetrial}
 
-You can try the {{site.data.keyword.Db2_on_Cloud_short}} Precise Performance 500 (2.8.500) plan for 7 days on {{site.data.keyword.Bluemix_notm}} without charge. [Free trial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/db2){:new_window}
+You can try the {{site.data.keyword.Db2_on_Cloud_short}} Precise Performance 500 (2.8.500) plan for 7 days on {{site.data.keyword.Bluemix_notm}} without charge. [Free trial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/db2){:new_window} -->
 
 ##Interfaces
 {: #interfaces}
@@ -39,7 +39,7 @@ You can work with your {{site.data.keyword.Db2_on_Cloud_short}} database in the 
 {: shortdesc}
 
    * {{site.data.keyword.Db2_on_Cloud_short}} web console
-<!--   * REST APIs -->
+   * REST API
    * Connect applications or your favorite tools from your local computer
    * Use {{site.data.keyword.Db2_on_Cloud_short}} as a data source for your {{site.data.keyword.Bluemix_notm}} apps or services
 

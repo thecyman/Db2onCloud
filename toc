@@ -5,19 +5,30 @@
 {: .toc subcollection="Db2onCloud" audience="service" href="/docs/services/Db2onCloud/index.html"}
 Db2 on Cloud
 
-    {: .navgroup id="learn"}
-    index.md
+	{: .navgroup id="learn"}
+	index.md
+    about.md
+    free_plan.md
+    flex_scaling.md
+    br.md
+    ha.md
+    audit.md
+    user_mgmt.md
+    plans_cfgs.md
+    loading.md
+    connecting.md
+    local_dev_env.md
+    communities.md    
+
     [Walk-through video](https://www.youtube.com/watch?v=abmWJYe7Kcc)
     [Features and advantages](https://ibm.biz/db2oncloud-features)
 	
     [What's new](https://www.ibm.com/support/docview.wss?uid=swg21961758)
     [Frequently asked questions](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
     [Security compliances](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
-    [Loading your data](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_overview.html)
-    [Connecting to your Db2 database](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connecting_overview.html)
     {: .navgroup-end}
 
-    {: .navgroup id="help"}
-    help.md
-    {: .navgroup-end}
+	{: .navgroup id="help"}
+	help.md
+	{: .navgroup-end}
 	
