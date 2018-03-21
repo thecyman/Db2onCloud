@@ -19,7 +19,7 @@ lastupdated: "2018-03-15"
 {:tip: .tip}
 {:pre: .pre}
 
-#Getting started
+# Getting started
 {: #getting_started_db2oncloud}
 
 {{site.data.keyword.Db2_on_Cloud_long}} is an SQL database provisioned for you in the cloud. You can use {{site.data.keyword.Db2_on_Cloud_short}} just as you would use any database software, but without the overhead and expense of hardware setup or software installation and maintenance. 
@@ -32,7 +32,7 @@ You can also install a local Db2 database using the [free Db2 Developer Edition 
 
 You can try the {{site.data.keyword.Db2_on_Cloud_short}} Precise Performance 500 (2.8.500) plan for 7 days on {{site.data.keyword.Bluemix_notm}} without charge. [Free trial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/db2){:new_window} -->
 
-##Interfaces
+## Interfaces
 {: #interfaces}
 
 You can work with your {{site.data.keyword.Db2_on_Cloud_short}} database in the following ways:
@@ -43,7 +43,7 @@ You can work with your {{site.data.keyword.Db2_on_Cloud_short}} database in the 
    * Connect applications or your favorite tools from your local computer
    * Use {{site.data.keyword.Db2_on_Cloud_short}} as a data source for your {{site.data.keyword.Bluemix_notm}} apps or services
 
-###Db2 on Cloud web console
+### Db2 on Cloud web console
 {: #web_console}
 
 The web console provides a graphical interface for everything that you need to use your database, including: load facilities, an SQL editor, driver downloads, and more.
@@ -64,7 +64,7 @@ You can access your {{site.data.keyword.Db2_on_Cloud_short}} web console in the 
 With Db2 Warehouse plans, you can perform tasks related to file management, loading data, and running R scripts by using the [Db2 Warehouse REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-api){:new_window}.
 {: shortdesc} -->
 
-###Connect applications or your favorite tools from your local computer
+### Connect applications or your favorite tools from your local computer
 {: #connect_apps}
 
 Configure your local environment to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database by completing the following steps:
@@ -74,7 +74,7 @@ Configure your local environment to connect to your {{site.data.keyword.Db2_on_C
 2. [Install the driver package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} on the computer where your apps or tools are running.
 3. [Configure the driver files ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} for your {{site.data.keyword.Db2_on_Cloud_short}} database.
 
-###Use Db2 on Cloud as a data source for your {{site.data.keyword.Bluemix_notm}} apps or services
+### Use Db2 on Cloud as a data source for your {{site.data.keyword.Bluemix_notm}} apps or services
 {: #data_src}
 
 Apps hosted on {{site.data.keyword.Bluemix_notm}} can connect to your {{site.data.keyword.Db2_on_Cloud_short}} database exactly the same way that your local applications connect to your {{site.data.keyword.Db2_on_Cloud_short}} database.
@@ -124,7 +124,7 @@ When your apps use the {{site.data.keyword.Bluemix_notm}} platform, you can take
     ?>
     ```
 
-##Samples
+## Samples
 {: #samples}
 
 Here are links to samples demonstrating how to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database from applications in different languages:

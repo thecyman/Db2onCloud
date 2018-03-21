@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-14"
+lastupdated: "2018-03-21"
 
 ---
 
@@ -48,7 +48,7 @@ You can use common programming languages to create applications that connect to 
 
 You can also connect external applications and tools to {{site.data.keyword.Db2_on_Cloud_short}} and use them to further manage or analyze your data. For example:
    * Connect your {{site.data.keyword.Bluemix_short}} applications that need an analytics database.
-   * [Connect from IBM Data Science Experience (DSX). ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://datascience.ibm.com/docs/content/manage-data/create-conn.html?context=analytics&linkInPage=true){:new_window}
+   * [Connect from {{site.data.keyword.DSX_full}} (formerly IBM Data Science Experience). ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://datascience.ibm.com/docs/content/manage-data/create-conn.html?context=analytics&linkInPage=true){:new_window}
    * [Connect {{site.data.keyword.IBM_notm}} InfoSphere® Data Architect to design and deploy your database schema. ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_ibm_data_architect.html){:new_window}
 <!--   * Connect Esri ArcGIS to perform geospatial analytics and map publishing with your data. -->
    * [Connect an {{site.data.keyword.IBM_notm}} Cognos® server to run Cognos reports against your data. ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cognos.html){:new_window}
