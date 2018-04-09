@@ -16,10 +16,10 @@ lastupdated: "2017-06-21"
 {:screen: .screen}
 {:pre: .pre}
 
-#帮助和支持
+# 帮助和支持
 {: #help_support}
 
-##获取有关 Db2 on Cloud 的帮助和支持
+## 获取有关 Db2 on Cloud 的帮助和支持
 {: #gettinghelp}
 
 如果您在使用 {{site.data.keyword.Db2_on_Cloud_long}} 时有任何疑问或遇到任何问题，您可以在论坛中搜索相关信息或进行提问来获取帮助。还可以提交支持凭单。

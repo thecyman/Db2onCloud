@@ -16,10 +16,10 @@ lastupdated: "2017-06-21"
 {:screen: .screen}
 {:pre: .pre}
 
-#ヘルプおよびサポート
+# ヘルプおよびサポート
 {: #help_support}
 
-##Db2 on Cloud のヘルプおよびサポートの利用
+## Db2 on Cloud のヘルプおよびサポートの利用
 {: #gettinghelp}
 
 {{site.data.keyword.Db2_on_Cloud_long}} を使用しているときに問題や質問がある場合は、情報を検索したり、フォーラムで質問したりして、

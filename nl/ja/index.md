@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-02-09"
+lastupdated: "2018-03-15"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2018-02-09"
 {:tip: .tip}
 {:pre: .pre}
 
-#概説
+# 概説
 {: #getting_started_db2oncloud}
 
 {{site.data.keyword.Db2_on_Cloud_long}} は、クラウド内でプロビジョンされた SQL データベースです。 任意のデータベース・ソフトウェアを使用するのと同じように {{site.data.keyword.Db2_on_Cloud_short}} を使用できますが、ハードウェアのセットアップやソフトウェアのインストールおよび保守のためのオーバーヘッドもコストもかかりません。 
@@ -27,23 +27,23 @@ lastupdated: "2018-02-09"
 
 また、ローカルの Db2 データベースを [ 無料の Db2 Developer Edition （![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions) からダウンロードできます。) を使用してインストールすることもできます。 それは Docker コンテナー内のツールとともに Db2 のすぐに使用できる Developer Edition を速やかにインストールします (Docker は不要です。必要なコンポーネントは自動的にインストールされます)。 
 
-## 無料トライアル
+<!-- ## Free trial
 {: #freetrial}
 
-{{site.data.keyword.Bluemix_notm}} で {{site.data.keyword.Db2_on_Cloud_short}} Precise Performance 500 (2.8.500) のプランを 7 日間、無料で試用できます。[無料トライアル ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.bluemix.net/catalog/services/db2){:new_window}
+You can try the {{site.data.keyword.Db2_on_Cloud_short}} Precise Performance 500 (2.8.500) plan for 7 days on {{site.data.keyword.Bluemix_notm}} without charge. [Free trial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/db2){:new_window} -->
 
-##インターフェース
+## インターフェース
 {: #interfaces}
 
 以下の方法で、{{site.data.keyword.Db2_on_Cloud_short}} データベースを使用した作業を行うことができます。
 {: shortdesc}
 
    * {{site.data.keyword.Db2_on_Cloud_short}} Web コンソール
-<!--   * REST APIs -->
+   * REST API
    * ローカル・コンピューターからアプリケーションまたは任意のツールを接続する
    * {{site.data.keyword.Bluemix_notm}} アプリまたはサービス用のデータ・ソースとして {{site.data.keyword.Db2_on_Cloud_short}} を使用する
 
-###Db2 on Cloud Web コンソール
+### Db2 on Cloud Web コンソール
 {: #web_console}
 
 Web コンソールは、ロード機能、SQL エディター、ドライバー・ダウンロードなど、データベースを使用するために必要なすべての操作を実行できるグラフィカル・インターフェースです。
@@ -64,7 +64,7 @@ Web コンソールは、ロード機能、SQL エディター、ドライバー
 With Db2 Warehouse plans, you can perform tasks related to file management, loading data, and running R scripts by using the [Db2 Warehouse REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-api){:new_window}.
 {: shortdesc} -->
 
-###ローカル・コンピューターからアプリケーションまたは任意のツールを接続する
+### ローカル・コンピューターからアプリケーションまたは任意のツールを接続する
 {: #connect_apps}
 
 以下の手順を実行して、{{site.data.keyword.Db2_on_Cloud_short}} データベースに接続するようにローカル環境を構成します。
@@ -74,7 +74,7 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 2. アプリまたはツールが実行されているコンピューターで [ドライバー・パッケージのインストール![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} を行います。
 3. {{site.data.keyword.Db2_on_Cloud_short}} データベース用に[ドライバー・ファイルの構成 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} を行います。
 
-###{{site.data.keyword.Bluemix_notm}} アプリまたはサービス用のデータ・ソースとして Db2 on Cloud を使用する
+### {{site.data.keyword.Bluemix_notm}} アプリまたはサービス用のデータ・ソースとして Db2 on Cloud を使用する
 {: #data_src}
 
 {{site.data.keyword.Bluemix_notm}} でホストされているアプリは、ローカル・アプリケーションが {{site.data.keyword.Db2_on_Cloud_short}} データベースに接続するのとまったく同じ方法で、{{site.data.keyword.Db2_on_Cloud_short}} データベースに接続できます。
@@ -124,7 +124,7 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
     ?>
     ```
 
-##例
+## 例
 {: #samples}
 
 各種の言語で作成されたアプリケーションから {{site.data.keyword.Db2_on_Cloud_short}} データベースに接続する方法を示すサンプルへのリンクは次のとおりです。

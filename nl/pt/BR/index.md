@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-02-09"
+lastupdated: "2018-03-15"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2018-02-09"
 {:tip: .tip}
 {:pre: .pre}
 
-#Introdução
+# Introdução
 {: #getting_started_db2oncloud}
 
 O {{site.data.keyword.Db2_on_Cloud_long}} é um banco de dados SQL provisionado para você na nuvem. É possível usar o {{site.data.keyword.Db2_on_Cloud_short}} da mesma forma que usaria qualquer software de banco de dados, mas sem o gasto adicional e a despesa de configuração de hardware e instalação e manutenção de software. 
@@ -27,23 +27,23 @@ O {{site.data.keyword.Db2_on_Cloud_long}} é um banco de dados SQL provisionado 
 
 Também é possível instalar um banco de dados local do Db2 usando o [download gratuito do Db2 Developer Edition ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions). Ele instala rapidamente uma edição do desenvolvedor pronta para execução do Db2 com ferramentas dentro de um contêiner do Docker (o Docker não é necessário; qualquer componente necessário será instalado automaticamente). 
 
-## Avaliação grátis
+<!-- ## Free trial
 {: #freetrial}
 
-Você pode experimentar o plano {{site.data.keyword.Db2_on_Cloud_short}} Precise Performance 500 (2.8.500) por sete dias no {{site.data.keyword.Bluemix_notm}} sem encargos. [Avaliação grátis ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://console.bluemix.net/catalog/services/db2){:new_window}
+You can try the {{site.data.keyword.Db2_on_Cloud_short}} Precise Performance 500 (2.8.500) plan for 7 days on {{site.data.keyword.Bluemix_notm}} without charge. [Free trial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/db2){:new_window} -->
 
-##Interfaces
+## Interfaces
 {: #interfaces}
 
 É possível trabalhar com o seu banco de dados do {{site.data.keyword.Db2_on_Cloud_short}} das maneiras a seguir:
 {: shortdesc}
 
    * Console da Web do {{site.data.keyword.Db2_on_Cloud_short}}
-<!--   * REST APIs -->
+   * API do REST
    * Conecte aplicativos ou suas ferramentas favoritas por meio do seu computador local
    * Use o {{site.data.keyword.Db2_on_Cloud_short}} como uma origem de dados para seus apps ou serviços {{site.data.keyword.Bluemix_notm}}
 
-###Console da web do Db2 on Cloud
+### Console da web do Db2 on Cloud
 {: #web_console}
 
 O console da web fornece uma interface gráfica para tudo o que precisar para usar seu banco de dados, incluindo: instalações de carga, um editor de SQL, downloads de driver e mais.
@@ -64,7 +64,7 @@ O console da web fornece uma interface gráfica para tudo o que precisar para us
 With Db2 Warehouse plans, you can perform tasks related to file management, loading data, and running R scripts by using the [Db2 Warehouse REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-api){:new_window}.
 {: shortdesc} -->
 
-###Conecte aplicativos ou suas ferramentas favoritas por meio do seu computador local
+### Conecte aplicativos ou suas ferramentas favoritas por meio do seu computador local
 {: #connect_apps}
 
 Configure seu ambiente local para se conectar ao seu banco de dados do {{site.data.keyword.Db2_on_Cloud_short}} concluindo as etapas a seguir:
@@ -74,7 +74,7 @@ Configure seu ambiente local para se conectar ao seu banco de dados do {{site.da
 2. [Instale o pacote de drivers ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} no computador em que seus apps ou ferramentas estão em execução.
 3. [Configure os arquivos de drivers ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} para seu banco de dados do {{site.data.keyword.Db2_on_Cloud_short}}.
 
-###Use o Db2 on Cloud como uma origem de dados para os seus apps ou serviços do {{site.data.keyword.Bluemix_notm}}
+### Use o Db2 on Cloud como uma origem de dados para os seus apps ou serviços do {{site.data.keyword.Bluemix_notm}}
 {: #data_src}
 
 Os apps hospedados no {{site.data.keyword.Bluemix_notm}} podem conectar-se ao seu banco de dados do {{site.data.keyword.Db2_on_Cloud_short}} exatamente da mesma maneira que os seus aplicativos locais se conectam ao seu banco de dados do {{site.data.keyword.Db2_on_Cloud_short}}.
@@ -124,7 +124,7 @@ Quando seus apps usam a plataforma {{site.data.keyword.Bluemix_notm}}, é possí
     ?>
     ```
 
-##Amostra
+## Amostra
 {: #samples}
 
 Aqui estão links para amostras que demonstram como se conectar a seu banco de dados do {{site.data.keyword.Db2_on_Cloud_short}} por meio de aplicativos em diferentes idiomas:

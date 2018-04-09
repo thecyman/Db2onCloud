@@ -16,10 +16,10 @@ lastupdated: "2017-06-21"
 {:screen: .screen}
 {:pre: .pre}
 
-#Aiuto e supporto
+# Aiuto e supporto
 {: #help_support}
 
-##Come ottenere aiuto e supporto per Db2 on Cloud
+## Come ottenere aiuto e supporto per Db2 on Cloud
 {: #gettinghelp}
 
 Se hai dei problemi o delle domande quando utilizzi {{site.data.keyword.Db2_on_Cloud_long}},

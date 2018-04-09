@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-02-09"
+lastupdated: "2018-03-15"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2018-02-09"
 {:tip: .tip}
 {:pre: .pre}
 
-#開始使用
+# 開始使用
 {: #getting_started_db2oncloud}
 
 {{site.data.keyword.Db2_on_Cloud_long}} 是在雲端中為您所佈建的 SQL Database。您就像使用任何資料庫軟體一般的使用 {{site.data.keyword.Db2_on_Cloud_short}}，但沒有硬體設置或軟體安裝及維護的額外負荷與費用。
@@ -27,23 +27,23 @@ lastupdated: "2018-02-09"
 
 您也可以使用[免費的 Db2 Developer Edition 下載 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions) 安裝本端 Db2 資料庫。它會快速地安裝立即可用的 Db2 開發人員版本，並且在 Docker 容器內會有工具（不需要 Docker；它會自動安裝任何必要的元件）。 
 
-## 免費試用
+<!-- ## Free trial
 {: #freetrial}
 
-您可以在 {{site.data.keyword.Bluemix_notm}} 上免費嘗試 {{site.data.keyword.Db2_on_Cloud_short}} Precise Performance 500 (2.8.500) 方案七天。[免費試用 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://console.bluemix.net/catalog/services/db2){:new_window}
+You can try the {{site.data.keyword.Db2_on_Cloud_short}} Precise Performance 500 (2.8.500) plan for 7 days on {{site.data.keyword.Bluemix_notm}} without charge. [Free trial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/db2){:new_window} -->
 
-##介面
+## 介面
 {: #interfaces}
 
 您可以透過下列方式來使用 {{site.data.keyword.Db2_on_Cloud_short}} 資料庫：
 {: shortdesc}
 
    * {{site.data.keyword.Db2_on_Cloud_short}} Web 主控台
-<!--   * REST APIs -->
+   * REST API
    * 連接本端電腦的應用程式或您最愛的工具
    * 將 {{site.data.keyword.Db2_on_Cloud_short}} 用作 {{site.data.keyword.Bluemix_notm}} 應用程式或服務的資料來源
 
-###Db2 on Cloud Web 主控台
+### Db2 on Cloud Web 主控台
 {: #web_console}
 
 Web 主控台為您使用資料庫所需的所有項目提供一個圖形介面，包括：負載機能、SQL 編輯器、驅動程式下載等等。
@@ -64,7 +64,7 @@ Web 主控台為您使用資料庫所需的所有項目提供一個圖形介面�
 With Db2 Warehouse plans, you can perform tasks related to file management, loading data, and running R scripts by using the [Db2 Warehouse REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-api){:new_window}.
 {: shortdesc} -->
 
-###連接本端電腦的應用程式或您最愛的工具
+### 連接本端電腦的應用程式或您最愛的工具
 {: #connect_apps}
 
 請完成下列步驟，配置本端環境以連接至 {{site.data.keyword.Db2_on_Cloud_short}} 資料庫：
@@ -74,7 +74,7 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 2. 在您的應用程式或工具執行所在的電腦上，[安裝驅動程式套件 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window}。
 3. 為 {{site.data.keyword.Db2_on_Cloud_short}} 資料庫，[配置驅動程式檔案 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}。
 
-###將 Db2 on Cloud 用作 {{site.data.keyword.Bluemix_notm}} 應用程式或服務的資料來源
+### 將 Db2 on Cloud 用作 {{site.data.keyword.Bluemix_notm}} 應用程式或服務的資料來源
 {: #data_src}
 
 將 {{site.data.keyword.Bluemix_notm}} 上管理的應用程式連接至 {{site.data.keyword.Db2_on_Cloud_short}} 資料庫的方式，與將您的本端應用程式連接至 {{site.data.keyword.Db2_on_Cloud_short}} 資料庫的方式完全相同。
@@ -124,7 +124,7 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
     ?>
     ```
 
-##範例
+## 範例
 {: #samples}
 
 以下鏈結範例示範如何從不同語言的應用程式連接至 {{site.data.keyword.Db2_on_Cloud_short}} 資料庫：

@@ -16,10 +16,10 @@ lastupdated: "2017-06-21"
 {:screen: .screen}
 {:pre: .pre}
 
-#도움 및 지원
+# 도움 및 지원
 {: #help_support}
 
-##Db2 on Cloud에 대한 도움 및 지원 받기
+## Db2 on Cloud에 대한 도움 및 지원 받기
 {: #gettinghelp}
 
 {{site.data.keyword.Db2_on_Cloud_long}} 사용할 때 문제점이 발생하거나 질문이 있는 경우 정보를 검색하거나 포럼을 통해 질문하여 도움을 받을 수 있습니다. 지원 티켓을 열 수도 있습니다.
