@@ -7,7 +7,7 @@ Db2 on Cloud
 
 	{: .navgroup id="learn"}
 	index.md
-    about.md
+    connecting.md
     free_plan.md
     flex_scaling.md
     br.md
@@ -16,7 +16,6 @@ Db2 on Cloud
     user_mgmt.md
     plans_cfgs.md
     loading.md
-    connecting.md
     local_dev_env.md
     communities.md    
 
