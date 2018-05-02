@@ -31,3 +31,9 @@ Unlike other {{site.data.keyword.Db2_on_Cloud_short}} plans, the {{site.data.key
 The free plan allows you to use one database schema.
 
 For more information about the {{site.data.keyword.Db2_on_Cloud_short}} free plan, see the [FAQ ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oc_free_plan_faq){:new_window}.
+
+## Using the Lite plan outside continental America
+{: #outside_na}
+
+The free plan is currently accessible without a credit card for continental America. Outside of continental America, customers need to add a credit card to their IBM Cloud account, and then select the "US South Dallas" region. The free Lite plan will then be visible.
+The Lite plan is always free. Even if there is a credit card on your account.
