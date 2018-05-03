@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-05-03"
 
 ---
 
@@ -13,10 +13,10 @@ lastupdated: "2018-03-15"
 {:screen: .screen}
 {:pre: .pre}
 
-# NEW: Free plan
+# NEW: Free Lite plan
 {: #free_plan}
 
-The {{site.data.keyword.Db2_on_Cloud_long}} free plan provides basic resources to let you develop or learn about Db2 without charge.
+The {{site.data.keyword.Db2_on_Cloud_long}} free Lite plan provides basic resources to let you develop or learn about Db2 without charge.
 {: shortdesc}
 
 There is no time limit on the free plan, but users must re-extend their free plan every 30 days.
@@ -26,8 +26,15 @@ Only community support is available.
 ## Architecture
 {: #architecture}
 
-Unlike other {{site.data.keyword.Db2_on_Cloud_short}} plans, the {{site.data.keyword.Db2_on_Cloud_short}} free plan runs on a multi-tenant system. The Flex and Precise Performance plans run on their own single-tenant virtual machines or baremetal servers.
+Unlike other {{site.data.keyword.Db2_on_Cloud_short}} plans, the {{site.data.keyword.Db2_on_Cloud_short}} free Lite plan runs on a multi-tenant system. The Flex and Precise Performance plans run on their own single-tenant virtual machines or baremetal servers.
  
 The free plan allows you to use one database schema.
 
-For more information about the {{site.data.keyword.Db2_on_Cloud_short}} free plan, see the [FAQ ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oc_free_plan_faq){:new_window}.
+For more information about the {{site.data.keyword.Db2_on_Cloud_short}} free Lite plan, see the [FAQ ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oc_free_plan_faq){:new_window}.
+
+## Using the Lite plan outside continental North America
+{: #outside_na}
+
+The free Lite plan is currently accessible without a credit card for continental North America. Outside of continental North America, customers must add a credit card to their IBM Cloud account and then select the "US South - Dallas" region for the free Lite plan to be visible for selection.
+
+The Lite plan is always free and your credit card will not be charged.
