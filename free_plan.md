@@ -13,7 +13,7 @@ lastupdated: "2018-05-03"
 {:screen: .screen}
 {:pre: .pre}
 
-# NEW: Free Lite plan
+# Free Lite plan
 {: #free_plan}
 
 The {{site.data.keyword.Db2_on_Cloud_long}} free Lite plan provides basic resources to let you develop or learn about Db2 without charge.
