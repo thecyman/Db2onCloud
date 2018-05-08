@@ -28,6 +28,10 @@ Db2 on Cloud
     [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
     {: .navgroup-end}
 
+	{: .navgroup id="reference"}
+    [SQL reference](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/c0004100.html)
+	{: .navgroup-end}
+
 	{: .navgroup id="help"}
 	help.md
 	{: .navgroup-end}
