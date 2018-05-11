@@ -12,10 +12,16 @@ Db2 on Cloud
     flex_scaling.md
     br.md
     ha.md
+
+    {: .topicgroup}
+    Migration
+        dcw.md
+        migration.md
+
     audit.md
     user_mgmt.md
     plans_cfgs.md
-    loading.md
+    maintenance.md
     local_dev_env.md
     communities.md    
 
