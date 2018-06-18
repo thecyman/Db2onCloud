@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-05-10"
+lastupdated: "2018-05-11"
 
 ---
 
@@ -13,13 +13,13 @@ lastupdated: "2018-05-10"
 {:screen: .screen}
 {:pre: .pre}
 
-# Migration to IBM Cloud
+# Migrating data to IBM Cloud
 {: #migration}
 
 You can load data from a data file in a delimited format (CSV or TXT) located on a local network or in an object store (Amazon S3 or IBM Cloud Object Storage) to {{site.data.keyword.Db2_on_Cloud_long}}. You can even migrate your data from an on-premises system.
 {: shortdesc}
 
-## Load data from object store
+## Loading data from object store
 {: #cos}
 
 To load data from Amazon S3, select one of the following methods:
@@ -50,7 +50,7 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 
 **Note:** For IBM Cloud Object Storage, to create HMAC credentials when creating new service credentials, specify {"HMAC:true"} in the *Add Inline Configuration Parameters* field.
 
-## Migrate data from on-premises system
+## Migrating data from on-premises system
 {: #onprem}
 
 To migrate your data from an on-premises system, choose one of the following methods depending on the size of your data set:

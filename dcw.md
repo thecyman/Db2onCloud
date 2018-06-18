@@ -13,7 +13,7 @@ lastupdated: "2018-05-10"
 {:screen: .screen}
 {:pre: .pre}
 
-# IBM Database Conversion Workbench (DCW)
+# Assessing your database compatibility
 {: #dcw}
 
 IBM Database Conversion Workbench (DCW) is a no-charge plug-in that adds database migration capabilities to IBM Data Studio. You can download both Data Studio and Database Conversion Workbench from the web console.
