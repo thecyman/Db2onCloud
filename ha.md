@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-14"
+lastupdated: "2018-07-11"
 
 ---
 
@@ -29,15 +29,19 @@ In addition, you can add a Geo-Replicated Disaster Recovery Node. This offsite D
 
 # How to add a Geo-Replicated Disaster Recovery Node
 {: #add_dr}
-For existing Db2 on Cloud users:
- * You can add an DR node on-demand to existing {{site.data.keyword.Db2_on_Cloud_short}} instances. After clicking your instance in the {{site.data.keyword.Bluemix_notm}} dashboard, you will see an option called "Manage Disaster Recovery". You can add a Geo-Replicated Disaster Recovery Node from there.
- * If you purchased Db2 on Cloud on contract via a sales representative and do not have an IBM Cloud subscription, please contact your IBM representative to add a DR Node.
-If you are currently not a Db2 on Cloud user:
- * Order Db2 on Cloud via IBM Cloud, or speak to your sales representative.
- * You can then add a DR node using the steps above. (Using the "Manage Disaster Recovery" in the console.)
+
+For existing {{site.data.keyword.Db2_on_Cloud_short}} users:
+ * You can add an on-demand DR node to existing {{site.data.keyword.Db2_on_Cloud_short}} instances. After clicking your instance in the {{site.data.keyword.Bluemix_notm}} dashboard, you will see an option called **Manage Disaster Recovery**. You can add a Geo-Replicated Disaster Recovery Node from there.
+ * If you purchased {{site.data.keyword.Db2_on_Cloud_short}} on contract through a sales representative and do not have an {{site.data.keyword.Bluemix_notm}} subscription, contact your IBM representative to add a DR node.
+
+If you are currently not a {{site.data.keyword.Db2_on_Cloud_short}} user:
+ * Order {{site.data.keyword.Db2_on_Cloud_short}} through {{site.data.keyword.Bluemix_notm}}, or speak to your sales representative.
+ * You can then add a DR node by using **Manage Disaster Recovery** in the console.
 <!--- Through the web console, you can also add a disaster recovery (DR) node located in a datacenter of your choice. -->
 
-# Managing High Availability and Disaster Recovery Nodes
-For standard HA nodes (which are not offsite), the failover is managed for you by IBM. IBM will monitor the health of your server and fail over and back as needed, including for rolling updates and scaling to keep uptime as high as possible.
+# Managing high availability and disaster recovery nodes
+{: #manage_ha_dr}
 
-For Geo-Replicated Disaster Recovery (HADR), you will need to manually fail over using the "Manage Disaster Recovery" console. In addition, [you can fail over using APIs described here ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/457901/where-can-i-find-api-documentation-for-db2-on-clou.html){:new_window}.
+For standard HA nodes, which are not offsite, the failover is managed for you by IBM. IBM monitors the health of your server, failover, and failing back as needed, including rolling updates and scaling to keep uptime as high as possible.
+
+For Geo-Replicated Disaster Recovery (HADR), you must manually fail over by using **Manage Disaster Recovery** in the console. In addition, you can fail over by using an API described [here ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/457901/where-can-i-find-api-documentation-for-db2-on-clou.html){:new_window}.
