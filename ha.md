@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-07-11"
+lastupdated: "2018-07-12"
 
 ---
 
@@ -27,7 +27,7 @@ In addition, you can add a Geo-Replicated Disaster Recovery Node. This offsite D
 
 {{site.data.keyword.Db2_on_Cloud_short}} uses the Db2 High Availability Disaster Recovery (HADR) technology in `ASYNC` mode to achieve the offsite DR node capability and provides `Read on Standby` on the DR node.
 
-# How to add a Geo-Replicated Disaster Recovery Node
+## How to add a Geo-Replicated Disaster Recovery Node
 {: #add_dr}
 
 For existing {{site.data.keyword.Db2_on_Cloud_short}} users:
@@ -39,7 +39,7 @@ If you are currently not a {{site.data.keyword.Db2_on_Cloud_short}} user:
  * You can then add a DR node by using **Manage Disaster Recovery** in the console.
 <!--- Through the web console, you can also add a disaster recovery (DR) node located in a datacenter of your choice. -->
 
-# Managing high availability and disaster recovery nodes
+## Managing high availability and disaster recovery nodes
 {: #manage_ha_dr}
 
 For standard HA nodes, which are not offsite, the failover is managed for you by IBM. IBM monitors the health of your server, failover, and failing back as needed, including rolling updates and scaling to keep uptime as high as possible.
