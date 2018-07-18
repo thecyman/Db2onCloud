@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-06-15"
+lastupdated: "2018-07-18"
 
 ---
 
@@ -62,9 +62,9 @@ Host name: targetdotcom
 
 1. Create a table `testdata` in schema `admin2`.
 
-2. From the Db2 on Cloud console, load the `testdata` table with data as user `admin2` with password `YYYY`.
+2. From the {{site.data.keyword.Db2_on_Cloud_short}} console, load the `testdata` table with data as user `admin2` with password `YYYY`.
 
-### On a client machine of the target
+<!-- ### On a client machine of the target
 
 1. Catalog the target machine:<br/>
    `db2 catalog tcpip node <node_name> remote <host_name> server 50000`<br/>
@@ -112,6 +112,35 @@ Host name: targetdotcom
 
    For example:<br/>
    `db2 "select * from ntest1"`
+-->
+
+### On a Db2 on Cloud machine being used as a federation source
+
+From the {{site.data.keyword.Db2_on_Cloud_short}} console:
+
+1. Create a server to talk to the target machine:<br/>
+   `create server <server_name> type dashdb version 11 wrapper drda authorization "<admin_user_on_target>" password "<admin_password_on_target>" options (host '<target_host_name>', port '50000', dbname 'bludb')`
+
+   For example:<br/>
+   `create server db2server type dashdb version 11 wrapper drda authorization "admin2" password "YYYY" options (host 'targetdotcom', port '50000', dbname 'bludb')`
+
+2. Create the user mapping for admin2:<br/>
+   `create user mapping for <admin_user> server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')`
+
+   For example:<br/>
+   `create user mapping for admin1 server db2server options (remote_authid 'admin2', remote_password 'YYYY')`
+
+3. Create a nickname for the database:<br/>
+   `create nickname <nickname> for <server_name>.<schema_name>.<table_name>`
+
+   For example:<br/>
+   `create nickname ntest1 for db2server.admin2.testdata`
+
+4. Test that you can pull data from the target server:<br/>
+   `select * from <nickname>`
+
+   For example:<br/>
+   `select * from ntest1`
 
 ## Additional information
 
