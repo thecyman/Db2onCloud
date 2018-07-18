@@ -45,3 +45,9 @@ If you are currently not a {{site.data.keyword.Db2_on_Cloud_short}} user:
 For standard HA nodes, which are not offsite, the failover is managed for you by IBM. IBM monitors the health of your server, failover, and failing back as needed, including rolling updates and scaling to keep uptime as high as possible.
 
 For Geo-Replicated Disaster Recovery (HADR), you must manually fail over by using **Manage Disaster Recovery** in the console. In addition, you can fail over by using an API as described [here ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/457901/where-can-i-find-api-documentation-for-db2-on-clou.html){:new_window}.
+
+## What are the changes required for an application using Db2 to work with the DR recovery after takeover? Does the DNS name or the IP address change after takeover?
+
+A: No, customer is given 2 resolvable hostnames, and if your app is configured to use Db2 ACR (Active Connection Reroute) then apps will get rerouted to the new primary node.
+
+[For a longer FAQ about the Geo-Replicated Disaster Recovery Node, click here. ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/458385/frequently-asked-questions-for-db2-on-cloud-hadr-g.html){:new_window}.
