@@ -22,7 +22,9 @@ lastupdated: "2018-03-15"
 # Einführung
 {: #getting_started_db2oncloud}
 
-Bei {{site.data.keyword.Db2_on_Cloud_long}} handelt es sich um eine SQL-Datenbank, die für Sie in der Cloud bereitgestellt wird. Sie können {{site.data.keyword.Db2_on_Cloud_short}} wie jede andere Datenbanksoftware verwenden, der Aufwand und die Kosten für die Hardwareeinrichtung sowie die Softwareinstallation und -verwaltung fallen jedoch weg. 
+Bei {{site.data.keyword.Db2_on_Cloud_long}} handelt es sich um eine SQL-Datenbank, die für Sie in der Cloud bereitgestellt wird. Sie können {{site.data.keyword.Db2_on_Cloud_short}} wie jede andere Datenbanksoftware verwenden, der Aufwand für die Hardwareeinrichtung sowie die Softwareinstallation und -verwaltung fällt jedoch weg. 
+
+Wenn Sie den kostenfreien Lite-Plan außerhalb des nordamerikanischen Festlands bereitstellen möchten, lesen Sie die Informationen in [Lite-Plan außerhalb des nordamerikanischen Festlands verwenden](free_plan.html#outside_na){:new_window}.
 {: shortdesc}
 
 Es ist ebenfalls möglich, eine lokale Db2-Datenbank mithilfe des [kostenfreien Downloads für Db2 Developer Edition ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions) zu installieren. Dabei wird ohne großen Zeitaufwand eine sofort einsatzfähige Db2 Developer Edition-Instanz mit Tools in einem Docker-Container installiert (Docker nicht erforderlich; alle erforderlichen Komponenten werden automatisch installiert). 

@@ -16,7 +16,7 @@ lastupdated: "2018-03-14"
 # Ridimensionamento flessibile
 {: #scale}
 
-Ridimensionamento indipendente di RAM, archiviazione e core di calcolo.
+Ridimensionamento indipendente di RAM, archiviazione e core di calcolo. 
 {: shortdesc}
 
 Il tuo piano Flex viene inizialmente distribuito con 1 core, 4 GB di RAM e 2 GB di spazio disco. Puoi in seguito aumentarlo o diminuirlo con le barre di scorrimento.

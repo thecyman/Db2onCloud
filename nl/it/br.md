@@ -13,7 +13,7 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:pre: .pre}
 
-# Backup e ripristino 
+# Backup e ripristino
 {: #br}
 
 Per i piani a pagamento, i backup crittografati del database vengono eseguiti giornalmente. Un backup giornaliero viene conservato per ognuno degli ultimi 14 giorni.

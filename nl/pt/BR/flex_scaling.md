@@ -16,7 +16,7 @@ lastupdated: "2018-03-14"
 # Ajuste de escala flexível
 {: #scale}
 
-Ajuste de escala independente de RAM, armazenamento e núcleos de cálculo.
+Ajuste de escala independente de RAM, armazenamento e núcleos de cálculo. 
 {: shortdesc}
 
 O plano Flex inicialmente implementa com um núcleo, 4 GB de RAM e 2 GB de espaço em disco. Em seguida, é possível escalar seu

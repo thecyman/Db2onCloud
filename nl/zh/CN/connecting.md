@@ -16,7 +16,7 @@ lastupdated: "2018-03-21"
 # 连接
 {: #connect}
 
-您可以将命令行界面、IBM® 或第三方应用程序或工具或者自己创建的应用程序连接到 Db2® 数据库。
+您可以将命令行界面、IBM® 或第三方应用程序或工具，或者自己创建的应用程序连接到 Db2® 数据库。
 {: shortdesc}
 
 ## 先决条件
@@ -28,7 +28,7 @@ lastupdated: "2018-03-21"
 ### 配置环境
 {: #cfg_env}
 
-要将本地应用程序和工具连接到 Db2 数据库，需要[配置环境 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}。
+要将本地应用程序和工具连接到 Db2 数据库，您需要[配置环境 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}。
 {: shortdesc}
 
 ## 以编程方式连接
@@ -48,7 +48,7 @@ lastupdated: "2018-03-21"
 
 您还可以将外部应用程序和工具连接到 {{site.data.keyword.Db2_on_Cloud_short}}，以使用其进一步管理或分析数据。例如：
    * 连接需要分析数据库的 {{site.data.keyword.Bluemix_short}} 应用程序。
-   * [从 {{site.data.keyword.DSX_full}}（前版称为 IBM Data Science Experience）连接。![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://datascience.ibm.com/docs/content/manage-data/create-conn.html?context=analytics&linkInPage=true){:new_window}
+   * [从 {{site.data.keyword.DSX_full}}（以前称为 IBM Data Science Experience）连接。![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://datascience.ibm.com/docs/content/manage-data/create-conn.html?context=analytics&linkInPage=true){:new_window}
    * [连接 {{site.data.keyword.IBM_notm}} InfoSphere® Data Architect，以设计和部署数据库模式。![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_ibm_data_architect.html){:new_window}
 <!--   * Connect Esri ArcGIS to perform geospatial analytics and map publishing with your data. -->
    * [连接 {{site.data.keyword.IBM_notm}} Cognos® 服务器，以对数据运行 Cognos 报告。![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cognos.html){:new_window}

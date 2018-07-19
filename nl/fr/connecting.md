@@ -16,10 +16,10 @@ lastupdated: "2018-03-21"
 # Connexion
 {: #connect}
 
-Vous pouvez connecter à votre base de données Db2® des interfaces de ligne de commande, des applications ou des outils tiers ou IBM®, ou des applications que vous créez.
+Vous pouvez connecter à votre base de données Db2® des interfaces de ligne de commande, des applications ou des outils tiers ou IBM®, ou des applications que vous créez. 
 {: shortdesc}
 
-## Prérequis 
+## Prérequis
 {: #connect_prereq}
 
 Si vous rencontrez des problèmes de connexion, consultez l'article [Prérequis ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connecting_applications_to_dashdb_database.html){:new_window}.
@@ -28,7 +28,7 @@ Si vous rencontrez des problèmes de connexion, consultez l'article [Prérequis 
 ### Configuration de votre environnement
 {: #cfg_env}
 
-Pour connecter des applications et des outils locaux à votre base de données Db2, vous devez [configurer votre environnement ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}.
+Pour connecter des applications et des outils locaux à votre base de données Db2, vous devez [configurer votre environnement ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}. 
 {: shortdesc}
 
 ## Connexion à l'aide d'un programme
@@ -53,7 +53,7 @@ et les utiliser pour gérer ou analyser vos données. Exemple :
    * [Connectez {{site.data.keyword.IBM_notm}} InfoSphere® Data Architect pour concevoir et déployer votre schéma de base de données. ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_ibm_data_architect.html){:new_window}
 <!--   * Connect Esri ArcGIS to perform geospatial analytics and map publishing with your data. -->
    * [Connectez un serveur {{site.data.keyword.IBM_notm}} Cognos® pour exécuter des rapports Cognos avec vos données. ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cognos.html){:new_window}
-   * Connectez des outils basés sur SQL comme Tableau ou Microsoft Excel pour manipuler, analyser ou visualiser vos données.  
+   * Connectez des outils basés sur SQL comme Tableau ou Microsoft Excel pour manipuler, analyser ou visualiser vos données. 
        * [Tableau ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_tableau.html){:new_window}
        * [Microsoft Excel ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_excel.html){:new_window}
    * [Connectez Aginity Workbench pour migrer des données et des modèles de données Netezza® vers {{site.data.keyword.dashdbshort_notm}}. ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_aginity.html){:new_window}

@@ -12,10 +12,20 @@ Db2 on Cloud
     flex_scaling.md
     br.md
     ha.md
+
+    {: .topicgroup}
+    データのロード
+        dcw.md
+        migration.md
+
+    {: .topicgroup}
+    他の Db2 サーバーへの接続
+        federation.md
+
     audit.md
     user_mgmt.md
     plans_cfgs.md
-    loading.md
+    maintenance.md
     local_dev_env.md
     communities.md    
 
@@ -25,7 +35,15 @@ Db2 on Cloud
     [最新情報](https://www.ibm.com/support/docview.wss?uid=swg21961758)
     [よくあるご質問](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
     [セキュリティー・コンプライアンス](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
+    [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
     {: .navgroup-end}
+
+	{: .navgroup id="reference"}
+    [REST API](https://console.bluemix.net/apidocs/2476-db2-on-cloud)
+    
+[SQL
+リファレンス](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/c0004100.html)
+	{: .navgroup-end}
 
 	{: .navgroup id="help"}
 	help.md

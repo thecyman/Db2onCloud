@@ -22,10 +22,23 @@ lastupdated: "2018-03-15"
 # 概説
 {: #getting_started_db2oncloud}
 
-{{site.data.keyword.Db2_on_Cloud_long}} は、クラウド内でプロビジョンされた SQL データベースです。 任意のデータベース・ソフトウェアを使用するのと同じように {{site.data.keyword.Db2_on_Cloud_short}} を使用できますが、ハードウェアのセットアップやソフトウェアのインストールおよび保守のためのオーバーヘッドもコストもかかりません。 
+{{site.data.keyword.Db2_on_Cloud_long}} は、クラウド内でプロビジョンされた SQL データベースです。 任
+意のデータベース・ソフトウェアを使用するのと同じように
+{{site.data.keyword.Db2_on_Cloud_short}} を使用できますが、面倒なハードウェアのセットアッ
+プやソフトウェアのインストールおよびメンテナンスは必要ありません。 
+
+北アメリカ大陸以外で無料 Lite プランを導入する場合は、
+[北アメリカ大陸以外での Lite プランの利用](free_plan.html#outside_na){:new_window} を参照してください。
 {: shortdesc}
 
-また、ローカルの Db2 データベースを [ 無料の Db2 Developer Edition （![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions) からダウンロードできます。) を使用してインストールすることもできます。 それは Docker コンテナー内のツールとともに Db2 のすぐに使用できる Developer Edition を速やかにインストールします (Docker は不要です。必要なコンポーネントは自動的にインストールされます)。 
+また、
+[ 無料の
+Db2 Developer Edition ダウンロード ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・
+アイコン
+")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions) を使用して、ローカルの Db2 データベースをインストー
+ルすることもできま
+す。ここでは、すぐに使用できる Db2 Developer Edition が、Docker コンテナー内のツールとともに速や
+かにインストールされます (Docker は不要です。必要なコンポーネントは自動的にインストールされます)。 
 
 <!-- ## Free trial
 {: #freetrial}

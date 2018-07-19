@@ -16,7 +16,7 @@ lastupdated: "2018-03-21"
 # Conectando
 {: #connect}
 
-É possível conectar interfaces da linha de comandos, aplicativos ou ferramentas da IBM® ou de terceiros ou aplicativos que você cria para o banco de dados DB2®.
+É possível conectar interfaces da linha de comandos, aplicativos ou ferramentas da IBM® ou de terceiros ou aplicativos que você cria para o banco de dados DB2®. 
 {: shortdesc}
 
 ## Prerequisites
@@ -28,7 +28,7 @@ Se você tiver problemas para se conectar, conclua os pré-requisitos do [ ![Íc
 ### Configurando seu ambiente
 {: #cfg_env}
 
-Para conectar aplicativos locais e ferramentas ao seu banco de dados DB2, é necessário [configurar seu ambiente ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}.
+Para conectar aplicativos locais e ferramentas ao seu banco de dados DB2, é necessário [configurar seu ambiente ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}. 
 {: shortdesc}
 
 ## Conectando programaticamente

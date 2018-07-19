@@ -24,9 +24,9 @@ Vous pouvez charger des données à partir d'un fichier de données dans un form
 * [Chargement des données à partir de SQL Server ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://lift.ng.bluemix.net/#docs){:new_window}
 * [Chargement d'un fichier CSV ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://lift.ng.bluemix.net/#docs){:new_window}
 <!-- * [Loading data from IBM Cloud Object Storage (formerly SoftLayer Swift) ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_swift.html){:new_window} -->
-* Chargez des données à partir d'Amazon S3 à l'aide de l'une des méthodes suivantes : 
+* Chargez des données à partir d'Amazon S3 à l'aide de l'une des méthodes suivantes :
     * Depuis la console Web {{site.data.keyword.dashdbshort_notm}} : **Charger > Amazon S3**. 
-    * Directement depuis des tables externes. Voici un exemple d'instruction SQL : 
+    * Directement depuis des tables externes. Voici un exemple d'instruction SQL :
 
     ```
       INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING

@@ -24,6 +24,6 @@ I seguenti sono i metodi con cui puoi controllare l'attività sul database {{sit
 
 Creando un CHANGE HISTORY event monitor, puoi eseguire la query della tabella di monitoraggio dell'evento per determinare cosa è stato fatto nel database e da chi. 
 
-La Time Travel Query rende semplice archiviare tutte le modifiche ai tuoi dati e persino eseguire la query dei tuoi vecchi dati in base a un punto temporale selezionato. Per utilizzare questo metodo di verifica, assicurarti di aver prima impostato le tue tabelle per supportare Time Travel Query. 
+La Time Travel Query rende semplice archiviare tutte le modifiche ai tuoi dati e persino eseguire la query dei tuoi vecchi dati in base a un punto temporale selezionato. Per utilizzare questo metodo di verifica, assicurarti di aver prima impostato le tue tabelle per supportare Time Travel Query.
 
 Per ulteriori informazioni su questi metodi di controllo, vedi [How do I audit or track changes? ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.ibm.com/answers/questions/427780/how-can-i-audit-or-track-changes-dropped-tables-to.html){:new_window}.

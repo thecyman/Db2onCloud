@@ -26,8 +26,7 @@ a execução de instruções SQL e o monitoramento do seu serviço.
 
 O serviço totalmente gerenciado do {{site.data.keyword.Db2_on_Cloud_short}} é implementado com alguns cliques e é
 possível executar seu banco de dados sem problemas. Ele já está otimizado para você. O serviço manipula quaisquer upgrades de software
-subjacente e problemas de hardware para você. O serviço inclui monitoramento de funcionamento 24x7 do banco de dados e da infraestrutura. 
-Seus dados em disco são criptografados e as conexões com o banco de dados são feitas com segurança aprimorada. Os planos de alta
+subjacente e problemas de hardware para você. O serviço inclui monitoramento de funcionamento 24x7 do banco de dados e da infraestrutura. Seus dados em disco são criptografados e as conexões com o banco de dados são feitas com segurança aprimorada. Os planos de alta
 disponibilidade fornecem atualizações contínuas permanentes e é possível escalar seus aplicativos sem tempo de inatividade. Para
 obter mais informações, consulte [Alta disponibilidade](../Db2onCloud/ha.html){:new_window}.
 {: shortdesc}

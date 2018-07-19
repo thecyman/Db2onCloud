@@ -19,7 +19,7 @@ lastupdated: "2018-03-14"
 {{site.data.keyword.Db2_on_Cloud_long}} è un servizio database SQL completamente gestito. La console web {{site.data.keyword.Db2_on_Cloud_short}} semplifica le attività comuni, come l'importazione dei fogli di calcolo, l'esecuzione di istruzioni SQL e il monitoraggio del tuo servizio.
 {: shortdesc}
 
-## Cos'è incluso nel servizio gestito? 
+## Cos'è incluso nel servizio gestito?
 {: #managed_service}
 
 Il servizio pienamente gestito di {{site.data.keyword.Db2_on_Cloud_short}} distribuisce in pochi clic e puoi eseguire il tuo database senza problemi. È già ottimizzato per te. Il servizio gestisce tutti i problemi hardware e gli aggiornamenti software sottostanti al tuo posto. Il servizio include un monitoraggio dell'integrità sette giorni alla settimana, 24 ore su 24. I tuoi dati sul disco vengono codificati e le connessioni al database vengono effettuate con la sicurezza avanzata. I piani di elevata disponibilità forniscono gli aggiornamenti in sequenza senza problemi e puoi ridimensionare le tue applicazioni senza tempi di inattività. Per ulteriori informazioni, vedi [Elevata disponibilità](../Db2onCloud/ha.html){:new_window}.

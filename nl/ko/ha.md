@@ -16,7 +16,7 @@ lastupdated: "2018-03-14"
 # 고가용성(HA)
 {: #ha}
 
-{{site.data.keyword.Db2_on_Cloud_short}} 고가용성 플랜은 99.99% SLA의 뛰어난 가용성이라는 특성을 가집니다.
+{{site.data.keyword.Db2_on_Cloud_short}} 고가용성 플랜은 99.99% SLA의 뛰어난 가용성이라는 특성을 가집니다. 
 {: shortdesc}
 
 표준 고가용성 플랜에서는 <!-- without a DR node -->원활한 장애 복구 및 롤링 업데이트를 제공합니다. 이는 자동 클라이언트 재라우팅(ACR) 및 포터블 IP를 사용하여 관리됩니다.

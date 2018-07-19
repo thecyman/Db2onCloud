@@ -26,4 +26,4 @@ lastupdated: "2018-03-14"
 
 Time Travel Query 可轻松存储所有数据更改，甚至可基于选中的时间点查询旧数据。要使用此审计方法，请确保首先设置表以支持 Time Travel Query。
 
-有关这些审计方法的更多信息，请参阅[如何审计或跟踪更改？![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.ibm.com/answers/questions/427780/how-can-i-audit-or-track-changes-dropped-tables-to.html){:new_window}.
+有关这些审计方法的更多信息，请参阅[如何审计或跟踪更改？![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.ibm.com/answers/questions/427780/how-can-i-audit-or-track-changes-dropped-tables-to.html){:new_window}。

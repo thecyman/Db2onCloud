@@ -16,7 +16,7 @@ lastupdated: "2018-03-14"
 # Mise à l'échelle flexible
 {: #scale}
 
-Il est possible de mettre à l'échelle la mémoire RAM, le stockage et les coeurs de traitement de manière indépendante.
+Il est possible de mettre à l'échelle la mémoire RAM, le stockage et les coeurs de traitement de manière indépendante. 
 {: shortdesc}
 
 Votre plan Flex est initialement déployé avec 1 coeur, 4 Go de mémoire RAM et 2 Go d'espace disque. Vous pouvez ensuite augmenter ou réduire les caractéristiques de ce plan à l'aide des curseurs.

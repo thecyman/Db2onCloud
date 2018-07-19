@@ -22,7 +22,9 @@ lastupdated: "2018-03-15"
 # Introduzione
 {: #getting_started_db2oncloud}
 
-{{site.data.keyword.Db2_on_Cloud_long}} è un database SQL di cui viene eseguito il provisioning nel cloud per te. Puoi utilizzare {{site.data.keyword.Db2_on_Cloud_short}} come useresti qualsiasi software database ma senza dover sostenere il carico di lavoro e i costi necessari per la configurazione dell'hardware o l'installazione e la manutenzione del software. 
+{{site.data.keyword.Db2_on_Cloud_long}} è un database SQL di cui viene eseguito il provisioning nel cloud per te. Puoi utilizzare {{site.data.keyword.Db2_on_Cloud_short}} proprio come useresti qualsiasi altro software di database, ma senza i problemi di configurazione dell'hardware o di installazione e manutenzione del software. 
+
+Se stai distribuendo il piano Lite gratuito al di fuori del Nord America continentale, vedi: [Utilizzo del piano Lite al di fuori del Nord America continentale](free_plan.html#outside_na){:new_window}.
 {: shortdesc}
 
 Puoi anche installare un database db2 locale utilizzando il [download di Db2 Developer Edition gratuito ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions). Installa rapidamente una Developer Edition di Db2 pronta per l'uso all'interno di un contenitore Docker (Docker non richiesto; installerà automaticamente qualsiasi componente necessario). 

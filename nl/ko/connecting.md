@@ -16,7 +16,7 @@ lastupdated: "2018-03-21"
 # 연결
 {: #connect}
 
-명령행 인터페이스, IBM® 또는 써드파티 애플리케이션이나 도구, 작성한 앱을 Db2® 데이터베이스에 연결할 수 있습니다.
+명령행 인터페이스, IBM® 또는 써드파티 애플리케이션이나 도구, 작성한 앱을 Db2® 데이터베이스에 연결할 수 있습니다. 
 {: shortdesc}
 
 ## 전제조건
@@ -28,7 +28,7 @@ lastupdated: "2018-03-21"
 ### 환경 구성
 {: #cfg_env}
 
-Db2 데이터베이스에 로컬 애플리케이션 및 도구를 연결하려면 [환경 구성 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}을 수행해야 합니다.
+Db2 데이터베이스에 로컬 애플리케이션 및 도구를 연결하려면 [환경 구성 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}을 수행해야 합니다. 
 {: shortdesc}
 
 ## 프로그래밍 방식으로 연결

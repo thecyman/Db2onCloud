@@ -16,7 +16,7 @@ lastupdated: "2018-03-21"
 # Verbindung herstellen
 {: #connect}
 
-Sie können eine Verbindung von Befehlszeilenschnittstellen, von IBM® Anwendungen oder Tools, von Anwendungen oder Tools eines anderen Anbieters oder von Apps, die Sie erstellen, zu Ihrer Db2®-Datenbank herstellen.
+Sie können eine Verbindung von Befehlszeilenschnittstellen, von IBM® Anwendungen oder Tools, von Anwendungen oder Tools eines anderen Anbieters oder von Apps, die Sie erstellen, zu Ihrer Db2®-Datenbank herstellen. 
 {: shortdesc}
 
 ## Voraussetzungen
@@ -28,7 +28,7 @@ Falls beim Herstellen der Verbindung Probleme auftreten, stellen Sie sicher, das
 ### Umgebung konfigurieren
 {: #cfg_env}
 
-Wenn Sie lokale Anwendungen und Tools mit der Db2-Datenbank verbinden möchten, müssen Sie [die Umgebung konfigurieren![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}.
+Wenn Sie lokale Anwendungen und Tools mit der Db2-Datenbank verbinden möchten, müssen Sie [die Umgebung konfigurieren![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}. 
 {: shortdesc}
 
 ## Programmgestützte Verbindungsherstellung
@@ -46,7 +46,7 @@ Für die Erstellung von Anwendungen, die eine Verbindung mit einer Db2-Datenbank
 ## Verbindung für Apps und Tools herstellen
 {: #conx_apps_tools}
 
-Sie können auch externe Anwendungen und Tools mit {{site.data.keyword.Db2_on_Cloud_short}} verbinden und diese nutzen, um zusätzliche Verwaltungs- und Analyseaktionen für Ihre Daten durchzuführen. Beispiele: 
+Sie können auch externe Anwendungen und Tools mit {{site.data.keyword.Db2_on_Cloud_short}} verbinden und diese nutzen, um zusätzliche Verwaltungs- und Analyseaktionen für Ihre Daten durchzuführen. Beispiele:
    * Verbindung Ihrer {{site.data.keyword.Bluemix_short}}-Anwendungen, die eine Analysedatenbank benötigen.
    * [Verbindung von {{site.data.keyword.DSX_full}} (früher als IBM Data Science Experience bezeichnet). ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://datascience.ibm.com/docs/content/manage-data/create-conn.html?context=analytics&linkInPage=true){:new_window}
    * [Verbindung mit {{site.data.keyword.IBM_notm}} InfoSphere® Data Architect für den Entwurf und die Bereitstellung des Datenbankschemas. ![>Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_ibm_data_architect.html){:new_window}

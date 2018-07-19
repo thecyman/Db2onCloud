@@ -29,7 +29,7 @@ lastupdated: "2018-03-23"
     * 直接從外部表格。以下是範例 SQL 陳述式：
 
     ```
-      INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
+            INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
         (CCSID 1208 s3('s3.amazonaws.com', 
         '<S3-access-key-ID>',
         '<S3-secret-access-key>', 

@@ -16,7 +16,7 @@ lastupdated: "2018-03-21"
 # 接続
 {: #connect}
 
-コマンド行インターフェース、IBM® またはサード・パーティーのアプリケーションやツール、作成したアプリケーションを DB2® データベースに接続できます。
+コマンド行インターフェース、IBM® またはサード・パーティーのアプリケーションやツール、作成したアプリケーションを DB2® データベースに接続できます。 
 {: shortdesc}
 
 ## 前提条件
@@ -28,7 +28,7 @@ lastupdated: "2018-03-21"
 ### 環境の構成
 {: #cfg_env}
 
-ローカル・アプリケーションやツールを DB2 データベースに接続するには、[環境の構成 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}を行う必要があります。
+ローカル・アプリケーションやツールを DB2 データベースに接続するには、[環境の構成 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}を行う必要があります。 
 {: shortdesc}
 
 ## プログラムによる接続

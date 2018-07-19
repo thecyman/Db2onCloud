@@ -16,7 +16,7 @@ lastupdated: "2018-03-14"
 # 감사
 {: #audit}
 
-다음은 {{site.data.keyword.Db2_on_Cloud_short}} 데이터베이스에서 활동을 감사하는 데 사용할 수 있는 방법입니다. 
+다음은 {{site.data.keyword.Db2_on_Cloud_short}} 데이터베이스에서 활동을 감사하는 데 사용할 수 있는 방법입니다.
 
 * [CHANGE HISTORY 이벤트 모니터 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.sql.ref.doc/doc/r0059363.html){:new_window}
 * [시간 이동 조회 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl/){:new_window}

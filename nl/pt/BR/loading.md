@@ -17,8 +17,7 @@ lastupdated: "2018-03-23"
 {: #load}
 
 É possível carregar dados de um arquivo de dados em um formato delimitado, como CSV ou TXT localizado em uma rede local, um
-armazenamento de objeto (Amazon S3 ou IBM Cloud Object Storage (anteriormente Swift SoftLayer)) ou usando as ferramentas do DB2®. 
-Também é possível preencher uma instância de banco de dados com dados executando um processo de carregamento de um aplicativo
+armazenamento de objeto (Amazon S3 ou IBM Cloud Object Storage (anteriormente Swift SoftLayer)) ou usando as ferramentas do DB2®. Também é possível preencher uma instância de banco de dados com dados executando um processo de carregamento de um aplicativo
 como o InfoSphere® DataStage®.
 {: shortdesc}
 

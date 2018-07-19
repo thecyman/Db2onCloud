@@ -22,7 +22,10 @@ lastupdated: "2018-03-15"
 # 入门
 {: #getting_started_db2oncloud}
 
-{{site.data.keyword.Db2_on_Cloud_long}} 是在云中为您供应的 SQL 数据库。您可以使用 {{site.data.keyword.Db2_on_Cloud_short}} 就像使用任何数据库软件一样，但是却没有硬件设置或软件安装和维护所产生的开销和费用。
+{{site.data.keyword.Db2_on_Cloud_long}} 是在云中为您供应的 SQL 数据库。您可以像使用任何数据库软件一样使用 {{site.data.keyword.Db2_on_Cloud_short}}，但是却没有硬件设置或软件安装和维护的麻烦。
+ 
+
+如果从北美大陆之外部署免费轻量套餐，请参阅：[在北美大陆之外使用轻量套餐](free_plan.html#outside_na){:new_window}。
 {: shortdesc}
 
 您还可以使用[免费下载的 Db2 Developer Edition ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions) 来安装本地 Db2 数据库。这样会快速安装随时可用的开发者版本的 Db2 以及 Docker 容器内的工具（不需要 Docker，它将自动安装任何必要的组件）。 
@@ -103,8 +106,12 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
                    "UID=$user;" .
                    "PWD=$password;";
 
+    
+
     $conn_string = $driver . $dsn;
                                    
+    
+
     $conn        = db2_connect( $conn_string, "", "" );
     ?>
     ```
@@ -119,6 +126,8 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
     $dsn         = $vcap[ "dashDB" ][0][ "credentials" ][ "dsn" ];
 
     $conn_string = $driver . $dsn;
+                                   
+    
                                    
     $conn        = db2_connect( $conn_string, "", "" );
     ?>

@@ -29,10 +29,10 @@ lastupdated: "2018-03-23"
     * 直接从外部表。以下是示例 SQL 语句：
 
     ```
-      INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
-        (CCSID 1208 s3('s3.amazonaws.com', 
+            INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
+        (CCSID 1208 s3('s3.amazonaws.com',
         '<S3-access-key-ID>',
-        '<S3-secret-access-key>', 
+        '<S3-secret-access-key>',
         '<my_bucket>'
            )
         )      

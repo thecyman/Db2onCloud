@@ -22,7 +22,9 @@ lastupdated: "2018-03-15"
 # 開始使用
 {: #getting_started_db2oncloud}
 
-{{site.data.keyword.Db2_on_Cloud_long}} 是在雲端中為您所佈建的 SQL Database。您就像使用任何資料庫軟體一般的使用 {{site.data.keyword.Db2_on_Cloud_short}}，但沒有硬體設置或軟體安裝及維護的額外負荷與費用。
+{{site.data.keyword.Db2_on_Cloud_long}} 是在雲端中為您所佈建的 SQL Database。您就像使用任何資料庫軟體一般的使用 {{site.data.keyword.Db2_on_Cloud_short}}，但沒有硬體設置或軟體安裝及維護的困擾。 
+
+如果您在北美洲大陸以外的地方部署免費的精簡方案，請參閱：[在北美洲大陸以外使用精簡方案](free_plan.html#outside_na){:new_window}。
 {: shortdesc}
 
 您也可以使用[免費的 Db2 Developer Edition 下載 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions) 安裝本端 Db2 資料庫。它會快速地安裝立即可用的 Db2 開發人員版本，並且在 Docker 容器內會有工具（不需要 Docker；它會自動安裝任何必要的元件）。 
@@ -104,7 +106,7 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
                    "PWD=$password;";
 
     $conn_string = $driver . $dsn;
-                                   
+
     $conn        = db2_connect( $conn_string, "", "" );
     ?>
     ```

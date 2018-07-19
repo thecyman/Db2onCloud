@@ -13,7 +13,7 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:pre: .pre}
 
-# Ambiente di sviluppo locale 
+# Ambiente di sviluppo locale
 {: #local_dev}
 
 Se vuoi configurare un ambiente di sviluppo Db2 locale, puoi utilizzare quanto segue:

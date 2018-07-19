@@ -22,8 +22,7 @@ dos últimos 14 dias.
 
 Os backups retidos são usados pela IBM para fins de recuperação do sistema no caso de um desastre ou perda do sistema. Use o
 [Time Travel
-Query ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} para manter dados históricos para suas próprias finalidades. 
-Além disso, também é possível executar as suas próprias exportações usando o IBM Data Studio ou qualquer ferramenta DB2.
+Query ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} para manter dados históricos para suas próprias finalidades. Além disso, também é possível executar as suas próprias exportações usando o IBM Data Studio ou qualquer ferramenta DB2.
 
 Para armazenar seus backups externos em um site de armazenamento remoto, faça uma solicitação ao suporte IBM.
 
