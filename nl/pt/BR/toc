@@ -39,7 +39,7 @@ Db2 on Cloud
     {: .navgroup-end}
 
 	{: .navgroup id="reference"}
-    [API do REST](https://console.bluemix.net/apidocs/2476-db2-on-cloud)
+    [API do REST](http://ibm.biz/db2oc_api)
     [Referência de SQL](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/c0004100.html)
 	{: .navgroup-end}
 
