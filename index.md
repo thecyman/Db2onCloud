@@ -63,7 +63,7 @@ You can access your {{site.data.keyword.Db2_on_Cloud_short}} web console in the 
 <!-- ###REST APIs
 {: #apis}
 
-With Db2 Warehouse plans, you can perform tasks related to file management, loading data, and running R scripts by using the [Db2 Warehouse REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-api){:new_window}.
+With Db2 Warehouse plans, you can perform tasks related to file management, loading data, and running R scripts using the [Db2 Warehouse REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-api){:new_window}.
 {: shortdesc} -->
 
 ### Connect applications or your favorite tools from your local computer
