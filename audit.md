@@ -13,7 +13,7 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:pre: .pre}
 
-# Audit
+# Auditing
 {: #audit}
 
 The following are methods by which you can audit activity on the {{site.data.keyword.Db2_on_Cloud_short}} database:

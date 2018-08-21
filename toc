@@ -8,6 +8,11 @@ Db2 on Cloud
 	{: .navgroup id="learn"}
 	index.md
     connecting.md
+
+    {: .topicgroup}
+    Connecting to another Db2 server
+        federation.md
+
     free_plan.md
     flex_scaling.md
     br.md
@@ -17,10 +22,6 @@ Db2 on Cloud
     Loading your data
         dcw.md
         migration.md
-
-    {: .topicgroup}
-    Connecting to another Db2 server
-        federation.md
 
     audit.md
     user_mgmt.md
