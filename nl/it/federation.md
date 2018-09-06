@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-06-15"
+lastupdated: "2018-07-18"
 
 ---
 
@@ -20,7 +20,7 @@ lastupdated: "2018-06-15"
 La virtualizzazione dei dati Db2 (nota anche come federazione) è supportata da {{site.data.keyword.Db2_on_Cloud_short}}. La virtualizzazione dei dati ti fornisce l'accesso con una singola query a tutti i dati presenti su più database distribuiti in qualsiasi punto della tua organizzazione. Puoi accedere ai dati che si trovano su una qualsiasi delle tue origini dati Db2 o Informix, sia nel cloud che in loco.
 {: shortdesc}
 
-Questa funzionalità è supportata su tutte le versioni di {{site.data.keyword.Db2_on_Cloud_short}}, ad eccezione del piano Lite gratuito. Tuttavia, puoi utilizzare il piano Lite come destinazione da cui potrai estrarre i dati.
+Questa funzione è supportata su tutte le versioni di {{site.data.keyword.Db2_on_Cloud_short}}, ad eccezione del piano Lite gratuito. Tuttavia, puoi utilizzare il piano Lite come destinazione da cui potrai estrarre i dati.
 
 ## Casi di utilizzo
 {: #use_cases}
@@ -62,56 +62,85 @@ Nome host: targetdotcom
 
 1. Crea una tabella `testdata` nello schema `admin2`.
 
-2. Dalla console di Db2 on Cloud, carica i dati nella tabella `testdata` come utente `admin2` con la password `YYYY`.
+2. Dalla console di {{site.data.keyword.Db2_on_Cloud_short}}, carica i dati nella tabella `testdata` come utente `admin2` con la password `YYYY`.
 
-### In una macchina client della destinazione
+<!-- ### On a client machine of the target
 
-1. Cataloga la macchina di destinazione:<br/>
+1. Catalog the target machine:<br/>
    `db2 catalog tcpip node <node_name> remote <host_name> server 50000`<br/>
 
-   Ad esempio:<br/>
+   For example:<br/>
    `db2 catalog tcpip node fedS remote targetdotcom server 50000`
 
-2. Cataloga il database su fedS:<br/>
+2. Catalog the database on fedS:<br/>
    `db2 catalog db bludb as <db_name> at node <node_name>`
 
-   Ad esempio:<br/>
+   For example:<br/>
    `db2 catalog db bludb as srcdb at node fedS`
 
-3. Connettiti al database su fedS:<br/>
+3. Connect to the database on fedS:<br/>
    `db2 connect to <catalog_db_name> user <admin_user> using '<admin_password>'`
 
-   Ad esempio:<br/>
+   For example:<br/>
    `db2 connect to srcdb user 'admin1' with password 'XXXX'`
 
-4. Crea un wrapper su fedS:<br/>
+4. Create a wrapper on fedS:<br/>
    `db2 "create wrapper drda"`
 
-5. Crea un server per comunicare con la macchina di destinazione:<br/>
+5. Create a server to talk to the target machine:<br/>
    `db2 "create server <server_name> type dashdb version 11 wrapper drda authorization \"<admin_user_on_target>\" password \"<admin_password_on_target>\" options (host '<target_host_name>', port '50000', dbname 'bludb')"`
 
-   Ad esempio:<br/>
+   For example:<br/>
    `db2 "create server db2server type dashdb version 11 wrapper drda authorization \"admin2\" password \"YYYY\" options (host 'targetdotcom', port '50000', dbname 'bludb')"`
 
-6. Crea l'associazione utente per admin2:<br/>
+6. Create the user mapping for admin2:<br/>
    `db2 "create user mapping for <admin_user> server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')"`
 
-   Ad esempio:<br/>
+   For example:<br/>
    `db2 "create user mapping for admin1 server db2server options (remote_authid 'admin2', remote_password 'YYYY')"`
 
-7. Crea un soprannome per il database:<br/>
+7. Create a nickname for the database:<br/>
    `db2 -v "create nickname <nickname> for <server_name>.<schema_name>.<table_name>"`
 
-   Ad esempio:<br/>
+   For example:<br/>
    `db2 -v "create nickname ntest1 for db2server.admin2.testdata"`
 
-### Nella macchina di origine Db2 on Cloud
+### On the Db2 on Cloud source machine
 
-1. Verifica di poter estrarre i dati dal server di destinazione:<br/>
+1. Test that you can pull data from the target server:<br/>
    `db2 "select * from <nickname>"`
 
-   Ad esempio:<br/>
+   For example:<br/>
    `db2 "select * from ntest1"`
+-->
+
+### Su una macchina Db2 on Cloud che viene utilizzata come un'origine di federazione 
+
+Dalla console di {{site.data.keyword.Db2_on_Cloud_short}}:
+
+1. Crea un server per comunicare con la macchina di destinazione:<br/>
+   `create server <server_name> type dashdb version 11 wrapper drda authorization "<admin_user_on_target>" password "<admin_password_on_target>" options (host '<target_host_name>', port '50000', dbname 'bludb')`
+
+   Ad esempio:<br/>
+   `create server db2server type dashdb version 11 wrapper drda authorization "admin2" password "YYYY" options (host 'targetdotcom', port '50000', dbname 'bludb')`
+
+2. Crea l'associazione utente per admin2:<br/>
+   `create user mapping for <admin_user> server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')`
+
+   Ad esempio:<br/>
+   `create user mapping for admin1 server db2server options (remote_authid 'admin2', remote_password 'YYYY')`
+
+3. Crea un soprannome per il database:<br/>
+   `create nickname <nickname> for <server_name>.<schema_name>.<table_name>`
+
+   Ad esempio:<br/>
+   `create nickname ntest1 for db2server.admin2.testdata`
+
+4. Verifica di poter estrarre i dati dal server di destinazione:<br/>
+   `select * from <nickname>`
+
+   Ad esempio:<br/>
+   `select * from ntest1`
 
 ## Ulteriori informazioni
 

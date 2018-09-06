@@ -15,7 +15,7 @@ lastupdated: "2018-05-10"
 
 # Wartungs- und Benachrichtigungsrichtlinien
 
-Die Wartungs- und Benachrichtigungsrichtlinien für den {{site.data.keyword.Db2_on_Cloud_long}}-Service sind in den [{{site.data.keyword.Bluemix_notm}}-Servicebeschreibungen ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:new_window} enthalten. Zusätzliche Servicebedingungen, die sich speziell auf {{site.data.keyword.Db2_on_Cloud_short}} beziehen, können über die Kategorie mit **zusätzlichen kostenpflichtigen Servicebeschreibungen** aufgerufen werden.  
+Die Wartungs- und Benachrichtigungsrichtlinien für den {{site.data.keyword.Db2_on_Cloud_long}}-Service sind in den [{{site.data.keyword.Bluemix_notm}}-Servicebeschreibungen ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:new_window} enthalten. Zusätzliche Servicebedingungen, die sich speziell auf {{site.data.keyword.Db2_on_Cloud_short}} beziehen, können über die Kategorie mit **zusätzlichen kostenpflichtigen Servicebeschreibungen** aufgerufen werden. 
 
 Genaue Kenntnisse über die jeweiligen Richtlinien unterstützen Sie dabei, Workloads so zu planen und zu terminieren, dass keine systemwartungsbedingten Ausfälle auftreten.
 {: shortdesc}

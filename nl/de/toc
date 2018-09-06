@@ -2,12 +2,17 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="Db2onCloud" audience="service" href="/docs/services/Db2onCloud/index.html"}
+{: .toc subcollection="Db2onCloud" audience="service" arm="1920570" href="/docs/services/Db2onCloud/index.html"}
 Db2 on Cloud
 
 	{: .navgroup id="learn"}
 	index.md
     connecting.md
+
+    {: .topicgroup}
+    Verbindung zu einem anderen Db2-Server herstellen
+        federation.md
+
     free_plan.md
     flex_scaling.md
     br.md
@@ -17,10 +22,6 @@ Db2 on Cloud
     Daten Laden
         dcw.md
         migration.md
-
-    {: .topicgroup}
-    Verbindung zu einem anderen Db2-Server herstellen
-        federation.md
 
     audit.md
     user_mgmt.md

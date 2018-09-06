@@ -13,7 +13,7 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:pre: .pre}
 
-# Auditoria
+# Auditando
 {: #audit}
 
 A seguir estão os métodos pelos quais é possível auditar a atividade no banco de dados {{site.data.keyword.Db2_on_Cloud_short}}:

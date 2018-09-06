@@ -13,7 +13,7 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:pre: .pre}
 
-# Gerenciamento de usuários
+# Como gerenciar usuários
 {: #user_mgmt}
 
 O gerenciamento dos usuários com acesso ao banco de dados é responsabilidade exclusiva do usuário ou dos usuários com a função de administrador. O administrador tem a responsabilidade de gerenciar o modo como outros usuários em sua organização acessam o seu banco de dados.

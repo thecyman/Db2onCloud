@@ -93,6 +93,8 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
     <?php
     $driver      = "DRIVER={IBM DB2 ODBC DRIVER};";
 
+    
+
     $database    = "BLUDB";         # Get these database details from
     $hostname    = "<Host-name>";   # the Connect page of the Db2 on Cloud
     $port        = 50000;           # web console.
@@ -117,6 +119,8 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
     <?php
     $driver      = "DRIVER={IBM DB2 ODBC DRIVER};";
 
+    
+
     $vcap        = json_decode( getenv( "VCAP_SERVICES" ), true );
     $dsn         = $vcap[ "dashDB" ][0][ "credentials" ][ "dsn" ];
 
@@ -139,5 +143,4 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
    * [PHP ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
 <!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
    * [GitHub 上的 {{site.data.keyword.Db2_on_Cloud_short}} 範例 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
-
 

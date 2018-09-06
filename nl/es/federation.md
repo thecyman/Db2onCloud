@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-06-15"
+lastupdated: "2018-07-18"
 
 ---
 
@@ -62,56 +62,85 @@ Nombre de host: targetdotcom
 
 1. Cree una tabla `testdata` en el esquema `admin2`.
 
-2. En la consola de Db2 on Cloud, cargue la tabla `testdata` con los datos como el usuario `admin2` con la contraseña `YYYY`.
+2. En la consola de {{site.data.keyword.Db2_on_Cloud_short}}, cargue la tabla `testdata` con los datos como usuario `admin2` con la contraseña `YYYY`.
 
-### En una máquina cliente del destino
+<!-- ### On a client machine of the target
 
-1. Catalogue la máquina de destino:<br/>
+1. Catalog the target machine:<br/>
    `db2 catalog tcpip node <node_name> remote <host_name> server 50000`<br/>
 
-   Por ejemplo:<br/>
+   For example:<br/>
    `db2 catalog tcpip node fedS remote targetdotcom server 50000`
 
-2. Catalogue la base de datos en fedS:<br/>
+2. Catalog the database on fedS:<br/>
    `db2 catalog db bludb as <db_name> at node <node_name>`
 
-   Por ejemplo:<br/>
+   For example:<br/>
    `db2 catalog db bludb as srcdb at node fedS`
 
-3. Conecte con la base de datos de fedS:<br/>
+3. Connect to the database on fedS:<br/>
    `db2 connect to <catalog_db_name> user <admin_user> using '<admin_password>'`
 
-   Por ejemplo:<br/>
+   For example:<br/>
    `db2 connect to srcdb user 'admin1' with password 'XXXX'`
 
-4. Cree un derivador ("wrapper") en fedS:<br/>
+4. Create a wrapper on fedS:<br/>
    `db2 "create wrapper drda"`
 
-5. Cree un servidor para que se comunique con la máquina de destino:<br/>
+5. Create a server to talk to the target machine:<br/>
    `db2 "create server <server_name> type dashdb version 11 wrapper drda authorization \"<admin_user_on_target>\" password \"<admin_password_on_target>\" options (host '<target_host_name>', port '50000', dbname 'bludb')"`
 
-   Por ejemplo:<br/>
+   For example:<br/>
    `db2 "create server db2server type dashdb version 11 wrapper drda authorization \"admin2\" password \"YYYY\" options (host 'targetdotcom', port '50000', dbname 'bludb')"`
 
-6. Cree la correlación de usuario para admin2:<br/>
+6. Create the user mapping for admin2:<br/>
    `db2 "create user mapping for <admin_user> server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')"`
 
-   Por ejemplo:<br/>
+   For example:<br/>
    `db2 "create user mapping for admin1 server db2server options (remote_authid 'admin2', remote_password 'YYYY')"`
 
-7. Cree un apodo para la base de datos:<br/>
+7. Create a nickname for the database:<br/>
    `db2 -v "create nickname <nickname> for <server_name>.<schema_name>.<table_name>"`
 
-   Por ejemplo:<br/>
+   For example:<br/>
    `db2 -v "create nickname ntest1 for db2server.admin2.testdata"`
 
-### En la máquina de origen de Db2 on Cloud
+### On the Db2 on Cloud source machine
 
-1. Compruebe que puede extraer datos del servidor de destino:<br/>
+1. Test that you can pull data from the target server:<br/>
    `db2 "select * from <nickname>"`
 
-   Por ejemplo:<br/>
+   For example:<br/>
    `db2 "select * from ntest1"`
+-->
+
+### En una máquina de Db2 on Cloud utilizada como origen de federación
+
+Desde la consola de {{site.data.keyword.Db2_on_Cloud_short}}:
+
+1. Cree un servidor para que se comunique con la máquina de destino:<br/>
+   `create server <server_name> type dashdb version 11 wrapper drda authorization "<admin_user_on_target>" password "<admin_password_on_target>" options (host '<target_host_name>', port '50000', dbname 'bludb')`
+
+   Por ejemplo:<br/>
+   `create server db2server type dashdb version 11 wrapper drda authorization "admin2" password "YYYY" options (host 'targetdotcom', port '50000', dbname 'bludb')`
+
+2. Cree la correlación de usuario para admin2:<br/>
+   `create user mapping for <admin_user> server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')`
+
+   Por ejemplo:<br/>
+   `create user mapping for admin1 server db2server options (remote_authid 'admin2', remote_password 'YYYY')`
+
+3. Cree un apodo para la base de datos:<br/>
+   `create nickname <nickname> for <server_name>.<schema_name>.<table_name>`
+
+   Por ejemplo:<br/>
+   `create nickname ntest1 for db2server.admin2.testdata`
+
+4. Compruebe que puede extraer datos del servidor de destino:<br/>
+   `select * from <nickname>`
+
+   Por ejemplo:<br/>
+   `select * from ntest1`
 
 ## Información adicional
 

@@ -140,4 +140,3 @@ Les liens suivants mènent à des exemples de démonstration indiquant comment s
 <!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
    * [Exemples {{site.data.keyword.Db2_on_Cloud_short}} sur GitHub ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
 
-

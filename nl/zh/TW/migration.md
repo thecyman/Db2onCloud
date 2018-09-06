@@ -27,13 +27,13 @@ lastupdated: "2018-05-11"
   * 直接從外部表格。以下是範例 SQL 陳述式：
 
     ```
-    INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
-      (CCSID 1208 s3('s3.amazonaws.com',
-      '<S3-access-key-ID>',
-      '<S3-secret-access-key>',
-      '<my_bucket>'
-         )
-      )      
+      INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
+        (CCSID 1208 s3('s3.amazonaws.com', 
+        '<S3-access-key-ID>',
+        '<S3-secret-access-key>', 
+        '<my_bucket>'
+           )
+        )      
     ```
 
 若要直接使用外部表格從 IBM Cloud Object Storage 載入資料，以下是範例 SQL 陳述式：

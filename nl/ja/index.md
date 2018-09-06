@@ -37,7 +37,7 @@ Db2 Developer Edition ダウンロード ![外部リンク・アイコン](../..
 アイコン
 ")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions) を使用して、ローカルの Db2 データベースをインストー
 ルすることもできま
-す。ここでは、すぐに使用できる Db2 Developer Edition が、Docker コンテナー内のツールとともに速や
+す。 ここでは、すぐに使用できる Db2 Developer Edition が、Docker コンテナー内のツールとともに速や
 かにインストールされます (Docker は不要です。必要なコンポーネントは自動的にインストールされます)。 
 
 <!-- ## Free trial
@@ -150,5 +150,4 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
    * [PHP ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
 <!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
    * [GitHub にある {{site.data.keyword.Db2_on_Cloud_short}} サンプル![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
-
 

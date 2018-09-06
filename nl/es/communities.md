@@ -20,5 +20,5 @@ Hay comunidades de usuarios a las que se puede unir para obtener información, c
 {: shortdesc}
 
 * [International Db2 Users Group (IDUG®) ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.idug.org/){:new_window} Únase a miles de profesionales que utilizan Db2 con IDUG®, una organización de usuarios independiente sin ánimo de lucro para usuarios de Db2. Los foros en línea de IDUG constituyen una excelente opción para solicitar ayuda o participar en debates. Los eventos de IDUG que se celebran en todo el mundo le permiten establecer contacto con otros profesionales de Db2 y aprender de ellos.
-* [Db2 Community on developerWorks ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/data/db2/){:new_window} Una comunidad de desarrolladores de Db2.
+* [Comunidad de Db2 en developerWorks ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/data/db2/){:new_window} Una comunidad de desarrolladores de Db2.
 * [Stack Overflow ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://stackoverflow.com/users/login?ssrc=anon_ask&returnurl=https%3a%2f%2fstackoverflow.com%2fquestions%2fask%3ftags%3ddashdb){:new_window} Una comunidad y foro de soporte para desarrolladores.

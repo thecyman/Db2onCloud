@@ -37,6 +37,6 @@ Depuis le 27 mars 2018, au cas où une maintenance du système planifiée doit �
 ## Règle de notification
 {: #notification}
 
-Depuis le 27 mars 2018, une notification vous est envoyée deux jours ouvrables à l'avance pour vous avertir d'une  maintenance du système planifiée pouvant impacter votre service {{site.data.keyword.Db2_on_Cloud_short}}. 
+Depuis le 27 mars 2018, une notification vous est envoyée deux jours ouvrables à l'avance pour vous avertir d'une maintenance du système planifiée pouvant impacter votre service {{site.data.keyword.Db2_on_Cloud_short}}. 
 
-Cette règle de  notification {{site.data.keyword.Db2_on_Cloud_short}} exclut le cas particulier de la détection d'une faille de sécurité qui doit être considérée comme une urgence et traitée aussi vite que possible. Dans ce cas, un préavis d'au moins 24 heures est donné, comme stipulé dans les descriptions de service {{site.data.keyword.Bluemix_notm}}.
+Cette règle de notification {{site.data.keyword.Db2_on_Cloud_short}} exclut le cas particulier de la détection d'une faille de sécurité qui doit être considérée comme une urgence et traitée aussi vite que possible. Dans ce cas, un préavis d'au moins 24 heures est donné, comme stipulé dans les descriptions de service {{site.data.keyword.Bluemix_notm}}.

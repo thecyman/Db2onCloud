@@ -13,7 +13,7 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:pre: .pre}
 
-# Audit
+# Audit durchführen
 {: #audit}
 
 Methoden zur Durchführung von Audits für Aktivitäten in der {{site.data.keyword.Db2_on_Cloud_short}}-Datenbank sind im Folgenden aufgeführt:

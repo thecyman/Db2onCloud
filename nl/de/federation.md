@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-06-15"
+lastupdated: "2018-07-18"
 
 ---
 
@@ -20,7 +20,7 @@ lastupdated: "2018-06-15"
 Die Db2-Datenvirtualisierung (auch als Föderierung bezeichnet) wird von {{site.data.keyword.Db2_on_Cloud_short}} unterstützt. Mithilfe der Datenvirtualisierung können Sie über eine einzelne Abfrage auf alle Daten zugreifen, die sich auf mehreren verteilten Datenbanken innerhalb Ihres Unternehmens befinden. Sie können auf Daten zugreifen, die in beliebigen Ihrer Db2- oder Informix-Datenquellen sowohl lokal als auch in der Cloud gespeichert sind.
 {: shortdesc}
 
-Diese Funktionalität wird in allen Versionen von {{site.data.keyword.Db2_on_Cloud_short}} unterstützt, allerdings nicht im Rahmen des kostenfreien Lite-Plans. Der Lite-Plan kann jedoch als Ziel verwendet werden, aus dem Daten abgerufen werden.
+Diese Funktion wird in allen Versionen von {{site.data.keyword.Db2_on_Cloud_short}} unterstützt, allerdings nicht im Rahmen des kostenfreien Lite-Plans. Der Lite-Plan kann jedoch als Ziel verwendet werden, aus dem Daten abgerufen werden.
 
 ## Anwendungsfälle
 {: #use_cases}
@@ -47,7 +47,7 @@ In bestimmten Situationen kann es sinnvoll sein, Daten zu partitionieren (aufzut
 
 ### Datenbankkapazität über festgelegte Grenzwerte hinaus erhöhen
 
-Die Föderierungsfunktionen ermöglichen es Ihnen, die Kapazität einer lokalen Datenbank zu erhöhen, indem Sie sie mit einer Datenbank in der Cloud föderieren. Die Datenvirtualisierung bietet in diesem Fall eine nützliche Option, falls der Speicherplatz der lokalen Datenbank knapp wird. Das Erhöhen der Kapazität einer Datenbank mithilfe der Föderierung ist besonders für die Neuentwicklung geeignet, da die Entwickler eine bereits in Produktion befindliche Datenbank nicht mehr ändern müssen. Auch die Föderierung zwischen zwei {{site.data.keyword.Db2_on_Cloud_short}}-Datenbanken ist möglich, um die Datenbankkapazität über die aktuellen Grenzwerte des Flex-Plans hinaus zu erhöhen. 
+Die Föderierungsfunktionen ermöglichen es Ihnen, die Kapazität einer lokalen Datenbank zu erhöhen, indem Sie sie mit einer Datenbank in der Cloud föderieren. Die Datenvirtualisierung bietet in diesem Fall eine nützliche Option, falls der Speicherplatz der lokalen Datenbank knapp wird. Das Erhöhen der Kapazität einer Datenbank mithilfe der Föderierung ist besonders für die Neuentwicklung geeignet, da die Entwickler eine bereits in Produktion befindliche Datenbank nicht mehr ändern müssen. Auch die Föderierung zwischen zwei {{site.data.keyword.Db2_on_Cloud_short}}-Datenbanken ist möglich, um die Datenbankkapazität über die aktuellen Grenzwerte des Flex-Plans hinaus zu erhöhen.
 
 <!-- By using federation, users can increase capacity of an on premises database by federating to or from the cloud. This is a great option if your on premises database is running out of storage. Increased capacity will also be useful for new development as our users no longer need to change a database in production. You can also use this feature to federate between two Db2 on Cloud databases to increase the capacity beyond the current limits of the Flex plan. -->
 
@@ -62,56 +62,85 @@ Hostname: targetdotcom
 
 1. Erstellen Sie eine Tabelle mit der Bezeichnung `testdata` im Schema `admin2`.
 
-2. Laden Sie die Tabelle `testdata` mit den Daten als Benutzer `admin2` mit dem Kennwort `YYYY` über die Db2 on Cloud-Konsole.
+2. Laden Sie in der {{site.data.keyword.Db2_on_Cloud_short}}-Konsole die Tabelle `testdata` mit den Daten als Benutzer `admin2` mit dem Kennwort `YYYY`.
 
-### Auf einer Clientmaschine des Ziels
+<!-- ### On a client machine of the target
 
-1. Katalogisieren Sie die Zielmaschine:<br/>
+1. Catalog the target machine:<br/>
    `db2 catalog tcpip node <node_name> remote <host_name> server 50000`<br/>
 
-   Beispiel:<br/>
+   For example:<br/>
    `db2 catalog tcpip node fedS remote targetdotcom server 50000`
 
-2. Katalogisieren Sie die Datenbank in fedS:<br/>
+2. Catalog the database on fedS:<br/>
    `db2 catalog db bludb as <db_name> at node <node_name>`
 
-   Beispiel:<br/>
+   For example:<br/>
    `db2 catalog db bludb as srcdb at node fedS`
 
-3. Stellen Sie einer Verbindung zur Datenbank in fedS her:<br/>
+3. Connect to the database on fedS:<br/>
    `db2 connect to <catalog_db_name> user <admin_user> using '<admin_password>'`
 
-   Beispiel:<br/>
+   For example:<br/>
    `db2 connect to srcdb user 'admin1' with password 'XXXX'`
 
-4. Erstellen Sie einen Wrapper in fedS:<br/>
+4. Create a wrapper on fedS:<br/>
    `db2 "create wrapper drda"`
 
-5. Erstellen Sie einen Server für die Kommunikation mit der Zielmaschine:<br/>
+5. Create a server to talk to the target machine:<br/>
    `db2 "create server <server_name> type dashdb version 11 wrapper drda authorization \"<admin_user_on_target>\" password \"<admin_password_on_target>\" options (host '<target_host_name>', port '50000', dbname 'bludb')"`
 
-   Beispiel:<br/>
+   For example:<br/>
    `db2 "create server db2server type dashdb version 11 wrapper drda authorization \"admin2\" password \"YYYY\" options (host 'targetdotcom', port '50000', dbname 'bludb')"`
 
-6. Erstellen Sie die Benutzerzuordnung für admin2:<br/>
+6. Create the user mapping for admin2:<br/>
    `db2 "create user mapping for <admin_user> server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')"`
 
-   Beispiel:<br/>
+   For example:<br/>
    `db2 "create user mapping for admin1 server db2server options (remote_authid 'admin2', remote_password 'YYYY')"`
 
-7. Erstellen Sie einen Kurznamen für die Datenbank:<br/>
+7. Create a nickname for the database:<br/>
    `db2 -v "create nickname <nickname> for <server_name>.<schema_name>.<table_name>"`
 
-   Beispiel:<br/>
+   For example:<br/>
    `db2 -v "create nickname ntest1 for db2server.admin2.testdata"`
 
-### Auf der Db2 on Cloud-Quellenmaschine
+### On the Db2 on Cloud source machine
 
-1. Testen Sie, ob Daten vom Zielserver abgerufen werden können:<br/>
+1. Test that you can pull data from the target server:<br/>
    `db2 "select * from <nickname>"`
 
-   Beispiel:<br/>
+   For example:<br/>
    `db2 "select * from ntest1"`
+-->
+
+### Auf einer Db2 on Cloud-Maschine, die als Föderierungsquelle verwendet wird
+
+Führen Sie in der {{site.data.keyword.Db2_on_Cloud_short}}-Konsole die folgenden Schritte aus:
+
+1. Erstellen Sie einen Server für die Kommunikation mit der Zielmaschine:<br/>
+   `create server <server_name> type dashdb version 11 wrapper drda authorization "<admin_user_on_target>" password "<admin_password_on_target>" options (host '<target_host_name>', port '50000', dbname 'bludb')`
+
+   Beispiel:<br/>
+   `create server db2server type dashdb version 11 wrapper drda authorization "admin2" password "YYYY" options (host 'targetdotcom', port '50000', dbname 'bludb')`
+
+2. Erstellen Sie die Benutzerzuordnung für admin2:<br/>
+   `create user mapping for <admin_user> server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')`
+
+   Beispiel:<br/>
+   `create user mapping for admin1 server db2server options (remote_authid 'admin2', remote_password 'YYYY')`
+
+3. Erstellen Sie einen Kurznamen für die Datenbank:<br/>
+   `create nickname <nickname> for <server_name>.<schema_name>.<table_name>`
+
+   Beispiel:<br/>
+   `create nickname ntest1 for db2server.admin2.testdata`
+
+4. Testen Sie, ob Daten vom Zielserver abgerufen werden können:<br/>
+   `select * from <nickname>`
+
+   Beispiel:<br/>
+   `select * from ntest1`
 
 ## Zusätzliche Informationen
 

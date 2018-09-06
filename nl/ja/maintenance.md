@@ -19,7 +19,7 @@ lastupdated: "2018-05-10"
 リシーは、
 [{{site.data.keyword.Bluemix_notm}}
 サービスの説明![外部リ
-ンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:new_window} でご確認いただけます。{{site.data.keyword.Db2_on_Cloud_short}} に関するサービスの追加条件については、
+ンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:new_window} でご確認いただけます。 {{site.data.keyword.Db2_on_Cloud_short}} に関するサービスの追加条件については、
 **有料追加 SD** カテゴリーでご確認いただけます。 
 
 弊社のポリシーを知っておくと、システム保守に対する作業の計画やスケジュール作成
@@ -31,11 +31,11 @@ lastupdated: "2018-05-10"
 
 (2018 年 3 月 27 日から有効) {{site.data.keyword.Db2_on_Cloud_short}} サービスで予定
 されているシステム保守を実行する必要がある場合、主要なデータ・センター (ロンドン、ダラス、シドニー
-) は別々の曜日の営業日に更新されます。それ以外のすべてのデータ・センターは、主要データ・センターと重複しない曜日
-に一斉に更新されます。{{site.data.keyword.Db2_on_Cloud_short}} システム保守スケジュールの例
+) は別々の曜日の営業日に更新されます。 それ以外のすべてのデータ・センターは、主要データ・センターと重複しない曜日
+に一斉に更新されます。 {{site.data.keyword.Db2_on_Cloud_short}} システム保守スケジュールの例
 を表 1 に示します。
 
-|データ・センター | システム保守スケジュール |
+| データ・センター | システム保守スケジュール |
 |-------------|-----------------------------|
 | ロンドン | 月曜 |
 | ダラス | 火曜 |
@@ -54,6 +54,6 @@ lastupdated: "2018-05-10"
 
 緊急事態で時間的な余裕がないと思われるセキュリティー上の脆弱性に
 直ちに対処する必要がある場合、
-{{site.data.keyword.Db2_on_Cloud_short}} 通知ポリシーは適用されません。そのような場合は、
+{{site.data.keyword.Db2_on_Cloud_short}} 通知ポリシーは適用されません。 そのような場合は、
 {{site.data.keyword.Bluemix_notm}} サービスの説明に明記されている通り、少なくとも 24 時間
 前に通知が送付されます。

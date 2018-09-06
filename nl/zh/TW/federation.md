@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-06-15"
+lastupdated: "2018-07-18"
 
 ---
 
@@ -62,56 +62,85 @@ Db2 系列產品的使用者可以聯合來自 {{site.data.keyword.Db2_on_Cloud_
 
 1. 在綱目 `admin2` 中建立表格 `testdata`。
 
-2. 從 Db2 on Cloud 主控台，以使用者 `admin2` 的身分和密碼 `YYYY`，載入具有資料的 `testdata` 表格。
+2. 從 {{site.data.keyword.Db2_on_Cloud_short}} 主控台，以使用者 `admin2` 的身分和密碼 `YYYY`，載入具有資料的 `testdata` 表格。
 
-### 在目標的用戶端機器上
+<!-- ### On a client machine of the target
 
-1. 將目標機器編目：<br/>
+1. Catalog the target machine:<br/>
    `db2 catalog tcpip node <node_name> remote <host_name> server 50000`<br/>
 
-   例如：<br/>
+   For example:<br/>
    `db2 catalog tcpip node fedS remote targetdotcom server 50000`
 
-2. 將 fedS 上的資料庫編目：<br/>
+2. Catalog the database on fedS:<br/>
    `db2 catalog db bludb as <db_name> at node <node_name>`
 
-   例如：<br/>
+   For example:<br/>
    `db2 catalog db bludb as srcdb at node fedS`
 
-3. 連接至 fedS 上的資料庫：<br/>
+3. Connect to the database on fedS:<br/>
    `db2 connect to <catalog_db_name> user <admin_user> using '<admin_password>'`
 
-   例如：<br/>
+   For example:<br/>
    `db2 connect to srcdb user 'admin1' with password 'XXXX'`
 
-4. 在 fedS 上建立封套：<br/>
+4. Create a wrapper on fedS:<br/>
    `db2 "create wrapper drda"`
 
-5. 建立伺服器以便與目標機器通訊：<br/>
+5. Create a server to talk to the target machine:<br/>
    `db2 "create server <server_name> type dashdb version 11 wrapper drda authorization \"<admin_user_on_target>\" password \"<admin_password_on_target>\" options (host '<target_host_name>', port '50000', dbname 'bludb')"`
 
-   例如：<br/>
+   For example:<br/>
    `db2 "create server db2server type dashdb version 11 wrapper drda authorization \"admin2\" password \"YYYY\" options (host 'targetdotcom', port '50000', dbname 'bludb')"`
 
-6. 建立 admin2 的使用者對映：<br/>
+6. Create the user mapping for admin2:<br/>
    `db2 "create user mapping for <admin_user> server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')"`
 
-   例如：<br/>
+   For example:<br/>
    `db2 "create user mapping for admin1 server db2server options (remote_authid 'admin2', remote_password 'YYYY')"`
 
-7. 建立資料庫的暱稱：<br/>
+7. Create a nickname for the database:<br/>
    `db2 -v "create nickname <nickname> for <server_name>.<schema_name>.<table_name>"`
 
-   例如：<br/>
+   For example:<br/>
    `db2 -v "create nickname ntest1 for db2server.admin2.testdata"`
 
-### 在 Db2 on Cloud 來源機器上
+### On the Db2 on Cloud source machine
 
-1. 測試您可以從目標伺服器取回資料：<br/>
+1. Test that you can pull data from the target server:<br/>
    `db2 "select * from <nickname>"`
 
-   例如：<br/>
+   For example:<br/>
    `db2 "select * from ntest1"`
+-->
+
+### 在用來作為聯合來源的 Db2 on Cloud 機器上
+
+從 {{site.data.keyword.Db2_on_Cloud_short}} 主控台：
+
+1. 建立伺服器以便與目標機器通訊：<br/>
+   `create server <server_name> type dashdb version 11 wrapper drda authorization "<admin_user_on_target>" password "<admin_password_on_target>" options (host '<target_host_name>', port '50000', dbname 'bludb')`
+
+   例如：<br/>
+   `create server db2server type dashdb version 11 wrapper drda authorization "admin2" password "YYYY" options (host 'targetdotcom', port '50000', dbname 'bludb')`
+
+2. 建立 admin2 的使用者對映：<br/>
+   `create user mapping for <admin_user> server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')`
+
+   例如：<br/>
+   `create user mapping for admin1 server db2server options (remote_authid 'admin2', remote_password 'YYYY')`
+
+3. 建立資料庫的暱稱：<br/>
+   `create nickname <nickname> for <server_name>.<schema_name>.<table_name>`
+
+   例如：<br/>
+   `create nickname ntest1 for db2server.admin2.testdata`
+
+4. 測試您可以從目標伺服器取回資料：<br/>
+   `select * from <nickname>`
+
+   例如：<br/>
+   `select * from ntest1`
 
 ## 其他資訊
 

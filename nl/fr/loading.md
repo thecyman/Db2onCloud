@@ -16,7 +16,7 @@ lastupdated: "2018-03-23"
 # Chargement des données
 {: #load}
 
-Vous pouvez charger des données à partir d'un fichier de données dans un format délimité tel que CSV ou TXT situé sur un réseau local, depuis un magasin de données (Amazon S3 ou IBM Cloud Object Storage (anciennement SoftLayer Swift) ou à l'aide d'outils Db2®. Vous pouvez également remplir une instance de base de données en procédant au chargement à partir d'une application comme InfoSphere® DataStage®.
+Vous pouvez charger des données à partir d'un fichier de données dans un format délimité tel que CSV ou TXT situé sur un réseau local, depuis un magasin de données (Amazon S3 ou IBM Cloud Object Storage (anciennement SoftLayer Swift)) ou à l'aide d'outils Db2®. Vous pouvez également remplir une instance de base de données en procédant au chargement à partir d'une application comme InfoSphere® DataStage®.
 {: shortdesc}
 
 * [Chargement des données avec l'interface de ligne de commande Lift ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://lift.ng.bluemix.net/#docs){:new_window}

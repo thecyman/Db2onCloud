@@ -27,7 +27,7 @@ Amazon S3에서 데이터를 로드하려면 다음 방법 중 하나를 선택�
   * 외부 테이블 직접 사용. 다음은 SQL문의 예제입니다.
 
     ```
-          INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
+      INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
         (CCSID 1208 s3('s3.amazonaws.com', 
         '<S3-access-key-ID>',
         '<S3-secret-access-key>', 
@@ -60,7 +60,7 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 ### Lift CLI
 {: #lift}
 
-Lift CLI는 표 1에 나열된 다양한 데이터 소스에서 {{site.data.keyword.Bluemix_notm}}로 데이터를 마이그레이션하는 데 무료로 사용할 수 있는 애플리케이션입니다. 
+Lift CLI는 표 1에 나열된 다양한 데이터 소스에서 {{site.data.keyword.Bluemix_notm}}로 데이터를 마이그레이션할때 무료로 사용할 수 있는 애플리케이션입니다. 
 
 | IBM Cloud의 대상 데이터베이스 | 데이터 소스 |
 |------------------------------|-------------|
@@ -68,11 +68,11 @@ Lift CLI는 표 1에 나열된 다양한 데이터 소스에서 {{site.data.keyw
 |                              | Oracle Database |
 |                              | Microsoft SQL Server |
 |                              | CSV 파일 형식 |
-{: caption="표 1. 데이터 소스 마이그레이션 " caption-side="top"}
+{: caption="표 1. 데이터 소스 마이그레이션" caption-side="top"}
 
 Lift CLI를 다운로드하고 설치하려면 [Lift CLI 다운로드 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://lift.ng.bluemix.net/#download){:new_window}를 참조하십시오.
 
-Lift CLI를 사용하여 {{site.data.keyword.Bluemix_notm}}로 데이터를 마이그레이션하는 데 대한 단계별 지시사항은 [{{site.data.keyword.Db2_on_Cloud_long_notm}}로 데이터 마이그레이션 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://lift.ng.bluemix.net/#docs){:new_window}을 참조하십시오.
+Lift CLI를 사용하여 {{site.data.keyword.Bluemix_notm}}로 사용자의 데이터를 마이그레이션하는 방법에 관한 단계별 지시사항은 [Migrate data to {{site.data.keyword.Db2_on_Cloud_long_notm}} ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://lift.ng.bluemix.net/#docs){:new_window}의 내용을 참조하십시오. 
 
 ### IBM Cloud Mass Data Migration
 {: #mdms}

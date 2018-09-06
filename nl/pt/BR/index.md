@@ -140,4 +140,3 @@ Aqui estão links para amostras que demonstram como se conectar a seu banco de d
 <!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
    * [Amostras do {{site.data.keyword.Db2_on_Cloud_short}} no GitHub ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
 
-

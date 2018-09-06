@@ -17,7 +17,7 @@ lastupdated: "2018-05-10"
 {: #dcw}
 
 IBM Database Conversion Workbench (DCW) は、IBM Data Studio にデータベース・マイグレーショ
-ン機能を追加する無料のプラグインです。Data Studio と Database Conversion Workbench は、いずれも Web コンソールからダ
+ン機能を追加する無料のプラグインです。 Data Studio と Database Conversion Workbench は、いずれも Web コンソールからダ
 ウンロードできます。
 
 ご使用のデータベースと DB2 との互換性を評価し、SQL を変換するにあたって、

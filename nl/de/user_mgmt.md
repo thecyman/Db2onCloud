@@ -13,7 +13,7 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:pre: .pre}
 
-# Benutzermanagement
+# Benutzer verwalten
 {: #user_mgmt}
 
 Die Verwaltung von Benutzern, die Zugriff auf die Datenbank erhalten haben, fällt ausschließlich in den Verantwortungsbereich des Benutzers bzw. der Benutzer mit der Administratorrolle. Der Administrator ist dafür zuständig, zu steuern, wie andere Benutzer in Ihrer Organisation auf Ihre Datenbank zugreifen.

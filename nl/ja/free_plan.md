@@ -28,7 +28,7 @@ lastupdated: "2018-05-03"
 
 他の {{site.data.keyword.Db2_on_Cloud_short}} プランとは異なり、
 {{site.data.keyword.Db2_on_Cloud_short}} 無料 Lite プランはマルチテナント・システム上で実
-行されます。Flex プランと Precise Performance プランは、独自のシングル・テナント仮想マシンまたはベア・メタル・サーバー上で実行されます。
+行されます。 Flex プランと Precise Performance プランは、独自のシングル・テナント仮想マシンまたはベア・メタル・サーバー上で実行されます。
  
 無料プランでは、1 つのデータベース・スキーマを使用できます。
 

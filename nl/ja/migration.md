@@ -18,7 +18,7 @@ lastupdated: "2018-05-11"
 
 ローカル・ネットワーク上またはオブジェクト・ストア内 (Amazon S3 または IBM Cloud Object
 Storage) にある、区切り文字で区切られた形式 (CSV または TXT) のデータ・ファイルから
-{{site.data.keyword.Db2_on_Cloud_long}} にデータをロードできます。オンプレミス・システムからデータをマ
+{{site.data.keyword.Db2_on_Cloud_long}} にデータをロードできます。 オンプレミス・システムからデータをマ
 イグレーションすることもできます。
 {: shortdesc}
 
@@ -75,7 +75,7 @@ Lift CLIは、表 1 にリストされている各種データ・ソースから
 | IBM Cloud 上のターゲット DB | データ・ソース |
 |------------------------------|-------------|
 | {{site.data.keyword.Db2_on_Cloud_long_notm}}   | IBM Db2 |
-|                              |Oracle データベース|
+|                              | Oracle データベース |
 |                              | Microsoft SQL Server |
 |                              | CSV ファイル・フォーマット |
 {: caption="表 1. マイグレーションのデータ・ソース" caption-side="top"}
@@ -96,12 +96,11 @@ Lift CLI を使用して
 {: #mdms}
 
 テラバイト単位からペタバイト単位までのデータを {{site.data.keyword.Bluemix_notm}}
-に物理的に転送するための高速でシンプルで安全な方法です。Mass Data Migrationは 120 TB の使用可能な記憶容量を備えたモ
+に物理的に転送するための高速でシンプルで安全な方法です。 Mass Data Migrationは 120 TB の使用可能な記憶容量を備えたモ
 バイル・ストレージ・デバイスで、{{site.data.keyword.Bluemix_notm}} へのデータ移動を高速化す
 ることが
-できます。高いコスト、長い転送時間、セキュリティー上の懸念など、転送に関する共通の
+できます。 高いコスト、長い転送時間、セキュリティー上の懸念など、転送に関する共通の
 な課題を単一のサービスですべて克服できます。
-
 
 ![Mass Data Migration デバイスの外観](images/mdms.svg)
 

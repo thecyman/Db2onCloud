@@ -2,12 +2,17 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="Db2onCloud" audience="service" href="/docs/services/Db2onCloud/index.html"}
+{: .toc subcollection="Db2onCloud" audience="service" arm="1920570" href="/docs/services/Db2onCloud/index.html"}
 Db2 on Cloud
 
 	{: .navgroup id="learn"}
 	index.md
     connecting.md
+
+    {: .topicgroup}
+    連接至另一台 Db2 伺服器
+        federation.md
+
     free_plan.md
     flex_scaling.md
     br.md
@@ -17,10 +22,6 @@ Db2 on Cloud
     載入資料
         dcw.md
         migration.md
-
-    {: .topicgroup}
-    連接至另一台 Db2 伺服器
-        federation.md
 
     audit.md
     user_mgmt.md
@@ -34,7 +35,7 @@ Db2 on Cloud
 	
     [新增功能](https://www.ibm.com/support/docview.wss?uid=swg21961758)
     [常見問題](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
-    [安全遵循](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
+    [安全規範](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
     [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
     {: .navgroup-end}
 
