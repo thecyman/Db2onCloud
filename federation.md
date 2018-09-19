@@ -14,7 +14,7 @@ lastupdated: "2018-07-18"
 {:tip: .tip}
 {:pre: .pre}
 
-# Data virtualization (Federation)
+# Data virtualization (federation)
 {: #overview}
 
 Db2 data virtualization (also known as federation) is supported by {{site.data.keyword.Db2_on_Cloud_short}}. Data virtualization gives you single-query access to all of your data that is on multiple distributed databases anywhere in your organization. You can access data that is on any of your Db2 or Informix data sources, both in the cloud and on premises. 
