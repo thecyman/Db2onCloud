@@ -11,7 +11,7 @@ Db2 on Cloud
     connecting.md
 
     {: .topicgroup}
-    Connecting to another Db2 server
+    Connecting to another Db2 database
         federation.md
 
     free_plan.md
