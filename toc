@@ -7,6 +7,7 @@ Db2 on Cloud
 
 	{: .navgroup id="learn"}
 	index.md
+    features_specs.md
     iam.md
     connecting.md
 
