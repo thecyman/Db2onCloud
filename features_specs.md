@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-10-12"
+lastupdated: "2018-10-15"
 
 ---
 
@@ -23,14 +23,24 @@ lastupdated: "2018-10-12"
 |----------|---------|------------|----------|
 | General | Db2 AESE | Y | Db2 v11.1.3.3 |
 |  | Read on Standby | Y | Offsite DR node only |
-|  | Activity Tracker | In  [roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
+|  | Activity Tracker | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
+|  | Root access provided | N | Use Db2 Hosted if root access is required |
 |  |  |  |  |
 | High availability & replication | Offsite DR | Y | - |
 |  | Change Data Capture (CDC) | Y | - |
+|  | Multiple zones in same data center | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
 |  | Use as HADR from on premises | N | Use CDC. For information, see [How can I migrate or sync data from Db2 to Db2 on Cloud? ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/426111/how-can-i-migrate-from-db2-to-db2-on-cloud/){:new_window} |
 |  |  |  |  |
 | Security compliances | HIPAA Ready | Y | Make request to IBM Support |
+|  | HITRUST  | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | Db2 Hosted can be used today for HITRUST |
 |  | International Organization for Standardization (ISO)  | Y | ISO 27001, 27002, 27017, and 27018 |
 |  | Service Organization Controls (SOC) | Y | SOC 2 Type 2 |
+|  | GDPR | Y | - |
+|  | EU Cloud | Y | Use Frankfurt region. Support provided physically in EU. |
+|  | Full list of compliances | Y | [Security compliances ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
+|  |  |  |  |
+| Pricing & purchasing | BYOL discounts | Y | [Announcement ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-byol){:new_window} |
+|  | Available via IBM Cloud | Y | Both subscription and pay-as-you-go |
+|  | Available via software quote order | Y | All plans including Flex. [Parts & details. ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-parts-public){:new_window}|
 {: caption="Table 1. Features and specifications supported in Db2 on Cloud" caption-side="top"}
 
