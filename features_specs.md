@@ -23,13 +23,20 @@ lastupdated: "2018-10-15"
 |----------|---------|------------|----------|
 | General | Db2 AESE | Y | Db2 v11.1.3.3 |
 |  | Read on Standby | Y | Offsite DR node only |
+|  | Automatic rolling updates | Y | With HA plans |
+|  | Data center location options | Y | See  [locations ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-locations){:new_window} |
+|  | BLU in-memory | Y | Default is row, specify `CREATE TABLE..AS COL` for BLU |
 |  | Activity Tracker | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
 |  | Root access provided | N | Use Db2 Hosted if root access is required |
 |  |  |  |  |
 | High availability & replication | Offsite DR | Y | - |
+|  | High availability (2 nodes in 1 zone) | Y | 99.99% uptime SLA |
+|  | Different zones in same data center | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
 |  | Change Data Capture (CDC) | Y | - |
-|  | Multiple zones in same data center | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
 |  | Use as HADR from on premises | N | Use CDC. For information, see [How can I migrate or sync data from Db2 to Db2 on Cloud? ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/426111/how-can-i-migrate-from-db2-to-db2-on-cloud/){:new_window} |
+|  | Autonomous failover- HA | Y | - |
+|  | Autonomous failover- Offsite DR | N | Use button or API |
+|  | IP moves with failover | Y | Local HA only; not offsite HADR |
 |  |  |  |  |
 | Security compliances | HIPAA Ready | Y | Make request to IBM Support |
 |  | HITRUST  | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | Db2 Hosted can be used today for HITRUST |
@@ -38,6 +45,12 @@ lastupdated: "2018-10-15"
 |  | GDPR | Y | - |
 |  | EU Cloud | Y | Use Frankfurt region. Support provided physically in EU. |
 |  | Full list of compliances | Y | [Security compliances ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
+|  |  |  |  |
+| Backup & Restore | Daily backups | Y | 14 days daily of backups |
+|  | Point-in-time self-serve recovery | Available Nov 15, 2018 | - |
+|  | Backups kept offsite | On request | As of Dec 1, 2018 offsite is default  |
+|  | Keep backup up to 10 yrs | On request | As of Dec 1, 2018. Requires support ticket |
+|  | Query old data without restore | Y | Must set up [Time Travel Query ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} |
 |  |  |  |  |
 | Pricing & purchasing | BYOL discounts | Y | [Announcement ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-byol){:new_window} |
 |  | Available via IBM Cloud | Y | Both subscription and pay-as-you-go |
