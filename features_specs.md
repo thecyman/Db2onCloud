@@ -46,7 +46,7 @@ lastupdated: "2018-10-17"
 |  | EU Cloud | Y | Use Frankfurt region. Support provided physically in EU. |
 |  | Full list of compliances | Y | [Security compliances ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
-| Backup & Restore | Daily backups | Y | 14 days of daily backups |
+| Backup & restore | Daily backups | Y | 14 days of daily backups |
 |  | Point-in-time self-serve recovery | Available Nov 15, 2018 | - |
 |  | Backups kept offsite | On request | As of Dec 1, 2018, offsite is default  |
 |  | Keep backup up to 10 yrs | On request | As of Dec 1, 2018. Requires support ticket. |
