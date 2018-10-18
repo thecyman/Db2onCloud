@@ -38,7 +38,7 @@ lastupdated: "2018-10-17"
 |  | Autonomous failover - Offsite DR | N | Use button or API |
 |  | IP moves with failover | Y | Local HA only; not offsite HADR |
 |  |  |  |  |
-| Security compliances | HIPAA Ready | Y | Make request to IBM Support |
+| Security compliances | HIPAA Ready | Y | All paid plans including Flex. Must request HIPAA mode from IBM Support. For Db2 Warehouse on Cloud [see docs here ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/docs/services/Db2whc/index.html#getting_started){:new_window}. |
 |  | HITRUST  | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | Db2 Hosted can be used today for HITRUST |
 |  | International Organization for Standardization (ISO)  | Y | ISO 27001, 27002, 27017, and 27018 |
 |  | Service Organization Controls (SOC) | Y | SOC 2 Type 2 |
