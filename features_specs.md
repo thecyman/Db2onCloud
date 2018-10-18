@@ -52,6 +52,14 @@ lastupdated: "2018-10-17"
 |  | Keep backup up to 10 yrs | On request | As of Dec 1, 2018. Requires support ticket. |
 |  | Query old data without restore | Y | Must set up [Time Travel Query ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} |
 |  |  |  |  |
+| Networking, Security & VM | Single-tenant virtual machine | Y | All paid plans including Flex are single-tenant VMs or baremetal. |
+|  | ICIAE | Y | Request from IBM support |
+|  | VPN | Y | Request from IBM support  |
+|  | On-disk encryption | Y | -  |
+|  | SSL/TLS connections | Y | -  |
+|  | KeyProtect (Bring own key) | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
+|  | MIS / Interconnected service | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
+|  |  |  |  |
 | Pricing & purchasing | BYOL discounts | Y | [Announcement ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-byol){:new_window} |
 |  | Available via IBM Cloud | Y | Both subscription and pay-as-you-go |
 |  | Available via software quote order | Y | All plans including Flex. [Parts & details. ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-parts-public){:new_window}|
