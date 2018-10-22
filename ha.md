@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-10-19"
+lastupdated: "2018-10-22"
 
 ---
 
@@ -55,7 +55,7 @@ For Geo-Replicated Disaster Recovery (HADR), you must manually fail over by usin
 ## FAQ
 {: #faq}
 
-### What are the changes required for an application using Db2 to work with the DR recovery after takeover? Does the DNS name or the IP address change after takeover?
+### What are the changes required for an application using Db2 to work with the DR node after takeover? Does the DNS name or the IP address change after takeover?
 
 **A**: No. You are given 2 resolvable host names. If your app is configured to use Db2 ACR (Active Connection Reroute), then your app gets rerouted to the new primary node.
 
