@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-07-19"
+lastupdated: "2018-10-19"
 
 ---
 
@@ -11,6 +11,7 @@ lastupdated: "2018-07-19"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
 {:pre: .pre}
 
 # High availability (HA)
@@ -19,13 +20,18 @@ lastupdated: "2018-07-19"
 {{site.data.keyword.Db2_on_Cloud_short}} high availability plans have excellent availability characteristics with a 99.99% SLA. 
 {: shortdesc}
 
-The standard high availability plans without a DR node provide seamless failover and rolling updates. They are managed for you by using automatic client reroute (ACR) and portable IPs.
+The standard high availability plans without a disaster recovery (DR) node provide seamless failover and rolling updates. They are managed for you by using automatic client reroute (ACR) and portable IPs.
 
 In addition, you can add a Geo-Replicated Disaster Recovery Node. This offsite DR node option gives you the ability to rapidly synchronize your data in real time to a database node in an offsite {{site.data.keyword.Bluemix_notm}} data center of your choice. 
 
 [List of data center locations where DR nodes are available. ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:new_window}
 
 {{site.data.keyword.Db2_on_Cloud_short}} uses the Db2 High Availability Disaster Recovery (HADR) technology in `ASYNC` mode to achieve the offsite DR node capability and provides `Read on Standby` on the DR node.
+
+## **Brazil: Supplementary Rule 14** (applies to systems provisioned for the Brazilian federal government)
+{: #rule_14}
+
+At this time, the disaster recovery (DR) option for Db2 on Cloud offerings is not available in Brazil for the federal government due to Supplementary Rule 14.
 
 ## How to add a Geo-Replicated Disaster Recovery Node
 {: #add_dr}
