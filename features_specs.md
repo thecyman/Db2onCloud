@@ -38,6 +38,11 @@ lastupdated: "2018-10-18"
 |  | Autonomous failover - Offsite DR | N | Use button or API |
 |  | IP moves with failover | Y | Local HA only; not offsite HADR |
 |  |  |  |  |
+| Maintenance policies & SLAs | High availability plans | 99.99% | - |
+|  | Single server plans | 99.9% | - |
+|  | Offsite DR node | 99.9% | Must use additional local HA to achieve 99.99% |
+|  | Maintenance Policy | Y | [Read details ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/439146/where-can-i-find-detail-about-maintenance-and-noti.html){:new_window} |
+|  |  |  |  |
 | Security compliances | HIPAA Ready | Y | All paid plans including Flex. Must request HIPAA mode from IBM Support. <!--For Db2 Warehouse on Cloud [see docs here ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/docs/services/Db2whc/index.html#getting_started){:new_window}.--> |
 |  | HITRUST  | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | Db2 Hosted can be used today for HITRUST |
 |  | International Organization for Standardization (ISO)  | Y | ISO 27001, 27002, 27017, and 27018 |
