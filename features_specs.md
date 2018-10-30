@@ -68,5 +68,8 @@ lastupdated: "2018-10-26"
 | Pricing & purchasing | BYOL discounts | Y | [Announcement ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-byol){:new_window} |
 |  | Available via IBM Cloud | Y | Both subscription and pay-as-you-go |
 |  | Available via software quote order | Y | All plans including Flex. [Parts & details. ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-parts-public){:new_window}|
+|  | Daily billing | Y | Flex customers are billed based on peak daily usage. For example, if you scale up one hour of the day to 8 cores from 2 cores, you will be billed for 8 cores for that day only, and 2 cores for all other days of the month.|
+|  | Hourly billing | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
+|  | Main pricing metric | Monthly | Prices are stated in monthly terms (ie $189 USD per month). However, monthly price is adjusted based on days of activated service, providing billing-by-the day.|
 {: caption="Table 1. Features and specifications supported in Db2 on Cloud" caption-side="top"}
 
