@@ -24,7 +24,7 @@ lastupdated: "2018-10-31"
 | General | Db2 AESE | Y | Db2 v11.1.3.3 |
 |  | Read on Standby | Y | Offsite DR node only |
 |  | Automatic rolling updates | Y | With HA plans |
-|  | Data center location options | Y | [Locations ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-locations){:new_window} |
+|  | Data center location options | Y | [Locations ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-locations){:new_window}. See also: Deployment times below. |
 |  | BLU in-memory | Y | Default is row, specify `CREATE TABLE..AS COL` for BLU |
 |  | Activity Tracker | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
 |  | Root access provided | N | Use Db2 Hosted if root access is required |
@@ -72,5 +72,12 @@ lastupdated: "2018-10-31"
 |  | Daily billing | Y | Flex customers are billed based on peak daily usage. For example, if you scale up from 2 to 8 cores for one hour of the day, you will be billed for 8 cores for only that day, and 2 cores for all of the other days of the month. |
 |  | Hourly billing | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - | 
 |  | Main pricing metric | Monthly | Prices are stated in monthly terms (for example, $189 USD per month). However, the monthly price is adjusted based on days of activated service, effectively providing by-the-day billing. |
+|  |  |  |  |
+| Deployment & Scaling Times | Dallas | Deploy: <5min, Scale: <45min | Depending on inventory; Flex only. |
+| | Other US South | Deploy: 1day, Scale: 8hrs | Some locations faster than others. |
+| | Frankfurt & London | Deploy: <5mins, Scale: 2hrs | Depending on inventory; Flex only. |
+| | Other EU | Deploy: 3-5days, Scale: 1-2days | Some locations faster than others. |
+| | Sydney | Deploy: <1hour, Scale: 2hrs | Depending on inventory; Flex only. |
+| | Other AP region | Deploy: 3-5days, Scale: 3-5days | Some locations faster than others. Lower volumes in AP result in slower infrastructure provisioning times. |
 {: caption="Table 1. Features and specifications supported in Db2 on Cloud" caption-side="top"}
 
