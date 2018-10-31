@@ -58,7 +58,7 @@ lastupdated: "2018-10-26"
 |  | Query old data without restore | Y | Must set up [Time Travel Query ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} |
 |  |  |  |  |
 | Networking, security, & VMs | Single-tenant virtual machine | Y | All paid plans, including Flex, are single-tenant VMs or baremetal. |
-|  | ICIAE | Y | Request from IBM Support |
+|  | ICIAE | Y | Request from IBM Support. If ICIAE is added to existing server, your server must be migrated to your ICIAE environment by IBM support. |
 |  | VPN | Y | Request from IBM Support |
 |  | On-disk encryption | Y | -  |
 |  | SSL/TLS connections | Y | -  |
