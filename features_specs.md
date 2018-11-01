@@ -69,9 +69,9 @@ lastupdated: "2018-11-01"
 | Pricing & purchasing | BYOL discounts | Y | [Announcement ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-byol){:new_window} |
 |  | Available via IBM Cloud | Y | Both subscription and pay-as-you-go |
 |  | Available via software quote order | Y | All plans including Flex. [Parts & details. ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-parts-public){:new_window}|
-|  | Daily billing | Y | Flex customers are billed based on peak daily usage. For example, if you scale up from 2 to 8 cores for one hour of the day, you will be billed for 8 cores for only that day, and 2 cores for all of the other days of the month. |
+|  | Daily billing | Y | Billing for Flex plans is based on peak daily usage. For example, if you scale up from 2 to 8 cores for one hour of a day, you will be billed for 8 cores for only that day, and 2 cores for all of the other days of the month. |
 |  | Hourly billing | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - | 
-|  | Main pricing metric | Monthly | Prices are stated in monthly terms (for example, $189 USD per month). However, the monthly price is adjusted based on days of activated service, effectively providing by-the-day billing. |
+|  | Main pricing metric | Monthly | Prices are stated in monthly terms (for example, $189 USD per month). A prorated monthly price is based on the number of days of activated service during the month in which the service was terminated. [Examples](plans_pricing.html) |
 |  |  |  |  |
 | Deployment & scaling durations | Dallas | **Deploy**: < 5 minutes. **Scale**: < 45 minutes. | Flex plan only, depending on inventory |
 | | Other US South | **Deploy**: 1 day. **Scale**: 8 hours. | Some locations shorter than others |
