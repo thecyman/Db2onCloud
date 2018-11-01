@@ -77,7 +77,7 @@ lastupdated: "2018-11-01"
 | | Other US South | **Deploy**: 1 day. **Scale**: 8 hours. | Some locations shorter than others |
 | | Frankfurt & London | **Deploy**: < 5 minutes. **Scale**: 2 hours. | Flex plan only, depending on inventory |
 | | Other EU | **Deploy**: 3-5 days. **Scale**: 1-2 days. | Some locations shorter than others |
-| | Sydney | **Deploy**: < 1 hour. **Scale**: 2 hour. | Flex plan only, depending on inventory |
+| | Sydney | **Deploy**: < 1 hour. **Scale**: 2 hours. | Flex plan only, depending on inventory |
 | | Other AP | **Deploy**: 3-5 days. **Scale**: 3-5 days. | Some locations shorter than others. Lower volumes in AP result in slower infrastructure provisioning times. |
 {: caption="Table 1. Features and specifications supported in Db2 on Cloud" caption-side="top"}
 
