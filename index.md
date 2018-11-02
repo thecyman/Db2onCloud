@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-10-26"
+lastupdated: "2018-11-02"
 
 ---
 
@@ -67,15 +67,16 @@ You can access your {{site.data.keyword.Db2_on_Cloud_short}} web console in the 
 With Db2 Warehouse plans, you can perform tasks related to file management, loading data, and running R scripts by using the [Db2 Warehouse REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-api){:new_window}.
 {: shortdesc} -->
 
-### Connect applications or your favorite tools from your local computer
+### Installing Db2 command line clients and drivers on your computer
 {: #connect_apps}
 
-Configure your local environment to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database by completing the following steps:
+Most users can skip this step. In most cases, users tend to use only the REST API, or install drivers for a framework, for example, with Python's `pip` command. However, power users might want to use the Db2 command line client to administer their database and use Db2 commands. Also, certain ODBC or JDBC applications can benefit from a general installation of Db2 drivers. If so, complete the following steps:
 {: shortdesc}
 
-1. Download the [driver package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} from the Connection info page of the {{site.data.keyword.Db2_on_Cloud_short}} web console.
-2. [Install the driver package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} on the computer where your apps or tools are running.
-3. [Configure the driver files ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} for your {{site.data.keyword.Db2_on_Cloud_short}} database.
+<!-- Drivers on site are broken so taking out this one -Simon. 1. Download the [driver package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} from the Connection info page of the {{site.data.keyword.Db2_on_Cloud_short}} web console.-->
+
+1. [Install the driver package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} on the computer where your apps or tools are running.
+2. [Configure the driver files ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} for your {{site.data.keyword.Db2_on_Cloud_short}} database.
 
 ### Use Db2 on Cloud as a data source for your {{site.data.keyword.Bluemix_notm}} apps or services
 {: #data_src}
