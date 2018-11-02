@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-11-01"
+lastupdated: "2018-11-02"
 
 ---
 
@@ -38,11 +38,11 @@ lastupdated: "2018-11-01"
 |  | Autonomous failover - Offsite DR | N | Use button or API |
 |  | IP moves with failover | Y | Local HA only; not offsite HADR |
 |  |  |  |  |
-| System Configurations | Max RAM and cores | 1TB RAM, 48 cores | Needs Precise Performance Plan XL. See below for Flex limits. |
-|  | Max storage | 11TB | Needs Precise Performance Plan XL. Disk for both data & logs. |
-|  | Flex base plan | 4GB RAM, 1core, 2GB disk | - |
-|  | Max Flex RAM and cores | 128GB RAM with 32 cores | Need higher specs? Use Precise Performance Plan or contact support. |
-|  | Max Flex storage | 4TB | Disk for both data & logs. Need higher specs? Use Precise Performance Plan or contact support. |
+| System configurations | Max RAM and cores | 1 TB RAM, 48 cores | Applies to Precise Performance plan XL. |
+|  | Max storage | 11 TB | Applies to Precise Performance plan XL. Disk for both data and logs. |
+|  | Flex: base plan | 4 GB RAM, 1 core, 2 GB disk | - |
+|  | Flex: Max RAM and cores | 128 GB RAM, 32 cores | Need higher specs? Use Precise Performance plan or contact IBM Support. |
+|  | Flex: Max storage | 4 TB | Disk for both data and logs. Need higher specs? Use Precise Performance plan or contact IBM Support. |
 |  |  |  |  |
 | Maintenance policies & SLAs | High availability plans | 99.99% | - |
 |  | Single server plans | 99.5% | - |
