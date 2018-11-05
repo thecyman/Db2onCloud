@@ -16,6 +16,7 @@ Db2 on Cloud
         federation.md
 
     free_plan.md
+    plans_pricing.md
     flex_scaling.md
     br.md
     ha.md
@@ -27,7 +28,6 @@ Db2 on Cloud
 
     audit.md
     user_mgmt.md
-    plans_cfgs.md
     maintenance.md
     local_dev_env.md
     communities.md    
