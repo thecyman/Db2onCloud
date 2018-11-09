@@ -75,6 +75,7 @@ lastupdated: "2018-11-02"
 | Pricing & purchasing | BYOL discounts | Y | [Announcement ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-byol){:new_window} |
 |  | Available via IBM Cloud | Y | Both subscription and pay-as-you-go |
 |  | Available via software quote order | Y | All plans including Flex. [Parts & details. ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-parts-public){:new_window}|
+|  | Available via HDMP | Y | Flex only. [See details on HDMP Hybrid Cores. ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/ca-en/marketplace/hybrid-data-management-platform){:new_window}|
 |  | Daily billing | Y | Billing for Flex plans is based on peak daily usage. For example, if you scale up from 2 to 8 cores for one hour of a day, you will be billed for 8 cores for only that day, and 2 cores for all of the other days of the month. |
 |  | Hourly billing | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - | 
 |  | Main pricing metric | Monthly | Prices are stated in monthly terms (for example, $189 USD per month). A prorated monthly price is based on the number of days of activated service during the month in which the service was terminated. [Examples](plans_pricing.html) |
