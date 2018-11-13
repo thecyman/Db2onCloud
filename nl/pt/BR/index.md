@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-10-26"
 
 ---
 
@@ -17,17 +17,18 @@ lastupdated: "2018-03-15"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Introdução
 {: #getting_started_db2oncloud}
 
-O {{site.data.keyword.Db2_on_Cloud_long}} é um banco de dados SQL provisionado para você na nuvem. É possível usar o {{site.data.keyword.Db2_on_Cloud_short}} do mesmo modo que usaria qualquer software de banco de dados, mas sem as dificuldades de configuração de hardware ou instalação e manutenção de software. 
-
-Se você estiver implementando o plano Lite grátis de fora da América do Norte continental, veja: [Usando o plano Lite fora da América do Norte continental](free_plan.html#outside_na){:new_window}.
+O {{site.data.keyword.Db2_on_Cloud_long}} é um banco de dados SQL provisionado para você na nuvem. É possível usar o {{site.data.keyword.Db2_on_Cloud_short}} da mesma forma que usaria qualquer software de banco de dados, mas sem o gasto adicional e a despesa de configuração de hardware e instalação e manutenção de software. 
 {: shortdesc}
 
-Também é possível instalar um banco de dados local do Db2 usando o [download gratuito do Db2 Developer Edition ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions). Ele instala rapidamente uma edição do desenvolvedor pronta para execução do Db2 com ferramentas dentro de um contêiner do Docker (o Docker não é necessário; qualquer componente necessário será instalado automaticamente). 
+Também é possível instalar um banco de dados local do Db2 usando o [download gratuito do Db2 Developer Edition ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window}. Ele instala rapidamente uma edição do desenvolvedor pronta para execução do Db2 com ferramentas dentro de um contêiner do Docker (o Docker não é necessário; qualquer componente necessário será instalado automaticamente). 
 
 <!-- ## Free trial
 {: #freetrial}
@@ -139,4 +140,26 @@ Aqui estão links para amostras que demonstram como se conectar a seu banco de d
    * [PHP ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
 <!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
    * [Amostras do {{site.data.keyword.Db2_on_Cloud_short}} no GitHub ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
+
+## Vídeo: Introduzindo o Db2 on Cloud
+{: #intro_vid}
+
+Assista a este vídeo para ver uma introdução ao {{site.data.keyword.Db2_on_Cloud_short}}.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Introdução ao {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/F_ylk44_WOg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## Vídeo: Usando a API de REST para se comunicar com o Db2 on Cloud
+{: #vid_api}
+
+Assista a este vídeo para ver as etapas necessárias para usar uma API de RESTful para se comunicar com o {{site.data.keyword.Db2_on_Cloud_short}}.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Usando a API de RESTful para se comunicar com o {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/PSNBDwgf9ts?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## Vídeo: Integrando os blocos de notas do Jupyter
+{: #cognos_vid}
+
+Assista a este vídeo para ver como integrar os blocos de notas do Jupyter ao {{site.data.keyword.Db2_on_Cloud_short}}.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Integrando os blocos de notas do Jupyter" type="text/html" width="640" height="390" src="//www.youtube.com/embed/bNfH0Wzx3is?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
 

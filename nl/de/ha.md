@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-07-19"
+lastupdated: "2018-10-22"
 
 ---
 
@@ -11,6 +11,7 @@ lastupdated: "2018-07-19"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
 {:pre: .pre}
 
 # Hochverfügbarkeit (High Availability, HA)
@@ -26,6 +27,11 @@ Darüber hinaus kann ein DR-Knoten (Disaster Recovery) mit Georeplikation hinzug
 [Liste der Standorte von Rechenzentren mit verfügbaren DR-Knoten ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:new_window}
 
 {{site.data.keyword.Db2_on_Cloud_short}} verwendet die Db2 HADR-Technologie (High Availability Disaster Recovery) im asynchronen Modus (`ASYNC`), um die Funktion des ausgelagerten Disaster-Recovery-Knotens bereitzustellen, und ermöglicht Leseoperationen in der Bereitschaftsdatenbank (`Read on Standby`) auf dem DR-Knoten.
+
+## **Brasilien: Ergänzende Regel 14** (gültig für Systeme, die für die brasilianische Regierung eingerichtet werden)
+{: #rule_14}
+
+Zum gegenwärtigen Zeitpunkt ist die DR-Option (Disaster Recovery) für Db2 on Cloud-Angebote aufgrund der ergänzenden Regel 14 für Systeme, die für die brasilianische Regierung eingerichtet werden, nicht verfügbar.
 
 ## Vorgehensweise für das Hinzufügen eines DR-Knotens mit Georeplikation
 {: #add_dr}

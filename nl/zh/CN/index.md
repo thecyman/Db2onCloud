@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-10-26"
 
 ---
 
@@ -17,18 +17,18 @@ lastupdated: "2018-03-15"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 入门
 {: #getting_started_db2oncloud}
 
-{{site.data.keyword.Db2_on_Cloud_long}} 是在云中为您供应的 SQL 数据库。您可以像使用任何数据库软件一样使用 {{site.data.keyword.Db2_on_Cloud_short}}，但是却没有硬件设置或软件安装和维护的麻烦。
- 
-
-如果从北美大陆之外部署免费轻量套餐，请参阅：[在北美大陆之外使用轻量套餐](free_plan.html#outside_na){:new_window}。
+{{site.data.keyword.Db2_on_Cloud_long}} 是在云中为您供应的 SQL 数据库。您可以像使用任何数据库软件一样使用 {{site.data.keyword.Db2_on_Cloud_short}}，但是却没有硬件设置或软件安装和维护的开销和费用。
 {: shortdesc}
 
-您还可以使用[免费下载的 Db2 Developer Edition ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions) 来安装本地 Db2 数据库。这样会快速安装随时可用的开发者版本的 Db2 以及 Docker 容器内的工具（不需要 Docker，它将自动安装任何必要的组件）。 
+您还可以使用[免费下载的 Db2 Developer Edition ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window} 来安装本地 Db2 数据库。这样会快速安装随时可用的开发者版本的 Db2 以及 Docker 容器内的工具（不需要 Docker，它将自动安装任何必要的组件）。 
 
 <!-- ## Free trial
 {: #freetrial}
@@ -150,4 +150,26 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
    * [PHP ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
 <!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
    * [GitHub 上的 {{site.data.keyword.Db2_on_Cloud_short}} 样本 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
+
+## 视频：介绍 Db2 on Cloud
+{: #intro_vid}
+
+观看此视频，了解 {{site.data.keyword.Db2_on_Cloud_short}} 简介。
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="简介：{{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/F_ylk44_WOg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## 视频：使用 REST API 与 Db2 on Cloud 通信
+{: #vid_api}
+
+观看此视频，了解使用 RESTful API 与 {{site.data.keyword.Db2_on_Cloud_short}} 通信的步骤。
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="使用 RESTful API 与之通信：{{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/PSNBDwgf9ts?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## 视频：集成 Jupyter 配置页
+{: #cognos_vid}
+
+观看此视频，了解如何将 Jupyter 配置页与 {{site.data.keyword.Db2_on_Cloud_short}} 集成。
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="集成 Jupyter 配置页" type="text/html" width="640" height="390" src="//www.youtube.com/embed/bNfH0Wzx3is?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
 

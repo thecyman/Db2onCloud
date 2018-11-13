@@ -13,7 +13,7 @@ lastupdated: "2018-03-14"
 {:screen: .screen}
 {:pre: .pre}
 
-# Controllo 
+# Controllo
 {: #audit}
 
 I seguenti sono i metodi con cui puoi controllare l'attività sul database {{site.data.keyword.Db2_on_Cloud_short}}:

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-07-19"
+lastupdated: "2018-10-22"
 
 ---
 
@@ -11,6 +11,7 @@ lastupdated: "2018-07-19"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
 {:pre: .pre}
 
 # 고가용성(HA)
@@ -19,13 +20,18 @@ lastupdated: "2018-07-19"
 {{site.data.keyword.Db2_on_Cloud_short}} 고가용성 플랜은 99.99% SLA의 뛰어난 가용성이라는 특성을 가집니다. 
 {: shortdesc}
 
-DR 노드가 없는 표준 고가용성 플랜에서는 원활한 장애 복구 및 롤링 업데이트를 제공합니다. 이는 자동 클라이언트 재라우팅(ACR) 및 포터블 IP를 사용하여 관리됩니다.
+재해 복구(DR) 노드가 없는 표준 고가용성 플랜에서는 원활한 장애 복구 및 롤링 업데이트를 제공합니다. 이는 자동 클라이언트 재라우팅(ACR) 및 포터블 IP를 사용하여 관리됩니다.
 
-Geo-Replicated Disaster Recovery 노드도 추가할 수 있습니다. 이 오프사이트 DR 노드 옵션을 사용하면 선택한 오프사이트 {{site.data.keyword.Bluemix_notm}} 데이터 센터에서 데이터를 실시간으로 신속하게 데이터베이스 노드와 동기화할 수 있습니다.  
+Geo-Replicated Disaster Recovery 노드도 추가할 수 있습니다. 이 오프사이트 DR 노드 옵션을 사용하면 선택한 오프사이트 {{site.data.keyword.Bluemix_notm}} 데이터 센터에서 데이터를 실시간으로 신속하게 데이터베이스 노드와 동기화할 수 있습니다. 
 
 [DR 노드를 사용할 수 있는 데이터 센터 위치 목록입니다. ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:new_window}
 
 {{site.data.keyword.Db2_on_Cloud_short}}에서는 `비동기` 모드에서 DB2 고가용성 재해 복구(HADR) 기술을 사용하여 오프사이트 DR 노드 기능을 얻고 DR 노드에서 `대기 중 읽기`를 제공합니다.
+
+## **브라질: 보충 규칙 14**(브라질 연방 정부를 위해 프로비저닝되는 시스템에 적용됨)
+{: #rule_14}
+
+현재 브라질에서는 보충 규칙 14로 인해 Db2 on Cloud 오퍼링의 재해 복구(DR) 옵션을 연방 정부용으로 사용할 수 없습니다.
 
 ## Geo-Replicated Disaster Recovery 노드 추가 방법
 {: #add_dr}
@@ -42,14 +48,14 @@ Geo-Replicated Disaster Recovery 노드도 추가할 수 있습니다. 이 오�
 ## 고가용성 및 재해 복구 노드 관리
 {: #manage_ha_dr}
 
-오프사이트가 아닌 표준 HA 노드의 경우 IBM에서 장애 복구를 관리합니다. IBM은 서버의 상태와 장애 복구를 모니터하고, 가동 시간을 최대로 유지하기 위해 필요에 따라 롤링 업데이트 및 확장을 포함한 장애 조치를 수행합니다. 
+오프사이트가 아닌 표준 HA 노드의 경우 IBM에서 장애 복구를 관리합니다. IBM은 서버의 상태와 장애 복구를 모니터하고, 가동 시간을 최대로 유지하기 위해 필요에 따라 롤링 업데이트 및 확장을 포함한 장애 조치를 수행합니다.
 
 Geo-Replicated Disaster Recovery(HADR)의 경우 콘솔에서 **재해 복구 관리**를 사용하여 수동으로 장애 복구를 수행해야 합니다. 또한 [여기 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://developer.ibm.com/answers/questions/457901/where-can-i-find-api-documentation-for-db2-on-clou.html){:new_window}에 설명된 대로 API를 사용하여 장애 복구를 수행할 수 있습니다.
 
 ## FAQ
 {: #faq}
 
-### 인계 후 DR 복구를 위해 Db2를 사용하는 애플리케이션에 필요한 변경사항은 무엇입니까? 인계 후 DNS 이름 또는 IP 주소가 변경됩니까?
+### 인계 후 DR 노드에 대한 작업을 위해 Db2를 사용하는 애플리케이션에 필요한 변경사항은 무엇입니까? 인계 후 DNS 이름 또는 IP 주소가 변경됩니까?
 
 **A**: 아니오. 해석 가능한 호스트 이름이 2개 제공됩니다. 앱에서 DB2 ACR(Active Connection Reroute)을 사용하도록 구성된 경우 앱의 경로가 새 기본 노드로 재지정됩니다.
 

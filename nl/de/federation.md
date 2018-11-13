@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-07-18"
+lastupdated: "2018-10-26"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-07-18"
 # Datenvirtualisierung (Föderierung)
 {: #overview}
 
-Die Db2-Datenvirtualisierung (auch als Föderierung bezeichnet) wird von {{site.data.keyword.Db2_on_Cloud_short}} unterstützt. Mithilfe der Datenvirtualisierung können Sie über eine einzelne Abfrage auf alle Daten zugreifen, die sich auf mehreren verteilten Datenbanken innerhalb Ihres Unternehmens befinden. Sie können auf Daten zugreifen, die in beliebigen Ihrer Db2- oder Informix-Datenquellen sowohl lokal als auch in der Cloud gespeichert sind.
+Die Db2-Datenvirtualisierung (auch als Föderierung bezeichnet) wird von {{site.data.keyword.Db2_on_Cloud_short}} unterstützt. Mithilfe der Datenvirtualisierung können Sie über eine einzelne Abfrage auf alle Daten zugreifen, die sich auf mehreren verteilten Datenbanken innerhalb Ihres Unternehmens befinden. Sie können auf Daten zugreifen, die in beliebigen Ihrer Db2- oder Informix-Datenquellen sowohl lokal als auch in der Cloud gespeichert sind. 
 {: shortdesc}
 
 Diese Funktion wird in allen Versionen von {{site.data.keyword.Db2_on_Cloud_short}} unterstützt, allerdings nicht im Rahmen des kostenfreien Lite-Plans. Der Lite-Plan kann jedoch als Ziel verwendet werden, aus dem Daten abgerufen werden.
@@ -146,5 +146,5 @@ Führen Sie in der {{site.data.keyword.Db2_on_Cloud_short}}-Konsole die folgende
 
 Weitere Informationen zur Datenvirtualisierung (Föderierung) finden Sie in [Föderierung![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}.
 
-Informationen zu den Datenquellen, die durch die Föderierung unterstützt werden, finden Sie in [Durch die Föderierung unterstützte Datenquellen![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}.
+Standardmäßig unterstützt {{site.data.keyword.Db2_on_Cloud_short}} Informix und Db2 (einschließlich der lokalen Version von Db2 und Db2 Warehouse). Die Unterstützung für bestimmte Datenquellen muss möglicherweise von IBM Support auf Anforderung installiert werden. Informationen zu den Datenquellen, die durch die Föderierung unterstützt werden, finden Sie in [Durch die Föderierung unterstützte Datenquellen![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}.
 

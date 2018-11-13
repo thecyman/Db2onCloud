@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-07-18"
+lastupdated: "2018-10-26"
 
 ---
 
@@ -14,10 +14,10 @@ lastupdated: "2018-07-18"
 {:tip: .tip}
 {:pre: .pre}
 
-# Virtualização de dados (Federação)
+# Virtualização de dados (federação)
 {: #overview}
 
-A virtualização de dados do Db2 (também conhecida como federação) é suportada pelo {{site.data.keyword.Db2_on_Cloud_short}}. A virtualização de dados fornece acesso de consulta única a todos os seus dados que estão em múltiplos bancos de dados distribuídos em qualquer lugar em sua organização. É possível acessar dados que estão em qualquer uma das origens de dados Db2 ou Informix, tanto na nuvem quanto no local.
+A virtualização de dados do Db2 (também conhecida como federação) é suportada pelo {{site.data.keyword.Db2_on_Cloud_short}}. A virtualização de dados fornece acesso de consulta única a todos os seus dados que estão em múltiplos bancos de dados distribuídos em qualquer lugar em sua organização. É possível acessar dados que estão em qualquer uma das origens de dados Db2 ou Informix, tanto na nuvem quanto no local. 
 {: shortdesc}
 
 Essa função é suportada em todas as versões do {{site.data.keyword.Db2_on_Cloud_short}}, exceto para o plano Lite grátis. No entanto, é possível usar o plano Lite como um destino do qual é possível puxar dados.
@@ -146,5 +146,7 @@ No console de {{site.data.keyword.Db2_on_Cloud_short}}:
 
 Para obter mais informações sobre virtualização de dados (federação), veja: [Federação ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}.
 
-Para obter informações sobre as origens de dados suportadas pela federação, veja: [Origens de dados suportadas da federação ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo") ](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}.
+Por padrão, o {{site.data.keyword.Db2_on_Cloud_short}} suporta o Informix e o Db2 (incluindo o Db2 no
+local e o Db2 Warehouse). O suporte para determinadas origens de dados pode precisar ser instalado pelo suporte IBM
+mediante solicitação. Para obter informações sobre as origens de dados suportadas pela federação, veja: [Origens de dados suportadas da federação ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo") ](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}.
 

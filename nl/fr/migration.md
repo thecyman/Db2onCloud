@@ -28,11 +28,11 @@ Pour charger des données depuis Amazon S3, sélectionnez l'une des méthodes su
 
     ```
     INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
-        (CCSID 1208 s3('s3.amazonaws.com',
-        '<S3-access-key-ID>',
-        '<S3-secret-access-key>',
-        '<my_bucket>'
-           )
+      (CCSID 1208 s3('s3.amazonaws.com',
+      '<S3-access-key-ID>',
+      '<S3-secret-access-key>',
+      '<my_bucket>'
+         )
       )      
     ```
 

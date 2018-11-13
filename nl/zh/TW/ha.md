@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-07-19"
+lastupdated: "2018-10-22"
 
 ---
 
@@ -11,6 +11,7 @@ lastupdated: "2018-07-19"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
 {:pre: .pre}
 
 # 高可用性 (HA)
@@ -19,13 +20,18 @@ lastupdated: "2018-07-19"
 {{site.data.keyword.Db2_on_Cloud_short}} 高可用性方案具有絕佳的可用性特徵，及 99.99% SLA。
 {: shortdesc}
 
-標準高可用性方案提供無縫失效接手及漸進式更新。系統使用自動用戶端重新遞送 (ACR) 及可攜式 IP 為您管理。
+沒有災難回復 (DR) 節點的標準高可用性方案提供無縫失效接手及漸進式更新。系統使用自動用戶端重新遞送 (ACR) 及可攜式 IP 為您管理。
 
 此外，您可以新增「異地抄寫災難回復節點」。這個異地 DR 節點選項讓您能快速即時將資料同步化到您選擇之異地 {{site.data.keyword.Bluemix_notm}} 資料中心的資料庫節點。 
 
 [提供 DR 節點的資料中心位置清單。![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:new_window}
 
 {{site.data.keyword.Db2_on_Cloud_short}} 使用 Db2 高可用性災難復原 (HADR) 技術的 `ASYNC` 模式來達到異地 DR 節點功能，並在 DR 節點上提供 `Read on Standby`。
+
+## **巴西：增補規則 14**（適用於為巴西聯邦政府佈建的系統）
+{: #rule_14}
+
+目前，由於增補規則 14 之故，巴西的聯邦政府無法使用 Db2 on Cloud 供應項目的災難回復 (DR) 選項。
 
 ## 如何新增異地抄寫災難回復節點
 {: #add_dr}
@@ -49,7 +55,7 @@ lastupdated: "2018-07-19"
 ## 常見問題
 {: #faq}
 
-### 使用 Db2 的應用程式在接管之後，若要使用 DR 回復，需要做什麼變更？DNS 名稱或 IP 位址會在接管之後變更嗎？
+### 使用 Db2 的應用程式在接管之後，若要使用 DR 節點，需要做什麼變更？DNS 名稱或 IP 位址會在接管之後變更嗎？
 
 **答**：不會。您會得到 2 個可解析的主機名稱。如果您的應用程式已配置為使用 Db2 ACR（作用中連線重新遞送），則應用程式會重新遞送到新的主要節點。
 

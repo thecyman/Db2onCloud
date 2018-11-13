@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-07-18"
+lastupdated: "2018-10-26"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-07-18"
 # 데이터 가상화(연합)
 {: #overview}
 
-Db2 데이터 가상화(연합이라고도 함)는 {{site.data.keyword.Db2_on_Cloud_short}}에서 지원됩니다. 데이터 가상화를 사용하면 조직 내 어느 위치에서든 다중 분산 데이터베이스에 있는 모든 데이터에 대한 단일 조회 액세스가 가능합니다. 온프레미스 및 클라우드에서 Db2 또는 Informix 데이터 소스에 있는 데이터에 액세스할 수 있습니다.
+Db2 데이터 가상화(연합이라고도 함)는 {{site.data.keyword.Db2_on_Cloud_short}}에서 지원됩니다. 데이터 가상화를 사용하면 조직 내 어느 위치에서든 다중 분산 데이터베이스에 있는 모든 데이터에 대한 단일 조회 액세스가 가능합니다. 온프레미스 및 클라우드에서 Db2 또는 Informix 데이터 소스에 있는 데이터에 액세스할 수 있습니다. 
 {: shortdesc}
 
 이 기능은 무료 라이트 플랜을 제외한 모든 버전의 {{site.data.keyword.Db2_on_Cloud_short}}에 지원됩니다. 하지만 데이터를 가져올 수 있는 대상으로 라이트 플랜을 사용할 수 있습니다.
@@ -146,5 +146,5 @@ Db2 제품군의 제품 사용자는 {{site.data.keyword.Db2_on_Cloud_short}} �
 
 데이터 가상화(연합)에 대한 자세한 정보는 [Federation![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}을 참조하십시오.
 
-연합을 통해 지원되는 데이터 소스에 대한 정보는 [Federation Supported Data Sources![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}를 참조하십시오.
+기본적으로 {{site.data.keyword.Db2_on_Cloud_short}}는 Informix 및 Db2(온프레미스 Db2 및 Db2 Warehouse 포함)를 지원합니다. 요청 시 IBM 지원 센터에서 특정 데이터 소스에 대한 지원을 설치해야 할 수 있습니다. 연합을 통해 지원되는 데이터 소스에 대한 정보는 [Federation Supported Data Sources![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}를 참조하십시오.
 

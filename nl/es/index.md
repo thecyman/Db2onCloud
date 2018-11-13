@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-10-26"
 
 ---
 
@@ -17,17 +17,18 @@ lastupdated: "2018-03-15"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Cómo empezar
 {: #getting_started_db2oncloud}
 
-{{site.data.keyword.Db2_on_Cloud_long}} es una base de datos SQL suministrada para usted en la nube. Puede utilizar {{site.data.keyword.Db2_on_Cloud_short}} como utilizaría cualquier software de base de datos, pero sin tener que preocuparse de la configuración del hardware ni de la instalación y el mantenimiento del software. 
-
-Si va a desplegar el plan Lite gratuito desde fuera de América del Norte continental, consulte: [Utilización del plan Lite fuera de América del Norte continental](free_plan.html#outside_na){:new_window}.
+{{site.data.keyword.Db2_on_Cloud_long}} es una base de datos SQL suministrada para usted en la nube. Puede utilizar {{site.data.keyword.Db2_on_Cloud_short}} como utilizaría cualquier software de base de datos, pero sin la sobrecarga de la configuración del hardware ni de la instalación y el mantenimiento del software. 
 {: shortdesc}
 
-También puede instalar una base de datos Db2 local utilizando la [descarga gratuita de Db2 Developer Edition ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions). De esta forma, se instala rápidamente una edición de Db2 para desarrolladores lista para utilizar dentro de un contenedor Docker (no se requiere Docker; todos los componentes necesarios se instalarán automáticamente). 
+También puede instalar una base de datos Db2 local utilizando la [descarga gratuita de Db2 Developer Edition ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window}. De esta forma, se instala rápidamente una edición de Db2 para desarrolladores lista para utilizar dentro de un contenedor Docker (no se requiere Docker; todos los componentes necesarios se instalarán automáticamente). 
 
 <!-- ## Free trial
 {: #freetrial}
@@ -139,4 +140,26 @@ Aquí tiene los enlaces a ejemplos que demuestran cómo conectarse a la base de 
    * [PHP ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
 <!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
    * Ejemplos de [Ejemplos de {{site.data.keyword.Db2_on_Cloud_short}} en GitHub ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
+
+## Vídeo: Introducción de Db2 on Cloud
+{: #intro_vid}
+
+Vea este vídeo para obtener una introducción a {{site.data.keyword.Db2_on_Cloud_short}}.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Introducción a {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/F_ylk44_WOg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## Vídeo: Utilización de la API REST para comunicarse con Db2 on Cloud
+{: #vid_api}
+
+Vea este vídeo para seguir los pasos necesarios para utilizar una API RESTful para comunicar con {{site.data.keyword.Db2_on_Cloud_short}}.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Utilización de la API RESTful para comunicar con {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/PSNBDwgf9ts?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## Vídeo: Integración de cuadernos Jupyter
+{: #cognos_vid}
+
+Vea este vídeo para obtener información sobre cómo integrar cuadernos Jupyter con {{site.data.keyword.Db2_on_Cloud_short}}.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Integración de cuadernos Jupyter" type="text/html" width="640" height="390" src="//www.youtube.com/embed/bNfH0Wzx3is?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
 

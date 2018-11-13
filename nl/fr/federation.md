@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-07-18"
+lastupdated: "2018-10-26"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-07-18"
 # Virtualisation de données (fédération)
 {: #overview}
 
-La virtualisation de données Db2 (qui porte également le nom de fédération) est prise en charge par {{site.data.keyword.Db2_on_Cloud_short}}. Elle vous donne un accès de requête unique à toutes vos données situées dans des bases de données réparties partout dans votre organisation. Vous pouvez accéder aux données qui se trouvent dans toutes vos sources de données Db2 ou Informix, aussi bien sur le cloud que sur site.
+La virtualisation de données Db2 (qui porte également le nom de fédération) est prise en charge par {{site.data.keyword.Db2_on_Cloud_short}}. Elle vous donne un accès de requête unique à toutes vos données situées dans des bases de données réparties partout dans votre organisation. Vous pouvez accéder aux données qui se trouvent dans toutes vos sources de données Db2 ou Informix, aussi bien sur le cloud que sur site. 
 {: shortdesc}
 
 Cette fonction est prise en charge sur toutes les versions de {{site.data.keyword.Db2_on_Cloud_short}}, sauf sur le plan Lite gratuit. Vous pouvez toutefois utiliser ce dernier comme une cible depuis laquelle vous pouvez extraire les données.
@@ -146,5 +146,5 @@ A partir de la console {{site.data.keyword.Db2_on_Cloud_short}} :
 
 Pour plus d'informations sur la virtualisation des données (fédération), voir : [Federation ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}.
 
-Pour plus d'informations sur les sources de données prises en charge par la fédération, voir : [Federation Supported Data Sources for Db2 on Cloud, Db2 Warehouse, Db2 Warehouse on Cloud and IBM Db2 Hosted![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}.
+Par défaut, {{site.data.keyword.Db2_on_Cloud_short}} prend en charge Informix et Db2 (y compris Db2 et Db2 Warehouse sur site). La prise en charge de certaines sources de données devra peut-être être installée par le support IBM sur demande. Pour plus d'informations sur les sources de données prises en charge par la fédération, voir : [Federation Supported Data Sources for Db2 on Cloud, Db2 Warehouse, Db2 Warehouse on Cloud and IBM Db2 Hosted![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}.
 

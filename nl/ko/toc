@@ -2,15 +2,17 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="Db2onCloud" audience="service" arm="1920570" href="/docs/services/Db2onCloud/index.html"}
+{: .toc subcollection="Db2onCloud" audience="service" arm="1920570" href="/docs/services/Db2onCloud/index.html" path="services/Db2onCloud"}
 Db2 on Cloud
 
 	{: .navgroup id="learn"}
 	index.md
+    features_specs.md
+    iam.md
     connecting.md
 
     {: .topicgroup}
-    다른 Db2 서버에 연결
+    다른 Db2 데이터베이스에 연결
         federation.md
 
     free_plan.md
@@ -35,8 +37,18 @@ Db2 on Cloud
 	
     [What's new](https://www.ibm.com/support/docview.wss?uid=swg21961758)
     [Frequently asked questions](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
+    [IBM 개발자 답변](https://developer.ibm.com/answers/index.html)
     [Security compliances](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
     [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
+    {: .navgroup-end}
+
+	{: .navgroup id="howto"}
+    [가이드 데모: 웹 콘솔을 통해 공통 태스크 완료](https://www.ibm.com/cloud/garage/demo/try-db2-on-cloud)
+    [튜토리얼: Time Travel Query를 사용하여 히스토리 데이터에 액세스](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html)
+    [튜토리얼: Jupyter Notebook 및 REST API를 사용하여 앱 개발](https://www.ibm.com/cloud/garage/tutorials/ibm-db2-on-cloud/exploring-the-capabilities-of-db-2-on-cloud)
+    [동영상: RESTful API 사용](https://www.youtube.com/watch?v=PSNBDwgf9ts)
+    [동영상: Jupyter Notebook 통합](https://www.youtube.com/watch?v=bNfH0Wzx3is)
+	
     {: .navgroup-end}
 
 	{: .navgroup id="reference"}

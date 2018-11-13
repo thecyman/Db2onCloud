@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-07-19"
+lastupdated: "2018-10-22"
 
 ---
 
@@ -11,6 +11,7 @@ lastupdated: "2018-07-19"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
 {:pre: .pre}
 
 # Haute disponibilité (HA)
@@ -21,17 +22,22 @@ Les plans haute disponibilité de {{site.data.keyword.Db2_on_Cloud_short}} ont d
 
 Les plans haute disponibilité standard sans noeud de reprise après incident offrent la reprise en ligne ainsi que des mises à jour en continu. Ils sont gérés à votre place grâce à la redirection automatique du client (ACR) et des adresses IP portables.
 
-En outre, vous pouvez ajouter un noeud de reprise après incident géorépliqué. Cette option de noeud de reprise après incident hors site vous permet de synchroniser rapidement vos données en temps réel avec un noeud de base de données situé dans un centre de données {{site.data.keyword.Bluemix_notm}} hors site de votre choix.  
+En outre, vous pouvez ajouter un noeud de reprise après incident géorépliqué. Cette option de noeud de reprise après incident hors site vous permet de synchroniser rapidement vos données en temps réel avec un noeud de base de données situé dans un centre de données {{site.data.keyword.Bluemix_notm}} hors site de votre choix. 
 
 [Liste des emplacements de centre de données où des noeuds de reprise après incident sont disponibles. ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:new_window}
 
 {{site.data.keyword.Db2_on_Cloud_short}} utilise la technologie Db2 HADR (High Availability Disaster Recovery) en mode `ASYNC` pour atteindre la capacité du noeud de reprise après incident hors site et fournit une `fonction de lecture en veille` sur ce noeud.
 
+## **Brésil : Règle 14 supplémentaire ** (concerne les systèmes mis à disposition pour le gouvernement fédéral brésilien)
+{: #rule_14}
+
+A ce stade, l'option de reprise après incident pour les offres Db2 on Cloud n'est pas disponible au Brésil pour le gouvernement fédéral en raison de la Règle 14 supplémentaire.
+
 ## Ajout d'un noeud de reprise après incident géorépliqué
 {: #add_dr}
 
 Pour les utilisateurs {{site.data.keyword.Db2_on_Cloud_short}} existants :
- * Vous pouvez ajouter un noeud de reprise après incident à la demande à des instances {{site.data.keyword.Db2_on_Cloud_short}} existantes. Après avoir cliqué sur votre instance dans le tableau de bord {{site.data.keyword.Bluemix_notm}}, vous verrez s'afficher une option appelée **Manage Disaster Recovery**. Vous pouvez ajouter un noeud de reprise après incident géorépliqué à partir de cet endroit. 
+ * Vous pouvez ajouter un noeud de reprise après incident à la demande à des instances {{site.data.keyword.Db2_on_Cloud_short}} existantes. Après avoir cliqué sur votre instance dans le tableau de bord {{site.data.keyword.Bluemix_notm}}, vous verrez s'afficher une option appelée **Manage Disaster Recovery**. Vous pouvez ajouter un noeud de reprise après incident géorépliqué à partir de cet endroit.
  * Si vous avez acheté {{site.data.keyword.Db2_on_Cloud_short}} sur contrat via un ingénieur commercial et que vous n'avez pas d'abonnement {{site.data.keyword.Bluemix_notm}}, contactez votre interlocuteur IBM pour ajouter un noeud de reprise après incident.
 
 Si vous n'êtes pas un utilisateur {{site.data.keyword.Db2_on_Cloud_short}} actuellement :
@@ -49,8 +55,8 @@ Pour la reprise après incident géorépliquée (HADR), vous devez effectuer un 
 ## Foire aux questions
 {: #faq}
 
-### Quelles sont les modifications requises pour une application qui utilise Db2 afin qu'elle mette en oeuvre la reprise après incident après la reprise ? Est-ce que le nom DNS ou l'adresse IP change après la reprise ?
+### Quelles sont les modifications requises pour une application qui utilise Db2 afin qu'elle fonctionne avec le noeud de reprise après incident après la reprise ? Est-ce que le nom DNS ou l'adresse IP change après la reprise ?
 
-**R** : Non. Deux noms d'hôte qui peuvent être résolus vous sont affectés. Si votre application est configurée pour utiliser Db2 ACR (Active Connection Reroute), elle est alors réacheminée vers le noeud principal. 
+**R** : Non. Deux noms d'hôte qui peuvent être résolus vous sont affectés. Si votre application est configurée pour utiliser Db2 ACR (Active Connection Reroute), elle est alors réacheminée vers le noeud principal.
 
 Pour plus d'informations sur le noeud de reprise après incident géorépliqué, cliquez [ici ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://developer.ibm.com/answers/questions/458385/frequently-asked-questions-for-db2-on-cloud-hadr-g.html){:new_window}.

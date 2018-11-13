@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-07-19"
+lastupdated: "2018-10-22"
 
 ---
 
@@ -11,6 +11,7 @@ lastupdated: "2018-07-19"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
 {:pre: .pre}
 
 # 高可用性 (HA)
@@ -19,13 +20,18 @@ lastupdated: "2018-07-19"
 {{site.data.keyword.Db2_on_Cloud_short}} 高可用性套餐具备卓越可用性特征以及 99.99% SLA。
 {: shortdesc}
 
-不含 DR 节点的标准高可用性套餐提供无缝故障转移和滚动更新。使用自动客户机重新路由 (ACR) 和可移植 IP 进行管理。
+不含灾难恢复 (DR) 节点的标准高可用性套餐提供无缝故障转移和滚动更新。使用自动客户机重新路由 (ACR) 和可移植 IP 进行管理。
 
 此外，您可以添加地理复制灾难恢复节点。此非现场 DR 节点选项使您能够实时将数据快速同步到所选非现场 {{site.data.keyword.Bluemix_notm}} 数据中心的数据库节点。 
 
 [DR 节点可用的数据中心位置的列表。![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:new_window}
 
 {{site.data.keyword.Db2_on_Cloud_short}} 以 `ASYNC` 方式使用 Db2 高可用性灾难恢复 (HADR) 技术来实现非现场 DR 节点功能，并在 DR 节点上提供 `Read on Standby`。
+
+## <）MD:STRONG>巴西：补充规定 14**（适用于为巴西联邦政府供应的系统）
+{: #rule_14}
+
+目前，由于补充规定 14 的原因，Db2 on Cloud 产品的灾难恢复 (DR) 选项在巴西还不能用于联邦政府。
 
 ## 如何添加地理复制灾难恢复节点
 {: #add_dr}
@@ -49,7 +55,7 @@ lastupdated: "2018-07-19"
 ## 常见问题
 {: #faq}
 
-### 对于使用 Db2 来处理接管后 DR 恢复的应用程序，需要进行哪些更改？接管后 DNS 名称或 IP 地址会更改吗？
+### 对于使用 Db2 来处理接管后 DR 节点的应用程序，需要进行哪些更改？接管后 DNS 名称或 IP 地址会更改吗？
 
 **答**：不需要进行更改，DNS 名称或 IP 地址也不会更改。将为您提供 2 个可解析的主机名。如果应用程序配置为使用 Db2 ACR（活动连接重新路由），那么应用程序将重新路由到新的主节点。
 

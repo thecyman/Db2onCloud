@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-10-26"
 
 ---
 
@@ -17,17 +17,18 @@ lastupdated: "2018-03-15"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 시작하기
 {: #getting_started_db2oncloud}
 
-{{site.data.keyword.Db2_on_Cloud_long}}는 클라우드에서 사용자를 위해 프로비저닝된 SQL 데이터베이스입니다. 데이터베이스 소프트웨어를 사용하는 것처럼 {{site.data.keyword.Db2_on_Cloud_short}}를 사용할 수 있지만 하드웨어 설정 또는 소프트웨어 설치 및 관리라는 번거로움을 덜 수 있습니다. 
-
-북아메리카 대륙 이외의 지역에서 무료 라이트 플랜을 배치하는 경우 [북아메리카 대륙 이외의 지역에서 라이트 플랜 사용](free_plan.html#outside_na){:new_window}을 참조하십시오.
+{{site.data.keyword.Db2_on_Cloud_long}}는 클라우드에서 사용자를 위해 프로비저닝된 SQL 데이터베이스입니다. 데이터베이스 소프트웨어를 사용하는 것과 동일하게 {{site.data.keyword.Db2_on_Cloud_short}}를 사용할 수 있지만 하드웨어 설정이나 소프트웨어 설치 및 관리에 대한 오버헤드와 비용이 없습니다.
 {: shortdesc}
 
-[free Db2 Developer Edition download ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions)를 사용하여 로컬 Db2 데이터베이스도 설치할 수 있습니다. Docker 컨테이너 내부의 도구로, 바로 사용할 수 있는 Db2 개발자 에디션을 빠르게 설치합니다(Docker는 필요 없으며 필요한 컴포넌트는 자동으로 생성됨). 
+[free Db2 Developer Edition download ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window}를 사용하여 로컬 Db2 데이터베이스도 설치할 수 있습니다. Docker 컨테이너 내부의 도구로, 바로 사용할 수 있는 Db2 개발자 에디션을 빠르게 설치합니다(Docker는 필요 없으며 필요한 컴포넌트는 자동으로 생성됨). 
 
 <!-- ## Free trial
 {: #freetrial}
@@ -139,4 +140,26 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
    * [PHP ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
 <!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
    * [{{site.data.keyword.Db2_on_Cloud_short}} samples on GitHub ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
+
+## 동영상: Db2 on Cloud 소개
+{: #intro_vid}
+
+{{site.data.keyword.Db2_on_Cloud_short}}에 대한 소개를 보려면 이 동영상을 시청하십시오.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="소개 - {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/F_ylk44_WOg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## 동영상: REST API를 사용하여 Db2 on Cloud와 통신
+{: #vid_api}
+
+RESTful API를 사용하여 {{site.data.keyword.Db2_on_Cloud_short}}와 통신하는 데 필요한 단계를 보려면 이 동영상을 시청하십시오.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="RESTful API를 사용하여 {{site.data.keyword.Db2_on_Cloud_short}}와 통신" type="text/html" width="640" height="390" src="//www.youtube.com/embed/PSNBDwgf9ts?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## 동영상: Jupyter Notebook 통합
+{: #cognos_vid}
+
+Jupyter Notebook을 {{site.data.keyword.Db2_on_Cloud_short}}와 통합하는 방법을 보려면 이 동영상을 시청하십시오.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Jupyter Notebook 통합" type="text/html" width="640" height="390" src="//www.youtube.com/embed/bNfH0Wzx3is?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
 

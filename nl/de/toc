@@ -2,15 +2,17 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="Db2onCloud" audience="service" arm="1920570" href="/docs/services/Db2onCloud/index.html"}
+{: .toc subcollection="Db2onCloud" audience="service" arm="1920570" href="/docs/services/Db2onCloud/index.html" path="services/Db2onCloud"}
 Db2 on Cloud
 
 	{: .navgroup id="learn"}
 	index.md
+    features_specs.md
+    iam.md
     connecting.md
 
     {: .topicgroup}
-    Verbindung zu einem anderen Db2-Server herstellen
+    Verbindung zu einer anderen Db2-Datenbank herstellen
         federation.md
 
     free_plan.md
@@ -19,13 +21,12 @@ Db2 on Cloud
     ha.md
 
     {: .topicgroup}
-    Daten Laden
+    Daten laden
         dcw.md
         migration.md
 
     audit.md
     user_mgmt.md
-    plans_cfgs.md
     maintenance.md
     local_dev_env.md
     communities.md    
@@ -35,8 +36,18 @@ Db2 on Cloud
 	
     [Neuerungen](https://www.ibm.com/support/docview.wss?uid=swg21961758)
     [Häufig gestellte Fragen](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
+    [IBM Developer Answers](https://developer.ibm.com/answers/index.html)
     [Einhaltung von Sicherheitsvorgaben](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
     [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
+    {: .navgroup-end}
+
+	{: .navgroup id="howto"}
+    [Demo mit Anleitung: Gängige Aufgaben über die Webkonsole ausführen](https://www.ibm.com/cloud/garage/demo/try-db2-on-cloud)
+    [Lernprogramm: Time Travel Query für den Zugriff auf Langzeitdaten](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html)
+    [Lernprogramm: Apps mit Jupyter-Notizbüchern und REST-API entwickeln](https://www.ibm.com/cloud/garage/tutorials/ibm-db2-on-cloud/exploring-the-capabilities-of-db-2-on-cloud)
+    [Video: REST-konforme API verwenden](https://www.youtube.com/watch?v=PSNBDwgf9ts)
+    [Video: Integration mit Jupyter-Notizbüchern](https://www.youtube.com/watch?v=bNfH0Wzx3is)
+	
     {: .navgroup-end}
 
 	{: .navgroup id="reference"}

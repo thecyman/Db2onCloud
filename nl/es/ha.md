@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-07-19"
+lastupdated: "2018-10-22"
 
 ---
 
@@ -11,6 +11,7 @@ lastupdated: "2018-07-19"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
 {:pre: .pre}
 
 # Alta disponibilidad (HA)
@@ -19,13 +20,18 @@ lastupdated: "2018-07-19"
 Los planes de alta disponibilidad de {{site.data.keyword.Db2_on_Cloud_short}} ofrecen excelentes características de disponibilidad con un SLA del 99,99 %. 
 {: shortdesc}
 
-Los planes de alta disponibilidad estándar sin nodo DR proporcionan funciones de migración tras error ininterrumpida y de actualización continua. Se gestionan automáticamente mediante una redirección automática de cliente (ACR) e IP portables.
+Los planes de alta disponibilidad estándar sin nodo de recuperación tras desastre (DR) proporcionan funciones de migración tras error ininterrumpida y de actualización continua. Se gestionan automáticamente mediante una redirección automática de cliente (ACR) e IP portables.
 
 Además, puede añadir un nodo de recuperación tras desastre replicado geográficamente. Esta opción de nodo DR externo le ofrece la posibilidad de sincronizar rápidamente sus datos en tiempo real con un nodo de base de datos en el centro de datos externo de {{site.data.keyword.Bluemix_notm}} que elija. 
 
 [Lista de ubicaciones de centros de datos donde hay disponibles nodos de DR. ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:new_window}
 
 {{site.data.keyword.Db2_on_Cloud_short}} utiliza la tecnología de recuperación tras desastre de alta disponibilidad de Db2 (HADR) en modalidad `ASYNC` para lograr la capacidad de nodo DR externo y ofrece la función `Read on Standby` en el nodo DR.
+
+## **Brasil: Norma suplementaria 14** (se aplica a los sistemas suministrados para el gobierno federal brasileño)
+{: #rule_14}
+
+En este momento, la opción de recuperación tras desastre (DR) para las ofertas de Db2 on Cloud no está disponible en Brasil para el gobierno federal debido a la Norma suplementaria 14.
 
 ## Cómo añadir un nodo de recuperación tras desastre replicado geográficamente
 {: #add_dr}
@@ -49,7 +55,7 @@ Para la recuperación tras desastre replicada geográficamente (HADR), debe real
 ## Preguntas más frecuentes
 {: #faq}
 
-### ¿Cuáles son los cambios necesarios para una aplicación que utiliza Db2 para trabajar con la recuperación DR tras la toma de control? ¿Cambian el nombre DNS o la dirección IP tras la toma de control?
+### ¿Cuáles son los cambios necesarios para una aplicación que utiliza Db2 para trabajar con el nodo DR tras la toma de control? ¿Cambian el nombre DNS o la dirección IP tras la toma de control?
 
 **R**: No. Se proporcionan 2 nombres de host que se pueden resolver. Si la app está configurada para utilizar Db2 ACR (Active Connection Reroute), la app se reencamina al nuevo nodo primario.
 

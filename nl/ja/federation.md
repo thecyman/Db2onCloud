@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-07-18"
+lastupdated: "2018-10-26"
 
 ---
 
@@ -18,10 +18,10 @@ lastupdated: "2018-07-18"
 {: #overview}
 
 Db2 データ仮想化 (フェデレーション) は
-{{site.data.keyword.Db2_on_Cloud_short}} でサポートされています。 データ仮想化によって、組織内の任意の場所にある複数の分散データベース上にあるすべてのデータに対して単一照会アクセスが可能になります。クラウドとオンプレミスの両方の DB2 または Informix のデータ・ソースにあるデータにアクセスできます。
+{{site.data.keyword.Db2_on_Cloud_short}} でサポートされています。 データ仮想化によって、組織内の任意の場所にある複数の分散データベース上にあるすべてのデータに対して単一照会アクセスが可能になります。 クラウドとオンプレミスの両方の DB2 または Informix のデータ・ソースにあるデータにアクセスできます。 
 {: shortdesc}
 
-このファンクションは、無料のライト・プランを除き、{{site.data.keyword.Db2_on_Cloud_short}} のすべてのバージョンでサポートされています。ただし、Lite プランをデータ取得の
+このファンクションは、無料のライト・プランを除き、{{site.data.keyword.Db2_on_Cloud_short}} のすべてのバージョンでサポートされています。 ただし、Lite プランをデータ取得の
 ターゲットとして使用することは可能です。
 
 ## ユース・ケース
@@ -171,7 +171,7 @@ Db2 ファミリー製品のユーザーは、
 ン](../../icons/launch-glyph.svg "外部リンク・アイコン
 ")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window} を参照してください。
 
-フェデレーションでサポートされるデータ・ソースについて詳しくは、
+デフォルトでは、{{site.data.keyword.Db2_on_Cloud_short}} は Informix および Db2 (オンプレミス Db2 および Db2 Warehouse を含む) をサポートします。特定のデータ・ソースのサポートを IBM サポートが要求に応じてインストールしなければならない場合があります。フェデレーションでサポートされるデータ・ソースについて詳しくは、
 [フェデレーションでサポートさ
 れるデータ・ソース ![外部リ
 ンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window} を参照してください。

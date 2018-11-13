@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-10-26"
 
 ---
 
@@ -17,25 +17,22 @@ lastupdated: "2018-03-15"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 概説
 {: #getting_started_db2oncloud}
 
-{{site.data.keyword.Db2_on_Cloud_long}} は、クラウド内でプロビジョンされた SQL データベースです。 任
-意のデータベース・ソフトウェアを使用するのと同じように
-{{site.data.keyword.Db2_on_Cloud_short}} を使用できますが、面倒なハードウェアのセットアッ
-プやソフトウェアのインストールおよびメンテナンスは必要ありません。 
-
-北アメリカ大陸以外で無料 Lite プランを導入する場合は、
-[北アメリカ大陸以外での Lite プランの利用](free_plan.html#outside_na){:new_window} を参照してください。
+{{site.data.keyword.Db2_on_Cloud_long}} は、クラウド内でプロビジョンされた SQL データベースです。 任意のデータベース・ソフトウェアを使用するのと同じように {{site.data.keyword.Db2_on_Cloud_short}} を使用できますが、ハードウェアのセットアップやソフトウェアのインストールおよび保守のためのオーバーヘッドもコストもかかりません。 
 {: shortdesc}
 
 また、
 [ 無料の
 Db2 Developer Edition ダウンロード ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・
 アイコン
-")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions) を使用して、ローカルの Db2 データベースをインストー
+")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window} を使用して、ローカルの Db2 データベースをインストー
 ルすることもできま
 す。 ここでは、すぐに使用できる Db2 Developer Edition が、Docker コンテナー内のツールとともに速や
 かにインストールされます (Docker は不要です。必要なコンポーネントは自動的にインストールされます)。 
@@ -150,4 +147,26 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
    * [PHP ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
 <!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
    * [GitHub にある {{site.data.keyword.Db2_on_Cloud_short}} サンプル![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
+
+## ビデオ: Db2 on Cloud の紹介
+{: #intro_vid}
+
+{{site.data.keyword.Db2_on_Cloud_short}} の概要については、このビデオをご覧ください。
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Introduction to {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/F_ylk44_WOg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## ビデオ: REST API を使用した Db2 on Cloud との通信
+{: #vid_api}
+
+RESTful API を使用して {{site.data.keyword.Db2_on_Cloud_short}} と通信するために必要な手順を確認するには、このビデオをご覧ください。
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Using RESTful API to communicate with {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/PSNBDwgf9ts?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## ビデオ: Jupyter ノートブックの統合
+{: #cognos_vid}
+
+Jupyter ノートブックを {{site.data.keyword.Db2_on_Cloud_short}} と統合する方法を確認するには、このビデオをご覧ください。
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Integrating Jupyter notebooks" type="text/html" width="640" height="390" src="//www.youtube.com/embed/bNfH0Wzx3is?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
 

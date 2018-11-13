@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-07-18"
+lastupdated: "2018-10-26"
 
 ---
 
@@ -14,10 +14,10 @@ lastupdated: "2018-07-18"
 {:tip: .tip}
 {:pre: .pre}
 
-# Virtualizzazione dei dati (Federazione)
+# Virtualizzazione dei dati (federazione)
 {: #overview}
 
-La virtualizzazione dei dati Db2 (nota anche come federazione) è supportata da {{site.data.keyword.Db2_on_Cloud_short}}. La virtualizzazione dei dati ti fornisce l'accesso con una singola query a tutti i dati presenti su più database distribuiti in qualsiasi punto della tua organizzazione. Puoi accedere ai dati che si trovano su una qualsiasi delle tue origini dati Db2 o Informix, sia nel cloud che in loco.
+La virtualizzazione dei dati Db2 (nota anche come federazione) è supportata da {{site.data.keyword.Db2_on_Cloud_short}}. La virtualizzazione dei dati ti fornisce l'accesso con una singola query a tutti i dati presenti su più database distribuiti in qualsiasi punto della tua organizzazione. Puoi accedere ai dati che si trovano su una qualsiasi delle tue origini dati Db2 o Informix, sia nel cloud che in loco. 
 {: shortdesc}
 
 Questa funzione è supportata su tutte le versioni di {{site.data.keyword.Db2_on_Cloud_short}}, ad eccezione del piano Lite gratuito. Tuttavia, puoi utilizzare il piano Lite come destinazione da cui potrai estrarre i dati.
@@ -114,7 +114,7 @@ Nome host: targetdotcom
    `db2 "select * from ntest1"`
 -->
 
-### Su una macchina Db2 on Cloud che viene utilizzata come un'origine di federazione 
+### Su una macchina Db2 on Cloud che viene utilizzata come un'origine di federazione
 
 Dalla console di {{site.data.keyword.Db2_on_Cloud_short}}:
 
@@ -146,5 +146,5 @@ Dalla console di {{site.data.keyword.Db2_on_Cloud_short}}:
 
 Per ulteriori informazioni sulla virtualizzazione dei dati (federazione), vedi: [Federation ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}.
 
-Per informazioni sulle origini dati supportate dalla federazione, vedi: [Federation Supported Data Sources ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}.
+Per impostazione predefinita, {{site.data.keyword.Db2_on_Cloud_short}} supporta Informix e Db2 (inclusi Db2 in loco e Warehouse Db2). Potrebbe essere necessario installare il supporto per alcune origini dati dal supporto IBM su richiesta. Per informazioni sulle origini dati supportate dalla federazione, vedi: [Federation Supported Data Sources ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}.
 

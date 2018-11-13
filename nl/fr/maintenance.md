@@ -28,7 +28,7 @@ Depuis le 27 mars 2018, au cas où une maintenance du système planifiée doit �
 | Centre de données | Planification de la maintenance du système |
 |-------------|-----------------------------|
 | Londres | Lundi |
-| Dallas | Mardi |
+| Dallas  | Mardi |
 | Sydney | Mercredi |
 | Tous les autres | Jeudi |
 {: caption="Tableau 1. Exemple de planification d'une maintenance du système" caption-side="top"}

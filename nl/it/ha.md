@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-07-19"
+lastupdated: "2018-10-22"
 
 ---
 
@@ -11,6 +11,7 @@ lastupdated: "2018-07-19"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
 {:pre: .pre}
 
 # Elevata disponibilità (HA)
@@ -19,7 +20,7 @@ lastupdated: "2018-07-19"
 I piani di elevata disponibilità di {{site.data.keyword.Db2_on_Cloud_short}} dispongono di eccellenti caratteristiche disponibili con un 99.99% di SLA. 
 {: shortdesc}
 
-I piani di alta disponibilità standard senza un nodo DR forniscono gli aggiornamenti in sequenza e dell'errore senza problemi. Vengono gestiti per te tramite ACR (automatic client reroute) e gli IP portatili.
+I piani di alta disponibilità standard senza un nodo di ripristino di emergenza (DR) forniscono gli aggiornamenti in sequenza e dell'errore senza problemi. Vengono gestiti per te tramite ACR (automatic client reroute) e gli IP portatili.
 
 In aggiunta, puoi aggiungere un nodo di ripristino di emergenza (DR) con replica geografica. Questa opzione del nodo DR offsite ti fornisce la capacità di sincronizzare rapidamente i tuoi dati in tempo reale in un nodo del database in un data center {{site.data.keyword.Bluemix_notm}} di tua scelta. 
 
@@ -27,11 +28,16 @@ In aggiunta, puoi aggiungere un nodo di ripristino di emergenza (DR) con replica
 
 {{site.data.keyword.Db2_on_Cloud_short}} utilizza la tecnologia Db2 High Availability Disaster Recovery (HADR) in modalità `ASYNC` per raggiungere la capacità del nodo DR offsite e fornisce `Read on Standby` nel nodo DR.
 
-## Come aggiungere un nodo di ripristino di emergenza (DR) con replica geografica 
+## **Brasile: regola supplementare 14** (si applica ai sistemi forniti al governo federale brasiliano)
+{: #rule_14}
+
+In questo momento l'opzione di ripristino di emergenza (DR) per l'offerta Db2 on Cloud non è disponibile in Brasile per il governo federale a causa della regola supplementare 14.
+
+## Come aggiungere un nodo di ripristino di emergenza (DR) con replica geografica
 {: #add_dr}
 
 Per gli utenti {{site.data.keyword.Db2_on_Cloud_short}} esistenti:
- * Puoi aggiungere un nodo DR su richiesta alle istanze {{site.data.keyword.Db2_on_Cloud_short}} esistenti. Dopo aver fatto clic sulla tua istanza nel dashboard {{site.data.keyword.Bluemix_notm}}, visualizzerai un'opzione denominata **Manage Disaster Recovery**. Puoi aggiungere un nodo di ripristino di emergenza (DR) con replica geografica da qui. 
+ * Puoi aggiungere un nodo DR su richiesta alle istanze {{site.data.keyword.Db2_on_Cloud_short}} esistenti. Dopo aver fatto clic sulla tua istanza nel dashboard {{site.data.keyword.Bluemix_notm}}, visualizzerai un'opzione denominata **Manage Disaster Recovery**. Puoi aggiungere un nodo di ripristino di emergenza (DR) con replica geografica da qui.
  * Se hai acquistato {{site.data.keyword.Db2_on_Cloud_short}} con contratto tramite una rappresentante delle vendite e non hai una sottoscrizione {{site.data.keyword.Bluemix_notm}}, contatta il tuo rappresentante di IBM per aggiungere un nodo DR.
 
 Se al momento non sei un utente {{site.data.keyword.Db2_on_Cloud_short}}:
@@ -46,10 +52,10 @@ Per i nodi HA standard, che non sono offsite, il failover viene gestito per te d
 
 Per il ripristino di emergenza (DR) con replica geografica (HADR), devi eseguire il failover manualmente utilizzando **Manage Disaster Recovery** nella console. In aggiunta, puoi eseguire il failover utilizzando un'API come descritto [qui ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.ibm.com/answers/questions/457901/where-can-i-find-api-documentation-for-db2-on-clou.html){:new_window}.
 
-## Domande frequenti (FAQ) 
+## Domande frequenti (FAQ)
 {: #faq}
 
-### Quali sono le modifiche necessarie per un'applicazione che utilizza Db2 per utilizzare il ripristino DR dopo una sostituzione? Il nome DNS o l'indirizzo IP vengono modificati dopo la sostituzione?
+### Quali sono le modifiche necessarie per un'applicazione che utilizza Db2 per utilizzare il nodo di ripristino di emergenza DR dopo una sostituzione? Il nome DNS o l'indirizzo IP vengono modificati dopo la sostituzione?
 
 **A**: no. Ti vengono forniti 2 nomi host risolvibili. Se la tua applicazione è configurata per utilizzare Db2 ACR (Active Connection Reroute), viene reinstradata al nuovo nodo primario.
 
