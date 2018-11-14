@@ -45,8 +45,7 @@ Aquí encontrará las características y especificaciones de {{site.data.keyword
 |  |  |  |  |
 | Conformidad de seguridad | Preparada para HIPAA | Sí | Todos los planes de pago, incluido el flexible. Debe solicitar el modo HIPAA a IBM Support. <!--For Db2 Warehouse on Cloud [see docs here ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/docs/services/Db2whc/index.html#getting_started){:new_window}.--> |
 |  | HITRUST  | [En hoja de ruta ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://ibm.biz/db2oncloud-roadmap){:new_window} | Ahora Db2 Hosted puede utilizarse para HITRUST |
-|  | International Organization for Standardization (organización
-internacional para la normalización, ISO)  | Sí | ISO 27001, 27002, 27017 y 27018 |
+|  | International Organization for Standardization (organización internacional para la normalización, ISO)  | Sí | ISO 27001, 27002, 27017 y 27018 |
 |  | Service Organization Controls (SOC) | Sí | SOC 2 de tipo 2 |
 |  | GDPR | Sí | - |
 |  | Nube de la UE | Sí | Utilice Frankfurt como región. Se proporciona soporte físico en la UE. |
