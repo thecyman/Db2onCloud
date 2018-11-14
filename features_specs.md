@@ -37,7 +37,10 @@ lastupdated: "2018-11-09"
 |  | Autonomous failover - HA | Y | - |
 |  | Autonomous failover - Offsite DR | N | Use button or API |
 |  | IP moves with failover | Y | Local HA only; not offsite HADR |
-|  |  |  |  |
+|  | RPO: High Availability | 0s | HA is synchronous |
+|  | RTO: High Availability | Typically 0-10 mins | With retry code, will appear as slowness with Db2 ACR. |
+|  | RPO: Offsite node HADR | Typically < 15s | Offsite DR is async |
+|  | RTO: Offsite node HADR | < 3 mins | Must initiate via console button or API. |
 | System configurations | Max RAM and cores | 1 TB RAM, 48 cores | Applies to Precise Performance XL plan. |
 |  | Max storage | 11 TB | Applies to Precise Performance XL plan. Disk for both data and logs. |
 |  | Flex: base plan | 4 GB RAM, 1 core, 2 GB disk | - |
