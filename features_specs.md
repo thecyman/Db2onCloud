@@ -31,7 +31,7 @@ lastupdated: "2018-11-09"
 |  |  |  |  |
 | High availability & replication | Offsite DR | Y | - |
 |  | High availability (2 nodes in 1 zone) | Y | 99.99% uptime SLA |
-|  | Different zones in same data center | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
+|  | Different zones in same data center | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | Note: Offsite HADR is available |
 |  | Change Data Capture (CDC) | Y | - |
 |  | Use as HADR from on premises | N | Use CDC. For information, see [How can I migrate or sync data from Db2 to Db2 on Cloud? ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/426111/how-can-i-migrate-from-db2-to-db2-on-cloud/){:new_window} |
 |  | Autonomous failover - HA | Y | - |
