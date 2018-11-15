@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-11-09"
+lastupdated: "2018-11-15"
 
 ---
 
@@ -37,11 +37,12 @@ lastupdated: "2018-11-09"
 |  | Autonomous failover - HA | Y | - |
 |  | Autonomous failover - Offsite DR | N | Use button or API |
 |  | IP moves with failover | Y | Local HA only; not offsite HADR |
-|  | RPO: High Availability | 0s | HA is synchronous |
-|  | RTO: High Availability | Typically 0-10 mins | With retry code, will appear as slowness with Db2 ACR. |
-|  | RPO: Offsite node HADR | Typically < 15s | Offsite DR is async |
-|  | RTO: Offsite node HADR | < 3 mins | Must initiate via console button or API. |
-| System configurations | Max RAM and cores | 1 TB RAM, 48 cores | Applies to Precise Performance XL plan. |
+|  | RPO: High Availability | 0 s | HA is synchronous |
+|  | RTO: High Availability | Typically 0-10 min | With retry code, will appear as slowness with Db2 ACR |
+|  | RPO: Offsite node HADR | Typically < 15 s | Offsite DR is asynchronous |
+|  | RTO: Offsite node HADR | < 3 min | Must initiate with console button or API |
+|  |  |  |  |
+| System configurations | Max RAM and cores | 1 TB RAM, 48 cores | Applies to Precise Performance XL plan |
 |  | Max storage | 11 TB | Applies to Precise Performance XL plan. Disk for both data and logs. |
 |  | Flex: base plan | 4 GB RAM, 1 core, 2 GB disk | - |
 |  | Flex: Max RAM and cores | 128 GB RAM, 32 cores | Need higher specs? Use Precise Performance plan or contact IBM Support. |
@@ -85,7 +86,7 @@ lastupdated: "2018-11-09"
 |  |  |  |  |
 | Deployment & scaling durations | Dallas | **Deploy**: < 5 minutes. **Scale**: < 45 minutes. | Flex plan only, depending on inventory |
 | | Other US South | **Deploy**: 1 day. **Scale**: 8 hours. | Some locations shorter than others |
-| | Frankfurt & London | **Deploy**: < 5 minutes. **Scale**: 2 hours. | Flex plan only, depending on inventory |
+| | Frankfurt & London | **Deploy**: < 5 min. **Scale**: 2 hours. | Flex plan only, depending on inventory |
 | | Other EU | **Deploy**: 3-5 days. **Scale**: 1-2 days. | Some locations shorter than others |
 | | Sydney | **Deploy**: < 1 hour. **Scale**: 2 hours. | Flex plan only, depending on inventory |
 | | Other AP | **Deploy**: 3-5 days. **Scale**: 3-5 days. | Some locations shorter than others. Lower volumes in AP result in slower infrastructure provisioning times. |
