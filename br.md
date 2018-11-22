@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-14"
+lastupdated: "2018-11-22"
 
 ---
 
@@ -19,8 +19,28 @@ lastupdated: "2018-03-14"
 For paid plans, encrypted backups of the database are done daily. A daily backup is kept for each of the last 14 days.
 {: shortdesc}
 
-Retained backups are used by IBM for system recovery purposes in the event of a disaster or system loss. Use the [Time Travel Query ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} to keep historical data for your own purposes. In addition, you can also perform your own exports using IBM Data Studio or any Db2 tool.
+In addition to standard backups, you can use the [Time Travel Query ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} to keep historical data for other purposes, such as instantly querying old data or simplified auditing. You can also perform your own exports using IBM Data Studio or any Db2 tool.
+ 
+For information about point-in-time restores, see [Point-in-time restore](#point-in-time).
 
-To store your backups offsite at a remote storage site, make a request to IBM Support.
+All paid plans typically make use of IBM Cloud Object Storage (COS) to keep backups offsite in 3 different data centers. However, Sydney and certain smaller data centers might not support offsite replication with IBM COS at this time. Check the [IBM COS documentation](/docs/services/cloud-object-storage/basics/endpoints.html#select-regions-and-endpoints) for your region to determine which regions support offsite replication.
 
-You can also use [IBM Lift CLI](https://lift.ng.bluemix.net/){:new_window} to import data into {{site.data.keyword.Db2_on_Cloud_short}}.
+<!-- Retained backups are used by IBM for system recovery purposes in the event of a disaster or system loss. Use the [Time Travel Query ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} to keep historical data for your own purposes. In addition, you can also perform your own exports using IBM Data Studio or any Db2 tool. -->
+
+<!-- To store your backups offsite at a remote storage site, make a request to IBM Support. -->
+
+You can also use [IBM Lift CLI ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://lift.ng.bluemix.net/){:new_window} to import data into {{site.data.keyword.Db2_on_Cloud_short}}.
+
+## Point-in-time restore
+{: #point-in-time}
+
+{{site.data.keyword.Db2_on_Cloud_short}} has added a point-in-time restore capability. You can restore to an exact point-in-time from your backups. 
+
+The following is an availability list of the point-in-time restore feature:
+- Dallas data center: Available today on single server systems
+- Frankfurt, London data centers (non-EU Cloud region): Available Nov 29, 2018 on single server systems
+- All other single server, baremetal, and HA or HADR systems (not in EU Cloud region, not on IBM Cloud Dedicated systems (formerly Bluemix Dedicated)): Available Dec 20, 2018
+- EU Cloud region: Available by opening a support ticket, or by self-serve starting Jan 30, 2019
+- IBM Cloud Dedicated system (formerly Bluemix Dedicated): Only available by opening a support ticket.
+
+
