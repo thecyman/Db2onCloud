@@ -11,6 +11,10 @@ lastupdated: "2018-11-22"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Backup and restore
@@ -43,4 +47,17 @@ The following is an availability list of the point-in-time restore feature:
 - EU Cloud region: Available by opening a support ticket, or by self-serve starting Jan 30, 2019
 - IBM Cloud Dedicated system (formerly Bluemix Dedicated): Only available by opening a support ticket.
 
+The following are a selected example of screenshots of the web console UI in which the point-in-time restore operation is initiated and its progress is indicated:
+
+![View of the highlighted selection of the point-in-time restore strategy](images/pit_restore_1.png)
+
+![View of the point-in-time restore confirmation dialog](images/pit_restore_2.png)
+
+![View of the point-in-time restore initialization](images/pit_restore_3.png)
+
+![View of the progress of the point-in-time restore](images/pit_restore_4.png)
+
+![View of the creation of the new backup point](images/pit_restore_5.png)
+
+![View of the successful completion of the restore operation](images/pit_restore_6.png)
 
