@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-11-15"
+lastupdated: "2018-11-29"
 
 ---
 
@@ -62,7 +62,7 @@ lastupdated: "2018-11-15"
 |  | Full list of compliances | Y | [Security compliances ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | Backup & restore | Daily backups | Y | 14 days of daily backups |
-|  | Point-in-time self-serve recovery | Available Nov 15, 2018 | - |
+|  | Point-in-time self-serve recovery | Available Nov 15, 2018 | [Point-in-time restore](br.html#point-in-time) |
 |  | Backups kept offsite | On request | As of Dec 1, 2018, offsite is default  |
 |  | Keep backup up to 10 yrs | On request | As of Dec 1, 2018. Requires support ticket. |
 |  | Query old data without restore | Y | Must set up [Time Travel Query ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} |
