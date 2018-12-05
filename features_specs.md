@@ -73,7 +73,7 @@ lastupdated: "2018-12-04"
 |  | On-disk encryption | Y | -  |
 |  | SSL/TLS connections | Y | -  |
 |  | IP whitelisting | Some | Available at Db2 user level. For network level, consider ICIAE or similar.  |
-|  | KeyProtect (Bring your own key) | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
+|  | Key Protect (Bring your own key) | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
 |  | MIS / Interconnected service | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
 |  | Maximum concurrent connection limit: **free Lite plan** | Y | Max: 5 connections  |
 |  | Maximum concurrent connection limit: **paid plans** | N | Unlimited number of connections  |
