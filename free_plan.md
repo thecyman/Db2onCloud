@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-05-03"
+lastupdated: "2018-12-07"
 
 ---
 
@@ -11,30 +11,66 @@ lastupdated: "2018-05-03"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
-# Free Lite plan
+# Free plan
 {: #free_plan}
 
-The {{site.data.keyword.Db2_on_Cloud_long}} free Lite plan provides basic resources to let you develop or learn about Db2 without charge.
+The {{site.data.keyword.Db2_on_Cloud_long}} Free plan provides basic resources to let you develop or learn about Db2 without charge.
 {: shortdesc}
 
-There is no time limit on the free plan, but users must re-extend their free plan every 30 days.
+There is no time limit on the Free plan, but users must re-extend their Free plan every 30 days.
 
 Only community support is available. 
  
 ## Architecture
 {: #architecture}
 
-Unlike other {{site.data.keyword.Db2_on_Cloud_short}} plans, the {{site.data.keyword.Db2_on_Cloud_short}} free Lite plan runs on a multi-tenant system. The Flex and Precise Performance plans run on their own single-tenant virtual machines or baremetal servers.
+Unlike other {{site.data.keyword.Db2_on_Cloud_short}} plans, the {{site.data.keyword.Db2_on_Cloud_short}} Free plan runs on a multi-tenant system. The Flex and Precise Performance plans run on their own single-tenant virtual machines or baremetal servers.
  
-The free plan allows you to use one database schema.
+The Free plan allows you to use one database schema.
 
-For more information about the {{site.data.keyword.Db2_on_Cloud_short}} free Lite plan, see the [FAQ ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oc_free_plan_faq){:new_window}.
+For more information about the {{site.data.keyword.Db2_on_Cloud_short}} Free plan, see the [FAQ ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oc_free_plan_faq){:new_window}.
 
-## Using the Lite plan outside continental North America
+## Using the Free plan outside continental North America
 {: #outside_na}
 
-The free Lite plan is currently accessible without a credit card for continental North America. Outside of continental North America, customers must add a credit card to their IBM Cloud account and then select the "US South - Dallas" region for the free Lite plan to be visible for selection.
+The Free plan is currently accessible without a credit card for continental North America. Outside of continental North America, customers must add a credit card to their IBM Cloud account and then select the "US South - Dallas" region for the Free plan to be visible for selection.
 
-The Lite plan is always free and your credit card will not be charged.
+The Free plan is always free and your credit card will not be charged.
+
+## Free plan restrictions
+{: #fp_restrictions}
+
+Do not run production workloads on a {{site.data.keyword.Db2_on_Cloud_short}} Free plan system. If you choose to do so, there is a significant risk that required functionality is not available, or that another user's workload might negatively impact your workload on the multi-tenant system. For production environments, choose one of the enterprise-level plans.
+{: important}
+
+The following is a table of Free plan restrictions:
+
+| Category | Item | Restriction | 
+|----------|------|-------------|
+| Resources | Storage | 500 MB of storage per user |
+|  | Connections | 5 connections per user |
+|  | Performance | Performance might fluctuate due to workloads run by other users on the multi-tenant system |
+|  |  |
+| Features & functions | Federation | Not supported |
+|  | Oracle compatibility | Not supported |
+|  | User-defined extensions (UDFs) | Not supported on any {{site.data.keyword.Db2_on_Cloud_short}} plans, including the Free plan |
+|  | User management | User not given administrative authority |
+|  | Row and column access control (RCAC) | Not supported |
+|  | IBM InfoSphere Data Replication for use in loading data | Not supported |
+|  |  |
+| Networking environment | IBM Cloud Integrated Analytics | Not supported |
+|  | IBM Cloud Dedicated | Not supported |
+|  |  |
+| Security compliances | Health Information Portability and Accountability Act of 1996 (HIPAA) | Not supported. Refer to your Service Description for restriction. |
+|  | EU General Data Protection Regulation (GDPR) | Not supported. Refer to your Service Description for restriction. |
+|  |  |
+| Account management | Reactivation | Reactivation required every 30 days. Free plan services are deleted after 30 days of inactivity. |
+{: caption="Table 1. {{site.data.keyword.Db2_on_Cloud_short}} Free plan restrictions" caption-side="top"}
+
+
