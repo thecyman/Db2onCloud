@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-12-04"
+lastupdated: "2018-12-05"
 
 ---
 
@@ -75,7 +75,7 @@ lastupdated: "2018-12-04"
 |  | IP whitelisting | Some | Available at Db2 user level. For network level, consider ICIAE or similar.  |
 |  | Key Protect (Bring your own key) | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
 |  | MIS / Interconnected service | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
-|  | Maximum concurrent connection limit: **free Lite plan** | Y | Max: 5 connections  |
+|  | Maximum concurrent connection limit: **Free plan** | Y | Max: 5 connections  |
 |  | Maximum concurrent connection limit: **paid plans** | N | Unlimited number of connections  |
 |  |  |  |  |
 | Pricing & purchasing | BYOL discounts | Y | [Announcement ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-byol){:new_window} |
