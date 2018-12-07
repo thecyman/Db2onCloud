@@ -46,10 +46,10 @@ The Free plan is always free and your credit card will not be charged.
 ## Free plan restrictions
 {: #fp_restrictions}
 
-Do not run production workloads on a {{site.data.keyword.Db2_on_Cloud_short}} Free plan system. If you choose to do so, there is a significant risk that required functionality is not available, or that another user's workload might negatively impact your workload on the multi-tenant system. For production environments, choose one of the enterprise-level plans.
+You are strongly recommended to use an enterprise-level service plan rather than a Free service plan for mission-critical or performance-sensitive workloads. 
 {: important}
 
-The following is a table of Free plan restrictions:
+The following is a table of {{site.data.keyword.Db2_on_Cloud_short}} Free plan restrictions:
 
 | Category | Item | Restriction | 
 |----------|------|-------------|
@@ -67,10 +67,10 @@ The following is a table of Free plan restrictions:
 | Networking environment | IBM Cloud Integrated Analytics | Not supported |
 |  | IBM Cloud Dedicated | Not supported |
 |  |  |
-| Security compliances | Health Information Portability and Accountability Act of 1996 (HIPAA) | Not supported. Refer to your Service Description for restriction. |
-|  | EU General Data Protection Regulation (GDPR) | Not supported. Refer to your Service Description for restriction. |
+| Security compliances | Health Information Portability and Accountability Act of 1996 (HIPAA) | Not supported. Refer to your Service Description. |
+|  | EU General Data Protection Regulation (GDPR) | Not supported. Refer to your Service Description. |
 |  |  |
-| Account management | Reactivation | Reactivation required every 30 days. Free plan services are deleted after 30 days of inactivity. |
+| Account management | Reactivation | Reactivation required every 30 days. If not reactivated, Free plan services are deleted 60 days later.  |
 {: caption="Table 1. {{site.data.keyword.Db2_on_Cloud_short}} Free plan restrictions" caption-side="top"}
 
 
