@@ -53,7 +53,7 @@ The following is a table of {{site.data.keyword.Db2_on_Cloud_short}} Free plan r
 
 | Category | Item | Restriction | 
 |----------|------|-------------|
-| Resources | Storage | 500 MB of storage per user |
+| Resources | Storage | 200 MB of storage per user |
 |  | Connections | 5 connections per user |
 |  | Performance | Performance might fluctuate due to workloads run by other users on the multi-tenant system |
 |  |  |
