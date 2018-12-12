@@ -28,6 +28,8 @@ lastupdated: "2018-11-02"
 {{site.data.keyword.Db2_on_Cloud_long}} is an SQL database provisioned for you in the cloud. You can use {{site.data.keyword.Db2_on_Cloud_short}} just as you would use any database software, but without the overhead and expense of hardware setup or software installation and maintenance. 
 {: shortdesc}
 
+*Remember to "create credentials". For those new to IBM Cloud, remember that after creating the service, you must create a username and password by hitting the "Create Credentials" button when you launch the service. Technically, you can log into the web console without credentials, but you'll later need the username and password you make via the Create Credentials button to use many Db2 tools.*
+
 You can also install a local Db2 database using the [free Db2 Developer Edition download ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window}. It rapidly installs a ready-to-go developer edition of Db2 with tools inside a Docker container (Docker not required; it will automatically install any necessary components). 
 
 <!-- ## Free trial
