@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-05-10"
+  years: 2014, 2019
+lastupdated: "2019-01-02"
 
 ---
 
@@ -10,6 +10,7 @@ lastupdated: "2018-05-10"
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:note: .note}
 {:screen: .screen}
 {:pre: .pre}
 
@@ -25,7 +26,7 @@ Being acquainted with our policies can better help you plan and schedule your wo
 
 Effective as of March 27, 2018, in the event that scheduled system maintenance must be done for the {{site.data.keyword.Db2_on_Cloud_short}} service, the major data centers (London, Dallas, and Sydney) are updated on separate days of the business week. All of the other data centers are simultaneously updated on a day of the week that doesn't coincide with the major data centers. Table 1 shows an example of a {{site.data.keyword.Db2_on_Cloud_short}} system maintenance schedule.
 
-| Data center | System maintenance schedule |
+| Data center | Example of a possible maintenance schedule |
 |-------------|-----------------------------|
 | London | Monday |
 | Dallas | Tuesday |
@@ -33,6 +34,8 @@ Effective as of March 27, 2018, in the event that scheduled system maintenance m
 | All others | Thursday |
 {: caption="Table 1. Example of a system maintenance schedule" caption-side="top"}
 
+The table is not an official system maintenance schedule, but an example of a possible maintenance schedule that demonstrates how maintenance might be done on different days for a given update.
+{: note}
 
 ## Notification policy
 {: #notification}
