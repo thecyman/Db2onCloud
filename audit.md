@@ -11,6 +11,10 @@ lastupdated: "2019-01-02"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 <!-- Rimas, please change page name to: Audit, Logs & Monitoring -->

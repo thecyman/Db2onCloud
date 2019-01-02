@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-18"
 
 ---
@@ -12,6 +12,9 @@ lastupdated: "2018-09-18"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Identity and access management (IAM) on IBM Cloud

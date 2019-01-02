@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-12-05"
 
 ---
@@ -11,6 +11,10 @@ lastupdated: "2018-12-05"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Features & specs

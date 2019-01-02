@@ -10,8 +10,11 @@ lastupdated: "2019-01-02"
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
-{:note: .note}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Maintenance and notification policies
