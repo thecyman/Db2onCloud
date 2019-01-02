@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-03-14"
+  years: 2014, 2019
+lastupdated: "2019-01-02"
 
 ---
 
@@ -15,7 +15,9 @@ lastupdated: "2018-03-14"
 
 <!-- Rimas, please change page name to: Audit, Logs & Monitoring -->
 
-# Auditing
+# Auditing, logging, and monitoring
+
+## Auditing
 {: #audit}
 
 The following are methods by which you can audit activity on the {{site.data.keyword.Db2_on_Cloud_short}} database:
@@ -30,11 +32,16 @@ The Time Travel Query makes it easy to store all of the changes to your data and
 
 For more information about these audit methods, see [How do I audit or track changes? ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/427780/how-can-i-audit-or-track-changes-dropped-tables-to.html){:new_window}.
 
-# Logs & Monitoring
+## Logging and monitoring
+{: #log_mon}
+
 Monitoring and logging is part of the service, however, it is not directly exposed to the end user. Instead the infrastructure is used by IBM operational staff to address issues.  
 
-See the roadmap for when Activity Monitor will be available.
-Customers can connect with a Db2 command line client, such as CLPPlus, to access detailed information and diagnostics.
+<!-- For availability of the Activity Monitor, see the roadmap.-->
 
-A basic overview:
-There are 2 basic types of checking.  External health/uptime checks and metric based monitoring.  IBM monitors hundreds of metrics and stores those metrics historically and based on the values of these metrics alerts will be generated.  These alerts are sent to IBM operations staff to ensure the alerts are seen and then addressed.  In addition to this, IBM also sends archived operating system and diagnostic logs for rapid diagnosis. Db2 on Cloud complies with GDPR and IBM EU Cloud options provide an even higher level of adherence to GDPR, if needed.
+You can connect with a Db2 command line client, such as CLPPlus, to access detailed information and diagnostics.
+
+### A basic overview:
+{: #overview}
+
+There are 2 basic types of checking. External health/uptime checks and metric-based monitoring. IBM monitors hundreds of metrics and stores those metrics historically. Based on the values of these metrics, alerts are generated. These alerts are sent to IBM operations staff to ensure the alerts are seen and addressed. In addition, IBM also sends archived operating system and diagnostic logs for rapid diagnosis. {{site.data.keyword.Db2_on_Cloud_short}} complies with GDPR, and IBM EU Cloud options provide an even higher level of adherence to GDPR, if needed.
