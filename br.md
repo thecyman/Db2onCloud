@@ -38,7 +38,7 @@ You can also use [IBM Lift CLI ![External link icon](../../icons/launch-glyph.sv
 ## Point-in-time restore
 {: #point-in-time}
 
-{{site.data.keyword.Db2_on_Cloud_short}} has added a point-in-time restore capability. You can restore to an exact point in time from your backups. Today, for most customers, you must request support to activate this feature. See the rollout schedule below.
+{{site.data.keyword.Db2_on_Cloud_short}} has added a point-in-time restore capability. You can restore to an exact point in time from your backups. Today, for most customers, you must request support to activate this feature. See the following rollout schedule.
 
 The following is an availability list of the point-in-time restore feature:
 - Dallas data center: Available today on single server systems
