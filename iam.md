@@ -215,7 +215,8 @@ The {{site.data.keyword.Db2_on_Cloud_short}} REST API was enhanced to also accep
 
   `curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid>","ibmid":"<userid>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"`
 
-  **Note**: The `<userid>` value for `"id"` and `"ibmid"` do not have to be the same. The two different IDs are not linked together in any way.
+  The `<userid>` value for `"id"` and `"ibmid"` do not have to be the same. The two different IDs are not linked together in any way.
+  {: note}
 
 * To migrate an existing non-IBMid database user (for example, `abcuser`) and make them an IBMid user, first delete the non-IBMid user ID by running the following example API call:
 

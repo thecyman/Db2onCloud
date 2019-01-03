@@ -47,8 +47,12 @@ The following is an availability list of the point-in-time restore feature:
 
 The following are a selected example of screenshots of the web console UI in which the point-in-time restore operation is initiated and its progress is indicated:
 
-1. Select the **Point in Time** restore strategy and select a point-in-time date to which you want to restore the database. The point-in-time restore process selects the backup closest to your requested point-in-time date out of the pool of retained backups made during the previous 14 days. **Note**: The point-in-time restore process invalidates any of the previously retained backups with dates after the selected point-in-time date because of a resultant divergence in the timeline.
-![View of the highlighted selection of the point-in-time restore strategy](images/pit_restore_1.png)
+1. Select the **Point in Time** restore strategy and select a point-in-time date to which you want to restore the database. The point-in-time restore process selects the backup closest to your requested point-in-time date out of the pool of retained backups made during the previous 14 days. 
+
+   The point-in-time restore process invalidates any of the previously retained backups with dates after the selected point-in-time date because of a resultant divergence in the timeline.
+   {: note}
+
+   ![View of the highlighted selection of the point-in-time restore strategy](images/pit_restore_1.png)
 
 2. Confirm that you want to continue with your restore selections. After initiating the restore operation, you cannot change the request.  
 ![View of the point-in-time restore confirmation dialog](images/pit_restore_2.png)
