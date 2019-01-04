@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-01-02"
+lastupdated: "2019-01-04"
 
 ---
 
@@ -41,7 +41,7 @@ For more information about these audit methods, see [How do I audit or track cha
 
 Monitoring and logging is part of the service, however, it is not directly exposed to the end user. Instead the infrastructure is used by IBM operational staff to address issues.  
 
-<!-- For availability of the Activity Monitor, see the roadmap.-->
+For availability of the Activity Tracker, see [roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window}.
 
 You can connect with a Db2 command line client, such as CLPPlus, to access detailed information and diagnostics.
 
