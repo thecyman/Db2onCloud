@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-01-04"
+lastupdated: "2019-01-10"
 
 ---
 
@@ -17,24 +17,19 @@ lastupdated: "2019-01-04"
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-<!-- Rimas, please change page name to: Audit, Logs & Monitoring -->
-
 # Auditing, logging, and monitoring
+{: #aud-log-mon}
 
 ## Auditing
-{: #audit}
+{: #auditing}
 
-The following are methods by which you can audit activity on the {{site.data.keyword.Db2_on_Cloud_short}} database:
+You can create a database audit policy that gives you the ability to audit various categories of events that are stored in audit event tables in your database. For more information, see [Audit policy guidelines ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:new_window}.
 
-* [CHANGE HISTORY event monitor ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.sql.ref.doc/doc/r0059363.html){:new_window}
-* [Time Travel Query ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl/){:new_window}
-{: shortdesc}
+You can also audit and track changes to your database by using the following methods:
+* By creating a `CHANGE HISTORY` event monitor, you can query the event monitor table to determine what was done within the database and by whom. For more information, see [`CHANGE HISTORY` event monitor ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.sql.ref.doc/doc/r0059363.html){:new_window}.
+* The Time Travel Query makes it easy to store all of the changes to your data and even query your old data based on a selected point in time. To use this audit method, ensure that you first set up your tables to support Time Travel Query. For more information, see [Time Travel Query ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl/){:new_window}
 
-By creating a CHANGE HISTORY event monitor, you can query the event monitor table to determine what was done within the database and by whom. 
-
-The Time Travel Query makes it easy to store all of the changes to your data and even query your old data based on a selected point in time. To use this audit method, ensure that you first set up your tables to support Time Travel Query.
-
-For more information about these audit methods, see [How do I audit or track changes? ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/427780/how-can-i-audit-or-track-changes-dropped-tables-to.html){:new_window}.
+For more information about auditing and tracking database changes, see [How do I audit or track changes? ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/427780/how-can-i-audit-or-track-changes-dropped-tables-to.html){:new_window}.
 
 ## Logging and monitoring
 {: #log_mon}
