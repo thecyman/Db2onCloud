@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-09-18"
+lastupdated: "2019-01-15"
 
 ---
 
@@ -83,13 +83,14 @@ The IBMid/password can be used to log in to the console and can also be used wit
 The following database client interfaces are supported:
 
 * [ODBC](#odbc-clpplus)
+* [CLP](#odbc-clpplus)
 * [CLPPLUS](#odbc-clpplus)
 * [JDBC](#jdbc)
 
-### ODBC and CLPPLUS
+### ODBC, CLP, and CLPPLUS
 {: #odbc-clpplus}
 
-For an ODBC application or a command line client (CLPPLUS) to connect to a Db2 server using IAM authentication, a data source name (DSN) needs to be configured first in a `db2dsdriver.cfg` configuration file by running the following command:
+For an ODBC application or a command line client (CLP, CLPPLUS) to connect to a Db2 server using IAM authentication, a data source name (DSN) needs to be configured first in a `db2dsdriver.cfg` configuration file by running the following command:
 
 `db2cli writecfg add -dsn <dsn_alias> -database <database_name> -host <host_name_or_IP_address> -port 50001 -parameter "Authentication=GSSPLUGIN;SecurityTransportMode=SSL"`
 
@@ -128,23 +129,23 @@ The following example of a `db2dsdriver.cfg` configuration file shows the config
 
     For ODBC, the **AUTHENTICATION=GSSPLUGIN** can be specified in either the `db2dsdriver.cfg` configuration file or in the application’s connection string.
 
-* The CLPPLUS connect command can contain one of the following:
+* The CLP and CLPPLUS **connect** command can contain one of the following:
 
     **Access token**
 
-    Connect to the DSN alias (`@<data_source_name>`) and pass the access token by running the following command at the CLPPLUS command prompt or script:
+    Connect to the DSN alias (`@<data_source_name>`) and pass the access token by running the following command at the CLP or CLPPLUS command prompt or script:
 
     `connect @<data_source_name> using(accesstoken <access_token_string>)`
 
     **API key**
 
-    Connect to the DSN alias (`@<data_source_name>`) with an API key by running the following command at the CLPPLUS command prompt or script:
+    Connect to the DSN alias (`@<data_source_name>`) with an API key by running the following command at the CLP or CLPPLUS command prompt or script:
 
     `connect @<data_source_name> using(apikey <api-key-string>)`
 
     **IBMid/password**
 
-    Connect to the DSN alias (`@<data_source_name>`) with an IBMid/password by running the following command at the CLPPLUS command prompt or script:
+    Connect to the DSN alias (`@<data_source_name>`) with an IBMid/password by running the following command at the CLP or CLPPLUS command prompt or script:
 
     `connect <IBMid>/<password>@<data_source_name>`
 
