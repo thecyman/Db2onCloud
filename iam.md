@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-01-15"
+lastupdated: "2019-01-21"
 
 ---
 
@@ -129,23 +129,45 @@ The following example of a `db2dsdriver.cfg` configuration file shows the config
 
     For ODBC, the **AUTHENTICATION=GSSPLUGIN** can be specified in either the `db2dsdriver.cfg` configuration file or in the application’s connection string.
 
-* The CLP and CLPPLUS **connect** command can contain one of the following:
+* The CLP CONNECT statement can contain one of the following:
 
     **Access token**
 
-    Connect to the DSN alias (`@<data_source_name>`) and pass the access token by running the following command at the CLP or CLPPLUS command prompt or script:
+    Connect to the database server `<database_server_name>` and pass the access token by running the following command at the CLP command prompt or script:
+
+    `CONNECT TO <database_server_name> ACCESSTOKEN <access_token_string>`
+
+    **API key**
+
+    Connect to the database server `<database_server_name>` with an API key by running the following command at the CLP command prompt or script:
+
+    `CONNECT TO <database_server_name> APIKEY <api-key-string>`
+
+    **IBMid/password**
+
+    Connect to the database server `<database_server_name>` with an IBMid/password by running the following command at the CLP command prompt or script:
+
+    `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
+
+    For more details about connecting to a database server with CLP, see: [CONNECT (type 2) statement ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}. 
+
+* The CLPPLUS CONNECT statement can contain one of the following:
+
+    **Access token**
+
+    Connect to the DSN alias (`@<data_source_name>`) and pass the access token by running the following command at the CLPPLUS command prompt or script:
 
     `connect @<data_source_name> using(accesstoken <access_token_string>)`
 
     **API key**
 
-    Connect to the DSN alias (`@<data_source_name>`) with an API key by running the following command at the CLP or CLPPLUS command prompt or script:
+    Connect to the DSN alias (`@<data_source_name>`) with an API key by running the following command at the CLPPLUS command prompt or script:
 
     `connect @<data_source_name> using(apikey <api-key-string>)`
 
     **IBMid/password**
 
-    Connect to the DSN alias (`@<data_source_name>`) with an IBMid/password by running the following command at the CLP or CLPPLUS command prompt or script:
+    Connect to the DSN alias (`@<data_source_name>`) with an IBMid/password by running the following command at the CLPPLUS command prompt or script:
 
     `connect <IBMid>/<password>@<data_source_name>`
 
@@ -173,6 +195,12 @@ dataSource.setAccessToken( "<access_token>" );
 Connection conn = dataSource.getConnection( );
 ```
 
+or
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:accessToken=<access_token>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
 **API key**
 
 ```
@@ -188,6 +216,12 @@ dataSource.setApiKey( "<api_key>" );
 Connection conn = dataSource.getConnection( );
 ```
 
+or
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apikey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
 **IBMid/password**
 
 ```
@@ -199,7 +233,13 @@ dataSource.setServerName( "<host_name_or_IP_address>" );
 dataSource.setPortNumber( 50001 );
 dataSource.setSecurityMechanism( com.ibm.db2.jcc.DB2BaseDataSource.PLUGIN_SECURITY );
 dataSource.setPluginName( "IBMIAMauth" );
-Connection conn = dataSource.getConnection( "<user_ID>", "<password>" );
+Connection conn = dataSource.getConnection( "<IBMid>", "<password>" );
+```
+
+or
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:user=<IBMid>;password=<password>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
 ```
 
 ## Console user experience
