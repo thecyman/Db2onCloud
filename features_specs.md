@@ -18,7 +18,7 @@ lastupdated: "2018-12-05"
 {:pre: .pre}
 
 # Features & specs
-{: #overview}
+{: #fs}
 
 {{site.data.keyword.Db2_on_Cloud_long}} features and specifications are summarized here for your convenience.
 {: shortdesc}

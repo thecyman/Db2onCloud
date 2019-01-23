@@ -18,6 +18,7 @@ lastupdated: "2019-01-02"
 {:pre: .pre}
 
 # Maintenance and notification policies
+{: #maint_note_pol}
 
 The maintenance and notification policies for the {{site.data.keyword.Db2_on_Cloud_long}} service can be found in the [{{site.data.keyword.Bluemix_notm}} service descriptions ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:new_window}. Additional terms of service specifically for {{site.data.keyword.Db2_on_Cloud_short}} can be found by looking under the **Chargeable additional SDs** category. 
 
