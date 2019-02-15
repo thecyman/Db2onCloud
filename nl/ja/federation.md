@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-26"
 
 ---
@@ -12,13 +12,15 @@ lastupdated: "2018-10-26"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # データ仮想化 (フェデレーション)
-{: #overview}
+{: #fed}
 
-Db2 データ仮想化 (フェデレーション) は
-{{site.data.keyword.Db2_on_Cloud_short}} でサポートされています。 データ仮想化によって、組織内の任意の場所にある複数の分散データベース上にあるすべてのデータに対して単一照会アクセスが可能になります。 クラウドとオンプレミスの両方の DB2 または Informix のデータ・ソースにあるデータにアクセスできます。 
+Db2 データ仮想化 (フェデレーション) は {{site.data.keyword.Db2_on_Cloud_short}} でサポートされています。 データ仮想化によって、組織内の任意の場所にある複数の分散データベース上にあるすべてのデータに対して単一照会アクセスが可能になります。 クラウドとオンプレミスの両方の DB2 または Informix のデータ・ソースにあるデータにアクセスできます。 
 {: shortdesc}
 
 このファンクションは、無料のライト・プランを除き、{{site.data.keyword.Db2_on_Cloud_short}} のすべてのバージョンでサポートされています。 ただし、Lite プランをデータ取得の
@@ -29,10 +31,8 @@ Db2 データ仮想化 (フェデレーション) は
 
 ### データ・ソースの統合
 
-クラウドに配置されたデータと組織のオンプレミス・データをフェデレートすることで、
-仮想化データは単一のソースから取得されているように見えます。 データ仮想化によって、煩雑でコストのかかるデータ・マイグレーションの作業
-が軽
-減され、ユーザーは高い効率と費用効果ですべてのデータを分析することが可能になります。
+クラウドに配置されたデータと組織のオンプレミス・データをフェデレートすることで、仮想化データは単一のソースから取得されているように見えます。 データ仮想化によって、煩雑でコストのかかるデータ・マイグレーションの作業
+が軽減され、ユーザーは高い効率と費用効果ですべてのデータを分析することが可能になります。
 
 <!-- A company may have started their operations with an on-premises Db2 server. As cloud technology becomes more widespread and companies start to operate on cloud in a cost-effective fashion, there will be continued Cloud growth. However, the organization’s data on both sources remain as a critical component to their decision-making processes. By way of example, a client operating in retail industry needs to be able to access all data, say customer information, to run further analysis on their customers’ consumption behaviors. They need to be able to identify customers, match their records on cloud with already existing ones from an on-premises database and compose them as if the data is being retrieved from a single source. Federation capability here prevents the burdensome data migration process and allows the user to access the data without moving the data.
 
@@ -165,14 +165,9 @@ Db2 ファミリー製品のユーザーは、
 
 ## 追加情報
 
-データ仮想化 (フェデレーション) について詳しくは、
-[
-フェデレーション ![外部リンク・アイコ
-ン](../../icons/launch-glyph.svg "外部リンク・アイコン
-")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window} を参照してください。
+データ仮想化 (フェデレーション) について詳しくは、[フェデレーション ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window} を参照してください。
 
-デフォルトでは、{{site.data.keyword.Db2_on_Cloud_short}} は Informix および Db2 (オンプレミス Db2 および Db2 Warehouse を含む) をサポートします。特定のデータ・ソースのサポートを IBM サポートが要求に応じてインストールしなければならない場合があります。フェデレーションでサポートされるデータ・ソースについて詳しくは、
-[フェデレーションでサポートさ
-れるデータ・ソース ![外部リ
-ンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window} を参照してください。
+
+デフォルトでは、{{site.data.keyword.Db2_on_Cloud_short}} は Informix および Db2 (オンプレミス Db2 および Db2 Warehouse を含む) をサポートします。 特定のデータ・ソースのサポートを IBM サポートが要求に応じてインストールしなければならない場合があります。 フェデレーションでサポートされるデータ・ソースについて詳しくは、
+[フェデレーションでサポートされるデータ・ソース ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window} を参照してください。
 

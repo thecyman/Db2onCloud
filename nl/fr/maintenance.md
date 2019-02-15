@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-05-10"
+  years: 2014, 2019
+lastupdated: "2019-01-02"
 
 ---
 
@@ -11,9 +11,14 @@ lastupdated: "2018-05-10"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Politiques de maintenance et de notification
+{: #maint_note_pol}
 
 Les politiques de maintenance et de notification pour le service {{site.data.keyword.Db2_on_Cloud_long}} se trouvent sur la page [ des descriptions de service {{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:new_window}. Des conditions d'utilisation supplémentaires spécifiques à {{site.data.keyword.Db2_on_Cloud_short}} sont présentées sous la catégorie **Chargeable additional SDs**. 
 
@@ -25,14 +30,16 @@ Une bonne connaissance de nos politiques peut vous aider à prévoir et planifie
 
 Depuis le 27 mars 2018, au cas où une maintenance du système planifiée doit être effectuée pour le service {{site.data.keyword.Db2_on_Cloud_short}}, les centres de données principaux (Londres, Dallas et Sydney) ne sont pas actualisés le même jour ouvrable. Tous les autres centres de données sont mis à jour simultanément un jour de la semaine qui ne correspond pas à celui utilisé par les centres de données principaux. Le tableau 1 montre un exemple de planification de la maintenance du système {{site.data.keyword.Db2_on_Cloud_short}}.
 
-| Centre de données | Planification de la maintenance du système |
+| Centre de données | Planification exemple d'une maintenance possible |
 |-------------|-----------------------------|
 | Londres | Lundi |
-| Dallas  | Mardi |
+| Dallas | Mardi |
 | Sydney | Mercredi |
 | Tous les autres | Jeudi |
 {: caption="Tableau 1. Exemple de planification d'une maintenance du système" caption-side="top"}
 
+Ce tableau ne constitue aucunement une planification de maintenance système officielle mais un exemple de planification de maintenance possible qui présente comment cette opération peut être effectuée différents jours pour une mise à jour spécifique.
+{: note}
 
 ## Règle de notification
 {: #notification}

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-09-18"
+  years: 2014, 2019
+lastupdated: "2019-01-21"
 
 ---
 
@@ -12,6 +12,9 @@ lastupdated: "2018-09-18"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Identity and Access management (IAM) sur IBM Cloud
@@ -32,11 +35,11 @@ Si **IAM_ENABLED** renvoie la valeur 1, IAM est activé sur votre instance.
 ## Fonctions d'IBM Cloud IAM
 {: #features}
 
-Les fonctions IAM suivantes sont implémentées pour le service géré par {{site.data.keyword.Db2_on_Cloud_short}} avec deux types d'identités prises en charge :
+Les fonctions IAM suivantes sont implémentées pour le service géré {{site.data.keyword.Db2_on_Cloud_short}} avec deux types d'identités prises en charge :
 
 **IBMid**
 
-Pour pouvoir se connecter à une instance de service de base de données particulière, les utilisateurs disposant d'un IBMid doivent être ajoutés à chaque instance de service de base de données par l'administrateur de base de données via la console ou une API REST. Comme pour tout utilisateur ne disposant pas d'un IBMid, il est nécessaire de saisir un ID utilisateur pour l'instance de service de base de données lors de l'ajout de l'utilisateur avec un IBMid. Cet ID utilisateur doit être unique au sein de l'instance du service de base de données. Il s'agit également de l'ID d'autorisation (AUTH) au sein de la base de données. L'administrateur de base de données peut accorder ou révoquer des droits à partir de cet ID AUTH.
+Pour pouvoir se connecter à une instance de service de base de données particulière, les utilisateurs disposant d'un IBMid doivent être ajoutés à cette instance par l'administrateur de base de données via la console ou une API REST. Comme pour tout utilisateur ne disposant pas d'un IBMid, il est nécessaire de saisir un ID utilisateur pour l'instance de service de base de données lors de l'ajout de l'utilisateur doté d'un IBMid. Cet ID utilisateur doit être unique au sein de l'instance du service de base de données. Il s'agit également de l'ID d'autorisation (AUTH) au sein de la base de données. L'administrateur de base de données peut accorder ou révoquer des droits à partir de cet ID AUTH.
 
 **ID de service**
 
@@ -51,7 +54,7 @@ Les méthodes suivantes peuvent être utilisées pour l'authentification IAM :
 
 **Jeton d'accès**
 
-Un jeton d'accès peut être obtenu auprès du service IAM directement par l'application via l'API REST à l'aide d'une clé d'interface de programmation. Pour plus d'informations, voir : [Getting an IBM Cloud IAM token by using an API key ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://console.bluemix.net/docs/iam/apikey_iamtoken.html#iamtoken_from_apikey){:new_window}. Le jeton d'accès a une période de validité par défaut de 60 minutes avant qu'il n'expire. Si le jeton a expiré, le serveur Db2 ne permet pas l'établissement de la connexion. La péremption du jeton n'est pas vérifiée une fois la connexion établie. Tout comme préalablement à l'intégration IAM, la connexion est maintenue jusqu'à ce que l'application se déconnecte ou que la connexion s'arrête pour d'autres raisons.
+Un jeton d'accès peut être obtenu auprès du service IAM directement par l'application via l'API REST à l'aide d'une clé d'interface de programmation. Pour plus d'informations, voir : [Obtention d'un jeton IBM Cloud IAM à l'aide d'une clé d'API ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://console.bluemix.net/docs/iam/apikey_iamtoken.html#iamtoken_from_apikey){:new_window}. Le jeton d'accès a une période de validité par défaut de 60 minutes avant qu'il n'expire. Si le jeton a expiré, le serveur Db2 ne permet pas l'établissement de la connexion. La péremption du jeton n'est pas vérifiée une fois la connexion établie. Tout comme préalablement à l'intégration IAM, la connexion est maintenue jusqu'à ce que l'application se déconnecte ou que la connexion s'arrête pour d'autres raisons.
 
 ```
 curl -k -X POST \
@@ -78,19 +81,20 @@ L'IBMid/mot de passe peut être utilisé pour la connexion à la console et peut
 Les interfaces client de base de données suivantes sont prises en charge :
 
 * [ODBC](#odbc-clpplus)
+* [CLP](#odbc-clpplus)
 * [CLPPLUS](#odbc-clpplus)
 * [JDBC](#jdbc)
 
-### ODBC et CLPPLUS
+### ODBC, CLP et CLPPLUS
 {: #odbc-clpplus}
 
-Pour qu'une application ODBC ou un client de ligne de commande (CLPPLUS) puisse se connecter un serveur Db2 à l'aide de l'authentification IAM, il est nécessaire de configurer au préalable un nom de source de données (DSN) dans un fichier de configuration `db2dsdriver.cfg` en exécutant la commande suivante :
+Pour qu'une application ODBC ou un client de ligne de commande (CLP, CLPPLUS) puisse se connecter à un serveur Db2 à l'aide de l'authentification IAM, il est nécessaire de configurer au préalable un nom de source de données (DSN) dans un fichier de configuration `db2dsdriver.cfg` en exécutant la commande suivante :
 
 `db2cli writecfg add -dsn <dsn_alias> -database <database_name> -host <host_name_or_IP_address> -port 50001 -parameter "Authentication=GSSPLUGIN;SecurityTransportMode=SSL"`
 
-Le fichier de configuration `db2dsdriver.cfg` est un fichier XML, situé généralement dans le répertoire `sqllib/cfg`, qui contient une liste des alias DSN et leurs propriétés.
+Le fichier de configuration `db2dsdriver.cfg` est un fichier XML, généralement situé dans le répertoire `sqllib/cfg`, qui contient la liste des alias DSN et leurs propriétés.
 
-Voici un exemple de fichier de configuration `db2dsdriver.cfg` indiquant les configurations qui sont utilisées pour établir une connexion à une instance de service de base de données. Le fichier de configuration fournit l'alias DSN, le nom de base de données, le nom d'hôte (ou l'adresse IP), ainsi que les valeurs de paramètre **Authentication** type et **SecurityTransportMode** :
+Voici un exemple de fichier de configuration `db2dsdriver.cfg` indiquant les configurations qui sont utilisées pour établir une connexion à une instance de service de base de données. Le fichier de configuration fournit l'alias DSN, le nom de base de données, le nom d'hôte (ou l'adresse IP), ainsi que les valeurs des paramètres **Authentication** et **SecurityTransportMode** :
 
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
@@ -123,23 +127,45 @@ Voici un exemple de fichier de configuration `db2dsdriver.cfg` indiquant les con
 
     Pour ODBC, **AUTHENTICATION=GSSPLUGIN** peut être indiqué dans le fichier de configuration `db2dsdriver.cfg` ou dans la chaîne de connexion de l'application.
 
-* La commande CLPPLUS connect peut contenir l'un des éléments suivants :
+* L'instruction CLP CONNECT peut inclure l'un des éléments suivants :
 
     **Jeton d'accès**
 
-    Connect to the DSN alias (`@<data_source_name>`) and pass the access token by running the following command at the CLPPLUS command prompt or script:
+    Connectez-vous au serveur de base de données `<database_server_name>` et transmettez le jeton d'accès en exécutant la commande suivante sur l'invite de commande CLP ou le script :
+
+    `CONNECT TO <database_server_name> ACCESSTOKEN <access_token_string>`
+
+    **Clé d'interface de programmation**
+
+    Connectez-vous au serveur de base de données `<database_server_name>` avec une clé d'API en exécutant la commande suivante sur le script ou l'invite de commande CLP :
+
+    `CONNECT TO <database_server_name> APIKEY <api-key-string>`
+
+    **IBMid/mot de passe**
+
+    Connectez-vous au serveur de base de données `<database_server_name>` avec un IBMid/mot de passe en exécutant la commande suivante sur le script ou l'invite de commande CLP :
+
+    `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
+
+    Pour en savoir plus sur la connexion à un serveur de base de données avec CLP, voir [CONNECT (type 2) statement ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}. 
+
+* L'instruction CLPPLUS CONNECT peut inclure l'un des éléments suivants :
+
+    **Jeton d'accès**
+
+    Connectez-vous à l'alias DSN (`@<data_source_name>`) et transmettez le jeton d'accès en exécutant la commande suivante sur l'invite de commande CLPPLUS ou le script :
 
     `connect @<data_source_name> using(accesstoken <access_token_string>)`
 
     **Clé d'interface de programmation**
 
-    Connect to the DSN alias (`@<data_source_name>`) with an API key by running the following command at the CLPPLUS command prompt or script:
+    Connectez-vous à l'alias DSN (`@<data_source_name>`) avec une clé d'API en exécutant la commande suivante sur le script ou l'invite de commande CLPPLUS :
 
     `connect @<data_source_name> using(apikey <api-key-string>)`
 
     **IBMid/mot de passe**
 
-    Connect to the DSN alias (`@<data_source_name>`) with an IBMid/password by running the following command at the CLPPLUS command prompt or script:
+    Connectez-vous à l'alias DSN (`@<data_source_name>`) avec un IBMid/mot de passe en exécutant la commande suivante sur le script ou l'invite de commande CLPPLUS :
 
     `connect <IBMid>/<password>@<data_source_name>`
 
@@ -167,6 +193,12 @@ dataSource.setAccessToken( "<access_token>" );
 Connection conn = dataSource.getConnection( );
 ```
 
+ou
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:accessToken=<access_token>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
 **Clé d'interface de programmation**
 
 ```
@@ -182,6 +214,12 @@ dataSource.setApiKey( "<api_key>" );
 Connection conn = dataSource.getConnection( );
 ```
 
+ou
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apikey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
 **IBMid/mot de passe**
 
 ```
@@ -193,30 +231,37 @@ dataSource.setServerName( "<host_name_or_IP_address>" );
 dataSource.setPortNumber( 50001 );
 dataSource.setSecurityMechanism( com.ibm.db2.jcc.DB2BaseDataSource.PLUGIN_SECURITY );
 dataSource.setPluginName( "IBMIAMauth" );
-Connection conn = dataSource.getConnection( "<user_ID>", "<password>" );
+Connection conn = dataSource.getConnection( "<IBMid>", "<password>" );
+```
+
+ou
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:user=<IBMid>;password=<password>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
 ```
 
 ## Expérience utilisateur sur la console
 {: #console-ux}
 
-La page de connexion de la console de maintenance comporte une option qui vous permet de vous connecter avec votre IBMid et votre mot de passe. Un simple clic sur le bouton **Sign In via IBMid** et l'utilisateur est réacheminé sur la page de connexion IAM, où le mot de passe est saisi. Une fois l'authentification effectuée, l'utilisateur est redirigé vers la console. Pour qu'une telle connexion soit possible, il est nécessaire que l'utilisateur disposant d'un IBMid soit ajouté à chaque instance de service de base de données par l'administrateur de base de données via la console ou une API REST. Comme pour tout utilisateur ne disposant pas d'un IBMid, il est nécessaire de saisir un ID utilisateur pour l'instance de service de base de données lors de l'ajout de l'utilisateur avec un IBMid. Cet ID utilisateur doit être unique au sein de l'instance du service de base de données. Il s'agit également de l'ID d'autorisation (AUTH) au sein de la base de données. 
+La page de connexion de la console de maintenance comporte une option qui vous permet de vous connecter avec votre IBMid et votre mot de passe. Après avoir cliqué sur le bouton **Sign In via IBMid**, l'utilisateur est réacheminé sur la page de connexion IAM, où le mot de passe est saisi. Une fois l'authentification effectuée, l'utilisateur est redirigé vers la console. Pour qu'une telle connexion soit possible, il est nécessaire que l'utilisateur disposant d'un IBMid soit ajouté à chaque instance de service de base de données par l'administrateur de base de données via la console ou une API REST. Comme pour tout utilisateur ne disposant pas d'un IBMid, il est nécessaire de saisir un ID utilisateur pour l'instance de service de base de données lors de l'ajout de l'utilisateur doté d'un IBMid. Cet ID utilisateur doit être unique au sein de l'instance du service de base de données. Il s'agit également de l'ID d'autorisation (AUTH) au sein de la base de données.
 
 ## Expérience API REST
 {: #api}
 
-L'API REST {{site.data.keyword.Db2_on_Cloud_short}} a été améliorée afin d'accepter également un jeton d'accès IAM pour les fonctions qui auparavant acceptaient un jeton d'accès généré par un service de base de données.
+L'API REST {{site.data.keyword.Db2_on_Cloud_short}} a été améliorée afin d'accepter également un jeton d'accès IAM pour les fonctions qui, auparavant, acceptaient un jeton d'accès généré par un service de base de données.
 
-* Pour ajouter un nouvel utilisateur avec IBMid, exécutez l'exemple d'appel d'API suivant :
+* Pour ajouter un nouvel utilisateur doté d'un IBMid, exécutez l'exemple d'appel API suivant :
 
   `curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid>","ibmid":"<userid>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"`
 
-  **Remarque **: La valeur `<userid>` pour `"id"` et `"ibmid"` ne doit pas être identique. Les deux ID différents ne sont liés en aucune manière.
+  La valeur `<userid>` des éléments `"id"` et `"ibmid"` ne doivent pas obligatoirement être identiques. Ces deux ID ne sont liés en aucune manière.
+  {: note}
 
-* Pour migrer un utilisateur de base de données non IBMid existant (par exemple, `abcuser`) et en faire un utilisateur IBMid, commencez par supprimer l'ID utilisateur non IBMid en exécutant l'exemple d'appel API suivant :
+* Pour migrer un utilisateur de base de données sans IBMid existant (par exemple, `abcuser`) et en faire un utilisateur IBMid, commencez par supprimer l'ID utilisateur non IBMid en exécutant l'exemple d'appel API suivant :
 
   `curl --tlsv1.2 -X DELETE "https://<IPaddress>/dbapi/v3/users/abcuser" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json"`
 
-  Ensuite, ajoutez de nouveau l'utilisateur avec un IBMid identique au précédent ID utilisateur (`abcuser`) en exécutant l'exemple d'appel API suivant :
+  Ensuite, ajoutez de nouveau l'utilisateur doté d'un IBMid identique au précédent ID utilisateur (`abcuser`) en exécutant l'exemple d'appel API suivant :
 
   `curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"abcuser","ibmid":"abcuser@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"`
 
@@ -234,10 +279,10 @@ L'API REST {{site.data.keyword.Db2_on_Cloud_short}} a été améliorée afin d'a
 
 Pour plus de détails sur l'API de votre service, voir : [{{site.data.keyword.Db2_on_Cloud_short}} REST API ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://ibm.biz/db2oc_api){:new_window}.
 
-## Fédération IBMid
+## Fédération avec IBMid
 {: #fed}
 
-Pour utiliser votre propre fournisseur d'identité, LDAP par exemple, vous devez d'abord fédérer votre serveur LDAP avec IBMid. Pour les instructions relatives à la fédération de votre serveur LDAP avec IBMid, voir : [IBMid Enterprise Federation Adoption Guide ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://ibm.ent.box.com/notes/78040808400?s=nhuzrhlsn0ly338zddomx329tlpmfghc){:new_window}. Une fois la fédération IBMid effectuée et dès lors que les utilisateurs autorisés sont ajoutés à l'instance de service de base de données par l'administrateur de base de données, ces utilisateurs peuvent se connecter à la console à l'aide de leur ID utilisateur et mot de passe d'entreprise. Ces utilisateurs peuvent aussi utiliser un jeton d'accès ou une clé d'interface de programmation qui représente leur ID utilisateur pour se connecter à l'instance de service de base de données via l'une des interfaces client de base de données prises en charge.
+Pour utiliser votre propre fournisseur d'identité, tel que LDAP, vous devez d'abord fédérer votre serveur LDAP avec IBMid. Pour les instructions relatives à la fédération de votre serveur LDAP avec IBMid, voir [IBMid Enterprise Federation Adoption Guide ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://ibm.ent.box.com/notes/78040808400?s=nhuzrhlsn0ly338zddomx329tlpmfghc){:new_window}. Une fois la fédération avec IBMid effectuée et dès lors que les utilisateurs autorisés sont ajoutés à l'instance de service de base de données par l'administrateur de base de données, ces utilisateurs peuvent se connecter à la console à l'aide de leurs ID utilisateur et mot de passe d'entreprise. Ces utilisateurs peuvent aussi utiliser un jeton d'accès ou une clé d'interface de programmation qui représente leur ID utilisateur pour se connecter à l'instance de service de base de données via l'une des interfaces client de base de données prises en charge.
 
 ## Restrictions
 {: #restrictions}
@@ -245,7 +290,7 @@ Pour utiliser votre propre fournisseur d'identité, LDAP par exemple, vous devez
 Voici quelques restrictions concernant l'authentification IAM :
 
 * L'authentification IAM pour un client Db2 qui se connecte à un serveur Db2 n'est possible que sur une connexion SSL.
-* La fédération IBMid est prise en charge pour autoriser l'utilisation d'un portail ou serveur de gestion des utilisateurs personnalisé à des fins d'authentification. Cette prise en charge n'inclut pas la fédération de groupe.
+* La fédération avec IBMid est prise en charge pour autoriser l'utilisation d'un portail ou serveur de gestion des utilisateurs personnalisé à des fins d'authentification. Cette prise en charge n'inclut pas la fédération de groupe.
 * L'authentification IAM pour la fédération de base de données n'est pas pris en charge.
 * L'exécution de commandes IDA et UDX via des CLPPlus n'est pas prise en charge.
 * Le pilote JDBC Type 2 n'est pas pris en charge.

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-22"
 
 ---
@@ -12,6 +12,9 @@ lastupdated: "2018-10-22"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 高可用性 (HA)
@@ -20,7 +23,7 @@ lastupdated: "2018-10-22"
 {{site.data.keyword.Db2_on_Cloud_short}} 高可用性プランは、SLA 99.99% の優れた可用性特性があります。 
 {: shortdesc}
 
-災害復旧 (DR) ノードを使用しない標準の高可用性プランは、シームレスなフェイルオーバーとローリング更新を提供します。これらは、自動クライアント・リルート (ACR) とポータブル IP を使用して管理されます。
+災害復旧 (DR) ノードを使用しない標準の高可用性プランは、シームレスなフェイルオーバーとローリング更新を提供します。 これらは、自動クライアント・リルート (ACR) とポータブル IP を使用して管理されます。
 
 さらに、Geo レプリケートされた災害復旧ノードを追加することもできます。 このオフサイトの DR ノード・オプションを使用すると、選択したオフサイト {{site.data.keyword.Bluemix_notm}} データ・センターのデータベース・ノードにデータをリアルタイムで迅速に同期させることができます。 
 

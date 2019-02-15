@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-22"
 
 ---
@@ -12,15 +12,18 @@ lastupdated: "2018-10-22"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Haute disponibilité (HA)
 {: #ha}
 
-Les plans haute disponibilité de {{site.data.keyword.Db2_on_Cloud_short}} ont d'excellentes caractéristiques en matière de disponibilité avec un niveau de service de 99,99 %. 
+Les plans de haute disponibilité de {{site.data.keyword.Db2_on_Cloud_short}} ont d'excellentes caractéristiques en matière de disponibilité avec un niveau de service de 99,99 %. 
 {: shortdesc}
 
-Les plans haute disponibilité standard sans noeud de reprise après incident offrent la reprise en ligne ainsi que des mises à jour en continu. Ils sont gérés à votre place grâce à la redirection automatique du client (ACR) et des adresses IP portables.
+Les plans de haute disponibilité standard sans noeud de reprise après incident offrent la reprise en ligne ainsi que des mises à jour en continu. Ils sont gérés à votre place grâce à la redirection automatique du client (ACR) et des adresses IP portables.
 
 En outre, vous pouvez ajouter un noeud de reprise après incident géorépliqué. Cette option de noeud de reprise après incident hors site vous permet de synchroniser rapidement vos données en temps réel avec un noeud de base de données situé dans un centre de données {{site.data.keyword.Bluemix_notm}} hors site de votre choix. 
 
@@ -28,10 +31,10 @@ En outre, vous pouvez ajouter un noeud de reprise après incident géorépliqué
 
 {{site.data.keyword.Db2_on_Cloud_short}} utilise la technologie Db2 HADR (High Availability Disaster Recovery) en mode `ASYNC` pour atteindre la capacité du noeud de reprise après incident hors site et fournit une `fonction de lecture en veille` sur ce noeud.
 
-## **Brésil : Règle 14 supplémentaire ** (concerne les systèmes mis à disposition pour le gouvernement fédéral brésilien)
+## **Brésil : Règle supplémentaire 14** (concerne les systèmes mis à disposition pour le gouvernement fédéral brésilien)
 {: #rule_14}
 
-A ce stade, l'option de reprise après incident pour les offres Db2 on Cloud n'est pas disponible au Brésil pour le gouvernement fédéral en raison de la Règle 14 supplémentaire.
+A ce stade, l'option de reprise après incident pour les offres Db2 on Cloud n'est pas disponible au Brésil pour le gouvernement fédéral en raison de la Règle supplémentaire 14.
 
 ## Ajout d'un noeud de reprise après incident géorépliqué
 {: #add_dr}

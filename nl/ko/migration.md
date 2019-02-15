@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-05-11"
 
 ---
@@ -11,6 +11,10 @@ lastupdated: "2018-05-11"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # IBM Cloud로 데이터 마이그레이션
@@ -48,7 +52,8 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
   )      
 ```
 
-**참고:** IBM Cloud Object Storage의 경우 새 서비스 신임 정보를 작성할 때 HMAC 신임 정보를 작성하려면 *인라인 구성 매개변수 추가* 필드에 {"HMAC:true"}를 지정하십시오.
+IBM Cloud Object Storage의 경우 새 서비스 인증 정보를 작성할 때 HMAC 인증 정보를 작성하려면 *인라인 구성 매개변수 추가* 필드에 {"HMAC:true"}를 지정하십시오.
+{: note}
 
 ## 온프레미스 시스템에서 데이터 마이그레이션
 {: #onprem}

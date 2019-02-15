@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-05-11"
 
 ---
@@ -11,12 +11,16 @@ lastupdated: "2018-05-11"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Migration de données vers IBM Cloud
 {: #migration}
 
-Vous pouvez charger des données à partir d'un fichier de données dans un format délimité tel que CSV ou TXT situé sur un réseau local ou dans un magasin de données (Amazon S3 ou IBM Cloud Object Storage) vers {{site.data.keyword.Db2_on_Cloud_long}}. Vous pouvez même migrer vos données à partir d'un système sur site.
+Vous pouvez charger des données à partir d'un fichier de données dans un format délimité (par exemple, CSV ou TXT) situé sur un réseau local ou dans un magasin de données (Amazon S3 ou IBM Cloud Object Storage) vers {{site.data.keyword.Db2_on_Cloud_long}}. Vous pouvez même migrer vos données à partir d'un système sur site.
 {: shortdesc}
 
 ## Chargement de données depuis un conteneur d'objets
@@ -48,7 +52,8 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
   )      
 ```
 
-**Remarque :** pour IBM Cloud Object Storage, pour créer des données d'identification HMAC lors de la création de nouvelles données d'identification de service, spécifiez {"HMAC:true"} dans la zone *Ajouter des paramètres de configuration en ligne*.
+Pour IBM Cloud Object Storage, pour créer des données d'identification HMAC lors de la création de nouvelles données d'identification de service, spécifiez {"HMAC:true"} dans la zone *Ajouter des paramètres de configuration en ligne*.
+{: note}
 
 ## Migration de données depuis un système sur site
 {: #onprem}

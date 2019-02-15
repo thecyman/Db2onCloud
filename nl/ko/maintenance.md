@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-05-10"
+  years: 2014, 2019
+lastupdated: "2019-01-02"
 
 ---
 
@@ -11,9 +11,14 @@ lastupdated: "2018-05-10"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 유지보수 및 알림 정책
+{: #maint_note_pol}
 
 {{site.data.keyword.Db2_on_Cloud_long}} 서비스에 대한 유지보수 및 알림 정책은 [{{site.data.keyword.Bluemix_notm}} 서비스 설명 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:new_window}에 있습니다. 특히 {{site.data.keyword.Db2_on_Cloud_short}}에 대한 서비스의 추가 이용 약관은 **청구 가능한 추가 SD** 카테고리에 있습니다. 
 
@@ -25,7 +30,7 @@ lastupdated: "2018-05-10"
 
 {{site.data.keyword.Db2_on_Cloud_short}} 서비스에 대해 스케줄된 시스템 유지보수를 수행해야 하는 이벤트에서 주요 데이터 센터(런던, 댈러스 및 시드니)가 각각 다른 요일(평일)에 업데이트되며, 2018년 3월 27일부터 적용됩니다. 다른 모든 데이터 센터는 주요 데이터 센터와 다른 요일에 동시에 업데이트됩니다. 표 1에는 {{site.data.keyword.Db2_on_Cloud_short}} 시스템 유지보수 스케줄의 예가 표시됩니다.
 
-| 데이터 센터 |   시스템 유지보수 스케줄 |
+| 데이터 센터 | 가능한 유지보수 스케줄의 예 |
 |-------------|-----------------------------|
 |   런던 | 월요일 |
 | 댈러스 | 화요일 |
@@ -33,6 +38,8 @@ lastupdated: "2018-05-10"
 |기타 모두 | 목요일 |
 {: caption="표 1. 시스템 유지보수 스케줄의 예" caption-side="top"}
 
+이 표는 공식 시스템 유지보수 스케줄이 아니라 가능한 유지보수 스케줄의 예로서, 여러 다른 날에 지정된 업데이트를 수행하기 위해 유지보수를 수행하는 방식을 보여줍니다.
+{: note}
 
 ## 알림 정책
 {: #notification}

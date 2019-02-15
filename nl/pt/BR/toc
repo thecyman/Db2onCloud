@@ -16,6 +16,7 @@ Db2 on Cloud
         federation.md
 
     free_plan.md
+    plans_pricing.md
     flex_scaling.md
     br.md
     ha.md
@@ -27,7 +28,6 @@ Db2 on Cloud
 
     audit.md
     user_mgmt.md
-    plans_cfgs.md
     maintenance.md
     local_dev_env.md
     communities.md    
@@ -47,7 +47,8 @@ Db2 on Cloud
     [Tutorial: Consulta de viagem no tempo para acessar os dados históricos](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html)
     [Tutorial: Desenvolver aplicativos com os blocos de notas do Jupyter e a API de REST](https://www.ibm.com/cloud/garage/tutorials/ibm-db2-on-cloud/exploring-the-capabilities-of-db-2-on-cloud)
     [Vídeo: Usando a API de RESTful](https://www.youtube.com/watch?v=PSNBDwgf9ts)
-    [Vídeo: Integrando os blocos de notas do Jupyter](https://www.youtube.com/watch?v=bNfH0Wzx3is)	
+    [Vídeo: Integrando os blocos de notas do Jupyter](https://www.youtube.com/watch?v=bNfH0Wzx3is)
+	
     {: .navgroup-end}
 
 	{: .navgroup id="reference"}

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-05-11"
 
 ---
@@ -11,6 +11,10 @@ lastupdated: "2018-05-11"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # IBM Cloud へのデータ・マイグレーション
@@ -52,9 +56,8 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
   )      
 ```
 
-**注:** IBM Cloud Object Storage の場合、HMAC 資格情報を作成するために、
-新規サービス資格情報を作成する際、*「インラインの構成パラメーターの追加」*フィールド
-に {"HMAC:true"} を指定してください。
+IBM Cloud Object Storage の場合、HMAC 資格情報を作成するために、新規サービス資格情報を作成する際、*「インラインの構成パラメーターの追加」*フィールドに {"HMAC:true"} を指定してください。
+{: note}
 
 ## オンプレミス・システムからのデータのマイグレーション
 {: #onprem}
@@ -80,17 +83,11 @@ Lift CLIは、表 1 にリストされている各種データ・ソースから
 |                              | CSV ファイル・フォーマット |
 {: caption="表 1. マイグレーションのデータ・ソース" caption-side="top"}
 
-Lift CLI のダウンロードとインストールについては、
-[Lift CLI のダウンロード
-![外部リンク・アイコン
-](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://lift.ng.bluemix.net/#download){:new_window} を参照してください。
+Lift CLI のダウンロードとインストールについては、[Lift CLI のダウンロード![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://lift.ng.bluemix.net/#download){:new_window} を参照してください。
 
-Lift CLI を使用して
-{{site.data.keyword.Bluemix_notm}} にデータをマイグレーションする手順
-については、[{{site.data.keyword.Db2_on_Cloud_long_notm}} へのデータ・マイグレーション
-![外部リンク・アイコン
-](../../icons/launch-glyph.svg "外部リンク・アイコン
-")](https://lift.ng.bluemix.net/#docs){:new_window} を参照してください。
+
+Lift CLI を使用して {{site.data.keyword.Bluemix_notm}} にデータをマイグレーションする手順については、[{{site.data.keyword.Db2_on_Cloud_long_notm}} へのデータ・マイグレーション
+![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://lift.ng.bluemix.net/#docs){:new_window} を参照してください。
 
 ### IBM Cloud Mass Data Migration
 {: #mdms}

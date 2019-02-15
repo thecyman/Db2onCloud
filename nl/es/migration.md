@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-05-11"
 
 ---
@@ -11,6 +11,10 @@ lastupdated: "2018-05-11"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Migración de datos a IBM Cloud
@@ -48,7 +52,8 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
   )      
 ```
 
-**Nota:** para IBM Cloud Object Storage, para crear credenciales de HMAC al crear nuevas credenciales de servicio, especifique {"HMAC:true"} en el campo *Añadir parámetros de configuración en línea*.
+Para IBM Cloud Object Storage, para crear credenciales de HMAC al crear nuevas credenciales de servicio, especifique {"HMAC:true"} en el campo *Añadir parámetros de configuración en línea*.
+{: note}
 
 ## Migración de datos desde un sistema local
 {: #onprem}

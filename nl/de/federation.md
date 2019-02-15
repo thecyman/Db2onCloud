@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-26"
 
 ---
@@ -12,10 +12,13 @@ lastupdated: "2018-10-26"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Datenvirtualisierung (Föderierung)
-{: #overview}
+{: #fed}
 
 Die Db2-Datenvirtualisierung (auch als Föderierung bezeichnet) wird von {{site.data.keyword.Db2_on_Cloud_short}} unterstützt. Mithilfe der Datenvirtualisierung können Sie über eine einzelne Abfrage auf alle Daten zugreifen, die sich auf mehreren verteilten Datenbanken innerhalb Ihres Unternehmens befinden. Sie können auf Daten zugreifen, die in beliebigen Ihrer Db2- oder Informix-Datenquellen sowohl lokal als auch in der Cloud gespeichert sind. 
 {: shortdesc}

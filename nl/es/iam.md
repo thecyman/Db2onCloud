@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-09-18"
+  years: 2014, 2019
+lastupdated: "2019-01-21"
 
 ---
 
@@ -12,6 +12,9 @@ lastupdated: "2018-09-18"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Gestión de accesos e identidades (IAM) en IBM Cloud
@@ -78,13 +81,14 @@ Se puede utilizar el IBMid/contraseña para iniciar sesión en la consola y tamb
 Se admiten las siguientes interfaces de cliente de base de datos:
 
 * [ODBC](#odbc-clpplus)
+* [CLP](#odbc-clpplus)
 * [CLPPLUS](#odbc-clpplus)
 * [JDBC](#jdbc)
 
-### ODBC y CLPPLUS
+### ODBC, CLP y CLPPLUS
 {: #odbc-clpplus}
 
-Para que una aplicación ODBC o un cliente de línea de mandatos (CLPPLUS) se conecte a un servidor de Db2 utilizando una autenticación IAM, primero debe configurarse un nombre de origen de datos (DSN) en el archivo de configuración `db2dsdriver.cfg` ejecutando el siguiente mandato:
+Para que una aplicación ODBC o un cliente de línea de mandatos (CLP, CLPPLUS) se conecte a un servidor de Db2 utilizando una autenticación IAM, primero debe configurarse un nombre de origen de datos (DSN) en el archivo de configuración `db2dsdriver.cfg` ejecutando el siguiente mandato:
 
 `db2cli writecfg add -dsn <dsn_alias> -database <database_name> -host <host_name_or_IP_address> -port 50001 -parameter "Authentication=GSSPLUGIN;SecurityTransportMode=SSL"`
 
@@ -123,7 +127,29 @@ El siguiente ejemplo de archivo de configuración `db2dsdriver.cfg` muestra las 
 
     Para ODBC, **AUTHENTICATION=GSSPLUGIN** puede especificarse en el archivo de configuración `db2dsdriver.cfg` o en la cadena de conexión de la aplicación.
 
-* El mandato de conexión de CLPPLUS puede contener uno de los siguientes:
+* El mandato CONNECT de CLP puede contener una de las siguientes opciones:
+
+    **Señal de acceso**
+
+    Conectarse al servidor de base de datos `<database_server_name>` y pasar la señal de acceso ejecutando el mandato siguiente en el script o indicador de mandatos de CLP:
+
+    `CONNECT TO <database_server_name> ACCESSTOKEN <access_token_string>`
+
+    **Clave de API**
+
+    Conectarse al servidor de base de datos `<database_server_name>` con una clave de API ejecutando el mandato siguiente en el script o indicador de mandatos de CLP:
+
+    `CONNECT TO <database_server_name> APIKEY <api-key-string>`
+
+    **IBMid/contraseña**
+
+    Conectarse al servidor de base de datos `<database_server_name>` con un IBMid y contraseña ejecutando el mandato siguiente en el script o indicador de mandatos CLP:
+
+    `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
+
+    Para obtener información más detallada acerca de cómo conectarse a un servidor de base de datos con CLP, consulte: [Sentencia CONNECT (tipo 2) ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}. 
+
+* El mandato CONNECT de CLPPLUS puede contener una de las siguientes opciones:
 
     **Señal de acceso**
 
@@ -167,6 +193,12 @@ dataSource.setAccessToken( "<access_token>" );
 Connection conn = dataSource.getConnection( );
 ```
 
+o
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<nombre_host_o_dirección_IP>:50001/BLUDB:accessToken=<señal_acceso>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
 **Clave de API**
 
 ```
@@ -182,6 +214,12 @@ dataSource.setApiKey( "<api_key>" );
 Connection conn = dataSource.getConnection( );
 ```
 
+o
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<nombre_host_o_dirección_IP>:50001/BLUDB:apikey=<clave_API>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
 **IBMid/contraseña**
 
 ```
@@ -189,11 +227,17 @@ DB2SimpleDataSource dataSource;
 
 dataSource.setDriverType( 4 );
 dataSource.setDatabaseName( "BLUDB" );
-dataSource.setServerName( "<host_name_or_IP_address>" );
+dataSource.setServerName( "<nombre_host_o_dirección_IP>" );
 dataSource.setPortNumber( 50001 );
 dataSource.setSecurityMechanism( com.ibm.db2.jcc.DB2BaseDataSource.PLUGIN_SECURITY );
 dataSource.setPluginName( "IBMIAMauth" );
-Connection conn = dataSource.getConnection( "<user_ID>", "<password>" );
+Connection conn = dataSource.getConnection( "<IBMid>", "<contraseña>" );
+```
+
+o
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<nombre_host_o_dirección_IP>:50001/BLUDB:user=<IBMid>;password=<contraseña>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
 ```
 
 ## Experiencia del usuario de consola
@@ -210,7 +254,8 @@ La API REST de {{site.data.keyword.Db2_on_Cloud_short}} se ha mejorado para admi
 
   `curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid>","ibmid":"<userid>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"`
 
-  **Nota**: El valor `<userid>` para `"id"` y `"ibmid"` no debe ser el mismo. Los dos ID no están enlazados de ninguna manera.
+  El `<userid>` para `"id"` y `"ibmid"` no debe ser el mismo. Los dos ID no están enlazados de ninguna manera.
+  {: note}
 
 * Para migrar un usuario de base de datos que no sea IBMid (por ejemplo, `abcuser`) y hacer que sea un usuario IBMid, suprima primero el ID de usuario que no sea IBMid ejecutando la siguiente llamada API de ejemplo:
 

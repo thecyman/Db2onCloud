@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-09-18"
+  years: 2014, 2019
+lastupdated: "2019-01-21"
 
 ---
 
@@ -12,6 +12,9 @@ lastupdated: "2018-09-18"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Identity and access management (IAM) su IBM Cloud
@@ -78,19 +81,20 @@ Puoi utilizzare l'ID IBM e la password per accedere alla console e anche all'int
 Sono supportate le seguenti interfacce client del database:
 
 * [ODBC](#odbc-clpplus)
+* [CLP](#odbc-clpplus)
 * [CLPPLUS](#odbc-clpplus)
 * [JDBC](#jdbc)
 
-### ODBC e CLPPLUS
+### ODBC, CLP e CLPPLUS
 {: #odbc-clpplus}
 
-Per un'applicazione ODBC o un client riga di comando (CLPPLUS) per connettersi a un server Db2 utilizzando l'autenticazione IAM, deve essere prima configurato un nome dell'origine dati (DSN) in un file di configurazione `db2dsdriver.cfg`, immettendo il seguente comando:
+Per un'applicazione ODBC o un client riga di comando (CLP, CLPPLUS) per connettersi a un server Db2 utilizzando l'autenticazione IAM, deve essere prima configurato un nome dell'origine dati (DSN) in un file di configurazione `db2dsdriver.cfg`, immettendo il seguente comando: 
 
 `db2cli writecfg add -dsn <dsn_alias> -database <database_name> -host <host_name_or_IP_address> -port 50001 -parameter "Authentication=GSSPLUGIN;SecurityTransportMode=SSL"`
 
 Il file di configurazione `db2dsdriver.cfg` è un file XML, normalmente ubicato nella directory `sqllib/cfg`, che contiene un elenco di alias DSN e le relative proprietà.
 
-Il seguente esempio di un file di configurazione di `db2dsdriver.cfg` mostra le configurazioni utilizzate per stabilire una connessione a un'istanza del servizio database. Il file di configurazione fornisce l'alias DSN, il nome del database, il nome host (o l'indirizzo IP) e il tipo **Authentication** e i valori del parametro **SecurityTransportMode**: 
+Il seguente esempio di un file di configurazione di `db2dsdriver.cfg` mostra le configurazioni utilizzate per stabilire una connessione a un'istanza del servizio database. Il file di configurazione fornisce l'alias DSN, il nome del database, il nome host (o l'indirizzo IP) e il tipo **Authentication** e i valori del parametro **SecurityTransportMode**:
 
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
@@ -123,7 +127,29 @@ Il seguente esempio di un file di configurazione di `db2dsdriver.cfg` mostra le 
 
     Per ODBC, può essere specificato **AUTHENTICATION=GSSPLUGIN** nel file di configurazione `db2dsdriver.cfg` o nella stringa di connessione dell'applicazione.
 
-* Il comando di connessione CLPPLUS può contenere uno dei seguenti:
+* L'istruzione CLP CONNECT può contenere uno dei seguenti: 
+
+    **Token di accesso**
+
+    Collegati al server database `<database_server_name>` e passa il token di accesso immettendo il seguente comando allo script o prompt del comando CLP:
+
+    `CONNECT TO <database_server_name> ACCESSTOKEN <access_token_string>`
+
+    **Chiave API**
+
+    Collegati al server database `<database_server_name>` con una chiave API immettendo il seguente comando allo script o prompt del comando CLP:
+
+    `CONNECT TO <database_server_name> APIKEY <api-key-string>`
+
+    **ID IBM/password**
+
+    Collegati al server database `<database_server_name>` con un ID IBM/password immettendo il seguente comando allo script o prompt del comando CLP:
+
+    `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
+
+    Per ulteriori dettagli sulla connessione a un server database con CLP, consulta: [CONNECT (type 2) statement ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}.  
+
+* L'istruzione CLPPLUS CONNECT può contenere uno dei seguenti: 
 
     **Token di accesso**
 
@@ -167,6 +193,12 @@ dataSource.setAccessToken( "<access_token>" );
 Connection conn = dataSource.getConnection( );
 ```
 
+o
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:accessToken=<access_token>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
 **Chiave API**
 
 ```
@@ -182,6 +214,12 @@ dataSource.setApiKey( "<api_key>" );
 Connection conn = dataSource.getConnection( );
 ```
 
+o
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apikey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
 **ID IBM/password**
 
 ```
@@ -193,13 +231,19 @@ dataSource.setServerName( "<host_name_or_IP_address>" );
 dataSource.setPortNumber( 50001 );
 dataSource.setSecurityMechanism( com.ibm.db2.jcc.DB2BaseDataSource.PLUGIN_SECURITY );
 dataSource.setPluginName( "IBMIAMauth" );
-Connection conn = dataSource.getConnection( "<user_ID>", "<password>" );
+Connection conn = dataSource.getConnection( "<IBMid>", "<password>" );
+```
+
+o
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:user=<IBMid>;password=<password>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
 ```
 
 ## Esperienza utente console
 {: #console-ux}
 
-La pagina di accesso della console di servizio ha l'opzione di accedere con i tuoi ID IBM e password. Dopo aver fatto clic sul pulsante **Sign In via IBMid**, l'utente viene indirizzato alla pagina di accesso IAM, su cui viene immessa la password. Quando l'autenticazione è stata completata, l'utente viene reindirizzato nuovamente alla console. Prima di eseguire correttamente l'accesso, l'ID IBM deve essere aggiunto a ogni istanza del servizio database dall'amministratore del database tramite la console o l'API REST. Proprio come per un utente non ID IBM, un ID utente per l'istanza del servizio database deve essere immesso nello stesso momento in cui viene aggiunto l'utente ID IBM. L'ID utente deve essere univoco all'interno dell'istanza del servizio database. Questo ID utente è anche l'ID di autorizzazione (AUTH) all'interno del database. 
+La pagina di accesso della console di servizio ha l'opzione di accedere con i tuoi ID IBM e password. Dopo aver fatto clic sul pulsante **Sign In via IBMid**, l'utente viene indirizzato alla pagina di accesso IAM, su cui viene immessa la password. Quando l'autenticazione è stata completata, l'utente viene reindirizzato nuovamente alla console. Prima di eseguire correttamente l'accesso, l'ID IBM deve essere aggiunto a ogni istanza del servizio database dall'amministratore del database tramite la console o l'API REST. Proprio come per un utente non ID IBM, un ID utente per l'istanza del servizio database deve essere immesso nello stesso momento in cui viene aggiunto l'utente ID IBM. L'ID utente deve essere univoco all'interno dell'istanza del servizio database. Questo ID utente è anche l'ID di autorizzazione (AUTH) all'interno del database.
 
 ## Esperienza API REST
 {: #api}
@@ -210,7 +254,8 @@ L'API REST {{site.data.keyword.Db2_on_Cloud_short}} è stata migliorata per acce
 
   `curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid>","ibmid":"<userid>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"`
 
-  **Nota**: il valore `<userid>` per `"id"` e `"ibmid"` non deve essere lo stesso. I due ID diversi non sono collegati in alcun modo.
+  Il valore `<userid>` per `"id"` e `"ibmid"` non deve essere lo stesso. I due ID diversi non sono collegati in alcun modo.
+  {: note}
 
 * Per migrare un utente del database non ID IBM esistente (ad esempio, `abcuser`) e farne un utente ID IBM, elimina prima l'ID utente non ID IBM eseguendo la seguente chiamata API di esempio:
 

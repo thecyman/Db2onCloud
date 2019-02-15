@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-26"
 
 ---
@@ -12,15 +12,18 @@ lastupdated: "2018-10-26"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 데이터 가상화(연합)
-{: #overview}
+{: #fed}
 
 Db2 데이터 가상화(연합이라고도 함)는 {{site.data.keyword.Db2_on_Cloud_short}}에서 지원됩니다. 데이터 가상화를 사용하면 조직 내 어느 위치에서든 다중 분산 데이터베이스에 있는 모든 데이터에 대한 단일 조회 액세스가 가능합니다. 온프레미스 및 클라우드에서 Db2 또는 Informix 데이터 소스에 있는 데이터에 액세스할 수 있습니다. 
 {: shortdesc}
 
-이 기능은 무료 라이트 플랜을 제외한 모든 버전의 {{site.data.keyword.Db2_on_Cloud_short}}에 지원됩니다. 하지만 데이터를 가져올 수 있는 대상으로 라이트 플랜을 사용할 수 있습니다.
+이 기능은 무료 Lite 플랜을 제외한 모든 버전의 {{site.data.keyword.Db2_on_Cloud_short}}에 지원됩니다. 하지만 데이터를 가져올 수 있는 대상으로 Lite 플랜을 사용할 수 있습니다.
 
 ## 유스 케이스
 {: #use_cases}

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-10-26"
+  years: 2014, 2019
+lastupdated: "2019-01-02"
 
 ---
 
@@ -27,6 +27,9 @@ lastupdated: "2018-10-26"
 
 {{site.data.keyword.Db2_on_Cloud_long}} es una base de datos SQL suministrada para usted en la nube. Puede utilizar {{site.data.keyword.Db2_on_Cloud_short}} como utilizaría cualquier software de base de datos, pero sin la sobrecarga de la configuración del hardware ni de la instalación y el mantenimiento del software. 
 {: shortdesc}
+
+Cree credenciales. Después de crear el servicio, los nuevos usuarios de IBM Cloud deben crear un nombre de usuario y contraseña pulsando el botón **Crear credenciales** cuando inicien el servicio. Técnicamente pueden conectarse a la consola web sin credenciales, pero son necesarios el nombre de usuario y la contraseña para utilizar muchas de las herramientas de Db2.
+{: important}
 
 También puede instalar una base de datos Db2 local utilizando la [descarga gratuita de Db2 Developer Edition ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window}. De esta forma, se instala rápidamente una edición de Db2 para desarrolladores lista para utilizar dentro de un contenedor Docker (no se requiere Docker; todos los componentes necesarios se instalarán automáticamente). 
 
@@ -67,15 +70,16 @@ Puede acceder a la consola web de {{site.data.keyword.Db2_on_Cloud_short}} de lo
 With Db2 Warehouse plans, you can perform tasks related to file management, loading data, and running R scripts by using the [Db2 Warehouse REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-api){:new_window}.
 {: shortdesc} -->
 
-### Conecte aplicaciones o herramientas preferidas desde el sistema local
+### Instalación de los controladores y clientes de línea de mandatos de Db2 en el sistema local
 {: #connect_apps}
 
-Configure el entorno local para conectar la base de datos de {{site.data.keyword.Db2_on_Cloud_short}} siguiendo estos pasos:
+La mayoría de usuarios pueden saltarse este paso. En la mayoría de los casos, los usuarios tienden a utilizar solamente la API REST o instalar controladores para un entorno de trabajo, por ejemplo con el mandato `pip` de Python. Sin embargo, es posible que los usuarios experimentados deseen utilizar el cliente de línea de mandatos de Db2 para administrar su base de datos y utilizar mandatos de Db2. Además, ciertas aplicaciones ODBC o JDBC pueden beneficiarse de una instalación general de controladores de Db2. Si es así, lleve a cabo los pasos siguientes:
 {: shortdesc}
 
-1. Descargue el [paquete de controladores ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} de la página Información de conexión de la consola web de {{site.data.keyword.Db2_on_Cloud_short}}.
-2. [Instale el paquete de controladores ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} en el sistema donde esté ejecutando las apps o las herramientas.
-3. [Configure los archivos de controladores ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} para la base de datos de {{site.data.keyword.Db2_on_Cloud_short}}.
+<!-- Drivers on site are broken so taking out this one -Simon. 1. Download the [driver package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} from the Connection info page of the {{site.data.keyword.Db2_on_Cloud_short}} web console.-->
+
+1. [Instale el paquete de controladores ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} en el sistema donde esté ejecutando las apps o las herramientas.
+2. [Configure los archivos de controladores ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} para la base de datos de {{site.data.keyword.Db2_on_Cloud_short}}.
 
 ### Utilice Db2 on Cloud como origen de datos para apps o servicios de {{site.data.keyword.Bluemix_notm}}
 {: #data_src}
@@ -139,27 +143,27 @@ Aquí tiene los enlaces a ejemplos que demuestran cómo conectarse a la base de 
 <!-- * [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_nodejs.html){:new_window} -->
    * [PHP ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
 <!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
-   * Ejemplos de [Ejemplos de {{site.data.keyword.Db2_on_Cloud_short}} en GitHub ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
+<!-- * [{{site.data.keyword.Db2_on_Cloud_short}} samples on GitHub ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window} -->
 
 ## Vídeo: Introducción de Db2 on Cloud
 {: #intro_vid}
 
 Vea este vídeo para obtener una introducción a {{site.data.keyword.Db2_on_Cloud_short}}.
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Introducción a {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/F_ylk44_WOg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe class="embed-responsive-item" id="youtubeplayer1" title="Introducción a {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/F_ylk44_WOg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 ## Vídeo: Utilización de la API REST para comunicarse con Db2 on Cloud
 {: #vid_api}
 
 Vea este vídeo para seguir los pasos necesarios para utilizar una API RESTful para comunicar con {{site.data.keyword.Db2_on_Cloud_short}}.
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Utilización de la API RESTful para comunicar con {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/PSNBDwgf9ts?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe class="embed-responsive-item" id="youtubeplayer2" title="Utilización de la API RESTful para comunicar con {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/PSNBDwgf9ts?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 ## Vídeo: Integración de cuadernos Jupyter
 {: #cognos_vid}
 
 Vea este vídeo para obtener información sobre cómo integrar cuadernos Jupyter con {{site.data.keyword.Db2_on_Cloud_short}}.
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Integración de cuadernos Jupyter" type="text/html" width="640" height="390" src="//www.youtube.com/embed/bNfH0Wzx3is?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe class="embed-responsive-item" id="youtubeplayer3" title="Integración de cuadernos Jupyter" type="text/html" width="640" height="390" src="//www.youtube.com/embed/bNfH0Wzx3is?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 

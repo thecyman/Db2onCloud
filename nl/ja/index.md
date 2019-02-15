@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-10-26"
+  years: 2014, 2019
+lastupdated: "2019-01-02"
 
 ---
 
@@ -28,13 +28,10 @@ lastupdated: "2018-10-26"
 {{site.data.keyword.Db2_on_Cloud_long}} は、クラウド内でプロビジョンされた SQL データベースです。 任意のデータベース・ソフトウェアを使用するのと同じように {{site.data.keyword.Db2_on_Cloud_short}} を使用できますが、ハードウェアのセットアップやソフトウェアのインストールおよび保守のためのオーバーヘッドもコストもかかりません。 
 {: shortdesc}
 
-また、
-[ 無料の
-Db2 Developer Edition ダウンロード ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・
-アイコン
-")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window} を使用して、ローカルの Db2 データベースをインストー
-ルすることもできま
-す。 ここでは、すぐに使用できる Db2 Developer Edition が、Docker コンテナー内のツールとともに速や
+資格情報を作成します。初めて IBM Cloud を使用するユーザーは、サービスを作成した後、サービスの起動時に**「資格情報の作成」**ボタンをクリックして、ユーザー名とパスワードを作成する必要があります。厳密に言うと、資格情報がなくても Web コンソールにログインすることはできますが、Db2 ツールの多くを使用するためにはユーザー名とパスワードが必要になります。
+{: important}
+
+また、[ 無料の Db2 Developer Edition ダウンロード ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window} を使用して、ローカルの Db2 データベースをインストールすることもできます。ここでは、すぐに使用できる Db2 Developer Edition が、Docker コンテナー内のツールとともに速や
 かにインストールされます (Docker は不要です。必要なコンポーネントは自動的にインストールされます)。 
 
 <!-- ## Free trial
@@ -74,15 +71,16 @@ Web コンソールは、ロード機能、SQL エディター、ドライバー
 With Db2 Warehouse plans, you can perform tasks related to file management, loading data, and running R scripts by using the [Db2 Warehouse REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-api){:new_window}.
 {: shortdesc} -->
 
-### ローカル・コンピューターからアプリケーションまたは任意のツールを接続する
+### ご使用のコンピューターへの Db2 コマンド・ライン・クライアントおよびドライバーのインストール
 {: #connect_apps}
 
-以下の手順を実行して、{{site.data.keyword.Db2_on_Cloud_short}} データベースに接続するようにローカル環境を構成します。
+大半のユーザーはこのステップをスキップできます。ほとんどの場合、ユーザーは REST API のみを使用するか、Python の `pip` コマンドなどを使用してフレームワーク用のドライバーをインストールすることが多いはずです。しかし、パワー・ユーザーは、Db2 コマンド・ライン・クライアントを使用して、データベースを管理し、Db2 コマンドを使用することが必要な場合もあります。また、特定の ODBC アプリケーションや JDBC アプリケーションは、Db2 ドライバーを汎用インストールすると恩恵を受けることができます。その場合は、以下のステップを実行してください。
 {: shortdesc}
 
-1. {{site.data.keyword.Db2_on_Cloud_short}} Web コンソールの「接続情報 (Connection info)」ページから[ドライバー・パッケージ ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} をダウンロードします。
-2. アプリまたはツールが実行されているコンピューターで [ドライバー・パッケージのインストール![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} を行います。
-3. {{site.data.keyword.Db2_on_Cloud_short}} データベース用に[ドライバー・ファイルの構成 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} を行います。
+<!-- Drivers on site are broken so taking out this one -Simon. 1. Download the [driver package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} from the Connection info page of the {{site.data.keyword.Db2_on_Cloud_short}} web console.-->
+
+1. アプリまたはツールが実行されているコンピューターで [ドライバー・パッケージのインストール![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} を行います。
+2. {{site.data.keyword.Db2_on_Cloud_short}} データベース用に[ドライバー・ファイルの構成 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} を行います。
 
 ### {{site.data.keyword.Bluemix_notm}} アプリまたはサービス用のデータ・ソースとして Db2 on Cloud を使用する
 {: #data_src}
@@ -146,27 +144,27 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 <!-- * [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_nodejs.html){:new_window} -->
    * [PHP ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
 <!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
-   * [GitHub にある {{site.data.keyword.Db2_on_Cloud_short}} サンプル![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
+<!-- * [{{site.data.keyword.Db2_on_Cloud_short}} samples on GitHub ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window} -->
 
 ## ビデオ: Db2 on Cloud の紹介
 {: #intro_vid}
 
 {{site.data.keyword.Db2_on_Cloud_short}} の概要については、このビデオをご覧ください。
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Introduction to {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/F_ylk44_WOg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe class="embed-responsive-item" id="youtubeplayer1" title="Introduction to {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/F_ylk44_WOg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 ## ビデオ: REST API を使用した Db2 on Cloud との通信
 {: #vid_api}
 
 RESTful API を使用して {{site.data.keyword.Db2_on_Cloud_short}} と通信するために必要な手順を確認するには、このビデオをご覧ください。
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Using RESTful API to communicate with {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/PSNBDwgf9ts?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe class="embed-responsive-item" id="youtubeplayer2" title="Using RESTful API to communicate with {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/PSNBDwgf9ts?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 ## ビデオ: Jupyter ノートブックの統合
 {: #cognos_vid}
 
 Jupyter ノートブックを {{site.data.keyword.Db2_on_Cloud_short}} と統合する方法を確認するには、このビデオをご覧ください。
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Integrating Jupyter notebooks" type="text/html" width="640" height="390" src="//www.youtube.com/embed/bNfH0Wzx3is?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe class="embed-responsive-item" id="youtubeplayer3" title="Integrating Jupyter notebooks" type="text/html" width="640" height="390" src="//www.youtube.com/embed/bNfH0Wzx3is?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-09-18"
+  years: 2014, 2019
+lastupdated: "2019-01-21"
 
 ---
 
@@ -12,6 +12,9 @@ lastupdated: "2018-09-18"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Identity and Access Management (IAM) in IBM Cloud
@@ -78,13 +81,14 @@ Die IBMid und das zugehörige Kennwort können für die Anmeldung bei der Konsol
 Die folgenden Datenbankclientschnittstellen werden unterstützt:
 
 * [ODBC](#odbc-clpplus)
+* [CLP](#odbc-clpplus)
 * [CLPPLUS](#odbc-clpplus)
 * [JDBC](#jdbc)
 
-### ODBC und CLPPLUS
+### ODBC, CLP und CLPPLUS
 {: #odbc-clpplus}
 
-Damit eine ODBC-Anwendung oder ein Befehlszeilenclient (CLPPLUS) mithilfe der IAM-Authentifizierung eine Verbindung zu einem Db2-Server herstellen kann, muss zuerst ein DSN (Datenquellenname) in einer `db2dsdriver.cfg`-Konfigurationsdatei festgelegt werden. Hierzu den folgenden Befehl ausführen:
+Damit eine ODBC-Anwendung oder ein Befehlszeilenclient (CLP, CLPPLUS) mithilfe der IAM-Authentifizierung eine Verbindung zu einem Db2-Server herstellen kann, muss zuerst ein DSN (Datenquellenname) in einer `db2dsdriver.cfg`-Konfigurationsdatei festgelegt werden. Hierzu den folgenden Befehl ausführen:
 
 `db2cli writecfg add -dsn <dsn_alias> -database <database_name> -host <host_name_or_IP_address> -port 50001 -parameter "Authentication=GSSPLUGIN;SecurityTransportMode=SSL"`
 
@@ -123,7 +127,29 @@ Das folgende Beispiel einer `db2dsdriver.cfg`-Konfigurationsdatei zeigt die Konf
 
     Für ODBC kann **AUTHENTICATION=GSSPLUGIN** entweder in der Konfigurationsdatei `db2dsdriver.cfg` oder in der Verbindungszeichenfolge der Anwendung angegeben werden.
 
-* Der CLPPLUS-Verbindungsbefehl kann eines der folgenden Elemente enthalten:
+* Die CLP-Anweisung CONNECT kann eines der folgenden Elemente enthalten: 
+
+    **Zugriffstoken**
+
+    Stellen Sie eine Verbindung zum Datenbankserver `<database_server_name>` her und übergaben Sie das Zugriffstoken, indem Sie den folgenden Befehl in der Eingabeaufforderung des Befehlszeilenprozessors oder einem Script ausführen: 
+
+    `CONNECT TO <database_server_name> ACCESSTOKEN <access_token_string>`
+
+    **API-Schlüssel**
+
+    Stellen Sie eine Verbindung zum Datenbankserver `<database_server_name>` mit einem API-Schlüssel her, indem Sie den folgenden Befehl in der Eingabeaufforderung des Befehlszeilenprozessors oder einem Script ausführen: 
+
+    `CONNECT TO <database_server_name> APIKEY <api-key-string>`
+
+    **IBMid/Kennwort**
+
+    Stellen Sie eine Verbindung zum Datenbankserver `<database_server_name>` mit einer IBMid und dem zugehörigen Kennwort her, indem Sie den folgenden Befehl in der Eingabeaufforderung des Befehlszeilenprozessors oder einem Script ausführen: 
+
+    `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
+
+    Weitere Details zum Herstellen einer Verbindung zu einem Datenbankserver über den Befehlszeilenprozessor (CLP) finden Sie in [Anweisung CONNECT (Typ 2) ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}.  
+
+* Die CLPPlus-Anweisung CONNECT kann eines der folgenden Elemente enthalten: 
 
     **Zugriffstoken**
 
@@ -167,6 +193,12 @@ dataSource.setAccessToken( "<access_token>" );
 Connection conn = dataSource.getConnection( );
 ```
 
+Oder
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:accessToken=<access_token>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
 **API-Schlüssel**
 
 ```
@@ -182,6 +214,12 @@ dataSource.setApiKey( "<api_key>" );
 Connection conn = dataSource.getConnection( );
 ```
 
+Oder
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apikey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
 **IBMid/Kennwort**
 
 ```
@@ -193,13 +231,19 @@ dataSource.setServerName( "<host_name_or_IP_address>" );
 dataSource.setPortNumber( 50001 );
 dataSource.setSecurityMechanism( com.ibm.db2.jcc.DB2BaseDataSource.PLUGIN_SECURITY );
 dataSource.setPluginName( "IBMIAMauth" );
-Connection conn = dataSource.getConnection( "<user_ID>", "<password>" );
+Connection conn = dataSource.getConnection( "<IBMid>", "<password>" );
+```
+
+Oder
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:user=<IBMid>;password=<password>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
 ```
 
 ## Konsolenbenutzerschnittstelle
 {: #console-ux}
 
-Die Anmeldeseite der Servicekonsole bietet die Option für die Anmeldung mit der IBMid und dem zugehörigen Kennwort. Nach dem Klicken auf die Schaltfläche **Anmelden über IBMid** wird der Benutzer zur IAM-Anmeldeseite weitergeleitet, auf der das Kennwort eingegeben wird. Wenn die Authentifizierung abgeschlossen ist, wird der Benutzer zurück an die Konsole weitergeleitet. Bevor eine solche Anmeldung erfolgreich ausgeführt werden kann, muss der Benutzer der IBMid vom Datenbankadministrator über die Konsole oder die REST-API zu jeder Datenbankserviceinstanz hinzugefügt werden. Wie bei einem Benutzer ohne IBMid muss eine Benutzer-ID für die Datenbankserviceinstanz zu dem Zeitpunkt eingegeben werden, an dem der IBMid-Benutzer hinzugefügt wird. Die Benutzer-ID muss innerhalb der Datenbankserviceinstanz eindeutig sein. Bei dieser Benutzer-ID handelt es sich auch um die Berechtigungs-ID (AUTH) in der Datenbank. 
+Die Anmeldeseite der Servicekonsole bietet die Option für die Anmeldung mit der IBMid und dem zugehörigen Kennwort. Nach dem Klicken auf die Schaltfläche **Anmelden über IBMid** wird der Benutzer zur IAM-Anmeldeseite weitergeleitet, auf der das Kennwort eingegeben wird. Wenn die Authentifizierung abgeschlossen ist, wird der Benutzer zurück an die Konsole weitergeleitet. Bevor eine solche Anmeldung erfolgreich ausgeführt werden kann, muss der Benutzer der IBMid vom Datenbankadministrator über die Konsole oder die REST-API zu jeder Datenbankserviceinstanz hinzugefügt werden. Wie bei einem Benutzer ohne IBMid muss eine Benutzer-ID für die Datenbankserviceinstanz zu dem Zeitpunkt eingegeben werden, an dem der IBMid-Benutzer hinzugefügt wird. Die Benutzer-ID muss innerhalb der Datenbankserviceinstanz eindeutig sein. Bei dieser Benutzer-ID handelt es sich auch um die Berechtigungs-ID (AUTH) in der Datenbank.
 
 ## REST-API-Schnittstelle
 {: #api}
@@ -210,7 +254,8 @@ Die {{site.data.keyword.Db2_on_Cloud_short}}-REST-API wurde erweitert und akzept
 
   `curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid>","ibmid":"<userid>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"`
 
-  **Hinweis**: Der Wert `<userid>` für `"id"` und `"ibmid"` muss nicht derselbe Wert sein. Die beiden unterschiedlichen IDs sind in keiner Weise miteinander verknüpft.
+  Die Werte von `<userid>` für `"id"` und `"ibmid"` müssen nicht übereinstimmen. Die beiden unterschiedlichen IDs sind in keiner Weise miteinander verknüpft.
+  {: note}
 
 * Wenn Sie einen vorhandenen Datenbankbenutzer ohne IBMid (z. B. `abcuser`) migrieren und zu einem IBMid-Benutzer machen möchten, löschen Sie zuerst die Nicht-IBMid-Benutzer-ID, indem Sie den folgenden Beispiel-API-Aufruf ausführen:
 
