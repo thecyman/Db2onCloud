@@ -18,7 +18,7 @@ lastupdated: "2019-01-02"
 {:pre: .pre}
 
 # Backup and restore
-{: #br}
+{: #bnr}
 
 For paid plans, encrypted backups of the database are done daily. A daily backup is kept for each of the last 14 days.
 {: shortdesc}

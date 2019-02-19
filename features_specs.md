@@ -66,7 +66,7 @@ lastupdated: "2018-12-05"
 |  | Full list of compliances | Y | [Security compliances ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | Backup & restore | Daily backups | Y | 14 days of daily backups |
-|  | Point-in-time self-serve recovery | Available Nov 15, 2018 | [Point-in-time restore](br.html#point-in-time) |
+|  | Point-in-time self-serve recovery | Available Nov 15, 2018 | [Point-in-time restore](/docs/services/Db2onCloud/br.html#point-in-time) |
 |  | Backups kept offsite | On request | As of Dec 1, 2018, offsite is default  |
 |  | Keep backup up to 10 yrs | On request | As of Dec 1, 2018. Requires support ticket. |
 |  | Query old data without restore | Y | Must set up [Time Travel Query ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} |
@@ -88,7 +88,7 @@ lastupdated: "2018-12-05"
 |  | Available on Hybrid Data Management Platform (HDMP) | Y | Flex plan only. [Details about HDMP ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/ca-en/marketplace/hybrid-data-management-platform){:new_window}|
 |  | Daily billing | Y | Billing for Flex plans is based on peak daily usage. For example, if you scale up from 2 to 8 cores for one hour of a day, you will be billed for 8 cores for only that day, and 2 cores for all of the other days of the month. |
 |  | Hourly billing | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - | 
-|  | Main pricing metric | Monthly | Prices are stated in monthly terms (for example, $189 USD per month). A prorated monthly price is based on the number of days of activated service during the month in which the service was terminated. [Examples](plans_pricing.html) |
+|  | Main pricing metric | Monthly | Prices are stated in monthly terms (for example, $189 USD per month). A prorated monthly price is based on the number of days of activated service during the month in which the service was terminated. [Examples](/docs/services/Db2onCloud/plans_pricing.html) |
 |  |  |  |  |
 | Deployment & scaling durations | Dallas | **Deploy**: < 5 minutes. **Scale**: < 45 minutes. | Flex plan only, depending on inventory |
 | | Other US South | **Deploy**: 1 day. **Scale**: 8 hours. | Some locations shorter than others |

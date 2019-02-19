@@ -46,7 +46,7 @@ Users with an IBMid must be added to each database service instance by the datab
 A service ID identifies a service or application similar to how a user ID identifies a user. The service IDs are IDs that can be used by applications to authenticate with an IBM Cloud service. A service ID represents a separate entity from the owning IBMid. Therefore, different authorities and permissions can be granted specific to the service ID within the database. Service IDs do not have passwords. An API key must be created for each service ID for the service ID to connect to the database service instance. For more information about service IDs, see: [Introducing IBM Cloud IAM Service IDs and API Keys ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:new_window}.
 
 ## Client connections and user logins
-{: #connect}
+{: #connect_user}
 
 **Prerequisite**: Db2 Client V11.1 FP3 and later.
 
@@ -282,7 +282,7 @@ The {{site.data.keyword.Db2_on_Cloud_short}} REST API was enhanced to also accep
 For more details about your service's API, see: [{{site.data.keyword.Db2_on_Cloud_short}} REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/db2oc_api){:new_window}.
 
 ## IBMid federation
-{: #fed}
+{: #fed_ibmid}
 
 To use your own identity provider such as LDAP, you must first federate your LDAP server with IBMid. For instructions about federating your LDAP server with IBMid, see: [IBMid Enterprise Federation Adoption Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.ent.box.com/notes/78040808400?s=nhuzrhlsn0ly338zddomx329tlpmfghc){:new_window}. After IBMid federation is completed and the allowed users are added to the database service instance by the database administrator, these users can log in to the console with their company user ID and password. Alternatively, these users can use an access token or API key that represents their user ID to connect to the database service instance through one of the supported database client interfaces.
 
