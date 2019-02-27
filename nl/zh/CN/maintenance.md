@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-05-10"
+  years: 2014, 2019
+lastupdated: "2019-01-02"
 
 ---
 
@@ -11,9 +11,14 @@ lastupdated: "2018-05-10"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 维护和通知策略
+{: #maint_note_pol}
 
 {{site.data.keyword.Db2_on_Cloud_long}} 服务的维护和通知策略位于 [{{site.data.keyword.Bluemix_notm}} 服务描述 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:new_window} 中。可在**付费的附加服务描述**类别下找到专门针对 {{site.data.keyword.Db2_on_Cloud_short}} 的附加服务条款。 
 
@@ -25,7 +30,7 @@ lastupdated: "2018-05-10"
 
 自 2018 年 3 月 27 日生效，如果必须针对 {{site.data.keyword.Db2_on_Cloud_short}} 服务完成安排的系统维护，那么将在周中的单独一个工作日更新主数据中心（伦敦、达拉斯和悉尼）。在周中不与主数据中心相同的另一天同时更新所有其他数据中心。表 1 显示 {{site.data.keyword.Db2_on_Cloud_short}} 系统维护安排的示例。
 
-| 数据中心 | 系统维护安排 |
+| 数据中心 | 可行的维护安排示例 |
 |-------------|-----------------------------|
 | 伦敦 | 星期一 |
 | 达拉斯 | 星期二 |
@@ -33,6 +38,8 @@ lastupdated: "2018-05-10"
 | 其他全部 | 星期四 |
 {: caption="表 1. 系统维护安排的示例" caption-side="top"}
 
+该表不是一个正式的系统维护安排，而是一个可行的维护安排示例，旨在演示如何在不同日期针对给定的更新执行维护。
+{: note}
 
 ## 通知策略
 {: #notification}

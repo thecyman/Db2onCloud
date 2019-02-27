@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-11-01"
+  years: 2014, 2019
+lastupdated: "2018-12-05"
 
 ---
 
@@ -11,10 +11,14 @@ lastupdated: "2018-11-01"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 功能部件和规范
-{: #overview}
+{: #fs}
 
 此处提供 {{site.data.keyword.Db2_on_Cloud_long}} 功能部件和规范的摘要，以便于您参考。
 {: shortdesc}
@@ -31,12 +35,22 @@ lastupdated: "2018-11-01"
 |  |  |  |  |
 | 高可用性和复制 | 非现场 DR | 是 | - |
 |  | 高可用性（1 个区域 2 个节点） | 是 | 99.99% 正常运行时间 SLA |
-|  | 不同区域在同一个数据中心内 | [在路线图中 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
+|  | 不同区域在同一个数据中心内 | [在路线图中 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://ibm.biz/db2oncloud-roadmap){:new_window} | **注**：非现场 HADR 可用 |
 |  | 变更数据捕获 (CDC) | 是 | - |
 |  | 用作来自内部部署的 HADR | 否 | 请使用 CDC。有关其他信息，请参阅[如何将数据从 Db2 迁移或同步到 Db2 on Cloud？![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.ibm.com/answers/questions/426111/how-can-i-migrate-from-db2-to-db2-on-cloud/){:new_window} |
 |  | 自主故障转移 - HA | 是 | - |
 |  | 自主故障转移 - 非现场 DR | 否 | 请使用按钮或 API |
 |  | IP 随故障转移移动 | 是 | 仅限本地 HA；不支持非现场 HADR |
+|  | RPO：高可用性 | 0 秒 | HA 是同步的 |
+|  | RTO：高可用性 | 通常，0-10 分钟 | 使用重试代码时，Db2 ACR 的速度会变慢 |
+|  | RPO：非现场节点 HADR | 通常，< 15 秒 | 非现场 DR 是异步的 |
+|  | RTO：非现场节点 HADR | < 3 分钟 | 必须通过控制台按钮或 API 启动 |
+|  |  |  |  |
+| 系统配置 | 最大 RAM 和核心数 | 1 TB RAM，48 个核心 | 适用于 Precise Performance XL 套餐 |
+|  | 最大存储 | 11 TB | 适用于 Precise Performance XL 套餐。用于存储数据和日志的磁盘。|
+|  | Flex：基本套餐 | 4 GB RAM，1 个核心，2 GB 磁盘 | - |
+|  | Flex：最大 RAM 和核心数 | 128 GB RAM，32 个核心 | 需要更高的规格？使用 Precise Performance 套餐或联系 IBM 支持人员。|
+|  | Flex：最大存储 | 4 TB | 用于存储数据和日志的磁盘。需要更高的规格？使用 Precise Performance 套餐或联系 IBM 支持人员。|
 |  |  |  |  |
 | 维护策略和 SLA | 高可用性套餐 | 99.99% | - |
 |  | 单服务器套餐 | 99.5% | - |
@@ -52,7 +66,7 @@ lastupdated: "2018-11-01"
 |  | 合规性完整列表 | 是 | [安全合规性 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | 备份和复原 | 每日备份 | 是 | 14 天的每日备份 |
-|  | 时间点自服务恢复 | 2018 年 11 月 15 日起可用 | - |
+|  | 时间点自服务恢复 | 2018 年 11 月 15 日起可用 | [时间点复原](br.html#point-in-time) |
 |  | 保留非现场备份 | 根据请求 | 自 2018 年 12 月 1 日起，缺省值为非现场  |
 |  | 备份最长保留 10 年 | 根据请求 | 自 2018 年 12 月 1 日起。需要支持凭单。|
 |  | 无需复原即可查询旧数据 | 是 | 必须设置 [Time Travel Query ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} |
@@ -63,12 +77,15 @@ lastupdated: "2018-11-01"
 |  | 磁盘上加密 | 是 | -  |
 |  | SSL/TLS 连接 | 是 | -  |
 |  | IP 列入白名单 | 部分 | 在 Db2 用户级别可用。对于网络级别，请考虑使用 ICIAE 或类似功能部件。|
-|  | KeyProtect（带自己的密钥） | [在路线图中 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
+|  | Key Protect（自带密钥）| [在路线图中 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
 |  | MIS / 互连服务 | [在路线图中 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
+|  | 最大并发连接限制：**免费套餐** | 是 | 最大：5 个连接  |
+|  | 最大并发连接限制：**付费套餐** | 否 | 无限数量的连接  |
 |  |  |  |  |
 | 定价和采购 | BYOL 折扣 | 是 | [声明 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://ibm.biz/db2oncloud-byol){:new_window} |
-|  | 通过 IBM Cloud 提供 | 是 | 预订和现买现付均可 |
-|  | 通过软件报价单提供 | 是 | 包括 Flex 在内的所有套餐。[部件和详细信息。![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://ibm.biz/db2oncloud-parts-public){:new_window}|
+|  | 在 IBM Cloud 上提供 | 是 | 预订和现收现付均可 |
+|  | 通过软件报价单提供 | 是 | 包括 Flex 在内的所有套餐。[部件和详细信息 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://ibm.biz/db2oncloud-parts-public){:new_window}|
+|  | 在 Hybrid Data Management Platform (HDMP) 上提供 | 是 | 仅限 Flex 套餐。[有关 HDMP 的详细信息 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/ca-en/marketplace/hybrid-data-management-platform){:new_window}|
 |  | 每日计费 | 是 | Flex 套餐的计费依据是每天使用量峰值。例如，一天中有一个小时从 2 个核心扩展到了 8 个核心，那么只有那一天会按 8 个核心计费，该月的其他每天都按 2 个核心计费。|
 |  | 每小时计费 | [在路线图中 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - | 
 |  | 主要定价指标 | 每月 | 按月定价（例如，每月 $189 美元）。每月按比例价格的依据是在服务终止的月份内激活服务的天数。[示例](plans_pricing.html) |
