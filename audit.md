@@ -45,6 +45,8 @@ For availability of the Activity Tracker, see [roadmap ![External link icon](../
 You can connect with a Db2 command line client, such as CLPPlus, to access detailed information and diagnostics.
 
 ### A basic overview:
-{: #overview}
+{: #basic_overview}
 
 There are 2 basic types of checking. External health/uptime checks and metric-based monitoring. IBM monitors hundreds of metrics and stores those metrics historically. Based on the values of these metrics, alerts are generated. These alerts are sent to IBM operations staff to ensure the alerts are seen and addressed. In addition, IBM also sends archived operating system and diagnostic logs for rapid diagnosis. {{site.data.keyword.Db2_on_Cloud_short}} complies with GDPR, and IBM EU Cloud options provide an even higher level of adherence to GDPR, if needed.
+
+
