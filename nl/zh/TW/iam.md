@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-09-18"
+  years: 2014, 2019
+lastupdated: "2019-01-21"
 
 ---
 
@@ -12,6 +12,9 @@ lastupdated: "2018-09-18"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # IBM Cloud 上的 Identity and Access Management (IAM)
@@ -78,13 +81,14 @@ IBM ID/密碼可用來登入主控台，也可以利用容許使用者 ID/密碼
 支援下列資料庫用戶端介面：
 
 * [ODBC](#odbc-clpplus)
+* [CLP](#odbc-clpplus)
 * [CLPPLUS](#odbc-clpplus)
 * [JDBC](#jdbc)
 
-### ODBC 及 CLPPLUS
+### ODBC、CLP 及 CLPPLUS
 {: #odbc-clpplus}
 
-如果是要使用 IAM 鑑別連接至 Db2 伺服器的 ODBC 應用程式或指令行用戶端 (CLPPLUS)，必須執行下列指令，先在 `db2dsdriver.cfg` 設定檔中設定資料來源名稱 (DSN)：
+如果是要使用 IAM 鑑別連接至 Db2 伺服器的 ODBC 應用程式或指令行用戶端（CLP、CLPPLUS），必須執行下列指令，先在 `db2dsdriver.cfg` 設定檔中設定資料來源名稱 (DSN)：
 
 `db2cli writecfg add -dsn <dsn_alias> -database <database_name> -host <host_name_or_IP_address> -port 50001 -parameter "Authentication=GSSPLUGIN;SecurityTransportMode=SSL"`
 
@@ -123,7 +127,29 @@ IBM ID/密碼可用來登入主控台，也可以利用容許使用者 ID/密碼
 
     如果是 ODBC，您可以在 `db2dsdriver.cfg` 配置檔或應用程式的連線字串中指定 **AUTHENTICATION=GSSPLUGIN**。
 
-* CLPPLUS 連線字串可以包含下列其中一項：
+* CLP CONNECT 陳述式可以包含下列其中一項：
+
+    **存取記號**
+
+    在 CLPPLUS 命令提示字元或 Script 中執行下列指令，連接至資料庫伺服器 `<database_server_name>` 並傳遞存取記號：
+
+    `CONNECT TO <database_server_name> ACCESSTOKEN <access_token_string>`
+
+    **API 金鑰**
+
+    在 CLPPLUS 命令提示字元或 Script 中執行下列指令，使用 API 金鑰連接至資料庫伺服器 `<database_server_name>`：
+
+    `CONNECT TO <database_server_name> APIKEY <api-key-string>`
+
+    **IBM ID/密碼**
+
+    在 CLPPLUS 命令提示字元或 Script 中執行下列指令，使用 IBM ID/密碼連接至資料庫伺服器 `<database_server_name>`：
+
+    `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
+
+    如需使用 CLP 連接至資料庫伺服器的詳細資料，請參閱：[CONNECT（類型 2）陳述式 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}。 
+
+* CLPPLUS CONNECT 陳述式可以包含下列其中一項：
 
     **存取記號**
 
@@ -167,6 +193,12 @@ dataSource.setAccessToken( "<access_token>" );
 Connection conn = dataSource.getConnection( );
 ```
 
+或
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:accessToken=<access_token>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
 **API 金鑰**
 
 ```
@@ -182,6 +214,12 @@ dataSource.setApiKey( "<api_key>" );
 Connection conn = dataSource.getConnection( );
 ```
 
+或
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apikey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
 **IBM ID/密碼**
 
 ```
@@ -193,7 +231,13 @@ dataSource.setServerName( "<host_name_or_IP_address>" );
 dataSource.setPortNumber( 50001 );
 dataSource.setSecurityMechanism( com.ibm.db2.jcc.DB2BaseDataSource.PLUGIN_SECURITY );
 dataSource.setPluginName( "IBMIAMauth" );
-Connection conn = dataSource.getConnection( "<user_ID>", "<password>" );
+Connection conn = dataSource.getConnection( "<IBMid>", "<password>" );
+```
+
+或
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:user=<IBMid>;password=<password>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
 ```
 
 ## 主控台使用者體驗
@@ -210,7 +254,7 @@ Connection conn = dataSource.getConnection( "<user_ID>", "<password>" );
 
   `curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid>","ibmid":"<userid>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"`
 
-  **附註**：`"id"` 及 `"ibmid"` 的 `<userid>` 值不必相同。這兩個不同的 ID 不會以任何方式鏈結在一起。
+  `"id"` 及 `"ibmid"` 的 `<userid>` 值不必相同。這兩個不同的 ID 不會以任何方式鏈結在一起。{: note}
 
 * 若要移轉現有的非 IBM ID 資料庫使用者（例如 `abcuser`）並使他們成為 IBM ID 使用者，首先請執行下列範例 API 呼叫來刪除非 IBM ID 使用者 ID：
 

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-26"
 
 ---
@@ -12,12 +12,15 @@ lastupdated: "2018-10-26"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 資料虛擬化（聯合）
-{: #overview}
+{: #fed}
 
-{{site.data.keyword.Db2_on_Cloud_short}} 支援 Db2 資料虛擬化（也稱為聯合）。資料虛擬化讓您能以單一查詢存取位於組織內任意處的多個分散式資料庫的所有資料。您可以存取位於任何 Db2 或 Informix 資料來源的資料，資料來源在雲端或內部部署皆可。
+{{site.data.keyword.Db2_on_Cloud_short}} 支援 Db2 資料虛擬化（也稱為聯合）。資料虛擬化讓您能對位於組織各地多個分散式庫料庫上的所有資料，進行單一查詢的存取。您可以存取位於任何 Db2 或 Informix 資料來源的資料，不論是在雲端或內部部署皆可。
 {: shortdesc}
 
 在除了免費精簡方案以外的所有 {{site.data.keyword.Db2_on_Cloud_short}} 版本都支援此功能。不過，您可以使用精簡方案作為從其取回資料的目標。
@@ -27,7 +30,7 @@ lastupdated: "2018-10-26"
 
 ### 合併資料來源
 
-藉由聯合位於組織中任意處之雲端及內部部署的資料來源，您的虛擬化資料會看似從單一來源擷取。資料虛擬化免除了負擔沉重且成本高昂的資料移轉處理程序，讓您能有效率且具成本效益地分析您的所有資料。
+藉由聯合位於雲端及組織任意處內部部署的資料來源，您的虛擬化資料會彷彿從單一來源擷取。資料虛擬化免除了負擔沉重且成本高昂的資料移轉處理程序，讓您能有效率且具成本效益地分析您的所有資料。
 
 <!-- A company may have started their operations with an on-premises Db2 server. As cloud technology becomes more widespread and companies start to operate on cloud in a cost-effective fashion, there will be continued Cloud growth. However, the organization’s data on both sources remain as a critical component to their decision-making processes. By way of example, a client operating in retail industry needs to be able to access all data, say customer information, to run further analysis on their customers’ consumption behaviors. They need to be able to identify customers, match their records on cloud with already existing ones from an on-premises database and compose them as if the data is being retrieved from a single source. Federation capability here prevents the burdensome data migration process and allows the user to access the data without moving the data.
 
