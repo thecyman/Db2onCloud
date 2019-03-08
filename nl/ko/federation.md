@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-26"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -60,6 +64,7 @@ Db2 제품군의 제품 사용자는 {{site.data.keyword.Db2_on_Cloud_short}} �
 다음 단계는 서로 다른 데이터 소스를 연합하여 단일 소스에서 데이터가 검색되는 것처럼 보이게 하는 방법의 예입니다. 다음 예는 두 개의 {{site.data.keyword.Db2_on_Cloud_short}} 데이터베이스의 연합을 보여줍니다.
 
 ### Db2 on Cloud 대상 시스템의 경우
+{: #targ}
 
 호스트 이름: targetdotcom
 
@@ -118,6 +123,7 @@ Db2 제품군의 제품 사용자는 {{site.data.keyword.Db2_on_Cloud_short}} �
 -->
 
 ### 연합 소스로 사용 중인 Db2 on Cloud 시스템의 경우
+{: #fed_src}
 
 {{site.data.keyword.Db2_on_Cloud_short}} 콘솔에서 다음을 수행하십시오.
 
@@ -146,6 +152,7 @@ Db2 제품군의 제품 사용자는 {{site.data.keyword.Db2_on_Cloud_short}} �
    `select * from ntest1`
 
 ## 추가 정보
+{: #more_info}
 
 데이터 가상화(연합)에 대한 자세한 정보는 [Federation![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}을 참조하십시오.
 

@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-12-05"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -47,10 +51,10 @@ lastupdated: "2018-12-05"
 |  | RTO: オフサイト・ノード HADR | < 3 分 | コンソール・ボタンまたは API を使用して開始する必要があります |
 |  |  |  |  |
 | システム構成 | 最大 RAM およびコア数 | 1 TB RAM、48 コア | Precise Performance XL プランに適用されます |
-|  | 最大ストレージ | 11 TB | Precise Performance XL プランに適用されます。データとログの両方のためのディスク。|
+|  | 最大ストレージ | 11 TB | Precise Performance XL プランに適用されます。 データとログの両方のためのディスク。 |
 |  | Flex: 基本プラン | 4 GB RAM、1 コア、2 GB ディスク | - |
-|  | Flex: 最大 RAM およびコア数 | 128 GB RAM、32 コア | より高い仕様が必要ですか? Precise Performance プランを使用するか IBM サポートにお問い合わせください。|
-|  | Flex: 最大ストレージ | 4 TB |データとログの両方のためのディスク。 より高い仕様が必要ですか? Precise Performance プランを使用するか IBM サポートにお問い合わせください。|
+|  | Flex: 最大 RAM およびコア数 | 128 GB RAM、32 コア | より高い仕様が必要ですか? Precise Performance プランを使用するか IBM サポートにお問い合わせください。 |
+|  | Flex: 最大ストレージ | 4 TB | データとログの両方のためのディスク。 より高い仕様が必要ですか? Precise Performance プランを使用するか IBM サポートにお問い合わせください。 |
 |  |  |  |  |
 | 保守ポリシーおよび SLA | 高可用性プラン | 99.99% | - |
 |  | 単一サーバー・プラン | 99.5% | - |
@@ -66,7 +70,7 @@ lastupdated: "2018-12-05"
 |  | コンプライアンスの完全リスト | Y | [セキュリティー・コンプライアンス ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | バックアップおよびリストア | 日次バックアップ | Y | 14 日間の日次バックアップ |
-|  | ポイント・イン・タイム・セルフ・サービス・リカバリー | 2018 年 11 月 15 日から使用可能 | [ポイント・イン・タイム・リストア](br.html#point-in-time) |
+|  | ポイント・イン・タイム・セルフ・サービス・リカバリー | 2018 年 11 月 15 日から使用可能 | [ポイント・イン・タイム・リストア](/docs/services/Db2onCloud/br.html#point-in-time) |
 |  | オフサイトでのバックアップの保持 | 要求時 | 2018 年 12 月 1 日時点ではオフサイトがデフォルトです  |
 |  | 最長 10 年までバックアップを保持 | 要求時 | 2018 年 12 月 1 日時点ではサポート・チケットが必要です |
 |  | リストアせずに古いデータを照会 | Y | [タイム・トラベル照会 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} のセットアップが必要です |
@@ -85,14 +89,14 @@ lastupdated: "2018-12-05"
 | 料金および購入 | BYOL 割引 | Y | [発表 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://ibm.biz/db2oncloud-byol){:new_window} |
 |  | IBM Cloud 上で使用可能 | Y | サブスクリプションと従量課金 (PAYG) の両方 |
 |  | ソフトウェア見積もりオーダーで入手可能 | Y | Flex も含めてすべてのプラン。 [パーツおよび詳細 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://ibm.biz/db2oncloud-parts-public){:new_window}|
-|  | Hybrid Data Management Platform (HDMP) 上で使用可能 | Y | Flex プランのみ。[HDMP についての詳細 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/ca-en/marketplace/hybrid-data-management-platform){:new_window}|
+|  | Hybrid Data Management Platform (HDMP) 上で使用可能 | Y | Flex プランのみ。 [HDMP についての詳細 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/ca-en/marketplace/hybrid-data-management-platform){:new_window}|
 |  | 日次請求 | Y | Flex プランの請求処理は、ピーク日次使用量に基づきます。 例えば、ある 1 日のある 1 時間だけ 2 個のコアから 8 個のコアに拡大する場合、その日についてのみ 8 個のコアに関して請求され、その月の他のすべての日については 2 個のコアに関して請求されます。 |
 |  | 毎時請求 | [ロードマップにあり ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - | 
-|  | メイン料金算定基準 | 月次 | 料金は月単位で示されます (例: 月当たり 189 ドル)。 月次料金の日割り計算は、サービスが終了した月のうちサービスがアクティブだった日数に基づきます。 [例](plans_pricing.html) |
+|  | メイン料金算定基準 | 月次 | 料金は月単位で示されます (例: 月当たり 189 ドル)。 月次料金の日割り計算は、サービスが終了した月のうちサービスがアクティブだった日数に基づきます。 [例](/docs/services/Db2onCloud/plans_pricing.html) |
 |  |  |  |  |
 | デプロイおよびスケーリングの所要時間 | ダラス | **デプロイ**: < 5 分。 **スケーリング**: < 45 分。 | Flex プランのみ (インベントリーによる) |
 | | その他の米国南部 | **デプロイ**: 1 日。 **スケーリング**: 8 時間。 | 他の場所より短い場所があります |
-| | フランクフルトおよびロンドン | **デプロイ**: < 5 分。**スケーリング**: 2 時間。 | Flex プランのみ (インベントリーによる) |
+| | フランクフルトおよびロンドン | **デプロイ**: < 5 分。 **スケーリング**: 2 時間。 | Flex プランのみ (インベントリーによる) |
 | | その他の EU | **デプロイ**: 3 日から 5 日。 **スケーリング**: 1 日から 2 日。 | 他の場所より短い場所があります |
 | | シドニー | **デプロイ**: < 1 時間。 **スケーリング**: 2 時間。 | Flex プランのみ (インベントリーによる) |
 | | その他の AP | **デプロイ**: 3 日から 5 日。 **スケーリング**: 3 日から 5 日。 | 他の場所より短い場所があります。 AP でのボリュームが小さいと、インフラストラクチャーのプロビジョニング時間が遅くなります。 |

@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-26"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -60,6 +64,7 @@ Db2 系列產品的使用者可以聯合來自 {{site.data.keyword.Db2_on_Cloud_
 下列步驟是您如何著手進行不同資料來源聯合的範例，以期看似資料是從單一來源擷取。下列範例說明兩個 {{site.data.keyword.Db2_on_Cloud_short}} 資料庫的聯合：
 
 ### 在 Db2 on Cloud 目標機器上
+{: #targ}
 
 主機名稱：targetdotcom
 
@@ -118,6 +123,7 @@ Db2 系列產品的使用者可以聯合來自 {{site.data.keyword.Db2_on_Cloud_
 -->
 
 ### 在用來作為聯合來源的 Db2 on Cloud 機器上
+{: #fed_src}
 
 從 {{site.data.keyword.Db2_on_Cloud_short}} 主控台：
 
@@ -146,6 +152,7 @@ Db2 系列產品的使用者可以聯合來自 {{site.data.keyword.Db2_on_Cloud_
    `select * from ntest1`
 
 ## 其他資訊
+{: #more_info}
 
 如需資料虛擬化（聯合）的相關資訊，請參閱：[聯合 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}。
 

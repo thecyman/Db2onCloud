@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-02"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -18,7 +22,7 @@ lastupdated: "2019-01-02"
 {:pre: .pre}
 
 # Copia de seguridad y restauración
-{: #br}
+{: #bnr}
 
 Para los planes de pago, se realizan copias de seguridad cifradas de la base de datos a diario. Se conserva una copia de seguridad diaria para cada uno de los últimos 14 días.
 {: shortdesc}

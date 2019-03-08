@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-10"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -41,6 +45,8 @@ lastupdated: "2019-01-10"
 您可以使用 Db2 指令行用戶端（例如 CLPPlus）進行連線，以存取詳細資訊及診斷程式。
 
 ### 基本觀念：
-{: #overview}
+{: #basic_overview}
 
 有 2 種基本類型的檢查。外部性能/執行時間檢查，及以度量值為基礎的監視。IBM 會監視數以百計的度量值，並儲存那些度量值作為歷程。警示會根據這些度量值的值而產生。這些警示會傳送給 IBM 作業人員，以確保看到並解決這些警示。此外，IBM 也會傳送保存的作業系統及診斷日誌以便快速進行診斷。{{site.data.keyword.Db2_on_Cloud_short}} 遵守 GDPR，且 IBM EU Cloud 選項視需要提供更高層次的 GDPR 遵循。
+
+

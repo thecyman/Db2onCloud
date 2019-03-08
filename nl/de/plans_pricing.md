@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-31"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -37,18 +41,18 @@ Wenn die benötigte Konfiguration im Katalog nicht angezeigt wird, wenden Sie si
 ## Preisstrukturen
 {: #pricing}
 
-Preise werden auf monatlicher Basis für einen aktivierten Service angegeben (Beispiel: $ 189 USD pro Monat).  
+Preise werden auf monatlicher Basis für einen aktivierten Service angegeben (Beispiel: $ 189 USD pro Monat). 
 
-Wenn der aktivierte Service vor dem Monatsende beendet wird, spiegelt der monatliche Preis den Anteil des Monats wider, während dessen der Service aktiviert war. 
+Wenn der aktivierte Service vor dem Monatsende beendet wird, spiegelt der monatliche Preis den Anteil des Monats wider, während dessen der Service aktiviert war.
 
 ### Abrechnungsbeispiele
 {: #examples}
 
-In den folgenden Abrechnungsbeispielen wird eine Beispielgebühr von $ 189 USD pro Monat für den Plan verwendet. 
+In den folgenden Abrechnungsbeispielen wird eine Beispielgebühr von $ 189 USD pro Monat für den Plan verwendet.
 
 **Beispiel 1: Monatliche Abrechnung**
 
-Solange der Service für jeden monatlichen Abrechnungszeitraum aktiviert bleibt, wird eine Gebühr von $ 189 USD pro Monat berechnet, auch wenn der Service nicht genutzt wird. 
+Solange der Service für jeden monatlichen Abrechnungszeitraum aktiviert bleibt, wird eine Gebühr von $ 189 USD pro Monat berechnet, auch wenn der Service nicht genutzt wird.
 
 **Beispiel 2: Tägliche Abrechnung**
 
@@ -56,5 +60,5 @@ Die Abrechnung für Flex-Pläne basiert auf dem Spitzenwert der täglichen Nutzu
 
 **Beispiel 3: Anteilmäßige Abrechnung**
 
-Wenn ein aktivierter Service mit einer monatlichen Gebühr von $ 189 USD pro Monat vor seiner Beendigung an 20 von 30 Tagen des Monats genutzt wurde, würde eine Gebühr von $ 189 USD x 20/30 = $ 126 USD berechnet. 
+Wenn ein aktivierter Service mit einer monatlichen Gebühr von $ 189 USD pro Monat vor seiner Beendigung an 20 von 30 Tagen des Monats genutzt wurde, würde eine Gebühr von $ 189 USD x 20/30 = $ 126 USD berechnet.
 

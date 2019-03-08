@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2017-06-21"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 

@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-12-05"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -66,7 +70,7 @@ Les fonctions et spécifications d'{{site.data.keyword.Db2_on_Cloud_long}} sont 
 |  | Liste complète des conformités | O | [Conformités de sécurité ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | Sauvegarde & restauration | Sauvegardes quotidiennes | O | 14 jours de sauvegardes quotidiennes |
-|  | Reprise en libre service ponctuelle | Disponible le 15 nov 2018 | [Restauration avec point de cohérence](br.html#point-in-time) |
+|  | Reprise en libre service ponctuelle | Disponible le 15 nov 2018 | [Restauration avec point de cohérence](/docs/services/Db2onCloud/br.html#point-in-time) |
 |  | Sauvegardes conservées hors site | A la demande | Hors site par défaut au 1er déc 2018  |
 |  | Conservation de sauvegarde jusqu'à 10 ans | A la demande | Dès le 1er déc 2018. Requiert un ticket de demande de service. |
 |  | Interrogation d'anciennes données sans restauration | O | [Time Travel Query ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} doit être configuré |
@@ -88,7 +92,7 @@ Les fonctions et spécifications d'{{site.data.keyword.Db2_on_Cloud_long}} sont 
 |  | Disponible sur la plateforme HDMP (Hybrid Data Management Platform) | O | Plan Flex uniquement. [Détails sur la plateforme HDMP ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/ca-en/marketplace/hybrid-data-management-platform){:new_window}|
 |  | Facturation quotidienne | O | La facturation pour les plans Flex repose sur une utilisation quotidienne aux heures pleines. Par exemple, si vous passez de 2 à 8 coeurs pour une heure d'un jour, vous serez facturé pour 8 coeurs pour uniquement ce jour, et 2 coeurs pour tous les autres jours du mois. |
 |  | Facturation horaire | [Dans la feuille de route ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - | 
-|  | Grille tarifaire principale | Mensuelle | Les prix sont définis sur une base mensuelle (par exemple, 189 dollars américains par mois). Un prix mensuel au prorata repose sur le nombre de jours de service activé pendant le mois au cours duquel le service a été interrompu. [Exemples](plans_pricing.html) |
+|  | Grille tarifaire principale | Mensuelle | Les prix sont définis sur une base mensuelle (par exemple, 189 dollars américains par mois). Un prix mensuel au prorata repose sur le nombre de jours de service activé pendant le mois au cours duquel le service a été interrompu. [Exemples](/docs/services/Db2onCloud/plans_pricing.html) |
 |  |  |  |  |
 | Durées de déploiement & de mise à l'échelle | Dallas | **Déploiement **: < 5 minutes. **Mise à l'échelle **: < 45 minutes. | Plan Flex seulement, selon le stock |
 | | Autre Sud des Etats-Unis | **Déploiement **: 1 jour. **Mise à l'échelle **: 8 heures. | Certains emplacements plus courts que d'autres |

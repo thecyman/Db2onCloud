@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-10"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -41,6 +45,8 @@ Para ver a disponibilidade do Activity Tracker, consulte o [roteiro ![Ícone de 
 É possível se conectar a um cliente da linha de comando do Db2, como o CLPPlus, para acessar informações detalhadas e diagnósticos.
 
 ### Uma visão geral básica:
-{: #overview}
+{: #basic_overview}
 
 Há dois tipos básicos de verificação. Verificações externas de funcionamento/tempo de atividade e monitoramento baseado em métricas. A IBM monitora centenas de métricas e as armazena historicamente. Com base nos valores dessas métricas, os alertas são gerados. Esses alertas são enviados para a equipe de operações da IBM para assegurar que eles sejam vistos e abordados. Além disso, a IBM também envia os logs de diagnósticos e do sistema operacional arquivados para diagnóstico rápido. O {{site.data.keyword.Db2_on_Cloud_short}} está em conformidade com o GDPR e as opções do IBM EU Cloud fornecem um nível ainda mais alto de comprometimento com o GDPR, se necessário.
+
+

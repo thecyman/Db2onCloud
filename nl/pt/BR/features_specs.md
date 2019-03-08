@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-12-05"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -35,7 +39,7 @@ Os recursos e as especificações do {{site.data.keyword.Db2_on_Cloud_long}} sã
 |  |  |  |  |
 | Alta disponibilidade e replicação | DR externo | S | - |
 |  | Alta disponibilidade (2 nós em 1 zona) | S | 99,99% de tempo de atividade do SLA |
-|  | Diferentes zonas no mesmo data center | [No roteiro ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://ibm.biz/db2oncloud-roadmap){:new_window} |**Nota**: o HADR externo está disponível |
+|  | Diferentes zonas no mesmo data center | [No roteiro ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://ibm.biz/db2oncloud-roadmap){:new_window} | **Nota**: o HADR externo está disponível |
 |  | Captura de dados de mudança (CDC) | S | - |
 |  | Uso como HADR das instalações | N | Usar o CDC. Para obter informações, consulte [Como posso migrar ou sincronizar dados do Db2 para o Db2 on Cloud? ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://developer.ibm.com/answers/questions/426111/how-can-i-migrate-from-db2-to-db2-on-cloud/){:new_window} |
 |  | Failover autônomo - HA | S | - |
@@ -66,7 +70,7 @@ Os recursos e as especificações do {{site.data.keyword.Db2_on_Cloud_long}} sã
 |  | Lista completa de conformidades | S | [Conformidades de segurança ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | Backup e restauração | Backups diários | S | 14 dias de backups diários |
-|  | Recuperação self-serve point-in-time | Disponível em 15 de novembro de 2018 | [Restauração point-in-time](br.html#point-in-time) |
+|  | Recuperação self-serve point-in-time | Disponível em 15 de novembro de 2018 | [Restauração point-in-time](/docs/services/Db2onCloud/br.html#point-in-time) |
 |  | Backups mantidos externos | Por encomenda | A partir de 1º de dezembro de 2018, o externo será o padrão  |
 |  | Manter backup por até 10 anos | Por encomenda | A partir de 1º de dezembro de 2018. Requer chamado de suporte. |
 |  | Consultar dados antigos sem restauração | S | Deve-se configurar o [Time Travel Query ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} |
@@ -88,7 +92,7 @@ Os recursos e as especificações do {{site.data.keyword.Db2_on_Cloud_long}} sã
 |  | Disponível no Hybrid Data Management Platform (HDMP) | S | Somente o plano Flex. [Detalhes sobre o HDMP ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/ca-en/marketplace/hybrid-data-management-platform){:new_window}|
 |  | Faturamento diário | S | O faturamento para os planos Flex é baseado no uso diário de pico. Por exemplo, se você escalar de 2 a 8 núcleos para uma hora de um dia, será faturado por 8 núcleos para apenas este dia e 2 núcleos para todos os outros dias do mês. |
 |  | Faturamento por hora | [No roteiro ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - | 
-|  | Métrica de atribuição de preço principal | Mensal | Os preços são declarados em termos mensais (por exemplo, US$ 189 por mês). Um preço mensal rateado é baseado no número de dias de serviço ativado durante o mês em que o serviço foi finalizado. [Exemplos](plans_pricing.html) |
+|  | Métrica de atribuição de preço principal | Mensal | Os preços são declarados em termos mensais (por exemplo, US$ 189 por mês). Um preço mensal rateado é baseado no número de dias de serviço ativado durante o mês em que o serviço foi finalizado. [Exemplos](/docs/services/Db2onCloud/plans_pricing.html) |
 |  |  |  |  |
 | Implementação e durações de ajuste de escala | Dallas | **Implementar**: < 5 minutos. **Escalar**: < 45 minutos. | Plano Flex apenas, dependendo do inventário |
 | | Outros do sul dos Estados Unidos | **Implementar**: 1 dia. **Escalar**: 8 horas. | Algumas localizações são mais curtas do que outras |

@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-21"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -46,7 +50,7 @@ IBM ID가 있는 사용자를 특정 데이터베이스 서비스 인스턴스�
 서비스 ID는 사용자 ID가 사용자를 식별하는 방법과 유사하게 서비스 또는 애플리케이션을 식별합니다. 서비스 ID는 애플리케이션이 IBM Cloud 서비스로 인증하는 데 사용할 수 있는 ID입니다. 서비스 ID는 소유한 IBM ID와 별개의 항목입니다. 따라서 데이터베이스 내의 특정한 서비스 ID에 다른 권한을 부여할 수 있습니다. 서비스 ID에는 비밀번호가 없습니다. 데이터베이스 서비스 인스턴스에 연결할 각각의 서비스 ID에 대해 API 키를 작성해야 합니다. 서비스 ID에 대한 자세한 정보는 [IBM Cloud IAM 서비스 ID 및 API 키 소개 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:new_window}를 참조하십시오.
 
 ## 클라이언트 연결 및 사용자 로그인
-{: #connect}
+{: #connect_user}
 
 **필수 소프트웨어**: Db2 Client V11.1 FP3 이상.
 
@@ -280,7 +284,7 @@ Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_addr
 서비스 API에 대한 세부사항은 [{{site.data.keyword.Db2_on_Cloud_short}} REST API ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/db2oc_api){:new_window}를 참조하십시오.
 
 ## IBM ID 연합
-{: #fed}
+{: #fed_ibmid}
 
 LDAP과 같은 사용자 고유의 ID 제공자를 사용하려면 먼저 LDAP 서버를 IBM ID와 연합해야 합니다. LDAP 서버를 IBM ID와 연합하는 데 대한 지시사항은 [IBM ID 엔터프라이즈 연합 채택 안내서 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://ibm.ent.box.com/notes/78040808400?s=nhuzrhlsn0ly338zddomx329tlpmfghc){:new_window}를 참조하십시오. IBM ID 연합이 완료되고 데이터베이스 관리자가 허용된 사용자를 데이터베이스 서비스 인스턴스에 추가하면 해당 사용자가 회사 사용자 ID 및 비밀번호를 사용하여 콘솔에 로그인할 수 있습니다. 또는 해당 사용자는 사용자 ID를 나타내는 액세스 토큰 또는 API 키를 사용하여 지원되는 데이터베이스 클라이언트 인터페이스 중 하나를 통해 데이터베이스 서비스 인스턴스에 연결할 수 있습니다.
 

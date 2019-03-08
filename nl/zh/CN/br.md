@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-02"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -18,7 +22,7 @@ lastupdated: "2019-01-02"
 {:pre: .pre}
 
 # 备份和复原
-{: #br}
+{: #bnr}
 
 对于付费套餐，每天完成加密数据库备份。保留最近 14 天中每天的每日备份。
 {: shortdesc}

@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-10"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -41,6 +45,8 @@ Para consultar la disponibilidad del Rastreador de disponibilidad, consulte la [
 Puede conectarse mediante un cliente de línea de mandatos de Db2, como CLPPlus, para acceder a información detallada y diagnósticos.
 
 ### Una visión general básica:
-{: #overview}
+{: #basic_overview}
 
 Hay 2 tipos de comprobación. Las comprobaciones de salud/tiempo de funcionamiento y las supervisiones basadas en métricas. IBM supervisa cientos de métricas y las almacena históricamente. Basándose en los valores de estas métricas, se generan alertas. Estas alertas se envían al personal de operaciones de IBM para asegurarse de que se ven y se responde a ellas. Además, IBM también envía registros del sistema operativo y de diagnóstico para una diagnosis rápida. {{site.data.keyword.Db2_on_Cloud_short}} cumple con el Reglamento general de protección de datos, y las opciones de IBM Cloud de IBM EU proporcionan un cumplimiento aún mayor de la normativa GDPR si es necesario.
+
+

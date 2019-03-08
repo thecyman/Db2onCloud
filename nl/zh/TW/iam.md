@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-21"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -46,7 +50,7 @@ Identity and Access Management (IAM) 可讓您安全地鑑別平台服務的使�
 服務 ID 識別服務或應用程式的方式，與使用者 ID 識別使用者的方式類似。服務 ID 是應用程式可用來向 IBM Cloud 服務進行鑑別的 ID。服務 ID 代表有別於擁有之 IBM ID 的實體。因此，可以授與資料庫內服務 ID 特有的不同權限及許可權。服務 ID 沒有密碼。您必須為每個服務 ID 建立 API 金鑰，才能讓服務 ID 連接至資料庫服務實例。如需服務 ID 的相關資訊，請參閱：[IBM Cloud IAM 服務 ID 及 API 金鑰簡介 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:new_window}。
 
 ## 用戶端連線及使用者登入
-{: #connect}
+{: #connect_user}
 
 **必備項目**：Db2 Client 11.1 版 FP3 以及更新版本。
 
@@ -279,7 +283,7 @@ Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_addr
 如需服務 API 的詳細資料，請參閱：[{{site.data.keyword.Db2_on_Cloud_short}} REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/db2oc_api){:new_window}。
 
 ## IBM ID 聯合
-{: #fed}
+{: #fed_ibmid}
 
 若要使用您自己的身分提供者（例如 LDAP），您必須先使用 IBM ID 聯合 LDAP 伺服器。如需使用 IBM ID 聯合 LDAP 伺服器的指示，請參閱：[IBMid Enterprise Federation Adoption Guide ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://ibm.ent.box.com/notes/78040808400?s=nhuzrhlsn0ly338zddomx329tlpmfghc){:new_window}。在 IBM ID 聯合完成且資料庫管理者將容許的使用者新增至資料庫服務實例之後，這些使用者就可以使用他們的公司使用者 ID 和密碼登入主控台。或者，這些使用者可以使用代表其使用者 ID 的存取記號或 API 金鑰，透過其中一個支援的資料庫用戶端介面連接至資料庫服務實例。
 

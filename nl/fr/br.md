@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-02"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -18,7 +22,7 @@ lastupdated: "2019-01-02"
 {:pre: .pre}
 
 # Sauvegarde et restauration
-{: #br}
+{: #bnr}
 
 Dans le cas de plans payants, des sauvegardes chiffrées de la base de données sont effectuées quotidiennement. Une sauvegarde quotidienne est conservée pour chacun des 14 derniers jours.
 {: shortdesc}

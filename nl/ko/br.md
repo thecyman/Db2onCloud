@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-02"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -18,7 +22,7 @@ lastupdated: "2019-01-02"
 {:pre: .pre}
 
 # 백업 및 복원
-{: #br}
+{: #bnr}
 
 유료 플랜의 경우 데이터베이스의 암호화된 백업이 매일 수행됩니다. 지난 14일 동안의 일별 백업이 보관됩니다.
 {: shortdesc}

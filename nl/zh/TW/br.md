@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-02"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -18,7 +22,7 @@ lastupdated: "2019-01-02"
 {:pre: .pre}
 
 # 備份及還原
-{: #br}
+{: #bnr}
 
 針對付費方案，每天會進行資料庫的加密備份。針對過去的 14 天，會保留每天的當日備份。
 {: shortdesc}

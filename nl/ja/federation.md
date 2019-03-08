@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-26"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -78,6 +82,7 @@ Db2 ファミリー製品のユーザーは、
 ます。
 
 ### Db2 on Cloud ターゲット・マシン上:
+{: #targ}
 
 ホスト名: targetdotcom
 
@@ -136,6 +141,7 @@ Db2 ファミリー製品のユーザーは、
 -->
 
 ### フェデレーション・ソースとして使用されている DB2 on Cloud マシン上:
+{: #fed_src}
 
 {{site.data.keyword.Db2_on_Cloud_short}} コンソールから、以下を行います。
 
@@ -164,6 +170,7 @@ Db2 ファミリー製品のユーザーは、
    `select * from ntest1`
 
 ## 追加情報
+{: #more_info}
 
 データ仮想化 (フェデレーション) について詳しくは、[フェデレーション ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window} を参照してください。
 

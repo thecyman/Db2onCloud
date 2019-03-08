@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-12-05"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -47,9 +51,9 @@ lastupdated: "2018-12-05"
 |  | RTO: HADR auf einem ausgelagerten Knoten | < 3 min | Initiierung mit Konsolenschaltfläche oder API erforderlich |
 |  |  |  |  |
 | Systemkonfigurationen | Max. RAM und Cores | 1 TB RAM, 48 Cores | Für Precise Performance XL-Plan gültig. |
-|  | Max. Speicher | 11 TB | Für Precise Performance XL-Plan gültig.  Plattenspeicher für Daten und Protokolle. |
+|  | Max. Speicher | 11 TB | Für Precise Performance XL-Plan gültig. Plattenspeicher für Daten und Protokolle. |
 |  | Flex: Basisplan | 4 GB RAM, 1 Core, 2 GB Plattenspeicher | - |
-|  | Flex: Max. RAM und Cores | 128 GB RAM, 32 Cores |Höhere Spezifikationen erforderlich? Precise Performance-Plan verwenden oder IBM Support kontaktieren. |
+|  | Flex: Max. RAM und Cores | 128 GB RAM, 32 Cores | Höhere Spezifikationen erforderlich? Precise Performance-Plan verwenden oder IBM Support kontaktieren. |
 |  | Flex: Max. Speicher | 4 TB | Plattenspeicher für Daten und Protokolle. Höhere Spezifikationen erforderlich? Precise Performance-Plan verwenden oder IBM Support kontaktieren. |
 |  |  |  |  |
 | Wartungsrichtlinien & SLAs | Hochverfügbarkeitspläne | 99,99 % | - |
@@ -66,7 +70,7 @@ lastupdated: "2018-12-05"
 |  | Umfassende Compliance-Liste | J | [Einhaltung von Sicherheitsbestimmungen ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | Sicherung & Wiederherstellung | Tägliche Sicherungen | J | 14 Tage mit täglichen Sicherungen |
-|  | Zeitpunktgesteuerte Recovery (Self-Service) | Verfügbar ab 15. Nov. 2018 | [Zeitpunktgesteuerte Wiederherstellung](br.html#point-in-time) |
+|  | Zeitpunktgesteuerte Recovery (Self-Service) | Verfügbar ab 15. Nov. 2018 | [Zeitpunktgesteuerte Wiederherstellung](/docs/services/Db2onCloud/br.html#point-in-time) |
 |  | Ausgelagerte Sicherungen | Auf Anfrage | Ab 01. Dez. 2018 standardmäßig ausgelagert.  |
 |  | Sicherung bis zu 10 Jahre aufbewahren | Auf Anfrage | Ab 01. Dez. 2018. Support-Ticket erforderlich. |
 |  | Alte Daten ohne Wiederherstellung abfragen | J | Einrichten von [Time Travel Query ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} erforderlich. |
@@ -79,8 +83,8 @@ lastupdated: "2018-12-05"
 |  | IP-Whitelisting | Einige | Auf Db2-Benutzerebene verfügbar. Für die Netzebene ICIAE o. ä. in Betracht ziehen.  |
 |  | Key Protect (BYOK) | [In Roadmap ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
 |  | MIS/vernetzter Service | [In Roadmap ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - |
-|  | Grenzwert für maximale Anzahl gleichzeitiger Verbindungen: **Kostenfreier Plan** | J | Maximal 5 Verbindungen |
-|  | Grenzwert für maximale Anzahl gleichzeitiger Verbindungen: **Kostenpflichtige Pläne** | N | Unbegrenzte Anzahl von Verbindungen |
+|  | Grenzwert für maximale Anzahl gleichzeitiger Verbindungen: **Kostenfreier Plan** | J | Maximal 5 Verbindungen  |
+|  | Grenzwert für maximale Anzahl gleichzeitiger Verbindungen: **Kostenpflichtige Pläne** | N | Unbegrenzte Anzahl von Verbindungen  |
 |  |  |  |  |
 | Preisstruktur & Kauf | BYOL-Rabatte | J | [Ankündigung ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://ibm.biz/db2oncloud-byol){:new_window} |
 |  | In IBM Cloud verfügbar | J | Sowohl Abonnement als auch nutzungsabhängig |
@@ -88,7 +92,7 @@ lastupdated: "2018-12-05"
 |  | In Hybrid Data Management Platform (HDMP) verfügbar | J | Nur Flex-Plan. [Details zu HDMP ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/ca-en/marketplace/hybrid-data-management-platform){:new_window}|
 |  | Tägliche Abrechnung | J | Die Abrechnung für Flex-Pläne basiert auf dem Spitzenwert der täglichen Nutzung. Beispiel: Bei einem Scale-up von 2 auf 8 Cores für eine Stunde eines Tages werden nur für diesen Tag 8 Cores in Rechnung gestellt, 2 Cores für alle anderen Tage des Monats. |
 |  | Stündliche Abrechnung | [In Roadmap ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - | 
-|  | Hauptsächliche Preismetrik | Monatlich | Preise werden auf monatlicher Basis angegeben (Beispiel: $ 189 USD pro Monat). Ein anteilmäßiger monatlicher Preis basiert für einen aktivierten Service auf der Anzahl der Tage pro Monat, in denen der Service beendet wurde. [Beispiele](plans_pricing.html) |
+|  | Hauptsächliche Preismetrik | Monatlich | Preise werden auf monatlicher Basis angegeben (Beispiel: $ 189 USD pro Monat). Ein anteilmäßiger monatlicher Preis basiert für einen aktivierten Service auf der Anzahl der Tage pro Monat, in denen der Service beendet wurde. [Beispiele](/docs/services/Db2onCloud/plans_pricing.html) |
 |  |  |  |  |
 | Bereitstellungs- & Skalierungsdauer | Dallas | **Bereitstellung**: < 5 Minuten. **Skalierung**: < 45 Minuten. | Nur Flex-Plan, abhängig vom Bestand |
 | | USA (Süden) (sonstige) | **Bereitstellung**: 1 Tag. **Skalierung**: 8 Stunden. | Geringere Dauer an bestimmten Standorten. |

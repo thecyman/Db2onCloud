@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-10"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -41,6 +45,8 @@ Per la disponibilità del programma di traccia dell'attività, consulta [roadmap
 Puoi connetterti con un client riga di comando Db2, come CLPPlus, per accedere alle diagnostiche e alle informazioni dettagliate.
 
 ### Una panoramica di base:
-{: #overview}
+{: #basic_overview}
 
 Esistono 2 tipi base di controllo. I controlli di integrità/tempo di attività esterni e il monitoraggio basato sulla metrica. IBM monitora centinaia di metriche e le archivia cronologicamente. In base ai valori di queste metriche, vengono generati degli avvisi. Questi avvisi vengono inviati allo staff operativo IBM per avere la certezza che vengano visti e risolti. Inoltre, IBM invia anche i log di diagnostica e di sistema operativo archiviati per una diagnosi rapida. {{site.data.keyword.Db2_on_Cloud_short}} è conforme al GDPR e le opzioni cloud dell'UE di IBM forniscono un elevato livello di conformità al GDPR, se necessario.
+
+

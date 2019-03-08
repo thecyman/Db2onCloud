@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-26"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -60,6 +64,7 @@ La federazione ti dà la possibilità di aumentare la capacità di un database i
 I seguenti passi sono un esempio di come puoi federare le tue diverse origini dati per sembrare come se i dati fossero richiamati da una singola origine. Il seguente esempio illustra la federazione di due database {{site.data.keyword.Db2_on_Cloud_short}}:
 
 ### Nella macchina di destinazione Db2 on Cloud
+{: #targ}
 
 Nome host: targetdotcom
 
@@ -118,6 +123,7 @@ Nome host: targetdotcom
 -->
 
 ### Su una macchina Db2 on Cloud che viene utilizzata come un'origine di federazione
+{: #fed_src}
 
 Dalla console di {{site.data.keyword.Db2_on_Cloud_short}}:
 
@@ -146,6 +152,7 @@ Dalla console di {{site.data.keyword.Db2_on_Cloud_short}}:
    `select * from ntest1`
 
 ## Ulteriori informazioni
+{: #more_info}
 
 Per ulteriori informazioni sulla virtualizzazione dei dati (federazione), vedi: [Federation ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}.
 

@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-21"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -52,7 +56,7 @@ Os usuários com um IBMid devem ser incluídos em cada instância de serviço de
 Um ID de serviço identifica um serviço ou um aplicativo semelhante a como um ID de usuário identifica um usuário. Os IDs de serviço são IDs que podem ser usados pelos aplicativos para autenticação em um serviço do IBM Cloud. Um ID de serviço representa uma entidade separada do IBMid proprietário. Portanto, diferentes autoridades e permissões específicas podem ser concedidas ao ID de serviço dentro do banco de dados. Os IDs de serviço não têm senhas. Uma chave API deve ser criada para cada ID de serviço para que ele se conecte à instância de serviço de banco de dados. Para obter mais informações sobre os IDs de serviço, consulte: [Introduzindo os IDs de serviço e as chaves API do IBM Cloud IAM ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:new_window}.
 
 ## Conexões do cliente e logins do usuário
-{: #connect}
+{: #connect_user}
 
 **Pré-requisito**: Db2 Client V11.1 FP3 e mais recente.
 
@@ -326,7 +330,7 @@ Para obter mais detalhes sobre a API de seu serviço, consulte:
 ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/db2oc_api){:new_window}.
 
 ## Federação do IBMid
-{: #fed}
+{: #fed_ibmid}
 
 Para usar o seu próprio provedor de identidade, como o LDAP, deve-se primeiro federar o servidor LDAP
 com o IBMid. Para obter instruções sobre como federar o servidor LDAP com o IBMid, consulte:

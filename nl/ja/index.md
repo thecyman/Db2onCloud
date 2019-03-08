@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-02"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -28,10 +32,10 @@ lastupdated: "2019-01-02"
 {{site.data.keyword.Db2_on_Cloud_long}} は、クラウド内でプロビジョンされた SQL データベースです。 任意のデータベース・ソフトウェアを使用するのと同じように {{site.data.keyword.Db2_on_Cloud_short}} を使用できますが、ハードウェアのセットアップやソフトウェアのインストールおよび保守のためのオーバーヘッドもコストもかかりません。 
 {: shortdesc}
 
-資格情報を作成します。初めて IBM Cloud を使用するユーザーは、サービスを作成した後、サービスの起動時に**「資格情報の作成」**ボタンをクリックして、ユーザー名とパスワードを作成する必要があります。厳密に言うと、資格情報がなくても Web コンソールにログインすることはできますが、Db2 ツールの多くを使用するためにはユーザー名とパスワードが必要になります。
+資格情報を作成します。 初めて IBM Cloud を使用するユーザーは、サービスを作成した後、サービスの起動時に**「資格情報の作成」**ボタンをクリックして、ユーザー名とパスワードを作成する必要があります。 厳密に言うと、資格情報がなくても Web コンソールにログインすることはできますが、Db2 ツールの多くを使用するためにはユーザー名とパスワードが必要になります。
 {: important}
 
-また、[ 無料の Db2 Developer Edition ダウンロード ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window} を使用して、ローカルの Db2 データベースをインストールすることもできます。ここでは、すぐに使用できる Db2 Developer Edition が、Docker コンテナー内のツールとともに速や
+また、[ 無料の Db2 Developer Edition ダウンロード ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window} を使用して、ローカルの Db2 データベースをインストールすることもできます。 ここでは、すぐに使用できる Db2 Developer Edition が、Docker コンテナー内のツールとともに速や
 かにインストールされます (Docker は不要です。必要なコンポーネントは自動的にインストールされます)。 
 
 <!-- ## Free trial
@@ -74,7 +78,7 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 ### ご使用のコンピューターへの Db2 コマンド・ライン・クライアントおよびドライバーのインストール
 {: #connect_apps}
 
-大半のユーザーはこのステップをスキップできます。ほとんどの場合、ユーザーは REST API のみを使用するか、Python の `pip` コマンドなどを使用してフレームワーク用のドライバーをインストールすることが多いはずです。しかし、パワー・ユーザーは、Db2 コマンド・ライン・クライアントを使用して、データベースを管理し、Db2 コマンドを使用することが必要な場合もあります。また、特定の ODBC アプリケーションや JDBC アプリケーションは、Db2 ドライバーを汎用インストールすると恩恵を受けることができます。その場合は、以下のステップを実行してください。
+大半のユーザーはこのステップをスキップできます。 ほとんどの場合、ユーザーは REST API のみを使用するか、Python の `pip` コマンドなどを使用してフレームワーク用のドライバーをインストールすることが多いはずです。 しかし、パワー・ユーザーは、Db2 コマンド・ライン・クライアントを使用して、データベースを管理し、Db2 コマンドを使用することが必要な場合もあります。 また、特定の ODBC アプリケーションや JDBC アプリケーションは、Db2 ドライバーを汎用インストールすると恩恵を受けることができます。 その場合は、以下のステップを実行してください。
 {: shortdesc}
 
 <!-- Drivers on site are broken so taking out this one -Simon. 1. Download the [driver package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} from the Connection info page of the {{site.data.keyword.Db2_on_Cloud_short}} web console.-->

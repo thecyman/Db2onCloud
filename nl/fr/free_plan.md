@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-12-07"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -46,7 +50,7 @@ Ce plan est toujours gratuit et votre carte de crédit ne sera pas débitée.
 ## Restrictions du plan gratuit
 {: #fp_restrictions}
 
-Il est fortement recommandé d'utiliser un plan de service de niveau d'entreprise et non un plan de service gratuit pour les charges de travail sensibles aux performances ou stratégiques.
+Il est fortement recommandé d'utiliser un plan de service de niveau d'entreprise et non un plan de service gratuit pour les charges de travail sensibles aux performances ou stratégiques. 
 {: important}
 
 La tableau suivant présente les restrictions du plan de service gratuit {{site.data.keyword.Db2_on_Cloud_short}} :

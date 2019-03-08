@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-26"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -60,6 +64,7 @@ Db2 系列产品的用户可联合 {{site.data.keyword.Db2_on_Cloud_short}} 和 
 以下步骤是如何联合不同的数据源以便看起来如同从单个源检索数据的示例。以下示例说明两个 {{site.data.keyword.Db2_on_Cloud_short}} 数据库的联合：
 
 ### 在 Db2 on Cloud 目标机器上
+{: #targ}
 
 主机名：targetdotcom
 
@@ -118,6 +123,7 @@ Db2 系列产品的用户可联合 {{site.data.keyword.Db2_on_Cloud_short}} 和 
 -->
 
 ### 在将用作联合源的 Db2 on Cloud 机器上
+{: #fed_src}
 
 在 {{site.data.keyword.Db2_on_Cloud_short}} 控制台中：
 
@@ -146,6 +152,7 @@ Db2 系列产品的用户可联合 {{site.data.keyword.Db2_on_Cloud_short}} 和 
    `select * from ntest1`
 
 ## 其他信息
+{: #more_info}
 
 有关数据虚拟化（联合）的更多信息，请参阅：[联合 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}。
 

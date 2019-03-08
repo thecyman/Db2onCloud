@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-03-21"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -20,7 +24,7 @@ lastupdated: "2018-03-21"
 # 연결
 {: #connect}
 
-명령행 인터페이스, IBM® 또는 서드파티 애플리케이션이나 도구, 작성한 앱을 Db2® 데이터베이스에 연결할 수 있습니다.
+명령행 인터페이스, IBM® 또는 서드파티 애플리케이션이나 도구, 작성한 앱을 Db2® 데이터베이스에 연결할 수 있습니다. 
 {: shortdesc}
 
 ## 전제조건

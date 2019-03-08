@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-10"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -41,6 +45,8 @@ lastupdated: "2019-01-10"
 您可以使用 Db2 命令行客户机（例如 CLPPlus）进行连接以访问详细信息和诊断。
 
 ### 基本概述：
-{: #overview}
+{: #basic_overview}
 
 有 2 种基本类型的检查。外部运行状况/正常运行时间检查和基于度量值的监视。IBM 会监视数百个度量值，并存储这些度量值的历史记录。根据这些度量值来生成警报。将这些警报发送给 IBM 操作人员，以确保他们能够及时查看和解决警报。此外，IBM 还会发送归档的操作系统和诊断日志，以便进行快速诊断。{{site.data.keyword.Db2_on_Cloud_short}} 符合 GDPR，如果需要，可以通过 IBM EU Cloud 选项来获得更高级别的 GDPR 遵从性。
+
+

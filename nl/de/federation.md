@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-26"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -60,6 +64,7 @@ Die Föderierungsfunktionen ermöglichen es Ihnen, die Kapazität einer lokalen 
 In den folgenden Schritten wird anhand eines Beispiels veranschaulicht, wie unterschiedliche, verteilte Datenquellen föderiert werden können, damit Daten so abgerufen werden können, als ob sie aus einer einzelnen Quelle stammen. Das folgende Beispiel stellt die Föderierung zweier {{site.data.keyword.Db2_on_Cloud_short}}-Datenbank dar:
 
 ### Auf der Db2 on Cloud-Zielmaschine
+{: #targ}
 
 Hostname: targetdotcom
 
@@ -118,6 +123,7 @@ Hostname: targetdotcom
 -->
 
 ### Auf einer Db2 on Cloud-Maschine, die als Föderierungsquelle verwendet wird
+{: #fed_src}
 
 Führen Sie in der {{site.data.keyword.Db2_on_Cloud_short}}-Konsole die folgenden Schritte aus:
 
@@ -146,6 +152,7 @@ Führen Sie in der {{site.data.keyword.Db2_on_Cloud_short}}-Konsole die folgende
    `select * from ntest1`
 
 ## Zusätzliche Informationen
+{: #more_info}
 
 Weitere Informationen zur Datenvirtualisierung (Föderierung) finden Sie in [Föderierung![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}.
 

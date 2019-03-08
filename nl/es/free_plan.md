@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-12-07"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -68,7 +72,7 @@ A continuación se muestra una tabla de restricciones del plan gratuito de {{sit
 |  | IBM Cloud Dedicated | No soportado |
 |  |  |
 | Conformidad de seguridad | Health Insurance Portability and Accountability Act de 1996 (HIPAA) | No soportada. Consulte la descripción de servicio. |
-|  | Reglamento General de Protección de Datos de la Unión Europea (GDPR) | No soportada. Consulte la descripción de servicio. |
+|  | Reglamento General de Protección de Datos de la Unión Europea (GDPR) | No soportado. Consulte la descripción de servicio. |
 |  |  |
 | Gestión de cuentas | Reactivación | Se requiere la reactivación cada 30 días. Si no se reactiva, los servicios del plan gratuito se suprimen 60 días más tarde.  |
 {: caption="Tabla 1. {{site.data.keyword.Db2_on_Cloud_short}} Restricciones del plan gratuito" caption-side="top"}

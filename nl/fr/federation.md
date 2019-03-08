@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-26"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -60,6 +64,7 @@ La fédération vous permet d'accroître la capacité d'une base de données sur
 L'exemple de procédure ci-dessous vous montre comment fédérer vos sources de données disparates afin que les données semblent extraites d'une source unique. Il illustre la fédération de deux bases de données {{site.data.keyword.Db2_on_Cloud_short}} :
 
 ### Sur la machine cible Db2 on Cloud
+{: #targ}
 
 Nom d'hôte : targetdotcom
 
@@ -118,6 +123,7 @@ Nom d'hôte : targetdotcom
 -->
 
 ### Sur une machine Db2 on Cloud utilisée en tant que source de la fédération
+{: #fed_src}
 
 A partir de la console {{site.data.keyword.Db2_on_Cloud_short}} :
 
@@ -146,6 +152,7 @@ A partir de la console {{site.data.keyword.Db2_on_Cloud_short}} :
    `select * from ntest1`
 
 ## Informations complémentaires
+{: #more_info}
 
 Pour plus d'informations sur la virtualisation des données (fédération), voir : [Federation ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}.
 

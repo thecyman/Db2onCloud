@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-21"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -46,7 +50,7 @@ IBM ID を持つユーザーが特定のデータベース・サービス・イ�
 ユーザー ID がユーザーを識別するように、サービス ID はサービスまたはアプリケーションを識別します。 サービス ID は、アプリケーションが IBM Cloud サービスでの認証に使用できる ID です。 サービス ID は、所有している IBM ID とは分離したエンティティーを表します。 したがって、異なる権限および許可をデータベース内のサービス ID に固有に付与できます。 サービス ID にはパスワードはありません。 サービス ID がデータベース・サービス・インスタンスに接続するためには、サービス ID ごとに API キーが作成される必要があります。 サービス ID について詳しくは、[Introducing IBM Cloud IAM Service IDs and API Keys ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:new_window} を参照してください。
 
 ## クライアント接続およびユーザー・ログイン
-{: #connect}
+{: #connect_user}
 
 **前提条件**: Db2 Client V11.1 FP3 以降。
 
@@ -254,7 +258,7 @@ Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_addr
 
   `curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid>","ibmid":"<userid>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"`
 
-  `"id"` と `"ibmid"` の `<userid>` 値が同じである必要はありません。この 2 つの異なる ID がリンクされることはありません。
+  `"id"` と `"ibmid"` の `<userid>` 値が同じである必要はありません。 この 2 つの異なる ID がリンクされることはありません。
   {: note}
 
 * 既存の非 IBM ID データベース・ユーザー (例えば、`abcuser`) をマイグレーションして IBM ID ユーザーにするには、最初に、以下の例のような API 呼び出しを実行して、非 IBM ID ユーザー ID を削除します。
@@ -280,7 +284,7 @@ Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_addr
 サービスの API について詳しくは、[{{site.data.keyword.Db2_on_Cloud_short}} REST API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/db2oc_api){:new_window} を参照してください。
 
 ## IBM ID 統合
-{: #fed}
+{: #fed_ibmid}
 
 LDAP などの独自の ID プロバイダーを使用するには、まず LDAP サーバーを IBM ID と統合する必要があります。 LDAP サーバーと IBM ID の統合の手順については、[IBMid Enterprise Federation Adoption Guide ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://ibm.ent.box.com/notes/78040808400?s=nhuzrhlsn0ly338zddomx329tlpmfghc){:new_window} を参照してください。 IBM ID 統合が完了し、許可されるユーザーがデータベース管理者によってデータベース・サービス・インスタンスに追加された後、これらのユーザーは会社のユーザー ID とパスワードを使用してコンソールにログインできます。 あるいは、これらのユーザーは、ユーザー ID を表すアクセス・トークンまたは API キーを使用して、サポートされるデータベース・クライアント・インターフェースの 1 つを介してデータベース・サービス・インスタンスに接続できます。
 

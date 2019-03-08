@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-12-07"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -17,7 +21,7 @@ lastupdated: "2018-12-07"
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Piano gratuito 
+# Piano gratuito
 {: #free_plan}
 
 Il piano gratuito di {{site.data.keyword.Db2_on_Cloud_long}} fornisce le risorse di base per farti sviluppare o imparare ad utilizzare Db2 senza addebiti.
@@ -46,7 +50,7 @@ Il piano gratuito è sempre gratuito e la tua carta di credito non verrà addebi
 ## Limitazioni del piano gratuito
 {: #fp_restrictions}
 
-Ti consigliamo fortemente di utilizzare un piano di servizio a livello aziendale invece di un piano di servizio gratuito per i carichi di lavoro di importanza critica o sensibili alle prestazioni.
+Ti consigliamo fortemente di utilizzare un piano di servizio a livello aziendale invece di un piano di servizio gratuito per i carichi di lavoro di importanza critica o sensibili alle prestazioni. 
 {: important}
 
 La seguente è una tabella di limitazioni del piano gratuito {{site.data.keyword.Db2_on_Cloud_short}}:
@@ -67,10 +71,10 @@ La seguente è una tabella di limitazioni del piano gratuito {{site.data.keyword
 | Ambiente di rete | IBM Cloud Integrated Analytics | Non supportato |
 |  | IBM Cloud dedicato | Non supportato |
 |  |  |
-| Conformità di sicurezza | HIPAA (Health Information Portability and Accountability Act) del 1996 |Non supportato. Fai riferimento alla tua descrizione del servizio. |
-|  | Regolamento generale sulla protezione dei dati EU (GDPR) |Non supportato. Fai riferimento alla tua descrizione del servizio. |
+| Conformità di sicurezza | HIPAA (Health Information Portability and Accountability Act) del 1996 | Non supportato. Fai riferimento alla tua descrizione del servizio. |
+|  | Regolamento generale sulla protezione dei dati EU (GDPR) | Non supportato. Fai riferimento alla tua descrizione del servizio. |
 |  |  |
 | Gestione account | Riattivazione | Riattivazione richiesta ogni 30 giorni. Se non riattivato, i servizi del piano gratuito vengono eliminati dopo 60 giorni.  |
-{: caption="Tabella 1. Limitazioni del piano gratuito {{site.data.keyword.Db2_on_Cloud_short}} " caption-side="top"}
+{: caption="Tabella 1. Limitazioni del piano gratuito {{site.data.keyword.Db2_on_Cloud_short}}" caption-side="top"}
 
 

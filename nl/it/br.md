@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-02"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -18,12 +22,12 @@ lastupdated: "2019-01-02"
 {:pre: .pre}
 
 # Backup e ripristino
-{: #br}
+{: #bnr}
 
 Per i piani a pagamento, i backup crittografati del database vengono eseguiti giornalmente. Un backup giornaliero viene conservato per ognuno degli ultimi 14 giorni.
 {: shortdesc}
 
-In aggiunta ai backup standard, puoi utilizzare [Time Travel Query ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} per conservare i dati cronologici per altri scopi, come ad esempio una query istantanea di dati precedenti o un controllo semplificato. Puoi anche eseguire le tue esportazioni utilizzando IBM Data Studio o un qualsiasi strumento Db2. 
+In aggiunta ai backup standard, puoi utilizzare [Time Travel Query ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} per conservare i dati cronologici per altri scopi, come ad esempio una query istantanea di dati precedenti o un controllo semplificato. Puoi anche eseguire le tue esportazioni utilizzando IBM Data Studio o un qualsiasi strumento Db2.
  
 Per informazioni sui ripristini del punto temporale, consulta [Ripristino del punto temporale](#point-in-time).
 
@@ -35,7 +39,7 @@ Tutti i piani a pagamento normalmente utilizzano IBM Cloud Object Storage (COS) 
 
 Puoi anche utilizzare l'[IBM Lift CLI ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://lift.ng.bluemix.net/){:new_window} per importare i dati in {{site.data.keyword.Db2_on_Cloud_short}}.
 
-## Ripristino del punto temporale 
+## Ripristino del punto temporale
 {: #point-in-time}
 
 {{site.data.keyword.Db2_on_Cloud_short}} ha aggiunto una funzionalità di ripristino del punto temporale. Puoi eseguire il ripristino in un punto nel tempo esatto dai tuoi backup. Oggi, per la maggior parte dei clienti, devi richiedere del supporto per attivare questa funzione. Consulta la seguente pianificazione di distribuzione.

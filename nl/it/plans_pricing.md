@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-31"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -37,7 +41,7 @@ Se nel catalogo non vedi una configurazione che risponda alle tue esigenze, cont
 ## Prezzi
 {: #pricing}
 
-I prezzi sono indicati in termini mensili (ad esempio, $189 dollari al mese) per un servizio attivato.  
+I prezzi sono indicati in termini mensili (ad esempio, $189 dollari al mese) per un servizio attivato. 
 
 Se un servizio attivato viene terminato prima del completamento del mese, il prezzo mensile riflette la porzione del mese durante la quale il servizio è rimasto attivato.
 

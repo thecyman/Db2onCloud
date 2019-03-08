@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-02"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -30,7 +34,7 @@ Genaue Kenntnisse über die jeweiligen Richtlinien unterstützen Sie dabei, Work
 
 Wenn für den {{site.data.keyword.Db2_on_Cloud_short}}-Service eine geplante Systemwartung durchgeführt werden muss, werden ab 27. März 2018 die zentralen Rechnezentren (London, Dallas und Sydney) an unterschiedlichen Wochentagen aktualisiert. Alle anderen Rechenzentren werden gleichzeitig an einem anderen Wochentag aktualisiert, der nicht mit den Wartungstagen der zentralen Rechenzentren zusammenfällt. Tabelle 1 enthält ein Beispiel für einen {{site.data.keyword.Db2_on_Cloud_short}}-Systemwartungsplan.
 
-| Rechenzentrum |Beispiel für einen möglichen Wartungsplan |
+| Rechenzentrum | Beispiel für einen möglichen Wartungsplan |
 |-------------|-----------------------------|
 | London | Montag |
 | Dallas | Dienstag |

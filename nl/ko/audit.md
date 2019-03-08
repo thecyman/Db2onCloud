@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-10"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -41,6 +45,8 @@ lastupdated: "2019-01-10"
 자세한 정보와 진단에 액세스하기 위해 CLPPlus와 같은 Db2 명령행 클라이언트를 사용하여 연결할 수 있습니다.
 
 ### 기본 개요:
-{: #overview}
+{: #basic_overview}
 
 검사의 기본 유형은 두 가지가 있습니다. 즉, 외부 상태/가동 시간 검사 및 메트릭 기반 모니터링입니다. IBM에서는 수백 개의 메트릭을 모니터하고 해당 메트릭을 히스토리별로 저장합니다. 해당 메트릭 값을 기반으로 경보가 생성됩니다. 경보를 보고 처리할 수 있도록 이 경보는 IBM 운영 직원에게 전송됩니다. 또한 IBM에서는 신속한 진단을 위해 아카이브된 운영 체제와 진단 로그를 전송합니다. {{site.data.keyword.Db2_on_Cloud_short}}는 GDPR을 준수하고 필요한 경우 IBM EU Cloud 옵션을 통해 더 높은 수준으로 GDPR을 준수할 수 있습니다.
+
+

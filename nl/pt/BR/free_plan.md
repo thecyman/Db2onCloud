@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-12-07"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -53,7 +57,7 @@ O plano Grátis é sempre grátis e seu cartão de crédito não será cobrado.
 {: #fp_restrictions}
 
 É altamente recomendável usar um plano de serviço de nível corporativo em vez de um plano de serviço Grátis para cargas
-de trabalho de missão crítica ou sensíveis ao desempenho.
+de trabalho de missão crítica ou sensíveis ao desempenho. 
 {: important}
 
 A seguir está uma tabela de restrições do plano Grátis do {{site.data.keyword.Db2_on_Cloud_short}}:
@@ -76,8 +80,7 @@ diversos locatários |
 | Ambiente de rede | IBM Cloud Integrated Analytics | Não suportado |
 |  | IBM Cloud Dedicated | Não suportado |
 |  |  |
-| Conformidades de segurança | Health Information Portability and Accountability Act de 1996 (HIPAA) | Não suportado. Consulte
-a descrição do serviço. |
+| Conformidades de segurança | Health Information Portability and Accountability Act de 1996 (HIPAA) | Não suportado. Consulte a descrição do serviço. |
 |  | Regulamento Geral sobre a Proteção de Dados da UE (GDPR) | Não suportado. Consulte a descrição do serviço. |
 |  |  |
 | Gerenciamento de conta | Reativação | Reativação necessária a cada 30 dias. Se não forem reativados, os serviços do

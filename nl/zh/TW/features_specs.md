@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-12-05"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -66,7 +70,7 @@ lastupdated: "2018-12-05"
 |  | 規範的完整清單 | 是 | [安全規範 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | 備份及還原 | 每日備份 | 是 | 14 天的每日備份 |
-|  | 時間點自助式回復 | 2018 年 11 月 15 日推出 | [復原點還原](br.html#point-in-time) |
+|  | 時間點自助式回復 | 2018 年 11 月 15 日推出 | [復原點還原](/docs/services/Db2onCloud/br.html#point-in-time) |
 |  | 備份保留在異地 | 在要求時 | 自 2018 12 月 1 日起，異地是預設值。 |
 |  | 保留備份長達 10 年 | 在要求時 | 自 2018 12 月 1 日起。需要支援問題單。 |
 |  | 查詢舊資料而不還原 | 是 | 必須設定 [Time Travel Query ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} |
@@ -88,7 +92,7 @@ lastupdated: "2018-12-05"
 |  |可透過混合式資料管理平台 (HDMP) 取得 | 是 | 僅限於「彈性」方案。[HDMP 相關詳細資料 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/ca-en/marketplace/hybrid-data-management-platform){:new_window}|
 |  | 按日計費 | 是 |「彈性」方案是根據每日的尖峰用量計費。比方說，如果您在某一天的一小時內從 2 個核心擴增到 8 個核心，只有當天會以 8 個核心計費，而當月的所有其他日期則以 2 個核心計費。 |
 |  | 按小時計費 | [在導覽圖中 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - | 
-|  |主要定價標準 | 每月 | 價格是按月表示（例如，每月 $189 美元）。按比例計費的每月價格是根據終止服務當月中啟動服務的天數。 [範例](plans_pricing.html) |
+|  |主要定價標準 | 每月 | 價格是按月表示（例如，每月 $189 美元）。按比例計費的每月價格是根據終止服務當月中啟動服務的天數。 [範例](/docs/services/Db2onCloud/plans_pricing.html) |
 |  |  |  |  |
 | 部署及調整持續時間 | 達拉斯 | **部署**：< 5 分鐘。**調整**：< 45 分鐘。 | 僅限於「彈性」方案，視庫存而定 |
 | | 其他美國南部位置 | **部署**：1 天。**調整**：8 小時。| 某些位置比其他位置更短 |

@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-21"
 
+keywords: 
+
+subcollection: Db2onCloud
+
 ---
 
 <!-- Attribute definitions --> 
@@ -46,7 +50,7 @@ lastupdated: "2019-01-21"
 服务标识用于标识服务或应用程序，类似于用户标识对用户进行标识的方式。服务标识是应用程序可以用来进行 IBM Cloud 服务认证的标识。服务标识表示不同于其所属 IBM 标识的单独实体。因此，在数据库中，可以为特定的服务标识授予不同的权限和许可权。服务标识没有密码。必须为每个服务标识创建 API 密钥，该服务标识才能连接到数据库服务实例。有关服务标识的更多信息，请参阅：[介绍 IBM Cloud IAM 服务标识和 API 密钥 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:new_window}。
 
 ## 客户机连接和用户登录
-{: #connect}
+{: #connect_user}
 
 **必备软件**：Db2 Client V11.1 FP3 及更高版本。
 
@@ -137,13 +141,13 @@ IBM 标识/密码可用于登录控制台，也可在应用程序中发挥与用
 
     **API 密钥**
 
-    用 API 密钥连接到数据库服务器 `<database_server_name>`，方法是在 CLP 命令提示符或脚本处运行以下命令：
+    连接到数据库服务器 `<database_server_name>`，方法是在 CLP 命令提示符或脚本处运行以下命令：
 
     `CONNECT TO <database_server_name> APIKEY <api-key-string>`
 
     **IBM 标识/密码**
 
-    用 IBM 标识/密码连接到数据库服务器 `<database_server_name>`，方法是在 CLP 命令提示符或脚本处运行以下命令：
+    连接到数据库服务器 `<database_server_name>`，方法是在 CLP 命令提示符或脚本处运行以下命令：
 
     `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
 
@@ -159,13 +163,13 @@ IBM 标识/密码可用于登录控制台，也可在应用程序中发挥与用
 
     **API 密钥**
 
-    用 API 密钥连接到 DSN 别名 (`@<data_source_name>`) ，方法是在 CLPPLUS 命令提示符或脚本处运行以下命令：
+    连接到 DSN 别名 (`@<data_source_name>`) ，方法是在 CLPPLUS 命令提示符或脚本处运行以下命令：
 
     `connect @<data_source_name> using(apikey <api-key-string>)`
 
     **IBM 标识/密码**
 
-    用 IBM 标识/密码连接到 DSN 别名 (`@<data_source_name>`) ，方法是在 CLPPLUS 命令提示符或脚本处运行以下命令：
+    连接到 DSN 别名 (`@<data_source_name>`) ，方法是在 CLPPLUS 命令提示符或脚本处运行以下命令：
 
     `connect <IBMid>/<password>@<data_source_name>`
 
@@ -280,7 +284,7 @@ Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_addr
 有关服务 API 的更多详细信息，请参阅：[{{site.data.keyword.Db2_on_Cloud_short}} REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://ibm.biz/db2oc_api){:new_window}。
 
 ## IBM 标识联合
-{: #fed}
+{: #fed_ibmid}
 
 要使用您自己的身份提供程序（如 LDAP），必须先将 LDAP 服务器与 IBM 标识联合。有关将 LDAP 服务器与 IBM 标识联合的指示信息，请参阅：[IBMid Enterprise Federation Adoption Guide ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://ibm.ent.box.com/notes/78040808400?s=nhuzrhlsn0ly338zddomx329tlpmfghc){:new_window}。在数据库管理员完成 IBM 标识联合并将允许的用户添加到数据库服务实例之后，这些用户就可以使用他们的公司用户标识和密码登录到控制台。或者，这些用户也可以使用表示他们用户标识的访问令牌或 API 密钥通过一个受支持的数据库客户机接口来连接数据库服务实例。
 
