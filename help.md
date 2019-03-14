@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2017-06-21"
+lastupdated: "2019-03-14"
 
 keywords: 
 
@@ -27,10 +27,17 @@ subcollection: Db2onCloud
 # Help and support
 {: #help_support}
 
+You can determine the status of the {{site.data.keyword.Db2_on_Cloud_long}} service in {{site.data.keyword.Bluemix_notm}} by checking the following status pages:
+{: tsResolve}
+
+* [IBM Cloud: Status ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/status?selected=status){:new_window}
+* Status monitoring:
+  * [All regions ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window}
+
 ## Getting help and support for Db2 on Cloud
 {: #gettinghelp}
 
-If you have problems or questions when using {{site.data.keyword.Db2_on_Cloud_long}}, you can get help by searching for information or by asking questions through a forum. You can also open a support ticket.
+If you have problems or questions when using {{site.data.keyword.Db2_on_Cloud_short}}, you can get help by searching for information or by asking questions through a forum. You can also open a support ticket.
 {: shortdesc}
 
 When using the forums to ask a question, tag your question so that it is seen by the {{site.data.keyword.Bluemix}} development teams.
