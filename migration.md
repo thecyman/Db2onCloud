@@ -90,5 +90,5 @@ A fast, simple, secure way to physically transfer terabytes to petabytes of data
 
 ![View of the Mass Data Migration device](images/mdms.svg)
 
-For more information about the Mass Data Migration device, see: [Getting started with IBM Cloud Mass Data Migration](/docs/infrastructure/mass-data-migration/index.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+For more information about the Mass Data Migration device, see: [Getting started with IBM Cloud Mass Data Migration](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
 

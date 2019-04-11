@@ -90,5 +90,5 @@ Un modo veloce, semplice e sicuro per trasferire fisicamente da terabyte a petab
 
 ![Vista del dispositivo Mass Data Migration](images/mdms.svg)
 
-Per ulteriori informazioni sul dispositivo Mass Data Migration, vedi: [Introduzione a IBM Cloud Mass Data Migration](/docs/infrastructure/mass-data-migration/index.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+Per ulteriori informazioni sul dispositivo Mass Data Migration, vedi: [Introduzione a IBM Cloud Mass Data Migration](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
 

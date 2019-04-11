@@ -90,5 +90,5 @@ Un método rápido, sencillo y seguro de transferir físicamente terabytes o pet
 
 ![Vista del dispositivo de migración de datos masiva](images/mdms.svg)
 
-Para obtener más información sobre el dispositivo de migración de datos masiva, consulte: [Iniciación a la migración de datos masiva de IBM Cloud](/docs/infrastructure/mass-data-migration/index.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+Para obtener más información sobre el dispositivo de migración de datos masiva, consulte: [Iniciación a la migración de datos masiva de IBM Cloud](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
 

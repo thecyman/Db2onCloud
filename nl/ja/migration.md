@@ -107,5 +107,5 @@ Lift CLI を使用して {{site.data.keyword.Bluemix_notm}} にデータをマ�
 
 Mass Data Migration デバイスについて詳しくは、
 [IBM
-Cloud Mass Data Migration 入門](/docs/infrastructure/mass-data-migration/index.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window} を参照してください。
+Cloud Mass Data Migration 入門](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window} を参照してください。
 

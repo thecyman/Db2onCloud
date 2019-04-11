@@ -90,5 +90,5 @@ Il s'agit d'une méthode rapide, simple et sécurisée pour le transfert physiqu
 
 ![Vue du périphérique Mass Data Migration](images/mdms.svg)
 
-Pour plus d'informations sur le périphérique Mass Data Migration, voir [Getting started with IBM Cloud Mass Data Migration](/docs/infrastructure/mass-data-migration/index.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+Pour plus d'informations sur le périphérique Mass Data Migration, voir [Getting started with IBM Cloud Mass Data Migration](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
 

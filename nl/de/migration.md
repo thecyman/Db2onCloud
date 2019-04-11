@@ -90,5 +90,5 @@ Hierbei handelt es sich um eine schnelle, einfache und sichere Möglichkeit, Dat
 
 ![Ansicht des Mass Data Migration-Geräts](images/mdms.svg)
 
-Weitere Informationen zum Mass Data Migration-Gerät finden Sie in [Einführung in IBM Cloud Mass Data Migration](/docs/infrastructure/mass-data-migration/index.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+Weitere Informationen zum Mass Data Migration-Gerät finden Sie in [Einführung in IBM Cloud Mass Data Migration](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
 

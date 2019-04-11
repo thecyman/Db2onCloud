@@ -90,5 +90,5 @@ Lift CLI를 사용하여 {{site.data.keyword.Bluemix_notm}}로 사용자의 데�
 
 ![Mass Data Migration 디바이스 보기](images/mdms.svg)
 
-Mass Data Migration 디바이스에 대한 자세한 정보는 [IBM Cloud Mass Data Migration 시작하기](/docs/infrastructure/mass-data-migration/index.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}를 참조하십시오.
+Mass Data Migration 디바이스에 대한 자세한 정보는 [IBM Cloud Mass Data Migration 시작하기](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}를 참조하십시오.
 

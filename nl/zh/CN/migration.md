@@ -90,5 +90,5 @@ Lift CLI 是可免费使用的应用程序，用于将数据从表 1 中列出�
 
 ![Mass Data Migration 设备的视图](images/mdms.svg)
 
-有关 Mass Data Migration 设备的更多信息，请参阅：[IBM Cloud Mass Data Migration 入门](/docs/infrastructure/mass-data-migration/index.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}。
+有关 Mass Data Migration 设备的更多信息，请参阅：[IBM Cloud Mass Data Migration 入门](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}。
 
