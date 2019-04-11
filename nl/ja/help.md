@@ -39,9 +39,9 @@ subcollection: Db2onCloud
 * {{site.data.keyword.Db2_on_Cloud_short}} を使用したアプリの開発やデプロイについて技術的な質問がある場合は、質問を [Stack Overflow ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://stackoverflow.com/questions/ask/advice?){:new_window} に投稿し、質問に「bluemix」と「db2oncloud」のタグを付けます。
 * サービスや開始手順に関する質問については、[IBM developerWorks® dW Answers ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.ibm.com/answers/questions/ask/?smartspace=bluemix){:new_window} フォーラムを使用します。 「bluemix」と「db2oncloud」のタグを付けてください。
 
-フォーラムの使用について詳しくは、[ヘルプの利用](/docs/support/index.html#getting-help){:new_window}を参照してください。
+フォーラムの使用について詳しくは、[ヘルプの利用](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window}を参照してください。
 
-IBM サポート・チケットのオープンや、サポート・レベルおよびチケットの重大度について詳しくは、[サポートへのお問い合わせ](/docs/support/index.html#contacting-support){:new_window}を参照してください。
+IBM サポート・チケットのオープンや、サポート・レベルおよびチケットの重大度について詳しくは、[サポートへのお問い合わせ](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support){:new_window}を参照してください。
 
 
 

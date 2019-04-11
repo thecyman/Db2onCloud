@@ -38,9 +38,9 @@ Ao usar os fóruns para fazer uma pergunta, marque a sua pergunta para que ela p
 * Se você tiver questões técnicas sobre como desenvolver ou implementar um app com o {{site.data.keyword.Db2_on_Cloud_short}}, poste sua pergunta no [Stack Overflow ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://stackoverflow.com/questions/ask/advice?){:new_window} e identifique-a com as tags "bluemix" e "db2oncloud".
 * Para questões sobre o serviço e instruções para introdução, use o fórum [IBM developerWorks® dW Answers ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://developer.ibm.com/answers/questions/ask/?smartspace=bluemix){:new_window}. Inclua as tags "bluemix" e "db2oncloud".
 
-Consulte [Obtendo ajuda](/docs/support/index.html#getting-help){:new_window} para obter mais detalhes sobre o uso dos fóruns.
+Consulte [Obtendo ajuda](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window} para obter mais detalhes sobre o uso dos fóruns.
 
-Para obter informações sobre como abrir um chamado de suporte da IBM ou sobre níveis de suporte e severidades de chamados, consulte [Entrando em contato com o suporte](/docs/support/index.html#contacting-support){:new_window}.
+Para obter informações sobre como abrir um chamado de suporte da IBM ou sobre níveis de suporte e severidades de chamados, consulte [Entrando em contato com o suporte](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support){:new_window}.
 
 
 
