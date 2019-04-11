@@ -43,7 +43,7 @@ Si vous utilisez les forums pour poser une question, libellez votre question de 
 Pour plus d'informations sur l'utilisation des forums, voir
 [Comment obtenir de l'aide](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window}.
 
-Pour plus d'informations sur l'ouverture d'un ticket de demande de service IBM, ou sur les niveaux de support et les gravités de tickets, voir [Contacter le service de support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support){:new_window}.
+Pour plus d'informations sur l'ouverture d'un ticket de demande de service IBM, ou sur les niveaux de support et les gravités de tickets, voir [Contacter le service de support](/docs/get-support?topic=get-support-open-case#open-case){:new_window}.
 
 
 

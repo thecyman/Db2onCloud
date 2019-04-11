@@ -47,7 +47,7 @@ When using the forums to ask a question, tag your question so that it is seen by
 
 See [Getting help](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window} for more details about using the forums.
 
-For information about opening an IBM support ticket, or about support levels and ticket severities, see: [Contacting support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support){:new_window}.
+For information about opening an IBM support ticket, or about support levels and ticket severities, see: [Working with support cases](/docs/get-support?topic=get-support-open-case#open-case){:new_window}.
 
 
 

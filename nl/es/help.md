@@ -40,7 +40,7 @@ Al utilizar los foros para formular una pregunta, etiquete la pregunta para que 
 
 Consulte [Obtención de ayuda](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window} para obtener más detalles sobre el uso de los foros.
 
-Para obtener información sobre cómo abrir una incidencia de soporte de IBM, o sobre los niveles de soporte y la gravedad de las incidencias, consulte: [Cómo obtener soporte](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support){:new_window}.
+Para obtener información sobre cómo abrir una incidencia de soporte de IBM, o sobre los niveles de soporte y la gravedad de las incidencias, consulte: [Cómo obtener soporte](/docs/get-support?topic=get-support-open-case#open-case){:new_window}.
 
 
 

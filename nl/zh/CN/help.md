@@ -40,7 +40,7 @@ subcollection: Db2onCloud
 
 有关使用论坛的更多详细信息，请参阅[获取帮助](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window}。
 
-有关开具 IBM 支持凭单或支持级别和凭单严重性的信息，请参阅：[联系支持人员](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support){:new_window}。
+有关开具 IBM 支持凭单或支持级别和凭单严重性的信息，请参阅：[联系支持人员](/docs/get-support?topic=get-support-open-case#open-case){:new_window}。
 
 
 

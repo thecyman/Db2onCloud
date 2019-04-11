@@ -41,7 +41,7 @@ Quando utilizzi i forum per fare una domanda, contrassegna con una tag la tua do
 
 Consulta [Come ottenere supporto](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window} per ulteriori dettagli sull'utilizzo dei forum.
 
-Per informazioni su come aprire un ticket di supporto IBM o sui livelli di supporto e sulla gravità dei ticket, consulta: [Come contattare il supporto](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support){:new_window}.
+Per informazioni su come aprire un ticket di supporto IBM o sui livelli di supporto e sulla gravità dei ticket, consulta: [Come contattare il supporto](/docs/get-support?topic=get-support-open-case#open-case){:new_window}.
 
 
 

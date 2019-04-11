@@ -40,7 +40,7 @@ Wenn Sie in den Foren eine Frage stellen, versehen Sie Ihre Frage mit einem Tag,
 
 Weitere Details zur Nutzung der Foren finden Sie unter [Hilfe anfordern](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window}.
 
-Informationen zum Öffnen eines IBM Support-Tickets oder zu den Supportebenen und den Prioritätsstufen von Tickets finden Sie unter [Support kontaktieren](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support){:new_window}.
+Informationen zum Öffnen eines IBM Support-Tickets oder zu den Supportebenen und den Prioritätsstufen von Tickets finden Sie unter [Support kontaktieren](/docs/get-support?topic=get-support-open-case#open-case){:new_window}.
 
 
 

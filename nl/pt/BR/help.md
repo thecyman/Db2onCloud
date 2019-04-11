@@ -40,7 +40,7 @@ Ao usar os fóruns para fazer uma pergunta, marque a sua pergunta para que ela p
 
 Consulte [Obtendo ajuda](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window} para obter mais detalhes sobre o uso dos fóruns.
 
-Para obter informações sobre como abrir um chamado de suporte da IBM ou sobre níveis de suporte e severidades de chamados, consulte [Entrando em contato com o suporte](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support){:new_window}.
+Para obter informações sobre como abrir um chamado de suporte da IBM ou sobre níveis de suporte e severidades de chamados, consulte [Entrando em contato com o suporte](/docs/get-support?topic=get-support-open-case#open-case){:new_window}.
 
 
 

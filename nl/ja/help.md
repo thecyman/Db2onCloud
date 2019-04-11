@@ -41,7 +41,7 @@ subcollection: Db2onCloud
 
 フォーラムの使用について詳しくは、[ヘルプの利用](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window}を参照してください。
 
-IBM サポート・チケットのオープンや、サポート・レベルおよびチケットの重大度について詳しくは、[サポートへのお問い合わせ](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support){:new_window}を参照してください。
+IBM サポート・チケットのオープンや、サポート・レベルおよびチケットの重大度について詳しくは、[サポートへのお問い合わせ](/docs/get-support?topic=get-support-open-case#open-case){:new_window}を参照してください。
 
 
 

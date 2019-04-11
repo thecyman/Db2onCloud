@@ -40,7 +40,7 @@ subcollection: Db2onCloud
 
 如需使用討論區的詳細資訊，請參閱[取得協助](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window}。
 
-如需開立 IBM 支援問題單的相關資訊，或支援層次與問題單嚴重性的相關資訊，請參閱[與支援中心聯絡](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support){:new_window}。
+如需開立 IBM 支援問題單的相關資訊，或支援層次與問題單嚴重性的相關資訊，請參閱[與支援中心聯絡](/docs/get-support?topic=get-support-open-case#open-case){:new_window}。
 
 
 

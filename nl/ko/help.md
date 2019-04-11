@@ -40,7 +40,7 @@ subcollection: Db2onCloud
 
 포럼 사용에 대한 자세한 내용은 [도움 받기](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window}를 참조하십시오.
 
-IBM 지원 티켓 열기에 대한 정보 또는 지원 레벨 및 티켓 심각도에 대한 정보는 [지원 문의](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support){:new_window}를 참조하십시오.
+IBM 지원 티켓 열기에 대한 정보 또는 지원 레벨 및 티켓 심각도에 대한 정보는 [지원 문의](/docs/get-support?topic=get-support-open-case#open-case){:new_window}를 참조하십시오.
 
 
 
