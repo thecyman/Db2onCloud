@@ -77,7 +77,13 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 ### Installing Db2 command line clients and drivers on your computer
 {: #connect_apps}
 
-Most users can skip this step. In most cases, users tend to use only the REST API, or install drivers for a framework, for example, with Python's `pip` command. However, power users might want to use the Db2 command line client to administer their database and use Db2 commands. Also, certain ODBC or JDBC applications can benefit from a general installation of Db2 drivers. If so, complete the following steps:
+In most cases, users tend to use only the REST API, or install drivers for a framework, for example, with Python's `pip` command:
+Install Python drivers: https://ibm.biz/db2-drivers-python
+Install nodejs drivers: https://ibm.biz/db2-drivers-node (Note: To install node Sequelize, click here: https://github.com/ibmdb/sequelize.)
+
+For more driver install docs, including for Java, Go, Jupyter notebooks, Ruby, PHP and more, click here: https://github.com/ibmdb  
+
+Assuming you installed drivers using suggestions above, you can skip further steps below. However, power users might want to use the Db2 command line client to administer their database and use Db2 commands. Also, certain ODBC or JDBC applications can benefit from a general installation of Db2 drivers. If so, complete the following steps:
 {: shortdesc}
 
 <!-- Drivers on site are broken so taking out this one -Simon. 1. Download the [driver package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} from the Connection info page of the {{site.data.keyword.Db2_on_Cloud_short}} web console.-->
