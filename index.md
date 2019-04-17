@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-01-02"
+lastupdated: "2019-04-17"
 
 keywords: 
 
@@ -77,10 +77,24 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 ### Installing Db2 command line clients and drivers on your computer
 {: #connect_apps}
 
-Most users can skip this step. In most cases, users tend to use only the REST API, or install drivers for a framework, for example, with Python's `pip` command. However, power users might want to use the Db2 command line client to administer their database and use Db2 commands. Also, certain ODBC or JDBC applications can benefit from a general installation of Db2 drivers. If so, complete the following steps:
+In most cases, users tend to use only the REST API, or install drivers for a framework, for example, with Python's `pip` command. 
 {: shortdesc}
 
 <!-- Drivers on site are broken so taking out this one -Simon. 1. Download the [driver package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} from the Connection info page of the {{site.data.keyword.Db2_on_Cloud_short}} web console.-->
+
+To install Python or Node.js framework drivers, click one of the following links:
+- [Python drivers ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2-drivers-python){:new_window}
+- [Node.js drivers ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2-drivers-node){:new_window}
+
+   To install the Node.js ORM called Sequelize, click the following link:
+   [Sequelize ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/ibmdb/sequelize){:new_window}
+   {: note}
+
+For more driver installation options, including Java, Go, Jupyter notebooks, Ruby, PHP, and more, click the following link: 
+
+- [ibmdb ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/ibmdb){:new_window}
+
+Assuming that you already installed framework drivers, you can skip the following steps. However, power users might want to use the Db2 command line client to administer their database and use Db2 commands. Also, certain ODBC or JDBC applications can benefit from a general installation of Db2 drivers. If so, complete the following steps:
 
 1. [Install the driver package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} on the computer where your apps or tools are running.
 2. [Configure the driver files ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} for your {{site.data.keyword.Db2_on_Cloud_short}} database.
