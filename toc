@@ -5,11 +5,15 @@
 {: .toc subcollection="Db2onCloud" audience="service" arm="1920570" href="/docs/services/Db2onCloud/index.html" path="services/Db2onCloud"}
 Db2 on Cloud
 
-	{: .navgroup id="learn"}
-	index.md
+    {: .navgroup id="learn"}
+    getting-started.md
     features_specs.md
     iam.md
-    connecting.md
+        
+    {: .topicgroup}
+    Connections
+        connecting.md
+        connectivity_options.md
 
     {: .topicgroup}
     Connecting to another Db2 database
