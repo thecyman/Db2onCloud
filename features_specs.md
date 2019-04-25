@@ -61,7 +61,7 @@ subcollection: Db2onCloud
 |  | Offsite DR node | 99.5% | Must use additional local HA to achieve 99.99% |
 |  | Maintenance policy | Y | [Read details ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/439146/where-can-i-find-detail-about-maintenance-and-noti.html){:new_window} |
 |  |  |  |  |
-| Security compliances | HIPAA Ready | Y | All paid plans including Flex. Must request HIPAA mode from IBM Support. <!--For Db2 Warehouse on Cloud [see docs here ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/docs/services/Db2whc/index.html#getting_started){:new_window}.--> |
+| Security compliances | HIPAA Ready | Y | All paid plans including Flex. Must request HIPAA mode from IBM Support. |
 |  | HITRUST  | [In roadmap ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oncloud-roadmap){:new_window} | Db2 Hosted can be used today for HITRUST |
 |  | International Organization for Standardization (ISO)  | Y | ISO 27001, 27002, 27017, and 27018 |
 |  | Service Organization Controls (SOC) | Y | SOC 2 Type 2 |

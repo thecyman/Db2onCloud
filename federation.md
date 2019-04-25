@@ -59,7 +59,7 @@ Federation gives you the ability to increase the capacity of an on-premises data
 <!-- By using federation, users can increase capacity of an on premises database by federating to or from the cloud. This is a great option if your on premises database is running out of storage. Increased capacity will also be useful for new development as our users no longer need to change a database in production. You can also use this feature to federate between two Db2 on Cloud databases to increase the capacity beyond the current limits of the Flex plan. -->
 
 ## Getting started
-{: #getting_started}
+{: #getting_started_fed}
 
 The following steps are an example of how you go about federating your disparate data sources to appear as if the data is retrieved from a single source. The following example illustrates the federation of two {{site.data.keyword.Db2_on_Cloud_short}} databases:
 

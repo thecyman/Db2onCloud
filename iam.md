@@ -58,7 +58,7 @@ The following methods can be used for IAM authentication:
 
 **Access token**
 
-An access token can be obtained from the IAM service directly by the application through the REST API by using an API key. For more information, see: [Getting an {{site.data.keyword.Bluemix_notm}} IAM token by using an API key ![External link icon](../../icons/launch-glyph.svg "External link icon")](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey){:new_window}. The access token has a default validity period of 60 minutes before it expires. If the token has expired, the Db2 server won't allow the connection to be established. The token isn’t checked for expiry after the connection is established. Just as it was prior to IAM integration, the connection will stay connected until the application disconnects or the connection is terminated due to other reasons.
+An access token can be obtained from the IAM service directly by the application through the REST API by using an API key. For more information, see: [Getting an IBM Cloud IAM token by using an API key ![External link icon](../../icons/launch-glyph.svg "External link icon")](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey){:new_window}. The access token has a default validity period of 60 minutes before it expires. If the token has expired, the Db2 server won't allow the connection to be established. The token isn’t checked for expiry after the connection is established. Just as it was prior to IAM integration, the connection will stay connected until the application disconnects or the connection is terminated due to other reasons.
 
 ```
 curl -k -X POST \
@@ -68,8 +68,6 @@ curl -k -X POST \
   --data-urlencode "apikey=<apikey>" \
   "https://iam.bluemix.net/identity/token"
 ```
-
-<!-- `curl -k -X POST \ --header "Content-Type:application/x-www-form-urlencoded" \ --header "Accept: application/json" \ --data-urlencode "grant_type=urn:ibm:params:oauth:grant-type:apikey" \ --data-urlencode "apikey=<apikey>" \ "https://iam.bluemix.net/identity/token"` -->
 
 An access token identifies an IBMid user or a service ID to the database. The database server verifies the validity of the access token before accepting it. This is the best method if the application needs to connect to more than one database service instance or other {{site.data.keyword.Bluemix_notm}} service instances because it minimizes the communication to the IAM service to validate the access token.
 

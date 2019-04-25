@@ -37,11 +37,6 @@ Create credentials. For those of you new to IBM Cloud, after creating the servic
 
 You can also install a local Db2 database by using the [free Db2 Developer Edition download ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window}. It rapidly installs a ready-to-go developer edition of Db2 with tools inside a Docker container (Docker not required; it automatically installs any necessary components). 
 
-<!-- ## Free trial
-{: #freetrial}
-
-You can try the {{site.data.keyword.Db2_on_Cloud_short}} Precise Performance 500 (2.8.500) plan for 7 days on {{site.data.keyword.Bluemix_notm}} without charge. [Free trial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/db2){:new_window} -->
-
 ## Interfaces
 {: #interfaces}
 
