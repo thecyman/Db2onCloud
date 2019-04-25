@@ -29,13 +29,13 @@ subcollection: Db2onCloud
 # Getting started tutorial
 {: #getting_started_db2oncloud}
 
-{{site.data.keyword.Db2_on_Cloud_long}} is an SQL database provisioned for you in the cloud. You can use {{site.data.keyword.Db2_on_Cloud_short}} just as you would use any database software, but without the overhead and expense of hardware setup or software installation and maintenance. 
+{{site.data.keyword.Db2_on_Cloud_long}} is an SQL database that is provisioned for you in the cloud. You can use {{site.data.keyword.Db2_on_Cloud_short}} just as you would use any database software, but without the time and expense of hardware setup or software installation and maintenance. 
 {: shortdesc}
 
-Create credentials. For those new to IBM Cloud, after creating the service you must create a user name and password by clicking the **Create Credentials** button when you launch the service. Technically, you can log in to the web console without credentials, but you'll need the user name and password to use many of the Db2 tools.
+Create credentials. For those of you new to IBM Cloud, after creating the service you must create a user name and password by clicking the **Create Credentials** button when you start the service. Technically, you can log in to the web console without credentials, but you need the user name and password to use many of the Db2 tools.
 {: important}
 
-You can also install a local Db2 database using the [free Db2 Developer Edition download ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window}. It rapidly installs a ready-to-go developer edition of Db2 with tools inside a Docker container (Docker not required; it will automatically install any necessary components). 
+You can also install a local Db2 database by using the [free Db2 Developer Edition download ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window}. It rapidly installs a ready-to-go developer edition of Db2 with tools inside a Docker container (Docker not required; it automatically installs any necessary components). 
 
 <!-- ## Free trial
 {: #freetrial}
@@ -74,7 +74,7 @@ You can access your {{site.data.keyword.Db2_on_Cloud_short}} web console in the 
 With Db2 Warehouse plans, you can perform tasks related to file management, loading data, and running R scripts by using the [Db2 Warehouse REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-api){:new_window}.
 {: shortdesc} -->
 
-### Installing Db2 command line clients and drivers on your computer
+### Installing Db2 command-line clients and drivers on your computer
 {: #connect_apps}
 
 In most cases, users tend to use only the REST API, or install drivers for a framework, for example, with Python's `pip` command. 
@@ -90,11 +90,11 @@ To install the Node.js ORM called Sequelize, click the following link:
 [Sequelize ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/ibmdb/sequelize){:new_window}
 {: note}
 
-For more driver installation options, including Java, Go, Jupyter notebooks, Ruby, PHP, and more, click the following link: 
+For more driver installation options, including Java, Go, Jupyter Notebooks, Ruby, PHP, and more, click the following link: 
 
 - [ibmdb ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/ibmdb){:new_window}
 
-Assuming that you already installed framework drivers, you can skip the following steps. However, power users might want to use the Db2 command line client to administer their database and use Db2 commands. Also, certain ODBC or JDBC applications can benefit from a general installation of Db2 drivers. If so, complete the following steps:
+Assuming that you already installed framework drivers, you can skip the following steps. However, power users might want to use the Db2 command-line client to administer their database and use Db2 commands. Also, certain ODBC or JDBC applications can benefit from a general installation of Db2 drivers. If so, complete the following steps:
 
 1. [Install the driver package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} on the computer where your apps or tools are running.
 2. [Configure the driver files ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} for your {{site.data.keyword.Db2_on_Cloud_short}} database.
@@ -102,7 +102,7 @@ Assuming that you already installed framework drivers, you can skip the followin
 ### Use Db2 on Cloud as a data source for your {{site.data.keyword.Bluemix_notm}} apps or services
 {: #data_src}
 
-Apps hosted on {{site.data.keyword.Bluemix_notm}} can connect to your {{site.data.keyword.Db2_on_Cloud_short}} database exactly the same way that your local applications connect to your {{site.data.keyword.Db2_on_Cloud_short}} database.
+Apps that are hosted on {{site.data.keyword.Bluemix_notm}} can connect to your {{site.data.keyword.Db2_on_Cloud_short}} database the same way that your local applications connect to your {{site.data.keyword.Db2_on_Cloud_short}} database.
 {: shortdesc}
 
 When your apps use the {{site.data.keyword.Bluemix_notm}} platform, you can take advantage of the `VCAP _SERVICES` environment variable to simplify the task of specifying database details and credentials:
@@ -152,7 +152,7 @@ When your apps use the {{site.data.keyword.Bluemix_notm}} platform, you can take
 ## Samples
 {: #samples}
 
-Here are links to samples demonstrating how to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database from applications in different languages:
+Here are links to samples that demonstrate how to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database from applications in different languages:
 {: shortdesc}
 
    * [.NET ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html){:new_window}
@@ -177,10 +177,10 @@ Watch this video to see the steps required to use a RESTful API to communicate w
 
 <iframe class="embed-responsive-item" id="youtubeplayer2" title="Using RESTful API to communicate with {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/PSNBDwgf9ts?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
-## Video: Integrating Jupyter notebooks
+## Video: Integrating Jupyter Notebooks
 {: #cognos_vid}
 
-Watch this video to see how to integrate Jupyter notebooks with {{site.data.keyword.Db2_on_Cloud_short}}.
+Watch this video to see how to integrate Jupyter Notebooks with {{site.data.keyword.Db2_on_Cloud_short}}.
 
 <iframe class="embed-responsive-item" id="youtubeplayer3" title="Integrating Jupyter notebooks" type="text/html" width="640" height="390" src="//www.youtube.com/embed/bNfH0Wzx3is?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
