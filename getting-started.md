@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-04-17"
+lastupdated: "2019-04-30"
 
 keywords: 
 
@@ -72,8 +72,11 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 ### Installing Db2 command-line clients and drivers on your computer
 {: #connect_apps}
 
-In most cases, users tend to use only the REST API, or install drivers for a framework, for example, with Python's `pip` command. (In MacOS, you must use `pip` with the `--no-cache-dir` option. See instructions below for details.)
+In most cases, users tend to use only the REST API, or install drivers for a framework, for example, with Python's `pip` command.
 {: shortdesc}
+
+To install Python driver packages for the MacOS, you must use the `pip` command with the `--no-cache-dir` option. See the following instructions for details.
+{: note}
 
 <!-- Drivers on site are broken so taking out this one -Simon. 1. Download the [driver package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} from the Connection info page of the {{site.data.keyword.Db2_on_Cloud_short}} web console.-->
 
