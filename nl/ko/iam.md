@@ -58,7 +58,7 @@ IBM ID가 있는 사용자를 특정 데이터베이스 서비스 인스턴스�
 
 **액세스 토큰**
 
-REST API를 통해 API 키를 사용하여 애플리케이션이 IAM 서비스에서 직접 액세스 토큰을 얻을 수 있습니다. 자세한 정보는 [API 키를 사용하여 IBM Cloud IAM 토큰 가져오기 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.bluemix.net/docs/iam/apikey_iamtoken.html#iamtoken_from_apikey){:new_window}를 참조하십시오. 액세스 토큰의 기본 유효 기간은 만료되기 전 60분입니다. 토큰이 만료되면 Db2 서버에서 연결을 설정할 수 없습니다. 연결이 설정된 후에는 토큰 만료를 확인하지 않습니다. IAM 통합 이전과 같이 연결은 애플리케이션 연결이 끊어지거나 다른 이유로 인해 연결이 종료되기 전까지는 계속 연결되어 있습니다.
+REST API를 통해 API 키를 사용하여 애플리케이션이 IAM 서비스에서 직접 액세스 토큰을 얻을 수 있습니다. 자세한 정보는 [API 키를 사용하여 IBM Cloud IAM 토큰 가져오기 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey){:new_window}를 참조하십시오. 액세스 토큰의 기본 유효 기간은 만료되기 전 60분입니다. 토큰이 만료되면 Db2 서버에서 연결을 설정할 수 없습니다. 연결이 설정된 후에는 토큰 만료를 확인하지 않습니다. IAM 통합 이전과 같이 연결은 애플리케이션 연결이 끊어지거나 다른 이유로 인해 연결이 종료되기 전까지는 계속 연결되어 있습니다.
 
 ```
 curl -k -X POST \
@@ -73,7 +73,7 @@ curl -k -X POST \
 
 **API 키**
 
-각 IBM ID 사용자 또는 서비스 ID에 대해 여러 개의 API 키를 작성할 수 있습니다. 각 API 키는 일반적으로 단일 애플리케이션에 대해 작성됩니다. 소유한 IBM ID 또는 서비스 ID가 동일한 데이터베이스 서비스 인스턴스에 사용자로 추가되어 있는 한 애플리케이션을 데이터베이스 서비스 인스턴스에 연결할 수 있습니다. API 키는 데이터베이스 내에서 소유한 IBM ID 또는 서비스 ID와 동일한 권한을 가집니다. 애플리케이션을 더 이상 데이터베이스에 연결하지 않는 경우 해당 API 키를 제거할 수 있습니다. 이 인증 방법은 IAM 서비스와 직접 상호작용할 필요가 없으므로 액세스 토큰을 사용하는 경우보다 애플리케이션을 덜 변경합니다. API 키 작성 및 관리에 대한 자세한 정보는 [사용자 API 키 관리 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.bluemix.net/docs/iam/userid_keys.html#userapikey){:new_window}를 참조하십시오.
+각 IBM ID 사용자 또는 서비스 ID에 대해 여러 개의 API 키를 작성할 수 있습니다. 각 API 키는 일반적으로 단일 애플리케이션에 대해 작성됩니다. 소유한 IBM ID 또는 서비스 ID가 동일한 데이터베이스 서비스 인스턴스에 사용자로 추가되어 있는 한 애플리케이션을 데이터베이스 서비스 인스턴스에 연결할 수 있습니다. API 키는 데이터베이스 내에서 소유한 IBM ID 또는 서비스 ID와 동일한 권한을 가집니다. 애플리케이션을 더 이상 데이터베이스에 연결하지 않는 경우 해당 API 키를 제거할 수 있습니다. 이 인증 방법은 IAM 서비스와 직접 상호작용할 필요가 없으므로 액세스 토큰을 사용하는 경우보다 애플리케이션을 덜 변경합니다. API 키 작성 및 관리에 대한 자세한 정보는 [사용자 API 키 관리 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](/docs/iam?topic=iam-userapikey#userapikey){:new_window}를 참조하십시오.
 
 **IBM ID/비밀번호**
 
@@ -157,23 +157,23 @@ IAM 인증을 사용하여 ODBC 애플리케이션 또는 명령행 클라이언
 
     **액세스 토큰**
 
-    CLPPLUS 명령 프롬프트 또는 스크립트에서 다음 명령을 실행하여 DSN 별명(`@<data_source_name>`)에 연결하고 액세스 토큰을 전달합니다.
+    CLPPLUS 명령 프롬프트 또는 스크립트에서 다음 명령을 실행하여 DSN 별명(`@<data_source_name>`)에 연결하고 액세스 토큰을 전달하십시오. 
 
     `connect @<data_source_name> using(accesstoken <access_token_string>)`
 
     **API 키**
 
-    CLPPLUS 명령 프롬프트 또는 스크립트에서 다음 명령을 실행하여 DSN 별명(`@<data_source_name>`)에 연결합니다.
+    CLPPLUS 명령 프롬프트 또는 스크립트에서 다음 명령을 실행하여 API 키로 DSN 별명(`@<data_source_name>`)에 연결하십시오. 
 
     `connect @<data_source_name> using(apikey <api-key-string>)`
 
     **IBM ID/비밀번호**
 
-    CLPPLUS 명령 프롬프트 또는 스크립트에서 다음 명령을 실행하여 DSN 별명(`@<data_source_name>`)에 연결합니다.
+    CLPPLUS 명령 프롬프트 또는 스크립트에서 다음 명령을 실행하여 IBM ID/비밀번호로 DSN 별명(`@<data_source_name>`)에 연결하십시오. 
 
     `connect <IBMid>/<password>@<data_source_name>`
 
-    CLPPLUS를 사용하여 DSN 별명에 연결하는 데 대한 세부사항은 [CLPPlus의 DSN 별명 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SSEPGG_11.1.0/com.ibm.swg.im.dbclient.clpplus.doc/doc/c0057148.html){:new_window}을 참조하십시오.
+    CLPPLUS를 사용하여 DSN 별명에 연결하는 데 대한 세부사항은 [CLPPlus의 DSN 별명 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:new_window}을 참조하십시오.
 
 ### JDBC
 {: #jdbc}
@@ -197,7 +197,7 @@ dataSource.setAccessToken( "<access_token>" );
 Connection conn = dataSource.getConnection( );
 ```
 
-or
+또는
 
 ```
 Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:accessToken=<access_token>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
@@ -218,10 +218,10 @@ dataSource.setApiKey( "<api_key>" );
 Connection conn = dataSource.getConnection( );
 ```
 
-or
+또는
 
 ```
-Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apikey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apiKey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
 ```
 
 **IBM ID/비밀번호**
@@ -238,7 +238,7 @@ dataSource.setPluginName( "IBMIAMauth" );
 Connection conn = dataSource.getConnection( "<IBMid>", "<password>" );
 ```
 
-or
+또는
 
 ```
 Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:user=<IBMid>;password=<password>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
@@ -286,7 +286,7 @@ Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_addr
 ## IBM ID 연합
 {: #fed_ibmid}
 
-LDAP과 같은 사용자 고유의 ID 제공자를 사용하려면 먼저 LDAP 서버를 IBM ID와 연합해야 합니다. LDAP 서버를 IBM ID와 연합하는 데 대한 지시사항은 [IBM ID 엔터프라이즈 연합 채택 안내서 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://ibm.ent.box.com/notes/78040808400?s=nhuzrhlsn0ly338zddomx329tlpmfghc){:new_window}를 참조하십시오. IBM ID 연합이 완료되고 데이터베이스 관리자가 허용된 사용자를 데이터베이스 서비스 인스턴스에 추가하면 해당 사용자가 회사 사용자 ID 및 비밀번호를 사용하여 콘솔에 로그인할 수 있습니다. 또는 해당 사용자는 사용자 ID를 나타내는 액세스 토큰 또는 API 키를 사용하여 지원되는 데이터베이스 클라이언트 인터페이스 중 하나를 통해 데이터베이스 서비스 인스턴스에 연결할 수 있습니다.
+LDAP과 같은 사용자 고유의 ID 제공자를 사용하려면 먼저 LDAP 서버를 IBM ID와 연합해야 합니다. LDAP 서버를 IBM ID와 연합하는 데 대한 지시사항은 [IBM ID 엔터프라이즈 연합 채택 안내서 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://ibm.ent.box.com/notes/78040808400?v=IBMid-Federation-Guide){:new_window}를 참조하십시오. IBM ID 연합이 완료되고 데이터베이스 관리자가 허용된 사용자를 데이터베이스 서비스 인스턴스에 추가하면 해당 사용자가 회사 사용자 ID 및 비밀번호를 사용하여 콘솔에 로그인할 수 있습니다. 또는 해당 사용자는 사용자 ID를 나타내는 액세스 토큰 또는 API 키를 사용하여 지원되는 데이터베이스 클라이언트 인터페이스 중 하나를 통해 데이터베이스 서비스 인스턴스에 연결할 수 있습니다.
 
 ## 제한사항
 {: #restrictions}

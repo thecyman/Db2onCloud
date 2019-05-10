@@ -58,7 +58,7 @@ Les méthodes suivantes peuvent être utilisées pour l'authentification IAM :
 
 **Jeton d'accès**
 
-Un jeton d'accès peut être obtenu auprès du service IAM directement par l'application via l'API REST à l'aide d'une clé d'interface de programmation. Pour plus d'informations, voir : [Obtention d'un jeton IBM Cloud IAM à l'aide d'une clé d'API ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://console.bluemix.net/docs/iam/apikey_iamtoken.html#iamtoken_from_apikey){:new_window}. Le jeton d'accès a une période de validité par défaut de 60 minutes avant qu'il n'expire. Si le jeton a expiré, le serveur Db2 ne permet pas l'établissement de la connexion. La péremption du jeton n'est pas vérifiée une fois la connexion établie. Tout comme préalablement à l'intégration IAM, la connexion est maintenue jusqu'à ce que l'application se déconnecte ou que la connexion s'arrête pour d'autres raisons.
+Un jeton d'accès peut être obtenu auprès du service IAM directement par l'application via l'API REST à l'aide d'une clé d'interface de programmation. Pour plus d'informations, voir : [Obtention d'un jeton IBM Cloud IAM à l'aide d'une clé d'API ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey){:new_window}. Le jeton d'accès a une période de validité par défaut de 60 minutes avant qu'il n'expire. Si le jeton a expiré, le serveur Db2 ne permet pas l'établissement de la connexion. La péremption du jeton n'est pas vérifiée une fois la connexion établie. Tout comme préalablement à l'intégration IAM, la connexion est maintenue jusqu'à ce que l'application se déconnecte ou que la connexion s'arrête pour d'autres raisons.
 
 ```
 curl -k -X POST \
@@ -73,7 +73,7 @@ Un jeton d'accès identifie un IBMid ou un ID de service auprès de la base de d
 
 **Clé d'interface de programmation**
 
-Plusieurs clés d'interface de programmation peuvent être créées pour chaque utilisateur IBMid ou ID de service. Chaque clé d'interface de programmation est généralement créée pour une seule application. Cela permet à l'application de se connecter à l'instance de service de base de données dès lors que l'IBMid ou l'ID de service propriétaire est ajouté en tant qu'utilisateur à la même instance de service de base de données. La clé d'interface de programmation a les mêmes droits et permissions au sein de la base de données que l'IBMid ou l'ID de service propriétaire. Si une application ne doit plus être autorisée à se connecter à la base de données, la clé d'interface de programmation correspondante peut être retirée. La méthode d'authentification nécessite moins de changements dans l'application que l'utilisation d'un jeton d'accès car aucune interaction directe n'est nécessaire avec le service IAM. Pour plus d'informations sur la création et la gestion des clés d'interface de programmation, voir : [Managing user API keys ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://console.bluemix.net/docs/iam/userid_keys.html#userapikey){:new_window}.
+Plusieurs clés d'interface de programmation peuvent être créées pour chaque utilisateur IBMid ou ID de service. Chaque clé d'interface de programmation est généralement créée pour une seule application. Cela permet à l'application de se connecter à l'instance de service de base de données dès lors que l'IBMid ou l'ID de service propriétaire est ajouté en tant qu'utilisateur à la même instance de service de base de données. La clé d'interface de programmation a les mêmes droits et permissions au sein de la base de données que l'IBMid ou l'ID de service propriétaire. Si une application ne doit plus être autorisée à se connecter à la base de données, la clé d'interface de programmation correspondante peut être retirée. La méthode d'authentification nécessite moins de changements dans l'application que l'utilisation d'un jeton d'accès car aucune interaction directe n'est nécessaire avec le service IAM. Pour plus d'informations sur la création et la gestion des clés d'interface de programmation, voir : [Managing user API keys ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](/docs/iam?topic=iam-userapikey#userapikey){:new_window}.
 
 **IBMid/mot de passe**
 
@@ -135,7 +135,7 @@ Voici un exemple de fichier de configuration `db2dsdriver.cfg` indiquant les con
 
     **Jeton d'accès**
 
-    Connectez-vous au serveur de base de données `<database_server_name>` et transmettez le jeton d'accès en exécutant la commande suivante sur l'invite de commande CLP ou le script :
+    Connectez-vous au serveur de base de données `<database_server_name>` et transmettez le jeton d'accès en exécutant la commande suivante sur le script ou l'invite de commande CLP :
 
     `CONNECT TO <database_server_name> ACCESSTOKEN <access_token_string>`
 
@@ -163,17 +163,17 @@ Voici un exemple de fichier de configuration `db2dsdriver.cfg` indiquant les con
 
     **Clé d'interface de programmation**
 
-    Connectez-vous à l'alias DSN (`@<data_source_name>`) avec une clé d'API en exécutant la commande suivante sur le script ou l'invite de commande CLPPLUS :
+    Connectez-vous à l'alias DSN (`@<data_source_name>`) avec une clé d'API en exécutant la commande suivante sur l'invite de commande CLPPLUS ou le script :
 
     `connect @<data_source_name> using(apikey <api-key-string>)`
 
     **IBMid/mot de passe**
 
-    Connectez-vous à l'alias DSN (`@<data_source_name>`) avec un IBMid/mot de passe en exécutant la commande suivante sur le script ou l'invite de commande CLPPLUS :
+    Connectez-vous à l'alias DSN (`@<data_source_name>`) avec un IBMid/mot de passe en exécutant la commande suivante sur l'invite de commande CLPPLUS ou le script :
 
     `connect <IBMid>/<password>@<data_source_name>`
 
-    Pour plus d'informations sur la connexion aux alias DSN avec CLPPLUS, voir : [DSN aliases in CLPPlus ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SSEPGG_11.1.0/com.ibm.swg.im.dbclient.clpplus.doc/doc/c0057148.html){:new_window}.
+    Pour plus d'informations sur la connexion aux alias DSN avec CLPPLUS, voir : [DSN aliases in CLPPlus ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:new_window}.
 
 ### JDBC
 {: #jdbc}
@@ -221,7 +221,7 @@ Connection conn = dataSource.getConnection( );
 ou
 
 ```
-Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apikey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apiKey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
 ```
 
 **IBMid/mot de passe**
@@ -258,7 +258,7 @@ L'API REST {{site.data.keyword.Db2_on_Cloud_short}} a été améliorée afin d'a
 
   `curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid>","ibmid":"<userid>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"`
 
-  La valeur `<userid>` des éléments `"id"` et `"ibmid"` ne doivent pas obligatoirement être identiques. Ces deux ID ne sont liés en aucune manière.
+  Les valeurs `<userid>` des éléments `"id"` et `"ibmid"` n'ont pas besoin d'être identiques. Ces deux ID ne sont liés en aucune manière.
   {: note}
 
 * Pour migrer un utilisateur de base de données sans IBMid existant (par exemple, `abcuser`) et en faire un utilisateur IBMid, commencez par supprimer l'ID utilisateur non IBMid en exécutant l'exemple d'appel API suivant :
@@ -286,7 +286,7 @@ Pour plus de détails sur l'API de votre service, voir : [{{site.data.keyword.Db
 ## Fédération avec IBMid
 {: #fed_ibmid}
 
-Pour utiliser votre propre fournisseur d'identité, tel que LDAP, vous devez d'abord fédérer votre serveur LDAP avec IBMid. Pour les instructions relatives à la fédération de votre serveur LDAP avec IBMid, voir [IBMid Enterprise Federation Adoption Guide ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://ibm.ent.box.com/notes/78040808400?s=nhuzrhlsn0ly338zddomx329tlpmfghc){:new_window}. Une fois la fédération avec IBMid effectuée et dès lors que les utilisateurs autorisés sont ajoutés à l'instance de service de base de données par l'administrateur de base de données, ces utilisateurs peuvent se connecter à la console à l'aide de leurs ID utilisateur et mot de passe d'entreprise. Ces utilisateurs peuvent aussi utiliser un jeton d'accès ou une clé d'interface de programmation qui représente leur ID utilisateur pour se connecter à l'instance de service de base de données via l'une des interfaces client de base de données prises en charge.
+Pour utiliser votre propre fournisseur d'identité, tel que LDAP, vous devez d'abord fédérer votre serveur LDAP avec IBMid. Pour les instructions relatives à la fédération de votre serveur LDAP avec IBMid, voir [IBMid Enterprise Federation Adoption Guide ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://ibm.ent.box.com/notes/78040808400?v=IBMid-Federation-Guide){:new_window}. Une fois la fédération avec IBMid effectuée et dès lors que les utilisateurs autorisés sont ajoutés à l'instance de service de base de données par l'administrateur de base de données, ces utilisateurs peuvent se connecter à la console à l'aide de leurs ID utilisateur et mot de passe d'entreprise. Ces utilisateurs peuvent aussi utiliser un jeton d'accès ou une clé d'interface de programmation qui représente leur ID utilisateur pour se connecter à l'instance de service de base de données via l'une des interfaces client de base de données prises en charge.
 
 ## Restrictions
 {: #restrictions}

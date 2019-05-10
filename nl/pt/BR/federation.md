@@ -59,7 +59,7 @@ A federação fornece a capacidade de aumentar a capacidade de um banco de dados
 <!-- By using federation, users can increase capacity of an on premises database by federating to or from the cloud. This is a great option if your on premises database is running out of storage. Increased capacity will also be useful for new development as our users no longer need to change a database in production. You can also use this feature to federate between two Db2 on Cloud databases to increase the capacity beyond the current limits of the Flex plan. -->
 
 ## Introdução
-{: #getting_started}
+{: #getting_started_fed}
 
 As etapas a seguir são um exemplo de como você vai federar suas origens de dados diferentes para aparecerem como se os dados fossem recuperados de uma fonte isolada. O exemplo a seguir ilustra a federação de dois bancos de dados {{site.data.keyword.Db2_on_Cloud_short}}:
 
@@ -127,7 +127,7 @@ Nome do host: targetdotcom
 
 No console de {{site.data.keyword.Db2_on_Cloud_short}}:
 
-1. Crie um servidor para conversar com a máquina de destino:<br/>
+1. Crie um servidor para falar com a máquina de destino:<br/>
    `create server <server_name> type dashdb version 11 wrapper drda authorization "<admin_user_on_target>" password "<admin_password_on_target>" options (host '<target_host_name>', port '50000', dbname 'bludb')`
 
    Por exemplo:<br/>
@@ -145,7 +145,7 @@ No console de {{site.data.keyword.Db2_on_Cloud_short}}:
    Por exemplo:<br/>
    `create nickname ntest1 for db2server.admin2.testdata`
 
-4. Teste se é possível puxar dados do servidor de destino:<br/>
+4. Teste se é possível fazer pull de dados do servidor de destino:<br/>
    `select * from <nickname>`
 
    Por exemplo:<br/>

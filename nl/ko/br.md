@@ -31,13 +31,9 @@ subcollection: Db2onCloud
  
 특정 시점 복원에 관한 정보는 [특정 시점 복원](#point-in-time)을 참조하십시오.
 
-일반적으로 모든 유료 플랜에서 IBM COS(Cloud Object Storage)를 사용하여 3개의 서로 다른 데이터 센터에서 오프사이트로 백업을 유지합니다. 그러나 시드니와 특정 소규모 데이터 센터에서는 현재 IBM COS를 사용한 오프사이트 복제를 지원하지 않습니다. 오프사이트 복제를 지원하는 지역을 판별하려면 사용자 지역의 [IBM COS 문서](/docs/services/cloud-object-storage/basics/endpoints.html#select-regions-and-endpoints)를 확인하십시오.
+일반적으로 모든 유료 플랜에서 IBM COS(Cloud Object Storage)를 사용하여 3개의 서로 다른 데이터 센터에서 오프사이트로 백업을 유지합니다. 그러나 시드니와 특정 소규모 데이터 센터에서는 현재 IBM COS를 사용한 오프사이트 복제를 지원하지 않습니다. 오프사이트 복제를 지원하는 지역을 판별하려면 사용자 지역의 [IBM COS 문서](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-endpoints#endpoints)를 확인하십시오.
 
-<!-- Retained backups are used by IBM for system recovery purposes in the event of a disaster or system loss. Use the [Time Travel Query ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} to keep historical data for your own purposes. In addition, you can also perform your own exports using IBM Data Studio or any Db2 tool. -->
-
-<!-- To store your backups offsite at a remote storage site, make a request to IBM Support. -->
-
-[IBM Lift CLI ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://lift.ng.bluemix.net/){:new_window}를 사용하여 데이터를 {{site.data.keyword.Db2_on_Cloud_short}}에 가져올 수도 있습니다.
+[IBM Lift CLI ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.lift-cli.cloud.ibm.com/){:new_window}를 사용하여 데이터를 {{site.data.keyword.Db2_on_Cloud_short}}에 가져올 수도 있습니다.
 
 ## 특정 시점 복원
 {: #point-in-time}
@@ -47,7 +43,7 @@ subcollection: Db2onCloud
 다음은 특정 시점 복원 기능의 가용성 목록입니다.
 - 달라스 데이터 센터: 단일 서버 시스템에서 현재 사용 가능
 - 유럽과 달라스에 있는 HA 시스템을 포함하는 기타 모든 경우: 지원 센터에서 기능 활성화를 요청하십시오. 2019년 2월 28일까지 모든 시스템에 완전히 롤아웃될 예정입니다.
-- IBM Cloud 데디케이티드 시스템(이전에는 Bluemix 데디케이티드): 지원 티켓을 열어야만 사용할 수 있습니다.
+- IBM Cloud Dedicated 시스템: 지원 티켓을 열어야만 사용할 수 있습니다. 
 
 다음은 특정 시점 복원 조작이 시작되고 해당 진행상태가 표시되는 웹 콘솔 UI의 스크린샷 중 선택된 몇 가지 예입니다.
 

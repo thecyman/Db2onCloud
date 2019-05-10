@@ -79,9 +79,9 @@ Lift CLI 是一個應用程式，您可以免費用來將資料從表 1 列出�
 |                              | CSV 檔案格式|
 {: caption="表 1. 移轉資料來源" caption-side="top"}
 
-若要下載並安裝 Lift CLI，請參閱：[Download Lift CLI ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://lift.ng.bluemix.net/#download){:new_window}。
+若要下載並安裝 Lift CLI，請參閱：[Download Lift CLI ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.lift-cli.cloud.ibm.com/#download){:new_window}。
 
-如需使用 Lift CLI 將資料移轉至 {{site.data.keyword.Bluemix_notm}} 的逐步指示，請參閱：[Migrate data to {{site.data.keyword.Db2_on_Cloud_long_notm}} ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://lift.ng.bluemix.net/#docs){:new_window}。
+如需使用 Lift CLI 將資料移轉至 {{site.data.keyword.Bluemix_notm}} 的逐步指示，請參閱：[Migrate data to {{site.data.keyword.Db2_on_Cloud_long_notm}} ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}。
 
 ### IBM Cloud Mass Data Migration
 {: #mdms}
@@ -90,5 +90,5 @@ Lift CLI 是一個應用程式，您可以免費用來將資料從表 1 列出�
 
 ![Mass Data Migration 裝置的視圖](images/mdms.svg)
 
-如需 Mass Data Migration 裝置的相關資訊，請參閱：[開始使用 IBM Cloud Mass Data Migration](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}。
+如需 Mass Data Migration 裝置的相關資訊，請參閱：[入門指導教學](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:new_window}。
 

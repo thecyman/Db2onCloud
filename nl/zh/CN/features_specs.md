@@ -61,7 +61,7 @@ subcollection: Db2onCloud
 |  | 非现场 DR 节点 | 99.5% | 必须使用其他本地 HA 才能达到 99.99% |
 |  |维护策略| 是 | [阅读详细信息 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.ibm.com/answers/questions/439146/where-can-i-find-detail-about-maintenance-and-noti.html){:new_window} |
 |  |  |  |  |
-| 安全合规性 | HIPAA 就绪 | 是 | 包括 Flex 在内的所有付费套餐。必须向 IBM 支持人员请求 HIPAA 模式。<!--For Db2 Warehouse on Cloud [see docs here ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/docs/services/Db2whc/index.html#getting_started){:new_window}.--> |
+| 安全合规性 | HIPAA 就绪 | 是 | 包括 Flex 在内的所有付费套餐。必须向 IBM 支持人员请求 HIPAA 模式。|
 |  | HITRUST  | [在路线图中 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://ibm.biz/db2oncloud-roadmap){:new_window} | 目前可将 Db2 托管用于 HITRUST |
 |  | 国际标准化组织 (ISO)  | 是 | ISO 27001、27002、27017、27018 |
 |  | 服务组织控制 (SOC) | 是 | SOC 2 第 2 类 |
@@ -70,7 +70,7 @@ subcollection: Db2onCloud
 |  | 合规性完整列表 | 是 | [安全合规性 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | 备份和复原 | 每日备份 | 是 | 14 天的每日备份 |
-|  | 时间点自服务恢复 | 2018 年 11 月 15 日起可用 | [时间点复原](/docs/services/Db2onCloud/br.html#point-in-time) |
+|  | 时间点自服务恢复 | 2018 年 11 月 15 日起可用 | [时间点复原](/docs/services/Db2onCloud?topic=Db2onCloud-bnr#point-in-time) |
 |  | 保留非现场备份 | 根据请求 | 自 2018 年 12 月 1 日起，缺省值为非现场  |
 |  | 备份最长保留 10 年 | 根据请求 | 自 2018 年 12 月 1 日起。需要支持凭单。|
 |  | 无需复原即可查询旧数据 | 是 | 必须设置 [Time Travel Query ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} |
@@ -92,7 +92,7 @@ subcollection: Db2onCloud
 |  | 在 Hybrid Data Management Platform (HDMP) 上提供 | 是 | 仅限 Flex 套餐。[有关 HDMP 的详细信息 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/ca-en/marketplace/hybrid-data-management-platform){:new_window}|
 |  | 每日计费 | 是 | Flex 套餐的计费依据是每天使用量峰值。例如，一天中有一个小时从 2 个核心扩展到了 8 个核心，那么只有那一天会按 8 个核心计费，该月的其他每天都按 2 个核心计费。|
 |  | 每小时计费 | [在路线图中 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - | 
-|  | 主要定价指标 | 每月 | 按月定价（例如，每月 $189 美元）。每月按比例价格的依据是在服务终止的月份内激活服务的天数。[示例](/docs/services/Db2onCloud/plans_pricing.html) |
+|  | 主要定价指标 | 每月 | 按月定价（例如，每月 $189 美元）。每月按比例价格的依据是在服务终止的月份内激活服务的天数。[示例](/docs/services/Db2onCloud?topic=Db2onCloud-plans_pricing#examples) |
 |  |  |  |  |
 | 部署和扩展持续时间 | 达拉斯 | **部署**：< 5 分钟。**扩展**：< 45 分钟。| 仅限 Flex 套餐，具体取决于库存 |
 | | 其他美国南部 | **部署**：1 天。**扩展**：8 小时。| 在某些位置时间会比其他位置短一些 |

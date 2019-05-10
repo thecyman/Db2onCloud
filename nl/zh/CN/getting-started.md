@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-01-02"
+lastupdated: "2019-04-30"
 
 keywords: 
 
@@ -26,21 +26,16 @@ subcollection: Db2onCloud
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# 入门
+# 入门教程
 {: #getting_started_db2oncloud}
 
-{{site.data.keyword.Db2_on_Cloud_long}} 是在云中为您供应的 SQL 数据库。您可以像使用任何数据库软件一样使用 {{site.data.keyword.Db2_on_Cloud_short}}，但是却没有硬件设置或软件安装和维护的开销和费用。
+{{site.data.keyword.Db2_on_Cloud_long}} 是在云中为您供应的 SQL 数据库。您可以像使用任何数据库软件一样来使用 {{site.data.keyword.Db2_on_Cloud_short}}，但是却无需耗费时间和费用来设置硬件或进行软件安装和维护。
 {: shortdesc}
 
-创建凭证。对于 IBM Cloud 新手，在创建服务后，必须创建用户名和密码，方法是在启动服务时单击**创建凭证**按钮。从技术上讲，可以在没有凭证的情况下登录到 Web 控制台，但许多 Db2 工具都需要用户提供用户名和密码。
+创建凭证。对于那些刚接触 IBM Cloud 的人来说，在创建服务后还必须创建用户名和密码，方法是在启动服务时单击**创建凭证**按钮。从技术层面上讲，您可以在没有凭证的情况下登录到 Web 控制台，但是如果要使用一些 Db2 工具，就需要提供您的用户名和密码。
 {: important}
 
-您还可以使用[免费下载的 Db2 Developer Edition ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window} 来安装本地 Db2 数据库。这样会快速安装随时可用的开发者版本的 Db2 以及 Docker 容器内的工具（不需要 Docker，它将自动安装任何必要的组件）。 
-
-<!-- ## Free trial
-{: #freetrial}
-
-You can try the {{site.data.keyword.Db2_on_Cloud_short}} Precise Performance 500 (2.8.500) plan for 7 days on {{site.data.keyword.Bluemix_notm}} without charge. [Free trial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/db2){:new_window} -->
+您还可以通过[免费的 Db2 Developer Edition 下载 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window} 来安装本地 Db2 数据库。这样可以快速安装随时可用的开发者版本的 Db2，其中 Db2 工具会包含在 Docker 容器中（无需安装 Docker，因为它会自动安装任何必要的组件）。 
 
 ## 界面
 {: #interfaces}
@@ -77,10 +72,27 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 ### 在计算机上安装 Db2 命令行客户机和驱动程序
 {: #connect_apps}
 
-大多数用户都可以跳过此步骤。在大多数情况下，用户都会倾向于仅使用 REST API，或者安装框架的驱动程序，例如使用 Python 的 `pip` 命令。但是，高级用户可能希望使用 Db2 命令行客户机来管理其数据库和使用 Db2 命令。此外，某些 ODBC 或 JDBC 应用程序也可以从 Db2 驱动程序的常规安装中受益。要安装 Db2 命令行客户机和驱动程序，请完成以下步骤：
+在大多数情况下，用户都会倾向于仅使用 REST API，或者安装框架的驱动程序，例如使用 Python 的 `pip` 命令。
 {: shortdesc}
 
+要安装 MacOS 的 Python 驱动程序包，您必须使用带 `--no-cache-dir` 选项的 `pip` 命令。有关详细的指示信息，请参阅：[Python support for IBM DB2 and IBM Informix ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://ibm.biz/db2-drivers-python){:new_window}
+{: note}
+
 <!-- Drivers on site are broken so taking out this one -Simon. 1. Download the [driver package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} from the Connection info page of the {{site.data.keyword.Db2_on_Cloud_short}} web console.-->
+
+要安装 Python 或 Node.js 框架驱动程序，请单击以下其中一个链接：
+- [Python 驱动程序 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://ibm.biz/db2-drivers-python){:new_window}
+- [Node.js 驱动程序 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://ibm.biz/db2-drivers-node){:new_window}
+
+要安装名为 Sequelize 的 Node.js ORM，请单击以下链接：[Sequelize ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://github.com/ibmdb/sequelize){:new_window}
+{: note}
+
+有关驱动程序安装选项（包括 Java、Go、Jupyter 配置页、Ruby、PHP 等）的更多信息，请单击以下链接： 
+
+- [ibmdb ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://github.com/ibmdb){:new_window}
+
+假定您已安装了框架驱动程序，那么可以跳过以下步骤。但是，高级用户可能还希望通过使用 Db2 命令行客户机来管理他们的数据库并使用 Db2 命令。此外，某些 ODBC 或 JDBC 应用程序也可以从 Db2 驱动程序的常规安装中受益。如果是这种情况，请完成以下步骤：
+
 
 1. 在运行应用程序和工具的计算机上[安装驱动程序包 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window}。
 2. 为 {{site.data.keyword.Db2_on_Cloud_short}} 数据库[配置驱动程序文件 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}。
@@ -88,7 +100,7 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 ### 使用 Db2 on Cloud 作为 {{site.data.keyword.Bluemix_notm}} 应用程序或服务的数据源
 {: #data_src}
 
-在 {{site.data.keyword.Bluemix_notm}} 上托管的应用程序可以使用与本地应用程序连接到 {{site.data.keyword.Db2_on_Cloud_short}} 数据库完全相同的方法，连接到 {{site.data.keyword.Db2_on_Cloud_short}} 数据库。
+可以使用与本地应用程序连接到 {{site.data.keyword.Db2_on_Cloud_short}} 数据库的相同方法，将在 {{site.data.keyword.Bluemix_notm}} 上托管的应用程序连接到 {{site.data.keyword.Db2_on_Cloud_short}} 数据库。
 {: shortdesc}
 
 当应用程序使用 {{site.data.keyword.Bluemix_notm}} 平台时，您可以利用 `VCAP _SERVICES` 环境变量来简化指定数据库详细信息和凭证的任务：
@@ -102,8 +114,6 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
     <?php
     $driver      = "DRIVER={IBM DB2 ODBC DRIVER};";
 
-    
-
     $database    = "BLUDB";         # Get these database details from
     $hostname    = "<Host-name>";   # the Connect page of the Db2 on Cloud
     $port        = 50000;           # web console.
@@ -116,11 +126,7 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
                    "UID=$user;" .
                    "PWD=$password;";
 
-    
-
     $conn_string = $driver . $dsn;
-                                   
-    
 
     $conn        = db2_connect( $conn_string, "", "" );
     ?>
@@ -132,14 +138,10 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
     <?php
     $driver      = "DRIVER={IBM DB2 ODBC DRIVER};";
 
-    
-
     $vcap        = json_decode( getenv( "VCAP_SERVICES" ), true );
     $dsn         = $vcap[ "dashDB" ][0][ "credentials" ][ "dsn" ];
 
     $conn_string = $driver . $dsn;
-                                   
-    
                                    
     $conn        = db2_connect( $conn_string, "", "" );
     ?>
@@ -148,7 +150,7 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 ## 样本
 {: #samples}
 
-以下链接是演示在不同的语言中，如何从应用程序连接到 {{site.data.keyword.Db2_on_Cloud_short}} 数据库的样本：
+以下是示例的链接，这些示例演示了在不同的语言中，如何从应用程序连接到 {{site.data.keyword.Db2_on_Cloud_short}} 数据库：
 {: shortdesc}
 
    * [.NET ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html){:new_window}
@@ -176,7 +178,7 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 ## 视频：集成 Jupyter 配置页
 {: #cognos_vid}
 
-观看此视频，了解如何将 Jupyter 配置页与 {{site.data.keyword.Db2_on_Cloud_short}} 集成。
+观看此视频，了解如何将 Jupyter 配置页与 {{site.data.keyword.Db2_on_Cloud_short}} 相集成。
 
 <iframe class="embed-responsive-item" id="youtubeplayer3" title="集成 Jupyter 配置页" type="text/html" width="640" height="390" src="//www.youtube.com/embed/bNfH0Wzx3is?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 

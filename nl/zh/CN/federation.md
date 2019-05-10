@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # 数据虚拟化（联合）
 {: #fed}
 
-{{site.data.keyword.Db2_on_Cloud_short}} 支持 Db2 数据虚拟化（也称为联合）。通过数据虚拟化，您能以单查询方式访问位于组织中任意位置的多个分布式数据库上的所有数据。"您可以访问位于任何 Db2 或 Informix 数据源（包括云和内部部署）上的数据。
+{{site.data.keyword.Db2_on_Cloud_short}} 支持 Db2 数据虚拟化（也称为联合）。通过数据虚拟化，您能以单查询方式访问位于组织中任意位置的多个分布式数据库上的所有数据。您可以访问位于任何 Db2 或 Informix 数据源（包括云和内部部署）上的数据。
 {: shortdesc}
 
 在所有版本的 {{site.data.keyword.Db2_on_Cloud_short}} 上都支持此功能，但免费的轻量套餐除外。但是，您可以使用轻量套餐作为可从中拉取数据的目标。
@@ -59,7 +59,7 @@ Db2 系列产品的用户可联合 {{site.data.keyword.Db2_on_Cloud_short}} 和 
 <!-- By using federation, users can increase capacity of an on premises database by federating to or from the cloud. This is a great option if your on premises database is running out of storage. Increased capacity will also be useful for new development as our users no longer need to change a database in production. You can also use this feature to federate between two Db2 on Cloud databases to increase the capacity beyond the current limits of the Flex plan. -->
 
 ## 入门
-{: #getting_started}
+{: #getting_started_fed}
 
 以下步骤是如何联合不同的数据源以便看起来如同从单个源检索数据的示例。以下示例说明两个 {{site.data.keyword.Db2_on_Cloud_short}} 数据库的联合：
 
@@ -127,7 +127,7 @@ Db2 系列产品的用户可联合 {{site.data.keyword.Db2_on_Cloud_short}} 和 
 
 在 {{site.data.keyword.Db2_on_Cloud_short}} 控制台中：
 
-1. 创建服务器以与目标机器进行对话：<br/>
+1. 创建一个服务器以与目标机器对话：<br/>
    `create server <server_name> type dashdb version 11 wrapper drda authorization "<admin_user_on_target>" password "<admin_password_on_target>" options (host '<target_host_name>', port '50000', dbname 'bludb')`
 
    例如：<br/>
@@ -145,7 +145,7 @@ Db2 系列产品的用户可联合 {{site.data.keyword.Db2_on_Cloud_short}} 和 
    例如：<br/>
    `create nickname ntest1 for db2server.admin2.testdata`
 
-4. 测试是否可从目标服务器拉取数据：<br/>
+4. 测试是否可以从目标服务器拉取数据：<br/>
    `select * from <nickname>`
 
    例如：<br/>

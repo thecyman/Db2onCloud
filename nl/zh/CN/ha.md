@@ -35,7 +35,7 @@ subcollection: Db2onCloud
 
 {{site.data.keyword.Db2_on_Cloud_short}} 以 `ASYNC` 方式使用 Db2 高可用性灾难恢复 (HADR) 技术来实现非现场 DR 节点功能，并在 DR 节点上提供 `Read on Standby`。
 
-## <）MD:STRONG>巴西：补充规定 14**（适用于为巴西联邦政府供应的系统）
+## **巴西：补充规则 14**（适用于为巴西联邦政府供应的系统）
 {: #rule_14}
 
 目前，由于补充规定 14 的原因，Db2 on Cloud 产品的灾难恢复 (DR) 选项在巴西还不能用于联邦政府。

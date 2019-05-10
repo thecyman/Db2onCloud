@@ -71,8 +71,8 @@ subcollection: Db2onCloud
 | 네트워킹 환경 | IBM Cloud Integrated Analytics |지원되지 않음 |
 |  | IBM Cloud Dedicated |지원되지 않음 |
 |  |  |
-| 보안 준수 | HIPAA(Health Information Portability and Accountability Act of 1996) | 지원되지 않습니다. 서비스 설명을 참조하십시오. |
-|  | EU 일반 개인정보 보호법률(GDPR) | 지원되지 않습니다. 서비스 설명을 참조하십시오. |
+| 보안 준수 | HIPAA(Health Information Portability and Accountability Act of 1996) | 지원되지 않음. 서비스 설명을 참조하십시오. |
+|  | EU 일반 개인정보 보호법률(GDPR) | 지원되지 않음. 서비스 설명을 참조하십시오. |
 |  |  |
 | 계정 관리 | 재활성화 | 30일마다 재활성화해야 합니다. 재활성화하지 않으면 60일 이후에 무료 플랜 서비스가 삭제됩니다.  |
 {: caption="표 1. {{site.data.keyword.Db2_on_Cloud_short}} 무료 플랜 제한사항" caption-side="top"}

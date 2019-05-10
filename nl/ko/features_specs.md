@@ -61,7 +61,7 @@ subcollection: Db2onCloud
 |  | 오프사이트 DR만 해당 | 99.5% | 99.99% 달성을 위해서는 추가 로컬 HA를 사용해야 함 |
 |  |유지보수 정책 |Y | [세부사항 읽기 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://developer.ibm.com/answers/questions/439146/where-can-i-find-detail-about-maintenance-and-noti.html){:new_window} |
 |  |  |  |  |
-| 보안 준수 | HIPAA 준비 |Y | Flex 등의 모든 유료 플랜. IBM Support에서 HIPAA 모드를 요청해야 합니다. <!--For Db2 Warehouse on Cloud [see docs here ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/docs/services/Db2whc/index.html#getting_started){:new_window}.--> |
+| 보안 준수 | HIPAA 준비 |Y | Flex 등의 모든 유료 플랜. IBM 지원 센터에서 HIPAA 모드를 요청해야 합니다. |
 |  | HITRUST  | [로드맵 내 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://ibm.biz/db2oncloud-roadmap){:new_window} | 이제 HITRUST에 Db2 Hosted를 사용할 수 있음 |
 |  | 국제 표준화 기구(ISO)  |Y | ISO 27001, 27002, 27017 및 27018 |
 |  | SOC(Service Organization Controls)) |Y | SOC 2 유형 2 |
@@ -70,7 +70,7 @@ subcollection: Db2onCloud
 |  | 전체 준수 목록 |Y | [보안 준수 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | 백업 & 복원 | 일별 백업 |Y | 14일 동안의 일별 백업 |
-|  | 특정 시점 자체 복구 | 2018년 11월 15일부터 사용 가능 | [특정 시점 복원](/docs/services/Db2onCloud/br.html#point-in-time) |
+|  | 특정 시점 자체 복구 | 2018년 11월 15일부터 사용 가능 | [특정 시점 복원](/docs/services/Db2onCloud?topic=Db2onCloud-bnr#point-in-time) |
 |  | 오프사이트에 백업 보관 | 요청 시 | 2018년 12월 1일부터 사용 가능. 오프사이트가 기본값입니다.  |
 |  | 최대 10년까지 백업 보관 | 요청 시 | 2018년 12월 1일부터 사용 가능. 지원 티켓이 필요합니다. |
 |  | 복원 없이 이전 데이터 조회 |Y | [Time Travel Query ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window}를 설정해야 합니다. |
@@ -92,7 +92,7 @@ subcollection: Db2onCloud
 |  |HDMP(Hybrid Data Management Platform)에서 사용 가능 |Y | Flex 플랜만 해당합니다. [HDMP에 관한 세부사항 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/ca-en/marketplace/hybrid-data-management-platform){:new_window}|
 |  | 일별 비용 청구 |Y | Flex 플랜에 대한 비용 청구는 일별 피크 사용량을 기반으로 합니다. 예를 들어 하루 한 시간 동안 2~8개의 코어를 스케일링하는 경우 해당 일에 대해서만 코어 8개의 비용을 청구하고 그 달의 다른 모든 날에 대해서는 코어 2개의 비용을 청구합니다. |
 |  | 시간별 비용 청구 | [로드맵 내 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - | 
-|  | 기본 가격 메트릭 | 월별 | 가격이 월 단위로 책정됩니다(예: 월별 $189 USD). 비례 배분된 월별 가격은 서비스가 종료된 달에 활성화된 서비스 일 수를 기반으로 합니다. [예](/docs/services/Db2onCloud/plans_pricing.html) |
+|  | 기본 가격 메트릭 | 월별 | 가격이 월 단위로 책정됩니다(예: 월별 $189 USD). 비례 배분된 월별 가격은 서비스가 종료된 달에 활성화된 서비스 일 수를 기반으로 합니다. [예](/docs/services/Db2onCloud?topic=Db2onCloud-plans_pricing#examples) |
 |  |  |  |  |
 | 배치 & 스케일링 기간 | 댈러스 | **배치**: < 5분. **스케일**: < 45분. | Flex 플랜만 해당, 재고에 따라 다름 |
 | | 기타 미국 남부 | **배치**: 1일. **스케일**: 8시간. | 일부 지역은 다른 지역보다 짧음 |

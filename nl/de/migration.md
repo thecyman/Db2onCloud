@@ -79,9 +79,9 @@ Bei der Lift-Befehlszeilenschnittstelle handelt es sich um eine Anwendung, die S
 |                              | CSV-Dateiformat |
 {: caption="Tabelle 1. Migrationsdatenquellen" caption-side="top"}
 
-Informationen zum Download und zur Installation der Lift-Befehlszeilenschnittstelle finden Sie in [Lift-Befehlszeilenschnittstelle herunterladen ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://lift.ng.bluemix.net/#download){:new_window}.
+Informationen zum Download und zur Installation der Lift-Befehlszeilenschnittstelle finden Sie in [Lift-Befehlszeilenschnittstelle herunterladen ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.lift-cli.cloud.ibm.com/#download){:new_window}.
 
-Eine in einzelne Schritte unterteilte Anleitung zur Migration Ihrer Daten in {{site.data.keyword.Bluemix_notm}} mithilfe der Lift-Befehlszeilenschnittstelle finden Sie in [Daten in {{site.data.keyword.Db2_on_Cloud_long_notm}} migrieren ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://lift.ng.bluemix.net/#docs){:new_window}.
+Eine in einzelne Schritte unterteilte Anleitung zur Migration Ihrer Daten in {{site.data.keyword.Bluemix_notm}} mithilfe der Lift-Befehlszeilenschnittstelle finden Sie in [Daten in {{site.data.keyword.Db2_on_Cloud_long_notm}} migrieren ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}.
 
 ### IBM Cloud Mass Data Migration
 {: #mdms}
@@ -90,5 +90,5 @@ Hierbei handelt es sich um eine schnelle, einfache und sichere Möglichkeit, Dat
 
 ![Ansicht des Mass Data Migration-Geräts](images/mdms.svg)
 
-Weitere Informationen zum Mass Data Migration-Gerät finden Sie in [Einführung in IBM Cloud Mass Data Migration](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+Weitere Informationen zur MDMS-Einheit (Mass, Mass Data Migration Service) finden Sie in: [Einführung in  Cloud Mass Data Migration](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
 

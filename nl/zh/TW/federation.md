@@ -59,7 +59,7 @@ Db2 系列產品的使用者可以聯合來自 {{site.data.keyword.Db2_on_Cloud_
 <!-- By using federation, users can increase capacity of an on premises database by federating to or from the cloud. This is a great option if your on premises database is running out of storage. Increased capacity will also be useful for new development as our users no longer need to change a database in production. You can also use this feature to federate between two Db2 on Cloud databases to increase the capacity beyond the current limits of the Flex plan. -->
 
 ## 開始使用
-{: #getting_started}
+{: #getting_started_fed}
 
 下列步驟是您如何著手進行不同資料來源聯合的範例，以期看似資料是從單一來源擷取。下列範例說明兩個 {{site.data.keyword.Db2_on_Cloud_short}} 資料庫的聯合：
 

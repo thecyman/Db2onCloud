@@ -31,13 +31,9 @@ subcollection: Db2onCloud
  
 有关时间点复原的信息，请参阅[时间点复原](#point-in-time)。
 
-所有付费套餐通常都使用 IBM Cloud Object Storage (COS) 将备份保存在 3 个不同的非现场数据中心。但是，悉尼和某些较小的数据中心目前可能不支持使用 IBM COS 进行非现场复制。要确定哪些区域支持非现场复制，请查看适用于您区域的 [IBM COS 文档](/docs/services/cloud-object-storage/basics/endpoints.html#select-regions-and-endpoints)。
+所有付费套餐通常都使用 IBM Cloud Object Storage (COS) 将备份保存在 3 个不同的非现场数据中心。但是，悉尼和某些较小的数据中心目前可能不支持使用 IBM COS 进行非现场复制。要确定哪些区域支持非现场复制，请查看适用于您区域的 [IBM COS 文档](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-endpoints#endpoints)。
 
-<!-- Retained backups are used by IBM for system recovery purposes in the event of a disaster or system loss. Use the [Time Travel Query ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} to keep historical data for your own purposes. In addition, you can also perform your own exports using IBM Data Studio or any Db2 tool. -->
-
-<!-- To store your backups offsite at a remote storage site, make a request to IBM Support. -->
-
-此外，还可以使用 [IBM Lift CLI ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://lift.ng.bluemix.net/){:new_window} 将数据导入到 {{site.data.keyword.Db2_on_Cloud_short}} 中。
+此外，还可以使用 [IBM Lift CLI ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.lift-cli.cloud.ibm.com/){:new_window} 将数据导入到 {{site.data.keyword.Db2_on_Cloud_short}} 中。
 
 ## 时间点复原
 {: #point-in-time}
@@ -47,7 +43,7 @@ subcollection: Db2onCloud
 以下是时间点复原功能的可用性列表：
 - 达拉斯数据中心：现在，在单服务器系统上可用
 - 所有其他情况，包括欧洲和达拉斯的 HA 系统：向支持人员请求激活此功能。全面部署到所有系统将于 2019 年 2 月 28 日完成。
-- IBM Cloud Dedicated 系统（以前称为 Bluemix Dedicated）：只能通过开具支持凭单，才能使用此功能。
+- IBM Cloud Dedicated 系统：只在开具支持凭单时可用。
 
 以下是 Web 控制台 UI 屏幕快照的一个示例，其中启动了时间点复原操作并显示了其进度：
 

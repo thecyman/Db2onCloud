@@ -59,7 +59,7 @@ La federazione ti dà la possibilità di aumentare la capacità di un database i
 <!-- By using federation, users can increase capacity of an on premises database by federating to or from the cloud. This is a great option if your on premises database is running out of storage. Increased capacity will also be useful for new development as our users no longer need to change a database in production. You can also use this feature to federate between two Db2 on Cloud databases to increase the capacity beyond the current limits of the Flex plan. -->
 
 ## Introduzione
-{: #getting_started}
+{: #getting_started_fed}
 
 I seguenti passi sono un esempio di come puoi federare le tue diverse origini dati per sembrare come se i dati fossero richiamati da una singola origine. Il seguente esempio illustra la federazione di due database {{site.data.keyword.Db2_on_Cloud_short}}:
 
@@ -127,7 +127,7 @@ Nome host: targetdotcom
 
 Dalla console di {{site.data.keyword.Db2_on_Cloud_short}}:
 
-1. Crea un server per comunicare con la macchina di destinazione:<br/>
+1. Crea un server che parla alla macchina di destinazione:<br/>
    `create server <server_name> type dashdb version 11 wrapper drda authorization "<admin_user_on_target>" password "<admin_password_on_target>" options (host '<target_host_name>', port '50000', dbname 'bludb')`
 
    Ad esempio:<br/>
@@ -139,13 +139,13 @@ Dalla console di {{site.data.keyword.Db2_on_Cloud_short}}:
    Ad esempio:<br/>
    `create user mapping for admin1 server db2server options (remote_authid 'admin2', remote_password 'YYYY')`
 
-3. Crea un soprannome per il database:<br/>
+3. Crea un soprannome per il database.<br/>
    `create nickname <nickname> for <server_name>.<schema_name>.<table_name>`
 
    Ad esempio:<br/>
    `create nickname ntest1 for db2server.admin2.testdata`
 
-4. Verifica di poter estrarre i dati dal server di destinazione:<br/>
+4. Verifica che puoi estrarre i dati dal server di destinazione:<br/>
    `select * from <nickname>`
 
    Ad esempio:<br/>

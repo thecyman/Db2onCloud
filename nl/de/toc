@@ -2,14 +2,18 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="Db2onCloud" audience="service" arm="1920570" href="/docs/services/Db2onCloud/index.html" path="services/Db2onCloud"}
+{: .toc subcollection="Db2onCloud" audience="service" arm="1920570" href="/docs/services/Db2onCloud?topic=Db2onCloud-getting_started_db2oncloud#getting_started_db2oncloud" path="services/Db2onCloud"}
 Db2 on Cloud
 
-	{: .navgroup id="learn"}
-	index.md
+    {: .navgroup id="learn"}
+    getting-started.md
     features_specs.md
     iam.md
-    connecting.md
+        
+    {: .topicgroup}
+    Verbindungen
+        connecting.md
+        connectivity_options.md
 
     {: .topicgroup}
     Verbindung zu einer anderen Db2-Datenbank herstellen
@@ -38,7 +42,7 @@ Db2 on Cloud
     [Neuerungen](https://www.ibm.com/support/docview.wss?uid=swg21961758)
     [Häufig gestellte Fragen](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
     [IBM Developer Answers](https://developer.ibm.com/answers/index.html)
-    [Einhaltung von Sicherheitsvorgaben](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
+    [Einhaltung von Sicherheitsvorgaben](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances_summary.html)
     [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
     {: .navgroup-end}
 

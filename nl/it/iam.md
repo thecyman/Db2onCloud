@@ -58,7 +58,7 @@ I seguenti metodi possono essere utilizzati per l'autenticazione IAM:
 
 **Token di accesso**
 
-Puoi ottenere un token di accesso dal servizio IAM direttamente dall'applicazione tramite l'API REST utilizzando una chiave API. Per ulteriori informazioni, consulta: [Getting an IBM Cloud IAM token by using an API key ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://console.bluemix.net/docs/iam/apikey_iamtoken.html#iamtoken_from_apikey){:new_window}. Il token di accesso ha un periodo di validità predefinito di 60 minuti prima della scadenza. Se il token è scaduto, il server Db2 non consentirà di stabilire la connessione. Non viene controllata la scadenza del token dopo che la connessione è stata stabilita. Così come era prima dell'integrazione di IAM, la connessione rimarrà in essere fino a quando l'applicazione non si scollega o viene terminata a causa di altre ragioni.
+Puoi ottenere un token di accesso dal servizio IAM direttamente dall'applicazione tramite l'API REST utilizzando una chiave API. Per ulteriori informazioni, consulta: [Getting an IBM Cloud IAM token by using an API key ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey){:new_window}. Il token di accesso ha un periodo di validità predefinito di 60 minuti prima della scadenza. Se il token è scaduto, il server Db2 non consentirà di stabilire la connessione. Non viene controllata la scadenza del token dopo che la connessione è stata stabilita. Così come era prima dell'integrazione di IAM, la connessione rimarrà in essere fino a quando l'applicazione non si scollega o viene terminata a causa di altre ragioni.
 
 ```
 curl -k -X POST \
@@ -73,7 +73,7 @@ Un token di accesso identifica un utente ID IBM o un ID servizio al database. Il
 
 **Chiave API**
 
-Possono essere create più chiavi per ogni ID servizio o utente ID IBM. Ogni chiave API viene normalmente creata per una singola applicazione. Consente all'applicazione di connettersi all'istanza del servizio database fino a quando l'ID IBM di appartenenza o l'ID servizio viene aggiunto come un utente alla stessa istanza del servizio database. La chiave API ha le stesse autorizzazioni all'interno del database come l'ID servizio o l'ID IBM di appartenenza. Se un'applicazione non deve più essere consentita per connettersi al database, la chiave API corrispondente può essere rimossa. Questo metodo di autenticazione richiede meno modifiche nell'applicazione rispetto all'utilizzo di un token di accesso poiché non richiede un'interazione diretta con il servizio IAM. Per ulteriori informazioni sulla creazione e la gestione delle chiavi API, consulta: [Gestione delle chiavi API utente ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://console.bluemix.net/docs/iam/userid_keys.html#userapikey){:new_window}.
+Possono essere create più chiavi per ogni ID servizio o utente ID IBM. Ogni chiave API viene normalmente creata per una singola applicazione. Consente all'applicazione di connettersi all'istanza del servizio database fino a quando l'ID IBM di appartenenza o l'ID servizio viene aggiunto come un utente alla stessa istanza del servizio database. La chiave API ha le stesse autorizzazioni all'interno del database come l'ID servizio o l'ID IBM di appartenenza. Se un'applicazione non deve più essere consentita per connettersi al database, la chiave API corrispondente può essere rimossa. Questo metodo di autenticazione richiede meno modifiche nell'applicazione rispetto all'utilizzo di un token di accesso poiché non richiede un'interazione diretta con il servizio IAM. Per ulteriori informazioni sulla creazione e la gestione delle chiavi API, consulta: [Gestione delle chiavi API utente ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](/docs/iam?topic=iam-userapikey#userapikey){:new_window}.
 
 **ID IBM/password**
 
@@ -135,19 +135,19 @@ Il seguente esempio di un file di configurazione di `db2dsdriver.cfg` mostra le 
 
     **Token di accesso**
 
-    Collegati al server database `<database_server_name>` e passa il token di accesso immettendo il seguente comando allo script o prompt del comando CLP:
+    Stabilisci una connessione al server database `<database_server_name>` e passa il token di accesso eseguendo questo comando allo script o prompt del comando CLP:
 
     `CONNECT TO <database_server_name> ACCESSTOKEN <access_token_string>`
 
     **Chiave API**
 
-    Collegati al server database `<database_server_name>` con una chiave API immettendo il seguente comando allo script o prompt del comando CLP:
+    Stabilisci una connessione al server database `<database_server_name>` con una chiave API eseguendo questo comando allo script o prompt del comando CLP:
 
     `CONNECT TO <database_server_name> APIKEY <api-key-string>`
 
     **ID IBM/password**
 
-    Collegati al server database `<database_server_name>` con un ID IBM/password immettendo il seguente comando allo script o prompt del comando CLP:
+    Stabilisci una connessione al server database `<database_server_name>` con un ID IBM/una password eseguendo questo comando allo script o prompt CLP:
 
     `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
 
@@ -173,7 +173,7 @@ Il seguente esempio di un file di configurazione di `db2dsdriver.cfg` mostra le 
 
     `connect <IBMid>/<password>@<data_source_name>`
 
-    Per ulteriori dettagli sulla connessione agli alias DSN con CLPPLUS, consulta: [DSN aliases in CLPPlus ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SSEPGG_11.1.0/com.ibm.swg.im.dbclient.clpplus.doc/doc/c0057148.html){:new_window}.
+    Per ulteriori dettagli sulla connessione agli alias DSN con CLPPLUS, consulta: [DSN aliases in CLPPlus ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:new_window}.
 
 ### JDBC
 {: #jdbc}
@@ -221,7 +221,7 @@ Connection conn = dataSource.getConnection( );
 o
 
 ```
-Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apikey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apiKey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
 ```
 
 **ID IBM/password**
@@ -286,7 +286,7 @@ Per ulteriori dettagli sull'API del tuo servizio, consulta: [{{site.data.keyword
 ## Federazione ID IBM
 {: #fed_ibmid}
 
-Per utilizzare il tuo provider di identità come ad esempio LDAP, devi prima federare il tuo server LDAP con l'ID IBM. Per istruzioni su come federare il server LDAP con l'ID IBM, consulta: [IBMid Enterprise Federation Adoption Guide ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://ibm.ent.box.com/notes/78040808400?s=nhuzrhlsn0ly338zddomx329tlpmfghc){:new_window}. Dopo che la federazione dell'ID IBM è stata completata e gli utenti consentiti sono stati aggiunti all'istanza del servizio database dall'amministratore del database, questi utenti possono accedere alla console con i loro ID utente e password aziendali. In alternativa, questi utenti possono utilizzare un token di accesso o una chiave API che rappresenta il proprio ID utente per connettersi all'istanza del servizio database tramite una delle interfacce client del database supportate.
+Per utilizzare il tuo provider di identità come ad esempio LDAP, devi prima federare il tuo server LDAP con l'ID IBM. Per istruzioni su come federare il server LDAP con l'ID IBM, consulta: [IBMid Enterprise Federation Adoption Guide ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://ibm.ent.box.com/notes/78040808400?v=IBMid-Federation-Guide){:new_window}. Dopo che la federazione dell'ID IBM è stata completata e gli utenti consentiti sono stati aggiunti all'istanza del servizio database dall'amministratore del database, questi utenti possono accedere alla console con i loro ID utente e password aziendali. In alternativa, questi utenti possono utilizzare un token di accesso o una chiave API che rappresenta il proprio ID utente per connettersi all'istanza del servizio database tramite una delle interfacce client del database supportate.
 
 ## Limitazioni
 {: #restrictions}

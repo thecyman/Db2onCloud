@@ -33,7 +33,7 @@ subcollection: Db2onCloud
 
 [DR ノードが使用可能なデータ・センターの場所のリスト。 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:new_window}
 
-{{site.data.keyword.Db2_on_Cloud_short}} は、`ASYNC` モードの DB2 高可用性災害時リカバリー (HADR) テクノロジーを使用して、オフサイトの DR ノード機能を実現し、DR ノードに `Read on Standby` を提供します。
+{{site.data.keyword.Db2_on_Cloud_short}} は、`ASYNC` モードの Db2 高可用性災害時リカバリー (HADR) テクノロジーを使用して、オフサイトの DR ノード機能を実現し、DR ノードに `Read on Standby` を提供します。
 
 ## **ブラジル: 補足ルール 14** (ブラジル連邦政府向けにプロビジョンされたシステムに適用されます)
 {: #rule_14}
@@ -62,7 +62,7 @@ Geo レプリケートされた災害復旧 (HADR) の場合は、コンソー�
 ## FAQ
 {: #faq}
 
-### DB2 を使用しているアプリケーションがテークオーバー後に DR ノードと連動するためには、何を変更する必要がありますか? テークオーバー後、DNS 名や IP アドレスは変更されますか?
+### Db2 を使用しているアプリケーションがテークオーバー後に DR ノードと連動するためには、何を変更する必要がありますか? テークオーバー後、DNS 名や IP アドレスは変更されますか?
 
 **A**: いいえ。2 つの解決可能なホスト名が与えられます。 アプリが Db2 ACR (Active Connection Reroute、自動クライアント・リルート) を使用するように構成されている場合、アプリは新しい 1 次ノードにリルートされます。
 

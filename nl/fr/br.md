@@ -31,13 +31,9 @@ En supplément des sauvegardes standard, vous pouvez utiliser [Time Travel Query
  
 Pour plus d'informations sur les restaurations avec point de cohérence, voir [Restauration avec point de cohérence](#point-in-time).
 
-Tous les plans payants utilisent généralement IBM Cloud Object Storage (COS) pour conserver les sauvegardes hors site dans trois différents centres de données. Toutefois, Sydney et certains centres de données de plus petite taille peuvent ne pas prendre en charge actuellement la réplication hors site avec IBM COS. Consultez la [documentation IBM COS](/docs/services/cloud-object-storage/basics/endpoints.html#select-regions-and-endpoints) correspondant à votre région afin de déterminer quelles régions prennent en charge la réplication hors site.
+Tous les plans payants utilisent généralement IBM Cloud Object Storage (COS) pour conserver les sauvegardes hors site dans trois différents centres de données. Toutefois, Sydney et certains centres de données de plus petite taille peuvent ne pas prendre en charge actuellement la réplication hors site avec IBM COS. Consultez la [documentation IBM COS](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-endpoints#endpoints) correspondant à votre région afin de déterminer quelles régions prennent en charge la réplication hors site.
 
-<!-- Retained backups are used by IBM for system recovery purposes in the event of a disaster or system loss. Use the [Time Travel Query ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} to keep historical data for your own purposes. In addition, you can also perform your own exports using IBM Data Studio or any Db2 tool. -->
-
-<!-- To store your backups offsite at a remote storage site, make a request to IBM Support. -->
-
-Vous pouvez également utiliser l'[interface de ligne de commande IBM Lift ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://lift.ng.bluemix.net/){:new_window} pour importer des données dans {{site.data.keyword.Db2_on_Cloud_short}}.
+Vous pouvez également utiliser l'[interface de ligne de commande IBM Lift ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.lift-cli.cloud.ibm.com/){:new_window} pour importer des données dans {{site.data.keyword.Db2_on_Cloud_short}}.
 
 ## Restauration avec point de cohérence
 {: #point-in-time}
@@ -47,7 +43,7 @@ Vous pouvez également utiliser l'[interface de ligne de commande IBM Lift ![Ic�
 Vous trouverez ci-dessous une liste présentant la disponibilité de la fonction de restauration avec point de cohérence :
 - Centre de données Dallas - Fonction disponible actuellement dans les systèmes à serveur unique
 - Tous les autres cas, notamment Europe et systèmes à haute disponibilité à Dallas - Demande d'activation de la fonction auprès du support. La mise en oeuvre complète dans tous les systèmes sera effective le 28 février 2019.
-- Système IBM Cloud Dedicated (auparavant Bluemix Dedicated) - Fonction disponible uniquement en ouvrant un ticket de demande de service.
+- Système IBM Cloud Dedicated - Disponible uniquement via un ticket de demande de service.
 
 Vous trouverez ci-dessous des exemples sélectionnés de capture d'écran concernant l'interface utilisateur de la console Web dans lesquels l'opération de restauration avec point de cohérence est exécutée et sa progression est indiquée :
 

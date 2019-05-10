@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-01-02"
+lastupdated: "2019-04-30"
 
 keywords: 
 
@@ -26,24 +26,21 @@ subcollection: Db2onCloud
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Introdução
+# Tutorial de Introdução
 {: #getting_started_db2oncloud}
 
-O {{site.data.keyword.Db2_on_Cloud_long}} é um banco de dados SQL provisionado para você na nuvem. É possível usar o {{site.data.keyword.Db2_on_Cloud_short}} da mesma forma que usaria qualquer software de banco de dados, mas sem o gasto adicional e a despesa de configuração de hardware e instalação e manutenção de software. 
+O {{site.data.keyword.Db2_on_Cloud_long}} é um banco de dados SQL que é provisionado para você na nuvem. É possível usar o {{site.data.keyword.Db2_on_Cloud_short}} do mesmo modo que você usaria qualquer software de banco de dados, mas sem o tempo e a despesa de configuração de hardware ou instalação e manutenção de software.
 {: shortdesc}
 
-Crie credenciais. Para aqueles novos no IBM Cloud, depois de criar o serviço, deve-se criar um nome de usuário e uma senha
-clicando no botão **Criar credenciais** ao ativar o serviço. Tecnicamente, é possível efetuar login
-no console da web sem credenciais, mas você precisará do nome do usuário e da senha para usar muitas das ferramentas do
-Db2.
+Crie credenciais. Para aqueles que são novos no IBM Cloud, após criar o serviço, deve-se criar
+um nome do usuário e senha clicando no botão **Criar credenciais** ao iniciar o
+serviço. Tecnicamente, é possível efetuar login no console da web sem credenciais, mas você precisa
+do nome do usuário e da senha para usar muitas das ferramentas do Db2.
 {: important}
 
-Também é possível instalar um banco de dados local do Db2 usando o [download gratuito do Db2 Developer Edition ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window}. Ele instala rapidamente uma edição do desenvolvedor pronta para execução do Db2 com ferramentas dentro de um contêiner do Docker (o Docker não é necessário; qualquer componente necessário será instalado automaticamente). 
-
-<!-- ## Free trial
-{: #freetrial}
-
-You can try the {{site.data.keyword.Db2_on_Cloud_short}} Precise Performance 500 (2.8.500) plan for 7 days on {{site.data.keyword.Bluemix_notm}} without charge. [Free trial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/db2){:new_window} -->
+Também é possível instalar um banco de dados Db2 local usando o [download do Db2 Developer Edition grátis ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window}. Ele instala rapidamente uma
+edição de desenvolvedor pronta para desenvolvimento do Db2 com ferramentas dentro de um contêiner do
+Docker (o Docker não é requerido; ele instala automaticamente quaisquer componentes necessários). 
 
 ## Interfaces
 {: #interfaces}
@@ -77,17 +74,32 @@ O console da web fornece uma interface gráfica para tudo o que precisar para us
 With Db2 Warehouse plans, you can perform tasks related to file management, loading data, and running R scripts by using the [Db2 Warehouse REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-api){:new_window}.
 {: shortdesc} -->
 
-### Instalando clientes da linha de comando e drivers do Db2 no computador
+### Instalando clientes de linha de comandos e drivers do Db2 em seu computador
 {: #connect_apps}
 
-A maioria dos usuários pode ignorar essa etapa. Na maioria dos casos, os usuários tendem a usar apenas a API de REST ou
-instalar drivers para uma estrutura, por exemplo, com o comando `pip` da Python. No entanto, os
-usuários avançados podem desejar usar o cliente da linha de comando do Db2 para administrar seu banco de dados
-e usar os comandos do Db2. Além disso, determinados aplicativos ODBC ou JDBC podem se beneficiar de uma instalação geral de
-drivers do Db2. Se esse for o caso, conclua as etapas a seguir:
+Na maioria dos casos, os usuários tendem a usar apenas a API de REST ou
+instalar drivers para uma estrutura, por exemplo, com o comando `pip` da Python.
 {: shortdesc}
 
+Para instalar pacotes de drivers Python para o MacOS, deve-se usar o comando `pip` com a opção `--no-cache-dir`. Para obter instruções detalhadas, veja: [Suporte do Python para IBM DB2 e IBM Informix ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://ibm.biz/db2-drivers-python){:new_window}
+{: note}
+
 <!-- Drivers on site are broken so taking out this one -Simon. 1. Download the [driver package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} from the Connection info page of the {{site.data.keyword.Db2_on_Cloud_short}} web console.-->
+
+Para instalar os drivers de estrutura Python ou Node.js, clique em um dos links a seguir:
+- [Drivers Python ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://ibm.biz/db2-drivers-python){:new_window}
+- [Drivers Node.js ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://ibm.biz/db2-drivers-node){:new_window}
+
+Para instalar o Node.js ORM denominado Sequelize, clique no link a seguir:
+[Sequelize ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://github.com/ibmdb/sequelize){:new_window}
+{: note}
+
+Para obter mais opções de instalação do driver, incluindo Java, Go, Jupyter Notebooks, Ruby, PHP e mais, clique no link a seguir: 
+
+- [ibmdb ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://github.com/ibmdb){:new_window}
+
+Supondo que você já tenha instalado drivers de estrutura, é possível ignorar as etapas a seguir. No entanto, os usuários avançados podem desejar usar o cliente de linha de comandos do Db2 para administrar seu banco de dados e usar os comandos do Db2. Além disso, determinados aplicativos ODBC ou JDBC podem se beneficiar de uma instalação geral de
+drivers do Db2. Se esse for o caso, conclua as etapas a seguir:
 
 1. [Instale o pacote de drivers ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} no computador em que seus apps ou ferramentas estão em execução.
 2. [Configure os arquivos de drivers ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} para seu banco de dados do {{site.data.keyword.Db2_on_Cloud_short}}.
@@ -95,7 +107,9 @@ drivers do Db2. Se esse for o caso, conclua as etapas a seguir:
 ### Use o Db2 on Cloud como uma origem de dados para os seus apps ou serviços do {{site.data.keyword.Bluemix_notm}}
 {: #data_src}
 
-Os apps hospedados no {{site.data.keyword.Bluemix_notm}} podem conectar-se ao seu banco de dados do {{site.data.keyword.Db2_on_Cloud_short}} exatamente da mesma maneira que os seus aplicativos locais se conectam ao seu banco de dados do {{site.data.keyword.Db2_on_Cloud_short}}.
+Os apps que são hospedados no {{site.data.keyword.Bluemix_notm}} podem se conectar ao
+seu banco de dados do {{site.data.keyword.Db2_on_Cloud_short}} da mesma maneira que os
+aplicativos locais se conectam ao seu banco de dados do {{site.data.keyword.Db2_on_Cloud_short}}.
 {: shortdesc}
 
 Quando seus apps usam a plataforma {{site.data.keyword.Bluemix_notm}}, é possível aproveitar a variável de ambiente `VCAP _SERVICES` para simplificar a tarefa de especificar detalhes e credenciais do banco de dados:
@@ -145,7 +159,7 @@ Quando seus apps usam a plataforma {{site.data.keyword.Bluemix_notm}}, é possí
 ## Amostra
 {: #samples}
 
-Aqui estão links para amostras que demonstram como se conectar a seu banco de dados do {{site.data.keyword.Db2_on_Cloud_short}} por meio de aplicativos em diferentes idiomas:
+Aqui estão os links para as amostras que demonstram como se conectar ao seu banco de dados do {{site.data.keyword.Db2_on_Cloud_short}} em aplicativos em diferentes idiomas:
 {: shortdesc}
 
    * [.NET ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html){:new_window}
@@ -170,10 +184,10 @@ Assista a este vídeo para ver as etapas necessárias para usar uma API de RESTf
 
 <iframe class="embed-responsive-item" id="youtubeplayer2" title="Usando a API de RESTful para se comunicar com o {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/PSNBDwgf9ts?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
-## Vídeo: Integrando os blocos de notas do Jupyter
+## Vídeo: Integrando os Notebooks Jupyter
 {: #cognos_vid}
 
-Assista a este vídeo para ver como integrar os blocos de notas do Jupyter ao {{site.data.keyword.Db2_on_Cloud_short}}.
+Assista a este vídeo para ver como integrar os Notebooks Jupyter com o {{site.data.keyword.Db2_on_Cloud_short}}.
 
 <iframe class="embed-responsive-item" id="youtubeplayer3" title="Integrando os blocos de notas do Jupyter" type="text/html" width="640" height="390" src="//www.youtube.com/embed/bNfH0Wzx3is?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-01-02"
+lastupdated: "2019-04-30"
 
 keywords: 
 
@@ -26,21 +26,16 @@ subcollection: Db2onCloud
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# 시작하기
+# 시작하기 튜토리얼
 {: #getting_started_db2oncloud}
 
-{{site.data.keyword.Db2_on_Cloud_long}}는 클라우드에서 사용자를 위해 프로비저닝된 SQL 데이터베이스입니다. 데이터베이스 소프트웨어를 사용하는 것과 동일하게 {{site.data.keyword.Db2_on_Cloud_short}}를 사용할 수 있지만 하드웨어 설정이나 소프트웨어 설치 및 관리에 대한 오버헤드와 비용이 없습니다. 
+{{site.data.keyword.Db2_on_Cloud_long}}는 클라우드에서 사용자를 위해 프로비저닝된 SQL 데이터베이스입니다. {{site.data.keyword.Db2_on_Cloud_short}}는 다른 데이터베이스 소프트웨어를 사용하는 것과 동일하게 사용할 수 있지만, 하드웨어 설정이나 소프트웨어 설치 및 관리에 소요되는 시간 및 비용이 없습니다.
 {: shortdesc}
 
-인증 정보를 작성하십시오. IBM Cloud를 처음 사용하는 경우 서비스를 작성한 다음 서비스를 시작할 때 **인증 정보 작성** 단추를 클릭하여 사용자 이름과 비밀번호를 작성해야 합니다. 엄밀히 말하자면 인증 정보 없이 웹 콘솔에 로그인할 수 있지만 대부분의 Db2 도구를 사용하려면 사용자 이름과 비밀번호가 필요합니다.
+인증 정보를 작성하십시오. IBM Cloud를 처음 사용하는 경우 서비스를 작성한 다음 서비스를 시작할 때 **인증 정보 작성** 단추를 클릭하여 사용자 이름과 비밀번호를 작성해야 합니다. 엄밀히 말하면 인증 정보 없이도 웹 콘솔에 로그인할 수 있지만, 대부분의 Db2 도구를 사용하려면 사용자 이름과 비밀번호가 필요합니다.
 {: important}
 
-[free Db2 Developer Edition download ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window}를 사용하여 로컬 Db2 데이터베이스도 설치할 수 있습니다. Docker 컨테이너 내부의 도구로, 바로 사용할 수 있는 Db2 개발자 에디션을 빠르게 설치합니다(Docker는 필요 없으며 필요한 컴포넌트는 자동으로 생성됨). 
-
-<!-- ## Free trial
-{: #freetrial}
-
-You can try the {{site.data.keyword.Db2_on_Cloud_short}} Precise Performance 500 (2.8.500) plan for 7 days on {{site.data.keyword.Bluemix_notm}} without charge. [Free trial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/db2){:new_window} -->
+[무료 Db2 Developer Edition 다운로드 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window}를 사용하여 로컬 Db2 데이터베이스를 설치할 수도 있습니다. 이는 Docker 컨테이너 내에 도구를 포함하는 즉시 사용 가능한 Db2 개발자 에디션을 빠르게 설치합니다(Docker는 필요하지 않으며 필요한 컴포넌트는 자동으로 설치됨).  
 
 ## 인터페이스
 {: #interfaces}
@@ -77,10 +72,27 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 ### 컴퓨터에 Db2 명령행 클라이언트 및 드라이버 설치
 {: #connect_apps}
 
-대부분의 사용자는 이 단계를 건너뛸 수 있습니다. 대부분의 경우 사용자는 REST API만 사용하거나 프레임워크의 드라이버를 설치합니다(예: Python의 `pip` 명령 사용). 그러나 파워유저는 Db2 명령행 클라이언트를 사용하여 데이터베이스를 관리하고 Db2 명령을 사용할 수 있습니다. 특정 ODBC 또는 JDBC 연결에서 일반 Db2 드라이버 설치도 이용할 수 있습니다. 이 경우 다음 단계를 완료하십시오.
+대부분의 경우 사용자는 REST API만 사용하거나 프레임워크의 드라이버를 설치합니다(예: Python의 `pip` 명령 사용).
 {: shortdesc}
 
+MacOS용 Python 드라이버 패키지를 설치하려면 `pip` 명령을 `--no-cache-dir` 옵션과 함께 사용해야 합니다. 자세한 지시사항은 [Python support for IBM DB2 and IBM Informix ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://ibm.biz/db2-drivers-python){:new_window}를 참조하십시오.
+{: note}
+
 <!-- Drivers on site are broken so taking out this one -Simon. 1. Download the [driver package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} from the Connection info page of the {{site.data.keyword.Db2_on_Cloud_short}} web console.-->
+
+Python 또는 Node.js 프레임워크 드라이버를 설치하려면 다음 링크 중 하나를 클릭하십시오. 
+- [Python 드라이버 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://ibm.biz/db2-drivers-python){:new_window}
+- [Node.js 드라이버 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://ibm.biz/db2-drivers-node){:new_window}
+
+Sequelize라는 Node.js ORM을 설치하려면 다음 링크를 클릭하십시오.
+[Sequelize ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://github.com/ibmdb/sequelize){:new_window}
+{: note}
+
+Java, Go, Jupyter Notebooks, Ruby, PHP 등을 포함하는 추가 드라이버 설치 옵션은 다음 링크를 클릭하십시오.  
+
+- [ibmdb ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://github.com/ibmdb){:new_window}
+
+프레임워크 드라이버를 이미 설치한 경우에는 다음 단계를 건너뛸 수 있습니다. 그러나 파워유저는 Db2 명령행 클라이언트를 사용하여 데이터베이스를 관리하고 Db2 명령을 사용하려 할 수 있습니다. 특정 ODBC 또는 JDBC 연결에서 일반 Db2 드라이버 설치도 이용할 수 있습니다. 이 경우 다음 단계를 완료하십시오.
 
 1. 앱 또는 도구가 실행 중인 컴퓨터에서 [Install the driver package ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window}를 수행하십시오.
 2. {{site.data.keyword.Db2_on_Cloud_short}} 데이터베이스에 대해 [Configure the driver files ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}를 수행하십시오.
@@ -88,7 +100,7 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 ### {{site.data.keyword.Bluemix_notm}} 앱 또는 서비스의 데이터 소스로 Db2 on Cloud 사용
 {: #data_src}
 
-{{site.data.keyword.Bluemix_notm}}에서 호스팅되는 앱은 로컬 애플리케이션이 {{site.data.keyword.Db2_on_Cloud_short}} 데이터베이스에 연결하는 것과 정확히 동일한 방식으로 {{site.data.keyword.Db2_on_Cloud_short}} 데이터베이스에 연결할 수 있습니다.
+{{site.data.keyword.Bluemix_notm}}에서 호스팅되는 앱은 로컬 애플리케이션이 {{site.data.keyword.Db2_on_Cloud_short}} 데이터베이스에 연결하는 것과 동일한 방식으로 {{site.data.keyword.Db2_on_Cloud_short}} 데이터베이스에 연결할 수 있습니다.
 {: shortdesc}
 
 앱이 {{site.data.keyword.Bluemix_notm}} 플랫폼을 사용할 때 `VCAP _SERVICES` 환경 변수를 이용하여 데이터베이스 세부사항 및 인증 정보를 지정하는 태스크를 단순화할 수 있습니다.
@@ -166,7 +178,7 @@ RESTful API를 사용하여 {{site.data.keyword.Db2_on_Cloud_short}}와 통신�
 ## 동영상: Jupyter Notebook 통합
 {: #cognos_vid}
 
-Jupyter Notebook을 {{site.data.keyword.Db2_on_Cloud_short}}와 통합하는 방법을 보려면 이 동영상을 시청하십시오.
+Jupyter Notebook을 {{site.data.keyword.Db2_on_Cloud_short}}와 통합하는 방법을 보려면 이 동영상을 시청하십시오. 
 
 <iframe class="embed-responsive-item" id="youtubeplayer3" title="Jupyter Notebook 통합" type="text/html" width="640" height="390" src="//www.youtube.com/embed/bNfH0Wzx3is?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 

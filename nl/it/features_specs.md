@@ -61,7 +61,7 @@ Le funzioni e le specifiche di {{site.data.keyword.Db2_on_Cloud_long}} sono qui 
 |  | Nodo DR offsite | 99.5% | Devi utilizzare l'HA locale aggiuntiva per raggiungere il 99.99% |
 |  | Politica di manutenzione | S | [Read details ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.ibm.com/answers/questions/439146/where-can-i-find-detail-about-maintenance-and-noti.html){:new_window} |
 |  |  |  |  |
-| Conformità di sicurezza | Pronto per HIPAA | S | Tutti i piani a pagamento incluso Flex. Devi richiedere la modalità HIPAA al supporto IBM. <!--For Db2 Warehouse on Cloud [see docs here ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/docs/services/Db2whc/index.html#getting_started){:new_window}.--> |
+| Conformità di sicurezza | Pronto per HIPAA | S | Tutti i piani a pagamento incluso Flex. Devi richiedere la modalità HIPAA al supporto IBM. |
 |  | HITRUST  | [In roadmap ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://ibm.biz/db2oncloud-roadmap){:new_window} | Oggi puoi utilizzare Ospitato Db2 per HITRUST |
 |  | ISO (International Organization for Standardization)  | S | ISO 27001, 27002, 27017 e 27018 |
 |  | Service Organization Controls (SOC) | S | SOC 2 Type 2 |
@@ -70,7 +70,7 @@ Le funzioni e le specifiche di {{site.data.keyword.Db2_on_Cloud_long}} sono qui 
 |  | Elenco completo delle conformità | S | [Security compliances ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | Backup e ripristino | Backup giornalieri | S | 14 giorni di backup giornalieri |
-|  | Ripristino self service in un momento specifico | Disponibile il 15 nov 2018 | [Ripristino del punto temporale](/docs/services/Db2onCloud/br.html#point-in-time) |
+|  | Ripristino self service in un momento specifico | Disponibile il 15 nov 2018 | [Ripristino del punto temporale](/docs/services/Db2onCloud?topic=Db2onCloud-bnr#point-in-time) |
 |  | Backup mantenuti offsite | Su richiesta | A partire dal primo dicembre 2018, offsite è il valore predefinito.  |
 |  | Conservazione del backup fino a 10 anni | Su richiesta | A partire dal primo dicembre, 2018. Richiede il ticket di supporto. |
 |  | Query dei vecchi dati senza ripristino | S | Devi configurare [Time Travel Query ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} |
@@ -92,7 +92,7 @@ Le funzioni e le specifiche di {{site.data.keyword.Db2_on_Cloud_long}} sono qui 
 |  | Disponibile su Hybrid Data Management Platform (HDMP) | S | Solo il piano Flex. [Dettagli su HDMP ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/ca-en/marketplace/hybrid-data-management-platform){:new_window}|
 |  | Fatturazione giornaliera | S | La fatturazione per i piani Flex si basa sul picco di utilizzo giornaliero. Ad esempio, se aumenti da 2 a 8 core un giorno per un'ora, sarai fatturato per 8 core solo per tale giorno e per 2 core per tutti gli altri giorni del mese. |
 |  | Fatturazione oraria | [In roadmap ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - | 
-|  | Metrica dei prezzi principale | Mensile | I prezzi sono indicati in termini mensili (ad esempio, $189 dollari al mese). Un prezzo mensile proporzionale si basa sul numero di giorni di servizio attivati durante il mese in cui il servizio è stato terminato. [Esempi](/docs/services/Db2onCloud/plans_pricing.html) |
+|  | Metrica dei prezzi principale | Mensile | I prezzi sono indicati in termini mensili (ad esempio, $189 dollari al mese). Un prezzo mensile proporzionale si basa sul numero di giorni di servizio attivati durante il mese in cui il servizio è stato terminato. [Esempi](/docs/services/Db2onCloud?topic=Db2onCloud-plans_pricing#examples) |
 |  |  |  |  |
 | Durate distribuzione e ridimensionamento | Dallas | **Distribuzione**: < 5 minuti. **Ridimensionamento**: < 45 minuti. | Solo il piano Flex, a seconda dell'inventario |
 | | Altre regioni Stati Uniti Sud | **Distribuzione**: 1 giorno. **Ridimensionamento**: 8 ore. | Alcune ubicazioni più veloci di altre |

@@ -31,13 +31,9 @@ subcollection: Db2onCloud
  
 ポイント・イン・タイム・リストアについては、[ポイント・イン・タイム・リストア](#point-in-time)を参照してください。
 
-すべての有料プランでは通常、IBM Cloud Object Storage (COS) を利用して、オフサイトの 3 つの異なるデータ・センターでバックアップが保持されます。 ただし、現時点では、シドニー・データ・センターと小規模なデータ・センターの一部は、IBM COS によるオフサイト・レプリケーションをサポートしていません。 オフサイト・レプリケーションをサポートしている地域を判別するには、お客様の地域の [IBM COS の資料](/docs/services/cloud-object-storage/basics/endpoints.html#select-regions-and-endpoints)を確認してください。
+すべての有料プランでは通常、IBM Cloud Object Storage (COS) を利用して、オフサイトの 3 つの異なるデータ・センターでバックアップが保持されます。 ただし、現時点では、シドニー・データ・センターと小規模なデータ・センターの一部は、IBM COS によるオフサイト・レプリケーションをサポートしていません。 オフサイト・レプリケーションをサポートしている地域を判別するには、お客様の地域の [IBM COS の資料](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-endpoints#endpoints)を確認してください。
 
-<!-- Retained backups are used by IBM for system recovery purposes in the event of a disaster or system loss. Use the [Time Travel Query ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} to keep historical data for your own purposes. In addition, you can also perform your own exports using IBM Data Studio or any Db2 tool. -->
-
-<!-- To store your backups offsite at a remote storage site, make a request to IBM Support. -->
-
-[IBM Lift CLI ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://lift.ng.bluemix.net/){:new_window} を使用して、{{site.data.keyword.Db2_on_Cloud_short}} にデータをインポートすることもできます。
+[IBM Lift CLI ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.lift-cli.cloud.ibm.com/){:new_window} を使用して、{{site.data.keyword.Db2_on_Cloud_short}} にデータをインポートすることもできます。
 
 ## ポイント・イン・タイム・リストア
 {: #point-in-time}
@@ -47,7 +43,7 @@ subcollection: Db2onCloud
 以下は、ポイント・イン・タイム・リストア・フィーチャーのアベイラビリティー・リストです。
 - ダラス・データ・センター: 単一サーバー・システム上で現在使用可能です
 - その他のすべてのケース (ヨーロッパ、およびダラスの HA システムを含む): サポートにフィーチャー・アクティブ化を要求してください。 すべてのシステムへのフルロールアウトは、2019 年 2 月 28 日までに完了する予定です。
-- IBM Cloud Dedicated システム (旧称 Bluemix Dedicated): サポート・チケットを開くことによってのみ使用可能です。
+- IBM Cloud Dedicated システム: サポート・チケットを開くことによってのみ使用可能です。
 
 Web コンソール UI の特定の例を以下に示します。このスクリーン・ショットでは、ポイント・イン・タイム・リストア操作が開始されていて、その進行状況が示されています。
 

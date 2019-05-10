@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # データ仮想化 (フェデレーション)
 {: #fed}
 
-Db2 データ仮想化 (フェデレーション) は {{site.data.keyword.Db2_on_Cloud_short}} でサポートされています。 データ仮想化によって、組織内の任意の場所にある複数の分散データベース上にあるすべてのデータに対して単一照会アクセスが可能になります。 クラウドとオンプレミスの両方の DB2 または Informix のデータ・ソースにあるデータにアクセスできます。 
+Db2 データ仮想化 (フェデレーション) は {{site.data.keyword.Db2_on_Cloud_short}} でサポートされています。 データ仮想化によって、組織内の任意の場所にある複数の分散データベース上にあるすべてのデータに対して単一照会アクセスが可能になります。 クラウドとオンプレミスの両方の Db2 または Informix のデータ・ソースにあるデータにアクセスできます。 
 {: shortdesc}
 
 このファンクションは、無料のライト・プランを除き、{{site.data.keyword.Db2_on_Cloud_short}} のすべてのバージョンでサポートされています。 ただし、Lite プランをデータ取得の
@@ -74,7 +74,7 @@ Db2 ファミリー製品のユーザーは、
 <!-- By using federation, users can increase capacity of an on premises database by federating to or from the cloud. This is a great option if your on premises database is running out of storage. Increased capacity will also be useful for new development as our users no longer need to change a database in production. You can also use this feature to federate between two Db2 on Cloud databases to increase the capacity beyond the current limits of the Flex plan. -->
 
 ## 概説
-{: #getting_started}
+{: #getting_started_fed}
 
 以下の手順では、分散したデータ・ソースを統合し、あたかも 1 つのデータ・ソースからデー
 タを取得しているように見せる方法を例示します。 2 つの
@@ -140,33 +140,33 @@ Db2 ファミリー製品のユーザーは、
    `db2 "select * from ntest1"`
 -->
 
-### フェデレーション・ソースとして使用されている DB2 on Cloud マシン上:
+### フェデレーション・ソースとして使用されている Db2 on Cloud マシン上:
 {: #fed_src}
 
 {{site.data.keyword.Db2_on_Cloud_short}} コンソールから、以下を行います。
 
-1. ターゲット・マシンと通信するためのサーバーを作成します。<br/>
+1. ターゲット・マシンと通信するサーバーを作成します。<br/>
    `create server <server_name> type dashdb version 11 wrapper drda authorization "<admin_user_on_target>" password "<admin_password_on_target>" options (host '<target_host_name>', port '50000', dbname 'bludb')`
 
-   例えば、以下を行えます。<br/>
+   例えば、以下のようにします。<br/>
    `create server db2server type dashdb version 11 wrapper drda authorization "admin2" password "YYYY" options (host 'targetdotcom', port '50000', dbname 'bludb')`
 
-2. admin2 用のユーザー・マッピングを作成します。<br/>
+2. admin2 のユーザー・マッピングを作成します。<br/>
    `create user mapping for <admin_user> server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')`
 
-   例えば、以下を行えます。<br/>
+   例えば、以下のようにします。<br/>
    `create user mapping for admin1 server db2server options (remote_authid 'admin2', remote_password 'YYYY')`
 
 3. データベースのニックネームを作成します。<br/>
    `create nickname <nickname> for <server_name>.<schema_name>.<table_name>`
 
-   例えば、以下を行えます。<br/>
+   例えば、以下のようにします。<br/>
    `create nickname ntest1 for db2server.admin2.testdata`
 
 4. ターゲット・サーバーからデータを取得できることをテストします。<br/>
    `select * from <nickname>`
 
-   例えば、以下を行えます。<br/>
+   例えば、以下のようにします。<br/>
    `select * from ntest1`
 
 ## 追加情報

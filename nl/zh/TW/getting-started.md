@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-01-02"
+lastupdated: "2019-04-30"
 
 keywords: 
 
@@ -26,21 +26,16 @@ subcollection: Db2onCloud
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# 開始使用
+# 入門指導教學
 {: #getting_started_db2oncloud}
 
-{{site.data.keyword.Db2_on_Cloud_long}} 是在雲端中為您所佈建的 SQL Database。您就像使用任何資料庫軟體一般的使用 {{site.data.keyword.Db2_on_Cloud_short}}，但沒有硬體設置或軟體安裝及維護的額外負荷與費用。
+{{site.data.keyword.Db2_on_Cloud_long}} 是在雲端中為您所佈建的 SQL Database。您就像使用任何資料庫軟體一般地使用 {{site.data.keyword.Db2_on_Cloud_short}}，但不需要硬體設置或軟體安裝及維護的時間與費用。
 {: shortdesc}
 
-建立認證。對於剛接觸 IBM Cloud 的人，建立服務之後您必須在啟動服務時按一下**建立認證**按鈕，建立使用者名稱及密碼。技術上來說，您不需認證便可登入 Web 主控台，但您需要使用者名稱及密碼才能使用 Db2 工具。
+建立認證。對於剛接觸 IBM Cloud 的您，建立服務之後您必須在啟動服務時按一下**建立認證**按鈕，以便建立使用者名稱及密碼。技術上來說，您不需認證便可登入 Web 主控台，但您需要使用者名稱及密碼才能使用許多 Db2 工具。
 {: important}
 
 您也可以使用[免費的 Db2 Developer Edition 下載 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window} 安裝本端 Db2 資料庫。它會快速地安裝立即可用的 Db2 開發人員版本，並且在 Docker 容器內會有工具（不需要 Docker；它會自動安裝任何必要的元件）。 
-
-<!-- ## Free trial
-{: #freetrial}
-
-You can try the {{site.data.keyword.Db2_on_Cloud_short}} Precise Performance 500 (2.8.500) plan for 7 days on {{site.data.keyword.Bluemix_notm}} without charge. [Free trial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/db2){:new_window} -->
 
 ## 介面
 {: #interfaces}
@@ -77,10 +72,27 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 ### 在電腦上安裝 Db2 指令行用戶端及驅動程式
 {: #connect_apps}
 
-大部分使用者可以跳過此步驟。在大部分情況下，使用者通常只使用 REST API，或安裝架構的驅動程式，例如使用 Python 的 `pip` 指令。不過，專業使用者可能會想要使用 Db2 指令行用戶端來管理資料庫及使用 Db2 指令。此外，特定 ODBC 或 JDBC 應用程式可以因為 Db2 驅動程式的一般安裝而獲益。如果是的話，請完成下列步驟：
+在大部分情況下，使用者通常只使用 REST API，或安裝架構的驅動程式，例如使用 Python 的 `pip` 指令。
 {: shortdesc}
 
+若要安裝 MacOS 的 Python 驅動程式套件，您必須使用 `pip` 指令並搭配 `--no-cache-dir` 選項。如需詳細指示，請參閱：[IBM Db2 及 IBM Informix 的 Python 支援 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://ibm.biz/db2-drivers-python){:new_window}
+{: note}
+
 <!-- Drivers on site are broken so taking out this one -Simon. 1. Download the [driver package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} from the Connection info page of the {{site.data.keyword.Db2_on_Cloud_short}} web console.-->
+
+若要安裝 Python 或 Node.js 架構驅動程式，請按一下下列其中一個鏈結：
+- [Python 驅動程式 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://ibm.biz/db2-drivers-python){:new_window}
+- [Node.js 驅動程式 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://ibm.biz/db2-drivers-node){:new_window}
+
+若要安裝稱為 Sequelize 的 Node.js ORM，請按一下下列鏈結：[Sequelize ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://github.com/ibmdb/sequelize){:new_window}
+{: note}
+
+如需其他驅動程式安裝選項，包括 Java、Go、Jupyter Notebooks、Ruby、PHP 及其他，請按一下下列鏈結： 
+
+- [ibmdb ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://github.com/ibmdb){:new_window}
+
+假設已安裝架構驅動程式，您可以跳過下列步驟。不過，專業使用者可能會想要使用 Db2 指令行用戶端來管理資料庫及使用 Db2 指令。此外，特定 ODBC 或 JDBC 應用程式可以因為 Db2 驅動程式的一般安裝而獲益。如果是的話，請完成下列步驟：
+
 
 1. 在您的應用程式或工具執行所在的電腦上，[安裝驅動程式套件 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window}。
 2. 為 {{site.data.keyword.Db2_on_Cloud_short}} 資料庫，[配置驅動程式檔案 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}。
@@ -88,7 +100,7 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 ### 將 Db2 on Cloud 用作 {{site.data.keyword.Bluemix_notm}} 應用程式或服務的資料來源
 {: #data_src}
 
-將 {{site.data.keyword.Bluemix_notm}} 上管理的應用程式連接至 {{site.data.keyword.Db2_on_Cloud_short}} 資料庫的方式，與將您的本端應用程式連接至 {{site.data.keyword.Db2_on_Cloud_short}} 資料庫的方式完全相同。
+將 {{site.data.keyword.Bluemix_notm}} 上管理的應用程式連接至 {{site.data.keyword.Db2_on_Cloud_short}} 資料庫的方式，與將您的本端應用程式連接至 {{site.data.keyword.Db2_on_Cloud_short}} 資料庫的方式相同。
 {: shortdesc}
 
 當您的應用程式使用 {{site.data.keyword.Bluemix_notm}} 平台時，您可以充分運用 `VCAP _SERVICES` 環境變數，以簡化指定資料庫詳細資料及認證的作業。
@@ -167,10 +179,10 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 
 <iframe class="embed-responsive-item" id="youtubeplayer2" title="Using RESTful API to communicate with {{site.data.keyword.Db2_on_Cloud_short}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/PSNBDwgf9ts?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
-## 視訊：Integrating Jupyter notebooks
+## 視訊：Integrating Jupyter Notebooks
 {: #cognos_vid}
 
-請觀看此視訊，來查看如何整合 Jupyter Notebook 與 {{site.data.keyword.Db2_on_Cloud_short}}。
+請觀看此視訊，瞭解如何整合 Jupyter Notebook 與 {{site.data.keyword.Db2_on_Cloud_short}}。
 
 <iframe class="embed-responsive-item" id="youtubeplayer3" title="Integrating Jupyter notebooks" type="text/html" width="640" height="390" src="//www.youtube.com/embed/bNfH0Wzx3is?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 

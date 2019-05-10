@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-03-14"
+lastupdated: "2019-03-01"
 
 keywords: 
 
@@ -28,5 +28,5 @@ subcollection: Db2onCloud
 {: shortdesc}
 
 * [International Db2 Users Group (IDUG®) ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.idug.org/){:new_window} 使用 Db2 和 IDUG®（面向 DB2 用户的独立、非盈利、用户运行的组织），加入成千上万名专业人员。IDUG 在线论坛是寻求帮助或参与的理想场所。全球 IDUG 活动使您能够与其他 Db2 专业人员相互交流和学习。
-* [developerWorks 上的 Db2 Community ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.ibm.com/data/db2/){:new_window} Db2 开发者社区。
+* [Db2 on Cloud Community on IBM Communities ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://community.ibm.com/community/user/hybriddatamanagement/communities/community-home?CommunityKey=ea909850-39ea-4ac4-9512-8e2eb37ea09a){:new_window} 一个 Db2 开发者社区。
 * [Stack Overflow ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://stackoverflow.com/users/login?ssrc=anon_ask&returnurl=https%3a%2f%2fstackoverflow.com%2fquestions%2fask%3ftags%3ddashdb){:new_window} 面向开发者的支持论坛和社区。

@@ -79,9 +79,9 @@ L'interface de ligne de commande Lift est une application gratuite que vous pouv
 |                              | Format de fichier CSV |
 {: caption="Tableau 1. Migration de sources de données" caption-side="top"}
 
-Pour télécharger et installer l'interface de ligne de commande Lift, voir [Download Lift CLI ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://lift.ng.bluemix.net/#download){:new_window}.
+Pour télécharger et installer l'interface de ligne de commande Lift, voir [Download Lift CLI ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.lift-cli.cloud.ibm.com/#download){:new_window}.
 
-Pour des instructions pas à pas relatives à la migration de vos données dans {{site.data.keyword.Bluemix_notm}} en utilisant Lift, voir : [Migrate data to {{site.data.keyword.Db2_on_Cloud_long_notm}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://lift.ng.bluemix.net/#docs){:new_window}.
+Pour des instructions pas à pas relatives à la migration de vos données dans {{site.data.keyword.Bluemix_notm}} en utilisant Lift, voir : [Migrate data to {{site.data.keyword.Db2_on_Cloud_long_notm}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}.
 
 ### IBM Cloud Mass Data Migration
 {: #mdms}
@@ -90,5 +90,5 @@ Il s'agit d'une méthode rapide, simple et sécurisée pour le transfert physiqu
 
 ![Vue du périphérique Mass Data Migration](images/mdms.svg)
 
-Pour plus d'informations sur le périphérique Mass Data Migration, voir [Getting started with IBM Cloud Mass Data Migration](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+Pour plus d'informations sur le périphérique Mass Data Migration, voir le [tutoriel d'initiation](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
 

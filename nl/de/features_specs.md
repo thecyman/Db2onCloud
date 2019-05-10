@@ -61,7 +61,7 @@ subcollection: Db2onCloud
 |  | Ausgelagerter DR-Knoten | 99,5 % | Zusätzlich lokale HA erforderlich, um 99,99 % zu erreichen |
 |  | Wartungsrichtlinie | J | [Details ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://developer.ibm.com/answers/questions/439146/where-can-i-find-detail-about-maintenance-and-noti.html){:new_window} |
 |  |  |  |  |
-| Einhaltung von Sicherheitsbestimmungen | HIPAA-Ready | J | Alle kostenpflichtigen Pläne einschließlich Flex. HIPAA-Modus muss bei IBM Support angefordert werden. <!--For Db2 Warehouse on Cloud [see docs here ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/docs/services/Db2whc/index.html#getting_started){:new_window}.--> |
+| Einhaltung von Sicherheitsbestimmungen | HIPAA-Ready | J | Alle kostenpflichtigen Pläne einschließlich Flex. Muss den HIPAA-Modus von IBM Support anfordern. |
 |  | HITRUST  | [In Roadmap ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://ibm.biz/db2oncloud-roadmap){:new_window} | Db2 Hosted kann zum gegenwärtigen Zeitpunkt für HITRUST verwendet werden. |
 |  | International Organization for Standardization (ISO)  | J | ISO 27001, 27002, 27017 und 27018 |
 |  | Service Organization Controls (SOC) | J | SOC 2 Typ 2 |
@@ -70,7 +70,7 @@ subcollection: Db2onCloud
 |  | Umfassende Compliance-Liste | J | [Einhaltung von Sicherheitsbestimmungen ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | Sicherung & Wiederherstellung | Tägliche Sicherungen | J | 14 Tage mit täglichen Sicherungen |
-|  | Zeitpunktgesteuerte Recovery (Self-Service) | Verfügbar ab 15. Nov. 2018 | [Zeitpunktgesteuerte Wiederherstellung](/docs/services/Db2onCloud/br.html#point-in-time) |
+|  | Zeitpunktgesteuerte Recovery (Self-Service) | Verfügbar ab 15. Nov. 2018 | [Zeitpunktgesteuerte Wiederherstellung](/docs/services/Db2onCloud?topic=Db2onCloud-bnr#point-in-time) |
 |  | Ausgelagerte Sicherungen | Auf Anfrage | Ab 01. Dez. 2018 standardmäßig ausgelagert.  |
 |  | Sicherung bis zu 10 Jahre aufbewahren | Auf Anfrage | Ab 01. Dez. 2018. Support-Ticket erforderlich. |
 |  | Alte Daten ohne Wiederherstellung abfragen | J | Einrichten von [Time Travel Query ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} erforderlich. |
@@ -92,7 +92,7 @@ subcollection: Db2onCloud
 |  | In Hybrid Data Management Platform (HDMP) verfügbar | J | Nur Flex-Plan. [Details zu HDMP ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/ca-en/marketplace/hybrid-data-management-platform){:new_window}|
 |  | Tägliche Abrechnung | J | Die Abrechnung für Flex-Pläne basiert auf dem Spitzenwert der täglichen Nutzung. Beispiel: Bei einem Scale-up von 2 auf 8 Cores für eine Stunde eines Tages werden nur für diesen Tag 8 Cores in Rechnung gestellt, 2 Cores für alle anderen Tage des Monats. |
 |  | Stündliche Abrechnung | [In Roadmap ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - | 
-|  | Hauptsächliche Preismetrik | Monatlich | Preise werden auf monatlicher Basis angegeben (Beispiel: $ 189 USD pro Monat). Ein anteilmäßiger monatlicher Preis basiert für einen aktivierten Service auf der Anzahl der Tage pro Monat, in denen der Service beendet wurde. [Beispiele](/docs/services/Db2onCloud/plans_pricing.html) |
+|  | Hauptsächliche Preismetrik | Monatlich | Preise werden auf monatlicher Basis angegeben (Beispiel: $ 189 USD pro Monat). Ein anteilmäßiger monatlicher Preis basiert für einen aktivierten Service auf der Anzahl der Tage pro Monat, in denen der Service beendet wurde. [Beispiele](/docs/services/Db2onCloud?topic=Db2onCloud-plans_pricing#examples) |
 |  |  |  |  |
 | Bereitstellungs- & Skalierungsdauer | Dallas | **Bereitstellung**: < 5 Minuten. **Skalierung**: < 45 Minuten. | Nur Flex-Plan, abhängig vom Bestand |
 | | USA (Süden) (sonstige) | **Bereitstellung**: 1 Tag. **Skalierung**: 8 Stunden. | Geringere Dauer an bestimmten Standorten. |

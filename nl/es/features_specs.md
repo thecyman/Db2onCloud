@@ -61,16 +61,17 @@ Aquí encontrará las características y especificaciones de {{site.data.keyword
 |  | Nodo DR externo | 99,5% | Debe utilizar una alta disponibilidad local adicional para alcanzar el 99,99% |
 |  | Política de mantenimiento | Sí | [Leer detalles ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/answers/questions/439146/where-can-i-find-detail-about-maintenance-and-noti.html){:new_window} |
 |  |  |  |  |
-| Conformidad de seguridad | Preparada para HIPAA | Sí | Todos los planes de pago, incluido el flexible. Debe solicitar el modo HIPAA a IBM Support. <!--For Db2 Warehouse on Cloud [see docs here ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/docs/services/Db2whc/index.html#getting_started){:new_window}.--> |
+| Conformidad de seguridad | Preparada para HIPAA | Sí | Todos los planes de pago, incluido el flexible. Debe solicitar el modo HIPAA al equipo de soporte de IBM. |
 |  | HITRUST  | [En hoja de ruta ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://ibm.biz/db2oncloud-roadmap){:new_window} | Ahora Db2 Hosted puede utilizarse para HITRUST |
-|  | International Organization for Standardization (organización internacional para la normalización, ISO)  | Sí | ISO 27001, 27002, 27017 y 27018 |
+|  | International Organization for Standardization (organización
+internacional para la normalización, ISO)  | Sí | ISO 27001, 27002, 27017 y 27018 |
 |  | Service Organization Controls (SOC) | Sí | SOC 2 de tipo 2 |
 |  | GDPR | Sí | - |
 |  | Nube de la UE | Sí | Utilice Frankfurt como región. Se proporciona soporte físico en la UE. |
 |  | Lista completa de conformidades | Sí | [Conformidad de seguridad ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | Copia de seguridad y restauración | Copias de seguridad diarias | Sí | 14 días de copia de seguridad diaria |
-|  | Recuperación de autoservicio en un punto en el tiempo | Disponible el 15 de noviembre de 2018 | [Restauración de punto en el tiempo](/docs/services/Db2onCloud/br.html#point-in-time) |
+|  | Recuperación de autoservicio en un punto en el tiempo | Disponible el 15 de noviembre de 2018 | [Restauración de punto en el tiempo](/docs/services/Db2onCloud?topic=Db2onCloud-bnr#point-in-time) |
 |  | Copias de seguridad conservadas externamente | A petición | A fecha 1 de diciembre de 2018, el valor predeterminado es externo  |
 |  | Conservar copias de seguridad hasta 10 años | A petición | A fecha 1 de diciembre de 2018. Requiere una incidencia de soporte. |
 |  | Consultar datos antiguos sin restaurar | Sí | Debe configurar [Time Travel Query ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} |
@@ -92,7 +93,7 @@ Aquí encontrará las características y especificaciones de {{site.data.keyword
 |  | Disponible en Plataforma de gestión de datos híbrida (HDMP) | Sí | Solo plan flexible. [Detalles acerca de HDMP ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/ca-en/marketplace/hybrid-data-management-platform){:new_window}|
 |  | Facturación diaria | Sí | La facturación de los planes flexibles está basada en los picos de uso diario. Por ejemplo, si escala de 2 a 8 núcleos durante una hora de un día, se le facturarán 8 núcleos solo ese día y 2, el resto de los días del mes. |
 |  | Facturación horaria | [En hoja de ruta ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - | 
-|  | Métrica de precio principal | Mensual | Los precios se determinan mensualmente (por ejemplo, $189 USD al mes). El precio mensual prorrateado está basado en el número de días de servicio activado durante el mes en el que finaliza el servicio. [Ejemplos](/docs/services/Db2onCloud/plans_pricing.html) |
+|  | Métrica de precio principal | Mensual | Los precios se determinan mensualmente (por ejemplo, $189 USD al mes). El precio mensual prorrateado está basado en el número de días de servicio activado durante el mes en el que finaliza el servicio. [Ejemplos](/docs/services/Db2onCloud?topic=Db2onCloud-plans_pricing#examples) |
 |  |  |  |  |
 | Duraciones de despliegue y escalado | Dallas | **Despliegue**: < 5 minutos. **Escalado**: < 45 minutos. | Solo plan flexible, dependiendo del inventario |
 | | EE.UU. sur, otros | **Despliegue**: 1 día. **Escalado**: 8 horas. | Algunas ubicaciones son más cortas que otras |

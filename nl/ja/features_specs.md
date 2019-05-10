@@ -61,7 +61,7 @@ subcollection: Db2onCloud
 |  | オフサイト DR ノード | 99.5% | 99.99 % を達成するには、追加のローカル HA を使用する必要があります。 |
 |  | 保守ポリシー | Y | [詳しくはこちらをご覧ください ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.ibm.com/answers/questions/439146/where-can-i-find-detail-about-maintenance-and-noti.html){:new_window} |
 |  |  |  |  |
-| セキュリティー・コンプライアンス | HIPAA 準拠 | Y | Flex も含めてすべての有料プラン。 IBM サポートに HIPAA モードを要求する必要があります。<!--For Db2 Warehouse on Cloud [see docs here ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/docs/services/Db2whc/index.html#getting_started){:new_window}.--> |
+| セキュリティー・コンプライアンス | HIPAA 準拠 | Y | Flex も含めてすべての有料プラン。 IBM サポートに HIPAA モードを要求する必要があります。|
 |  | HITRUST  | [ロードマップにあり ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://ibm.biz/db2oncloud-roadmap){:new_window} | 現在は HITRUST 用に Db2 Hosted を使用できます |
 |  | 国際標準化機構 (ISO)  | Y | ISO 27001、27002、27017、および 27018 |
 |  | Service Organization Controls (SOC) | Y | SOC 2 タイプ 2 |
@@ -70,7 +70,7 @@ subcollection: Db2onCloud
 |  | コンプライアンスの完全リスト | Y | [セキュリティー・コンプライアンス ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | バックアップおよびリストア | 日次バックアップ | Y | 14 日間の日次バックアップ |
-|  | ポイント・イン・タイム・セルフ・サービス・リカバリー | 2018 年 11 月 15 日から使用可能 | [ポイント・イン・タイム・リストア](/docs/services/Db2onCloud/br.html#point-in-time) |
+|  | ポイント・イン・タイム・セルフ・サービス・リカバリー | 2018 年 11 月 15 日から使用可能 | [ポイント・イン・タイム・リストア](/docs/services/Db2onCloud?topic=Db2onCloud-bnr#point-in-time) |
 |  | オフサイトでのバックアップの保持 | 要求時 | 2018 年 12 月 1 日時点ではオフサイトがデフォルトです  |
 |  | 最長 10 年までバックアップを保持 | 要求時 | 2018 年 12 月 1 日時点ではサポート・チケットが必要です |
 |  | リストアせずに古いデータを照会 | Y | [タイム・トラベル照会 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} のセットアップが必要です |
@@ -92,7 +92,7 @@ subcollection: Db2onCloud
 |  | Hybrid Data Management Platform (HDMP) 上で使用可能 | Y | Flex プランのみ。 [HDMP についての詳細 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/ca-en/marketplace/hybrid-data-management-platform){:new_window}|
 |  | 日次請求 | Y | Flex プランの請求処理は、ピーク日次使用量に基づきます。 例えば、ある 1 日のある 1 時間だけ 2 個のコアから 8 個のコアに拡大する場合、その日についてのみ 8 個のコアに関して請求され、その月の他のすべての日については 2 個のコアに関して請求されます。 |
 |  | 毎時請求 | [ロードマップにあり ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://ibm.biz/db2oncloud-roadmap){:new_window} | - | 
-|  | メイン料金算定基準 | 月次 | 料金は月単位で示されます (例: 月当たり 189 ドル)。 月次料金の日割り計算は、サービスが終了した月のうちサービスがアクティブだった日数に基づきます。 [例](/docs/services/Db2onCloud/plans_pricing.html) |
+|  | メイン料金算定基準 | 月次 | 料金は月単位で示されます (例: 月当たり 189 ドル)。 月次料金の日割り計算は、サービスが終了した月のうちサービスがアクティブだった日数に基づきます。 [例](/docs/services/Db2onCloud?topic=Db2onCloud-plans_pricing#examples) |
 |  |  |  |  |
 | デプロイおよびスケーリングの所要時間 | ダラス | **デプロイ**: < 5 分。 **スケーリング**: < 45 分。 | Flex プランのみ (インベントリーによる) |
 | | その他の米国南部 | **デプロイ**: 1 日。 **スケーリング**: 8 時間。 | 他の場所より短い場所があります |

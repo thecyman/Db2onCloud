@@ -59,7 +59,7 @@ La federación le ofrece la posibilidad de aumentar la capacidad de una base de 
 <!-- By using federation, users can increase capacity of an on premises database by federating to or from the cloud. This is a great option if your on premises database is running out of storage. Increased capacity will also be useful for new development as our users no longer need to change a database in production. You can also use this feature to federate between two Db2 on Cloud databases to increase the capacity beyond the current limits of the Flex plan. -->
 
 ## Cómo empezar
-{: #getting_started}
+{: #getting_started_fed}
 
 En los pasos siguientes se muestra un ejemplo del proceso de federar orígenes de datos dispares para que parezca que los datos se recuperan de un solo origen. En el siguiente ejemplo se muestra la federación de dos bases de datos {{site.data.keyword.Db2_on_Cloud_short}}:
 
@@ -127,13 +127,13 @@ Nombre de host: targetdotcom
 
 Desde la consola de {{site.data.keyword.Db2_on_Cloud_short}}:
 
-1. Cree un servidor para que se comunique con la máquina de destino:<br/>
+1. Cree un servidor para comunicar con la máquina de destino:<br/>
    `create server <server_name> type dashdb version 11 wrapper drda authorization "<admin_user_on_target>" password "<admin_password_on_target>" options (host '<target_host_name>', port '50000', dbname 'bludb')`
 
    Por ejemplo:<br/>
    `create server db2server type dashdb version 11 wrapper drda authorization "admin2" password "YYYY" options (host 'targetdotcom', port '50000', dbname 'bludb')`
 
-2. Cree la correlación de usuario para admin2:<br/>
+2. Cree una correlación de usuarios para admin2:<br/>
    `create user mapping for <admin_user> server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')`
 
    Por ejemplo:<br/>
@@ -145,7 +145,7 @@ Desde la consola de {{site.data.keyword.Db2_on_Cloud_short}}:
    Por ejemplo:<br/>
    `create nickname ntest1 for db2server.admin2.testdata`
 
-4. Compruebe que puede extraer datos del servidor de destino:<br/>
+4. Pruebe que puede extraer datos del servidor de destino:<br/>
    `select * from <nickname>`
 
    Por ejemplo:<br/>

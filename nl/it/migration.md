@@ -79,9 +79,9 @@ La CLI Lift è un'applicazione che puoi utilizzare gratuitamente per migrare i t
 |                              | Formato di file CSV |
 {: caption="Tabella 1. Origini dati di migrazione" caption-side="top"}
 
-Per scaricare e installare la CLI Lift, vedi: [Download Lift CLI ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://lift.ng.bluemix.net/#download){:new_window}.
+Per scaricare e installare la CLI Lift, vedi: [Download Lift CLI ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.lift-cli.cloud.ibm.com/#download){:new_window}.
 
-Per istruzioni dettagliate sulla migrazione dei tuoi dati su {{site.data.keyword.Bluemix_notm}} mediante la CLI Lift, vedi: [Migrate data to {{site.data.keyword.Db2_on_Cloud_long_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://lift.ng.bluemix.net/#docs){:new_window}.
+Per istruzioni dettagliate sulla migrazione dei tuoi dati su {{site.data.keyword.Bluemix_notm}} mediante la CLI Lift, vedi: [Migrate data to {{site.data.keyword.Db2_on_Cloud_long_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}.
 
 ### IBM Cloud Mass Data Migration
 {: #mdms}
@@ -90,5 +90,5 @@ Un modo veloce, semplice e sicuro per trasferire fisicamente da terabyte a petab
 
 ![Vista del dispositivo Mass Data Migration](images/mdms.svg)
 
-Per ulteriori informazioni sul dispositivo Mass Data Migration, vedi: [Introduzione a IBM Cloud Mass Data Migration](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+Per ulteriori informazioni sul dispositivo Mass Data Migration, vedi: [Esercitazione introduttiva](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
 

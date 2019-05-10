@@ -64,7 +64,7 @@ Os métodos a seguir podem ser usados para a autenticação do IAM:
 
 **Token de Acesso**
 
-Um token de acesso pode ser obtido do serviço do IAM diretamente pelo aplicativo por meio da API de REST usando uma chave API. Para obter mais informações, consulte: [Obtendo um token do IBM Cloud IAM usando uma chave API ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://console.bluemix.net/docs/iam/apikey_iamtoken.html#iamtoken_from_apikey){:new_window}. O token de acesso tem um período de validade padrão de 60 minutos antes de expirar. Se o token tiver expirado, o servidor Db2 não permitirá que a conexão seja estabelecida. O token não é verificado quanto à expiração após a conexão ser estabelecida. Assim como era antes da integração do IAM, a conexão permanecerá conectada até que o aplicativo se desconecte ou a conexão seja finalizada devido a outros motivos.
+Um token de acesso pode ser obtido do serviço do IAM diretamente pelo aplicativo por meio da API de REST usando uma chave API. Para obter mais informações, consulte: [Obtendo um token do IBM Cloud IAM usando uma chave API ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey){:new_window}. O token de acesso tem um período de validade padrão de 60 minutos antes de expirar. Se o token tiver expirado, o servidor Db2 não permitirá que a conexão seja estabelecida. O token não é verificado quanto à expiração após a conexão ser estabelecida. Assim como era antes da integração do IAM, a conexão permanecerá conectada até que o aplicativo se desconecte ou a conexão seja finalizada devido a outros motivos.
 
 ```
 curl -k -X POST \
@@ -87,7 +87,7 @@ deva mais ter permissão para se conectar ao banco de dados, a chave API corresp
 de autenticação requer menos mudanças no aplicativo do que o uso de um token de acesso, pois não necessita de nenhuma
 interação direta com o serviço do IAM. Para obter mais informações sobre a criação e o gerenciamento de chaves API, consulte:
 [Gerenciando as chaves API do usuário
-![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://console.bluemix.net/docs/iam/userid_keys.html#userapikey){:new_window}.
+![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](/docs/iam?topic=iam-userapikey#userapikey){:new_window}.
 
 **IBMid/senha**
 
@@ -156,22 +156,21 @@ configuração `db2dsdriver.cfg` ou na sequência de conexão do aplicativo.
 
     **Token de Acesso**
 
-    Conecte-se ao servidor de banco de dados `<database_server_name>` e passe o token de acesso executando o comando a seguir
-no prompt de comandos ou no script do CLP:
+    Conecte-se ao servidor de banco de dados `<database_server_name>` e passe o token de acesso executando o comando a seguir no prompt de comandos ou script do CLP:
 
     `CONNECT TO <database_server_name> ACCESSTOKEN <access_token_string>`
 
     **Chave API**
 
-    Conecte-se ao servidor de banco de dados `<database_server_name>` com uma chave de API executando o comando a seguir no
-prompt de comandos ou no script do CLP:
+    Conecte-se ao servidor de banco de dados `<database_server_name>`
+com uma chave de API executando o comando a seguir no prompt de comandos ou script do CLP:
 
     `CONNECT TO <database_server_name> APIKEY <api-key-string>`
 
     **IBMid/senha**
 
-    Conecte-se ao servidor de banco de dados `<database_server_name>` com um IBMid/senha executando o comando a seguir
-no prompt de comandos ou no script do CLP:
+    Conecte-se ao servidor de banco de dados `<database_server_name>` com
+um IBMid/uma senha executando o comando a seguir no prompt de comandos ou script do CLP:
 
     `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
 
@@ -182,26 +181,23 @@ no prompt de comandos ou no script do CLP:
 
     **Token de Acesso**
 
-    Conecte-se ao alias do DSN (`@<data_source_name>`) e transmita o token de acesso
-executando o comando a seguir no prompt de comandos ou script CLPPLUS:
+    Conecte-se ao alias do DSN (`@<data_source_name>`) e passe o token de acesso executando o comando a seguir no prompt de comandos ou no script do CLPPLUS:
 
     `connect @<data_source_name> using(accesstoken <access_token_string>)`
 
     **Chave API**
 
-    Conecte-se ao alias do DSN (`@<data_source_name>`) com uma chave API executando o
-seguinte comando no prompt de comandos ou script CLPPLUS:
+    Conecte-se ao alias do DSN (`@<data_source_name>`) com uma chave de API executando o comando a seguir no prompt de comandos ou no script do CLPPLUS:
 
     `connect @<data_source_name> using(apikey <api-key-string>)`
 
     **IBMid/senha**
 
-    Conecte-se ao alias do DSN (`@<data_source_name>`) com um IBMid/senha executando
-o seguinte comando no prompt de comandos ou script CLPPLUS:
+    Conecte-se ao alias do DSN (`@<data_source_name>`) com um IBMid/uma senha executando o comando a seguir no prompt de comandos ou no script do CLPPLUS:
 
     `connect <IBMid>/<password>@<data_source_name>`
 
-    Para obter mais detalhes sobre como se conectar ao aliases do DSN com o CLPPLUS, consulte: [Aliases do DSN no CLPPlus ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SSEPGG_11.1.0/com.ibm.swg.im.dbclient.clpplus.doc/doc/c0057148.html){:new_window}.
+    Para obter mais detalhes sobre como se conectar ao aliases do DSN com o CLPPLUS, consulte: [Aliases do DSN no CLPPlus ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:new_window}.
 
 ### JDBC
 {: #jdbc}
@@ -251,7 +247,7 @@ Connection conn = dataSource.getConnection( );
 ou
 
 ```
-Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apikey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apiKey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
 ```
 
 **IBMid/senha**
@@ -295,8 +291,7 @@ de acesso do IAM para as funções que anteriormente aceitavam um token de acess
 
   `curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid>","ibmid":"<userid>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"`
 
-  O valor `<userid>` para `"id"` e
-`"ibmid"` não precisam ser os mesmos. Os dois IDs diferentes não são vinculados de nenhuma maneira.
+  O valor `<userid>` para `"id"` e `"ibmid"` não precisa ser o mesmo. Os dois IDs diferentes não são vinculados de nenhuma maneira.
   {: note}
 
 * Para migrar um usuário de banco de dados não IBMid existente (por exemplo, `abcuser`) e
@@ -335,7 +330,7 @@ Para obter mais detalhes sobre a API de seu serviço, consulte:
 Para usar o seu próprio provedor de identidade, como o LDAP, deve-se primeiro federar o servidor LDAP
 com o IBMid. Para obter instruções sobre como federar o servidor LDAP com o IBMid, consulte:
 [IBMid Enterprise Federation
-Adoption Guide ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://ibm.ent.box.com/notes/78040808400?s=nhuzrhlsn0ly338zddomx329tlpmfghc){:new_window}. Após a conclusão da federação do IBMid e da inclusão dos usuários permitidos na instância de serviço de banco de
+Adoption Guide ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://ibm.ent.box.com/notes/78040808400?v=IBMid-Federation-Guide){:new_window}. Após a conclusão da federação do IBMid e da inclusão dos usuários permitidos na instância de serviço de banco de
 dados pelo administrador de banco de dados, esses usuários poderão efetuar login no console com a identificação de
 usuário e a senha de suas empresas. Alternativamente, esses usuários podem usar um token de acesso ou uma chave API que
 represente a identificação de usuário para se conectar à instância de serviço de banco de dados por meio de uma das

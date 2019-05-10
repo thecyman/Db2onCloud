@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # 接続
 {: #connect}
 
-コマンド行インターフェース、IBM® またはサード・パーティーのアプリケーションやツール、作成したアプリケーションを DB2® データベースに接続できます。 
+コマンド行インターフェース、IBM® またはサード・パーティーのアプリケーションやツール、作成したアプリケーションを Db2® データベースに接続できます。 
 {: shortdesc}
 
 ## 前提条件
@@ -36,13 +36,13 @@ subcollection: Db2onCloud
 ### 環境の構成
 {: #cfg_env}
 
-ローカル・アプリケーションやツールを DB2 データベースに接続するには、[環境の構成 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}を行う必要があります。 
+ローカル・アプリケーションやツールを Db2 データベースに接続するには、[環境の構成 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}を行う必要があります。 
 {: shortdesc}
 
 ## プログラムによる接続
 {: #conx_prgrm}
 
-共通プログラミング言語を使用して、DB2 データベースに接続するアプリケーションを作成できます。
+共通プログラミング言語を使用して、Db2 データベースに接続するアプリケーションを作成できます。
 {: shortdesc}
 
 <!--* [Java ![External link icon](../../icons/launch-glyph.svg "External link icon"){}{:new_window} -->

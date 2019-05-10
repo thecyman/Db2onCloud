@@ -59,7 +59,7 @@ Db2 제품군의 제품 사용자는 {{site.data.keyword.Db2_on_Cloud_short}} �
 <!-- By using federation, users can increase capacity of an on premises database by federating to or from the cloud. This is a great option if your on premises database is running out of storage. Increased capacity will also be useful for new development as our users no longer need to change a database in production. You can also use this feature to federate between two Db2 on Cloud databases to increase the capacity beyond the current limits of the Flex plan. -->
 
 ## 시작하기
-{: #getting_started}
+{: #getting_started_fed}
 
 다음 단계는 서로 다른 데이터 소스를 연합하여 단일 소스에서 데이터가 검색되는 것처럼 보이게 하는 방법의 예입니다. 다음 예는 두 개의 {{site.data.keyword.Db2_on_Cloud_short}} 데이터베이스의 연합을 보여줍니다.
 
@@ -127,28 +127,28 @@ Db2 제품군의 제품 사용자는 {{site.data.keyword.Db2_on_Cloud_short}} �
 
 {{site.data.keyword.Db2_on_Cloud_short}} 콘솔에서 다음을 수행하십시오.
 
-1. 대상 시스템과 대화하는 서버를 작성하십시오.<br/>
+1. 대상 시스템과 통신할 서버 작성:<br/>
    `create server <server_name> type dashdb version 11 wrapper drda authorization "<admin_user_on_target>" password "<admin_password_on_target>" options (host '<target_host_name>', port '50000', dbname 'bludb')`
 
-   예를 들어, 다음과 같습니다.<br/>
+   예:<br/>
    `create server db2server type dashdb version 11 wrapper drda authorization "admin2" password "YYYY" options (host 'targetdotcom', port '50000', dbname 'bludb')`
 
-2. admin2의 사용자 맵핑을 작성하십시오.<br/>
+2. admin2에 대한 사용자 맵핑 작성:<br/>
    `create user mapping for <admin_user> server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')`
 
-   예를 들어, 다음과 같습니다.<br/>
+   예:<br/>
    `create user mapping for admin1 server db2server options (remote_authid 'admin2', remote_password 'YYYY')`
 
-3. 데이터베이스의 닉네임을 작성하십시오.<br/>
+3. 데이터베이스의 닉네임 작성:<br/>
    `create nickname <nickname> for <server_name>.<schema_name>.<table_name>`
 
-   예를 들어, 다음과 같습니다.<br/>
+   예:<br/>
    `create nickname ntest1 for db2server.admin2.testdata`
 
-4. 대상 서버에서 데이터를 가져올 수 있는지 테스트하십시오.<br/>
+4. 대상 서버에서 데이터를 가져올 수 있는지 테스트:<br/>
    `select * from <nickname>`
 
-   예를 들어, 다음과 같습니다.<br/>
+   예:<br/>
    `select * from ntest1`
 
 ## 추가 정보

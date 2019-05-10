@@ -31,8 +31,8 @@ subcollection: Db2onCloud
 {: #cos}
 
 Amazon S3에서 데이터를 로드하려면 다음 방법 중 하나를 선택하십시오.
-  * {{site.data.keyword.Db2_on_Cloud_short}} 웹 콘솔 사용. **로드 > Amazon S3**. 
-  * 외부 테이블 직접 사용. 다음은 SQL문의 예제입니다.
+  * {{site.data.keyword.Db2_on_Cloud_short}} 웹 콘솔 사용. **로드 > Amazon S3**를 선택하십시오. 
+  * 외부 테이블에서 직접 로드. 다음은 SQL문의 예제입니다.
 
     ```
       INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
@@ -74,14 +74,14 @@ Lift CLI는 표 1에 나열된 다양한 데이터 소스에서 {{site.data.keyw
 | IBM Cloud의 대상 데이터베이스 | 데이터 소스 |
 |------------------------------|-------------|
 | {{site.data.keyword.Db2_on_Cloud_long_notm}}   | IBM Db2 |
-|                              | Oracle Database |
+|                              | Oracle 데이터베이스 |
 |                              | Microsoft SQL Server |
 |                              | CSV 파일 형식 |
-{: caption="표 1. 데이터 소스 마이그레이션" caption-side="top"}
+{: caption="표 1. 마이그레이션 데이터 소스" caption-side="top"}
 
-Lift CLI를 다운로드하고 설치하려면 [Lift CLI 다운로드 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://lift.ng.bluemix.net/#download){:new_window}를 참조하십시오.
+Lift CLI를 다운로드하고 설치하려면 [Lift CLI 다운로드 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.lift-cli.cloud.ibm.com/#download){:new_window}를 참조하십시오.
 
-Lift CLI를 사용하여 {{site.data.keyword.Bluemix_notm}}로 사용자의 데이터를 마이그레이션하는 방법에 관한 단계별 지시사항은 [Migrate data to {{site.data.keyword.Db2_on_Cloud_long_notm}} ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://lift.ng.bluemix.net/#docs){:new_window}의 내용을 참조하십시오.
+Lift CLI를 사용하여 {{site.data.keyword.Bluemix_notm}}로 사용자의 데이터를 마이그레이션하는 방법에 관한 단계별 지시사항은 [Migrate data to {{site.data.keyword.Db2_on_Cloud_long_notm}} ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}의 내용을 참조하십시오.
 
 ### IBM Cloud Mass Data Migration
 {: #mdms}
@@ -90,5 +90,5 @@ Lift CLI를 사용하여 {{site.data.keyword.Bluemix_notm}}로 사용자의 데�
 
 ![Mass Data Migration 디바이스 보기](images/mdms.svg)
 
-Mass Data Migration 디바이스에 대한 자세한 정보는 [IBM Cloud Mass Data Migration 시작하기](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}를 참조하십시오.
+Mass Data Migration 디바이스에 대한 자세한 정보는 [시작하기 튜토리얼](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:new_window}을 참조하십시오. 
 
