@@ -27,7 +27,7 @@ subcollection: Db2onCloud
 {:pre: .pre}
 
 # Getting started tutorial
-{: #getting_started_db2oncloud}
+{: #getting-started}
 
 {{site.data.keyword.Db2_on_Cloud_long}} is an SQL database that is provisioned for you in the cloud. You can use {{site.data.keyword.Db2_on_Cloud_short}} just as you would use any database software, but without the time and expense of hardware setup or software installation and maintenance. 
 {: shortdesc}
@@ -72,7 +72,7 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 ### Installing Db2 command-line clients and drivers on your computer
 {: #connect_apps}
 
-In most cases, users tend to use only the REST API, or install drivers for a framework, for example, with Python's `pip` command.
+In most cases, users tend to use only the REST API, or install drivers for a framework, for example, with Python's `pip` command. 
 {: shortdesc}
 
 To install Python driver packages for the MacOS, you must use the `pip` command with the `--no-cache-dir` option. For detailed instructions, see: [Python support for IBM DB2 and IBM Informix ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2-drivers-python){:new_window}
