@@ -78,6 +78,11 @@ In most cases, users tend to use only the REST API, or install drivers for a fra
 To install Python driver packages for the MacOS, you must use the `pip` command with the `--no-cache-dir` option. For detailed instructions, see: [Python support for IBM DB2 and IBM Informix ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2-drivers-python){:new_window}
 {: note}
 
+
+{: shortdesc}
+If you are doing data science work with Python or want support for data frames, in-database analytics or using Watson Studio, you may want to use the following alternative driver which focuses on support for a variety of data science functions: https://pypi.org/project/ibmdbpy/
+{: note}
+
 <!-- Drivers on site are broken so taking out this one -Simon. 1. Download the [driver package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} from the Connection info page of the {{site.data.keyword.Db2_on_Cloud_short}} web console.-->
 
 To install Python or Node.js framework drivers, click one of the following links:
