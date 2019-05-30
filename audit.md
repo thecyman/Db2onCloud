@@ -27,6 +27,8 @@ subcollection: Db2onCloud
 ## Auditing
 {: #auditing}
 
+Db2 on Cloud supports Db2 Audit.
+
 You can create a database audit policy that gives you the ability to audit various categories of events that are stored in audit event tables in your database. For more information, see [Audit policy guidelines ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:new_window}.
 
 You can also audit and track changes to your database by using the following methods:
