@@ -22,15 +22,11 @@ subcollection: Db2onCloud
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Data virtualization (federation) & InfoSphere CDC
+# Data virtualization (federation)
 {: #fed}
 
-There are many ways to connect a Db2 database to {{site.data.keyword.Db2_on_Cloud_long}}. The two ways that are discussed here are [IBM InfoSphere Change Data Capture (InfoSphere CDC)](https://www.ibm.com/support/knowledgecenter/en/SSTRGZ_11.4.0/com.ibm.cdcdoc.sysreq.doc/concepts/aboutcdc.html){:external}, which is a real-time data synchronization solution, and data virtualization.
+Db2 data virtualization (also known as federation) is supported by {{site.data.keyword.Db2_on_Cloud_short}}. Data virtualization gives you single-query access to all of your data that is on multiple distributed databases anywhere in your organization. You can access data that is on any of your Db2 or Informix data sources, both in the cloud and on premises. 
 {: shortdesc}
-
-To synchronize data in real time to {{site.data.keyword.Db2_on_Cloud_short}} with InfoSphere CDC, see this tutorial: [How to stay online while moving data to Db2 on Cloud](https://cloudcontent.mybluemix.net/cloud/garage/dte/producttour/how-stay-online-while-moving-data-db2-cloud){:external}.
-
-The following document covers data virtualization. Db2 data virtualization (also known as federation) is supported by {{site.data.keyword.Db2_on_Cloud_short}}. Data virtualization gives you single-query access to all of your data that is on multiple distributed databases anywhere in your organization. You can access data that is on any of your Db2 or Informix data sources, both in the cloud and on premises. 
 
 This function is supported on all versions of {{site.data.keyword.Db2_on_Cloud_short}}, except for the free Lite plan. However, you can use the Lite plan as a target from which you can pull data.
 
