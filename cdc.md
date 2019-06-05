@@ -12,7 +12,6 @@ subcollection: Db2onCloud
 
 <!-- Attribute definitions --> 
 {:external: target="_blank" .external}
-{:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}

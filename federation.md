@@ -12,7 +12,6 @@ subcollection: Db2onCloud
 
 <!-- Attribute definitions --> 
 {:external: target="_blank" .external}
-{:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -155,7 +154,7 @@ From the {{site.data.keyword.Db2_on_Cloud_short}} console:
 ## Additional information
 {: #more_info}
 
-For more information about data virtualization (federation), see: [Federation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}.
+For more information about data virtualization (federation), see: [Federation](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:external}.
 
-By default, {{site.data.keyword.Db2_on_Cloud_short}} supports Informix and Db2 (including on-premises Db2 and Db2 Warehouse). Support for certain data sources might need to be installed by IBM Support upon request. For information about the data sources supported by federation, see: [Federation Supported Data Sources ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}.
+By default, {{site.data.keyword.Db2_on_Cloud_short}} supports Informix and Db2 (including on-premises Db2 and Db2 Warehouse). Support for certain data sources might need to be installed by IBM Support upon request. For information about the data sources supported by federation, see: [Federation Supported Data Sources](https://www.ibm.com/support/docview.wss?uid=swg27050561){:external}.
 

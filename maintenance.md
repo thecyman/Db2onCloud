@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # Maintenance and notification policies
 {: #maint_note_pol}
 
-The maintenance and notification policies for the {{site.data.keyword.Db2_on_Cloud_long}} service can be found in the [{{site.data.keyword.Bluemix_notm}} service descriptions ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:new_window}. Additional terms of service specifically for {{site.data.keyword.Db2_on_Cloud_short}} can be found by looking under the **Chargeable additional SDs** category. 
+The maintenance and notification policies for the {{site.data.keyword.Db2_on_Cloud_long}} service can be found in the [{{site.data.keyword.Bluemix_notm}} service descriptions](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:external}. Additional terms of service specifically for {{site.data.keyword.Db2_on_Cloud_short}} can be found by looking under the **Chargeable additional SDs** category. 
 
 Being acquainted with our policies can better help you plan and schedule your workloads to be resilient to system maintenance.
 {: shortdesc}

@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -38,7 +38,7 @@ Unlike other {{site.data.keyword.Db2_on_Cloud_short}} plans, the {{site.data.key
  
 The Free plan allows you to use one database schema.
 
-For more information about the {{site.data.keyword.Db2_on_Cloud_short}} Free plan, see the [FAQ ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ibm.biz/db2oc_free_plan_faq){:new_window}.
+For more information about the {{site.data.keyword.Db2_on_Cloud_short}} Free plan, see the [FAQ](https://ibm.biz/db2oc_free_plan_faq){:external}.
 
 ## Using the Free plan outside continental North America
 {: #outside_na}
