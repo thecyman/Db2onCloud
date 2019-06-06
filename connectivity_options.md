@@ -61,7 +61,7 @@ The easiest way to connect to your data is by way of the public host name that w
 
    ```
 
-   ![Public network access to {{site.data.keyword.cloud_notm}}](images/public_connection.png)
+   ![Public network access to {{site.data.keyword.cloud_notm}}](images/public_connection.png "Graphical view of user to cloud connection"){: caption="Figure 1. Public network access to {{site.data.keyword.cloud_notm}}" caption-side="bottom"}
 
 ## Connecting to a private endpoint: IBM Cloud Service Endpoint
 {: #priv_endpt}
@@ -124,4 +124,4 @@ To establish a VPN connection to your cloud database behind a public endpoint, [
 
 After receipt of your request, {{site.data.keyword.cloud_notm}} technicians will open the appropriate firewall ports and whitelist the provided IP address. Communication and resolution to the request will be made through the {{site.data.keyword.cloud_notm}} Support case ticket.
 
-![Public network access to {{site.data.keyword.cloud_notm}}](images/public_connection_vpn.png)
+![Public network access to {{site.data.keyword.cloud_notm}} through a VPN](images/public_connection_vpn.png "Graphical view of user to cloud connection"){: caption="Figure 2. Public network access to {{site.data.keyword.cloud_notm}} through a VPN" caption-side="bottom"}
