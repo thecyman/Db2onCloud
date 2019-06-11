@@ -27,6 +27,11 @@ subcollection: Db2onCloud
 {{site.data.keyword.Db2_on_Cloud_long}} features and specifications are summarized here for your convenience.
 {: shortdesc}
 
+# Categories
+<!-- Rimas please add internal links for each of these -->
+General, High availability & replication, etc
+
+
 | Category | Feature | Supported? | Comments |
 |----------|---------|------------|----------|
 | General | Db2 AESE | Y | Db2 v11.1.3.3 |
