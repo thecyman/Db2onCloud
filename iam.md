@@ -281,7 +281,7 @@ The {{site.data.keyword.Db2_on_Cloud_short}} REST API was enhanced to also accep
   .
   ```
 
-For more details about your service's API, see: [{{site.data.keyword.Db2_on_Cloud_short}} REST API](http://ibm.biz/db2oc_api){:external}.
+For more details about your service's API, see: [{{site.data.keyword.Db2_on_Cloud_short}} REST API](https://cloud.ibm.com/apidocs/db2-on-cloud){:external}.
 
 ## IBMid federation
 {: #fed_ibmid}
