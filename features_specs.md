@@ -136,7 +136,7 @@ subcollection: Db2onCloud
 {: class="simple-tab-table"}
 {: caption="Table 2. High availability & replication" caption-side="top"}
 {: #simpletabtable2}
-{: tab-title="High availability & replication"}
+{: tab-title="HA & replication"}
 {: tab-group="fs"}
 
 | Feature | Supported? | Comments |
@@ -161,7 +161,7 @@ subcollection: Db2onCloud
 {: class="simple-tab-table"}
 {: caption="Table 4. Maintenance policies & SLAs" caption-side="top"}
 {: #simpletabtable4}
-{: tab-title="Maintenance policies & SLAs"}
+{: tab-title="Maintenance policies, SLAs"}
 {: tab-group="fs"}
 
 | Feature | Supported? | Comments |
@@ -189,7 +189,7 @@ subcollection: Db2onCloud
 {: class="simple-tab-table"}
 {: caption="Table 6. Backup & restore" caption-side="top"}
 {: #simpletabtable6}
-{: tab-title="Backup & restore"}
+{: tab-title="Backup/restore"}
 {: tab-group="fs"}
 
 | Feature | Supported? | Comments |
@@ -207,7 +207,7 @@ subcollection: Db2onCloud
 {: class="simple-tab-table"}
 {: caption="Table 7. Networking, security, & VMs" caption-side="top"}
 {: #simpletabtable7}
-{: tab-title="Networking, security, & VMs"}
+{: tab-title="Networking, security, VMs"}
 {: tab-group="fs"}
 
 | Feature | Supported? | Comments |
@@ -236,6 +236,6 @@ subcollection: Db2onCloud
 {: class="simple-tab-table"}
 {: caption="Table 9. Deployment & scaling durations" caption-side="top"}
 {: #simpletabtable9}
-{: tab-title="Deployment & scaling durations"}
+{: tab-title="Deployment, scaling durations"}
 {: tab-group="fs"}
 
