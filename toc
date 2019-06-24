@@ -11,9 +11,28 @@ Db2 on Cloud
     iam.md
         
     {: .topicgroup}
-    Connections
-        connecting.md
-        connectivity_options.md
+    Connecting
+        connecting/connecting.md
+        connecting/connectivity_options.md
+        connecting/credentials.md
+        connecting/driver_pkg.md
+        connecting/install_linux.md
+        connecting/install_mac.md
+        connecting/install_win.md
+        connecting/driver_pkg_cfg.md
+        connecting/ssl.md
+        connecting/jdbc.md
+        connecting/net_apps.md
+        connecting/odbc_cli.md
+        connecting/odbc_data_source_admin.md
+        connecting/php.md
+        connecting/rest_api.md
+
+    {: .topicgroup}
+    Integrations
+        connecting/data.md
+        connecting/vis_bi.md
+        connecting/data_sci.md
 
     {: .topicgroup}
     Connecting to another Db2 database
