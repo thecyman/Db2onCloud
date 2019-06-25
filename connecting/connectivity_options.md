@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-04-08"
+lastupdated: "2019-06-25"
 
 keywords:
 
@@ -82,12 +82,12 @@ After your account is VRF enabled and the Service Endpoint is enabled, follow th
 
 Now, it’s time to connect to your {{site.data.keyword.Db2_on_Cloud_short}} instance from within your {{site.data.keyword.cloud_notm}} account by way of the private network address that was provided in your welcome letter.
 
-## Connecting to a private endpoint: virtual private network (VPN)
+## Connecting to a virtual private network (VPN) endpoint
 {: #vpn}
 
 If you have an application deployed on a private network that is outside of the {{site.data.keyword.cloud_notm}} without access to the public internet and you want to connect it to your database over a virtual private network (VPN) connection, you can make the request at the time that you order the service or by opening an IBM Support case. IBM network engineers will assist your network engineers to set up the VPN tunnel between your private network and the {{site.data.keyword.cloud_notm}}.
 
-### How to connect to a private endpoint with a VPN
+### How to connect to a VPN endpoint
 {: #priv_endpt_vpn_steps}
 
 To establish a VPN connection to your cloud database behind a public endpoint, [create an {{site.data.keyword.cloud_notm}} Support case](https://cloud.ibm.com/unifiedsupport/cases/add){:external} that includes the following details:
