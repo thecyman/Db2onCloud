@@ -27,7 +27,7 @@ subcollection: Db2onCloud
 {:pre: .pre}
 
 # Tutorial de Introdução
-{: #getting_started_db2oncloud}
+{: #getting-started}
 
 O {{site.data.keyword.Db2_on_Cloud_long}} é um banco de dados SQL que é provisionado para você na nuvem. É possível usar o {{site.data.keyword.Db2_on_Cloud_short}} do mesmo modo que você usaria qualquer software de banco de dados, mas sem o tempo e a despesa de configuração de hardware ou instalação e manutenção de software.
 {: shortdesc}

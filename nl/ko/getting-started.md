@@ -27,7 +27,7 @@ subcollection: Db2onCloud
 {:pre: .pre}
 
 # 시작하기 튜토리얼
-{: #getting_started_db2oncloud}
+{: #getting-started}
 
 {{site.data.keyword.Db2_on_Cloud_long}}는 클라우드에서 사용자를 위해 프로비저닝된 SQL 데이터베이스입니다. {{site.data.keyword.Db2_on_Cloud_short}}는 다른 데이터베이스 소프트웨어를 사용하는 것과 동일하게 사용할 수 있지만, 하드웨어 설정이나 소프트웨어 설치 및 관리에 소요되는 시간 및 비용이 없습니다.
 {: shortdesc}

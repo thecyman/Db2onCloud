@@ -27,7 +27,7 @@ subcollection: Db2onCloud
 {:pre: .pre}
 
 # Guía de aprendizaje de iniciación
-{: #getting_started_db2oncloud}
+{: #getting-started}
 
 {{site.data.keyword.Db2_on_Cloud_long}} es una base de datos SQL suministrada en la nube. Puede utilizar {{site.data.keyword.Db2_on_Cloud_short}} como utilizaría cualquier software de base de datos, pero sin el tiempo y el gasto que suponen la configuración del hardware ni de la instalación y el mantenimiento del software. 
 {: shortdesc}

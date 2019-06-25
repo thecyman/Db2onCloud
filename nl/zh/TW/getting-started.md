@@ -27,7 +27,7 @@ subcollection: Db2onCloud
 {:pre: .pre}
 
 # 入門指導教學
-{: #getting_started_db2oncloud}
+{: #getting-started}
 
 {{site.data.keyword.Db2_on_Cloud_long}} 是在雲端中為您所佈建的 SQL Database。您就像使用任何資料庫軟體一般地使用 {{site.data.keyword.Db2_on_Cloud_short}}，但不需要硬體設置或軟體安裝及維護的時間與費用。
 {: shortdesc}

@@ -27,7 +27,7 @@ subcollection: Db2onCloud
 {:pre: .pre}
 
 # Esercitazione introduttiva
-{: #getting_started_db2oncloud}
+{: #getting-started}
 
 {{site.data.keyword.Db2_on_Cloud_long}} è un database SQL di cui viene eseguito il provisioning nel cloud per te. Puoi utilizzare {{site.data.keyword.Db2_on_Cloud_short}} come useresti qualsiasi software database ma senza dover sostenere l'onore del tempo e dei costi necessari per la configurazione dell'hardware o l'installazione e la manutenzione del software.
 {: shortdesc}

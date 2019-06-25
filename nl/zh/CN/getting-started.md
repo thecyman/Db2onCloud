@@ -27,7 +27,7 @@ subcollection: Db2onCloud
 {:pre: .pre}
 
 # 入门教程
-{: #getting_started_db2oncloud}
+{: #getting-started}
 
 {{site.data.keyword.Db2_on_Cloud_long}} 是在云中为您供应的 SQL 数据库。您可以像使用任何数据库软件一样来使用 {{site.data.keyword.Db2_on_Cloud_short}}，但是却无需耗费时间和费用来设置硬件或进行软件安装和维护。
 {: shortdesc}

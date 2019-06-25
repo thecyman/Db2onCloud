@@ -27,7 +27,7 @@ subcollection: Db2onCloud
 {:pre: .pre}
 
 # Lernprogramm 'Einführung'
-{: #getting_started_db2oncloud}
+{: #getting-started}
 
 Bei {{site.data.keyword.Db2_on_Cloud_long}} handelt es sich um eine SQL-Datenbank, die für Sie in der Cloud bereitgestellt wird. Sie können {{site.data.keyword.Db2_on_Cloud_short}} wie jede andere Datenbanksoftware verwenden, den Zeitaufwand und die Kosten für die Hardwareeinrichtung sowie die Softwareinstallation und -verwaltung fallen jedoch weg.
 {: shortdesc}
