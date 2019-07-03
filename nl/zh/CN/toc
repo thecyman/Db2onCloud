@@ -40,10 +40,10 @@ Db2 on Cloud
     [功能和优势](https://ibm.biz/db2oncloud-features)
 	
     [新增内容](https://www.ibm.com/support/docview.wss?uid=swg21961758)
-    [常见问题](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
+    [常见问题](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/managed_service.html)
     [IBM 开发者答案](https://developer.ibm.com/answers/index.html)
-    [安全合规性](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances_summary.html)
-    [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
+    [安全合规性](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/compliances_summary.html)
+    [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
     {: .navgroup-end}
 
 	{: .navgroup id="howto"}
@@ -57,7 +57,7 @@ Db2 on Cloud
 
 	{: .navgroup id="reference"}
     [REST API](http://ibm.biz/db2oc_api)
-    [SQL 参考](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/c0004100.html)
+    [SQL 参考](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/c0004100.html)
 	{: .navgroup-end}
 
 	{: .navgroup id="help"}

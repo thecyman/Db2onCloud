@@ -68,7 +68,7 @@ subcollection: Db2onCloud
 |  | Service Organization Controls (SOC) | Y | SOC 2 Type 2 |
 |  | GDPR | Y | - |
 |  | EU Cloud | Y | Use Frankfurt region. Support provided physically in EU. |
-|  | Full list of compliances | Y | [Security compliances](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:external} |
+|  | Full list of compliances | Y | [Security compliances](https://www.ibm.com/support/knowledgecenter/en/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:external} |
 |  |  |  |  |
 | Backup & restore | Daily backups | Y | 14 days of daily backups |
 |  | Point-in-time self-serve recovery | Available Nov 15, 2018 | [Point-in-time restore](/docs/services/Db2onCloud?topic=Db2onCloud-bnr#point-in-time) |
@@ -172,7 +172,7 @@ subcollection: Db2onCloud
 | Service Organization Controls (SOC) | Y | SOC 2 Type 2 |
 | GDPR | Y | - |
 | EU Cloud | Y | Use Frankfurt region. Support provided physically in EU. |
-| Full list of compliances | Y | [Security compliances](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:external} |
+| Full list of compliances | Y | [Security compliances](https://www.ibm.com/support/knowledgecenter/en/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:external} |
 {: class="simple-tab-table"}
 {: caption="Table 5. Security compliances" caption-side="top"}
 {: #simpletabtable5}

@@ -67,7 +67,7 @@ subcollection: Db2onCloud
 |  | 服務組織控制 (SOC) | 是 |SOC 2 類型 2|
 |  | GDPR | 是 | - |
 |  | 歐盟雲端 | 是 | 使用法蘭克福地區。在歐盟實際提供的支援。 |
-|  | 規範的完整清單 | 是 | [安全規範 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
+|  | 規範的完整清單 | 是 | [安全規範 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/en/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | 備份及還原 | 每日備份 | 是 | 14 天的每日備份 |
 |  | 時間點自助式回復 | 2018 年 11 月 15 日推出 | [復原點還原](/docs/services/Db2onCloud?topic=Db2onCloud-bnr#point-in-time) |

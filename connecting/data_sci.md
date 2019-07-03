@@ -168,7 +168,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
     
 2. Create an ODBC driver connection between your R development environment and your {{site.data.keyword.Db2_on_Cloud_short}} database:
         
-   a. [Set up your database as an ODBC data source](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cli_and_odbc_applications.html){:external}.
+   a. [Set up your database as an ODBC data source](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cli_and_odbc_applications.html){:external}.
         
    b. Open your locally installed R development environment.
         

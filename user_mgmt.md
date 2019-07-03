@@ -31,4 +31,4 @@ The database administrator role manages the following types of user access:
 * Web console. From the web console, users can run queries against the database.
 * Database. The administrator can grant granular access permissions to the database, including only being able to access certain tables, schemas, or even rows or columns. 
 
-For more information about user management, see [Database user management](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:external}
+For more information about user management, see [Database user management](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:external}

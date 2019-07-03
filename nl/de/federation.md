@@ -154,7 +154,7 @@ Führen Sie in der {{site.data.keyword.Db2_on_Cloud_short}}-Konsole die folgende
 ## Zusätzliche Informationen
 {: #more_info}
 
-Weitere Informationen zur Datenvirtualisierung (Föderierung) finden Sie in [Föderierung![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}.
+Weitere Informationen zur Datenvirtualisierung (Föderierung) finden Sie in [Föderierung![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}.
 
 Standardmäßig unterstützt {{site.data.keyword.Db2_on_Cloud_short}} Informix und Db2 (einschließlich der lokalen Version von Db2 und Db2 Warehouse). Die Unterstützung für bestimmte Datenquellen muss möglicherweise von IBM Support auf Anforderung installiert werden. Informationen zu den Datenquellen, die durch die Föderierung unterstützt werden, finden Sie in [Durch die Föderierung unterstützte Datenquellen![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}.
 

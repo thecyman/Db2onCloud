@@ -151,7 +151,7 @@ ODBC アプリケーションまたはコマンド・ライン・クライアン
 
     `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
 
-    CLP を使用したデータベース・サーバーへの接続について詳しくは、[CONNECT (タイプ 2) ステートメント ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window} を参照してください。 
+    CLP を使用したデータベース・サーバーへの接続について詳しくは、[CONNECT (タイプ 2) ステートメント ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window} を参照してください。 
 
 * CLPPLUS CONNECT ステートメントには、以下のいずれかを含めることができます。
 
@@ -173,7 +173,7 @@ ODBC アプリケーションまたはコマンド・ライン・クライアン
 
     `connect <IBMid>/<password>@<data_source_name>`
 
-    CLPPLUS を使用した DSN 別名への接続について詳しくは、[CLPPlus での DSN 別名 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:new_window} を参照してください。
+    CLPPLUS を使用した DSN 別名への接続について詳しくは、[CLPPlus での DSN 別名 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:new_window} を参照してください。
 
 ### JDBC
 {: #jdbc}

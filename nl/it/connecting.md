@@ -30,13 +30,13 @@ Puoi collegare interfacce della riga di comando, strumenti o applicazioni di ter
 ## Prerequisiti
 {: #connect_prereq}
 
-Se stai avendo dei problemi di connessione, completa i [prerequisiti ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connecting_applications_to_dashdb_database.html){:new_window}.
+Se stai avendo dei problemi di connessione, completa i [prerequisiti ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/connecting/connecting_applications_to_dashdb_database.html){:new_window}.
 {: shortdesc}
 
 ### Configurazione dell'ambiente
 {: #cfg_env}
 
-Per collegare gli strumenti e le applicazioni locali al tuo database Db2, devi [configurare il tuo ambiente ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}. 
+Per collegare gli strumenti e le applicazioni locali al tuo database Db2, devi [configurare il tuo ambiente ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}. 
 {: shortdesc}
 
 ## Collegamento in modo programmatico
@@ -46,10 +46,10 @@ Puoi utilizzare linguaggi di programmazione comuni per creare applicazioni che s
 {: shortdesc}
 
 <!--* [Java ![External link icon](../../icons/launch-glyph.svg "External link icon"){}{:new_window} -->
-* [JDBC ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_jdbc_applications.html){:new_window}
-* [ODBC ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cli_and_odbc_applications.html){:new_window}
-* [.NET ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html){:new_window}
-* [PHP ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
+* [JDBC ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_jdbc_applications.html){:new_window}
+* [ODBC ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cli_and_odbc_applications.html){:new_window}
+* [.NET ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html){:new_window}
+* [PHP ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
 
 ## Collegamento di applicazioni e strumenti
 {: #conx_apps_tools}
@@ -60,10 +60,10 @@ utilizzarli per un'ulteriore gestione o analisi dei dati. Ad esempio:
    * Connetti le tue applicazioni {{site.data.keyword.Bluemix_short}} che necessitano di
 un database di analisi.
    * [Connessione da {{site.data.keyword.DSX_full}} (in precedenza IBM Data Science Experience). ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://datascience.ibm.com/docs/content/manage-data/create-conn.html?context=analytics&linkInPage=true){:new_window}
-   * [Connetti {{site.data.keyword.IBM_notm}} InfoSphere® Data Architect per progettare e distribuire il tuo schema di database. ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_ibm_data_architect.html){:new_window}
+   * [Connetti {{site.data.keyword.IBM_notm}} InfoSphere® Data Architect per progettare e distribuire il tuo schema di database. ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_ibm_data_architect.html){:new_window}
 <!--   * Connect Esri ArcGIS to perform geospatial analytics and map publishing with your data. -->
-   * [Connetti un server {{site.data.keyword.IBM_notm}} Cognos® per eseguire i report Cognos sui tuoi dati. ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cognos.html){:new_window}
+   * [Connetti un server {{site.data.keyword.IBM_notm}} Cognos® per eseguire i report Cognos sui tuoi dati. ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cognos.html){:new_window}
    * Connetti gli strumenti basati su SQL quali Tableau o Microsoft Excel per manipolare, analizzare o visualizzare i tuoi dati. 
-       * [Tableau ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_tableau.html){:new_window}
-       * [Microsoft Excel ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_excel.html){:new_window}
-   * [Connect Aginity Workbench to migrate Netezza® data models and data to {{site.data.keyword.dashdbshort_notm}}. ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_aginity.html){:new_window}
+       * [Tableau ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_tableau.html){:new_window}
+       * [Microsoft Excel ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_excel.html){:new_window}
+   * [Connect Aginity Workbench to migrate Netezza® data models and data to {{site.data.keyword.dashdbshort_notm}}. ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_aginity.html){:new_window}

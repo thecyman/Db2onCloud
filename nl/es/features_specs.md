@@ -67,7 +67,7 @@ Aquí encontrará las características y especificaciones de {{site.data.keyword
 |  | Service Organization Controls (SOC) | Sí | SOC 2 de tipo 2 |
 |  | GDPR | Sí | - |
 |  | Nube de la UE | Sí | Utilice Frankfurt como región. Se proporciona soporte físico en la UE. |
-|  | Lista completa de conformidades | Sí | [Conformidad de seguridad ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
+|  | Lista completa de conformidades | Sí | [Conformidad de seguridad ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/en/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | Copia de seguridad y restauración | Copias de seguridad diarias | Sí | 14 días de copia de seguridad diaria |
 |  | Recuperación de autoservicio en un punto en el tiempo | Disponible el 15 de noviembre de 2018 | [Restauración de punto en el tiempo](/docs/services/Db2onCloud?topic=Db2onCloud-bnr#point-in-time) |

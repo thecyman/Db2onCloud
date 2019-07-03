@@ -67,7 +67,7 @@ subcollection: Db2onCloud
 |  | SOC(Service Organization Controls)) |Y | SOC 2 유형 2 |
 |  |GDPR |Y | - |
 |  | EU Cloud |Y |프랑크프루트 지역을 사용합니다. EU에서 물리적으로 지원이 제공됩니다. |
-|  | 전체 준수 목록 |Y | [보안 준수 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
+|  | 전체 준수 목록 |Y | [보안 준수 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/en/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | 백업 & 복원 | 일별 백업 |Y | 14일 동안의 일별 백업 |
 |  | 특정 시점 자체 복구 | 2018년 11월 15일부터 사용 가능 | [특정 시점 복원](/docs/services/Db2onCloud?topic=Db2onCloud-bnr#point-in-time) |

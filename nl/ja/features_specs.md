@@ -67,7 +67,7 @@ subcollection: Db2onCloud
 |  | Service Organization Controls (SOC) | Y | SOC 2 タイプ 2 |
 |  | GDPR | Y | - |
 |  | EU クラウド | Y | フランクフルト地域を使用してください。 サポートは物理的に EU で提供されます。 |
-|  | コンプライアンスの完全リスト | Y | [セキュリティー・コンプライアンス ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
+|  | コンプライアンスの完全リスト | Y | [セキュリティー・コンプライアンス ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/en/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | バックアップおよびリストア | 日次バックアップ | Y | 14 日間の日次バックアップ |
 |  | ポイント・イン・タイム・セルフ・サービス・リカバリー | 2018 年 11 月 15 日から使用可能 | [ポイント・イン・タイム・リストア](/docs/services/Db2onCloud?topic=Db2onCloud-bnr#point-in-time) |

@@ -154,7 +154,7 @@ No console de {{site.data.keyword.Db2_on_Cloud_short}}:
 ## Informações Adicionais
 {: #more_info}
 
-Para obter mais informações sobre virtualização de dados (federação), veja: [Federação ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}.
+Para obter mais informações sobre virtualização de dados (federação), veja: [Federação ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}.
 
 Por padrão, o {{site.data.keyword.Db2_on_Cloud_short}} suporta o Informix e o Db2 (incluindo o Db2 no
 local e o Db2 Warehouse). O suporte para determinadas origens de dados pode precisar ser instalado pelo suporte IBM

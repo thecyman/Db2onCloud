@@ -115,8 +115,8 @@ You must have the Db2 driver package or the IBM® Data Server Driver Package ins
 {: #results2}
 
 The query results are displayed in an Excel spreadsheet. These are the same results that are displayed in the Results viewer. Now you can generate charts and reports and analyze your data by using Excel. For more information about how to do this and how to run SQL queries on your data from the web console, see: 
-- [Tutorial: Generating charts and reports by using Excel](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:external}
-- [Analyzing with Excel](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/exploreexcel.html){:external}
+- [Tutorial: Generating charts and reports by using Excel](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:external}
+- [Analyzing with Excel](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.analytics.doc/doc/exploreexcel.html){:external}
 
 ## Esri ArcGIS for Desktop
 {: #esri_arcgis}

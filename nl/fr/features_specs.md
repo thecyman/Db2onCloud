@@ -67,7 +67,7 @@ Les fonctions et spécifications d'{{site.data.keyword.Db2_on_Cloud_long}} sont 
 |  | SOC (Service Organization Controls) | O | SOC 2 Type 2 |
 |  | RGPD | O | - |
 |  | Cloud EU | O | Utiliser région de Francfort. Support physique proposé en Europe. |
-|  | Liste complète des conformités | O | [Conformités de sécurité ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
+|  | Liste complète des conformités | O | [Conformités de sécurité ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | Sauvegarde & restauration | Sauvegardes quotidiennes | O | 14 jours de sauvegardes quotidiennes |
 |  | Reprise en libre service ponctuelle | Disponible le 15 nov 2018 | [Restauration avec point de cohérence](/docs/services/Db2onCloud?topic=Db2onCloud-bnr#point-in-time) |

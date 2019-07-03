@@ -67,7 +67,7 @@ subcollection: Db2onCloud
 |  | Service Organization Controls (SOC) | J | SOC 2 Typ 2 |
 |  | DSGVO | J | - |
 |  | EU Cloud | J | Region Frankfurt verwenden. Unterstützung wird physisch in der EU bereitgestellt. |
-|  | Umfassende Compliance-Liste | J | [Einhaltung von Sicherheitsbestimmungen ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
+|  | Umfassende Compliance-Liste | J | [Einhaltung von Sicherheitsbestimmungen ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | Sicherung & Wiederherstellung | Tägliche Sicherungen | J | 14 Tage mit täglichen Sicherungen |
 |  | Zeitpunktgesteuerte Recovery (Self-Service) | Verfügbar ab 15. Nov. 2018 | [Zeitpunktgesteuerte Wiederherstellung](/docs/services/Db2onCloud?topic=Db2onCloud-bnr#point-in-time) |

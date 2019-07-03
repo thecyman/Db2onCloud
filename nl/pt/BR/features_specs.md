@@ -67,7 +67,7 @@ Os recursos e as especificações do {{site.data.keyword.Db2_on_Cloud_long}} sã
 |  | Service Organization Controls (SOC) | S | SOC 2 Tipo 2 |
 |  | GDPR | S | - |
 |  | Nuvem da UE | S | Usar a região de Frankfurt. Suporte fornecido fisicamente na UE. |
-|  | Lista completa de conformidades | S | [Conformidades de segurança ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
+|  | Lista completa de conformidades | S | [Conformidades de segurança ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/en/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | Backup e restauração | Backups diários | S | 14 dias de backups diários |
 |  | Recuperação self-serve point-in-time | Disponível em 15 de novembro de 2018 | [Restauração point-in-time](/docs/services/Db2onCloud?topic=Db2onCloud-bnr#point-in-time) |

@@ -151,7 +151,7 @@ IBM ID/密碼可用來登入主控台，也可以利用容許使用者 ID/密碼
 
     `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
 
-    如需使用 CLP 連接至資料庫伺服器的詳細資料，請參閱：[CONNECT（類型 2）陳述式 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}。 
+    如需使用 CLP 連接至資料庫伺服器的詳細資料，請參閱：[CONNECT（類型 2）陳述式 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}。 
 
 * CLPPLUS CONNECT 陳述式可以包含下列其中一項：
 
@@ -173,7 +173,7 @@ IBM ID/密碼可用來登入主控台，也可以利用容許使用者 ID/密碼
 
     `connect <IBMid>/<password>@<data_source_name>`
 
-    如需使用 CLPPLUS 連接至 DSN 別名的詳細資料，請參閱：[CLPPlus 中的 DSN 別名 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:new_window}。
+    如需使用 CLPPLUS 連接至 DSN 別名的詳細資料，請參閱：[CLPPlus 中的 DSN 別名 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:new_window}。
 
 ### JDBC
 {: #jdbc}

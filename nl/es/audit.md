@@ -27,7 +27,7 @@ subcollection: Db2onCloud
 ## Auditoría
 {: #auditing}
 
-Puede crear una política de auditoría de base de datos que le dé la capacidad de auditar diferentes categorías de sucesos almacenados en las tablas de auditoría de sucesos de la base de datos. Para obtener más información, consulte [Directrices de políticas de auditoría ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:new_window}.
+Puede crear una política de auditoría de base de datos que le dé la capacidad de auditar diferentes categorías de sucesos almacenados en las tablas de auditoría de sucesos de la base de datos. Para obtener más información, consulte [Directrices de políticas de auditoría ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:new_window}.
 
 También puede auditar y realizar el seguimiento de cambios a la base de datos utilizando los métodos siguientes:
 * Mediante la creación de un supervisor de sucesos de `CHANGE HISTORY`, puede consultar la tabla del supervisor de sucesos para determinar lo que se ha hecho dentro de la base de datos y quién lo ha hecho. Para obtener más información, consulte [Supervisor de sucesos `CHANGE HISTORY` ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.sql.ref.doc/doc/r0059363.html){:new_window}.

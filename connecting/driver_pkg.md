@@ -44,7 +44,7 @@ The {{site.data.keyword.Db2_on_Cloud_short}} driver package contains software fo
 ## Already installed?
 {: #alrdy_instld}
 
-To verify that the driver package is already on your computer, or to determine the version number, you can use the [**db2level**](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.admin.cmd.doc/doc/r0009195.html){:external} command.
+To verify that the driver package is already on your computer, or to determine the version number, you can use the [**db2level**](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.admin.cmd.doc/doc/r0009195.html){:external} command.
 
 ## Downloading
 {: #dwnldng}

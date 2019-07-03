@@ -151,7 +151,7 @@ IBM 标识/密码可用于登录控制台，也可在应用程序中发挥与用
 
     `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
 
-    有关使用 CLP 连接到数据库服务器的更多详细信息，请参阅：[CONNECT (type 2) statement ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}。 
+    有关使用 CLP 连接到数据库服务器的更多详细信息，请参阅：[CONNECT (type 2) statement ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}。 
 
 * CLPPLUS CONNECT 语句可以包含以下某项：
 
@@ -173,7 +173,7 @@ IBM 标识/密码可用于登录控制台，也可在应用程序中发挥与用
 
     `connect <IBMid>/<password>@<data_source_name>`
 
-    有关使用 CLPPLUS 连接到 DSN 别名的更多详细信息，请参阅：[CLPPlUS 中的 DSN 别名 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:new_window}。
+    有关使用 CLPPLUS 连接到 DSN 别名的更多详细信息，请参阅：[CLPPlUS 中的 DSN 别名 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:new_window}。
 
 ### JDBC
 {: #jdbc}

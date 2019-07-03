@@ -27,7 +27,7 @@ subcollection: Db2onCloud
 ## 审计
 {: #auditing}
 
-您可以创建数据库审计策略来审计数据库中审计事件表内存储的各类事件。有关更多信息，请参阅 [Audit policy guidelines ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:new_window}。
+您可以创建数据库审计策略来审计数据库中审计事件表内存储的各类事件。有关更多信息，请参阅 [Audit policy guidelines ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:new_window}。
 
 此外，还可以使用以下方法来审计和跟踪数据库更改：
 * 通过创建 `CHANGE HISTORY` 事件监视器，您可以查询事件监视器表以确定数据库中已完成的操作以及操作人员。有关更多信息，请参阅 [`CHANGE HISTORY` 事件监视器 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.sql.ref.doc/doc/r0059363.html){:new_window}。

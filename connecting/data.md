@@ -369,7 +369,7 @@ If you intend to connect by using the SSL protocol, download the `DigiCertGlobal
 
 Define a subscription and perform data replication. For information, see:
 
-- [Loading data from InfoSphere Data Replication](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_iidr.html){:external} 
+- [Loading data from InfoSphere Data Replication](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_iidr.html){:external} 
 
 ## Segment
 {: #segment}

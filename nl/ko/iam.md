@@ -151,7 +151,7 @@ IAM 인증을 사용하여 ODBC 애플리케이션 또는 명령행 클라이언
 
     `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
 
-    CLP로 데이터베이스 서버에 연결하는 데 관한 자세한 정보는 [CONNECT(유형 2) 명령문 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}을 참조하십시오. 
+    CLP로 데이터베이스 서버에 연결하는 데 관한 자세한 정보는 [CONNECT(유형 2) 명령문 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}을 참조하십시오. 
 
 * CLPPLUS CONNECT 명령문에는 다음 중 하나가 포함될 수 있습니다.
 
@@ -173,7 +173,7 @@ IAM 인증을 사용하여 ODBC 애플리케이션 또는 명령행 클라이언
 
     `connect <IBMid>/<password>@<data_source_name>`
 
-    CLPPLUS를 사용하여 DSN 별명에 연결하는 데 대한 세부사항은 [CLPPlus의 DSN 별명 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:new_window}을 참조하십시오.
+    CLPPLUS를 사용하여 DSN 별명에 연결하는 데 대한 세부사항은 [CLPPlus의 DSN 별명 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:new_window}을 참조하십시오.
 
 ### JDBC
 {: #jdbc}

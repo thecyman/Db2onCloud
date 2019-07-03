@@ -27,7 +27,7 @@ subcollection: Db2onCloud
 ## Auditando
 {: #auditing}
 
-É possível criar uma política de auditoria de banco de dados que fornece a capacidade de auditar várias categorias de eventos que são armazenados em tabelas de eventos de auditoria em seu banco de dados. Para obter mais informações, consulte [Diretrizes de política de auditoria ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:new_window}.
+É possível criar uma política de auditoria de banco de dados que fornece a capacidade de auditar várias categorias de eventos que são armazenados em tabelas de eventos de auditoria em seu banco de dados. Para obter mais informações, consulte [Diretrizes de política de auditoria ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:new_window}.
 
 Também é possível auditar e rastrear mudanças em seu banco de dados usando os métodos a seguir:
 * Ao criar um monitor de eventos `CHANGE HISTORY`, é possível consultar a tabela de monitor de eventos para determinar o que foi feito dentro do banco de dados e quem fez isso. Para obter mais informações, consulte [Monitor de eventos `CHANGE HISTORY` ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.sql.ref.doc/doc/r0059363.html){:new_window}.

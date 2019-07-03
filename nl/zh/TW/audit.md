@@ -27,7 +27,7 @@ subcollection: Db2onCloud
 ## 審核
 {: #auditing}
 
-您可以建立資料庫審核原則，它讓您能審核儲存在您資料庫審核事件表格中的各種種類事件。如需相關資訊，請參閱 [Audit policy guidelines ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:new_window}。
+您可以建立資料庫審核原則，它讓您能審核儲存在您資料庫審核事件表格中的各種種類事件。如需相關資訊，請參閱 [Audit policy guidelines ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:new_window}。
 
 您也可以使用下列方法審核且追蹤資料庫的變更：
 * 藉由建立 `CHANGE HISTORY` 事件監視器，您可以查詢事件監視器表格來判斷誰在資料庫裡做了什麼。如需相關資訊，請參閱 [`CHANGE HISTORY` event monitor ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.sql.ref.doc/doc/r0059363.html){:new_window}。

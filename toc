@@ -60,10 +60,10 @@ Db2 on Cloud
     [Features and advantages](https://ibm.biz/db2oncloud-features)
 	
     [What's new](https://www.ibm.com/support/docview.wss?uid=swg21961758)
-    [Frequently asked questions](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
+    [Frequently asked questions](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/managed_service.html)
     [IBM Developer Answers](https://developer.ibm.com/answers/index.html)
-    [Security compliances](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances_summary.html)
-    [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
+    [Security compliances](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/compliances_summary.html)
+    [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
     {: .navgroup-end}
 
 	{: .navgroup id="howto"}
@@ -77,7 +77,7 @@ Db2 on Cloud
 
 	{: .navgroup id="reference"}
     [REST API](https://cloud.ibm.com/apidocs/db2-on-cloud)
-    [SQL reference](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/c0004100.html)
+    [SQL reference](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/c0004100.html)
 	{: .navgroup-end}
 
 	{: .navgroup id="help"}

@@ -154,7 +154,7 @@ Db2 系列产品的用户可联合 {{site.data.keyword.Db2_on_Cloud_short}} 和 
 ## 其他信息
 {: #more_info}
 
-有关数据虚拟化（联合）的更多信息，请参阅：[联合 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}。
+有关数据虚拟化（联合）的更多信息，请参阅：[联合 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}。
 
 缺省情况下，{{site.data.keyword.Db2_on_Cloud_short}} 支持 Informix 和 Db2（包括内部部署 Db2 和 Db2 Warehouse）。可能需要根据请求由 IBM 支持人员安装对特定数据源的支持。有关联合支持的数据源的信息，请参阅：[联合支持的数据源 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}。
 

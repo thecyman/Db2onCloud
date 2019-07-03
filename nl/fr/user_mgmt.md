@@ -31,4 +31,4 @@ L'administrateur de base de données gère les types suivants d'accès utilisate
 * Console Web : à partir de la console Web, les utilisateurs peuvent exécuter des requêtes sur la base de données.
 * Base de données : l'administrateur peut accorder des droits d'accès granulaires à la base de données, notamment un accès restreint à certaines tables, certains schémas ou même certaines lignes ou colonnes. 
 
-Pour plus d'informations sur la gestion des utilisateurs, voir [Gestion des utilisateurs de la base de données ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:new_window}.
+Pour plus d'informations sur la gestion des utilisateurs, voir [Gestion des utilisateurs de la base de données ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:new_window}.

@@ -154,7 +154,7 @@ Db2 제품군의 제품 사용자는 {{site.data.keyword.Db2_on_Cloud_short}} �
 ## 추가 정보
 {: #more_info}
 
-데이터 가상화(연합)에 대한 자세한 정보는 [Federation![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}을 참조하십시오.
+데이터 가상화(연합)에 대한 자세한 정보는 [Federation![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}을 참조하십시오.
 
 기본적으로 {{site.data.keyword.Db2_on_Cloud_short}}는 Informix 및 Db2(온프레미스 Db2 및 Db2 Warehouse 포함)를 지원합니다. 요청 시 IBM 지원 센터에서 특정 데이터 소스에 대한 지원을 설치해야 할 수 있습니다. 연합을 통해 지원되는 데이터 소스에 대한 정보는 [Federation Supported Data Sources![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}를 참조하십시오.
 

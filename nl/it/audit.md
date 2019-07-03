@@ -27,7 +27,7 @@ subcollection: Db2onCloud
 ## Controllo
 {: #auditing}
 
-Puoi creare una politica di controllo del database che ti fornisce la possibilità di controllare varie categorie di eventi archiviate nelle tabelle degli eventi di controllo nel tuo database. Per ulteriori informazioni, vedi [Audit policy guidelines ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:new_window}.
+Puoi creare una politica di controllo del database che ti fornisce la possibilità di controllare varie categorie di eventi archiviate nelle tabelle degli eventi di controllo nel tuo database. Per ulteriori informazioni, vedi [Audit policy guidelines ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:new_window}.
 
 Puoi inoltre controllare e tenere traccia delle modifiche al tuo database utilizzando i seguenti metodi:
 * Creando un monitoraggio dell'evento `CHANGE HISTORY`, puoi eseguire la query della tabella di monitoraggio dell'evento per determinare cosa è stato fatto nel database e da chi. Per ulteriori informazioni, vedi il [Monitoraggio dell'evento `CHANGE HISTORY` ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.sql.ref.doc/doc/r0059363.html){:new_window}.

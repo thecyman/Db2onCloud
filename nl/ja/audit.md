@@ -27,7 +27,7 @@ subcollection: Db2onCloud
 ## 監査
 {: #auditing}
 
-データベース内の監査イベント・テーブルに保管されるさまざまなカテゴリーのイベントを監査できるようにするためのデータベース監査ポリシーを作成できます。 詳しくは、[監査ポリシーのガイドライン ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:new_window} を参照してください。
+データベース内の監査イベント・テーブルに保管されるさまざまなカテゴリーのイベントを監査できるようにするためのデータベース監査ポリシーを作成できます。 詳しくは、[監査ポリシーのガイドライン ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:new_window} を参照してください。
 
 データベースに加えられた変更の監査と追跡は、以下の方法でも行えます。
 * `CHANGE HISTORY` イベント・モニターを作成することによって、イベント・モニター・テーブルに照会を実行し、データベース内で誰によって何が行われたかを判別できます。 詳しくは、[`CHANGE HISTORY` イベント・モニター ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.sql.ref.doc/doc/r0059363.html){:new_window} を参照してください。

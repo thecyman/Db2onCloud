@@ -172,7 +172,7 @@ Db2 ファミリー製品のユーザーは、
 ## 追加情報
 {: #more_info}
 
-データ仮想化 (フェデレーション) について詳しくは、[フェデレーション ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window} を参照してください。
+データ仮想化 (フェデレーション) について詳しくは、[フェデレーション ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window} を参照してください。
 
 
 デフォルトでは、{{site.data.keyword.Db2_on_Cloud_short}} は Informix および Db2 (オンプレミス Db2 および Db2 Warehouse を含む) をサポートします。 特定のデータ・ソースのサポートを IBM サポートが要求に応じてインストールしなければならない場合があります。 フェデレーションでサポートされるデータ・ソースについて詳しくは、

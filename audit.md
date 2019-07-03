@@ -27,7 +27,7 @@ subcollection: Db2onCloud
 ## Auditing
 {: #auditing}
 
-You can create a database audit policy that gives you the ability to audit various categories of events that are stored in audit event tables in your database. For more information, see [Audit policy guidelines](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:external}.
+You can create a database audit policy that gives you the ability to audit various categories of events that are stored in audit event tables in your database. For more information, see [Audit policy guidelines](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:external}.
 
 You can also audit and track changes to your database by using the following methods:
 * By creating a `CHANGE HISTORY` event monitor, you can query the event monitor table to determine what was done within the database and by whom. For more information, see [`CHANGE HISTORY` event monitor](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.sql.ref.doc/doc/r0059363.html){:external}.

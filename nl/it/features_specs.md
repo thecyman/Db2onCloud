@@ -67,7 +67,7 @@ Le funzioni e le specifiche di {{site.data.keyword.Db2_on_Cloud_long}} sono qui 
 |  | Service Organization Controls (SOC) | S | SOC 2 Type 2 |
 |  | GDPR | S | - |
 |  | Cloud Europa | S | Utilizza la regione Francoforte. Supporto fornito fisicamente in Europa. |
-|  | Elenco completo delle conformità | S | [Security compliances ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
+|  | Elenco completo delle conformità | S | [Security compliances ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/en/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:new_window} |
 |  |  |  |  |
 | Backup e ripristino | Backup giornalieri | S | 14 giorni di backup giornalieri |
 |  | Ripristino self service in un momento specifico | Disponibile il 15 nov 2018 | [Ripristino del punto temporale](/docs/services/Db2onCloud?topic=Db2onCloud-bnr#point-in-time) |

@@ -27,7 +27,7 @@ subcollection: Db2onCloud
 ## Audit durchführen
 {: #auditing}
 
-Sie können eine Auditrichtlinie für die Datenbank erstellen, die es Ihnen ermöglicht, Audits für verschiedene Ereigniskategorien durchzuführen, die in Auditereignistabellen in Ihrer Datenbank gespeichert sind. Weitere Informationen finden Sie in [Anleitungen für Auditrichtlinien ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:new_window}.
+Sie können eine Auditrichtlinie für die Datenbank erstellen, die es Ihnen ermöglicht, Audits für verschiedene Ereigniskategorien durchzuführen, die in Auditereignistabellen in Ihrer Datenbank gespeichert sind. Weitere Informationen finden Sie in [Anleitungen für Auditrichtlinien ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:new_window}.
 
 Darüber hinaus können Sie die folgenden Methoden für das Durchführen von Audits und die Verfolgung von Datenbankänderungen verwenden:
 * Sie können einen `CHANGE HISTORY`-Ereignismonitor erstellen, um die Ereignismonitortabelle abzufragen und so festzustellen, welche Aktionen in der Datenbank stattgefunden haben und wer sie ausgeführt hat. Weitere Informationen finden Sie in [Ereignismonitor `CHANGE HISTORY` ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.sql.ref.doc/doc/r0059363.html){:new_window}.

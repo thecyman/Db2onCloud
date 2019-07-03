@@ -175,7 +175,7 @@ um IBMid/uma senha executando o comando a seguir no prompt de comandos ou script
     `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
 
     Para obter mais detalhes sobre como se conectar a um servidor de banco de dados com o CLP, consulte:
-[Instrução CONNECT (tipo 2) ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}. 
+[Instrução CONNECT (tipo 2) ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}. 
 
 * A instrução CLPPLUS CONNECT pode conter um dos seguintes:
 
@@ -197,7 +197,7 @@ um IBMid/uma senha executando o comando a seguir no prompt de comandos ou script
 
     `connect <IBMid>/<password>@<data_source_name>`
 
-    Para obter mais detalhes sobre como se conectar ao aliases do DSN com o CLPPLUS, consulte: [Aliases do DSN no CLPPlus ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:new_window}.
+    Para obter mais detalhes sobre como se conectar ao aliases do DSN com o CLPPLUS, consulte: [Aliases do DSN no CLPPlus ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:new_window}.
 
 ### JDBC
 {: #jdbc}

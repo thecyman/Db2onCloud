@@ -151,7 +151,7 @@ El siguiente ejemplo de archivo de configuración `db2dsdriver.cfg` muestra las 
 
     `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
 
-    Para obtener información más detallada acerca de cómo conectarse a un servidor de base de datos con CLP, consulte: [Sentencia CONNECT (tipo 2) ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}. 
+    Para obtener información más detallada acerca de cómo conectarse a un servidor de base de datos con CLP, consulte: [Sentencia CONNECT (tipo 2) ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}. 
 
 * El mandato CONNECT de CLPPLUS puede contener una de las siguientes opciones:
 
@@ -173,7 +173,7 @@ El siguiente ejemplo de archivo de configuración `db2dsdriver.cfg` muestra las 
 
     `connect <IBMid>/<password>@<data_source_name>`
 
-    Para obtener más información sobre como conectar alias DSN con CLPPLUS, consulte: [Alias de DSN en CLPPlus ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:new_window}.
+    Para obtener más información sobre como conectar alias DSN con CLPPLUS, consulte: [Alias de DSN en CLPPlus ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:new_window}.
 
 ### JDBC
 {: #jdbc}

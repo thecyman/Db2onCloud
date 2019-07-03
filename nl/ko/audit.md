@@ -27,7 +27,7 @@ subcollection: Db2onCloud
 ## 감사
 {: #auditing}
 
-데이터베이스의 감사 이벤트 테이블에 저장된 다양한 이벤트 카테고리를 감사하는 기능을 제공하는 데이터베이스 감사 정책을 작성할 수 있습니다. 자세한 정보는 [감사 정책 가이드라인 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:new_window}을 참조하십시오.
+데이터베이스의 감사 이벤트 테이블에 저장된 다양한 이벤트 카테고리를 감사하는 기능을 제공하는 데이터베이스 감사 정책을 작성할 수 있습니다. 자세한 정보는 [감사 정책 가이드라인 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:new_window}을 참조하십시오.
 
 또한 다음과 같은 방법을 사용하여 데이터베이스의 변경사항을 감사하고 추적할 수 있습니다.
 * `CHANGE HISTORY` 이벤트 모니터를 작성하면 이벤트 모니터 테이블을 조회하여 데이터베이스 내에서 수행한 작업 및 수행한 사용자를 판별할 수 있습니다. 자세한 정보는 [`CHANGE HISTORY` 이벤트 모니터 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.sql.ref.doc/doc/r0059363.html){:new_window}를 참조하십시오.

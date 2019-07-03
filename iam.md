@@ -151,7 +151,7 @@ The following example of a `db2dsdriver.cfg` configuration file shows the config
 
     `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
 
-    For more details about connecting to a database server with CLP, see: [CONNECT (type 2) statement](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:external}. 
+    For more details about connecting to a database server with CLP, see: [CONNECT (type 2) statement](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:external}. 
 
 * The CLPPLUS CONNECT statement can contain one of the following:
 
@@ -173,7 +173,7 @@ The following example of a `db2dsdriver.cfg` configuration file shows the config
 
     `connect <IBMid>/<password>@<data_source_name>`
 
-    For more details about connecting to DSN aliases with CLPPLUS, see: [DSN aliases in CLPPlus](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:external}.
+    For more details about connecting to DSN aliases with CLPPLUS, see: [DSN aliases in CLPPlus](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:external}.
 
 ### JDBC
 {: #jdbc}

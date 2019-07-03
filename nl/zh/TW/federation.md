@@ -154,7 +154,7 @@ Db2 系列產品的使用者可以聯合來自 {{site.data.keyword.Db2_on_Cloud_
 ## 其他資訊
 {: #more_info}
 
-如需資料虛擬化（聯合）的相關資訊，請參閱：[聯合 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}。
+如需資料虛擬化（聯合）的相關資訊，請參閱：[聯合 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}。
 
 依預設，{{site.data.keyword.Db2_on_Cloud_short}} 支援 Informix 及 Db2（包括內部部署 Db2 及 Db2 Warehouse）。「IBM 支援中心」可能需要在要求時安裝對特定資料來源的支援。如需聯合所支援資料來源的相關資訊，請參閱：[聯合支援的資料來源 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}。
 
