@@ -7,9 +7,22 @@ Db2 on Cloud
 
     {: .navgroup id="learn"}
     getting-started.md
-    features_specs.md
-    iam.md
+
+    {: .topicgroup}
+    Features & specs
+        features_specs.md
+        [Features and advantages](https://ibm.biz/db2oncloud-features)
+        flex_scaling.md
+        br.md
+        ha.md
+        audit.md
         
+    {: .topicgroup}
+    Security
+        iam.md
+        user_mgmt.md
+        [Security compliances](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/compliances_summary.html)
+
     {: .topicgroup}
     Connecting
         connecting/connecting.md
@@ -39,30 +52,23 @@ Db2 on Cloud
         federation.md
         cdc.md
 
-    free_plan.md
-    plans_pricing.md
-    flex_scaling.md
-    br.md
-    ha.md
-
     {: .topicgroup}
     Loading your data
         dcw.md
         migration.md
 
-    audit.md
-    user_mgmt.md
+    free_plan.md
+    plans_pricing.md
+
     maintenance.md
     local_dev_env.md
     communities.md    
 
     [Walk-through video](https://www.youtube.com/watch?v=abmWJYe7Kcc)
-    [Features and advantages](https://ibm.biz/db2oncloud-features)
 	
     [What's new](https://www.ibm.com/support/docview.wss?uid=swg21961758)
     [Frequently asked questions](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/managed_service.html)
     [IBM Developer Answers](https://developer.ibm.com/answers/index.html)
-    [Security compliances](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/compliances_summary.html)
     [Db2 on Cloud Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
     {: .navgroup-end}
 
