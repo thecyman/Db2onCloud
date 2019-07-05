@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-01-21"
+lastupdated: "2019-07-05"
 
 keywords: 
 
@@ -248,6 +248,27 @@ Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_addr
 {: #console-ux}
 
 The service console login page has the option to log in with your IBMid and password. After the **Sign In via IBMid** button is clicked, the user is directed to the IAM login page, on which the password is entered. When authentication is completed, the user is redirected back to the console. Before such login can be successful, the IBMid user must be added to each database service instance by the database administrator through the console or REST API. Just like for a non-IBMid user, a user ID for the database service instance must be entered at the same time that the IBMid user is added. The user ID needs to be unique within the database service instance. This user ID is also the authorization (AUTH) ID within the database.
+
+To add a user with either an IBMid or a service ID by using the web console, complete the following steps:
+
+1. Log in as a user who has administrator privileges.
+
+2. From the right drop-down menu, select **Manage Users**.
+
+   ![View of the web console dashboard page and drop-down menu](images/manage_users.png "Web console drop-down menu"){: caption="Figure 1. Selecting Manage Users page from drop-down menu" caption-side="bottom"}
+
+3. With the **Users** tab selected, click **Add**.
+
+   ![View of the web console Manage Users page](images/add_users.png "Web console Manage Users page"){: caption="Figure 2. Clicking Add to create a user" caption-side="bottom"}
+
+4. Select **Add IBMid user**.
+
+   ![View of the web console Add IBMid user page](images/add_ibmid_user.png "Creating an IBMid user"){: caption="Figure 3. Creating an IBMid user" caption-side="bottom"}
+
+5. Enter a **User ID** and an **IBMid** in the provided fields. Click **Create**.
+
+   The **IBMid** field can be used to specify either an IBMid or a service ID for the user.
+   {: note}
 
 ## REST API experience
 {: #api}
