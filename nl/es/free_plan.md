@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -38,7 +38,8 @@ A diferencia de otros planes de {{site.data.keyword.Db2_on_Cloud_short}}, el pla
  
 El plan gratuito le permite utilizar un esquema de base de datos.
 
-Para obtener más información sobre el plan gratuito de {{site.data.keyword.Db2_on_Cloud_short}}, consulte las [Preguntas más frecuentes ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://ibm.biz/db2oc_free_plan_faq){:new_window}.
+Para obtener más información sobre el plan {{site.data.keyword.Db2_on_Cloud_short}} Free, consulte las
+[Preguntas frecuentes](https://ibm.biz/db2oc_free_plan_faq){:external}.
 
 ## Utilización del plan gratuito fuera de América del Norte continental
 {: #outside_na}

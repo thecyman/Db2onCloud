@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -47,7 +47,7 @@ subcollection: Db2onCloud
 
 **服务标识**
 
-服务标识用于标识服务或应用程序，类似于用户标识对用户进行标识的方式。服务标识是应用程序可以用来进行 IBM Cloud 服务认证的标识。服务标识表示不同于其所属 IBM 标识的单独实体。因此，在数据库中，可以为特定的服务标识授予不同的权限和许可权。服务标识没有密码。必须为每个服务标识创建 API 密钥，该服务标识才能连接到数据库服务实例。有关服务标识的更多信息，请参阅：[介绍 IBM Cloud IAM 服务标识和 API 密钥 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:new_window}。
+服务标识用于标识服务或应用程序，类似于用户标识对用户进行标识的方式。服务标识是应用程序可以用来进行 IBM Cloud 服务认证的标识。服务标识表示不同于其所属 IBM 标识的单独实体。因此，在数据库中，可以为特定的服务标识授予不同的权限和许可权。服务标识没有密码。必须为每个服务标识创建 API 密钥，该服务标识才能连接到数据库服务实例。有关服务标识的更多信息，请参阅：[Introducing IBM Cloud IAM Service IDs and API Keys](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:external}。
 
 ## 客户机连接和用户登录
 {: #connect_user}
@@ -58,7 +58,7 @@ subcollection: Db2onCloud
 
 **访问令牌**
 
-应用程序可以使用 API 密钥通过 REST API 直接从 IAM 服务获取访问令牌。有关更多信息，请参阅：[使用 API 密钥获取 IBM Cloud IAM 令牌 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey){:new_window}。访问令牌的缺省有效期为 60 分钟，之后即到期。如果令牌已到期，那么 Db2 服务器不会允许建立连接。但在建立连接之后，不会检查令牌是否到期。就像在 IAM 集成之前一样，仍将保持已连接状态，直到应用程序断开连接或连接由于其他原因被终止。
+应用程序可以使用 API 密钥通过 REST API 直接从 IAM 服务获取访问令牌。有关更多信息，请参阅：[使用 API 密钥获取 IBM Cloud IAM 令牌](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey){:external}。访问令牌的缺省有效期为 60 分钟，之后即到期。如果令牌已到期，那么 Db2 服务器不会允许建立连接。但在建立连接之后，不会检查令牌是否到期。就像在 IAM 集成之前一样，仍将保持已连接状态，直到应用程序断开连接或连接由于其他原因被终止。
 
 ```
 curl -k -X POST \
@@ -73,7 +73,7 @@ curl -k -X POST \
 
 **API 密钥**
 
-可以为每个 IBM 标识用户或服务标识创建多个 API 密钥。通常情况下，每个 API 密钥都是为单个应用程序创建的。这样只要将其所属的 IBM 标识或服务标识作为用户添加到数据库服务实例中，应用程序就可以一直连接到该数据库服务实例。在数据库中，API 密钥与所属的 IBM 标识或服务标识具有相同的权限和许可权。如果应该不再允许应用程序连接到数据库，那么可以除去相应的 API 密钥。跟使用访问令牌相比，此认证方法需要在应用程序中进行的更改更少，这是因为它不需要与 IAM 服务进行直接交互。有关创建和管理 API 密钥的更多信息，请参阅：[管理用户 API 密钥 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](/docs/iam?topic=iam-userapikey#userapikey){:new_window}。
+可以为每个 IBM 标识用户或服务标识创建多个 API 密钥。通常情况下，每个 API 密钥都是为单个应用程序创建的。这样只要将其所属的 IBM 标识或服务标识作为用户添加到数据库服务实例中，应用程序就可以一直连接到该数据库服务实例。在数据库中，API 密钥与所属的 IBM 标识或服务标识具有相同的权限和许可权。如果应该不再允许应用程序连接到数据库，那么可以除去相应的 API 密钥。跟使用访问令牌相比，此认证方法需要在应用程序中进行的更改更少，这是因为它不需要与 IAM 服务进行直接交互。有关创建和管理 API 密钥的更多信息，请参阅：[管理用户 API 密钥](/docs/iam?topic=iam-userapikey#userapikey){:external}。
 
 **IBM 标识/密码**
 
@@ -151,7 +151,7 @@ IBM 标识/密码可用于登录控制台，也可在应用程序中发挥与用
 
     `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
 
-    有关使用 CLP 连接到数据库服务器的更多详细信息，请参阅：[CONNECT (type 2) statement ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}。 
+    有关使用 CLP 连接到数据库服务器的更多详细信息，请参阅：[CONNECT (type 2) statement](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:external}。 
 
 * CLPPLUS CONNECT 语句可以包含以下某项：
 
@@ -173,7 +173,7 @@ IBM 标识/密码可用于登录控制台，也可在应用程序中发挥与用
 
     `connect <IBMid>/<password>@<data_source_name>`
 
-    有关使用 CLPPLUS 连接到 DSN 别名的更多详细信息，请参阅：[CLPPlUS 中的 DSN 别名 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:new_window}。
+    有关使用 CLPPLUS 连接到 DSN 别名的更多详细信息，请参阅：[DSN aliases in CLPPlus](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:external}。
 
 ### JDBC
 {: #jdbc}
@@ -281,12 +281,12 @@ Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_addr
   .
   ```
 
-有关服务 API 的更多详细信息，请参阅：[{{site.data.keyword.Db2_on_Cloud_short}} REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://ibm.biz/db2oc_api){:new_window}。
+有关服务 API 的更多详细信息，请参阅：[{{site.data.keyword.Db2_on_Cloud_short}} REST API](http://ibm.biz/db2oc_api){:external}。
 
 ## IBM 标识联合
 {: #fed_ibmid}
 
-要使用您自己的身份提供程序（如 LDAP），必须先将 LDAP 服务器与 IBM 标识联合。有关将 LDAP 服务器与 IBM 标识联合的指示信息，请参阅：[IBMid Enterprise Federation Adoption Guide ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://ibm.ent.box.com/notes/78040808400?v=IBMid-Federation-Guide){:new_window}。在数据库管理员完成 IBM 标识联合并将允许的用户添加到数据库服务实例之后，这些用户就可以使用他们的公司用户标识和密码登录到控制台。或者，这些用户也可以使用表示他们用户标识的访问令牌或 API 密钥通过一个受支持的数据库客户机接口来连接数据库服务实例。
+要使用您自己的身份提供程序（如 LDAP），必须先将 LDAP 服务器与 IBM 标识联合。有关将 LDAP 服务器与 IBM 标识联合的指示信息，请参阅：[IBMid Enterprise Federation Adoption Guide](https://ibm.ent.box.com/notes/78040808400?v=IBMid-Federation-Guide){:external}。在数据库管理员完成 IBM 标识联合并将允许的用户添加到数据库服务实例之后，这些用户就可以使用他们的公司用户标识和密码登录到控制台。或者，这些用户也可以使用表示他们用户标识的访问令牌或 API 密钥通过一个受支持的数据库客户机接口来连接数据库服务实例。
 
 ## 限制
 {: #restrictions}

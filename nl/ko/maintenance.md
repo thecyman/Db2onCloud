@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # 유지보수 및 알림 정책
 {: #maint_note_pol}
 
-{{site.data.keyword.Db2_on_Cloud_long}} 서비스에 대한 유지보수 및 알림 정책은 [{{site.data.keyword.Bluemix_notm}} 서비스 설명 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:new_window}에 있습니다. 특히 {{site.data.keyword.Db2_on_Cloud_short}}에 대한 서비스의 추가 이용 약관은 **청구 가능한 추가 SD** 카테고리에 있습니다. 
+{{site.data.keyword.Db2_on_Cloud_long}} 서비스에 대한 유지보수 및 알림 정책은 [{{site.data.keyword.Bluemix_notm}} 서비스 설명](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:external}에 있습니다. 특히 {{site.data.keyword.Db2_on_Cloud_short}}에 대한 서비스의 추가 이용 약관은 **청구 가능한 추가 SD** 카테고리에 있습니다. 
 
 정책을 숙지하면 시스템 유지보수에 대해 복원력을 갖도록 워크로드를 계획하고 스케줄하는 데 많은 도움이 됩니다.
 {: shortdesc}

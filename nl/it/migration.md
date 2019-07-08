@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -79,16 +79,16 @@ La CLI Lift è un'applicazione che puoi utilizzare gratuitamente per migrare i t
 |                              | Formato di file CSV |
 {: caption="Tabella 1. Origini dati di migrazione" caption-side="top"}
 
-Per scaricare e installare la CLI Lift, vedi: [Download Lift CLI ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.lift-cli.cloud.ibm.com/#download){:new_window}.
+Per scaricare e installare la CLI Lift, vedi: [Download Lift CLI](https://www.lift-cli.cloud.ibm.com/#download){:external}.
 
-Per istruzioni dettagliate sulla migrazione dei tuoi dati su {{site.data.keyword.Bluemix_notm}} mediante la CLI Lift, vedi: [Migrate data to {{site.data.keyword.Db2_on_Cloud_long_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}.
+Per istruzioni dettagliate sulla migrazione dei tuoi dati su {{site.data.keyword.Bluemix_notm}} mediante la CLI Lift, vedi: [Migrate data to {{site.data.keyword.Db2_on_Cloud_long_notm}}](https://www.lift-cli.cloud.ibm.com/#docs){:external}.
 
 ### IBM Cloud Mass Data Migration
 {: #mdms}
 
 Un modo veloce, semplice e sicuro per trasferire fisicamente da terabyte a petabyte di dati in {{site.data.keyword.Bluemix_notm}}. Mass Data Migration è un dispositivo di archiviazione mobile con 120 TB di capacità di archiviazione utilizzabile per accelerare lo spostamento dei dati in {{site.data.keyword.Bluemix_notm}}. Supera le comuni sfide di trasferimento come ad esempio costi elevati, lunghi tempi di trasferimento e problemi di sicurezza, tutto in un unico servizio.
 
-![Vista del dispositivo Mass Data Migration](images/mdms.svg)
+![Vista del dispositivo Mass Data Migration](images/mdms.svg "Vista del dispositivo Mass Data Migration")
 
-Per ulteriori informazioni sul dispositivo Mass Data Migration, vedi: [Esercitazione introduttiva](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+Per ulteriori informazioni sul dispositivo Mass Data Migration, vedi: [Esercitazione introduttiva](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:external}.
 

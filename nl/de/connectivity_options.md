@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -30,18 +30,18 @@ subcollection: Db2onCloud
 ## Verbindung zu einem öffentlichen Endpunkt herstellen (Standardoption)
 {: #pub_endpt}
 
-Wie bei jedem öffentlichen Cloud-Service können Sie Ihre Anwendung über einen öffentlichen Hostnamen verbinden, der dann angegeben wird, wenn Ihr Service bereitgestellt wird. Der Zugriff auf Ihre Daten wird durch strikte Authentifizierung, umfangreiche Db2-Berechtigungsoptionen und Zugriffssteuerung, Verschlüsselung für die Datenübertragung und für ruhende Daten sowie durch Verfahren zur Sicherheit und Konformität von IBM für Entwicklung und Betrieb geschützt. Optionales IP-Whitelisting wird angeboten. Erstellen Sie einen IBM Supportfall, wenn Sie IP-Whitelisting aktivieren möchten. 
+Wie bei jedem öffentlichen Cloud-Service können Sie Ihre Anwendung über einen öffentlichen Hostnamen verbinden, der dann angegeben wird, wenn Ihr Service bereitgestellt wird. Der Zugriff auf Ihre Daten wird durch strikte Authentifizierung, umfangreiche Db2-Berechtigungsoptionen und Zugriffssteuerung, Verschlüsselung für die Datenübertragung und für ruhende Daten sowie durch Verfahren zur Sicherheit und Konformität von IBM für Entwicklung und Betrieb geschützt. Optionales IP-Whitelisting wird angeboten. Erstellen Sie einen IBM Supportfall, wenn Sie IP-Whitelisting aktivieren möchten.
 
-### Verbindung zu einem öffentlichen Endpunkt herstellen: 
+### Verbindung zu einem öffentlichen Endpunkt herstellen:
 {: #pub_endpt_steps}
 
-Der einfachste Weg, um eine Verbindung zu Ihren Daten herzustellen, besteht darin, den Namen des öffentlichen Hosts zu verwenden, der in Ihrem Begrüßungsschreiben angegeben wurde. Sie können Ihren Hostnamen und die Berechtigungsnachweise auch auf die folgende Weise erhalten: 
+Der einfachste Weg, um eine Verbindung zu Ihren Daten herzustellen, besteht darin, den Namen des öffentlichen Hosts zu verwenden, der in Ihrem Begrüßungsschreiben angegeben wurde. Sie können Ihren Hostnamen und die Berechtigungsnachweise auch auf die folgende Weise erhalten:
 
 1. Melden Sie sich bei {{site.data.keyword.Db2_on_Cloud_short}} an und klicken Sie auf Ihre Serviceinstanz.
 2. Klicken Sie auf **Serviceberechtigungsnachweise**.
 3. Klicken Sie auf **Neuer Berechtigungsnachweis** und anschließend auf **Hinzufügen**.
 4. Nachdem die Berechtigungsnachweise erstellt wurden, klicken Sie unter der Spalte `Aktionen` auf **Berechtigungsnachweise anzeigen**.
-5. Notieren Sie in dem folgenden JSON-Dokumentbeispiel den Inhalt der Felder für Hostname, Kennwort und Benutzername. Sie verwenden diese drei Komponenten bei der Herstellung der Verbindung zum öffentlichen Endpunkt: 
+5. Notieren Sie in dem folgenden JSON-Dokumentbeispiel den Inhalt der Felder für Hostname, Kennwort und Benutzername. Sie verwenden diese drei Komponenten bei der Herstellung der Verbindung zum öffentlichen Endpunkt:
 
    ```
    {
@@ -61,26 +61,26 @@ Der einfachste Weg, um eine Verbindung zu Ihren Daten herzustellen, besteht dari
 
    ```
 
-   ![Zugriff durch das öffentliches Netz auf {{site.data.keyword.cloud_notm}}](images/public_connection.png)
+   ![Öffentlicher Netzzugriff auf {{site.data.keyword.cloud_notm}}](images/public_connection.png "Grafische Ansicht einer Benutzer-zu-Cloud-Verbindung")
 
 ## Verbindung zu einem privaten Endpunkt herstellen: IBM Cloud-Serviceendpunkt
 {: #priv_endpt}
 
-Wenn Sie in Ihrem {{site.data.keyword.cloud_notm}}-Konto eine Anwendung bereitgestellt haben und diese mit Ihrer Datenbank verbinden möchten, ohne dass der Datenverkehr über öffentliche Netze fließt, können Sie die Option **{{site.data.keyword.cloud_notm}}-Serviceendpunkt** beim Bestellen Ihrer Datenbank verwenden. Wenn der Service bereitgestellt wird, wird Ihnen ein privater Hostname angegeben, zu dem Sie nur innerhalb Ihres {{site.data.keyword.cloud_notm}}-Kontos eine Verbindung herstellen können.   
+Wenn Sie in Ihrem {{site.data.keyword.cloud_notm}}-Konto eine Anwendung bereitgestellt haben und diese mit Ihrer Datenbank verbinden möchten, ohne dass der Datenverkehr über öffentliche Netze fließt, können Sie die Option **{{site.data.keyword.cloud_notm}}-Serviceendpunkt** beim Bestellen Ihrer Datenbank verwenden. Wenn der Service bereitgestellt wird, wird Ihnen ein privater Hostname angegeben, zu dem Sie nur innerhalb Ihres {{site.data.keyword.cloud_notm}}-Kontos eine Verbindung herstellen können.  
 
-Weitere Informationen zur Option des {{site.data.keyword.cloud_notm}}-Serviceendpunkts finden Sie in [Serviceendpunkt: Produktinformationen](/docs/services/service-endpoint?topic=service-endpoint-about#about). 
+Weitere Informationen zur Option des {{site.data.keyword.cloud_notm}}-Serviceendpunkts finden Sie in [Serviceendpunkt: Produktinformationen](/docs/services/service-endpoint?topic=service-endpoint-about#about).
 
 
 ### Verbindung zu einem privaten Endpunkt mit IBM Cloud-Serviceendpunkt herstellen
 {: #priv_endpt_steps}
 
-Die Kommunikation mit privaten Netzen und Endpunkten erfolgt über den {{site.data.keyword.cloud_notm}}-Serviceendpunktservice. Der Serviceendpunktservice erleichtert eine schnelle und sichere Weiterleitung des Datenverkehrs im Netz zwischen unterschiedlichen {{site.data.keyword.cloud_notm}}-Services und Ihrer Datenbank über das private Netzbackplane von {{site.data.keyword.cloud_notm}}. Diese Weiterleitung im Netz gewährleistet, dass Ihre Daten niemals in das öffentliche Internet gelangen.  
+Die Kommunikation mit privaten Netzen und Endpunkten erfolgt über den {{site.data.keyword.cloud_notm}}-Serviceendpunktservice. Der Serviceendpunktservice erleichtert eine schnelle und sichere Weiterleitung des Datenverkehrs im Netz zwischen unterschiedlichen {{site.data.keyword.cloud_notm}}-Services und Ihrer Datenbank über das private Netzbackplane von {{site.data.keyword.cloud_notm}}. Diese Weiterleitung im Netz gewährleistet, dass Ihre Daten niemals in das öffentliche Internet gelangen. 
 
 Voraussetzung für den Einstieg in die Nutzung des Serviceendpunkts ist, dass Ihr {{site.data.keyword.cloud_notm}}-Konto für VRF (Virtual Routing and Forwarding) aktiviert ist. Informationen dazu, wie Sie Ihr Konto aktivieren können, finden Sie in [Ihr Konto mit IBM Cloud CLI für Serviceendpunkt aktivieren](/docs/services/service-endpoint?topic=service-endpoint-getting-started#cs_cli_install_steps).
 
-Nachdem Ihr Konto für VRF aktiviert wurde und der Serviceendpunkt aktiviert ist, befolgen Sie die Anweisungen in Ihrem Begrüßungsschreiben. 
+Nachdem Ihr Konto für VRF aktiviert wurde und der Serviceendpunkt aktiviert ist, befolgen Sie die Anweisungen in Ihrem Begrüßungsschreiben.
 
-Jetzt ist es an der Zeit, Ihre {{site.data.keyword.Db2_on_Cloud_short}}-Instanz ausgehend von Ihrem {{site.data.keyword.cloud_notm}}-Konto mithilfe der privaten Netzadresse zu verbinden, die in Ihrem Begrüßungsschreiben angegeben ist. 
+Jetzt ist es an der Zeit, Ihre {{site.data.keyword.Db2_on_Cloud_short}}-Instanz ausgehend von Ihrem {{site.data.keyword.cloud_notm}}-Konto mithilfe der privaten Netzadresse zu verbinden, die in Ihrem Begrüßungsschreiben angegeben ist.
 
 ## Verbindung zu einem privaten Endpunkt herstellen: VPN (Virtual Private Network)
 {: #vpn}
@@ -90,7 +90,7 @@ Wenn Sie eine Anwendung in einem privaten Netz bereitgestellt haben, dass sich a
 ### Verbindung zu einem privaten Endpunkt mit einem VPN herstellen
 {: #priv_endpt_vpn_steps}
 
-Um eine VPN-Verbindung zu Ihren Clouddaten hinter einem öffentlichen Endpunkt herzustellen, [erstellen Sie einen {{site.data.keyword.cloud_notm}}-Supportfall ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/unifiedsupport/cases/add){:new_window}, der folgende Details enthält: 
+Um eine VPN-Verbindung zu Ihren Clouddaten hinter einem öffentlichen Endpunkt herzustellen, [erstellen Sie einen {{site.data.keyword.cloud_notm}}-Supportfall](https://cloud.ibm.com/unifiedsupport/cases/add){:external}, der folgende Details enthält:
 
 * **Art des Supports**: Technisch 
 * **Kategorie**: Datenbanken 
@@ -122,6 +122,6 @@ Um eine VPN-Verbindung zu Ihren Clouddaten hinter einem öffentlichen Endpunkt h
   * **DH-Gruppe** (bei Verwendung von PF-Secrecy): Gruppe 5
   * **Security Association-Lebensdauer (Sekunden)**: 3600 Sekunden
 
-Nach dem Eingang Ihrer Anforderung werden {{site.data.keyword.cloud_notm}}-Techniker die entsprechenden Firewall-Ports öffnen und die angegebene IP-Adresse in die Whitelist aufnehmen. Die Kommunikation und Auflösung der Anforderung erfolgt über ein {{site.data.keyword.cloud_notm}}-Supportfallticket. 
+Nach dem Eingang Ihrer Anforderung werden {{site.data.keyword.cloud_notm}}-Techniker die entsprechenden Firewall-Ports öffnen und die angegebene IP-Adresse in die Whitelist aufnehmen. Die Kommunikation und Auflösung der Anforderung erfolgt über ein {{site.data.keyword.cloud_notm}}-Supportfallticket.
 
-![Zugriff durch das öffentliches Netz auf {{site.data.keyword.cloud_notm}}](images/public_connection_vpn.png)
+![Öffentlicher Netzzugriff auf {{site.data.keyword.cloud_notm}} über VPN](images/public_connection_vpn.png "Grafische Ansicht einer Benutzer-zu-Cloud-Verbindung")

@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -38,7 +38,7 @@ subcollection: Db2onCloud
  
 免費方案容許您使用一個資料庫綱目。
 
-如需 {{site.data.keyword.Db2_on_Cloud_short}} 免費方案的相關資訊，請參閱[常見問題 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://ibm.biz/db2oc_free_plan_faq){:new_window}。
+如需 {{site.data.keyword.Db2_on_Cloud_short}} 免費方案的相關資訊，請參閱[常見問題](https://ibm.biz/db2oc_free_plan_faq){:external}。
 
 ## 在北美洲大陸以外使用免費方案
 {: #outside_na}

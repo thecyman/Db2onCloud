@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -31,7 +31,7 @@ subcollection: Db2onCloud
 
 さらに、Geo レプリケートされた災害復旧ノードを追加することもできます。 このオフサイトの DR ノード・オプションを使用すると、選択したオフサイト {{site.data.keyword.Bluemix_notm}} データ・センターのデータベース・ノードにデータをリアルタイムで迅速に同期させることができます。 
 
-[DR ノードが使用可能なデータ・センターの場所のリスト。 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:new_window}
+[DR ノードが使用可能なデータ・センターの場所のリスト。](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:external}
 
 {{site.data.keyword.Db2_on_Cloud_short}} は、`ASYNC` モードの Db2 高可用性災害時リカバリー (HADR) テクノロジーを使用して、オフサイトの DR ノード機能を実現し、DR ノードに `Read on Standby` を提供します。
 
@@ -57,7 +57,7 @@ subcollection: Db2onCloud
 
 オフサイトではない標準の HA ノードの場合、フェイルオーバーは IBM によって管理されます。 IBM はサーバーのヘルスをモニターし、必要に応じて、フェイルオーバーやフェイルバックを行い、ローリング更新やスケーリングなども実施して、アップタイムを可能な限り長く保つようにします。
 
-Geo レプリケートされた災害復旧 (HADR) の場合は、コンソールで**「災害復旧の管理 (Manage Disaster Recovery)」**を使用して手動でフェイルオーバーする必要があります。 また、[ここ ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.ibm.com/answers/questions/457901/where-can-i-find-api-documentation-for-db2-on-clou.html){:new_window}で説明する API を使用してフェイルオーバーすることもできます。
+Geo レプリケートされた災害復旧 (HADR) の場合は、コンソールで**「災害復旧の管理 (Manage Disaster Recovery)」**を使用して手動でフェイルオーバーする必要があります。 また、[ここ](https://developer.ibm.com/answers/questions/457901/where-can-i-find-api-documentation-for-db2-on-clou.html){:external}で説明している API を使用してフェイルオーバーすることもできます。
 
 ## FAQ
 {: #faq}
@@ -66,4 +66,4 @@ Geo レプリケートされた災害復旧 (HADR) の場合は、コンソー�
 
 **A**: いいえ。2 つの解決可能なホスト名が与えられます。 アプリが Db2 ACR (Active Connection Reroute、自動クライアント・リルート) を使用するように構成されている場合、アプリは新しい 1 次ノードにリルートされます。
 
-Geo レプリケートされた災害復旧ノードについて詳しくは、[ここ ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.ibm.com/answers/questions/458385/frequently-asked-questions-for-db2-on-cloud-hadr-g.html){:new_window}をクリックしてください。
+Geo レプリケートされた災害復旧ノードについて詳しくは、[ここ](https://developer.ibm.com/answers/questions/458385/frequently-asked-questions-for-db2-on-cloud-hadr-g.html){:external}をクリックしてください。

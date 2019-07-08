@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -79,16 +79,16 @@ Lift CLI 是一個應用程式，您可以免費用來將資料從表 1 列出�
 |                              | CSV 檔案格式|
 {: caption="表 1. 移轉資料來源" caption-side="top"}
 
-若要下載並安裝 Lift CLI，請參閱：[Download Lift CLI ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.lift-cli.cloud.ibm.com/#download){:new_window}。
+若要下載並安裝 Lift CLI，請參閱：[Download Lift CLI](https://www.lift-cli.cloud.ibm.com/#download){:external}。
 
-如需使用 Lift CLI 將資料移轉至 {{site.data.keyword.Bluemix_notm}} 的逐步指示，請參閱：[Migrate data to {{site.data.keyword.Db2_on_Cloud_long_notm}} ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}。
+如需使用 Lift CLI 將資料移轉至 {{site.data.keyword.Bluemix_notm}} 的逐步指示，請參閱：[Migrate data to {{site.data.keyword.Db2_on_Cloud_long_notm}}](https://www.lift-cli.cloud.ibm.com/#docs){:external}。
 
 ### IBM Cloud Mass Data Migration
 {: #mdms}
 
 這是一種快速、簡單且安全的方式，可實際將 TB 到 PB 的資料傳送到 {{site.data.keyword.Bluemix_notm}}。Mass Data Migration 是行動儲存裝置，具有 120 TB 的可用儲存空間容量，可加速將資料移到 {{site.data.keyword.Bluemix_notm}}。克服常見的傳輸挑戰，例如高成本、冗長的傳輸時間，以及安全顧慮 - 全都只需要單一服務。
 
-![Mass Data Migration 裝置的視圖](images/mdms.svg)
+![Mass Data Migration 裝置的視圖](images/mdms.svg "Mass Data Migration 裝置的視圖"){: caption="圖 1. Mass Data Migration 裝置的視圖" caption-side="bottom"}
 
-如需 Mass Data Migration 裝置的相關資訊，請參閱：[入門指導教學](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:new_window}。
+如需 Mass Data Migration 裝置的相關資訊，請參閱：[入門指導教學](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:external}。
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-10-26"
+lastupdated: "2019-05-31"
 
 keywords: 
 
@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -154,7 +154,7 @@ Desde la consola de {{site.data.keyword.Db2_on_Cloud_short}}:
 ## Información adicional
 {: #more_info}
 
-Para obtener más información sobre la virtualización de datos (federación), consulte: [Federación ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}.
+Para obtener más información sobre la virtualización de datos (federación), consulte: [Federación](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/fcontainer.html){:external}.
 
-De forma predeterminada, {{site.data.keyword.Db2_on_Cloud_short}} admite Informix y Db2 (incluidos Db2 local y Db2 Warehouse). Es posible que el soporte a ciertos orígenes de datos deba instalarlo IBM Support bajo solicitud. Para obtener información sobre los orígenes de datos que reciben soporte de la federación, consulte: [Orígenes de datos soportados de federación ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}.
+De forma predeterminada, {{site.data.keyword.Db2_on_Cloud_short}} admite Informix y Db2 (incluidos Db2 local y Db2 Warehouse). Es posible que el soporte a ciertos orígenes de datos deba instalarlo IBM Support bajo solicitud. Para obtener información sobre los orígenes de datos que reciben soporte de la federación, consulte: [Orígenes de datos admitidos por la federación](https://www.ibm.com/support/docview.wss?uid=swg27050561){:external}.
 

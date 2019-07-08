@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -34,9 +34,9 @@ Puede elegir un plan {{site.data.keyword.Db2_on_Cloud_short}} que está configur
    * Planes Precise Performance que ofrecen recursos fijos y servidores dedicados
    * Cada plan se puede configurar para obtener alta disponibilidad y compatibilidad con Oracle.
 
-Para cargas de trabajo con grandes requisitos analíticos y de depósito de datos, tenga en cuenta [{{site.data.keyword.dashdblong}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/cloud/db2-warehouse-on-cloud){:new_window}.
+Para cargas de trabajo con grandes requisitos analíticos y de depósito de datos, tenga en cuenta [{{site.data.keyword.dashdblong}}](https://www.ibm.com/cloud/db2-warehouse-on-cloud){:external}.
 
-Si no ve una configuración en el catálogo que necesita, [póngase en contacto con ventas de {{site.data.keyword.IBM_notm}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window} para hablar sobre otras opciones.
+Si en el catálogo no ve la configuración que necesita, póngase en contacto con el [equipo de ventas de {{site.data.keyword.IBM_notm}}](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:external} para considerar otras opciones.
 
 ## Precios
 {: #pricing}

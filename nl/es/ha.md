@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -31,7 +31,7 @@ Los planes de alta disponibilidad estándar sin nodo de recuperación tras desas
 
 Además, puede añadir un nodo de recuperación tras desastre replicado geográficamente. Esta opción de nodo DR externo le ofrece la posibilidad de sincronizar rápidamente sus datos en tiempo real con un nodo de base de datos en el centro de datos externo de {{site.data.keyword.Bluemix_notm}} que elija. 
 
-[Lista de ubicaciones de centros de datos donde hay disponibles nodos de DR. ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:new_window}
+[Lista de las ubicaciones del centro de datos en las que hay disponibles nodos de recuperación.](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:external}
 
 {{site.data.keyword.Db2_on_Cloud_short}} utiliza la tecnología de recuperación tras desastre de alta disponibilidad de Db2 (HADR) en modalidad `ASYNC` para lograr la capacidad de nodo DR externo y ofrece la función `Read on Standby` en el nodo DR.
 
@@ -57,7 +57,8 @@ Si actualmente no es usuario de {{site.data.keyword.Db2_on_Cloud_short}}:
 
 Para los nodos HA estándar, que no son externos, IBM gestiona la migración tras error por usted. IBM supervisa el estado del servidor, la migración tras error y la vuelta a utilizar el servidor de nuevo según sea necesario, incluidas las actualizaciones continuas y el escalado para mantener al máximo el tiempo de funcionamiento.
 
-Para la recuperación tras desastre replicada geográficamente (HADR), debe realizar la migración tras error manualmente mediante **Gestionar recuperación tras desastre** en la consola. Además, puede realizar la migración tras error mediante una API, tal como se describe [aquí ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/answers/questions/457901/where-can-i-find-api-documentation-for-db2-on-clou.html){:new_window}.
+Para la recuperación tras desastre replicada geográficamente (HADR), debe realizar la migración tras error manualmente mediante **Gestionar recuperación tras desastre** en la consola. Además, puede realizar la migración tras error mediante una API, tal como se describe
+[aquí](https://developer.ibm.com/answers/questions/457901/where-can-i-find-api-documentation-for-db2-on-clou.html){:external}.
 
 ## Preguntas más frecuentes
 {: #faq}
@@ -66,4 +67,4 @@ Para la recuperación tras desastre replicada geográficamente (HADR), debe real
 
 **R**: No. Se proporcionan 2 nombres de host que se pueden resolver. Si la app está configurada para utilizar Db2 ACR (Active Connection Reroute), la app se reencamina al nuevo nodo primario.
 
-Para obtener más información sobre el nodo de recuperación tras desastre replicado geográficamente, pulse [aquí ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/answers/questions/458385/frequently-asked-questions-for-db2-on-cloud-hadr-g.html){:new_window}.
+Para obtener más información sobre el nodo de recuperación tras desastre replicado geográficamente, pulse [aquí](https://developer.ibm.com/answers/questions/458385/frequently-asked-questions-for-db2-on-cloud-hadr-g.html){:external}.

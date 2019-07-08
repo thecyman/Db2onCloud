@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -27,20 +27,20 @@ subcollection: Db2onCloud
 ## Audit durchführen
 {: #auditing}
 
-Sie können eine Auditrichtlinie für die Datenbank erstellen, die es Ihnen ermöglicht, Audits für verschiedene Ereigniskategorien durchzuführen, die in Auditereignistabellen in Ihrer Datenbank gespeichert sind. Weitere Informationen finden Sie in [Anleitungen für Auditrichtlinien ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:new_window}.
+Sie können eine Auditrichtlinie für die Datenbank erstellen, die es Ihnen ermöglicht, Audits für verschiedene Ereigniskategorien durchzuführen, die in Auditereignistabellen in Ihrer Datenbank gespeichert sind. Weitere Informationen finden Sie in [Anleitungen für Auditrichtlinien](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:external}.
 
 Darüber hinaus können Sie die folgenden Methoden für das Durchführen von Audits und die Verfolgung von Datenbankänderungen verwenden:
-* Sie können einen `CHANGE HISTORY`-Ereignismonitor erstellen, um die Ereignismonitortabelle abzufragen und so festzustellen, welche Aktionen in der Datenbank stattgefunden haben und wer sie ausgeführt hat. Weitere Informationen finden Sie in [Ereignismonitor `CHANGE HISTORY` ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.sql.ref.doc/doc/r0059363.html){:new_window}.
-* Die Time Travel Query-Funktion bietet eine einfache Möglichkeit, alle Änderungen an den Daten zu speichern und alte Daten auf der Basis eines ausgewählten Zeitpunkts abzufragen. Wenn Sie diese Auditmethode verwenden möchten, müssen Sie sicherstellen, dass zuerst die Tabellen so eingerichtet werden, dass sie Time Travel Query unterstützen. Weitere Informationen finden Sie in [Time Travel Query ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl/){:new_window}.
+* Sie können einen `CHANGE HISTORY`-Ereignismonitor erstellen, um die Ereignismonitortabelle abzufragen und so festzustellen, welche Aktionen in der Datenbank stattgefunden haben und wer sie ausgeführt hat. Weitere Informationen finden Sie in [Ereignismonitor `CHANGE HISTORY`](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.sql.ref.doc/doc/r0059363.html){:external}.
+* Die Time Travel Query-Funktion bietet eine einfache Möglichkeit, alle Änderungen an den Daten zu speichern und alte Daten auf der Basis eines ausgewählten Zeitpunkts abzufragen. Wenn Sie diese Auditmethode verwenden möchten, müssen Sie sicherstellen, dass zuerst die Tabellen so eingerichtet werden, dass sie Time Travel Query unterstützen. Weitere Informationen finden Sie in [Time Travel Query](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl/){:external}.
 
-Weitere Informationen zur Durchführung von Audits und zur Verfolgung von Datenbankänderungen finden Sie in [Wie werden Audits durchgeführt und Änderungen verfolgt? ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://developer.ibm.com/answers/questions/427780/how-can-i-audit-or-track-changes-dropped-tables-to.html){:new_window}.
+Weitere Informationen zur Durchführung von Audits und zur Verfolgung von Datenbankänderungen finden Sie in [Wie werden Audits durchgeführt und Änderungen verfolgt?](https://developer.ibm.com/answers/questions/427780/how-can-i-audit-or-track-changes-dropped-tables-to.html){:external}
 
 ## Protokollierung und Überwachung
 {: #log_mon}
 
 Überwachung und Protokollierung sind Teil des Service, diese Funktionen sind jedoch nicht direkt für den Benutzer zugänglich. Stattdessen wird die Infrastruktur von den Mitarbeitern des operativen IBM Teams verwendet, um Probleme zu beheben.  
 
-Informationen zur Verfügbarkeit von Activity Tracker finden Sie in [Roadmap ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://ibm.biz/db2oncloud-roadmap){:new_window}.
+Informationen zur Verfügbarkeit von Activity Tracker finden Sie in [Roadmap](https://ibm.biz/db2oncloud-roadmap){:external}.
 
 Sie können eine Verbindung über einen Db2-Befehlszeilenclient wie z. B. CLPPlus herstellen, um auf detaillierte Informationen und Diagnosen zuzugreifen.
 

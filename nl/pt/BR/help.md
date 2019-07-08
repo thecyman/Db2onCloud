@@ -14,7 +14,7 @@ subcollection: Db2onCloud
 {:tsSymptoms: .tsSymptoms} 
 {:tsCauses: .tsCauses} 
 {:tsResolve: .tsResolve} 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -27,11 +27,11 @@ subcollection: Db2onCloud
 # Assistência e suporte
 {: #help_support}
 
-É possível determinar o status do serviço do {{site.data.keyword.Db2_on_Cloud_long}} no {{site.data.keyword.Bluemix_notm}} verificando a página [IBM Cloud: Status ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/status?selected=status){:new_window}.
+É possível determinar o status do serviço {{site.data.keyword.Db2_on_Cloud_long}} no {{site.data.keyword.Bluemix_notm}} verificando a página [IBM Cloud: Status](https://cloud.ibm.com/status?selected=status){:external}.
 {: tsResolve}
 
 <!--* Status monitoring:
-  * [All regions ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/status?selected=status){:new_window} -->
+  * [All regions](https://cloud.ibm.com/status?selected=status){:external} -->
 
 ## Obtendo ajuda e suporte para o Db2 on Cloud
 {: #gettinghelp}
@@ -41,13 +41,13 @@ Se você tiver problemas ou perguntas ao usar o {{site.data.keyword.Db2_on_Cloud
 
 Ao usar os fóruns para fazer uma pergunta, marque a sua pergunta para que ela possa ser vista pelas equipes de desenvolvimento do {{site.data.keyword.Bluemix}}.
 
-* Se você tiver questões técnicas sobre como desenvolver ou implementar um app com o {{site.data.keyword.Db2_on_Cloud_short}}, poste sua pergunta no [Stack Overflow ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://stackoverflow.com/questions/ask/advice?){:new_window} e identifique-a com as tags "bluemix" e "db2oncloud".
-* Para questões sobre o serviço e instruções para introdução, use o fórum [IBM developerWorks® dW Answers ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://developer.ibm.com/answers/questions/ask/?smartspace=bluemix){:new_window}. Inclua as tags "bluemix" e "db2oncloud".
+* Se você tiver perguntas técnicas sobre como desenvolver ou implementar um app com o {{site.data.keyword.Db2_on_Cloud_short}}, poste sua pergunta no [Stack Overflow](https://stackoverflow.com/questions/ask/advice?){:external} e identifique-a com "bluemix" e "db2oncloud".
+* Para perguntas sobre o serviço e instruções de introdução, use o fórum [IBM developerWorks® dW Answers](https://developer.ibm.com/answers/questions/ask/?smartspace=bluemix){:external}. Inclua as tags "bluemix" e "db2oncloud".
 
-Consulte [Obtendo ajuda](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window} para obter mais detalhes sobre o uso dos fóruns.
+Consulte [Obtendo ajuda](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:external} para obter mais detalhes sobre o uso dos fóruns.
 
 Para obter informações sobre como abrir um chamado de suporte IBM ou sobre níveis de suporte
-e severidades de chamado, veja: [Trabalhando com casos de suporte](/docs/get-support?topic=get-support-open-case#open-case){:new_window}.
+e severidades de chamado, veja: [Trabalhando com casos de suporte](/docs/get-support?topic=get-support-open-case#open-case){:external}.
 
 
 

@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -31,7 +31,7 @@ Les plans de haute disponibilité standard sans noeud de reprise après incident
 
 En outre, vous pouvez ajouter un noeud de reprise après incident géorépliqué. Cette option de noeud de reprise après incident hors site vous permet de synchroniser rapidement vos données en temps réel avec un noeud de base de données situé dans un centre de données {{site.data.keyword.Bluemix_notm}} hors site de votre choix. 
 
-[Liste des emplacements de centre de données où des noeuds de reprise après incident sont disponibles. ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:new_window}
+[Liste des emplacements de centre de données où des noeuds de reprise après incident sont disponibles.](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:external}
 
 {{site.data.keyword.Db2_on_Cloud_short}} utilise la technologie Db2 HADR (High Availability Disaster Recovery) en mode `ASYNC` pour atteindre la capacité du noeud de reprise après incident hors site et fournit une `fonction de lecture en veille` sur ce noeud.
 
@@ -57,7 +57,7 @@ Si vous n'êtes pas un utilisateur {{site.data.keyword.Db2_on_Cloud_short}} actu
 
 Pour les noeuds haute disponibilité standard qui ne sont pas hors site, le basculement est géré automatiquement pas IBM. IBM surveille la santé de votre serveur, le basculement et la reprise par restauration si nécessaire, notamment les mises à jour en continu et la mise à l'échelle pour que la disponibilité soit aussi élevée que possible.
 
-Pour la reprise après incident géorépliquée (HADR), vous devez effectuer un basculement manuel à l'aide de l'option **Manage Disaster Recovery** de la console. En outre, vous pouvez effectuer le basculement à l'aide d'une API, comme décrit [ici ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://developer.ibm.com/answers/questions/457901/where-can-i-find-api-documentation-for-db2-on-clou.html){:new_window}.
+Pour la reprise après incident géorépliquée (HADR), vous devez effectuer un basculement manuel à l'aide de l'option **Manage Disaster Recovery** de la console. En outre, vous pouvez effectuer le basculement à l'aide d'une API, comme décrit [ici](https://developer.ibm.com/answers/questions/457901/where-can-i-find-api-documentation-for-db2-on-clou.html){:external}.
 
 ## Foire aux questions
 {: #faq}
@@ -66,4 +66,4 @@ Pour la reprise après incident géorépliquée (HADR), vous devez effectuer un 
 
 **R** : Non. Deux noms d'hôte qui peuvent être résolus vous sont affectés. Si votre application est configurée pour utiliser Db2 ACR (Active Connection Reroute), elle est alors réacheminée vers le noeud principal.
 
-Pour plus d'informations sur le noeud de reprise après incident géorépliqué, cliquez [ici ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://developer.ibm.com/answers/questions/458385/frequently-asked-questions-for-db2-on-cloud-hadr-g.html){:new_window}.
+Pour plus d'informations sur le noeud de reprise après incident géorépliqué, cliquez [ici](https://developer.ibm.com/answers/questions/458385/frequently-asked-questions-for-db2-on-cloud-hadr-g.html){:external}.

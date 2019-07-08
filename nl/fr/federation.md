@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-10-26"
+lastupdated: "2019-05-31"
 
 keywords: 
 
@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -154,7 +154,7 @@ A partir de la console {{site.data.keyword.Db2_on_Cloud_short}} :
 ## Informations complémentaires
 {: #more_info}
 
-Pour plus d'informations sur la virtualisation des données (fédération), voir : [Federation ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}.
+Pour plus d'informations sur la virtualisation des données (fédération), voir [Federation](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/fcontainer.html){:external}.
 
-Par défaut, {{site.data.keyword.Db2_on_Cloud_short}} prend en charge Informix et Db2 (y compris Db2 et Db2 Warehouse sur site). La prise en charge de certaines sources de données devra peut-être être installée par le support IBM sur demande. Pour plus d'informations sur les sources de données prises en charge par la fédération, voir : [Federation Supported Data Sources ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}.
+Par défaut, {{site.data.keyword.Db2_on_Cloud_short}} prend en charge Informix et Db2 (y compris Db2 et Db2 Warehouse sur site). La prise en charge de certaines sources de données devra peut-être être installée par le support IBM sur demande. Pour plus d'informations sur les sources de données prises en charge par la fédération, voir [Federation Supported Data Sources](https://www.ibm.com/support/docview.wss?uid=swg27050561){:external}.
 

@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -31,7 +31,7 @@ subcollection: Db2onCloud
 
 此外，您可以添加地理复制灾难恢复节点。此非现场 DR 节点选项使您能够实时将数据快速同步到所选非现场 {{site.data.keyword.Bluemix_notm}} 数据中心的数据库节点。 
 
-[DR 节点可用的数据中心位置的列表。![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:new_window}
+[提供 DR 节点的数据中心位置的列表。](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:external}
 
 {{site.data.keyword.Db2_on_Cloud_short}} 以 `ASYNC` 方式使用 Db2 高可用性灾难恢复 (HADR) 技术来实现非现场 DR 节点功能，并在 DR 节点上提供 `Read on Standby`。
 
@@ -57,7 +57,7 @@ subcollection: Db2onCloud
 
 对于不是非现场的标准 HA 节点，故障转移由 IBM 管理。IBM 会监视服务器的运行状况、执行故障转移并根据需要进行故障恢复，包括滚动更新和扩展以尽可能使正常运行时间保持在最高水平。
 
-对于地理复制灾难恢复 (HADR)，必须使用控制台中的**管理灾难恢复**来手动执行故障转移。此外，还可以使用 API 来执行故障转移，如[此处 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.ibm.com/answers/questions/457901/where-can-i-find-api-documentation-for-db2-on-clou.html){:new_window} 所述。
+对于地理复制灾难恢复 (HADR)，必须使用控制台中的**管理灾难恢复**来手动执行故障转移。此外，还可以使用 API 来执行故障转移，如[此处](https://developer.ibm.com/answers/questions/457901/where-can-i-find-api-documentation-for-db2-on-clou.html){:external}所述。
 
 ## 常见问题
 {: #faq}
@@ -66,4 +66,4 @@ subcollection: Db2onCloud
 
 **答**：不需要进行更改，DNS 名称或 IP 地址也不会更改。将为您提供 2 个可解析的主机名。如果应用程序配置为使用 Db2 ACR（活动连接重新路由），那么应用程序将重新路由到新的主节点。
 
-有关地理复制灾难恢复节点的更多信息，请单击[此处 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.ibm.com/answers/questions/458385/frequently-asked-questions-for-db2-on-cloud-hadr-g.html){:new_window}。
+有关地理复制灾难恢复节点的更多信息，请单击[此处](https://developer.ibm.com/answers/questions/458385/frequently-asked-questions-for-db2-on-cloud-hadr-g.html){:external}。

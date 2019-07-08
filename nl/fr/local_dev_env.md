@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -26,6 +26,6 @@ subcollection: Db2onCloud
 
 Si vous souhaitez configurer un environnement de développement Db2 local, vous pouvez faire appel à l'une des deux versions suivantes :
 
-* [IBM Db2 Developer Community Edition ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window} - Gratuit. Inclut toutes les fonctionnalités de Db2, mais uniquement à des fins de développement.
-* [IBM Db2 Express-C ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/developerworks/downloads/im/db2express/){:new_window} - Gratuit. Version limitée de Db2 gratuite pour n'importe quelle utilisation, incluant des systèmes de production ou des systèmes imbriqués.
+* [IBM Db2 Developer Community Edition](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:external} gratuit. Inclut toutes les fonctionnalités de Db2, mais uniquement à des fins de développement.
+* [IBM Db2 Express-C](https://www.ibm.com/developerworks/downloads/im/db2express/){:external} gratuit. Version limitée de Db2 gratuite pour n'importe quelle utilisation, incluant des systèmes de production ou des systèmes imbriqués.
 {: shortdesc}

@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -31,7 +31,7 @@ I piani di alta disponibilità standard senza un nodo di ripristino di emergenza
 
 In aggiunta, puoi aggiungere un nodo di ripristino di emergenza (DR) con replica geografica. Questa opzione del nodo DR offsite ti fornisce la capacità di sincronizzare rapidamente i tuoi dati in tempo reale in un nodo del database in un data center {{site.data.keyword.Bluemix_notm}} di tua scelta. 
 
-[Elenco delle ubicazioni dei data center in cui sono disponibili i nodi DR. ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:new_window}
+[Elenco delle ubicazioni dei data center in cui sono disponibili i nodi DR.](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:external}
 
 {{site.data.keyword.Db2_on_Cloud_short}} utilizza la tecnologia Db2 High Availability Disaster Recovery (HADR) in modalità `ASYNC` per raggiungere la capacità del nodo DR offsite e fornisce `Read on Standby` nel nodo DR.
 
@@ -57,7 +57,7 @@ Se al momento non sei un utente {{site.data.keyword.Db2_on_Cloud_short}}:
 
 Per i nodi HA standard, che non sono offsite, il failover viene gestito per te da IBM. IBM monitora l'integrità del tuo server, il failover e il failback se necessario, inclusi gli aggiornamenti continui e il ridimensionamento per mantenere il tempo di attività il più elevato possibile.
 
-Per il ripristino di emergenza (DR) con replica geografica (HADR), devi eseguire il failover manualmente utilizzando **Manage Disaster Recovery** nella console. In aggiunta, puoi eseguire il failover utilizzando un'API come descritto [qui ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.ibm.com/answers/questions/457901/where-can-i-find-api-documentation-for-db2-on-clou.html){:new_window}.
+Per il ripristino di emergenza (DR) con replica geografica (HADR), devi eseguire il failover manualmente utilizzando **Manage Disaster Recovery** nella console. In aggiunta, puoi eseguire il failover utilizzando un'API come descritto [qui](https://developer.ibm.com/answers/questions/457901/where-can-i-find-api-documentation-for-db2-on-clou.html){:external}
 
 ## Domande frequenti (FAQ)
 {: #faq}
@@ -66,4 +66,4 @@ Per il ripristino di emergenza (DR) con replica geografica (HADR), devi eseguire
 
 **A**: no. Ti vengono forniti 2 nomi host risolvibili. Se la tua applicazione è configurata per utilizzare Db2 ACR (Active Connection Reroute), viene reinstradata al nuovo nodo primario.
 
-Per ulteriori informazioni sul nodo di ripristino di emergenza (DR) con replica geografica, fai clic [qui ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.ibm.com/answers/questions/458385/frequently-asked-questions-for-db2-on-cloud-hadr-g.html){:new_window}.
+Per ulteriori informazioni sul nodo di ripristino di emergenza (DR) con replica geografica, fai clic [qui](https://developer.ibm.com/answers/questions/458385/frequently-asked-questions-for-db2-on-cloud-hadr-g.html){:external}.

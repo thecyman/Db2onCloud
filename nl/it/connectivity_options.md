@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -61,7 +61,7 @@ Il modo più facile per connetterti ai tuoi dati è mediante il nome host pubbli
 
    ```
 
-   ![Accesso di rete pubblica a {{site.data.keyword.cloud_notm}}](images/public_connection.png)
+   ![Accesso di rete pubblica a {{site.data.keyword.cloud_notm}}](images/public_connection.png "Vista geografica della connessione da utente al cloud")
 
 ## Connessione a un endpoint privato: IBM Cloud Service Endpoint
 {: #priv_endpt}
@@ -74,7 +74,7 @@ Per ulteriori informazioni sull'opzione {{site.data.keyword.cloud_notm}} Service
 ### Come stabilire una connessione a un endpoint privato con IBM Cloud Service Endpoint
 {: #priv_endpt_steps}
 
-Le comunicazioni di rete privata ed endpoint avvengono mediante il servizio {{site.data.keyword.cloud_notm}} Service Endpoint. Il servizio Service Endpoint rende facile instradare rapidamente e in modo protetto il traffico di rete tra diversi servizi {{site.data.keyword.cloud_notm}} e il tuo database sul backplane di rete privata {{site.data.keyword.cloud_notm}}.Questo instradamento di rete garantisce che i tuoi dati non vadano mai sull'internet pubblico. 
+Le comunicazioni di rete privata ed endpoint avvengono mediante il servizio {{site.data.keyword.cloud_notm}} Service Endpoint. Il servizio Service Endpoint rende facile instradare rapidamente e in modo protetto il traffico di rete tra diversi servizi {{site.data.keyword.cloud_notm}} e il tuo database sul backplane di rete privata {{site.data.keyword.cloud_notm}}. Questo instradamento di rete garantisce che i tuoi dati non vadano mai sull'internet pubblico. 
 
 Per iniziare a lavorare con Service Endpoint, il tuo account {{site.data.keyword.cloud_notm}} deve essere abilitato per VRF (virtual routing and forwarding). Per fare in modo che il tuo account venga abilitato, vedi [Enabling your account for using Service Endpoint by using IBM Cloud CLI](/docs/services/service-endpoint?topic=service-endpoint-getting-started#cs_cli_install_steps).
 
@@ -90,7 +90,7 @@ Se hai un'applicazione distribuita su una rete privata che si trova fuori da {{s
 ### Come connettersi a un endpoint privato con una VPN
 {: #priv_endpt_vpn_steps}
 
-Per stabilire una connessione VPN al tuo database cloud dietro un endpoint pubblico, [crea un caso di supporto {{site.data.keyword.cloud_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/unifiedsupport/cases/add){:new_window} che include i seguenti dettagli:
+Per stabilire una connessione VPN al tuo database cloud dietro un endpoint pubblico, [crea un caso di supporto {{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/unifiedsupport/cases/add){:external} che include i seguenti dettagli:
 
 * **Type of support**: Technical 
 * **Category**: Databases 
@@ -124,4 +124,4 @@ Per stabilire una connessione VPN al tuo database cloud dietro un endpoint pubbl
 
 Dopo la ricezione della tua richiesta, i tecnici {{site.data.keyword.cloud_notm}} apriranno le porte del firewall appropriate e inseriranno in whitelist l'indirizzo IP fornito. Le comunicazioni e la risoluzione alla richiesta verranno effettuate tramite il ticket del caso di supporto {{site.data.keyword.cloud_notm}}.
 
-![Accesso di rete pubblica a {{site.data.keyword.cloud_notm}}](images/public_connection_vpn.png)
+![Accesso di rete pubblica a {{site.data.keyword.cloud_notm}} tramite una VPN](images/public_connection_vpn.png "Vista geografica della connessione da utente al cloud")

@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -27,13 +27,13 @@ subcollection: Db2onCloud
 Per i piani a pagamento, i backup crittografati del database vengono eseguiti giornalmente. Un backup giornaliero viene conservato per ognuno degli ultimi 14 giorni.
 {: shortdesc}
 
-In aggiunta ai backup standard, puoi utilizzare [Time Travel Query ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} per conservare i dati cronologici per altri scopi, come ad esempio una query istantanea di dati precedenti o un controllo semplificato. Puoi anche eseguire le tue esportazioni utilizzando IBM Data Studio o un qualsiasi strumento Db2.
+In aggiunta ai backup standard, puoi utilizzare [Time Travel Query](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:external} per conservare i dati cronologici per altri scopi, come ad esempio una query istantanea di dati precedenti o un controllo semplificato. Puoi anche eseguire le tue esportazioni utilizzando IBM Data Studio o un qualsiasi strumento Db2.
  
 Per informazioni sui ripristini del punto temporale, consulta [Ripristino del punto temporale](#point-in-time).
 
 Tutti i piani a pagamento normalmente utilizzano IBM Cloud Object Storage (COS) per conservare i backup offsite in 3 diversi data center. Tuttavia, Sydney e alcuni data center più piccoli potrebbero non supportare la replica offsite con IBM COS in questo momento. Consulta la [Documentazione IBM COS](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-endpoints#endpoints) per la tua regione per determinare quali regioni supportano la replica offsite.
 
-Puoi anche utilizzare l'[IBM Lift CLI ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.lift-cli.cloud.ibm.com/){:new_window} per importare i dati in {{site.data.keyword.Db2_on_Cloud_short}}.
+Puoi anche utilizzare la [IBM Lift CLI](https://www.lift-cli.cloud.ibm.com/){:external} per importare i dati in {{site.data.keyword.Db2_on_Cloud_short}}.
 
 ## Ripristino del punto temporale
 {: #point-in-time}
@@ -52,20 +52,20 @@ Di seguito viene riportato un esempio selezionato di acquisizioni schermo dell'I
    Il processo di ripristino del punto temporale annulla la validità di tutti i backup conservati precedentemente con delle date successive alla data del punto temporale selezionata a causa di una divergenza risultante nella sequenza temporale.
    {: note}
 
-   ![Vista della selezione evidenziata della strategia di ripristino del punto temporale](images/pit_restore_1.png)
+   ![Vista della selezione evidenziata della strategia di ripristino del punto temporale](images/pit_restore_1.png "Pagina della console di backup e ripristino")
 
 2. Conferma di voler continuare con le tue selezioni di ripristino. Dopo aver avviato l'operazione di ripristino, non puoi modificare la richiesta.  
-![Vista della finestra di dialogo della conferma del ripristino del punto temporale](images/pit_restore_2.png)
+![Vista della finestra di dialogo di conferma del ripristino di punto temporale](images/pit_restore_2.png "Finestra di dialogo di conferma")
 
-3. Il processo di ripristino viene inizializzato.
-![Vista dell'inizializzazione del ripristino del punto temporale](images/pit_restore_3.png)
+3. Il processo di ripristino è in fase di inizializzazione.
+![Vista dell'inizializzazione del ripristino di punto temporale](images/pit_restore_3.png "Inizializzazione del ripristino di punto temporale")
 
 4. Ripristino del database al punto temporale selezionato.
-![Vista dell'avanzamento del ripristino del punto temporale](images/pit_restore_4.png)
+![Vista dell'avanzamento del ripristino di punto temporale](images/pit_restore_4.png "Avanzamento del ripristino")
 
-5. Stai creando un nuovo punto di backup. Il database ripristinato al punto temporale è pronto per l'utilizzo.
-![Vista della creazione di un nuovo punto di backup](images/pit_restore_5.png)
+5. Stai creando un nuovo punto di backup. Il database ripristinato al punto temporale è pronto per l'uso.
+![Vista della creazione di un punto di backup](images/pit_restore_5.png "Creazione di un punto di backup")
 
-6. L'operazione di ripristino è terminata correttamente.
-![Vista del corretto completamento dell'operazione di ripristino](images/pit_restore_6.png)
+6. L'operazione di ripristino è stata completata correttamente.
+![Vista dell'operazione di ripristino completata correttamente](images/pit_restore_6.png "Operazione completata correttamente")
 

@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # Políticas de manutenção e notificação
 {: #maint_note_pol}
 
-As políticas de manutenção e notificação para o serviço {{site.data.keyword.Db2_on_Cloud_long}} podem ser localizadas nas descrições de serviço do [{{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:new_window}. Termos adicionais de serviço, especificamente para o {{site.data.keyword.Db2_on_Cloud_short}} podem ser localizados procurando na categoria **SDs adicionais com encargos**. 
+As políticas de manutenção e notificação para o serviço {{site.data.keyword.Db2_on_Cloud_long}} podem ser localizadas nas [descrições do serviço {{site.data.keyword.Bluemix_notm}}](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:external}. Termos adicionais de serviço, especificamente para o {{site.data.keyword.Db2_on_Cloud_short}} podem ser localizados procurando na categoria **SDs adicionais com encargos**. 
 
 Estar familiarizado com nossas políticas pode ajudar a planejar e programar suas cargas de trabalho para que elas sejam resilientes à manutenção do sistema.
 {: shortdesc}

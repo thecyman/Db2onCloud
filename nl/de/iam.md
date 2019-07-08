@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -47,7 +47,7 @@ Benutzer mit einer IBMid müssen zu jeder Datenbankserviceinstanz vom Datenbanka
 
 **Service-IDs**
 
-Eine Service-ID identifiziert einen Service oder eine Anwendung in ähnlicher Weise wie eine Benutzer-ID einen Benutzer identifiziert. Die Service-IDs sind IDs, die von Anwendungen für die Authentifizierung bei einem IBM Cloud-Service verwendet werden können. Eine Service-ID stellt eine von der Eigner-IBMid separate Entität dar. Aus diesem Grund können unterschiedliche Autorisierungen und Berechtigungen, die für die Service-ID spezifisch sind, innerhalb der Datenbank erteilt werden. Service-IDs verfügen nicht über Kennwörter. Für jede Service-ID muss ein API-Schlüssel erstellt werden, damit die Service-ID eine Verbindung zur Datenbankserviceinstanz herstellen kann. Weitere Informationen zu Service-IDs finden Sie in [Service-IDs und API-Schlüssel in IBM Cloud IAM - Einführung ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:new_window}.
+Eine Service-ID identifiziert einen Service oder eine Anwendung in ähnlicher Weise wie eine Benutzer-ID einen Benutzer identifiziert. Die Service-IDs sind IDs, die von Anwendungen für die Authentifizierung bei einem IBM Cloud-Service verwendet werden können. Eine Service-ID stellt eine von der Eigner-IBMid separate Entität dar. Aus diesem Grund können unterschiedliche Autorisierungen und Berechtigungen, die für die Service-ID spezifisch sind, innerhalb der Datenbank erteilt werden. Service-IDs verfügen nicht über Kennwörter. Für jede Service-ID muss ein API-Schlüssel erstellt werden, damit die Service-ID eine Verbindung zur Datenbankserviceinstanz herstellen kann. Weitere Informationen zu Service-IDs finden Sie in [Service-IDs und API-Schlüssel in IBM Cloud IAM - Einführung](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:external}.
 
 ## Clientverbindungen und Benutzeranmeldungen
 {: #connect_user}
@@ -58,7 +58,7 @@ Die folgenden Methoden können für die IAM-Authentifizierung verwendet werden:
 
 **Zugriffstoken**
 
-Die Anwendung kann über die REST-API mithilfe eines API-Schlüssels ein Zugriffstoken direkt beim IAM-Service abrufen. Weitere Informationen finden Sie in [IBM Cloud IAM-Token mithilfe eines API-Schlüssels abrufen ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey){:new_window}. Das Zugriffstoken verfügt über einen Standardgültigkeitszeitraum von 60 Minuten, bevor es abläuft. Nach dem Ablauf des Tokens lässt der Db2-Server die Herstellung einer Verbindung nicht mehr zu. Nachdem die Verbindung hergestellt ist, wird das Token nicht mehr auf ein Ablaufdatum überprüft. Wie vor der IAM-Integration bleibt die Verbindung bestehen, bis die Anwendung die Verbindung trennt oder die Verbindung aus anderen Gründen beendet wird.
+Die Anwendung kann über die REST-API mithilfe eines API-Schlüssels ein Zugriffstoken direkt beim IAM-Service abrufen. Weitere Informationen finden Sie in [IBM Cloud IAM-Token mithilfe eines API-Schlüssels abrufen](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey){:external}. Das Zugriffstoken verfügt über einen Standardgültigkeitszeitraum von 60 Minuten, bevor es abläuft. Nach dem Ablauf des Tokens lässt der Db2-Server die Herstellung einer Verbindung nicht mehr zu. Nachdem die Verbindung hergestellt ist, wird das Token nicht mehr auf ein Ablaufdatum überprüft. Wie vor der IAM-Integration bleibt die Verbindung bestehen, bis die Anwendung die Verbindung trennt oder die Verbindung aus anderen Gründen beendet wird.
 
 ```
 curl -k -X POST \
@@ -73,7 +73,7 @@ Ein Zugriffstoken identifiziert einen IBMid-Benutzer oder eine Service-ID für d
 
 **API-Schlüssel**
 
-Für jeden IBMid-Benutzer bzw. jede Service-ID können mehrere API-Schlüssel erstellt werden. Jeder API-Schlüssel wird normalerweise für eine einzelne Anwendung erstellt. Dies ermöglicht es der Anwendung, eine Verbindung zur Datenbankserviceinstanz herzustellen, vorausgesetzt, die Eigner-IBMid oder Service-ID als Benutzer zur selben Datenbankserviceinstanz hinzugefügt wird. Der API-Schlüssel verfügt in der Datenbank über dieselben Autorisierungen und Berechtigungen wie die Eigner-IBMid oder die Service-ID. Wenn eine Anwendung keine Verbindung mehr mit der Datenbank herstellen können soll, kann der entsprechende API-Schlüssel entfernt werden. Bei dieser Authentifizierungsmethode ist der Änderungsaufwand in der Anwendung geringer als bei der Verwendung eines Zugriffstokens, da keine direkte Interaktion mit dem IAM-Service erforderlich ist. Weitere Informationen zur Erstellung und Verwaltung von API-Schlüsseln finden Sie in [Benutzer-API-Schlüssel verwalten ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](/docs/iam?topic=iam-userapikey#userapikey){:new_window}.
+Für jeden IBMid-Benutzer bzw. jede Service-ID können mehrere API-Schlüssel erstellt werden. Jeder API-Schlüssel wird normalerweise für eine einzelne Anwendung erstellt. Dies ermöglicht es der Anwendung, eine Verbindung zur Datenbankserviceinstanz herzustellen, vorausgesetzt, die Eigner-IBMid oder Service-ID als Benutzer zur selben Datenbankserviceinstanz hinzugefügt wird. Der API-Schlüssel verfügt in der Datenbank über dieselben Autorisierungen und Berechtigungen wie die Eigner-IBMid oder die Service-ID. Wenn eine Anwendung keine Verbindung mehr mit der Datenbank herstellen können soll, kann der entsprechende API-Schlüssel entfernt werden. Bei dieser Authentifizierungsmethode ist der Änderungsaufwand in der Anwendung geringer als bei der Verwendung eines Zugriffstokens, da keine direkte Interaktion mit dem IAM-Service erforderlich ist. Weitere Informationen zur Erstellung und Verwaltung von API-Schlüsseln finden Sie in [Benutzer-API-Schlüssel verwalten](/docs/iam?topic=iam-userapikey#userapikey){:external}.
 
 **IBMid/Kennwort**
 
@@ -137,44 +137,43 @@ Das folgende Beispiel einer `db2dsdriver.cfg`-Konfigurationsdatei zeigt die Konf
 
     Stellen Sie eine Verbindung zum Datenbankserver `<database_server_name>` her und übergeben Sie das Zugriffstoken, indem Sie den folgenden Befehl in der Eingabeaufforderung des Befehlszeilenprozessors oder einem Script ausführen:
 
-
     `CONNECT TO <database_server_name> ACCESSTOKEN <access_token_string>`
 
     **API-Schlüssel**
 
-    Stellen Sie eine Verbindung zum Datenbankserver `<database_server_name>` mit einem API-Schlüssel her, indem Sie den folgenden Befehl in der Eingabeaufforderung des Befehlszeilenprozessors oder einem Script ausführen: 
+    Stellen Sie eine Verbindung zum Datenbankserver `<database_server_name>` mit einem API-Schlüssel her, indem Sie den folgenden Befehl in der Eingabeaufforderung des Befehlszeilenprozessors oder einem Script ausführen:
 
     `CONNECT TO <database_server_name> APIKEY <api-key-string>`
 
     **IBMid/Kennwort**
 
-    Stellen Sie eine Verbindung zum Datenbankserver `<database_server_name>` mit einer IBMid und einem Kennwort her, indem Sie den folgenden Befehl in der Eingabeaufforderung des Befehlszeilenprozessors oder einem Script ausführen: 
+    Stellen Sie eine Verbindung zum Datenbankserver `<database_server_name>` mit einer IBMid und einem Kennwort her, indem Sie den folgenden Befehl in der Eingabeaufforderung des Befehlszeilenprozessors oder einem Script ausführen:
 
     `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
 
-    Weitere Details zum Herstellen einer Verbindung zu einem Datenbankserver über den Befehlszeilenprozessor (CLP) finden Sie in [Anweisung CONNECT (Typ 2) ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}. 
+    Weitere Details zum Herstellen einer Verbindung zu einem Datenbankserver über den Befehlszeilenprozessor (CLP) finden Sie in [Anweisung CONNECT (Typ 2)](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:external}. 
 
 * Die CLPPlus-Anweisung CONNECT kann eines der folgenden Elemente enthalten:
 
     **Zugriffstoken**
 
-    Stellen Sie eine Verbindung zum DNS-Alias (`@<data_source_name>`) her und übergeben Sie das Zugriffstoken, indem Sie den folgenden Befehl in der CLPPLUS-Eingabeaufforderung oder in einem Script ausführen: 
+    Stellen Sie eine Verbindung zum DNS-Alias (`@<data_source_name>`) her und übergeben Sie das Zugriffstoken, indem Sie den folgenden Befehl in der CLPPLUS-Eingabeaufforderung oder in einem Script ausführen:
 
     `connect @<data_source_name> using(accesstoken <access_token_string>)`
 
     **API-Schlüssel**
 
-    Stellen Sie eine Verbindung zu einem DSN-Alias (`@<data_source_name>`) mit einem API-Schlüssel her, indem Sie den folgenden Befehl in der CLPPLUS-Eingabeaufforderung oder in einem Script ausführen: 
+    Stellen Sie eine Verbindung zu einem DSN-Alias (`@<data_source_name>`) mit einem API-Schlüssel her, indem Sie den folgenden Befehl in der CLPPLUS-Eingabeaufforderung oder in einem Script ausführen:
 
     `connect @<data_source_name> using(apikey <api-key-string>)`
 
     **IBMid/Kennwort**
 
-    Stellen Sie eine Verbindung zum DSN-Alias (`@<data_source_name>`) mit einer IBMid und einem Kennwort her, indem Sie den folgenden Befehl in der CLPPLUS-Eingabeaufforderung oder in einem Script ausführen: 
+    Stellen Sie eine Verbindung zum DSN-Alias (`@<data_source_name>`) mit einer IBMid und einem Kennwort her, indem Sie den folgenden Befehl in der CLPPLUS-Eingabeaufforderung oder in einem Script ausführen:
 
     `connect <IBMid>/<password>@<data_source_name>`
 
-    Weitere Einzelheiten zum Herstellen einer Verbindung zu DSN-Aliasnamen mit CLPPLUS finden Sie in [DSN-Aliasnamen in CLPPlus ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:new_window}.
+    Weitere Einzelheiten zum Herstellen einer Verbindung zu DSN-Aliasnamen mit CLPPLUS finden Sie in [DSN-Aliasnamen in CLPPlus](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:external}.
 
 ### JDBC
 {: #jdbc}
@@ -282,12 +281,12 @@ Die {{site.data.keyword.Db2_on_Cloud_short}}-REST-API wurde erweitert und akzept
   .
   ```
 
-Weitere Details zur API des Service finden Sie in [{{site.data.keyword.Db2_on_Cloud_short}}-REST-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/db2oc_api){:new_window}.
+Weitere Details zur API des Service finden Sie in [{{site.data.keyword.Db2_on_Cloud_short}}-REST-API](http://ibm.biz/db2oc_api){:external}.
 
 ## IBMid-Föderierung
 {: #fed_ibmid}
 
-Wenn Sie einen eigenen Identitätsprovider wie z. B. LDAP verwenden möchten, müssen Sie zuerst den LDAP-Server mit der IBMid föderieren. Anweisungen zum Föderieren des LDAP-Servers mit der IBMid finden Sie in der Veröffentlichung [IBMid Enterprise Federation Adoption Guide ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://ibm.ent.box.com/notes/78040808400?v=IBMid-Federation-Guide){:new_window}. Nachdem die Föderierung mit der IBMid abgeschlossen ist und die berechtigten Benutzer vom Datenbankadministrator zur Datenbankserviceinstanz hinzugefügt wurden, können sich diese Benutzer mit ihrer Firmenbenutzer-ID und dem zugehörigen Kennwort bei der Konsole anmelden. Alternativ dazu können diese Benutzer ein Zugriffstoken oder einen API-Schlüssel, das bzw. der ihre Benutzer-ID darstellt, verwenden, um über eine der unterstützten Datenbankclientschnittstellen eine Verbindung zur Datenbankserviceinstanz herzustellen.
+Wenn Sie einen eigenen Identitätsprovider wie z. B. LDAP verwenden möchten, müssen Sie zuerst den LDAP-Server mit der IBMid föderieren. Anweisungen zum Föderieren des LDAP-Servers mit der IBMid finden Sie in der Veröffentlichung [IBMid Enterprise Federation Adoption Guide](https://ibm.ent.box.com/notes/78040808400?v=IBMid-Federation-Guide){:external}. Nachdem die Föderierung mit der IBMid abgeschlossen ist und die berechtigten Benutzer vom Datenbankadministrator zur Datenbankserviceinstanz hinzugefügt wurden, können sich diese Benutzer mit ihrer Firmenbenutzer-ID und dem zugehörigen Kennwort bei der Konsole anmelden. Alternativ dazu können diese Benutzer ein Zugriffstoken oder einen API-Schlüssel, das bzw. der ihre Benutzer-ID darstellt, verwenden, um über eine der unterstützten Datenbankclientschnittstellen eine Verbindung zur Datenbankserviceinstanz herzustellen.
 
 ## Einschränkungen
 {: #restrictions}

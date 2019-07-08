@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -26,6 +26,6 @@ subcollection: Db2onCloud
 
 ローカル Db2 開発環境をセットアップする場合は、次のいずれかを使用できます。
 
-* [IBM Db2 Developer Community Edition ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:new_window} 無料。 すべての Db2 機能が含まれていますが、使用は開発に限定されます。
-* [IBM Db2 Express-C ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/developerworks/downloads/im/db2express/){:new_window} 無料。 Db2 の機能が限定されたバージョンです。実動システムや組み込みシステムでの使用など、あらゆる使用について無料です。
+* [IBM Db2 Developer Community Edition](https://www.ibm.com/us-en/marketplace/ibm-db2-direct-and-developer-editions){:external} (無料)。すべての Db2 機能が含まれていますが、使用は開発に限定されます。
+* [IBM Db2 Express-C](https://www.ibm.com/developerworks/downloads/im/db2express/){:external} (無料)。Db2 の機能が限定されたバージョンです。実動システムや組み込みシステムでの使用など、あらゆる使用について無料です。
 {: shortdesc}

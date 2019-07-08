@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -79,9 +79,10 @@ A CLI do Lift é um aplicativo que pode ser usado sem encargos para migrar seus 
 |                              | Formato de arquivo CSV |
 {: caption="Tabela 1. Origens de dados de migração" caption-side="top"}
 
-Para fazer download e instalar a CLI do Lift, veja: [Fazer download da CLI do Lift ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.lift-cli.cloud.ibm.com/#download){:new_window}.
+Para fazer download e instalar a CLI do Lift, veja: [Fazer download da CLI do Lift](https://www.lift-cli.cloud.ibm.com/#download){:external}.
 
-Para obter instruções passo a passo sobre a migração de seus dados para o {{site.data.keyword.Bluemix_notm}} usando a CLI do Lift, veja: [Migrar dados para o {{site.data.keyword.Db2_on_Cloud_long_notm}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}.
+Para obter instruções passo a passo sobre como migrar seus dados para
+o {{site.data.keyword.Bluemix_notm}} usando a CLI do Lift, veja: [Migrar dados para o {{site.data.keyword.Db2_on_Cloud_long_notm}}](https://www.lift-cli.cloud.ibm.com/#docs){:external}.
 
 ### IBM Cloud Mass Data Migration
 {: #mdms}
@@ -89,7 +90,7 @@ Para obter instruções passo a passo sobre a migração de seus dados para o {{
 Uma maneira rápida, simples e segura para transferir fisicamente terabytes a petabytes de dados para o
 {{site.data.keyword.Bluemix_notm}}. O Mass Data Migration é um dispositivo de armazenamento móvel com 120 TB de capacidade de armazenamento utilizável para acelerar a movimentação de dados para o {{site.data.keyword.Bluemix_notm}}. Supere desafios comuns de transferência, tais como altos custos, longos tempos de transferência e preocupações com segurança - tudo em um único serviço.
 
-![Visualização do dispositivo Mass Data Migration](images/mdms.svg)
+![Visualização do dispositivo Mass Data Migration](images/mdms.svg "Visualização do dispositivo Mass Data Migration")
 
-Para obter mais informações sobre o dispositivo Mass Data Migration, veja: [Tutorial de introdução](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+Para obter mais informações sobre o dispositivo Mass Data Migration, veja: [Tutorial de introdução](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:external}.
 

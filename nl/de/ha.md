@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -31,7 +31,7 @@ Die Standardhochverfügbarkeitspläne ohne DR-Knoten (Disaster Recovery) bieten 
 
 Darüber hinaus kann ein DR-Knoten (Disaster Recovery) mit Georeplikation hinzugefügt werden. Diese Option eines ausgelagerten DR-Knotens ermöglicht die schnelle Echtzeitsynchronisierung von Daten auf einen Datenbankknoten an einem von Ihnen ausgewählten ausgelagerten {{site.data.keyword.Bluemix_notm}}-Rechenzentrum. 
 
-[Liste der Standorte von Rechenzentren mit verfügbaren DR-Knoten ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:new_window}
+[Liste der Standorte von Rechenzentren mit verfügbaren DR-Knoten.](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:external}
 
 {{site.data.keyword.Db2_on_Cloud_short}} verwendet die Db2 HADR-Technologie (High Availability Disaster Recovery) im asynchronen Modus (`ASYNC`), um die Funktion des ausgelagerten Disaster-Recovery-Knotens bereitzustellen, und ermöglicht Leseoperationen in der Bereitschaftsdatenbank (`Read on Standby`) auf dem DR-Knoten.
 
@@ -57,7 +57,7 @@ Wenn Sie zurzeit kein {{site.data.keyword.Db2_on_Cloud_short}}-Benutzer sind:
 
 Bei Standardhochverfügbarkeitsknoten, die nicht ausgelagert sind, wird die Funktionsübernahme von IBM verwaltet. IBM überwacht den Serverstatus und führt Failover- und Failbackoperationen nach Bedarf aus, einschließlich rollierender Aktualisierungen und Skalierung, um eine möglichst hohe Verfügbarkeitszeit zu erreichen.
 
-Bei der Disaster Recovery mit Georeplikation (HADR) müssen Sie die Funktionsübernahme manuell durchführen, indem Sie die Option **Disaster Recovery verwalten** in der Konsole verwenden. Darüber hinaus können Sie die Funktionsübernahme auch mithilfe einer API durchführen. Eine Beschreibung finden Sie [hier ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://developer.ibm.com/answers/questions/457901/where-can-i-find-api-documentation-for-db2-on-clou.html){:new_window}.
+Bei der Disaster Recovery mit Georeplikation (HADR) müssen Sie die Funktionsübernahme manuell durchführen, indem Sie die Option **Disaster Recovery verwalten** in der Konsole verwenden. Darüber hinaus können Sie die Funktionsübernahme auch mithilfe einer API durchführen. Eine Beschreibung finden Sie [hier](https://developer.ibm.com/answers/questions/457901/where-can-i-find-api-documentation-for-db2-on-clou.html){:external}.
 
 ## Häufig gestellte Fragen
 {: #faq}
@@ -66,4 +66,4 @@ Bei der Disaster Recovery mit Georeplikation (HADR) müssen Sie die Funktionsüb
 
 **A**: Nein. Sie erhalten zwei auflösbare Hostnamen. Wenn die App so konfiguriert ist, dass sie Db2 ACR (Active Connection Reroute) verwendet, wird sie an den neuen Primärknoten weitergeleitet.
 
-Weitere Informationen zum DR-Knoten mit Georeplikation können Sie aufrufen, indem Sie [hier ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://developer.ibm.com/answers/questions/458385/frequently-asked-questions-for-db2-on-cloud-hadr-g.html){:new_window} klicken.
+Weitere Informationen zum DR-Knoten mit Georeplikation können Sie aufrufen, indem Sie [hier](https://developer.ibm.com/answers/questions/458385/frequently-asked-questions-for-db2-on-cloud-hadr-g.html){:external} klicken.

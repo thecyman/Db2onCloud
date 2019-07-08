@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -34,9 +34,9 @@ subcollection: Db2onCloud
    * 수정된 리소스 및 베어메탈 서버를 제공하는 Precise Performance 플랜
    * 고가용성 및 Oracle 호환성을 위해 각 플랜을 구성할 수 있습니다.
 
-분석 또는 웨어하우징 워크로드가 많은 경우 [{{site.data.keyword.dashdblong}} ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/cloud/db2-warehouse-on-cloud){:new_window}를 고려하십시오.
+분석 또는 웨어하우징이 많은 워크로드의 경우 [{{site.data.keyword.dashdblong}}](https://www.ibm.com/cloud/db2-warehouse-on-cloud){:external}를 고려하십시오.
 
-카탈로그에 필요한 구성이 표시되지 않으면 [{{site.data.keyword.IBM_notm}} 영업 담당자 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window}에게 다른 옵션에 대해 문의하십시오.
+카탈로그에서 필요한 구성을 찾을 수 없는 경우 [{{site.data.keyword.IBM_notm}} 영업 팀](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:external}에 문의하여 다른 옵션에 대해 논의하십시오.
 
 ## 가격
 {: #pricing}

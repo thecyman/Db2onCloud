@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -61,7 +61,7 @@ subcollection: Db2onCloud
 
    ```
 
-   ![对 {{site.data.keyword.cloud_notm}}](images/public_connection.png)
+   ![对 {{site.data.keyword.cloud_notm}} 的公用网络访问权](images/public_connection.png "用户到云连接的图形视图")
 
 ## 连接到专用端点：IBM Cloud Service Endpoint
 {: #priv_endpt}
@@ -90,7 +90,7 @@ subcollection: Db2onCloud
 ### 如何使用 VPN 连接到专用端点
 {: #priv_endpt_vpn_steps}
 
-要建立与支持公共端点的云数据库的 VPN 连接，请[创建 {{site.data.keyword.cloud_notm}} 支持案例 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/unifiedsupport/cases/add){:new_window}，其中包括以下详细信息：
+要建立与支持公共端点的云数据库的 VPN 连接，请[创建 {{site.data.keyword.cloud_notm}} 支持案例](https://cloud.ibm.com/unifiedsupport/cases/add){:external}，其中包括以下详细信息：
 
 * **支持类型**：技术 
 * **类别**：数据库 
@@ -124,4 +124,4 @@ subcollection: Db2onCloud
 
 收到请求后，{{site.data.keyword.cloud_notm}} 技术人员会打开相应的防火墙端口，并将所提供的 IP 地址列入白名单。有关请求的通信和解决方案将通过 {{site.data.keyword.cloud_notm}} 支持案例凭单进行。
 
-![对 {{site.data.keyword.cloud_notm}}](images/public_connection_vpn.png)
+![通过 VPN 对 {{site.data.keyword.cloud_notm}} 的公用网络访问权](images/public_connection_vpn.png "用户到云连接的图形视图")

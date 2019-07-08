@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -66,7 +66,7 @@ de serviço.
 
    ```
 
-   ![Acesso de rede pública ao {{site.data.keyword.cloud_notm}}](images/public_connection.png)
+   ![Acesso de rede pública ao {{site.data.keyword.cloud_notm}}](images/public_connection.png "Visualização gráfica da conexão do usuário com a nuvem")
 
 ## Conectando-se a um terminal privado: IBM Cloud Service Endpoint
 {: #priv_endpt}
@@ -103,7 +103,7 @@ ajudarão os seus engenheiros de rede a configurar o túnel VPN entre a sua rede
 ### Como conectar-se a um terminal privado com uma VPN
 {: #priv_endpt_vpn_steps}
 
-Para estabelecer uma conexão VPN com seu banco de dados de nuvem atrás de um terminal público, [crie um caso de suporte {{site.data.keyword.cloud_notm}}![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/unifiedsupport/cases/add){:new_window} que inclua os detalhes a seguir:
+Para estabelecer uma conexão VPN com seu banco de dados em nuvem atrás de um terminal público, [crie um caso de suporte do {{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/unifiedsupport/cases/add){:external} que inclua os detalhes a seguir:
 
 * **Tipo de suporte**: técnico 
 * **Categoria**: bancos de dados 
@@ -138,4 +138,4 @@ e endereço de e-mail):
 
 Após o recebimento de sua solicitação, os técnicos do {{site.data.keyword.cloud_notm}} abrirão as portas de firewall apropriadas e incluirá o endereço IP na lista de desbloqueio. A comunicação e a resolução para a solicitação serão feitas por meio do chamado do chamado de Suporte do {{site.data.keyword.cloud_notm}}.
 
-![Acesso de rede pública ao {{site.data.keyword.cloud_notm}}](images/public_connection_vpn.png)
+![Acesso de rede pública ao {{site.data.keyword.cloud_notm}} por meio de uma VPN](images/public_connection_vpn.png "Visualização gráfica da conexão do usuário com a nuvem")

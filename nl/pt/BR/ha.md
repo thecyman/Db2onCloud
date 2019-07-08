@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -32,7 +32,7 @@ Os planos de alta disponibilidade padrão sem um nó de recuperação de desastr
 
 Além disso, é possível incluir um Nó de recuperação de desastre geo-replicado. Essa opção de nó DR externo fornece a capacidade de sincronizar rapidamente seus dados em tempo real para um nó de banco de dados em um centro de dados externo do {{site.data.keyword.Bluemix_notm}} de sua escolha. 
 
-[Lista de locais de datacenter nos quais os nós DR estão disponíveis. ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:new_window}
+[Listade locais de data centers no quais os nós DR estão disponíveis.](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:external}
 
 O {{site.data.keyword.Db2_on_Cloud_short}} usa a tecnologia Db2 High Availability Disaster Recovery (HADR) no modo `ASYNC` para alcançar o recurso do nó DR externo e fornece `Leitura em espera` no nó DR.
 
@@ -60,7 +60,7 @@ Se atualmente você não for um usuário do {{site.data.keyword.Db2_on_Cloud_sho
 
 Para nós de alta disponibilidade padrão, que não são externos, o failover é gerenciado para você pela IBM. A IBM monitora o funcionamento de seu servidor, failover e failback, conforme necessário, incluindo atualizações contínuas e ajuste de escala para manter o maior tempo de atividade possível.
 
-Para Geo-Replicated Disaster Recovery (HADR), deve-se executar failover manualmente usando **Gerenciar recuperação de desastre** no console. Além disso, é possível executar failover usando uma API, conforme descrito [aqui![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://developer.ibm.com/answers/questions/457901/where-can-i-find-api-documentation-for-db2-on-clou.html){:new_window}.
+Para Geo-Replicated Disaster Recovery (HADR), deve-se executar failover manualmente usando **Gerenciar recuperação de desastre** no console. Além disso, é possível executar o failover usando uma API, conforme descrito [aqui](https://developer.ibm.com/answers/questions/457901/where-can-i-find-api-documentation-for-db2-on-clou.html){:external}.
 
 ## FAQ
 {: #faq}
@@ -69,4 +69,4 @@ Para Geo-Replicated Disaster Recovery (HADR), deve-se executar failover manualme
 
 **R**: Não. Você tem dois nomes de host que podem ser resolvidos. Se seu app estiver configurado para usar o Db2 ACR (Active Connection Reroute), então, seu app será roteado novamente para o novo nó primário.
 
-Para obter mais informações sobre o Nó de recuperação de desastre geo-replicado, clique [aqui![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://developer.ibm.com/answers/questions/458385/frequently-asked-questions-for-db2-on-cloud-hadr-g.html){:new_window}.
+Para obter mais informações sobre o Geo-Replicated Disaster Recovery Node, clique [aqui](https://developer.ibm.com/answers/questions/458385/frequently-asked-questions-for-db2-on-cloud-hadr-g.html){:external}.

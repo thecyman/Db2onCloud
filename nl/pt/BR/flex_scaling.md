@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -30,4 +30,4 @@ Ajuste de escala independente de RAM, armazenamento e núcleos de cálculo.
 O plano Flex inicialmente implementa com um núcleo, 4 GB de RAM e 2 GB de espaço em disco. Em seguida, é possível escalar seu
 plano para cima ou para baixo com barras de régua de controle.
 
-A conclusão desses ajustes dinâmicos geralmente leva menos de 20 minutos. É possível até escalar a CPU e a RAM sem qualquer tempo de inatividade seguindo estas [diretrizes ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://developer.ibm.com/answers/questions/381931/how-can-i-scale-cpu-up-and-down-without-downtime-o.html){:new_window}.
+A conclusão desses ajustes dinâmicos geralmente leva menos de 20 minutos. É possível até escalar a CPU e a RAM sem qualquer tempo de inatividade seguindo estas [recomendações](https://developer.ibm.com/answers/questions/381931/how-can-i-scale-cpu-up-and-down-without-downtime-o.html){:external}.

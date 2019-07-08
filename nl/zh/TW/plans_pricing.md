@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -34,9 +34,9 @@ subcollection: Db2onCloud
    * 精確效能方案，提供固定的資源和裸機伺服器
    * 每個方案可以針對高可用性與 Oracle 相容性而配置。
 
-針對大量分析或倉儲工作負載，請考慮 [{{site.data.keyword.dashdblong}} ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud/db2-warehouse-on-cloud){:new_window}。
+針對大量分析或倉儲工作負載，請考慮 [{{site.data.keyword.dashdblong}}](https://www.ibm.com/cloud/db2-warehouse-on-cloud){:external}。
 
-如果您在型錄中看不到您需要的配置，請與 [{{site.data.keyword.IBM_notm}} 業務 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window} 聯絡，以討論其他選項。
+如果您在型錄中看不到您需要的配置，請與 [{{site.data.keyword.IBM_notm}} 業務](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:external}聯絡，以討論其他選項。
 
 ## 定價
 {: #pricing}

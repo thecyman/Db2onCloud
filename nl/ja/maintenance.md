@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -24,8 +24,7 @@ subcollection: Db2onCloud
 # 保守と通知に関するポリシー
 {: #maint_note_pol}
 
-{{site.data.keyword.Db2_on_Cloud_long}} サービスの保守と通知に関するポリシーは、[{{site.data.keyword.Bluemix_notm}}
-サービスの説明![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:new_window} でご確認いただけます。 {{site.data.keyword.Db2_on_Cloud_short}} に関するサービスの追加条件については、
+{{site.data.keyword.Db2_on_Cloud_long}} サービスの保守と通知に関するポリシーは、[{{site.data.keyword.Bluemix_notm}} サービスの説明](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:external}でご確認いただけます。{{site.data.keyword.Db2_on_Cloud_short}} に関するサービスの追加条件については、
 **有料追加 SD** カテゴリーでご確認いただけます。 
 
 弊社のポリシーを知っておくと、システム保守に対する作業の計画やスケジュール作成

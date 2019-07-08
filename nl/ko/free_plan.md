@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -38,7 +38,7 @@ subcollection: Db2onCloud
  
 무료 플랜을 사용하면 하나의 데이터베이스 스키마를 사용할 수 있습니다.
 
-{{site.data.keyword.Db2_on_Cloud_short}} 무료 플랜에 관한 자세한 정보는 [FAQ ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://ibm.biz/db2oc_free_plan_faq){:new_window}를 참조하십시오.
+{{site.data.keyword.Db2_on_Cloud_short}} 무료 플랜에 대한 자세한 정보는 [FAQ](https://ibm.biz/db2oc_free_plan_faq){:external}를 참조하십시오.
 
 ## 북아메리카 대륙 이외의 지역에서 무료 플랜 사용
 {: #outside_na}

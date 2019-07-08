@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -31,4 +31,4 @@ subcollection: Db2onCloud
 * Web 主控台。從 Web 主控台，使用者可以對資料庫執行查詢。
 * 資料庫。管理者可以授與精細的資料庫存取許可權，包括只能存取特定表格、綱目，或甚至列或直欄。 
 
-如需使用者管理的相關資訊，請參閱[資料庫使用者管理 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:new_window}。
+如需使用者管理的相關資訊，請參閱[資料庫使用者管理](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:external}

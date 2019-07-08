@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -27,13 +27,13 @@ subcollection: Db2onCloud
 Dans le cas de plans payants, des sauvegardes chiffrées de la base de données sont effectuées quotidiennement. Une sauvegarde quotidienne est conservée pour chacun des 14 derniers jours.
 {: shortdesc}
 
-En supplément des sauvegardes standard, vous pouvez utiliser [Time Travel Query ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} pour conserver les données historiques à d'autres fins, comme l'interrogation instantanée d'anciennes données ou l'audit simplifié. Vous pouvez également effectuer vos propres exportations en utilisant IBM Data Studio ou tout autre outil Db2.
+En supplément des sauvegardes standard, vous pouvez utiliser l'[interrogation chronologique](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:external} pour conserver les données historiques à d'autres fins, comme l'interrogation instantanée d'anciennes données ou l'audit simplifié. Vous pouvez également effectuer vos propres exportations en utilisant IBM Data Studio ou tout autre outil Db2.
  
 Pour plus d'informations sur les restaurations avec point de cohérence, voir [Restauration avec point de cohérence](#point-in-time).
 
 Tous les plans payants utilisent généralement IBM Cloud Object Storage (COS) pour conserver les sauvegardes hors site dans trois différents centres de données. Toutefois, Sydney et certains centres de données de plus petite taille peuvent ne pas prendre en charge actuellement la réplication hors site avec IBM COS. Consultez la [documentation IBM COS](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-endpoints#endpoints) correspondant à votre région afin de déterminer quelles régions prennent en charge la réplication hors site.
 
-Vous pouvez également utiliser l'[interface de ligne de commande IBM Lift ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.lift-cli.cloud.ibm.com/){:new_window} pour importer des données dans {{site.data.keyword.Db2_on_Cloud_short}}.
+Vous pouvez également utiliser l'[interface de ligne de commande IBM Lift](https://www.lift-cli.cloud.ibm.com/){:external} pour importer des données dans {{site.data.keyword.Db2_on_Cloud_short}}.
 
 ## Restauration avec point de cohérence
 {: #point-in-time}
@@ -52,20 +52,20 @@ Vous trouverez ci-dessous des exemples sélectionnés de capture d'écran concer
    Le processus de restauration avec point de cohérence invalide les sauvegardes précédemment conservées dont la date est ultérieure à la date de point de cohérence en raison d'une divergence dans la chronologie.
    {: note}
 
-   ![Vue de la sélection mise en évidence de la stratégie de restauration avec point de cohérence](images/pit_restore_1.png)
+   ![Vue de la sélection mise en évidence de la stratégie de restauration avec point de cohérence](images/pit_restore_1.png "Page de sauvegarde et de restauration de la console")
 
 2. Confirmez que vous souhaitez continuer en utilisant vos sélections de restauration. Une fois l'opération de restauration commencée, vous ne pouvez pas changer la demande.  
-![Vue de la boîte de dialogue de confirmation de restauration avec point de cohérence](images/pit_restore_2.png)
+![Vue de la boîte de dialogue de confirmation de restauration avec point de cohérence](images/pit_restore_2.png "Boîte de dialogue de confirmation")
 
 3. Le processus de restauration est en cours d'initialisation.
-![Vue de l'initialisation de la restauration avec point de cohérence](images/pit_restore_3.png)
+![Vue de l'initialisation de la restauration avec point de cohérence](images/pit_restore_3.png "Initialization of point-in-time restoration")
 
 4. Restauration de la base de données au niveau du point de cohérence sélectionné.
-![Vue de la progression de la restauration avec point de cohérence](images/pit_restore_4.png)
+![Vue de la progression de la restauration avec point de cohérence](images/pit_restore_4.png "Progression de la restauration")
 
 5. Un nouveau point de sauvegarde est en cours de création. La base de données restaurée avec un point de cohérence est prête à être utilisée.
-![Vue de la création du nouveau point de sauvegarde](images/pit_restore_5.png)
+![Vue de la création d'un point de sauvegarde](images/pit_restore_5.png "Création d'un point de sauvegarde")
 
 6. L'opération de restauration a abouti.
-![Vue de l'opération de restauration terminée](images/pit_restore_6.png)
+![Vue de l'opération de restauration terminée](images/pit_restore_6.png "Opération terminée")
 

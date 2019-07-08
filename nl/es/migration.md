@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -79,16 +79,16 @@ La CLI de Lift es una aplicación que puede utilizar de forma gratuita para migr
 |                              | Formato de archivo CSV |
 {: caption="Tabla 1. Orígenes de datos de la migración" caption-side="top"}
 
-Para descargar e instalar la CLI de Lift, consulte: [Descarga de la CLI de Lift ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.lift-cli.cloud.ibm.com/#download){:new_window}.
+Para descargar e instalar la CLI de Lift, consulte: [Descargar la CLI Lift](https://www.lift-cli.cloud.ibm.com/#download){:external}.
 
-Para ver instrucciones paso a paso sobre cómo migrar los datos a {{site.data.keyword.Bluemix_notm}} mediante la CLI de Lift, consulte: [Migración de datos a {{site.data.keyword.Db2_on_Cloud_long_notm}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}.
+Para ver instrucciones paso a paso sobre cómo migrar los datos a {{site.data.keyword.Bluemix_notm}} mediante la CLI de Lift, consulte: [Migrar datos a {{site.data.keyword.Db2_on_Cloud_long_notm}}](https://www.lift-cli.cloud.ibm.com/#docs){:external}.
 
 ### Migración de datos masiva de IBM Cloud
 {: #mdms}
 
 Un método rápido, sencillo y seguro de transferir físicamente terabytes o petabytes de datos a {{site.data.keyword.Bluemix_notm}}. La migración de datos masiva es un dispositivo de almacenamiento móvil con 120 TB de capacidad de almacenamiento utilizable para acelerar la transferencia de datos a {{site.data.keyword.Bluemix_notm}}. Con esta solución puede hacer frente a los retos comunes que plantean las transferencias, como el alto coste, los tiempos de transferencia largos y los problemas de seguridad, en un solo servicio.
 
-![Vista del dispositivo de migración de datos masiva](images/mdms.svg)
+![Vista del dispositivo de migración masiva de datos](images/mdms.svg "Vista del dispositivo de migración masiva de datos")
 
-Para obtener más información sobre el dispositivo de migración de datos masiva, consulte la [Guía de aprendizaje de iniciación](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+Para obtener más información sobre el dispositivo de migración de datos masiva, consulte la [Guía de aprendizaje de iniciación](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:external}.
 

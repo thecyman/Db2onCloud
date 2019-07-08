@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -31,4 +31,4 @@ subcollection: Db2onCloud
 * Web 控制台。用户可以从 Web 控制台运行数据库查询。
 * 数据库。管理员可授予数据库的精确访问许可权，包括只能访问特定表、模式，甚至行或列。 
 
-有关用户管理的更多信息，请参阅[数据库用户管理 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:new_window}
+有关用户管理的更多信息，请参阅[数据库用户管理](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:external}

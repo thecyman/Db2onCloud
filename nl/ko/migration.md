@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -32,15 +32,15 @@ subcollection: Db2onCloud
 
 Amazon S3에서 데이터를 로드하려면 다음 방법 중 하나를 선택하십시오.
   * {{site.data.keyword.Db2_on_Cloud_short}} 웹 콘솔 사용. **로드 > Amazon S3**를 선택하십시오. 
-  * 외부 테이블에서 직접 로드. 다음은 SQL문의 예제입니다.
+  * 외부 테이블에서 직접 로드. 다음은 SQL문의 예입니다.
 
     ```
-      INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
-        (CCSID 1208 s3('s3.amazonaws.com', 
-        '<S3-access-key-ID>',
-        '<S3-secret-access-key>', 
-        '<my_bucket>'
-           )
+    INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
+      (CCSID 1208 s3('s3.amazonaws.com',
+      '<S3-access-key-ID>',
+      '<S3-secret-access-key>',
+      '<my_bucket>'
+         )
       )      
     ```
 
@@ -48,9 +48,9 @@ Amazon S3에서 데이터를 로드하려면 다음 방법 중 하나를 선택�
 
 ```
 INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
-  (CCSID 1208 s3('s3-api.us-geo.objectstorage.softlayer.net', 
+  (CCSID 1208 s3('s3-api.us-geo.objectstorage.softlayer.net',
   '<S3-access-key-ID>',
-  '<S3-secret-access-key>', 
+  '<S3-secret-access-key>',
   '<my_bucket>'
      )
   )      
@@ -62,7 +62,7 @@ IBM Cloud Object Storage의 경우 새 서비스 인증 정보를 작성할 때 
 ## 온프레미스 시스템에서 데이터 마이그레이션
 {: #onprem}
 
-온프레미스 시스템에서 데이터를 마이그레이션하려면 데이터 세트 크기에 따라 다음 방법 중 하나를 선택하십시오.
+온프레미스 시스템에서 데이터를 마이그레이션하려면 데이터 세트의 크기에 따라 다음 방법 중 하나를 선택하십시오.
 * 25TB 미만의 데이터: [IBM Lift CLI](#lift)
 * 25TB 이상의 데이터: [IBM Cloud Mass Data Migration](#mdms)
 
@@ -79,16 +79,16 @@ Lift CLI는 표 1에 나열된 다양한 데이터 소스에서 {{site.data.keyw
 |                              | CSV 파일 형식 |
 {: caption="표 1. 마이그레이션 데이터 소스" caption-side="top"}
 
-Lift CLI를 다운로드하고 설치하려면 [Lift CLI 다운로드 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.lift-cli.cloud.ibm.com/#download){:new_window}를 참조하십시오.
+Lift CLI를 다운로드하고 설치하려면 [Lift CLI 다운로드](https://www.lift-cli.cloud.ibm.com/#download){:external}를 참조하십시오.
 
-Lift CLI를 사용하여 {{site.data.keyword.Bluemix_notm}}로 사용자의 데이터를 마이그레이션하는 방법에 관한 단계별 지시사항은 [Migrate data to {{site.data.keyword.Db2_on_Cloud_long_notm}} ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}의 내용을 참조하십시오.
+Lift CLI를 사용하여 데이터를 {{site.data.keyword.Bluemix_notm}}로 마이그레이션하는 방법에 대한 단계별 지시사항은 [데이터를 {{site.data.keyword.Db2_on_Cloud_long_notm}}로 마이그레이션](https://www.lift-cli.cloud.ibm.com/#docs){:external}을 참조하십시오.
 
 ### IBM Cloud Mass Data Migration
 {: #mdms}
 
 실제로 테라바이트부터 페타바이트까지의 데이터를 {{site.data.keyword.Bluemix_notm}}로 전송하는 빠르고 단순하며 안전한 방법입니다. Mass Data Migration은 {{site.data.keyword.Bluemix_notm}}로 데이터 이동을 가속화하는, 120TB의 스토리지 용량이 사용 가능한 모바일 스토리지 디바이스입니다. 단일 서비스의 고비용, 긴 전송 시간 및 보안 문제와 같은 일반적인 전송 문제를 해결합니다.
 
-![Mass Data Migration 디바이스 보기](images/mdms.svg)
+![Mass Data Migration 디바이스 보기](images/mdms.svg "Mass Data Migration 디바이스 보기")
 
-Mass Data Migration 디바이스에 대한 자세한 정보는 [시작하기 튜토리얼](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:new_window}을 참조하십시오. 
+Mass Data Migration 디바이스에 대한 자세한 정보는 [시작하기 튜토리얼](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:external}을 참조하십시오.
 

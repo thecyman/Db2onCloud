@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -79,16 +79,16 @@ Bei der Lift-Befehlszeilenschnittstelle handelt es sich um eine Anwendung, die S
 |                              | CSV-Dateiformat |
 {: caption="Tabelle 1. Migrationsdatenquellen" caption-side="top"}
 
-Informationen zum Download und zur Installation der Lift-Befehlszeilenschnittstelle finden Sie in [Lift-Befehlszeilenschnittstelle herunterladen ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.lift-cli.cloud.ibm.com/#download){:new_window}.
+Informationen zum Download und zur Installation der Lift-Befehlszeilenschnittstelle finden Sie in [Lift-Befehlszeilenschnittstelle herunterladen](https://www.lift-cli.cloud.ibm.com/#download){:external}.
 
-Eine in einzelne Schritte unterteilte Anleitung zur Migration Ihrer Daten in {{site.data.keyword.Bluemix_notm}} mithilfe der Lift-Befehlszeilenschnittstelle finden Sie in [Daten in {{site.data.keyword.Db2_on_Cloud_long_notm}} migrieren ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}.
+Eine in einzelne Schritte unterteilte Anleitung zur Migration Ihrer Daten in {{site.data.keyword.Bluemix_notm}} mithilfe der Lift-Befehlszeilenschnittstelle finden Sie in [Daten in {{site.data.keyword.Db2_on_Cloud_long_notm}} migrieren](https://www.lift-cli.cloud.ibm.com/#docs){:external}.
 
 ### IBM Cloud Mass Data Migration
 {: #mdms}
 
 Hierbei handelt es sich um eine schnelle, einfache und sichere Möglichkeit, Datenvolumen von mehreren Tera- oder Petabyte physisch in {{site.data.keyword.Bluemix_notm}} zu transferieren. Mit Mass Data Migration steht ein mobiles Speichermedium mit 120 TB verwendbarer Speicherkapazität bereit, das das Verschieben von Daten in {{site.data.keyword.Bluemix_notm}} beschleunigen kann. Die gängigen Probleme bei der Datenübertragung, wie z. B. hohe Kosten, lange Übertragungsdauer und Sicherheitsaspekte, können überwunden werden - mit einem einigen Service.
 
-![Ansicht des Mass Data Migration-Geräts](images/mdms.svg)
+![Ansicht des Geräts zur Massendatenmigration](images/mdms.svg "Ansicht des Geräts zur Massendatenmigration")
 
-Weitere Informationen zur MDMS-Einheit (Mass, Mass Data Migration Service) finden Sie in: [Einführung in  Cloud Mass Data Migration](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+Weitere Informationen zur MDMS-Einheit (MDMS, Mass Data Migration Service) finden Sie in: [Einführung in  Cloud Mass Data Migration](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:external}.
 

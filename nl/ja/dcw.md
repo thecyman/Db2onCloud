@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -28,7 +28,7 @@ IBM Database Conversion Workbench (DCW) は、IBM Data Studio にデータベー
 ウンロードできます。
 
 ご使用のデータベースと Db2 との互換性を評価し、SQL を変換するに
-あたって、[IBM Database Harmony Profiler ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/developerworks/community/blogs/05901c97-75b2-47a1-9c32-25f748855913/entry/Introducing_DCW_Lite?lang=en){:new_window} という軽量の無料ツールを使用することもできます。
+あたって、[IBM Database Harmony Profiler](https://www.ibm.com/developerworks/community/blogs/05901c97-75b2-47a1-9c32-25f748855913/entry/Introducing_DCW_Lite?lang=en){:external} という軽量の無料ツールを使用することもできます。
 {: shortdesc}
 
-Database Conversion Workbench と Database Harmony Profiler について詳しくは、[IBMDatabase Conversion Workbench (DCW) ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/en/SSFMBX/com.ibm.swg.im.dashdb.apdv.porting.doc/doc/c_compat_dcw.html){:new_window} を参照してください。
+Database Conversion Workbench と Database Harmony Profiler について詳しくは、[IBM Database Conversion Workbench (DCW)](https://www.ibm.com/support/knowledgecenter/en/SSFMBX/com.ibm.swg.im.dashdb.apdv.porting.doc/doc/c_compat_dcw.html){:external} を参照してください。

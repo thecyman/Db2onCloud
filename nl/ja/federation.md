@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-10-26"
+lastupdated: "2019-05-31"
 
 keywords: 
 
@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -145,36 +145,34 @@ Db2 ファミリー製品のユーザーは、
 
 {{site.data.keyword.Db2_on_Cloud_short}} コンソールから、以下を行います。
 
-1. ターゲット・マシンと通信するサーバーを作成します。<br/>
+1. ターゲット・マシンと通信するためのサーバーを作成します。<br/>
    `create server <server_name> type dashdb version 11 wrapper drda authorization "<admin_user_on_target>" password "<admin_password_on_target>" options (host '<target_host_name>', port '50000', dbname 'bludb')`
 
-   例えば、以下のようにします。<br/>
+   例えば、以下を行えます。<br/>
    `create server db2server type dashdb version 11 wrapper drda authorization "admin2" password "YYYY" options (host 'targetdotcom', port '50000', dbname 'bludb')`
 
-2. admin2 のユーザー・マッピングを作成します。<br/>
+2. admin2 用のユーザー・マッピングを作成します。<br/>
    `create user mapping for <admin_user> server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')`
 
-   例えば、以下のようにします。<br/>
+   例えば、以下を行えます。<br/>
    `create user mapping for admin1 server db2server options (remote_authid 'admin2', remote_password 'YYYY')`
 
 3. データベースのニックネームを作成します。<br/>
    `create nickname <nickname> for <server_name>.<schema_name>.<table_name>`
 
-   例えば、以下のようにします。<br/>
+   例えば、以下を行えます。<br/>
    `create nickname ntest1 for db2server.admin2.testdata`
 
 4. ターゲット・サーバーからデータを取得できることをテストします。<br/>
    `select * from <nickname>`
 
-   例えば、以下のようにします。<br/>
+   例えば、以下を行えます。<br/>
    `select * from ntest1`
 
 ## 追加情報
 {: #more_info}
 
-データ仮想化 (フェデレーション) について詳しくは、[フェデレーション ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window} を参照してください。
+データ仮想化 (フェデレーション) について詳しくは、[フェデレーション](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/fcontainer.html){:external}を参照してください。
 
-
-デフォルトでは、{{site.data.keyword.Db2_on_Cloud_short}} は Informix および Db2 (オンプレミス Db2 および Db2 Warehouse を含む) をサポートします。 特定のデータ・ソースのサポートを IBM サポートが要求に応じてインストールしなければならない場合があります。 フェデレーションでサポートされるデータ・ソースについて詳しくは、
-[フェデレーションでサポートされるデータ・ソース ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window} を参照してください。
+デフォルトでは、{{site.data.keyword.Db2_on_Cloud_short}} は Informix および Db2 (オンプレミス Db2 および Db2 Warehouse を含む) をサポートします。 特定のデータ・ソースのサポートを IBM サポートが要求に応じてインストールしなければならない場合があります。 フェデレーションでサポートされるデータ・ソースについて詳しくは、[フェデレーションでサポートされるデータ・ソース](https://www.ibm.com/support/docview.wss?uid=swg27050561){:external}を参照してください。
 

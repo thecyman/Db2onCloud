@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -34,9 +34,9 @@ subcollection: Db2onCloud
    * Planos Precise Performance que fornecem recursos fixos e servidores bare metal
    * Cada plano pode ser configurado para alta disponibilidade e compatibilidade de Oracle.
 
-Para bastante analytics ou cargas de trabalho de warehousing, considere o [{{site.data.keyword.dashdblong}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud/db2-warehouse-on-cloud){:new_window}.
+Para análises pesadas ou cargas de trabalho de warehousing, considere [{{site.data.keyword.dashdblong}}](https://www.ibm.com/cloud/db2-warehouse-on-cloud){:external}.
 
-Caso você não veja no catálogo uma configuração da qual precisa, entre em contato com [Vendas do {{site.data.keyword.IBM_notm}}![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window} para discutir outras opções.
+Se você não vir uma configuração no catálogo necessária, entre em contato com a área de [Vendas do {{site.data.keyword.IBM_notm}}](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:external} para discutir outras opções.
 
 ## Venda
 {: #pricing}

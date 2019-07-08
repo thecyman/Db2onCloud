@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # 维护和通知策略
 {: #maint_note_pol}
 
-{{site.data.keyword.Db2_on_Cloud_long}} 服务的维护和通知策略位于 [{{site.data.keyword.Bluemix_notm}} 服务描述 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:new_window} 中。可在**付费的附加服务描述**类别下找到专门针对 {{site.data.keyword.Db2_on_Cloud_short}} 的附加服务条款。 
+{{site.data.keyword.Db2_on_Cloud_long}} 服务的维护和通知策略位于 [{{site.data.keyword.Bluemix_notm}} service descriptions](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:external} 中。可在**付费的附加服务描述**类别下找到专门针对 {{site.data.keyword.Db2_on_Cloud_short}} 的附加服务条款。 
 
 了解我们的策略可更好地帮助您规划和安排工作负载，从而保持系统维护弹性。
 {: shortdesc}

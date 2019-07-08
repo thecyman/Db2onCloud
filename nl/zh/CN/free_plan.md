@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -38,7 +38,7 @@ subcollection: Db2onCloud
  
 免费套餐允许使用一个数据库模式。
 
-有关 {{site.data.keyword.Db2_on_Cloud_short}} 免费套餐的更多信息，请参阅[常见问题 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://ibm.biz/db2oc_free_plan_faq){:new_window}。
+有关 {{site.data.keyword.Db2_on_Cloud_short}} 免费套餐的更多信息，请参阅[常见问题](https://ibm.biz/db2oc_free_plan_faq){:external}。
 
 ## 在北美大陆之外使用免费套餐
 {: #outside_na}

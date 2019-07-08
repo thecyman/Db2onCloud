@@ -2,7 +2,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="Db2onCloud" audience="service" arm="1920570" href="/docs/services/Db2onCloud?topic=Db2onCloud-getting-started" path="services/Db2onCloud"}
+{: .toc subcollection="Db2onCloud" audience="service" arm="1920570" href="/docs/services/Db2onCloud?topic=Db2onCloud-getting-started#getting-started" path="services/Db2onCloud"}
 Db2 on Cloud
 
     {: .navgroup id="learn"}
@@ -18,6 +18,7 @@ Db2 on Cloud
     {: .topicgroup}
     Connessione a un altro database Db2
         federation.md
+        cdc.md
 
     free_plan.md
     plans_pricing.md

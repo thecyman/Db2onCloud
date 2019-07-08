@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -38,7 +38,7 @@ Im Gegensatz zu anderen {{site.data.keyword.Db2_on_Cloud_short}}-Plänen wird de
  
 Der kostenfreie Plan ermöglicht die Verwendung eines einzelnen Datenbankschemas.
 
-Weitere Informationen zum kostenfreien {{site.data.keyword.Db2_on_Cloud_short}}-Plan finden Sie auf der Seite mit den [häufig gestellten Fragen ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://ibm.biz/db2oc_free_plan_faq){:new_window}.
+Weitere Informationen zum kostenfreien {{site.data.keyword.Db2_on_Cloud_short}}-Plan finden Sie auf der Seite mit den [häufig gestellten Fragen](https://ibm.biz/db2oc_free_plan_faq){:external}.
 
 ## Den kostenfreien Plan außerhalb des nordamerikanischen Festlands verwenden
 {: #outside_na}

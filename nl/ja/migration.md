@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -87,11 +87,9 @@ Lift CLIは、表 1 にリストされている各種データ・ソースから
 |                              | CSV ファイル・フォーマット |
 {: caption="表 1. マイグレーションのデータ・ソース" caption-side="top"}
 
-Lift CLI のダウンロードとインストールについては、[Lift CLI のダウンロード![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.lift-cli.cloud.ibm.com/#download){:new_window} を参照してください。
+Lift CLI のダウンロードとインストールについては、[Lift CLI のダウンロード](https://www.lift-cli.cloud.ibm.com/#download){:external}を参照してください。
 
-
-Lift CLI を使用して {{site.data.keyword.Bluemix_notm}} にデータをマイグレーションする手順については、[{{site.data.keyword.Db2_on_Cloud_long_notm}} へのデータ・マイグレーション
-![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window} を参照してください。
+Lift CLI を使用して {{site.data.keyword.Bluemix_notm}} にデータをマイグレーションする手順については、[{{site.data.keyword.Db2_on_Cloud_long_notm}} へのデータ・マイグレーション](https://www.lift-cli.cloud.ibm.com/#docs){:external}を参照してください。
 
 ### IBM Cloud Mass Data Migration
 {: #mdms}
@@ -103,8 +101,8 @@ Lift CLI を使用して {{site.data.keyword.Bluemix_notm}} にデータをマ�
 できます。 高いコスト、長い転送時間、セキュリティー上の懸念など、転送に関する共通の
 な課題を単一のサービスですべて克服できます。
 
-![Mass Data Migration デバイスの外観](images/mdms.svg)
+![Mass Data Migration デバイスのビュー](images/mdms.svg "Mass Data Migration デバイスのビュー")
 
 Mass Data Migration デバイスについて詳しくは、
-[入門チュートリアル](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:new_window} を参照してください。
+[入門チュートリアル](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:external} を参照してください。
 

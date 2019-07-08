@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -61,7 +61,7 @@ subcollection: Db2onCloud
 
    ```
 
-   ![對 {{site.data.keyword.cloud_notm}}](images/public_connection.png)
+   ![對 {{site.data.keyword.cloud_notm}} 的公用網路存取權](images/public_connection.png "使用者對雲端連線的圖形視圖"){: caption="圖 1. 對 {{site.data.keyword.cloud_notm}} 的公用網路存取權" caption-side="bottom"}
 
 ## 連接至專用端點：IBM Cloud Service Endpoint
 {: #priv_endpt}
@@ -90,7 +90,7 @@ subcollection: Db2onCloud
 ### 如何使用 VPN 連接至專用端點
 {: #priv_endpt_vpn_steps}
 
-若要在公用端點後面建立雲端資料庫的 VPN 連線，請[建立 {{site.data.keyword.cloud_notm}} 支援案例 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com/unifiedsupport/cases/add){:new_window}，其中包括下列詳細資料：
+若要在公用端點後面建立雲端資料庫的 VPN 連線，請[建立 {{site.data.keyword.cloud_notm}} 支援案例](https://cloud.ibm.com/unifiedsupport/cases/add){:external}，其中包括下列詳細資料：
 
 * **支援類型**：技術 
 * **種類**：資料庫 
@@ -124,4 +124,4 @@ subcollection: Db2onCloud
 
 在收到您的要求之後，{{site.data.keyword.cloud_notm}} 技術人員將開啟適當的防火牆埠，並將提供的 IP 位址列入白名單中。要求的通訊及解析將透過 {{site.data.keyword.cloud_notm}} 支援案例問題單來進行。
 
-![對 {{site.data.keyword.cloud_notm}}](images/public_connection_vpn.png)
+![透過 VPN 對 {{site.data.keyword.cloud_notm}} 的公用網路存取權](images/public_connection_vpn.png "使用者對雲端連線的圖形視圖"){: caption="圖 2. 透過 VPN 對 {{site.data.keyword.cloud_notm}} 的公用網路存取權" caption-side="bottom"}

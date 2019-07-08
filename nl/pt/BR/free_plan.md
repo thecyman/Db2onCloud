@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -41,8 +41,7 @@ Performance executam em suas próprias máquinas virtuais de locatário único o
  
 O plano Grátis permite que você use um esquema de banco de dados.
 
-Para obter mais informações sobre o plano Grátis do {{site.data.keyword.Db2_on_Cloud_short}}, consulte
-[FAQ ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://ibm.biz/db2oc_free_plan_faq){:new_window}.
+Para obter mais informações sobre o plano Grátis do {{site.data.keyword.Db2_on_Cloud_short}}, veja a seção de [FAQ](https://ibm.biz/db2oc_free_plan_faq){:external}.
 
 ## Usando o plano Grátis fora da América do Norte continental
 {: #outside_na}

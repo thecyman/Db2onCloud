@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -27,13 +27,13 @@ subcollection: Db2onCloud
 有料プランでは、データベースの暗号化されたバックアップが毎日行われます。 毎日のバックアップは、過去 14 日間にわたって保持されます。
 {: shortdesc}
 
-標準バックアップに加え、[タイム・トラベル照会 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} を使用して、古いデータのインスタント照会や簡易監査などの他の目的のために履歴データを保持することもできます。 IBM Data Studio または任意の Db2 ツールを使用して、独自のエクスポートを実行することもできます。
+標準バックアップに加え、[タイム・トラベル照会](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:external}を使用して、古いデータのインスタント照会や簡易監査などの他の目的のために履歴データを保持することもできます。IBM Data Studio または任意の Db2 ツールを使用して、独自のエクスポートを実行することもできます。
  
 ポイント・イン・タイム・リストアについては、[ポイント・イン・タイム・リストア](#point-in-time)を参照してください。
 
 すべての有料プランでは通常、IBM Cloud Object Storage (COS) を利用して、オフサイトの 3 つの異なるデータ・センターでバックアップが保持されます。 ただし、現時点では、シドニー・データ・センターと小規模なデータ・センターの一部は、IBM COS によるオフサイト・レプリケーションをサポートしていません。 オフサイト・レプリケーションをサポートしている地域を判別するには、お客様の地域の [IBM COS の資料](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-endpoints#endpoints)を確認してください。
 
-[IBM Lift CLI ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.lift-cli.cloud.ibm.com/){:new_window} を使用して、{{site.data.keyword.Db2_on_Cloud_short}} にデータをインポートすることもできます。
+また、[IBM Lift CLI](https://www.lift-cli.cloud.ibm.com/){:external} を使用して、データを {{site.data.keyword.Db2_on_Cloud_short}} にインポートすることもできます。
 
 ## ポイント・イン・タイム・リストア
 {: #point-in-time}
@@ -52,20 +52,19 @@ Web コンソール UI の特定の例を以下に示します。このスクリ
    ポイント・イン・タイム・リストア・プロセスは、選択されたポイント・イン・タイム日付よりも後の日付で保存されている過去のバックアップをすべて無効にします。リストアの結果として時系列に相違が生じるためです。
    {: note}
 
-   ![ポイント・イン・タイム・リストア戦略の選択が強調表示されたビュー](images/pit_restore_1.png)
+   ![選択されて強調表示されたポイント・イン・タイム・リストア戦略を示すビュー](images/pit_restore_1.png "バックアップとリストア・コンソール・ページ")
 
 2. 選択したリストアを続行することを確認します。 リストア操作を開始したら、要求を変更することはできません。  
-![ポイント・イン・タイム・リストア確認ダイアログのビュー](images/pit_restore_2.png)
+![ポイント・イン・タイム・リストアの確認ダイアログを示すビュー](images/pit_restore_2.png "確認ダイアログ")
 
 3. リストア・プロセスの初期化中です。
-![ポイント・イン・タイム・リストア初期化のビュー](images/pit_restore_3.png)
+![ポイント・イン・タイムの初期化を示すビュー](images/pit_restore_3.png "ポイント・イン・タイム・リストアの初期化")
 
-4. 選択されたポイント・イン・タイムにデータベースをリストアしています。
-![ポイント・イン・タイム・リストアの進行状況のビュー](images/pit_restore_4.png)
+4. 選択されたポイント・イン・タイムにデータベースをリストアしています。![ポイント・イン・タイム・リストアの進行状況を示すビュー](images/pit_restore_4.png "リストアの進行状況")
 
 5. 新しいバックアップ・ポイントが作成されています。 ポイント・イン・タイム・リストア・データベースを使用できる状態になりました。
-![新しいバックアップ・ポイントの作成のビュー](images/pit_restore_5.png)
+![バックアップ・ポイントの作成を示すビュー](images/pit_restore_5.png "バックアップ・ポイントの作成")
 
 6. リストア操作が正常に完了しました。
-![リストア操作の正常完了のビュー](images/pit_restore_6.png)
+![リストアの正常完了を示すビュー](images/pit_restore_6.png "正常完了")
 

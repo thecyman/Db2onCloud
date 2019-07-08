@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # 維護及通知原則
 {: #maint_note_pol}
 
-{{site.data.keyword.Db2_on_Cloud_long}} 服務的維護及通知原則位於 [{{site.data.keyword.Bluemix_notm}} service descriptions ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:new_window}。專門針對 {{site.data.keyword.Db2_on_Cloud_short}} 的額外服務條款可以在 **Chargeable additional SDs** 種類下找到。 
+{{site.data.keyword.Db2_on_Cloud_long}} 服務的維護及通知原則位於 [{{site.data.keyword.Bluemix_notm}} service descriptions](http://www.ibm.com/software/sla/sladb.nsf/sla/bm?OpenDocument){:external}。專門針對 {{site.data.keyword.Db2_on_Cloud_short}} 的額外服務條款可以在 **Chargeable additional SDs** 種類下找到。 
 
 通曉我們的原則可以更加有助於您規劃與排定工作負載，以便彈性應付系統維護。
 {: shortdesc}

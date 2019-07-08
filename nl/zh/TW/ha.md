@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -31,7 +31,7 @@ subcollection: Db2onCloud
 
 此外，您可以新增「異地抄寫災難回復節點」。這個異地 DR 節點選項讓您能快速即時將資料同步化到您選擇之異地 {{site.data.keyword.Bluemix_notm}} 資料中心的資料庫節點。 
 
-[提供 DR 節點的資料中心位置清單。![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:new_window}
+[提供 DR 節點的資料中心位置清單。](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:external}
 
 {{site.data.keyword.Db2_on_Cloud_short}} 使用 Db2 高可用性災難復原 (HADR) 技術的 `ASYNC` 模式來達到異地 DR 節點功能，並在 DR 節點上提供 `Read on Standby`。
 
@@ -57,7 +57,7 @@ subcollection: Db2onCloud
 
 對於非異地的標準 HA 節點，失效接手是由 IBM 為您管理。IBM 會監視您伺服器的性能、失效接手，並視需要失效回復，包括漸進式更新以及擴充，以便儘可能維持高執行時間。
 
-對於異地抄寫災難回復 (HADR)，您必須在主控台使用**管理災難回復**手動失效接手。此外，您可以使用 API 進行失效接手，如[這裡 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://developer.ibm.com/answers/questions/457901/where-can-i-find-api-documentation-for-db2-on-clou.html){:new_window} 所述。
+對於異地抄寫災難回復 (HADR)，您必須在主控台使用**管理災難回復**手動失效接手。此外，您可以使用 API 進行失效接手，如[這裡](https://developer.ibm.com/answers/questions/457901/where-can-i-find-api-documentation-for-db2-on-clou.html){:external}所述。
 
 ## 常見問題
 {: #faq}
@@ -66,4 +66,4 @@ subcollection: Db2onCloud
 
 **答**：不會。您會得到 2 個可解析的主機名稱。如果您的應用程式已配置為使用 Db2 ACR（作用中連線重新遞送），則應用程式會重新遞送到新的主要節點。
 
-如需異地抄寫災難回復節點的相關資訊，請按一下[這裡 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://developer.ibm.com/answers/questions/458385/frequently-asked-questions-for-db2-on-cloud-hadr-g.html){:new_window}。
+如需異地抄寫災難回復節點的相關資訊，請按一下[這裡](https://developer.ibm.com/answers/questions/458385/frequently-asked-questions-for-db2-on-cloud-hadr-g.html){:external}。

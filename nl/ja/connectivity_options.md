@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -30,18 +30,18 @@ subcollection: Db2onCloud
 ## パブリック・エンドポイントへの接続 (デフォルト・オプション)
 {: #pub_endpt}
 
-他のパブリック・クラウド・サービスと同様に、サービスのプロビジョニング時に提供されるパブリック・ホスト名を使用してアプリケーションを接続できます。データへのアクセスは、強力な認証、広範な Db2 認証オプションとアクセス制御、通信中の暗号化、および開発と運用のための IBM のセキュリティーおよびコンプライアンスの取り組みによって保護されています。オプションで IP ホワイトリスティングを使用できます。IP ホワイトリスティングを有効にする場合は、IBM サポート Case を作成してください。
+他のパブリック・クラウド・サービスと同様に、サービスのプロビジョニング時に提供されるパブリック・ホスト名を使用してアプリケーションを接続できます。 データへのアクセスは、強力な認証、広範な Db2 認証オプションとアクセス制御、通信中の暗号化、および開発と運用のための IBM のセキュリティーおよびコンプライアンスの取り組みによって保護されています。 オプションで IP ホワイトリスティングを使用できます。 IP ホワイトリスティングを有効にする場合は、IBM サポート Case を作成してください。
 
 ### パブリック・エンドポイントに接続する方法:
 {: #pub_endpt_steps}
 
-データに接続する最も簡単な方法は、ウェルカム・レターに記載されているパブリック・ホスト名を使用することです。ホスト名と資格情報は次の方法でも取得できます。
+データに接続する最も簡単な方法は、ウェルカム・レターに記載されているパブリック・ホスト名を使用することです。 ホスト名と資格情報は次の方法でも取得できます。
 
 1. {{site.data.keyword.Db2_on_Cloud_short}} にログインし、サービス・インスタンスをクリックします。
 2. **「サービス資格情報」**をクリックします。
 3. **「新規資格情報」**をクリックし、**「追加 (Add)」**をクリックします。
 4. 資格情報が作成されたら、`「アクション」`列で**「資格情報の表示」**をクリックします。
-5. 以下の JSON 資料の例では、ホスト名、パスワード、およびユーザー名の各フィールドの内容に注目してください。パブリック・エンドポイント接続を確立する際に、これら 3 つのコンポーネントを使用します。
+5. 以下の JSON 資料の例では、ホスト名、パスワード、およびユーザー名の各フィールドの内容に注目してください。 パブリック・エンドポイント接続を確立する際に、これら 3 つのコンポーネントを使用します。
 
    ```
    {
@@ -61,12 +61,12 @@ subcollection: Db2onCloud
 
    ```
 
-   ![{{site.data.keyword.cloud_notm}}](images/public_connection.png)
+   ![{{site.data.keyword.cloud_notm}}](images/public_connection.png "ユーザーからクラウドへの接続を示すグラフィカル・ビュー")
 
 ## プライベート・エンドポイントへの接続: IBM Cloud サービス・エンドポイント
 {: #priv_endpt}
 
-アプリケーションが {{site.data.keyword.cloud_notm}} アカウントでデプロイされており、データベース・トラフィックがいずれのパブリック・ネットワークも経由することなくデータベースに接続するようにしたい場合、データベースを注文する際に **{{site.data.keyword.cloud_notm}} サービス・エンドポイント**・オプションを使用することができます。サービスのプロビジョニング時にプライベート・ホスト名が提供され、自分の {{site.data.keyword.cloud_notm}} アカウント内からのみ接続できます。  
+アプリケーションが {{site.data.keyword.cloud_notm}} アカウントでデプロイされており、データベース・トラフィックがいずれのパブリック・ネットワークも経由することなくデータベースに接続するようにしたい場合、データベースを注文する際に **{{site.data.keyword.cloud_notm}} サービス・エンドポイント**・オプションを使用することができます。 サービスのプロビジョニング時にプライベート・ホスト名が提供され、自分の {{site.data.keyword.cloud_notm}} アカウント内からのみ接続できます。  
 
 {{site.data.keyword.cloud_notm}} サービス・エンドポイント・オプションについて詳しくは、[サービス・エンドポイント: 概要](/docs/services/service-endpoint?topic=service-endpoint-about#about)を参照してください。
 
@@ -74,9 +74,9 @@ subcollection: Db2onCloud
 ### IBM Cloud サービス・エンドポイントを使用してプライベート・エンドポイントに接続する方法
 {: #priv_endpt_steps}
 
-プライベート・ネットワークおよびエンドポイント通信は、{{site.data.keyword.cloud_notm}} サービス・エンドポイント・サービスを経由して実行されます。このサービス・エンドポイント・サービスを使用すると、{{site.data.keyword.cloud_notm}} プライベート・ネットワーク・バックプレーンを介して、さまざまな {{site.data.keyword.cloud_notm}} サービスとデータベースの間のネットワーク・トラフィックを迅速かつ安全にルーティングできます。このネットワーク・ルーティングにより、データがパブリック・インターネットに流出しないことが保証されます。 
+プライベート・ネットワークおよびエンドポイント通信は、{{site.data.keyword.cloud_notm}} サービス・エンドポイント・サービスを経由して実行されます。 このサービス・エンドポイント・サービスを使用すると、{{site.data.keyword.cloud_notm}} プライベート・ネットワーク・バックプレーンを介して、さまざまな {{site.data.keyword.cloud_notm}} サービスとデータベースの間のネットワーク・トラフィックを迅速かつ安全にルーティングできます。 このネットワーク・ルーティングにより、データがパブリック・インターネットに流出しないことが保証されます。 
 
-サービス・エンドポイントの使用を開始するには、{{site.data.keyword.cloud_notm}} アカウントで仮想ルーティングおよび転送 (VRF) を有効にする必要があります。アカウントを有効にするには、[IBM Cloud CLI を使用してサービス・エンドポイントを使用するためにアカウントを有効にする](/docs/services/service-endpoint?topic=service-endpoint-getting-started#cs_cli_install_steps)を参照してください。
+サービス・エンドポイントの使用を開始するには、{{site.data.keyword.cloud_notm}} アカウントで仮想ルーティングおよび転送 (VRF) を有効にする必要があります。 アカウントを有効にするには、[IBM Cloud CLI を使用してサービス・エンドポイントを使用するためにアカウントを有効にする](/docs/services/service-endpoint?topic=service-endpoint-getting-started#cs_cli_install_steps)を参照してください。
 
 アカウントで VRF が有効になり、サービス・エンドポイントが有効になったら、ウェルカム・レターに記載されている手順に従ってください。
 
@@ -85,12 +85,12 @@ subcollection: Db2onCloud
 ## プライベート・エンドポイントへの接続: 仮想プライベート・ネットワーク (VPN)
 {: #vpn}
 
-パブリック・インターネットにアクセスせずに {{site.data.keyword.cloud_notm}} の外部にあるプライベート・ネットワーク上にデプロイされたアプリケーションがあり、仮想プライベート・ネットワーク (VPN) を介してそれをデータベースに接続したい場合、サービスを注文する時点で、または IBM サポート Case を開くことによって、その要求を行うことができます。ユーザーのネットワーク・エンジニアがプライベート・ネットワークと {{site.data.keyword.cloud_notm}} の間に VPN トンネルを設定する際には、IBM ネットワーク・エンジニアがサポートします。
+パブリック・インターネットにアクセスせずに {{site.data.keyword.cloud_notm}} の外部にあるプライベート・ネットワーク上にデプロイされたアプリケーションがあり、仮想プライベート・ネットワーク (VPN) を介してそれをデータベースに接続したい場合、サービスを注文する時点で、または IBM サポート Case を開くことによって、その要求を行うことができます。 ユーザーのネットワーク・エンジニアがプライベート・ネットワークと {{site.data.keyword.cloud_notm}} の間に VPN トンネルを設定する際には、IBM ネットワーク・エンジニアがサポートします。
 
 ### VPN を使用してプライベート・エンドポイントに接続する方法
 {: #priv_endpt_vpn_steps}
 
-パブリック・エンドポイントの背後でクラウド・データベースへの VPN 接続を確立するには、以下の詳細を含む [{{site.data.keyword.cloud_notm}} サポート Case を作成します![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/unifiedsupport/cases/add){:new_window}。
+パブリック・エンドポイントの背後でクラウド・データベースへの VPN 接続を確立するには、以下の詳細を含む [{{site.data.keyword.cloud_notm}} サポート Case](https://cloud.ibm.com/unifiedsupport/cases/add){:external} を作成します。
 
 * **サポートのタイプ**: テクニカル 
 * **カテゴリー**: データベース 
@@ -122,6 +122,6 @@ subcollection: Db2onCloud
   * **DH グループ** (PF-Secrecy を使用している場合): グループ 5
   * **セキュリティー・アソシエーションの存続時間 (秒)**: 3600 秒
 
-要求を受け取った後、{{site.data.keyword.cloud_notm}} 技術者は適切なファイアウォール・ポートを開き、提供された IP アドレスをホワイトリストに追加します。要求に対するコミュニケーションや解決策は、{{site.data.keyword.cloud_notm}} サポート Case  チケットを通じて行われます。
+要求を受け取った後、{{site.data.keyword.cloud_notm}} 技術者は適切なファイアウォール・ポートを開き、提供された IP アドレスをホワイトリストに追加します。 要求に対するコミュニケーションや解決策は、{{site.data.keyword.cloud_notm}} サポート Case  チケットを通じて行われます。
 
-![{{site.data.keyword.cloud_notm}}](images/public_connection_vpn.png)
+![VPN を介した {{site.data.keyword.cloud_notm}} へのパブリック・ネットワーク・アクセス](images/public_connection_vpn.png "ユーザーからクラウドへの接続を示すグラフィカル・ビュー")

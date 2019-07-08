@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -27,13 +27,14 @@ subcollection: Db2onCloud
 Para planos pagos, backups criptografados do banco de dados são feitos diariamente. Um backup diário é mantido para cada um dos últimos 14 dias.
 {: shortdesc}
 
-Além dos backups padrão, é possível usar a [Time Travel Query ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:new_window} para manter dados históricos para outros propósitos, como para consultar instantaneamente dados antigos ou para auditoria simplificada. Também é possível executar suas próprias exportações usando o IBM Data Studio ou qualquer ferramenta do Db2.
+Além dos backups padrão, é possível usar o [Time Travel Query](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:external} para manter dados históricos para outros propósitos, tais como consultar dados antigos instantaneamente ou auditoria simplificada. Também é possível executar suas próprias exportações usando o IBM Data Studio ou qualquer ferramenta do Db2.
  
 Para obter informações sobre restaurações point-in-time, consulte [Restauração point-in-time](#point-in-time).
 
 Todos os planos pagos geralmente fazem uso do IBM Cloud Object Storage (COS) para manter os backups externos em três diferentes data centers. No entanto, Sydney e determinados data centers menores podem não suportar a replicação externa com o IBM COS neste momento. Consulte a [Documentação do IBM COS](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-endpoints#endpoints) da sua região para determinar quais regiões suportam replicação externa.
 
-Também é possível usar a [CLI do IBM Lift ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.lift-cli.cloud.ibm.com/){:new_window} para importar dados no {{site.data.keyword.Db2_on_Cloud_short}}.
+Também é possível usar o [IBM Lift CLI](https://www.lift-cli.cloud.ibm.com/){:external} para importar
+dados para o {{site.data.keyword.Db2_on_Cloud_short}}.
 
 ## Restauração point-in-time
 {: #point-in-time}
@@ -52,20 +53,20 @@ A seguir está um exemplo selecionado de capturas de tela da IU do console da we
    O processo de restauração point-in-time invalida qualquer backup retido anteriormente com datas após a data específica selecionada devido a uma divergência resultante na linha de tempo.
    {: note}
 
-   ![Visualização da seleção destacada da estratégia de restauração point-in-time](images/pit_restore_1.png)
+   ![Visualização da seleção destacada da estratégia de restauração de momento](images/pit_restore_1.png "Página do console de backup e restauração")
 
 2. Confirme que você deseja continuar com as suas seleções de restauração. Depois de iniciar a operação de restauração, não é possível mudar a solicitação.  
-![Visualização do diálogo de confirmação da restauração point-in-time](images/pit_restore_2.png)
+![Visualização do diálogo de confirmação de restauração de momento](images/pit_restore_2.png "Diálogo de confirmação")
 
 3. O processo de restauração está inicializando.
-![Visualização da inicialização da restauração point-in-time](images/pit_restore_3.png)
+![Visualização da inicialização da restauração de momento](images/pit_restore_3.png "Inicialização da restauração de momento")
 
 4. Restaurando o banco de dados para o momento selecionado.
-![Visualização do progresso da restauração point-in-time](images/pit_restore_4.png)
+![Visualização do progresso da restauração de momento](images/pit_restore_4.png "Progresso da restauração")
 
-5. Um novo ponto de backup está sendo criado. O banco de dados restaurado para o momento está pronto para uso.
-![Visualização da criação do novo ponto de backup](images/pit_restore_5.png)
+5. Um novo ponto de backup está sendo criado. O banco de dados restaurado de momento está pronto para uso.
+![Visualização da criação de um ponto de backup](images/pit_restore_5.png "Criando um ponto de backup")
 
-6. A operação de restauração foi concluída com êxito.
-![Visualização da conclusão bem-sucedida da operação de restauração](images/pit_restore_6.png)
+6. A operação de restauração foi concluída com sucesso.
+![Visualização da conclusão bem-sucedida da restauração](images/pit_restore_6.png "Conclusão bem-sucedida")
 

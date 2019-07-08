@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -38,7 +38,7 @@ A differenza di altri piani {{site.data.keyword.Db2_on_Cloud_short}}, il piano g
  
 Il piano gratuito ti consente di utilizzare uno schema del database.
 
-Per ulteriori informazioni sul piano gratuito di {{site.data.keyword.Db2_on_Cloud_short}}, consulta la [FAQ ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://ibm.biz/db2oc_free_plan_faq){:new_window}.
+Per ulteriori informazioni sul piano gratuito di {{site.data.keyword.Db2_on_Cloud_short}}, consulta la [FAQ](https://ibm.biz/db2oc_free_plan_faq){:external}.
 
 ## Utilizzo del piano gratuito al di fuori del Nord America continentale
 {: #outside_na}

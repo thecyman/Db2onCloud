@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -34,9 +34,9 @@ subcollection: Db2onCloud
    * Precise Performance プラン。固定のリソースとベア・メタル・サーバーを提供
    * 各プランは、高可用性と Oracle 互換性を実現するように構成できます。
 
-大量の分析やウェアハウジング・ワークロードに対処する必要がある場合は、[{{site.data.keyword.dashdblong}} ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/cloud/db2-warehouse-on-cloud){:new_window}を検討してください。
+大量の分析やウェアハウジング・ワークロードに対処する必要がある場合は、[{{site.data.keyword.dashdblong}}](https://www.ibm.com/cloud/db2-warehouse-on-cloud){:external} を検討してください。
 
-必要な構成がカタログにない場合は、[{{site.data.keyword.IBM_notm}} 営業担当員に連絡して ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window}、他のオプションについて相談してください。
+必要な構成がカタログにない場合は、[{{site.data.keyword.IBM_notm}} 営業担当員](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:external}に連絡して、他のオプションについて相談してください。
 
 ## 料金
 {: #pricing}

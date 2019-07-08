@@ -11,7 +11,7 @@ subcollection: Db2onCloud
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -27,20 +27,21 @@ subcollection: Db2onCloud
 ## Auditando
 {: #auditing}
 
-É possível criar uma política de auditoria de banco de dados que fornece a capacidade de auditar várias categorias de eventos que são armazenados em tabelas de eventos de auditoria em seu banco de dados. Para obter mais informações, consulte [Diretrizes de política de auditoria ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:new_window}.
+É possível criar uma política de auditoria de banco de dados que fornece a capacidade de auditar várias categorias de eventos que são armazenados em tabelas de eventos de auditoria em seu banco de dados. Para obter mais informações, veja as [Diretrizes da política de auditoria](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html){:external}.
 
 Também é possível auditar e rastrear mudanças em seu banco de dados usando os métodos a seguir:
-* Ao criar um monitor de eventos `CHANGE HISTORY`, é possível consultar a tabela de monitor de eventos para determinar o que foi feito dentro do banco de dados e quem fez isso. Para obter mais informações, consulte [Monitor de eventos `CHANGE HISTORY` ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.sql.ref.doc/doc/r0059363.html){:new_window}.
-* O Time Travel Query facilita o armazenamento de todas as mudanças em seus dados e até mesmo consulta seus dados antigos com base em um momento selecionado. Para usar esse método de auditoria, assegure-se de primeiro configurar suas tabelas para suportar o Time Travel Query. Para obter mais informações, consulte [Time Travel Query ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl/){:new_window}
+* Ao criar um monitor de eventos `CHANGE HISTORY`, é possível consultar a tabela de monitor de eventos para determinar o que foi feito dentro do banco de dados e quem fez isso. Para obter mais informações, veja [monitor de eventos `CHANGE HISTORY`](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.sql.ref.doc/doc/r0059363.html){:external}.
+* O Time Travel Query facilita o armazenamento de todas as mudanças em seus dados e até mesmo consulta seus dados antigos com base em um momento selecionado. Para usar esse método de auditoria, assegure-se de primeiro configurar suas tabelas para suportar o Time Travel Query. Para obter mais informações, veja [Time Travel Query](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl/){:external}
 
-Para obter mais informações sobre como auditar e rastrear as mudanças do banco de dados, consulte [Como auditar ou rastrear mudanças? ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://developer.ibm.com/answers/questions/427780/how-can-i-audit-or-track-changes-dropped-tables-to.html){:new_window}.
+Para obter mais informações sobre auditoria e rastreamento de mudanças do banco de dados,
+veja [Como audito ou rastreio mudanças?](https://developer.ibm.com/answers/questions/427780/how-can-i-audit-or-track-changes-dropped-tables-to.html){:external}.
 
 ## Criando log e monitorando
 {: #log_mon}
 
 O monitoramento e a criação de log fazem parte do serviço, no entanto, não são expostos diretamente para o usuário final. Em vez disso, a infraestrutura é usada pela equipe operacional da IBM para tratar de problemas.  
 
-Para ver a disponibilidade do Activity Tracker, consulte o [roteiro ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://ibm.biz/db2oncloud-roadmap){:new_window}.
+Para a disponibilidade do Activity Tracker, veja o [roteiro](https://ibm.biz/db2oncloud-roadmap){:external}.
 
 É possível se conectar a um cliente da linha de comando do Db2, como o CLPPlus, para acessar informações detalhadas e diagnósticos.
 
