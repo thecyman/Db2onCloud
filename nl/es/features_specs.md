@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-06-13"
+lastupdated: "2019-06-12"
 
 keywords: 
 
@@ -109,8 +109,7 @@ Aquí encontrará las características y especificaciones de {{site.data.keyword
 | Recuperación de autoservicio en un punto en el tiempo | Disponible el 15 de noviembre de 2018 | [Restauración de punto en el tiempo](/docs/services/Db2onCloud?topic=Db2onCloud-bnr#point-in-time) |
 | Copias de seguridad conservadas externamente | A petición | A fecha 1 de diciembre de 2018, el valor predeterminado es externo  |
 | Conservar copias de seguridad hasta 10 años | A petición | A fecha 1 de diciembre de 2018. Requiere una incidencia de soporte. |
-| Consultar datos antiguos sin restaurar | Sí | Debe configurar
-[Time Travel Query](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:external} |
+| Consultar datos antiguos sin restaurar | Sí | Debe configurar [Time Travel Query](https://developer.ibm.com/answers/questions/426878/how-do-i-use-time-travel-query-in-db2-or-db2-on-cl.html){:external} |
 {: class="simple-tab-table"}
 {: caption="Tabla 6. Copia de seguridad y restauración" caption-side="top"}
 {: #simpletabtable6}
