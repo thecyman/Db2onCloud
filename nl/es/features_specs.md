@@ -49,8 +49,7 @@ Aquí encontrará las características y especificaciones de {{site.data.keyword
 | Alta disponibilidad (2 nodos en 1 zona) | Sí | SLA de tiempo de funcionamiento del 99,99% |
 | Zonas diferentes en el mismo centro de datos | [En hoja de ruta](https://ibm.biz/db2oncloud-roadmap){:external} | **Nota**: Está disponible el HADR externo |
 | Change Data Capture (CDC) | Sí | - |
-| Utilizar como HADR para local | No | Utilizar CDC. Para obtener información, consulte
-[¿Cómo puedo migrar o sincronizar los datos de Db2 a Db2 on Cloud?](https://developer.ibm.com/answers/questions/426111/how-can-i-migrate-from-db2-to-db2-on-cloud/){:external} |
+| Utilizar como HADR para local | No | Utilizar CDC. Para obtener información, consulte [¿Cómo puedo migrar o sincronizar los datos de Db2 a Db2 on Cloud?](https://developer.ibm.com/answers/questions/426111/how-can-i-migrate-from-db2-to-db2-on-cloud/){:external} |
 | Migración tras error autónoma - Alta disponibilidad | Sí | - |
 | Migración tras error autónoma - DR externo | No | Utilizar el botón o la API |
 | La IP se mueve con la migración tras error | Sí | Solo alta disponibilidad local. Sin HADR externa |
