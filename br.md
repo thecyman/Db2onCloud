@@ -42,7 +42,7 @@ You can also use [IBM Lift CLI](https://www.lift-cli.cloud.ibm.com/){:external} 
 
 The following is an availability list of the point-in-time restore feature:
 - Dallas data center: Available today on single server systems
-- All other cases, including Europe and HA systems in Dallas: Request feature activation from support. Full rollout to all systems will be completed by Feb 28, 2019.
+- All other cases, including Europe and HA systems in Dallas: Request feature activation from support. Full rollout to all systems will be completed by Sept 30, 2019.
 - IBM Cloud Dedicated system: Only available by opening a support ticket.
 
 The following are a selected example of screenshots of the web console UI in which the point-in-time restore operation is initiated and its progress is indicated:
