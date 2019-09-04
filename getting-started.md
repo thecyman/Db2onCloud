@@ -119,7 +119,7 @@ When your apps use the {{site.data.keyword.Bluemix_notm}} platform, you can take
 
     $database    = "BLUDB";         # Get these database details from
     $hostname    = "<Host-name>";   # the Connect page of the Db2 on Cloud
-    $port        = 50000;           # web console.
+    $port        = 50001;           # web console.
     $user        = "<User-ID >";    #
     $password    = "<Password>";    #
     $dsn         = "DATABASE=$database;" .
