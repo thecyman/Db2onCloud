@@ -214,7 +214,8 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
      con <- idaConnect(con.text)
      ```
 
-     **Note**: The statement that is used to create the connection object uses the `idaConnect()` method, not the `odbcConnect()` or `odbcDriverConnect()` methods.
+     The statement that is used to create the connection object uses the `idaConnect()` method, not the `odbcConnect()` or `odbcDriverConnect()` methods.
+     {: note}
         
    d. Initialize the analytics package by issuing the following R command:
 
