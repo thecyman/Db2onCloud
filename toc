@@ -17,6 +17,9 @@ Db2 on Cloud
         ha.md
         audit.md
         
+    free_plan.md
+    plans_pricing.md
+
     {: .topicgroup}
     Security
         iam.md
@@ -56,9 +59,6 @@ Db2 on Cloud
     Loading your data
         dcw.md
         migration.md
-
-    free_plan.md
-    plans_pricing.md
 
     maintenance.md
     local_dev_env.md
