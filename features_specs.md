@@ -172,7 +172,7 @@ subcollection: Db2onCloud
 | Service Organization Controls (SOC) | Y | SOC 2 Type 2 |
 | GDPR | Y | - |
 | EU Cloud | Y | Use Frankfurt region. Support provided physically in EU. |
-| Full list of compliances | Y | [Security compliances](https://www.ibm.com/support/knowledgecenter/en/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){:external} |
+| Full list of compliances | Y | [Security compliances](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.security.doc/doc/compliances_summary.html){:external} |
 {: class="simple-tab-table"}
 {: caption="Table 5. Security compliances" caption-side="top"}
 {: #simpletabtable5}
