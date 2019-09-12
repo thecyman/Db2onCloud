@@ -202,8 +202,8 @@ subcollection: Db2onCloud
 | IP whitelisting | Some | Available at Db2 user level. For network level, consider ICIAE or similar.  |
 | Key Protect (Bring your own key) | [In roadmap](https://ibm.biz/db2oncloud-roadmap){:external} | - |
 | MIS / Interconnected service | [In roadmap](https://ibm.biz/db2oncloud-roadmap){:external} | - |
-| Maximum concurrent connection limit: **Free plan** | Y | Max: 5 connections  |
-| Maximum concurrent connection limit: **paid plans** | N | Unlimited number of connections  |
+| Maximum concurrent connection limit: **Free Lite plan** | Y | Max: 5 connections  |
+| Maximum concurrent connection limit: **Paid plans** | N | Unlimited number of connections  |
 {: class="simple-tab-table"}
 {: caption="Table 7. Networking, security, & VMs" caption-side="top"}
 {: #simpletabtable7}
