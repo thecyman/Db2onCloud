@@ -34,11 +34,11 @@ Only community support is available.
 ## Architecture
 {: #architecture}
 
-Unlike other {{site.data.keyword.Db2_on_Cloud_short}} plans, the {{site.data.keyword.Db2_on_Cloud_short}} free Lite plan runs on a multi-tenant system. The Flex and Precise Performance plans run on their own single-tenant virtual machines or baremetal servers.
+Unlike other {{site.data.keyword.Db2_on_Cloud_short}} plans, the free {{site.data.keyword.Db2_on_Cloud_short}} Lite plan runs on a multi-tenant system. The Flex and Precise Performance plans run on their own single-tenant virtual machines or baremetal servers.
  
 The Lite plan allows you to use one database schema.
 
-For more information about the {{site.data.keyword.Db2_on_Cloud_short}} free Lite plan, see the [FAQ](https://ibm.biz/db2oc_free_plan_faq){:external}.
+For more information about the free {{site.data.keyword.Db2_on_Cloud_short}} Lite plan, see the [FAQ](https://ibm.biz/db2oc_free_plan_faq){:external}.
 
 ## Using the Lite plan outside continental North America
 {: #outside_na}
@@ -80,7 +80,7 @@ The following is a table of {{site.data.keyword.Db2_on_Cloud_short}} Lite plan r
 ## Installation
 {: #fp_installation}
 
-Watch this video to see how easy it is to install the {{site.data.keyword.Db2_on_Cloud_short}} free Lite plan.
+Watch this video to see how easy it is to install the free {{site.data.keyword.Db2_on_Cloud_short}} Lite plan.
 
 <iframe class="embed-responsive-item" id="youtubeplayer1" title="Installation of the free {{site.data.keyword.Db2_on_Cloud_short}} Lite plan" type="text/html" width="640" height="390" src="//www.youtube.com/embed/YuMRRnl1bkE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
