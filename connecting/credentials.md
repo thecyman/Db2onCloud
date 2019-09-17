@@ -30,7 +30,7 @@ To configure your local development environment and to connect applications and 
 ## Database details
 {: #db_details}
 
-There are important database details needed for connecting applications and tools to your database:
+There are important database details that are needed for connecting applications and tools to your database:
 
 - *Host name* - The host name of the server.
 - *Port number* - Used by the database manager for TCP/IP communication. (Note that your service is provisioned with one port number for connections that use Secure Socket Layer (SSL) and a different port for non-SSL connection.)
@@ -56,5 +56,5 @@ You can collect this information from the following places:
 - *Db2 web console* - Database details and credentials are available in the web console.
 - If you are using {{site.data.keyword.Bluemix_notm}}: 
    
-   - *{{site.data.keyword.Bluemix_notm}} Dashboard* - When you view your service on your {{site.data.keyword.Bluemix_notm}} dashboard, in the "Service credentials" area, you can view the database details as well as the database user ID and password.
+   - *{{site.data.keyword.Bluemix_notm}} Dashboard* - When you view your service on your {{site.data.keyword.Bluemix_notm}} dashboard, in the "Service credentials" area, you can view the database details, the database user ID, and password.
    - *`VCAP_SERVICES`* - `VCAP_SERVICES` is an environment variable in {{site.data.keyword.Bluemix_notm}} that contains database details and credentials in JSON format. When you view the service credentials for your service in your {{site.data.keyword.Bluemix_notm}} dashboard, the contents of `VCAP_SERVICES` is what is displayed. When you bind other {{site.data.keyword.Bluemix_notm}} services or apps to your service, those other services or apps can access database details and credentials programmatically by reading `VCAP_SERVICES`.

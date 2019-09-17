@@ -30,7 +30,7 @@ To connect local applications and tools to your {{site.data.keyword.Db2_on_Cloud
 ## Prerequisites
 {: #prereq21}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the necessary [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 <!-- 1. Install the Db2 driver package for your operating system.
 
@@ -45,11 +45,11 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 
 1. Add entries to the driver configuration file, `db2dsdriver.cfg`, for your database.
 
-   The configuration steps are different depending on whether or not you want to connect to your database using SSL:
+   The configuration steps are different depending on whether you want to connect to your database by using SSL:
 
    **With SSL**
 
-   To connect your applications and tools to your database using SSL, enter the following commands in a command shell on Linux operating systems, at the Windows command prompt, or in a DB2 command window: 
+   To connect your applications and tools to your database by using SSL, enter the following commands in a command shell on Linux operating systems, at the Windows command prompt, or in a Db2 command window: 
 
    `db2cli writecfg add -database BLUDB -host <hostname> -port 50001`
 
@@ -60,7 +60,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
     where:
 
    - `<hostname>` is the host name of your server.
-   - `<alias>` is an alias that you choose. The alias cannot be the same as the database name, `BLUDB`. If you want to have spaces in the alias, surround the alias with double quotes.
+   - `<alias>` is an alias that you choose. The alias cannot be the same as the database name, `BLUDB`. If you want to have spaces in the alias, surround the alias with double quotation marks.
 
    **Without SSL**
 
@@ -73,7 +73,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
     where:
 
    - `<hostname>` is the host name of your server.
-   - `<alias>` is an alias that you choose. The alias cannot be the same as the database name, `BLUDB`. If you want to have spaces in the alias, surround the alias with double quotes.
+   - `<alias>` is an alias that you choose. The alias cannot be the same as the database name, `BLUDB`. If you want to have spaces in the alias, surround the alias with double quotation marks.
 
 2. Test connecting by issuing the **db2cli validate** command from the command prompt:
 
@@ -81,11 +81,11 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 
    where: 
    
-   - `<alias>` is an alias you created with the **db2cli writecfg** command.
+   - `<alias>` is an alias that you created with the **db2cli writecfg** command.
    - `<userid>` is your Db2 user ID.
    - `<password>` is your Db2 password.
 
-3. [*Optional*] To be able to connect local ODBC applications and tools to your database, register the DSN with the ODBC driver manger:
+3. [*Optional*] To be able to connect local ODBC applications and tools to your database, register the DSN with the ODBC driver manager:
  
    Run the following command from a command line: 
 
@@ -93,7 +93,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 
    where: 
 
-   - `<alias>` is an alias you created with the **db2cli writecfg** command.
+   - `<alias>` is an alias that you created with the **db2cli writecfg** command.
 
    By default, the DSN is created as a user DSN.
 

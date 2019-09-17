@@ -75,10 +75,10 @@ With Db2 Warehouse plans, you can perform tasks related to file management, load
 In most cases, users tend to use only the REST API, or install drivers for a framework, for example, with Python's `pip` command. 
 {: shortdesc}
 
-To install Python driver packages for the MacOS, you must use the `pip` command with the `--no-cache-dir` option. For detailed instructions, see: [Python support for IBM DB2 and IBM Informix](https://ibm.biz/db2-drivers-python){:external}
+To install Python driver packages for the MacOS, you must use the `pip` command with the `--no-cache-dir` option. For detailed instructions, see: [Python support for IBM Db2 and IBM Informix](https://ibm.biz/db2-drivers-python){:external}
 {: note}
 
-If you are doing data science work with Python, or want support for data frames, in-database analytics, or using Watson Studio, you might want to use the following alternative driver, which focuses on support for a variety of data science functions: [ibmdbpy 0.1.5](https://pypi.org/project/ibmdbpy/){:external}.
+If you are doing data science work with Python, or want support for data frames, in-database analytics, or by using Watson Studio, you might want to use the following alternative driver, which focuses on support for various data science functions: [ibmdbpy 0.1.5](https://pypi.org/project/ibmdbpy/){:external}.
 {: note}
 
 <!-- Drivers on site are broken so taking out this one -Simon. 1. Download the [driver package](https://www.ibm.com/support/knowledgecenter/SSFMBX/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:external} from the Connection info page of the {{site.data.keyword.Db2_on_Cloud_short}} web console.-->

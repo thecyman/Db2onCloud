@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # Migrating data to IBM Cloud
 {: #migration}
 
-You can load data from a data file in a delimited format (CSV or TXT) located on a local network or in an object store (Amazon S3 or IBM Cloud Object Storage) to {{site.data.keyword.Db2_on_Cloud_long}}. You can even migrate your data from an on-premises system.
+You can load data from a data file in a delimited format (CSV or TXT) on a local network or in an object store (Amazon S3 or IBM Cloud Object Storage) to {{site.data.keyword.Db2_on_Cloud_long}}. You can even migrate your data from an on-premises system.
 {: shortdesc}
 
 ## Loading data from object store

@@ -37,9 +37,9 @@ As with any public cloud service, you can connect your application by way of a p
 
 The easiest way to connect to your data is by way of the public host name that was provided in your welcome letter. You can also obtain your host name and credentials in the following way:
 
-1. Log in to {{site.data.keyword.Db2_on_Cloud_short}} and click on your service instance.
-2. Click on **Service credentials**.
-3. Click on **New credential**, then click **Add**.
+1. Log in to {{site.data.keyword.Db2_on_Cloud_short}} and click your service instance.
+2. Click **Service credentials**.
+3. Click **New credential**, then click **Add**.
 4. After the credentials are created, under the `Actions` column, click **View credentials**.
 5. In the following JSON document example, note the contents of the hostname, password, and username fields. You use these three components to make the public endpoint connection:
 
@@ -66,7 +66,7 @@ The easiest way to connect to your data is by way of the public host name that w
 ## Connecting to a private endpoint: IBM Cloud Service Endpoint
 {: #priv_endpt}
 
-If you have an application deployed on your {{site.data.keyword.cloud_notm}} account and want to connect it to your database without the database traffic to flow over any public networks, you can use the **{{site.data.keyword.cloud_notm}} Service Endpoint** option when ordering your database. You will be provided with a private host name at the time the service is provisioned and you can only connect to it from within your {{site.data.keyword.cloud_notm}} account.  
+If you have an application that is deployed on your {{site.data.keyword.cloud_notm}} account and want to connect it to your database without the database traffic to flow over any public networks, you can use the **{{site.data.keyword.cloud_notm}} Service Endpoint** option when ordering your database. You are provided with a private host name at the time that the service is provisioned and you can connect to it only from within your {{site.data.keyword.cloud_notm}} account.  
 
 To learn more about the {{site.data.keyword.cloud_notm}} Service Endpoint option, see [Service Endpoint: About](/docs/services/service-endpoint?topic=service-endpoint-about#about).
 
@@ -85,7 +85,7 @@ Now, it’s time to connect to your {{site.data.keyword.Db2_on_Cloud_short}} ins
 ## Connecting to a virtual private network (VPN) endpoint
 {: #vpn}
 
-If you have an application deployed on a private network that is outside of the {{site.data.keyword.cloud_notm}} without access to the public internet and you want to connect it to your database over a virtual private network (VPN) connection, you can make the request at the time that you order the service or by opening an IBM Support case. IBM network engineers will assist your network engineers to set up the VPN tunnel between your private network and the {{site.data.keyword.cloud_notm}}.
+If you have an application that is deployed on a private network that is outside of the {{site.data.keyword.cloud_notm}} without access to the public internet and you want to connect it to your database over a virtual private network (VPN) connection, you can make the request at the time that you order the service or by opening an IBM Support case. IBM network engineers will assist your network engineers to set up the VPN tunnel between your private network and the {{site.data.keyword.cloud_notm}}.
 
 ### How to connect to a VPN endpoint
 {: #priv_endpt_vpn_steps}
@@ -98,7 +98,7 @@ To establish a VPN connection to your cloud database behind a public endpoint, [
 * **Subject**: VPN Connection Request 
 * **Description**: provide the following required information
   * **Customer-side VPN Peer Address** (your VPN endpoint): `<IP Address>`
-  * **Customer-side Encryption Domain** (be specific on what’s required – 10.0.0.0/8 is unworkable because 10 addressing is also used within the {{site.data.keyword.cloud_notm}} for back-end services): `<Domain>`
+  * **Customer-side Encryption Domain** (be specific about what is required – 10.0.0.0/8 is unworkable because 10 addressing is also used within the {{site.data.keyword.cloud_notm}} for back-end services): `<Domain>`
   * **Customer-side VPN Hardware & Version**: `<Hardware and Version number>`
   * **Customer-side VPN Contact** (technical contact name and email address): 
     * `<Name>` 
@@ -115,9 +115,9 @@ To establish a VPN connection to your cloud database behind a public endpoint, [
   * **DH-Group**: Group 5
   * **Security Association Lifetime (seconds)**: 1d (86400 seconds)
 
-  *IPSEC Parameters (Phase II)*
+  *IPSec Parameters (Phase II)*
 
-  * **IPsec Encryption / Encryption Algorithm**: AES-256
+  * **IPSec Encryption / Encryption Algorithm**: AES-256
   * **Authentication Algorithm**: SHA1
   * **DH-Group** (if using PF-Secrecy): Group 5
   * **Security Association Lifetime (seconds)**: 3600 seconds

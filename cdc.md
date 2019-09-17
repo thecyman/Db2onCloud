@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # InfoSphere CDC
 {: #cdc}
 
-There are many ways to connect a Db2 database to {{site.data.keyword.Db2_on_Cloud_long}}. One way is to capture data that has changed in your on-premises Db2 database with [IBM InfoSphere Change Data Capture (InfoSphere CDC)](https://www.ibm.com/support/knowledgecenter/en/SSTRGZ_11.4.0/com.ibm.cdcdoc.sysreq.doc/concepts/aboutcdc.html){:external}, which is a real-time data synchronization solution.
+There are many ways to connect a Db2 database to {{site.data.keyword.Db2_on_Cloud_long}}. One way is to capture data that changed in your on-premises Db2 database with [IBM InfoSphere Change Data Capture (InfoSphere CDC)](https://www.ibm.com/support/knowledgecenter/en/SSTRGZ_11.4.0/com.ibm.cdcdoc.sysreq.doc/concepts/aboutcdc.html){:external}, which is a real-time data synchronization solution.
 {: shortdesc}
 
 To synchronize your on-premises data in real time to your {{site.data.keyword.Db2_on_Cloud_short}} database with InfoSphere CDC, see this tutorial: [How to stay online while moving data to Db2 on Cloud](https://cloudcontent.mybluemix.net/cloud/garage/dte/producttour/how-stay-online-while-moving-data-db2-cloud){:external}.

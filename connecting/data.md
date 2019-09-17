@@ -53,7 +53,7 @@ To make connections with the SSL protocol, download and install the 32-bit GSKit
     - `<installation_directory>\gsk8\bin`
     - `<installation_directory>\gsk8\lib`
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the necessary [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 ### Procedure
 {: #proc1}
@@ -231,7 +231,7 @@ When you use {{site.data.keyword.Db2_on_Cloud_short}} as a connection target, th
 
 If you intend to connect by using the SSL protocol, download and install GSKit V8. See [GSKit V8 - Install, Uninstall and Upgrade instructions](http://www.ibm.com/support/docview.wss?uid=swg21631462){:external}. Click the operating system tab that applies to your client machine’s operating system. If you are installing the GSKit on a Windows computer, ensure that you specify the GSKit installation directory path (`<installation_directory>\gsk8\bin`) for the **`PATH`** environment variable.
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the necessary [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 If you intend to connect by using the SSL protocol, download the `DigiCertGlobalRootCA.crt` SSL certificate from the web console to a directory on the client machine. To download the certificate, click **Connection > Connection Information** and then click the **Connection with SSL** tab.
 
@@ -248,7 +248,7 @@ If you intend to connect by using the SSL protocol, download the `DigiCertGlobal
 
      where `/<ssl_directory_name>/ssl` is the path to the directory into which you downloaded the `DigiCertGlobalRootCA.crt` SSL certificate.
 
-     b. Create a client key database and a stash file by using the **GSKCapiCmd** tool. For example, the following command creates a client key database called `dashclient.kdb` and a stash file called `dashclient.sth`:
+     b. Create a client key database and a stash file by using the **GSKCapiCmd** tool. For example, the following command creates a client key database that is called `dashclient.kdb` and a stash file that is called `dashclient.sth`:
 
      `gsk8capicmd_64 -keydb -create -db "dashclient.kdb" -pw "passw0rdpw0" -stash`
 
@@ -284,13 +284,13 @@ If you intend to connect by using the SSL protocol, download the `DigiCertGlobal
             
      g. Test the SSL connection in one of the following ways:
                 
-     - Test the connection using CLP by issuing the following command to connect to the {{site.data.keyword.Db2_on_Cloud_short}} database:
+     - Test the connection by using CLP by issuing the following command to connect to the {{site.data.keyword.Db2_on_Cloud_short}} database:
 
        `db2 connect to <db_alias> user <user_id>`
 
        where `<user_id>` is your {{site.data.keyword.Db2_on_Cloud_short}} user ID. You are prompted to enter your password.
                 
-     - Test the connection using CLI by issuing the following command to connect to the {{site.data.keyword.Db2_on_Cloud_short}} database:
+     - Test the connection by using CLI by issuing the following command to connect to the {{site.data.keyword.Db2_on_Cloud_short}} database:
 
        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
@@ -318,13 +318,13 @@ If you intend to connect by using the SSL protocol, download the `DigiCertGlobal
 
      c. Test the non-SSL connection in one of the following ways:
 
-     - Test the connection using CLP by issuing the following command to connect to the {{site.data.keyword.Db2_on_Cloud_short}} database:
+     - Test the connection by using CLP by issuing the following command to connect to the {{site.data.keyword.Db2_on_Cloud_short}} database:
 
        `db2 connect to <db_alias> user <user_id>`
 
        where `<user_id>` is your {{site.data.keyword.Db2_on_Cloud_short}} user ID. You are prompted to enter your password.
                 
-     - Test the connection using CLI by issuing the following command to connect to the {{site.data.keyword.Db2_on_Cloud_short}} database:
+     - Test the connection by using CLI by issuing the following command to connect to the {{site.data.keyword.Db2_on_Cloud_short}} database:
 
        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
@@ -354,7 +354,7 @@ If you intend to connect by using the SSL protocol, download the `DigiCertGlobal
 
    ![Datastore Properties - Target](images/IIDR_target_datastore.jpg "Target datastore properties"){: caption="Figure 5. View of target datastore properties" caption-side="bottom"}
 
-   c. If the user (for example, admin) that will connect to the Access Server does not exist, create that user:
+   c. If the user (for example, admin) that connects to the Access Server does not exist, create that user:
 
    ![New User](images/IIDR_management_user.jpg "New User creation tool"){: caption="Figure 6. View of New User creation tool" caption-side="bottom"}
 
@@ -388,7 +388,7 @@ These instructions explain how to create a connection from IBM® Data Studio <!-
 ### Prerequisites
 {: #prereq3}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the necessary [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 ### Procedure
 {: #proc3}
@@ -417,7 +417,7 @@ A connection between your IBM® Data Server Manager and your {{site.data.keyword
 ### Prerequisites
 {: #prereq4}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the necessary [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 ### Procedure
 {: #proc4}
@@ -459,7 +459,7 @@ These instructions explain how to create a connection from InfoSphere® Data Arc
 ### Prerequisites
 {: #prereq5}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the necessary [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 ### Procedure
 {: #proc5}
@@ -489,7 +489,7 @@ These instructions explain how to connect Aginity Workbench <!--4.3 -->to a {{si
 ### Prerequisites
 {: #prereq6}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the necessary [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 ### Procedure
 {: #proc6}
@@ -511,7 +511,7 @@ Command line processor plus (CLPPlus) is included in the Db2 driver package. CLP
 ### Prerequisites
 {: #prereq7}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the necessary [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 To use CLPPlus, ensure that a software development kit (SDK) or a Java runtime environment (JRE) for Java Version 1.5.0 or later is installed on your computer and that environment variables are set as follows:
 

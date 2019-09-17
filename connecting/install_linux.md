@@ -30,7 +30,7 @@ You can install the {{site.data.keyword.Db2_on_Cloud_short}} driver package on L
 ## Prerequisites
 {: #prereq31}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the necessary [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 <!-- Download the Db2 driver package for your operating system from the web console and install it. -->
 

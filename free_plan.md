@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # Free Lite plan
 {: #free_plan}
 
-The {{site.data.keyword.Db2_on_Cloud_long}} Lite plan provides basic resources to let you develop or learn about Db2 without charge.
+The {{site.data.keyword.Db2_on_Cloud_long}} Lite plan provides basic resources for you to develop or learn about Db2 without charge.
 {: shortdesc}
 
 There is no time limit on the Lite plan, but users must re-extend their Lite plan every 30 days.
@@ -34,26 +34,26 @@ Only community support is available.
 ## Architecture
 {: #architecture}
 
-Unlike other {{site.data.keyword.Db2_on_Cloud_short}} plans, the free {{site.data.keyword.Db2_on_Cloud_short}} Lite plan runs on a multi-tenant system. The Flex and Precise Performance plans run on their own single-tenant virtual machines or baremetal servers.
+Unlike other {{site.data.keyword.Db2_on_Cloud_short}} plans, the free {{site.data.keyword.Db2_on_Cloud_short}} Lite plan runs on a multi-tenant system. The Flex and Precise Performance plans run on their own single-tenant virtual machines or bare metal servers.
  
-The Lite plan allows you to use one database schema.
+The Lite plan uses one database schema.
 
 For more information about the free {{site.data.keyword.Db2_on_Cloud_short}} Lite plan, see the [FAQ](https://ibm.biz/db2oc_free_plan_faq){:external}.
 
 ## Using the Lite plan outside continental North America
 {: #outside_na}
 
-The Lite plan is currently accessible without a credit card for continental North America. Outside of continental North America, customers must add a credit card to their IBM Cloud account and then select the "US South - Dallas" region for the Lite plan to be visible for selection.
+The Lite plan is accessible without a credit card for continental North America. Outside of continental North America, customers must add a credit card to their IBM Cloud account and then select the "US South - Dallas" region for the Lite plan to be visible for selection.
 
 The Lite plan is always free and your credit card will not be charged.
 
 ## Lite plan restrictions
 {: #fp_restrictions}
 
-You are strongly recommended to use an enterprise-level service plan rather than a Lite service plan for mission-critical or performance-sensitive workloads. 
+It is recommended that you use an enterprise-level service plan rather than a Lite service plan for mission-critical or performance-sensitive workloads. 
 {: important}
 
-The following is a table of {{site.data.keyword.Db2_on_Cloud_short}} Lite plan restrictions:
+The following table contains {{site.data.keyword.Db2_on_Cloud_short}} Lite plan restrictions:
 
 | Category | Item | Restriction | 
 |----------|------|-------------|

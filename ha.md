@@ -44,7 +44,7 @@ At this time, the disaster recovery (DR) option for Db2 on Cloud offerings is no
 {: #add_dr}
 
 For existing {{site.data.keyword.Db2_on_Cloud_short}} users:
- * You can add an on-demand DR node to existing {{site.data.keyword.Db2_on_Cloud_short}} instances. After clicking your instance in the {{site.data.keyword.Bluemix_notm}} dashboard, you will see an option called **Manage Disaster Recovery**. You can add a Geo-Replicated Disaster Recovery Node from there.
+ * You can add an on-demand DR node to existing {{site.data.keyword.Db2_on_Cloud_short}} instances. After clicking your instance in the {{site.data.keyword.Bluemix_notm}} dashboard, you will see an option that is called **Manage Disaster Recovery**. You can add a Geo-Replicated Disaster Recovery Node from there.
  * If you purchased {{site.data.keyword.Db2_on_Cloud_short}} on contract through a sales representative and do not have an {{site.data.keyword.Bluemix_notm}} subscription, contact your IBM representative to add a DR node.
 
 If you are currently not a {{site.data.keyword.Db2_on_Cloud_short}} user:

@@ -30,7 +30,7 @@ Define a connection between a PHP application and a {{site.data.keyword.Db2_on_C
 ## Prerequisites
 {: #prereq101}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the necessary [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -107,7 +107,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
         
 2. From the "Getting Started" section of the new PHP App in your {{site.data.keyword.Bluemix_notm}} dashboard, download the App starter code to your local work directory.
         
-3. In your {{site.data.keyword.Bluemix_notm}} dashboard, create a new connection from your Db2 service to your new PHP App. (Creating this Connection in {{site.data.keyword.Bluemix_notm}} makes the `VCAP_SERVICES` environment variable available to your PHP App. The `VCAP_SERVICES` environment variable contains database details for your Db2 service. Using `VCAP_SERVICES` is more convenient than hard-coding the database details in your PHP App.)
+3. In your {{site.data.keyword.Bluemix_notm}} dashboard, create a new connection from your Db2 service to your new PHP App. (Creating this Connection in {{site.data.keyword.Bluemix_notm}} makes the `VCAP_SERVICES` environment variable available to your PHP App. The `VCAP_SERVICES` environment variable contains database details for your Db2 service. Using `VCAP_SERVICES` is more convenient than hardcoding the database details in your PHP App.)
         
 4. In your local working directory, update the `index.php` file to connect to the BLUDB database by using the [`db2_connect` function](http://php.net/manual/en/function.db2-connect.php){:external}.
         
@@ -158,6 +158,6 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
    </html>
    ```
 
-5. From your local working directory, push the updates to {{site.data.keyword.Bluemix_notm}} by following the instructions in the "Getting Started" section of the PHP App in your {{site.data.keyword.Bluemix_notm}} dashboard. Then restart the App in {{site.data.keyword.Bluemix_notm}} and view the App in a browser.
+5. From your local working directory, push the updates to {{site.data.keyword.Bluemix_notm}} by following the instructions in the "Getting Started" section of the PHP App in your {{site.data.keyword.Bluemix_notm}} dashboard. Then, restart the App in {{site.data.keyword.Bluemix_notm}} and view the App in a browser.
 
 

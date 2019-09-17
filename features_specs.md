@@ -130,7 +130,7 @@ subcollection: Db2onCloud
 | Autonomous failover - Offsite DR | N | Use button or API |
 | IP moves with failover | Y | Local HA only; not offsite HADR |
 | RPO: High Availability | 0 s | HA is synchronous |
-| RTO: High Availability | Typically 0-10 min | With retry code, will appear as slowness with Db2 ACR |
+| RTO: High Availability | Typically 0 - 10 min | With retry code, appears as slowness with Db2 ACR |
 | RPO: Offsite node HADR | Typically < 15 s | Offsite DR is asynchronous |
 | RTO: Offsite node HADR | < 3 min | Must initiate with console button or API |
 {: class="simple-tab-table"}
@@ -216,7 +216,7 @@ subcollection: Db2onCloud
 | Available on IBM Cloud | Y | Both subscription and pay-as-you-go |
 | Available with software quote order | Y | All plans including Flex. [Parts & details](https://ibm.biz/db2oncloud-parts-public){:external}|
 | Available on Hybrid Data Management Platform (HDMP) | Y | Flex plan only. [Details about HDMP](https://www.ibm.com/ca-en/marketplace/hybrid-data-management-platform){:external}|
-| Daily billing | Y | Billing for Flex plans is based on peak daily usage. For example, if you scale up from 2 to 8 cores for one hour of a day, you will be billed for 8 cores for only that day, and 2 cores for all of the other days of the month. |
+| Daily billing | Y | Billing for Flex plans is based on peak daily usage. For example, if you scale up from 2 to 8 cores for one hour of a day, you are billed for 8 cores for only that day, and 2 cores for all of the other days of the month. |
 | Hourly billing | [In roadmap](https://ibm.biz/db2oncloud-roadmap){:external} | - | 
 | Main pricing metric | Monthly | Prices are stated in monthly terms (for example, $189 USD per month). A prorated monthly price is based on the number of days of activated service during the month in which the service was terminated. [Examples](/docs/services/Db2onCloud?topic=Db2onCloud-plans_pricing#examples) |
 {: class="simple-tab-table"}
@@ -230,9 +230,9 @@ subcollection: Db2onCloud
 | Dallas | **Deploy**: < 5 minutes. **Scale**: < 45 minutes. | Flex plan only, depending on inventory |
 | Other US South | **Deploy**: 1 day. **Scale**: 8 hours. | Some locations shorter than others |
 | Frankfurt & London | **Deploy**: < 5 min. **Scale**: 2 hours. | Flex plan only, depending on inventory |
-| Other EU | **Deploy**: 3-5 days. **Scale**: 1-2 days. | Some locations shorter than others |
+| Other EU | **Deploy**: 3 - 5 days. **Scale**: 1 - 2 days. | Some locations shorter than others |
 | Sydney | **Deploy**: < 1 hour. **Scale**: 2 hours. | Flex plan only, depending on inventory |
-| Other AP | **Deploy**: 3-5 days. **Scale**: 3-5 days. | Some locations shorter than others. Lower volumes in AP result in slower infrastructure provisioning times. |
+| Other AP | **Deploy**: 3 - 5 days. **Scale**: 3 - 5 days. | Some locations shorter than others. Lower volumes in AP result in slower infrastructure provisioning times. |
 {: class="simple-tab-table"}
 {: caption="Table 9. Deployment & scaling durations" caption-side="top"}
 {: #simpletabtable9}

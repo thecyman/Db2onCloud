@@ -43,7 +43,7 @@ If you don't see a configuration in the catalog that you need, contact [{{site.d
 
 Prices are stated in monthly terms (for example, $189 USD per month) for an activated service. 
 
-If the activated service is terminated before the month has completed, the monthly price reflects the portion of the month during which the service remained activated.
+If the activated service is terminated before the month ends, the monthly price reflects the portion of the month during which the service remained activated.
 
 ### Billing examples
 {: #examples}
@@ -52,11 +52,11 @@ In the following billing examples, an example plan charge of $189 USD per month 
 
 **Example 1: Monthly billing**
 
-As long as the service remains activated for each monthly billing period, a charge of $189 USD per month is billed even if the service sits idle.
+While the service remains activated for each monthly billing period, a charge of $189 USD per month is billed even if the service sits idle.
 
 **Example 2: Daily billing**
 
-Billing for Flex plans is based on peak daily usage. For example, if you scale up from 2 to 8 cores for one hour of a day, you will be billed for 8 cores for only that day, and 2 cores for all of the other days of the month.
+Billing for Flex plans is based on peak daily usage. For example, if you scale up from 2 to 8 cores for one hour of a day, you are billed for 8 cores for only that day, and 2 cores for all of the other days of the month.
 
 **Example 3: Prorated billing**
 

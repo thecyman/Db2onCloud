@@ -30,15 +30,15 @@ You can connect command-line interfaces, IBM® or third-party applications and t
 ## Prerequisites
 {: #prereqs}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the necessary prerequisites. 
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the prerequisites. 
 
 - Collect database details and credentials
 
-   To connect to your database, you need database details (such as the host name), as well as credentials (such as a user ID and password.) You can collect this connection information from the {{site.data.keyword.Db2_on_Cloud_short}} web console.
+   To connect to your database, you need database details (such as the host name), and credentials (such as a user ID and password.) You can collect this connection information from the {{site.data.keyword.Db2_on_Cloud_short}} web console.
 
 - Verify that a supported driver is installed
 
-   - If your application or tool already contains the Db2 v11.1 IBM Data Server Driver Package, then your application or tool is able to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database using that driver.
+   - If your application or tool already contains the Db2 v11.1 IBM Data Server Driver Package, then your application or tool is able to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database by using that driver.
    - Otherwise, install the Db2 driver package, which you can download from the {{site.data.keyword.Db2_on_Cloud_short}} web console.
 
 - Configure your environment
@@ -46,13 +46,13 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
   - Add entries to the driver configuration file, `db2dsdriver.cfg`, for your database.
   - Secure Sockets Layer (SSL)
 
-    You can choose to connect with or without SSL. Connection details, such as which port to use and the connection string, depend on whether or not you use SSL connections.
+    You can choose to connect with or without SSL. Connection details, such as which port to use and the connection string, depend on whether you use SSL connections.
 
     To use SSL connections, you need a CA certificate:
-    - If you use the latest {{site.data.keyword.Db2_on_Cloud_short}} driver package, the certificate file is bundled with the package and will be used for connections.
+    - If you use the most recent {{site.data.keyword.Db2_on_Cloud_short}} driver package, the certificate file is bundled with the package and is used for connections.
     - If you use the IBM Data Server Driver Package, you can download the SSL certificate from the {{site.data.keyword.Db2_on_Cloud_short}} web console.
 
-- Confirm ports are available
+- Confirm that ports are available
 
    If your network is behind a firewall, confirm that communications are permitted on port number `50000` for standard protocols or port number `50001` for SSL connections.
 
@@ -125,7 +125,7 @@ You can also connect external applications and tools to {{site.data.keyword.Db2_
 - [Aginity Workbench to migrate Netezza® data models and data to {{site.data.keyword.Db2_on_Cloud_short}}](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-data_int#aginity_wb)
 - [InfoSphere Data Architect to design and deploy your database schema](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-data_int#ida)
 
-### Data visualization/BI
+### Data visualization & BI
 {: #dvis_bi}
 
 - [Cognos Analytics to run Business Intelligence reports against your data](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-data_vis_bi#cognos)

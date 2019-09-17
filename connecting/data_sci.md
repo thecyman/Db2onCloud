@@ -88,7 +88,7 @@ These instructions explain how to create a connection from IBM® SPSS® Statisti
 ### Prerequisites
 {: #prereq11}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the necessary [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 ### Procedure
 {: #proc11}
@@ -138,7 +138,7 @@ These instructions explain how to create a connection from SAS to a {{site.data.
 ### Prerequisites
 {: #prereq12}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the necessary [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 ### Procedure
 {: #proc12}
@@ -155,7 +155,7 @@ Instead of using the RStudio® environment that is integrated within IBM Watson 
 ### Prerequisites
 {: #prereq13}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the necessary [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 ### Procedure
 {: #proc13}

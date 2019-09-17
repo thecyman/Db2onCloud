@@ -30,7 +30,7 @@ Define a connection between a Microsoft Windows ODBC or CLI application and a {{
 ## Prerequisites
 {: #prereq81}
 
-Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the necessary [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} database, verify that you have the [prerequisites](/docs/services/Db2onCloud/connecting?topic=Db2onCloud-connect_ov#prereqs).
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -74,7 +74,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 
    `<password>` is from the connect credentials that you collected beforehand
 
-3. [*Optional*]: To register the data source name (DSN) with Microsoft ODBC Driver Manger and to work with Microsoft ODBC applications, run the following command. By default, the DSN is created as user DSN.
+3. [*Optional*]: To register the data source name (DSN) with Microsoft ODBC Driver Manager and to work with Microsoft ODBC applications, run the following command. By default, the DSN is created as user DSN.
 
    `db2cli registerdsn -add -dsn <alias>`
 
