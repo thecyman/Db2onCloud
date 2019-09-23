@@ -406,7 +406,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 
 4. For an SSL connection, click the **Optional** tab, and then click **Add**. For the `sslConnection` property, specify `true`.
 
-5. [*Optional*]: Click **Test Connection** to verify that the connection succeeded.
+5. (*Optional*): Click **Test Connection** to verify that the connection succeeded.
 
 ## Data Server Manager (DSM)
 {: #dsm}
@@ -478,7 +478,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 
 4. For an SSL connection, click the **Optional** tab. Enter an `sslConnection` property and specify a value of `true`. Click **Add**.
     
-5. [*Optional*]: Click **Test Connection** to verify that the connection succeeded.
+5. (*Optional*): Click **Test Connection** to verify that the connection succeeded.
 
 ## Aginity Workbench
 {: #aginity_wb}

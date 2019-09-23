@@ -85,7 +85,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
    - `<userid>` is your Db2 user ID.
    - `<password>` is your Db2 password.
 
-3. [*Optional*] To be able to connect local ODBC applications and tools to your database, register the DSN with the ODBC driver manager:
+3. (*Optional*): To be able to connect local ODBC applications and tools to your database, register the DSN with the ODBC driver manager:
  
    Run the following command from a command line: 
 

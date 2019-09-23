@@ -64,7 +64,7 @@ The following steps show you how to connect your application to the database wit
 
      `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
 
-2. [*Optional*]: To verify the .NET connection to the database, enter the following command at a command prompt:
+2. (*Optional*): To verify the .NET connection to the database, enter the following command at a command prompt:
 
    `testconn40 "DATABASE=<alias>;UID=<user_id>;PWD=<password>;"`
 

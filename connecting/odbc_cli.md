@@ -62,7 +62,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 
    `<alias>` is a DSN alias that you choose
     
-2. [*Optional*]: To test the connection to the database, run this command from the command prompt:
+2. (*Optional*): To test the connection to the database, run this command from the command prompt:
 
    `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
@@ -74,7 +74,7 @@ Before attempting to connect to your {{site.data.keyword.Db2_on_Cloud_short}} da
 
    `<password>` is from the connect credentials that you collected beforehand
 
-3. [*Optional*]: To register the data source name (DSN) with Microsoft ODBC Driver Manager and to work with Microsoft ODBC applications, run the following command. By default, the DSN is created as user DSN.
+3. (*Optional*): To register the data source name (DSN) with Microsoft ODBC Driver Manager and to work with Microsoft ODBC applications, run the following command. By default, the DSN is created as user DSN.
 
    `db2cli registerdsn -add -dsn <alias>`
 
