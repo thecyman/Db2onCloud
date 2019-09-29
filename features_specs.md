@@ -30,7 +30,7 @@ subcollection: Db2onCloud
 <!--
 | Category | Feature | Supported? | Comments |
 |----------|---------|------------|----------|
-| General | Db2 AESE | Y | Db2 v11.1.3.3 |
+| General | Db2 AESE | Y | Db2 v11.1.4 |
 |  | Read on Standby | Y | Offsite DR node only |
 |  | Automatic rolling updates | Y | With HA plans |
 |  | Data center location options | Y | [Locations](https://ibm.biz/db2oncloud-locations){:external}. See also: Deployment & scaling durations. |
