@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-08-15"
+lastupdated: "2019-09-30"
 
 keywords: 
 
@@ -38,12 +38,7 @@ You can also use [IBM Lift CLI](https://www.lift-cli.cloud.ibm.com/){:external} 
 ## Point-in-time restore
 {: #point-in-time}
 
-{{site.data.keyword.Db2_on_Cloud_short}} added a point-in-time restore capability. You can restore to an exact point in time from your backups. Today, for most customers, you must request support to activate this feature. See the following rollout schedule.
-
-The following is an availability list of the point-in-time restore feature:
-- Dallas data center: Available today on single-server systems
-- All other cases, including Europe and HA systems in Dallas: Request feature activation from support. Full rollout to all systems is expected to be completed by Sept 30, 2019.
-- IBM Cloud Dedicated system: Only available by opening a support ticket.
+{{site.data.keyword.Db2_on_Cloud_short}} added a point-in-time restore capability for systems in {{site.data.keyword.Bluemix_notm}} Public. You can restore to an exact point in time from your backups. 
 
 The following are a selected example of screen captures of the web console UI in which the point-in-time restore operation is initiated and its progress is indicated:
 
