@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-06-12"
+lastupdated: "2019-09-30"
 
 keywords: 
 
@@ -106,7 +106,7 @@ subcollection: Db2onCloud
 
 | Feature | Supported? | Comments |
 |---------|------------|----------|
-| Db2 AESE | Y | Db2 v11.1.3.3 |
+| Db2 AESE | Y | Db2 v11.1.4 |
 | Read on Standby | Y | Offsite DR node only |
 | Automatic rolling updates | Y | With HA plans |
 | Data center location options | Y | [Locations](https://ibm.biz/db2oncloud-locations){:external}. See also: Deployment & scaling durations. |
