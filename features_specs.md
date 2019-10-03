@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-09-30"
+lastupdated: "2019-10-03"
 
 keywords: 
 
@@ -113,6 +113,7 @@ subcollection: Db2onCloud
 | BLU in-memory | Y | Default is row, specify `CREATE TABLE..AS COL` for BLU |
 | Activity Tracker | [In roadmap](https://ibm.biz/db2oncloud-roadmap){:external} | - |
 | Root access provided | N | Use Db2 Hosted if root access is required |
+| Copy Database | Y | Make a copy of a database with 1 click |
 {: class="simple-tab-table"}
 {: caption="Table 1. General" caption-side="top"}
 {: #simpletabtable1}
@@ -200,7 +201,7 @@ subcollection: Db2onCloud
 | On-disk encryption | Y | -  |
 | SSL/TLS connections | Y | -  |
 | IP whitelisting | Some | Available at Db2 user level. For network level, consider ICIAE or similar.  |
-| Key Protect (Bring your own key) | [In roadmap](https://ibm.biz/db2oncloud-roadmap){:external} | - |
+| Key Protect (Bring your own key) | Y | [IBM Key Protect](/docs/services/Db2onCloud?topic=Db2onCloud-key-protect) |
 | MIS / Interconnected service | [In roadmap](https://ibm.biz/db2oncloud-roadmap){:external} | - |
 | Maximum concurrent connection limit: **Free Lite plan** | Y | Max: 5 connections  |
 | Maximum concurrent connection limit: **Paid plans** | N | Unlimited number of connections  |
