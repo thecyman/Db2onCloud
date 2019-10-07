@@ -16,6 +16,7 @@ Db2 on Cloud
         br.md
         ha.md
         audit.md
+        rc.md
         
     free_plan.md
     plans_pricing.md

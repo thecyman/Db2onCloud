@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-10-03"
+lastupdated: "2019-10-07"
 
 keywords: 
 
@@ -114,6 +114,7 @@ subcollection: Db2onCloud
 | Activity Tracker | [In roadmap](https://ibm.biz/db2oncloud-roadmap){:external} | - |
 | Root access provided | N | Use Db2 Hosted if root access is required |
 | Copy Database | Y | Make a copy of a database with 1 click |
+| Resource controller support | Y | [Resource controller (RC)](/docs/services/Db2onCloud?topic=Db2onCloud-rc) |
 {: class="simple-tab-table"}
 {: caption="Table 1. General" caption-side="top"}
 {: #simpletabtable1}
@@ -201,7 +202,7 @@ subcollection: Db2onCloud
 | On-disk encryption | Y | -  |
 | SSL/TLS connections | Y | -  |
 | IP whitelisting | Some | Available at Db2 user level. For network level, consider ICIAE or similar.  |
-| Key Protect (Bring your own key) | Y | [IBM Key Protect](/docs/services/Db2onCloud?topic=Db2onCloud-key-protect) |
+| Key Protect (bring your own key) | Y | [IBM Key Protect](/docs/services/Db2onCloud?topic=Db2onCloud-key-protect) |
 | MIS / Interconnected service | [In roadmap](https://ibm.biz/db2oncloud-roadmap){:external} | - |
 | Maximum concurrent connection limit: **Free Lite plan** | Y | Max: 5 connections  |
 | Maximum concurrent connection limit: **Paid plans** | N | Unlimited number of connections  |
