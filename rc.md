@@ -24,7 +24,7 @@ subcollection: Db2onCloud
 # Resource controller (RC)
 {: #rc}
 
-The {{site.data.keyword.Db2_on_Cloud_long}} service now supports resource controller (RC). The RC is responsible for controlling and tracking the lifecycle of resources in an {{site.data.keyword.Bluemix_notm}} account. Resources is a broad term that can mean anything from an instance of a service like {{site.data.keyword.Db2_on_Cloud_short}}, a Cloud Foundry application, a virtual machine, a container, a software image, a data set, or other entity associated to an account.
+The {{site.data.keyword.Db2_on_Cloud_long}} service now supports resource controller (RC). The RC is responsible for controlling and tracking the lifecycle of resources in an {{site.data.keyword.Bluemix_notm}} account. Resources is a broad term that can mean anything from an instance of a service like {{site.data.keyword.Db2_on_Cloud_short}}, a Cloud Foundry application, a virtual machine, a container, a software image, a data set, or other entity associated with an account.
 {: shortdesc}
 
 ## Migrating Cloud Foundry services to RC
