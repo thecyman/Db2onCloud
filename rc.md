@@ -32,6 +32,6 @@ The {{site.data.keyword.Db2_on_Cloud_long}} service now supports resource contro
 
 Available with the resource controller is the ability to manage your service and app resources by using *resource groups*. For information about how and why you should migrate your Cloud Foundry service instances and apps to resource groups, see [Migrating Cloud Foundry service instances and apps to a resource group](/docs/resources?topic=resources-migrate).
 
-To be able to use the new features such as IBM Key Protect and Database Copy, you must migrate your Cloud Foundry service instances to RC.
+To be able to use the new features such as IBM Key Protect and Copy Database, you must migrate your Cloud Foundry service instances to RC.
 {: important}
 
