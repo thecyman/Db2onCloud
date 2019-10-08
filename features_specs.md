@@ -113,7 +113,7 @@ subcollection: Db2onCloud
 | BLU in-memory | Y | Default is row, specify `CREATE TABLE..AS COL` for BLU |
 | Activity Tracker | [In roadmap](https://ibm.biz/db2oncloud-roadmap){:external} | - |
 | Root access provided | N | Use Db2 Hosted if root access is required |
-| Copy Database | Y | Make a copy of a database with 1 click |
+| Copy Database | Y | [Copy Database](/docs/services/Db2onCloud?topic=Db2onCloud-cp_db) |
 | Resource controller support | Y | [Resource controller (RC)](/docs/services/Db2onCloud?topic=Db2onCloud-rc) |
 {: class="simple-tab-table"}
 {: caption="Table 1. General" caption-side="top"}
