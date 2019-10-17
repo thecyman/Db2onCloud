@@ -33,7 +33,7 @@ The following examples are helpful use cases for using a copy of a database:
 - Make a *template* database for an app, and make a copy of that template as your apps need it
 
 ## Prerequisites
-{: #kp_prereqs}
+{: #cp_prereqs}
 
 To use the Copy Database feature in the {{site.data.keyword.Db2_on_Cloud_short}} service, the {{site.data.keyword.Db2_on_Cloud_short}} service instance must be in a resource group. If your {{site.data.keyword.Db2_on_Cloud_short}} service instance is a Cloud Foundry service, see [Migrating Cloud Foundry service instances and apps to a resource group](/docs/resources?topic=resources-migrate#migrate) for information about the migration.
 
