@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-10-22"
+lastupdated: "2019-10-25"
 
 keywords: 
 
@@ -34,6 +34,9 @@ In addition, you can add a Geo-Replicated Disaster Recovery Node. This offsite D
 [List of data center locations where DR nodes are available.](https://developer.ibm.com/answers/questions/366888/what-locations-cities-or-countries-is-dashdb-avail.html){:external}
 
 {{site.data.keyword.Db2_on_Cloud_short}} uses the Db2 High Availability Disaster Recovery (HADR) technology in `ASYNC` mode to achieve the offsite DR node capability and provides `Read on Standby` on the DR node.
+
+Key Protect provides regional support only. If the region that hosts your key becomes unavailable, you will not be able to manually fail over to your disaster recovery (DR) node, or access data on the DR node without failing over. For this reason, it is recommended that you not use Key Protect and the disaster recovery feature together on the same instance.
+{: important}
 
 ## **Brazil: Supplementary Rule 14** (applies to systems provisioned for the Brazilian federal government)
 {: #rule_14}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-09-30"
+lastupdated: "2019-10-25"
 
 keywords:
 
@@ -32,6 +32,9 @@ Upon instance creation, your database instance is set to encrypt its data at res
 You can rotate the root key in Key Protect. The database instance periodically checks for any key rotation. When a key rotation is detected, a new keystore password and a new master key are correspondingly generated.
 
 When you revoke the root key authorization of the {{site.data.keyword.Db2_on_Cloud_short}} service or delete the root key, your database instance can no longer be started after it is stopped because any attempt to access the keystore will fail. Certain operations within the database require access to the keystore and they will begin to fail as well. In addition, any database backups cannot be restored.
+
+Key Protect provides regional support only. If the region that hosts your key becomes unavailable, you will not be able to manually fail over to your disaster recovery (DR) node, or access data on the DR node without failing over. For this reason, it is recommended that you not use Key Protect and the disaster recovery feature together on the same instance.
+{: important}
 
 ## Prerequisites
 {: #kp_prereqs}
