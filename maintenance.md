@@ -32,7 +32,7 @@ Being acquainted with our policies can better help you plan and schedule your wo
 ## Maintenance policy
 {: #maintenance}
 
-Effective as of 27 March 27 2018, when scheduled system maintenance must be done for the {{site.data.keyword.Db2_on_Cloud_short}} service, the major data centers (London, Dallas, and Sydney) are updated on separate days of the business week. All of the other data centers are simultaneously updated on a day of the week that doesn't coincide with the major data centers. Table 1 shows an example of a {{site.data.keyword.Db2_on_Cloud_short}} system maintenance schedule.
+When scheduled system maintenance must be done for the {{site.data.keyword.Db2_on_Cloud_short}} service, the major data centers (London, Dallas, and Sydney) are updated on separate days of the business week. **This gives customers the option to fail over to a DR node in a nearby data center to avoid maintenance, and fail back once maintenance completes.** All of the other data centers are simultaneously updated on a day of the week that doesn't coincide with the major data centers. Table 1 shows an example of a {{site.data.keyword.Db2_on_Cloud_short}} system maintenance schedule.
 
 | Data center | Example of a possible maintenance schedule |
 |-------------|-----------------------------|
